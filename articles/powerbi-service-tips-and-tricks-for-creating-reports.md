@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and tricks for creating visually stunning reports in Power BI service"
-   description="Tips and tricks for creating reports in Power BI service"
+   pageTitle="秘訣和訣竅在 Power BI 服務中建立視覺驚艷的報表"
+   description="秘訣和技巧在 Power BI 服務中建立報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,28 +19,28 @@
    ms.workload="powerbi"
    ms.date="09/12/2016"
    ms.author="mihart"/>
-# Tips and tricks for creating reports in Power BI service
+# 秘訣和技巧在 Power BI 服務中建立報表
 
->[AZURE.NOTE] This topic gives suggestions for improving the look and feel of your reports. All of these suggestions can be applied whether you are using Power BI service or Power BI Desktop.  For more technical tips &amp; tricks for creating reports, see <bpt id="p1">[</bpt>Tips and Tricks for creating reports in Power BI Desktop<ept id="p1">](powerbi-desktop-tips-and-tricks-for-creating-reports)</ept>.
-
-
-### Watch the Dashboard Makeover webinar
-
-See Microsoft Principal Program Manager and Power BI dashboard expert Marc Reguera <bpt id="p1">[</bpt>conduct dashboard makeovers<ept id="p1">](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)</ept>.
+>[AZURE.NOTE] 本主題提供改善報表的外觀及操作的建議。 不論您使用 Power BI 服務或 Power BI Desktop 可以套用所有這些建議。  其他技術秘訣與技巧來建立報表，請參閱 [秘訣與技巧，來建立報表，在 Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports)。
 
 
-### Read and watch "How to design visually stunning reports (and dashboards) in Power BI
+### 監看式儀表板改裝網路研討會
 
-Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
+請參閱 Microsoft 的首席專案經理和 Power BI 儀表板專家 Marc Reguera [進行儀表板 makeovers](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)。
 
--  [Read the blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
 
--  [Watch the webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+### 讀取和監看 」 如何設計視覺驚艷報表 （與儀表板） 在 Power BI 中
+
+社群成員 Miguel Myers 是資料科學家，以及由圖形設計人員。
+
+-  [閱讀部落格](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+
+-  [監看網路研討會](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
 
 ## 另請參閱
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

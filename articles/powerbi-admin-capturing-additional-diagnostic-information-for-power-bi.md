@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Capturing additional diagnostic information for Power BI"
-   description="Capturing additional diagnostic information for Power BI"
+   pageTitle="Power bi 的擷取其他診斷資訊"
+   description="Power bi 的擷取其他診斷資訊"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,38 +20,38 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Capturing additional diagnostic information for Power BI  
+# Power bi 的擷取其他診斷資訊  
 
-## Capturing Additional Diagnostic Information for Power BI  
-These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.  Only one of these options needs to be followed.
+## 擷取 Power bi 的其他診斷資訊  
+這些指示提供兩個可能的選項，以手動方式從 Power BI web 用戶端收集其他診斷資訊。  只有其中一個這些選項時必須遵循。
 
-## Network Capture - Edge &amp; Internet Explorer 
-1.  Browse to <bpt id="p1">[</bpt>Power BI<ept id="p1">](https://app.powerbi.com)</ept> with Edge or Internet Explorer.
+## 擷取網路的邊緣和 Internet Explorer 
+1.  瀏覽至 [Power BI](https://app.powerbi.com) 邊緣或 Internet Explorer。
 
-2.  Open the Edge developer tools by pressing F12.
+2.  按 F12 來開啟邊緣開發人員工具。
 
-3.  That will bring up the Developer Tools window: 
+3.  會顯示 [開發人員工具] 視窗︰ 
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
-4.  Switch to the Network tab. It will list traffic it has already captured. 
+4.  切換至 [網路] 索引標籤。 它會列出已經淪陷的流量。 
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
-5.  You can browse within the window and reproduce any problem you may be encountering. You can hide and show the developer tools window at any time during the session by pressing F12.
+5.  您可以瀏覽視窗中，並重現您可能會遇到任何問題。 您可以隱藏和顯示開發人員工具] 視窗中工作階段期間隨時按 F12。
 
-6.  To stop the capture, you can select the red square on the network tab of the developer tools area.
+6.  若要停止擷取，您可以選取紅色方塊，開發人員工具區域的 [網路] 索引標籤。
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
-7.  Select on the diskette icon to <bpt id="p1">**</bpt>Export as HAR<ept id="p1">**</ept>
+7.  磁碟片圖示以選取 **匯出為 HAR**
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
-8. Provide a file name and save the HAR file.
+8. 提供檔案名稱，並儲存 HAR 檔案。
 
-    The HAR file will contain all the information about network requests between the browser window and Power BI.  This will include the activity IDs for each request, the precise timestamp for each request, and any error information returned to the client.  This trace will also contain the data used to populate the visuals shown on the screen.
+    HAR 檔案會包含瀏覽器視窗與 Power BI 之間的網路要求的所有資訊。  這包括每個要求，每個要求，以及任何錯誤資訊傳回給用戶端的精確時間戳記的活動識別碼。  這項追蹤也會包含用來填入螢幕上顯示視覺效果的資料。
 
-9. You can provide the HAR file to support for review.
+9. 您可以提供 HAR 檔案以供檢閱的支援。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to an OData feed in Power BI Desktop"
-   description="Easily connect to and use an OData feed in Power BI Desktop"
+   pageTitle="連接到 Power BI Desktop 中的 OData 摘要"
+   description="輕鬆地連接到並使用 Power BI Desktop 中的 OData 摘要"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,48 +20,48 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect to OData feeds in Power BI Desktop
+# 連接到 Power BI Desktop 中的 OData 摘要
 
-In Power BI Desktop, you can connect to an <bpt id="p1">**</bpt>OData feed<ept id="p1">**</ept> and use the underlying data just like any other data source in Power BI Desktop.
+在 Power BI Desktop，您可以連接到 **OData 摘要** ，並使用基礎資料，就像在 Power BI Desktop 中的任何其他資料來源。
 
-To connect to an OData feed, select <bpt id="p1">**</bpt>Get Data &gt; OData Feed<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon in Power BI Desktop.
+若要連接到 OData 摘要，請選取 **取得資料 > OData 摘要** 從 **首頁** Power BI Desktop 在功能區。
 
 ![](media/powerbi-desktop-connect-odata/connect-to-odata_1.png)
 
-In the <bpt id="p1">**</bpt>OData Feed<ept id="p1">**</ept> window that appears, type or paste your OData feed URL into the box, and select <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.
+在 **OData 摘要** 出現的視窗中，輸入或貼上您 OData 摘要 URL] 方塊，然後選取 **確定**。
 
 ![](media/powerbi-desktop-connect-odata/connect-to-odata_2.png)
 
-Power BI Desktop connects to the OData feed, and displays the available tables and other data elements in the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window. When you select an element, the right pane of the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window displays a preview of the data. You can select as many tables as you want to import. The <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window shows a preview of the currently selected table.
+Power BI Desktop 連接到 OData 摘要，並顯示可用的資料表和其他資料項目的 **導覽** 視窗。 當您選取的項目右邊的窗格 **導覽** ] 視窗會顯示資料的預覽。 您可以選取您要匯入的表格。  **導覽** ] 視窗會顯示目前選取之資料表的預覽。
 
 ![](media/powerbi-desktop-connect-odata/connect-to-odata_3.png)
 
-You can choose the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button, which launches <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, where you can shape and transform the data from the OData feed before importing it into Power BI Desktop. Or you can select the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> button, and import all of the data elements you selected in the left pane.
+您可以選擇 **編輯** ] 按鈕，以啟動 **查詢編輯器**, ，供您圖形及轉換從 OData 摘要匯入至 Power BI Desktop 之前的資料。 您可以選取或 **負載** ] 按鈕，然後匯入所有您在左窗格中選取的資料元素。
 
-When we select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept>, Power BI Desktop imports the selected items, and displays a <bpt id="p2">**</bpt>Load<ept id="p2">**</ept> window of the import progress.
+當我們選取 **負載**, ，Power BI Desktop 匯入選取的項目，並顯示 **負載** 視窗的匯入進度。
 
 
 ![](media/powerbi-desktop-connect-odata/connect-to-odata_4.png)
 
-Once complete, Power BI Desktop makes the selected tables and other data elements available in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, found on the right side of the <bpt id="p2">*</bpt>Reports<ept id="p2">*</ept> view in Power BI Desktop.
+完成後，Power BI Desktop 選取的資料表和其他資料元素，可讓在 **欄位** ] 窗格中，找到的右邊 *報表* Power BI Desktop 中的檢視。
 
 ![](media/powerbi-desktop-connect-odata/connect-to-odata_5.png)
 
-And that’s it!
+這樣就大功告成了 ！
 
-You’re now ready to use the imported data from the OData feed in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as other Excel workbooks, databases, or any other data source.
+您現在準備要匯入的資料從 OData 摘要 Power BI Desktop 中用來建立視覺效果，報表或其他您可能想要使用連線，例如其他 Excel 活頁簿、 資料庫或任何其他資料來源匯入的資料進行互動。
 
 
 ## 詳細資訊
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿有各式各樣的資料，您可以連接到使用 Power BI Desktop。 如需有關資料來源的詳細資訊，請參閱下列資源︰
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [開始使用 Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Power BI Desktop 中的資料來源](powerbi-desktop-data-sources.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [圖形，並結合資料與 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+-   [連接到 Power BI Desktop 中的 Excel 活頁簿](powerbi-desktop-connect-excel.md)   
 
--   [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
+-   [Power BI Desktop 中直接輸入資料](powerbi-desktop-enter-data-directly-into-desktop.md)   

@@ -1,14 +1,14 @@
-<properties pageTitle="Documentation Example - Headings" description="This is an example document" title="Documentation Example - Headings" services="" documentationCenter="" authors="jamescon, Bill Smith" metaKeywords="" solutions="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-標題" description="這是範例文件" title="Documentation Example - Headings" services="" documentationCenter="" authors="jamescon, Bill Smith" metaKeywords="" solutions="" videoId="" scriptId="" />
 
 
-# Example - Headings #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# 範例-標題 #
+這是用來測試及驗證 azure.microsoft.com 的發佈系統的範例文件文件。  
 
-The content between the lines below demonstrates the use of headings.
+下列程式行之間的內容中，示範如何使用標題。
 
 ---
 
-The below headings are created with the following Markdown syntax:  
+標題下方會建立含有下列 Markdown 語法︰  
 
 ````
 # Heading 1 #
@@ -20,13 +20,13 @@ The below headings are created with the following Markdown syntax:
 #### Heading 4 ####
 ````
 
-# Heading 1 #
+# 標題 1 #
 
-## Heading 2 ##
+## 標題 2 ##
 
-### Heading 3 ###
+### 標題 3 ###
 
-#### Heading 4 ####
+#### 標題 4 ####
 
 ---
 

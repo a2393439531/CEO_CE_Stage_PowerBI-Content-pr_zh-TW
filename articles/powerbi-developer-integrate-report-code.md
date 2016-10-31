@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI report into an app code listing"
-   description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
+   pageTitle="將 Power BI 報表整合到應用程式程式碼清單"
+   description="若要將報告整合到應用程式的逐步解說 IFrame 中載入報表"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,19 +20,19 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Integrate a report into an app code listing
+# 將報告整合到應用程式程式碼清單
 
 ## 簡介
 
-In the <bpt id="p1">[</bpt>Integrate a report into an app walkthrough<ept id="p1">](powerbi-developer-integrate-report.md)</ept> you learn how to embed a <bpt id="p2">**</bpt>report<ept id="p2">**</ept> using an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a report sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept> which shows all the parts to embed a report. Alternatively, you can view the essential source code below. Please note this is only the essential source code, not an entire web project.
+在 [將報告整合到應用程式逐步解說](powerbi-developer-integrate-report.md) 您了解如何將內嵌 **報表** 使用 **IFrame**。 您可以下載完整 [整合報表範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app) 會顯示內嵌報表的所有組件。 或者，您可以檢視下列基本來源的程式碼。 請注意這是只有基本來源的程式碼，不是整個 web 專案。
 
-**Sample Source Code**
+**範例的原始程式碼**
 
-- [Sample JavaScript to load a report into an IFrame (Default.aspx)](#default-aspx)
-- [Sample C# code to get access token, and get report (Default.aspx.cs)](#default-code)
+- [將報表載入 IFrame (Default.aspx) 的範例 JavaScript](#default-aspx)
+- [範例 [C# 程式碼，以取得存取權杖，並取得報表 (Default.aspx.cs)](#default-code)
 
 <a name="default-aspx"/>
-## Sample JavaScript to load a report into an IFrame (Default.aspx)
+## 將報表載入 IFrame (Default.aspx) 的範例 JavaScript
 ```
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
@@ -88,7 +88,7 @@ In the <bpt id="p1">[</bpt>Integrate a report into an app walkthrough<ept id="p1
 ```
 
 <a name="default-code"/>
-## Sample C# code to get access token, and get report (Default.aspx.cs)
+## 範例 [C# 程式碼，以取得存取權杖，並取得報表 (Default.aspx.cs)
 ```
 public partial class _Default : Page
 {
@@ -244,5 +244,5 @@ public class PBIReport
 
 ## 請參閱
 
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[將報告整合到應用程式逐步解說](powerbi-developer-integrate-report.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

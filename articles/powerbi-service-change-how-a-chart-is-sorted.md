@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Change how a chart is sorted in a Power BI report"
-   description="Change how a chart is sorted in a Power BI report"
+   pageTitle="變更圖表中的 Power BI 報表的排序方式"
+   description="變更圖表中的 Power BI 報表的排序方式"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,36 +20,37 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Change how a chart is sorted in a Power BI report
+# 變更圖表中的 Power BI 報表的排序方式
 
-In Power BI, you can sort charts alphabetically by the names of the categories in the chart, or by the numeric values of each category. For example, this chart is sorted by store name.
+在 Power BI，您可以排序圖表依字母順序在圖表中，類別目錄的名稱，或每個類別目錄之數字值。 比方說，這張圖表會依存放區名稱。
 
 ![](media/powerbi-service-change-how-a-chart-is-sorted/PBI_ChartSortCategory.png)
 
-It's easy to sort it from highest to lowest sales per square feet instead.
+很容易排序它從最高到最低銷售額每平方英尺改為。
 
-1.  Select the ellipses (...) and choose <bpt id="p1">**</bpt>Sort by Sales Per Sq Ft<ept id="p1">**</ept>.
+1.  選取省略符號 （...），然後選擇 **排序依據銷售每個 Sql 全文檢索**。
 
-2.  If necessary, select the sort icon <ph id="ph1">![](media/powerbi-service-change-how-a-chart-is-sorted/sortIcon.png)</ph> to change to <bpt id="p1">**</bpt>Descending<ept id="p1">**</ept>.
+2.  如果有必要，請選取排序圖示 ![](media/powerbi-service-change-how-a-chart-is-sorted/sortIcon.png) 變成 **遞減**。
 
     ![](media/powerbi-service-change-how-a-chart-is-sorted/sortby.gif)
 
-    <bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Not all visuals can be sorted.  The following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
+    
+            **請注意**︰ 您可以排序並不是所有視覺效果。  無法排序下列視覺效果︰ Treemap、 對應、 填入對應、 散佈圖、 量測計、 卡片、 多重資料列卡、 瀑布。
 
-##  Sorting using other criteria
+##  使用其他準則排序
 
-Sometimes, you want to sort your visual using a different column or other criteria.  For example, you might want to sort by month (and not in alphabetical order) or you might want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  Here are several solutions:
+有時候，您會想要排序 visual studio 使用不同的資料行或其他準則。  例如，您可能想要依月份 （而非字母順序） 排序，或要排序的整個數字，而不是數字 (範例中，0、 1、 9、 20 和不 0、 1、 20、 9)。  以下是幾個解決方案︰
 
--   In Power BI Desktop, <bpt id="p1">[</bpt>use the Data Tools Modeling tab to sort by a different column<ept id="p1">](powerbi-desktop-sort-by-column.md)</ept>.
+-   在 Power BI Desktop [使用資料模型化工具] 索引標籤的不同資料行來排序](powerbi-desktop-sort-by-column.md)。
 
--   In Excel, if you own the dataset, add a new column that concatenates the month name and number. Then refresh or re-import the dataset to see the new column in the Fields area.
+-   在 Excel 中，如果您自己的資料集時，加入新的資料行，它會串連的月份和數字。 然後重新整理或重新匯入以查看新的資料行欄位] 區域中的資料集。
 
--   In Excel, ensure that your numerical columns are tagged as "whole number" or "decimal" and not as "text."
+-   在 Excel 中，請確定您的數值資料行都會標示為 「 整數 」 或 「 十進位 」，而不是 「 文字 」。
 
 ## 請參閱
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>.
+進一步了解 [Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)。
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

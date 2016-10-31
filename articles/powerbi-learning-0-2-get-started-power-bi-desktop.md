@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Getting Started with Power BI Desktop"
-   description="Get a tour of Power BI Desktop"
+   pageTitle="開始使用 Power BI Desktop"
+   description="快速瀏覽 Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,71 +22,71 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Getting Started With Power BI Desktop
+# 開始使用 Power BI Desktop
 
-In this topic, we take a closer look at how the first two parts of Power BI fit together:
+本主題中，我們仔細看看 Power BI 的前兩個部分如何彼此搭配運作︰
 
--   Create a report in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>
--   Publish the report in the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept>
+-   中建立報表 **Power BI Desktop**
+-   在報表發行 **Power BI 服務**
 
-We’ll start in Power BI Desktop, and select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>. The collection of data sources appears, allowing you to choose a data source. The following image shows selecting a Web page as the source, in the video above, Will selected an <bpt id="p1">**</bpt>Excel<ept id="p1">**</ept> workbook.
+我們將會啟動 Power BI Desktop，並選取 **取得資料**。 此時會出現 [資料來源的集合，可讓您選擇的資料來源。 下圖顯示選取的來源，在影片中，將選取的網頁 **Excel** 活頁簿。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_1.png)
 
-Regardless of which data source you choose, Power BI connects to that data source, and shows you the data available from that source. The following image is another example, this one is from a Web page that analyzes different states and some interesting retirement statistics.
+不論您選擇哪一個資料來源，Power BI 連接到該資料來源，並顯示您從該來源中可用的資料。 下圖是另一個範例中，從分析不同狀態，以及一些有趣的停用統計資料的網頁上，此種情況。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_2.png)
 
-In Power BI Desktop <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, you can begin to build reports.
+在 Power BI Desktop **報表** ] 檢視中，您可以開始建立報表。
 
-The <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view has five main areas:
+ **報表** 檢視有五個主要區域︰
 
-1.  The ribbon, which displays common tasks associated with reports and visualizations
-2.  The <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, or canvas, where visualizations are created and arranged
-3.  The <bpt id="p1">**</bpt>Pages<ept id="p1">**</ept> tab area along the bottom, which lets you select or add a report page
-4.  The <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, where you can change visualizations, customize colors or axes, apply filters, drag fields, and more
-5.  The <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, where query elements and filters can be dragged onto the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view, or dragged to the <bpt id="p3">**</bpt>Filters<ept id="p3">**</ept> area of the <bpt id="p4">**</bpt>Visualizations<ept id="p4">**</ept> pane
+1.  功能區中，可顯示報表和視覺效果與相關聯的一般工作
+2.   **報表** 檢視或畫布上，建立並排列視覺效果，
+3.   **頁面** 索引標籤區域底部，可讓您選取或新增報表] 頁面
+4.   **視覺效果** ] 窗格中，您可以在其中變更視覺效果，自訂色彩或軸、 套用篩選器、 拖曳欄位，
+5.   **欄位** ] 窗格中，其中查詢項目和篩選器可以將它們拖曳至 **報表** 檢視，或拖曳至 **篩選** 區域 **視覺效果** 窗格
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_3.png)
 
-The <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane can be collapsed by selecting the small arrow along the edge, providing more space in the <bpt id="p3">**</bpt>Report<ept id="p3">**</ept> view to build cool visualizations. When modifying visualizations, you'll also see these arrows pointing up or down, which means you can expand or collapse that section, accordingly.
+ **視覺效果** 和 **欄位** 窗格可摺疊選取邊緣，提供更多的空間中的小箭頭 **報表** 檢視，以建立酷炫的視覺效果。 修改時視覺效果，您也會看到這些箭號指向向上或向下，這表示您可以展開或摺疊該區段中，依此。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_4.png)
 
-To create a visualization, just drag a field from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list onto the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view. In this case, let’s drag the State field from <bpt id="p1">*</bpt>RetirementStats<ept id="p1">*</ept>, and see what happens.
+若要建立視覺效果，只需要將欄位從 **欄位** 清單拖曳至 **報表** 檢視。 在此情況下，我們將從 [狀態] 欄位 *RetirementStats*, ，並看看結果如何。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_5.png)
 
-Look at that... Power BI Desktop automatically created a map-based visualization, because it recognized that the State field contained geolocation data.
+看看 …Power BI Desktop 自動建立地圖視覺效果，因為它會辨識 [狀態] 欄位包含地理位置資料。
 
-Now let’s fast-forward a bit, and after creating a report with a few visualizations, we’re ready to publish this to the Power BI service. On the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon in Power BI Desktop, select <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept>.
+現在讓我們快速一點，且之後建立報表具有少數的視覺效果，我們已經準備好發行至 Power BI 服務。 在 **首頁** 功能區中選取 Power BI Desktop **發行**。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_6.png)
 
-You’ll be prompted to sign in to Power BI.
+將提示您登入 Power BI。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_7.png)
 
-When you've signed in and the publish process is complete, you see the following dialog. You can select the link (below <bpt id="p1">**</bpt>Success!<ept id="p1">**</ept>) to be taken to the Power BI service, where you can see the report you just published.
+當您已登入並發佈程序已完成時，您會看到下列對話方塊。 您可以選取的連結 (如下 **成功 ！**) 即可移至 Power BI 服務，您可以在其中看到報表您剛剛發行。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_8.png)
 
-When you sign in to Power BI, you'll see Power BI Desktop file you just published in the service. In the image below, the report created in Power BI Desktop is shown in the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> section.
+當您登入 Power BI 時，您會看到 Power BI Desktop 檔案您剛發行服務中。 下圖中，在 Power BI Desktop 中建立的報表以顯示 **報表** 一節。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_9.png)
 
-In that report, I can choose the <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept> icon to pin that visual to a dashboard. The following image shows the pin icon highlighted with a bright box and arrow.
+在該報表中，我可以選擇 **Pin** 圖示釘選視覺儀表板。 下圖顯示亮方塊與箭號以反白顯示的釘選圖示。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_10.png)
 
-When I select that, the following dialog appears, letting me pin the visual to an existing dashboard, or to create a new dashboard.
+當我選取該項目時，會顯示下列對話方塊，好讓我釘選到現有的儀表板，或建立新的儀表板的視覺。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_11.png)
 
-When we pin a couple of visuals from our report, we can see them in the dashboard.
+當我們可以從我們的報表釘選幾個視覺效果時，我們可以看到儀表板。
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_12.png)
 
-There’s a lot more you can do with Power BI, of course, such as sharing the dashboards you create. We'll discuss sharing later on in this course.
+還有更多您可以透過 Power BI，當然，例如共用您所建立的儀表板。 我們將討論共用稍後在本課程。
 
-Next, we look at a feature that can automatically create dashboards for you, just by connecting to a cloud service like Facebook, Salesforce, and many others.
+接下來，我們可以自動建立儀表板，只是藉由連接到雲端服務，例如 Facebook、 Salesforce 和許多其他功能。

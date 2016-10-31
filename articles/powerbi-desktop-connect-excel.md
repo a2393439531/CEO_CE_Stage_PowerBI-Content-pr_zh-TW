@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to Excel in Power BI Desktop"
-   description="Easily connect to and use Excel workbook data in Power BI Desktop"
+   pageTitle="連接到 Excel 中 Power BI Desktop"
+   description="輕鬆地連接到和使用 Power BI Desktop 中的 Excel 活頁簿資料"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,47 +20,47 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect to Excel in Power BI Desktop
+# 連接到 Excel 中 Power BI Desktop
 
-Connecting to an Excel workbook from Power BI Desktop is straightforward, and this article walks you through the steps.
+從 Power BI Desktop 連接到 Excel 活頁簿可以很簡單，，本文將逐步引導您。
 
-In Power BI Desktop, select <bpt id="p1">**</bpt>Get Data &gt; Excel<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon.
+在 Power BI Desktop 選取 **取得資料 > Excel** 從 **首頁** 功能區。
 
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_1.png)
 
-Select your workbook from the <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> dialog that appears.
+選取您的活頁簿從 **開啟** 出現的對話方塊。
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_2.png)
 
-Power BI Desktop presents the tables on other data elements from the workbook in the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window. When you select a table in the left pane, a preview of the data appears in the right pane.
+Power BI Desktop 顯示資料表資料的其他項目中的活頁簿 **導覽** 視窗。 當您在左窗格中選取資料表時，資料的預覽會出現在右窗格中。
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_3.png)
 
-You can select the Load button to import the data, or if you want to edit the data using <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> before bringing it into Power BI Desktop, select the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> button.
+您可以選取 [載入] 按鈕，匯入資料，或如果您想要編輯的資料使用 **查詢編輯器** 前將它送回 Power BI Desktop，請選取 **編輯** ] 按鈕。
 
-When you load the data, Power BI Desktop displays the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> window and displays the activity associated with loading the data.  
+當您載入資料時，會顯示 Power BI Desktop **載入** 視窗，並顯示活動相關聯載入資料。  
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_4.png)
 
-When complete, Power BI Desktop displays the tables and fields it imported from your Excel workbook in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, on the right side of the Desktop.
+Power BI Desktop 完成時，顯示的資料表和欄位從 Excel 活頁簿匯入它 **欄位** ] 窗格中，在桌面的右邊。
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_5.png)
 
-And that’s it!
+這樣就大功告成了 ！
 
-You’re now ready to use the imported data from your Excel workbook in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as other Excel workbooks, databases, or any other data source.
+您現在可以開始使用 Power BI Desktop 中的 Excel 活頁簿匯入的資料建立視覺效果，報表或其他您可能想要使用連線，例如其他 Excel 活頁簿、 資料庫或任何其他資料來源匯入的資料進行互動。
 
 
 ## 詳細資訊
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿有各式各樣的資料，您可以連接到使用 Power BI Desktop。 如需有關資料來源的詳細資訊，請參閱下列資源︰
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [開始使用 Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Power BI Desktop 中的資料來源](powerbi-desktop-data-sources.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [圖形，並結合資料與 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   
+-   [連接至 Power BI Desktop 中的 CSV 檔案](powerbi-desktop-connect-csv.md)   
 
--   [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
+-   [Power BI Desktop 中直接輸入資料](powerbi-desktop-enter-data-directly-into-desktop.md)   

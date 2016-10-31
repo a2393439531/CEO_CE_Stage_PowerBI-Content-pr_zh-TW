@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: ArcGIS in Power BI"
-   description="Tutorial: ArcGIS in Power BI"
+   pageTitle="在 Power BI 中的教學課程︰ ArcGIS"
+   description="在 Power BI 中的教學課程︰ ArcGIS"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,12 +21,12 @@
    ms.date="09/26/2016"
    ms.author="mihart"/>
 
-# Tutorial: ArcGIS maps in Power BI (Preview)
+# 在 Power BI （預覽） 中的教學課程︰ ArcGIS 對應
 
-ArcGIS Maps for Power BI (Preview) by <bpt id="p1">[</bpt>Esri<ept id="p1">](https://www.Esri.com/powerbi)</ept> geo-enables Power BI. ArcGIS Maps offer enhanced mapping capability, demographic data, and even more compelling map visualizations so you can tell your best story.
+由 Power BI （預覽） 的 ArcGIS 對應 [Esri](https://www.Esri.com/powerbi) 地理區域可讓 Power BI。 ArcGIS 對應提供增強的對應功能、 人口統計資料，以及更多吸引人的地圖視覺效果，因此您可以告訴您最佳的故事。
 
-## User consent
-ArcGIS Maps for Power BI is provided by <bpt id="p1">[</bpt>Esri<ept id="p1">](https://www.esri.com)</ept>. Your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visual, need to accept the consent dialog.
+## 使用者同意
+Power BI 的 ArcGIS 對應由 [Esri](https://www.esri.com)。 您使用的 ArcGIS 對應 Power bi 是主體 Esri 的條款及隱私權原則。 Power BI 使用者想要使用 Power BI 視覺物件，需要 ArcGIS 對應接受同意對話方塊。
 
 **資源**
 
@@ -34,174 +34,181 @@ ArcGIS Maps for Power BI is provided by <bpt id="p1">[</bpt>Esri<ept id="p1">](h
 
 [隱私權原則](https://go.microsoft.com/fwlink/?LinkID=826323)
 
-[ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
+[Power BI 產品頁面的 ArcGIS 對應](https://www.esri.com/powerbi)
 
-## Enable the ArcGIS map preview
+## 啟用 ArcGIS 地圖預覽
 
-The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>. To enabled <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept>:
+ArcGIS 對應 visual 預覽中，並必須在 Power BI 中啟用。 本教學課程使用 [零售分析範例](powerbi-sample-retail-analysis-take-a-tour.md)。 為已啟用 **ArcGIS 對應 Power bi**:
 
-1. Select <bpt id="p1">**</bpt>File &gt; Options and Settings &gt; Options &gt; Preview Features<ept id="p1">**</ept>.
+1. 選取 **檔 > 選項和設定 > 選項 > 預覽功能**。
 
-2. Select the <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept> checkbox. You'll need to restart Power BI after you make the selection.
+2. 選取 **ArcGIS 對應 Power bi** 核取方塊。 您必須重新啟動 Power BI 之後進行選擇。
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
 
-3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
+3. 編輯檢視中開啟報表，Power BI 圖示 ArcGIS 對應從窗格中選取的視覺效果。
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
 
-4. Power BI displays the user consent dialog, select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.
+4. Power BI 顯示使用者同意對話方塊中，選取 **確定** 以繼續。
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-consent2.png)
 
-5. Power BI adds an empty ArcGIS map template to the report canvas.
+5. Power BI 報表畫布中加入空的 ArcGIS 對應範本。
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
 
-## Create an AcrGIS map visual
-Take the following steps to create a <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept>.
+## 建立 visual AcrGIS 對應
+執行下列步驟來建立 **ArcGIS 對應 Power bi**。
 
-1. From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, drag a data field to the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Latitude<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Longitude<ept id="p4">**</ept> buckets.
+1. 從 **欄位** ] 窗格中，拖曳資料欄位到 **位置** 或 **緯度** 和 **經度** 值區。
 
-    >[AZURE.NOTE] Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+    >[AZURE.NOTE] Power BI 會自動偵測您所選取的欄位最適合檢視做為圖形或地圖上的點。 您可以調整設定 （請參閱下文） 中的預設值。
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
-2.  From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, drag a measure to the <bpt id="p2">**</bpt>Size<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Color<ept id="p3">**</ept> buckets to adjust how the data is shown.
+2.  從 **欄位** 窗格拖曳到量值 **大小** 或 **色彩** 調整資料顯示方式的值區。
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2.png)
 
 
-## Settings and formatting for AcrGIS maps
-To access <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept> formatting features:
+## 設定和格式化 AcrGIS 地圖
+若要存取 **ArcGIS 對應 Power bi** 格式化功能︰
 
-1. Select the In-Focus edit mode icon within the visual.
+1. 選取在焦點編輯視覺效果中的 [模式] 圖示。
    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-mode-icon2.png)
 
-2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
+2. 透過視覺效果中包含的功能區，存取其他功能。 每項功能，當選取此選項，開啟 [工作] 窗格提供詳細的選項。
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
 
-   >  [AZURE.NOTE]  For more information about the settings and features, see <bpt id="p1">**</bpt>Detailed documentation<ept id="p1">**</ept> below.
+   >  [AZURE.NOTE]  如需有關設定和功能的詳細資訊，請參閱 **詳細文件** 下方。
 
-3. To return to the report, select <bpt id="p1">**</bpt>Back to Report<ept id="p1">**</ept> from the top-left corner of your report canvas.
+3. 若要返回報表，請選取 **回到報表** 從報表畫布的左上角。
 
-## Detailed documentation
-<bpt id="p1">**</bpt>Esri<ept id="p1">**</ept> provides <bpt id="p2">[</bpt>comprehensive documentation<ept id="p2">](https://go.microsoft.com/fwlink/?LinkID=828772)</ept> on the feature set of <bpt id="p3">**</bpt>ArcGIS Maps for Power BI<ept id="p3">**</ept>.
+## 詳細的文件
 
-### Features overview
+            **Esri** 提供 [完整文件](https://go.microsoft.com/fwlink/?LinkID=828772) 上的功能集 **ArcGIS 對應 Power bi**。
 
-#### Base Maps
-Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.  Streets is ArcGIS's standard base map.
+### 功能概觀
 
-To apply a base map select it in the task pane.
+#### 基底的對應
+提供四種基本的對應︰ 暗灰色畫布、 光線灰色畫布、 OpenStreetMap 和街道。  街道是 ArcGIS 的標準基本地圖。
+
+若要套用基底對應選取它的工作窗格中。
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps2.png)
 
-#### Location type
-ArgGIS Maps for Power BI automatically detects the best way to show data on the map. It selects from Points or Boundaries. The Location type options allow you to fine tune these selections.
+#### 位置類型
+Power bi ArgGIS 對應會自動偵測在地圖上顯示資料的最佳方式。 它會選取點或範圍。 位置類型選項可讓您微調這些選取項目。
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types2.png)
 
-<bpt id="p1">**</bpt>Boundaries<ept id="p1">**</ept> will only work if your data contains standard geographic values. Esri automatically figures out the shape to show on the map. Standard geographic values include countries, provinces, zip codes, etc. But just like with GeoCoding, Power BI may not detect the field should be a boundary by default, or it may not have a boundary for your data.  
 
-#### Map theme
-Four map themes are provided. Location only and Size themes are automatically chosen based on the fields you bind to the location and size buckets in the Fields pane. We're currently using <bpt id="p1">**</bpt>Size<ept id="p1">**</ept>, so let's change to <bpt id="p2">**</bpt>Heat map<ept id="p2">**</ept>.  
+            **界限** 將唯一的工作，如果您的資料包含標準地理的值。 Esri 自動找出要在地圖上顯示的形狀。 標準地理的值包括國家/地區、 省、 郵遞區號等。但就像使用地理編碼，Power BI 可能無法偵測的欄位應該會根據預設，界限，或可能沒有資料的範圍。  
+
+#### 地圖主題
+提供四個對應主題。 只有位置和大小的主題會自動選擇根據您繫結至的位置和大小值區，在 [欄位] 窗格中的欄位。 我們目前正在使用 **大小**, ，因此我們將變更為 **熱量分佈圖**。  
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme2.png)
 
 <table>
-<tr><th>Theme</th><th>描述</th>
+<tr><th>佈景主題</th><th>描述</th>
 <tr>
-<td>Location Only</td>
-<td>Plots data points or filled boundaries on the map based on the settings in Location Type.</td>
+<td>只有位置</td>
+<td>繪製資料點或在 [位置類型設定為基礎的地圖上填滿的界限。</td>
 </tr>
 <tr>
-<td>Heat Map</td>
-<td>Plots an intensity plot of data on the map.</td>
+<td>熱量分佈圖</td>
+<td>繪製資料在地圖上的濃度繪圖。</td>
 </tr>
 <tr>
 <td>大小</td>
-<td>Plots data points on the map based that are sized based on the value in the size bucket in the fields pane.</td>
+<td>基礎地圖上的圖資料點，調整大小會根據大小值區中的欄位] 窗格中的值。</td>
 </tr>
 <tr>
 <td>群集</td>
-<td>Plot the count of data points in regions on the map. </td>
+<td>繪製在地圖上的區域中的資料點的計數。 </td>
 </tr>
 </table>
 
-#### Symbol style
-Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme.
+#### 符號樣式
+符號樣式可讓您微調如何呈現在地圖上的資料。 符號樣式會區分內容根據選取的位置類型和對應的主題。
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style2.png)
 
-### Reference Layer
-####  Reference layer - Demographics
-ArcGIS Maps for Power BI provides a selection of demographic layers that help contextualize data from Power BI.
+### 參考圖層
+####  參考圖層的人口統計資料
+Power BI 的 ArcGIS 對應提供選取的人口統計的圖層，以協助 contextualize Power BI 中的資料。
 
-1. Select the <bpt id="p1">**</bpt>Reference layer<ept id="p1">**</ept> tab and choose <bpt id="p2">**</bpt>Demographics<ept id="p2">**</ept>.
+1. 選取 **參考層** 索引標籤，然後選擇 [ **人口統計**。
 
-2. Each layer listed has a checkbox. Add a checkmark to add that layer to the map.  In this example we've added average household income.
+2. 列出每個圖層都有一個核取方塊。 加入將該圖層加入至對應的核取記號。  在此範例中，我們已加入平均家庭收入。
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
 
-2. Each layer is interactive as well. Just as you can hover over a bubble to see the details, you can click a shaded area on the map to see the details.
+2. 每個圖層也會是互動式。 就像您可以停留泡泡檢視的詳細資訊，您可以按一下以查看詳細資料地圖上的陰影的區域。
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
 
 
-#### Reference layer - ArcGIS
-ArcGIS Online provides the ability for organizations to publish public web maps. Additionally, Esri provides a curated set of web maps through Living Atlas. In the ArcGIS tab, you can search all public web maps or Living Atlas maps, and add them to the map as reference layers.
+#### 參考圖層-ArcGIS
+ArcGIS Online 可讓您的組織發行公用 web 對應。 此外，Esri 提供透過住 Atlas web 地圖策劃的組合。 在 ArcGIS] 索引標籤中，您可以搜尋所有的公用 web 對應或住 Atlas 對應，並將活動當做參考圖層加入至對應。
 
-1. Select the <bpt id="p1">**</bpt>Reference layer<ept id="p1">**</ept> tab and choose <bpt id="p2">**</bpt>ArcGIS<ept id="p2">**</ept>.
+1. 選取 **參考層** 索引標籤，然後選擇 [ **ArcGIS**。
 
-2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
+2. 輸入搜尋字詞，然後選取 [地圖圖層。 在此範例中我們選擇美國國會學區。
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)   
-3. To see the details, select a shaded area to open the <bpt id="p1">_</bpt>Select from reference layer<ept id="p1">_</ept>: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
+3. 詳細資訊，請選取灰色的區域，以開啟 _參考層選取_︰ 使用參考圖層上的選取範圍或物件選取參考圖層] 工具。
 
-## Selecting Data points
-ArcGIS Maps for Power BI allows three selection modes.
+## 選取資料點
+Power BI 的 ArcGIS 對應可讓三個的選取模式。
 
-Change the selection mode using switch:
+變更選取模式，使用參數︰
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png) 選取個別資料點。
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points.
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) 在地圖上繪製的矩形，並選取包含的資料點。
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) 可讓界限或多邊形內參考圖層，以用來選取包含的資料點。
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> a maximum of 250 data points can be selected at a time.
 
-## Getting help
-<bpt id="p1">**</bpt>Esri<ept id="p1">**</ept> provides <bpt id="p2">[</bpt>comprehensive documentation<ept id="p2">](https://go.microsoft.com/fwlink/?LinkID=828772)</ept> on the feature set of <bpt id="p3">**</bpt>ArcGIS Maps for Power BI<ept id="p3">**</ept>.
+            **注意︰** 250 資料點最多可以選取一次。
 
-You can ask questions and find answers on the Power BI <bpt id="p1">[</bpt>community thread related to <bpt id="p2">**</bpt>ArcGIS Maps for Power BI<ept id="p2">**</ept><ept id="p1">](https://go.microsoft.com/fwlink/?LinkID=828771)</ept> to find the latest information or to report issues.
+## 取得說明
 
-If you have a suggestion for an improvement, please submit them to <bpt id="p1">[</bpt>Power BI's ideas list<ept id="p1">](https://ideas.powerbi.com)</ept>.
+            **Esri** 提供 [完整文件](https://go.microsoft.com/fwlink/?LinkID=828772) 上的功能集 **ArcGIS 對應 Power bi**。
 
-## Managing use of ArcGIS Maps for Power BI within your organization
+您可以詢問問題並且尋找解答 Power bi [社群執行緒相關 **ArcGIS 對應 Power bi**](https://go.microsoft.com/fwlink/?LinkID=828771) 來尋找最新的資訊或回報問題。
 
-Power BI provides the ability for users, tenant administrators, and IT administrators to manage whether to use ArcGIS Maps for Power BI.
+如果您有一大改進的建議，請將它們送出至 [Power BI 想法清單](https://ideas.powerbi.com)。
 
-<bpt id="p1">**</bpt>User options<ept id="p1">**</ept> In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling it on the security tab in options. When disabled, ArcGIS Maps will not load by default.
+## 管理 ArcGIS 對應的 Power bi 您組織中使用
+
+Power BI 可讓使用者、 租用戶系統管理員和 IT 系統管理員來管理是否要使用 Power BI ArcGIS 地圖。
+
+
+            **使用者選項** 在 Power BI Desktop 中，使用者可以停止使用 Power bi 的 ArcGIS 對應選項中的 [安全性] 索引標籤上停用。 停用時，依預設將不會載入 ArcGIS 對應。
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-desktop-security-dialog2.png)
 
-In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling it on the ArcGIS Maps for Power BI (Preview) tab in user Settings. When disabled, ArcGIS Maps will not load by default.
+在 Power BI 服務中，使用者可以停止使用 Power bi 的 ArcGIS 對應 ArcGIS 的對應中的使用者設定的 Power BI （預覽）] 索引標籤上停用。 停用時，依預設將不會載入 ArcGIS 對應。
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings2.png)
 
-<bpt id="p1">**</bpt>Tenant admin options<ept id="p1">**</ept> In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
+
+            **租用戶系統管理員選項** 在 PowerBI.com，租用戶系統管理員可以防止租用戶的所有使用者使用 Power bi ArcGIS 對應，藉由停用。 當發生這種情況時，Power BI 將不會再看見 ArcGIS 對應 Power BI 視覺效果] 窗格中的圖示。
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-arcgis-admin-portal2.png)
 
-<bpt id="p1">**</bpt>IT Administrator options<ept id="p1">**</ept> Power BI Desktop supports using <bpt id="p2">**</bpt>Group Policy<ept id="p2">**</ept> to disable ArcGIS Maps for Power BI across an organization's deployed computers.
+
+            **IT 系統管理員選項** Power BI Desktop 支援使用 **群組原則** 停用 ArcGIS 對應整個組織的 Power BI 的部署電腦。
 
 <table>
 <tr><th>屬性</th><th>值</th>
 </tr>
 <tr>
 <td>key</td>
-<td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<td>Software\Policies\Microsoft\Power BI 桌面</td>
 </tr>
 <tr>
 <td>valueName</td>
@@ -209,11 +216,11 @@ In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling 
 </tr>
 </table>
 
-A value of 1 (decimal) enables ArcGIS Maps for Power BI.
+值為 1 （十進位） 可讓 Power bi ArcGIS 的對應。
 
-A value of 0 (decimal) disable ArcGIS Maps for Power BI.
+值為 0 （十進位） 停用 Power BI ArcGIS 對應。
 
-You can use the provided <bpt id="p1">**</bpt>Group Policy<ept id="p1">**</ept> templates to quickly add the required configuration to your <bpt id="p2">**</bpt>Group Policy<ept id="p2">**</ept>.
+您可以使用提供 **群組原則** 範本來快速新增必要的設定，以您 **群組原則**。
 
 **範本**
 
@@ -222,16 +229,17 @@ You can use the provided <bpt id="p1">**</bpt>Group Policy<ept id="p1">**</ept> 
 [PowerBIEsri.admx](./groupPolicyTemplates/PowerBIEsri.admx)
 
 ## 常見問題
-**Is there any charge for using ArcGIS Maps for Power BI?**
+**有的 Power bi 使用 ArcGIS 對應任何費用嗎？**
 
-The ArcGIS Map for Power BI (Preview) is available to all Power BI users at no additional cost. It is a component provided by <bpt id="p1">**</bpt>Esri<ept id="p1">**</ept> and your use is subject to the terms and privacy policy provided by <bpt id="p2">**</bpt>Esri<ept id="p2">**</ept> as noted earlier in this article.
+ArcGIS 對應 Power bi （預覽） 可供所有 Power BI 使用者不需要額外成本。 它是一個元件所提供 **Esri** 受的條款及隱私權原則所提供貴用戶使用，而且 **Esri** 如本文稍早所述。
 
-**Does ArcGIS Maps for Power BI support Esri Shapefiles?**
+**Power BI 的 ArcGIS 對應是否支援 Esri 形狀檔？**
 
-ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the <bpt id="p1">[</bpt>Shape Maps for Power BI Desktop (Preview)<ept id="p1">](powerbi-desktop-shape-map.md)</ept>.
+ArcGIS 對應 Power bi 會自動偵測國家/地區、 省/市和郵遞區號等的標準界限。 如果您需要提供自己的圖形還可以使用 [Power BI Desktop （預覽） 的圖形對應](powerbi-desktop-shape-map.md)。
 
-**Can I connect to my ArcGIS Online account from Power BI?**
+**我可以連接至我的帳戶 ArcGIS 線上從 Power BI 嗎？**
 
-尚未提供此服務。 <bpt id="p1">[</bpt>Vote for this idea<ept id="p1">](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases )</ept> and we'll send you an email when we start working on this feature.  
+尚未提供此服務。 
+            [這個概念的投票](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases ) ，我們會傳送一封電子郵件時我們開始進行這項功能。  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

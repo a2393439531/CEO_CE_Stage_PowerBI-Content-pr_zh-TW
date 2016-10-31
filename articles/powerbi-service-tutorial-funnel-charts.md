@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Funnel charts in Power BI"
-   description="Tutorial: Funnel charts in Power BI"
+   pageTitle="教學課程︰ 漏斗 Power BI 中的圖表"
+   description="教學課程︰ 漏斗 Power BI 中的圖表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,118 +20,121 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Tutorial: funnel charts in Power BI
+# 教學課程︰ 漏斗 Power BI 中的圖表
 
-A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead <ph id="ph1">\&gt;</ph> Qualified Lead <ph id="ph2">\&gt;</ph> Prospect <ph id="ph3">\&gt;</ph> Contract <ph id="ph4">\&gt;</ph> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
+漏斗圖可協助您以視覺化方式檢視有連續的連線的階段線性程序。 例如，追蹤客戶的各個階段銷售漏斗︰ 導致 \> 限定導致 \> 潛在 \> 合約 \> 關閉。  您一眼的漏斗形狀傳達正在追蹤的程序的健全狀況。
 
-Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
+漏斗圖的每個階段代表總計的百分比。 因此，在大部分情況下，漏斗圖形狀類似漏斗-第一階段的最大、 與每個後續的階段小於其前身產品。  Pear 形漏斗圖也很有用，--它可以找出處理序中的問題。  但是，第一個階段，「 攝取 」 階段中，通常是最大值。
 
 ![](media/powerbi-service-tutorial-funnel-charts/funnelplain.png)
 
-## When to use a funnel chart
+## 何時使用漏斗圖
 
-Funnel charts are a great choice:
+漏斗圖是相當好的選擇︰
 
--   when the data is sequential and moves through at least 4 stages.
+-   當資料是循序的而且至少 4 個階段中移動。
 
--   when the number of "items" in the first stage is expected to be greater than the number in the final stage.
+-   當 「 項目 」 中的第一個階段的數目預計要大於數中的最後階段。
 
--   to calculate potential (revenue/sales/deals/etc.) by stages.
+-   若要計算階段可能 （營收/sales/處理/等等）。
 
--   to calculate and track conversion and retention rates.
+-   計算並追蹤轉換及保留率。
 
--   to reveal bottlenecks in a linear process.
+-   若要顯示線性程序中的瓶頸。
 
--   to track a shopping cart workflow.
+-   若要追蹤的購物車 」 工作流程。
 
--   to track the progress and success of click-through advertising/marketing campaigns.
+-   若要追蹤進度和成功的點選連結廣告/行銷活動。
 
-## Working with funnel charts
-funnel charts:
+## 使用漏斗圖表
+漏斗圖︰
 
--   Can be pinned from reports and from Q&amp;A.
+-   可釘選的報表，以及從問與答。
 
--   Can be sorted.
+-   您可以排序。
 
--   Support multiples.
+-   支援倍數。
 
--   Can be highlighted and cross-filtered by other visualizations on the same report page.
+-   可以是反白顯示和交叉篩選由相同的報表頁面上的其他視覺效果。
 
--   Can be used to highlight and cross-filter other visualizations on the same report page.
+-   可用來反白顯示和交叉篩選在相同的報表] 頁面上的其他視覺效果。
 
-## Create a basic funnel chart
+## 建立基本的漏斗圖
 
-Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
+這個影片會建立漏斗圖使用銷售和行銷範例。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g" frameborder="0" allowfullscreen></iframe>
 
 
-Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
+現在建立您自己漏斗圖會顯示在每個我們的銷售階段我們有的機會數目。
 
-These instructions use the Opportunity Tracking Sample. To follow along, <bpt id="p1">[</bpt>download the sample<ept id="p1">](powerbi-sample-downloads.md)</ept>, sign in to Power BI and select <bpt id="p2">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Samples <ph id="ph2">\&gt;</ph> Opportunity Analysis Sample <ph id="ph3">\&gt;</ph> Connect<ept id="p2">**</ept>.
+這些指示使用機會追蹤範例。 如果要跟著做， [範例下載](powerbi-sample-downloads.md), ，登入 Power BI，然後選取 **取得資料 \> 範例 \> 機會分析範例 \> 連接**。
 
-1. Start on a <bpt id="p1">[</bpt>blank report page <ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept>in <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> and select the <bpt id="p3">**</bpt>SalesStage<ept id="p3">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p4">**</bpt>Sales Stage<ept id="p4">**</ept> field.  
+1. 開啟 [空白報表頁面 ](powerbi-service-add-a-page-to-a-report.md)中 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md) ，然後選取 **SalesStage** \> **銷售階段** 欄位。  
 
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelSelectField_new.png)
 
-2. <bpt id="p1">[</bpt>Convert the chart<ept id="p1">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept> to a funnel. Notice that <bpt id="p1">**</bpt>Sales Stage<ept id="p1">**</ept> is in the <bpt id="p2">**</bpt>Group<ept id="p2">**</ept> well. 
+2. 
+            [將圖表轉換](powerbi-service-change-the-type-of-visualization-in-a-report.md) 漏斗。 請注意， **銷售階段** 處於 **群組** 良好。 
 
-3. From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Fact<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Opportunity Count<ept id="p3">**</ept>.
+3. 從 **欄位** 窗格中，選取 **事實** \> **商機計數**。
 
     ![](media/powerbi-service-tutorial-funnel-charts/funnelFinal_new.png)
 
-4. Hovering over a bar displays a wealth of information.
+4. 滑鼠游標停留於列顯示的資訊。
 
-    -   The name of the stage
+    -   階段的名稱
 
-    -   Number of opportunities currently in this stage
+    -   在這個階段中目前的機會的數目
 
-    -   Overall conversion rate (% of Lead) 
+    -   整體的轉換比率 （負責人 %） 
 
-    -   Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
+    -   --階段 （也稱為卸除率） 也就是前一個階段 （在此情況下，提案階段/方案階段） 的 %
 
     ![](media/powerbi-service-tutorial-funnel-charts/funnelHover_new.png)
 
-5. <bpt id="p1">[</bpt>Add the Funnel as a dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+5. 
+            [做為儀表板] 的磚加入漏斗](powerbi-service-dashboard-tiles.md)。 
 
-6. <bpt id="p1">[</bpt>Save the report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+6. 
+            [將報表儲存](powerbi-service-save-a-report.md)。
 
-## Highlighting and cross-filtering
+## 反白顯示和交叉篩選
 
-For information about using the Filters pane, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+使用 [篩選] 窗格的相關資訊，請參閱 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report.md)。
 
-Highlighting a bar in a funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
+反白顯示一條分隔線漏斗交叉篩選...在報表頁面上的其他視覺效果，反之亦然。 若要跟著做，加入包含漏斗圖 [報表] 頁面中的少數的多個視覺效果。
 
-1.  On the funnel, select the <bpt id="p1">**</bpt>Proposal<ept id="p1">**</ept> bar. This cross-highlights the other visualizations on the page. 
+1.  在漏斗圖中，選取 **提案** 列。 這個跨-反白顯示在頁面上的其他視覺效果。 
 
     ![](media/powerbi-service-tutorial-funnel-charts/FunnelChartNoOwl.gif)
 
-    >[AZURE.TIP]  Use CTRL to multi-select. 
+    >[AZURE.TIP]  使用多重選取的 ctrl 鍵。 
 
-2.  In the "Factored Revenue by Opportunity" chart, highlight the <bpt id="p1">**</bpt>Large<ept id="p1">**</ept> bar to cross-filter the other visualizations on the page, including the funnel chart.
+2.  在 「 分解營收的商機 」 圖表中，反白顯示 **大** 列交叉篩選] 頁面上，包括漏斗圖上的其他視覺效果。
 
-3. To set preferences for how visuals cross-highlight and cross-filter each other, see <bpt id="p1">[</bpt>Visual interactions in Power BI<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
+3. 若要設定如何視覺效果跨反白顯示和交叉篩選彼此的喜好設定，請參閱 [Power BI 中的視覺化互動](powerbi-service-visual-interactions.md)
 
-## Create a funnel chart in Q&amp;A
+## 建立漏斗圖在問與答
 
-Highlight the dashboard that has at least one visualization pinned from the "Opportunity Tracking" dataset.  When you type a question in Q&amp;A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, <bpt id="p1">[</bpt>Power BI - basic concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+反白顯示已釘選 」 機會追蹤 」 資料集至少一個視覺效果的儀表板。  當您輸入問與答問題時，Power BI 搜尋中相關聯的所有資料集的答案 （具有磚釘選到） 選取的儀表板。 如需詳細資訊，請參閱 [Power BI-基本概念](powerbi-service-basic-concepts.md)。
 
-1.  Highlight a dashboard that has at least one tile pinned from the Opportunity Tracking dataset.
+1.  反白顯示具有至少一個 tile 機會追蹤集中釘選儀表板。
 
-2.   Begin typing your question in the Q&amp;A question box.
+2.   開始在問與答問題方塊中輸入您的問題。
 
     ![](media/powerbi-service-tutorial-funnel-charts/funnelFromQnA_new.png)
 
-    Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
+    務必讓 Power BI 知道哪一個視覺效果 」 做為漏斗 」 新增您想使用的型別。
 
 ## 請參閱
 
-[Add a visualization to a report](powerbi-custom-visuals-add-to-report.md)
+[報表中加入視覺效果](powerbi-custom-visuals-add-to-report.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+[釘選視覺效果的儀表板](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

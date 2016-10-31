@@ -1,12 +1,12 @@
-<properties pageTitle="Git commands for staging an new or updated article" description="Steps for previewing new and updated articles." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+<properties pageTitle="Git 命令批次新的或更新的發行項" description="預覽全新和更新文件的步驟。" metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
-# Git commands for staging an article on the internal preview site
+# Git 命令批次內部預覽網站上的發行項
 
-Staging is now automated for private repository pull requests. See <bpt id="p1">[</bpt>Git commands for creating a new article or updating an existing article<ept id="p1">](git-commands-for-master.md)</ept>
+私用儲存機制提取要求現在就會自動執行。 請參閱 [Git 命令來建立新的發行項或更新現有的發行項](git-commands-for-master.md)
 
-> [AZURE.NOTE] Will revisit this article and add info as appropriate, depending on how we set up staging.
+> [AZURE.NOTE] 將會重新審視這份文件，並新增根據我們如何設定接移適當的資訊。
 
 <!--
 Follow the steps in this article to stage content to the internal staging site prior to releasing the article to the public site.

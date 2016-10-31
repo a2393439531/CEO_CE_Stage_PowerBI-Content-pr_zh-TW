@@ -1,21 +1,22 @@
 ## 限制
 
-Here is a list of the current limitations for row-level security on cloud models.
+以下是雲端模型的資料列層級安全性的目前限制的清單。
 
-- If you previously had roles/rules defined within the Power BI service, you will need to recreate them within Power BI Desktop.
-- You can define RLS only on the datasets created using Power BI Desktop client. If you want to enable RLS for datasets created with Excel, you will need to convert your files into PBIX files first. [進一步了解](powerbi-desktop-import-excel-workbooks.md)
-- Only ETL, and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
-- Q&amp;A and Cortana is not supported with RLS at this time. You will not see the Q&amp;A input box for dashboards if all models have RLS configured. This is on the roadmap, but a timeline is not available.
-- External sharing is not currently supported with datasets that use RLS.
+- 如果您先前已在 Power BI 服務中定義的角色/規則，您必須在 Power BI Desktop 中重新建立它們。
+- 您可以只在使用 Power BI Desktop 用戶端所建立的資料集上定義 RLS。 如果您想要啟用 RLS，建立與 Excel 的資料集，您必須先轉換成 PBIX 檔案的檔案。 [進一步了解](powerbi-desktop-import-excel-workbooks.md)
+- 只有 ETL 和支援 DirectQuery 連線。 即時連接至 Analysis Services 會在內部部署模型處理。
+- 問答集和 Cortana 與 RLS 不支援這一次。 您不會看到問與答讓儀表板的輸入的方塊，如果所有模型都有設定 RLS。 這是規劃，，但沒有時間軸。
+- 外部共用目前不支援使用 RLS 的資料集。
 
 ## 已知問題
 
-There is a known issue where you will receive an error message when trying to publish from Power BI Desktop if it was previously published. The scenario is as follows.
+這是已知的問題如果先前已從 Power BI Desktop 發行時，會收到錯誤訊息。 案例是，如下所示。
 
-1. Anna has a dataset that is publised to the Power BI service and has configured RLS.
+1. Anna 住在美國有 publised Power BI 服務且已設定 RLS 資料集。
 
-2. Anna updates the report in Power BI Desktop and re-publishes.
+2. 也會更新 Power BI Desktop 中的報表，並重新發佈。
 
-3. Anna will receive an error.
+3. 也會收到錯誤。
 
-<bpt id="p1">**</bpt>Workaround:<ept id="p1">**</ept> Re-publish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Files<ept id="p2">**</ept>. 
+
+            **因應措施︰** 重新發行 Power BI 服務中的 Power BI Desktop 檔案，直到此問題解決為止。 您可以達成選取 **取得資料** > **檔案**。 

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Enhanced Scatter charts in Power BI"
-   description="Tutorial: Enhanced Scatter charts in Power BI."
+   pageTitle="教學課程︰ 增強 Power BI 中的散佈圖"
+   description="教學課程︰ 增強 Power BI 中的散佈圖。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,97 +21,98 @@
    ms.author="mihart"/>
 
 
-# Tutorial: enhanced scatter charts in Power BI
+# 教學課程︰ 增強 Power BI 中的散佈圖
 
 ![](media/powerbi-service-tutorial-enhancedscatter/ES.png)
 
-The enhanced scatter chart is just one of the Microsoft-created custom visuals available for download from the <bpt id="p1">[</bpt>Power BI Visuals gallery<ept id="p1">](https://app.powerbi.com/visuals)</ept>.  An enhanced scatter chart is similar to a standard scatter or bubble chart in that it displays the relationship between 2 to 3 variables. The  difference is that you are not limited to circles (bubbles). You can display shapes, images, add images to the background, and much more.
+增強的散佈圖只是 Microsoft 建立自訂視覺效果可從下載 [Power BI 視覺效果庫](https://app.powerbi.com/visuals)。  增強的散佈圖是類似標準的散佈圖或泡泡圖，在於它會顯示 2 到 3 變數之間的關聯性。 差別您並不限於圓形 （泡泡）。 您可以顯示圖案，映像、 將影像加入至背景，以及其他等等。
 
-For more information, watch this video about <bpt id="p1">[</bpt>Enhanced Scatter<ept id="p1">](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)</ept>.
+如需詳細資訊，請觀看這段影片中有關 [增強散佈](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)。
 
-The steps below show just one way to use the enhanced scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual.
+下列步驟說明一個方法可用於增強的散佈圖-建立視覺效果對應的數量和位置，在網頁上的網頁點選次數。 使用您自己的資料集，並了解更多的方法使用這個新的自訂視覺效果。
 
->[AZURE.NOTE] Unfortunately, the dataset used in this tutorial is not available for download.
+>[AZURE.NOTE] 不幸的是，在本教學課程使用的資料集不是可供下載。
 
-## Start by creating a basic bubble chart
+## 開始建立基本的泡泡圖
 
-The bubble chart will display website traffic details.
+泡泡圖會顯示網站的流量詳細資料。
 
-1. Open a report in Editing View and add a blank page.
+1. 在 [編輯] 檢視中開啟報表，並加入空白頁。
 
-2. Add an empty scatter chart to the canvas by selecting the scatter chart icon.
+2. 選取散佈圖圖示，空的散佈圖加入至畫布。
 
-3. From the Fields pane, select <bpt id="p1">**</bpt>Page Usage<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>PageNum<ept id="p2">**</ept> to add it to  <bpt id="p3">**</bpt>Details<ept id="p3">**</ept>.
+3. 從 [欄位] 窗格中，選取 **Page Usage** \> **PageNum** 將它加入至  **詳細資料**。
 
-4. Select <bpt id="p1">**</bpt>Link<ept id="p1">**</ept>, and then the <bpt id="p2">**</bpt>x<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Y1<ept id="p3">**</ept> coordinates for those links. Ensure Power BI adds <bpt id="p1">**</bpt>Link<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept>, <bpt id="p3">**</bpt>x<ept id="p3">**</ept> to <bpt id="p4">**</bpt>X Axis<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Y1<ept id="p5">**</ept> to <bpt id="p6">**</bpt>Y Axis<ept id="p6">**</ept>.
+4. 選取 **連結**, ，然後 **x** 和 **Y1** 那些連結的座標。 確保將 Power BI **連結** 至 **圖例**, ，**x** 至 **X 軸**, ，和 **Y1** 至 **Y 軸**。
 
-5. Finally, add <bpt id="p1">**</bpt>Clicks<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Size<ept id="p2">**</ept>.
+5. 最後，加入 **按一下** 至 **大小**。
 
       ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
-I've created a typical bubble chart. The next steps demonstrate the advanced capabilities of the enhanced scatter.  
+我建立了典型的泡泡圖。 接下來的步驟示範增強散佈的進階的功能。  
 
-## Convert the bubble chart to an enhanced scatter chart
+## 增強的散佈圖圖表轉換成泡泡圖
 
-1. <bpt id="p1">[</bpt>Download the enhanced scatter visualization<ept id="p1">](powerbi-custom-visuals-download-from-the-gallery.md)</ept> and <bpt id="p2">[</bpt>add it to the report<ept id="p2">](powerbi-custom-visuals-add-to-report.md)</ept>.
+1. 
+            [下載增強的散佈視覺化](powerbi-custom-visuals-download-from-the-gallery.md) 和 [加入報表](powerbi-custom-visuals-add-to-report.md)。
 
-2. If you receive a message asking you to enable custom visuals, read the warning and select <bpt id="p1">**</bpt>Enable custom visuals<ept id="p1">**</ept>.
+2. 如果您收到訊息，詢問您要啟用自訂視覺效果，請閱讀該警告，然後選取 **啟用自訂視覺效果**。
 
-3. Select the bubble chart and convert it to an enhanced scatter chart by selecting the enhanced scatter chart icon    <ph id="ph1">![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg)</ph> from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+3. 選取泡泡圖，並將它轉換成增強的散佈圖中，選取增強的散佈圖圖示    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) 從 **視覺效果** 窗格。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
-  At this point, the chart should look exactly the same.  If it does not, check to see that the fields in the Visualization buckets didn't change.  If they did, move them back to their original buckets.  For example, if <bpt id="p1">**</bpt>Y1<ept id="p1">**</ept> moved from <bpt id="p2">**</bpt>Y Axis<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Size<ept id="p3">**</ept>, move it back to <bpt id="p4">**</bpt>Y Axis<ept id="p4">**</ept>, etc.
+  此時，圖表看起來應該完全相同。  如果不存在，請參閱 [視覺效果中的欄位值區的核取並未變更。  如果有，移回其原始值區。  例如，如果 **Y1** 從移 **Y 軸** 至 **大小**, ，移回 **Y 軸**, 等等。
 
 
-## Add shapes, images, rotation, and background
+## 新增圖形、 影像、 旋轉和背景
 
-The enhanced scatter packs even more information into a single visualization. In these steps, add shapes, images, rotation, and a background.
+增強的散佈圖組件即使到單一的視覺效果的詳細資訊。 在以下步驟，新增圖形、 影像、 旋轉和背景。
 
->[AZURE.IMPORTANT]  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
+>[AZURE.IMPORTANT]  這些視覺效果的欄位都需要您將量值的資料集，傳回文字值。 如果您的資料行包含的圖形名稱或影像的 Url，則您需要建立量值傳回第一個非空白資料列 （或任何其他邏輯，會傳回一個文字值，用於此視覺效果的欄位值區）。
 
-1. Add shapes that visually identifies the type of link: Download, Learn More, Pricing, Homepage, etc. Drag <bpt id="p1">**</bpt>ShapeMeasure<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Shape<ept id="p2">**</ept>.  Power BI allows: circle, cross, diamond, square, triangle-up, triangle-down, star, hexagon, x, up arrow, and down arrow. These values must already exist in (or be added to) your dataset.
+1. 新增圖形以視覺化方式識別連結的類型︰ 下載，深入了解定價、 首頁、 等等。拖放到 **ShapeMeasure** 至 **圖形**。  Power BI 可讓︰ 圓形、 交叉、 菱形、 正方形、 三角形向上、 三角形清單中，星號六邊形，x 向上箭號，並向下箭號。 這些值必須已存在於 （或加入至） 您的資料集。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape_new.png)
 
-    Ensure that your colleagues know what each shape means.  You could do this by adding a text box to the report.  Or, use graphics that are generally universally understood.
+    請確定您的同事，知道每個圖形所代表的意義。  您可以將文字方塊加入至報表。  或者，使用通常都可辨識的圖形。
 
-2. Remove <bpt id="p1">**</bpt>ShapeMeasure<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Shape<ept id="p2">**</ept> area and drag <bpt id="p3">**</bpt>LinkImageMeasure<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Image<ept id="p4">**</ept>.
+2. 移除 **ShapeMeasure** 從 **圖形** 區域和拖放到 **LinkImageMeasure** 至 **映像**。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape2_new.png)
 
-3. To communicate even more information graphically, drag <bpt id="p1">**</bpt>Trend<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Rotation<ept id="p2">**</ept>.  The rotation of each image indicates whether the number of clicks is trending up or down.
+3. 若要以圖形方式溝通更多的資訊，請將 **趨勢** 至 **旋轉**。  每個影像旋轉會指出是否按下的次數趨勢向上或向下。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_rotation.png)
 
-4. To make this chart even easier to read, add an image of the actual web page as a background.  In this example, we're not simply adding a single image, but a measure that controls which web page displays.
-Remove <bpt id="p1">**</bpt>LinkImageMeasure<ept id="p1">**</ept> and drag <bpt id="p2">**</bpt>PageLayout<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>ImageMeasure<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Backdrop<ept id="p4">**</ept>.
+4. 若要讓這張圖表更容易閱讀，加入實際的網頁的映像做為背景。  在此範例中，我們只要新增一個影像，但顯示的量值會控制哪些網頁。
+移除 **LinkImageMeasure** 拖曳 **PageLayout** > **ImageMeasure** 至 **背景**。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_backdrop.png)
 
-5. Use the xmin, xmax, ymin, and ymax areas to align the background image with the x and y coordinates used to plot the data.
-  - drag <bpt id="p1">**</bpt>xmin<ept id="p1">**</ept> to <bpt id="p2">**</bpt>X Start<ept id="p2">**</ept>.
-  - drag <bpt id="p1">**</bpt>xmax<ept id="p1">**</ept> to <bpt id="p2">**</bpt>X End<ept id="p2">**</ept>.
-  - drag <bpt id="p1">**</bpt>ymin<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Y Start<ept id="p2">**</ept>
-  - drag <bpt id="p1">**</bpt>ymax<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Y End<ept id="p2">**</ept>
+5. 使用 xmin、 xmax、 ymin 和 ymax 區域背景影像對齊 x 和 y 座標，用來繪製此資料。
+  - 拖曳 **xmin** 至 **X 開始**。
+  - 拖曳 **xmax** 至 **X 結束**。
+  - 拖曳 **ymin** 至 **Y 開始**
+  - 拖曳 **ymax** 至 **Y 結束**
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_xy.png)
 
-## Add a slicer
+## 加入交叉分析篩選器
 
-Right now, this visualization is not useful since it's displaying total clicks for all 3 webpages onto a single webpage image.  Add a slicer to control which webpage (and data) to display.
+右現在，這個視覺效果並不怎麼有用因為顯示總到單一網頁映像的所有 3 個網頁的按一下動作。  加入的交叉分析篩選器來控制要顯示的網頁 （和資料）。
 
 ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last.png)
 
-1. Add a slicer to a blank area of the report canvas by selecting the slicer icon <ph id="ph1">![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer_icon.png)</ph>.
+1. 選取交叉分析篩選器] 圖示，將交叉分析篩選器加入至報表畫布的空白區域 ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer_icon.png)。
 
-2. Select <bpt id="p1">**</bpt>PageName<ept id="p1">**</ept> to add it to the <bpt id="p2">**</bpt>Field<ept id="p2">**</ept> area.
+2. 選取 **PageName** 將它加入至 **欄位** 區域。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer.png)
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
-3. Slice the enhanced scatter chart to display click data for each web page -- one at a time.
+3. 配量顯示增強的散佈圖中，按一下 [每個網頁-一次的資料。
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
@@ -122,12 +123,12 @@ Right now, this visualization is not useful since it's displaying total clicks f
 
 ## 請參閱
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Security"
-   description="Power BI Security. How Power BI relates to Azure Active Directory and other Azure services. This topic also includes a link to a white paper which goes more in-depth."
+   pageTitle="Power BI 安全性"
+   description="Power BI 的安全性。 Power BI 如何與 Azure Active Directory 和其他 Azure 服務。 本主題也包含會更深入的技術白皮書的連結。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,45 +20,46 @@
    ms.date="09/28/2016"
    ms.author="asaxton"/>
 
-# Power BI Security
+# Power BI 安全性
 
-For a detailed explanation of Power BI security, please <bpt id="p1">[</bpt>download the Power BI Security whitepaper<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=829185)</ept>.
+如需 Power BI 安全性的詳細說明，請 [下載 Power BI 安全性白皮書](http://go.microsoft.com/fwlink/?LinkId=829185)。
 
-The Power BI service is built on <bpt id="p1">**</bpt>Azure<ept id="p1">**</ept>, which is Microsoft’s cloud computing infrastructure and platform. The Power BI service architecture is based on two clusters – the Web Front End (<bpt id="p1">**</bpt>WFE<ept id="p1">**</ept>) cluster and the <bpt id="p2">**</bpt>Back End<ept id="p2">**</ept> cluster. The WFE cluster is responsible for initial connection and authentication to the Power BI service, and once authenticated, the Back End handles all subsequent user interactions. Power BI uses Azure Active Directory (AAD) to store and manage user identities, and manages the storage of data and metadata using Azure BLOB and Azure SQL Database, respectively.
+Power BI 服務根據 **Azure**, ，這是 Microsoft 的雲端運算基礎結構與平台。 Power BI 服務架構根據兩個叢集 – Web 前端 (**WFE**) 叢集和 **後端** 叢集。 WFE 叢集會負責初始連線和驗證 Power BI 服務，並一次驗證後, 端處理所有後續的使用者互動。 Power BI 使用 Azure Active Directory (AAD) 來儲存和管理使用者識別和管理資料和中繼資料使用 Azure BLOB 和 Azure SQL Database，分別儲存。
 
-## Power BI Architecture
+## Power BI 架構
 
-Each Power BI deployment consists of two clusters – a Web Front End (<bpt id="p1">**</bpt>WFE<ept id="p1">**</ept>) cluster, and a <bpt id="p2">**</bpt>Back End<ept id="p2">**</ept> cluster.
+每個 Power BI 部署包含兩個叢集 – Web 前端 (**WFE**) 叢集，以及 **後端** 叢集。
 
-The <bpt id="p1">**</bpt>WFE<ept id="p1">**</ept> cluster manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI service. Power BI also uses the <bpt id="p1">**</bpt>Azure Traffic Manager<ept id="p1">**</ept> (ATM) to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the <bpt id="p1">**</bpt>Azure Content Delivery Network<ept id="p1">**</ept> (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
+ **WFE** 叢集管理 Power bi，以驗證用戶端，並為後續的用戶端連接至 Power BI 服務提供權杖使用 AAD 的初始連線和驗證程序。 也會使用 power BI **Azure 流量管理員** (ATM) 使用者流量導向至最接近的資料中心，取決於用戶端嘗試連線，驗證程序，並下載靜態內容和檔案的 DNS 記錄。 Power BI 使用 **Azure 內容傳遞網路** (CDN) 有效率地將映像所需的靜態內容和使用者的檔案會根據地理位置的地區設定。
 
 ![](media/powerbi-admin-power-bi-security/PBI_Security_v2_WFE.png)
 
-The <bpt id="p1">**</bpt>Back End<ept id="p1">**</ept> cluster is how authenticated clients interact with the Power BI service. The <bpt id="p1">**</bpt>Back End<ept id="p1">**</ept> cluster manages visualizations, user dashboards, datasets, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept> acts as a gateway between user requests and the Power BI service. Users do not interact directly with any roles other than the <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept>. <bpt id="p1">**</bpt>Azure API Management<ept id="p1">**</ept> will eventually handle the <bpt id="p2">**</bpt>Gateway Role<ept id="p2">**</ept>.
+ **後端** 叢集是如何驗證用戶端與 Power BI 服務互動。  **後端** 叢集管理視覺效果、 使用者儀表板、 資料集、 報表、 資料存放區、 資料連接、 資料重新整理，以及與 Power BI 服務互動的其他層面。  **閘道角色** 做為使用者要求與 Power BI 服務之間的閘道。 使用者不會互動直接與任何角色以外的其他 **閘道角色**。 
+            **Azure API 管理** 最終處理 **閘道角色**。
 
 ![](media/powerbi-admin-power-bi-security/PBI_Security_v2_BackEnd_updated.png)
 
-> [AZURE.IMPORTANT] It is imperative to note that only <bpt id="p1">**</bpt>Azure API Management<ept id="p1">**</ept> (APIM) and <bpt id="p2">**</bpt>Gateway<ept id="p2">**</ept> (GW) roles are accessible through the public Internet. They provide authentication, authorization, DDoS protection, Throttling, Load Balancing, Routing, and other capabilities.
+> [AZURE.IMPORTANT] 請務必注意，只有 **Azure API 管理** (APIM) 和 **閘道** (GW，) 角色是透過公用網際網路存取。 它們提供驗證、 授權、 DDoS 保護、 節流、 負載平衡、 路由，以及其他功能。
 
-## Data Storage Security
-Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to <bpt id="p1">**</bpt>Azure BLOB<ept id="p1">**</ept> storage, and all metadata as well as artifacts for the system itself are stored in <bpt id="p2">**</bpt>Azure SQL Database<ept id="p2">**</ept>.
+## 資料存放區安全性
+Power BI 使用兩個主要的儲存機制來儲存和管理資料︰ 從使用者上傳的資料通常會傳送至 **Azure BLOB** 儲存體，和所有中繼資料，以及系統本身的成品會儲存在 **Azure SQL Database**。
 
-The dotted line in the <bpt id="p1">**</bpt>Back End<ept id="p1">**</ept> cluster image, above, clarifies the boundary between the only two components that are accessible by users (left of the dotted line), and roles that are only accessible by the system. When an authenticated user connects to the Power BI Service, the connection and any request by the client is accepted and managed by the <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept> (eventually to be handled by <bpt id="p2">**</bpt>Azure API Management<ept id="p2">**</ept>), which then interacts on the user’s behalf with the rest of the Power BI Service. For example, when a client attempts to view a dashboard, the <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept> accepts that request then separately sends a request to the <bpt id="p2">**</bpt>Presentation Role<ept id="p2">**</ept> to retrieve the data needed by the browser to render the dashboard.
+在點線 **後端** 叢集映像，上述方式，釐清只有兩個存取的使用者 （左邊的點線） 的元件和角色，才能夠存取由系統之間的界限。 當已驗證的使用者連接到 Power BI 服務連線和任何用戶端的要求會接受並由 **閘道角色** (最後來處理 **Azure API 管理**)，然後互動與 Power BI 服務的其他使用者的代表。 例如，當用戶端想要檢視儀表板， **閘道角色** 接受該要求，然後分別傳送要求至 **簡報角色** 擷取瀏覽器呈現在儀表板所需的資料。
 
 ## 使用者驗證
 
-Power BI uses Azure Active Directory (<bpt id="p1">[</bpt>AAD<ept id="p1">](http://azure.microsoft.com/services/active-directory/)</ept>) to authenticate users who login to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempt to resources that require authentication. Users login to the Power BI service using the email address used to establish their Power BI account; Power BI uses the that login email as the <bpt id="p1">*</bpt>effective username<ept id="p1">*</ept>, which is passed to resources whenever a user attempts to connect to data. The <bpt id="p1">*</bpt>effective username<ept id="p1">*</ept> is then mapped to a <bpt id="p2">*</bpt>User Principal Name<ept id="p2">*</ept> (<bpt id="p3">[</bpt>UPN<ept id="p3">](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)</ept> and resolved to the associated Windows domain account, against which authentication is applied.
+Power BI 使用 Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) 來驗證使用者登入 Power BI 服務，然後使用 Power BI 登入認證，每當使用者嘗試要求驗證的資源。 使用用來建立 Power BI 帳戶; 電子郵件地址與 Power BI 服務的使用者登入Power BI 會使用該登入電子郵件為 *有效的使用者名稱*, ，每當使用者嘗試連接到資料傳遞給資源。  *有效的使用者名稱* 接著會對應至 *使用者主體名稱* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) 和相關聯的 Windows 網域帳戶，驗證對其套用至已解決。
 
-For organizations that used work emails for Power BI login (such as <bpt id="p1">*</bpt>david@contoso.com<ept id="p1">*</ept>), the <bpt id="p2">*</bpt>effective username<ept id="p2">*</ept> to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as <bpt id="p1">*</bpt>david@contoso.onmicrosoft.com<ept id="p1">*</ept>), mapping between AAD and on-premises credentials will require <bpt id="p2">[</bpt>directory synchronization<ept id="p2">](https://technet.microsoft.com/library/jj573653.aspx)</ept> to work properly.
-
-
-Platform security for Power BI also includes multi-tenant environment security, networking security, and the ability to add additional AAD-based security measures.
-
-## Data and Service Security
-
-For more information, please visit the <bpt id="p1">[</bpt>Microsoft Trust Center<ept id="p1">](https://www.microsoft.com/trustcenter)</ept>.
-
-As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s <bpt id="p1">**</bpt>important<ept id="p1">**</ept> to note that users are responsible for the data they share: if a user connects to data sources using her credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
+用於 Power BI 登入的工作電子郵件的組織 (例如 *david@contoso.com*)、 *有效的使用者名稱* upn 對應很簡單。 沒有使用 Power BI 登入的工作電子郵件的組織 (例如 *david@contoso.onmicrosoft.com*)、 對應 AAD 與內部部署之間需要認證 [目錄同步作業](https://technet.microsoft.com/library/jj573653.aspx) 才能正常運作。
 
 
-An exception is connections to <bpt id="p1">**</bpt>SQL Server Analysis Services<ept id="p1">**</ept> using the <bpt id="p2">**</bpt>On-premises Data Gateway<ept id="p2">**</ept>; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see <bpt id="p1">[</bpt>On-premises Data Gateway deep dive<ept id="p1">](powerbi-gateway-onprem-indepth.md)</ept>.
+Power bi 平台安全性也包含多租用戶環境的安全性、 網路安全性，以及新增額外 AAD 為基礎的安全性措施的能力。
+
+## 資料和服務安全性
+
+如需詳細資訊，請造訪 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)。
+
+如本文稍早所述，使用者的 Power BI 登入是內部部署 Active Directory 伺服器用來對應到 UPN 的認證。 不過，它是 **重要** 注意使用者負責它們共用的資料︰ 如果使用者連接到資料來源使用她的認證，然後共用報表 （或儀表板或資料集） 根據該資料，共用儀表板使用者未通過原始資料來源中，並授與存取報表。
+
+
+例外狀況是通往 **SQL Server Analysis Services** 使用 **內部資料閘道**; 儀表板會快取在 Power BI，但存取基礎的報表或資料集起始驗證的使用者嘗試存取報表 （或資料集），並將只會授與存取權的使用者是否具有足夠的認證來存取資料。 如需詳細資訊，請參閱 [內部資料閘道深入探討](powerbi-gateway-onprem-indepth.md)。

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Complete code listing"
-   description="Walkthrough to push data - Complete code listing"
+   pageTitle="完整程式碼清單"
+   description="逐步解說來發送資料的完整程式碼清單"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -21,13 +21,13 @@
    ms.author="asaxton"/>
 
 
-# Push data to a dashboard complete code listing
+# 將資料推送的儀表板的完整程式碼清單
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+逐步解說的這篇文章屬於 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)。
 
-After you follow Steps 2 to 5 in <bpt id="p1">**</bpt>Push data into a dashboard<ept id="p1">**</ept>, your complete source code should look like the following.
+執行中的步驟 2 到 5 之後 **資料推送至儀表板**, ，完整的原始程式碼應該如下所示。
 
-## Push data to dashboard code
+## 將資料推送到儀表板的程式碼
 
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -231,13 +231,13 @@ After you follow Steps 2 to 5 in <bpt id="p1">**</bpt>Push data into a dashboard
 
 ## 請參閱
 
-[Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
-[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)  
-[Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)  
-[Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)  
-[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[將資料發送到 Power BI 儀表板](powerbi-developer-walkthrough-push-data.md)  
+[逐步解說-將資料發送到 Power BI 儀表板](powerbi-developer-walkthrough-push-data.md)  
+[使用 Azure AD 註冊應用程式](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
+[取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md)  
+[建立 Power BI 儀表板中的資料集](powerbi-developer-walkthrough-push-data-create-dataset.md)  
+[取得要加入至 Power BI 資料表的資料列的資料集](powerbi-developer-walkthrough-push-data-get-datasets.md)  
+[將資料列加入至 Power BI 資料表](powerbi-developer-walkthrough-push-data-add-rows.md)  
+[Power BI REST API 參考](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

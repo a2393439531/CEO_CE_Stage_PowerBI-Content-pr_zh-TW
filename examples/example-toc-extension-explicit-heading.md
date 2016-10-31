@@ -1,31 +1,31 @@
-<properties linkid="example-toc-extension-explicit-heading" urlDisplayName="TOC Markdown Extension Test" pageTitle="TOC Markdown Extension Test" title="TOC Markdown Extension Test" metaKeywords="southworks" description="Tests for the TOC Markdown Extension." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
+<properties linkid="example-toc-extension-explicit-heading" urlDisplayName="TOC Markdown Extension Test" pageTitle="目錄 Markdown 延伸模組測試" title="TOC Markdown Extension Test" metaKeywords="southworks" description="測試目錄 Markdown 延伸模組。" metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
 
-# TOC Markdown Extension Test
+# 目錄 Markdown 延伸模組測試
 
-###**Explicit Heading (HTML)**
+###**明確的標題 (HTML)**
 
 *語法*
 
-&lt;h2 style=<ph id="ph1">&amp;quot;</ph>color: red;<ph id="ph2">&amp;quot;&amp;gt;</ph>Table of Contents<ph id="ph3">&amp;lt;</ph>/h2&gt;
+&lt;h2 樣式 =&quot;色彩︰ 紅色;&quot;&gt;目錄&lt;/h2&gt;
 
-&lbrack;AZURE.TOC&rbrack;
+&lbrack;AZURE。目錄&rbrack;
 
 <hr />
 
 <h2 style="color: red;">目錄</h2>
-[AZURE.TOC]
+[AZURE。TOC]
 
-## Heading One
+## 一個標題
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
 
-## Heading Two
+## 兩個標題
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
-## Heading Three
+## 三個標題
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.

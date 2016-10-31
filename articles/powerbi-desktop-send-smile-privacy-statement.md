@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Desktop Send a Smile Privacy Statement"
-   description="Power BI Desktop Send a Smile Privacy Statement"
+   pageTitle="Power BI Desktop 傳送笑臉隱私權聲明"
+   description="Power BI Desktop 傳送笑臉隱私權聲明"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,60 +19,64 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Power BI Desktop Send a Smile Privacy Statement
+# Power BI Desktop 傳送笑臉隱私權聲明
 
-At Microsoft, we are working hard to protect your privacy, while delivering products that bring you the performance, power, and convenience you want. This Privacy Statement explains many of the data collection and use practices of Microsoft Power BI Desktop Feedback <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept>. It doesn’t apply to other online or offline Microsoft sites, products, or services.
+在 Microsoft，我們會努力保護您的隱私權，同時努力提供各種效能、 電源和便利性，您要帶給您的產品。 本隱私權聲明說明許多資料收集與使用方式的 Microsoft Power BI Desktop 回饋 *傳送笑臉*。 它不適用於其他線上或離線 Microsoft 網站、 產品或服務。
 
-Except as otherwise described in this statement, <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> doesn’t send personal information to Microsoft. Information that is sent to Microsoft isn’t shared outside of Microsoft and its controlled subsidiaries and affiliates without your permission.
+除了所述此陳述式， *傳送笑臉* 不會傳送給 Microsoft 的個人資訊。 傳送給 Microsoft 的資訊不會被共用之外，Microsoft 與其控管的子公司及關係企業，而不需要您的權限。
 
-<bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> to Power BI Desktop allows you to send an email address with your feedback. This email address is used to contact you if Microsoft needs further information or clarification on your request. You don’t have to register your email address with Microsoft to use <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept>.
 
-<bpt id="p1">*</bpt>Send a Smile to Power BI Desktop<ept id="p1">*</ept> allows you to send feedback to Microsoft and, if you want, include screenshots showing the specific compliment or concern you have. Although <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> doesn’t intentionally collect personally identifiable information, it is possible that such information might be captured in the feedback or screenshots you provide. Microsoft doesn’t use this information to identify you.
+            *傳送笑臉* 到 Power BI Desktop 可讓您傳送電子郵件地址，您的意見反應。 如果 Microsoft 需要進一步釐清您的要求或資訊，請連絡您用於此電子郵件地址。 您不需要使用 Microsoft 註冊電子郵件地址 *傳送笑臉*。
 
-<bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> automatically collects some information about your system configuration, standard computer information, and basic information about how you use Microsoft products. This information is sent when you choose to send feedback.
 
-<bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> generally collects information about:
+            *傳送笑臉] 至 Power BI Desktop* 可讓您傳送意見給 Microsoft，以及如果您想加入螢幕擷取畫面顯示特定恭維或您有的問題。 雖然 *傳送笑臉* 不會刻意收集個人識別資訊，它是這類資訊可能會擷取到的意見反應或您提供的螢幕擷取畫面中。 Microsoft 不會使用這項資訊來識別您。
 
--   System configuration, such as the operating system version and architecture that you use (32-bit vs. 64-bit).
 
--   Standard computer information, such as the Power BI Desktop, Internet Explorer version and CLR version that you are using.
+            *傳送笑臉* 會自動收集一些有關您的系統組態資訊、 標準電腦資訊和您如何使用 Microsoft 產品的基本資訊。 當您選擇傳送意見反應時，便會傳送此資訊。
 
--   Power BI Desktop program usage, such as File Package Info (Document Locale, Fast Combine Enabled/Disabled state), Enabled and Disabled Preview Features, DirectQuery vs. Import mode, current Working Set and Peak Virtual Memory used in the current session.
 
-The personal information we collect from you is used by Microsoft and its controlled subsidiaries and affiliates to provide the services or carry out the transactions you requested or authorized, and it might also be used to request additional information on:
+            *傳送笑臉* 通常收集相關資訊︰
 
--   Feedback you provide about the product or service you are using
+-   系統組態，例如作業系統版本和架構，您會使用 （32 位元及。64 位元)。
 
--   To provide critical updates and notifications regarding the software
+-   標準電腦資訊，例如 Power BI Desktop，Internet Explorer 版本和 CLR 版本所使用。
 
--   To improve the product or service, for example, bug and survey form inquiries
+-   Power BI Desktop 程式使用方式，例如檔案封裝資訊 （文件的地區設定，快速結合啟用/停用狀態）、 啟用和停用的預覽功能，DirectQuery vs。匯入模式中，目前的工作集和目前工作階段中使用的尖峰虛擬記憶體。
 
-Except as described in this statement, personal information you provide isn’t transferred to third parties without your consent. We occasionally hire other companies to provide limited services on our behalf, such as:
+我們向您收集的個人資訊由 Microsoft 和其所管理之子公司和關係企業簽訂提供服務或執行您要求或授權，交易，它也可能用來要求上的其他資訊︰
 
--   Packaging, sending and delivering purchases, and other mailings
+-   您的產品或服務所提供的意見反應
 
--   Answering customer questions about products or services
+-   若要提供重大更新和軟體之相關通知
 
--   Processing event registration
+-   若要改善產品或服務，例如錯誤及調查表問卷形成查詢
 
--   Performing statistical analysis of our services
+除了本聲明所述，您所提供的個人資訊不傳送給第三方，未經您同意。 我們偶爾會雇用其他公司代表我們提供有限的服務，例如︰
 
-We only provide those companies with the personal information they need to deliver the service, and they are prohibited from using that information for any other purpose.
+-   封裝、 傳送及傳遞採購及其他郵件
 
-Microsoft might access or disclose information about you, including the content of your communications, to:
+-   回答客戶關於產品或服務的問題
 
--   Comply with the law or respond to lawful requests or legal process
+-   處理事件註冊
 
--   Protect the rights or property of Microsoft or our customers, including the enforcement of our agreements or policies governing your use of the services
+-   執行服務的統計分析
 
--   Act on a good faith belief that such access or disclosure is necessary to protect the personal safety of Microsoft employees, customers, or the public
+我們只提供這些公司提供服務所需的個人資訊，並禁止他們將該資訊用於其他用途。
 
-Information collected by or sent to Microsoft by <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> might be stored and processed in the United States or any other country in which Microsoft or its affiliates, subsidiaries, or service providers maintain facilities. Microsoft abides by the Safe Harbor Framework as set forth by the United States Department of Commerce regarding the collection, use, and retention of data from the European Union.
+Microsoft 可能會存取或揭露您包括到您的通訊內容的相關資訊︰
+
+-   遵守法律或回應合法請求或法律程序
+
+-   保護的權利或財產的 Microsoft 或客戶，包括強制執行合約或原則來管理服務
+
+-   操作善意的這類存取或洩露，以保障 Microsoft 員工、 客戶或公眾的個人安全
+
+資訊所收集或傳送到 Microsoft 的 *傳送笑臉* 可能會儲存，並在美國或任何其他 Microsoft 或其關係企業、 子公司或服務提供者維護設備所在的國家進行處理。 Microsoft 無恙 Safe Harbor Framework 設定等由美國商務部針對集合、 使用及保留來自歐盟的資料。
 
 ## 貴用戶資訊之安全性
 
-Microsoft is committed to helping protect the security of your personal information. 我們會應用各種安全性技術與程序，防止未經授權而存取、使用或洩漏您的個人資訊。
+Microsoft 致力於保護您的個人資訊的安全性。 我們會應用各種安全性技術與程序，防止未經授權而存取、使用或洩漏您的個人資訊。
 
 ## 此隱私權聲明的變更
 
-Microsoft might occasionally update this Privacy Statement. The last updated date at the top of the Privacy Statement is updated with every revision. We encourage you to periodically review this Privacy Statement to be informed of how Microsoft is helping to protect your information.
+Microsoft 可能會不定期更新本隱私權聲明。 會更新每個修訂隱私權聲明頂端的上次更新的日期。 我們鼓勵您定期檢閱本隱私權聲明，瞭解 Microsoft 如何協助保護您的資訊。

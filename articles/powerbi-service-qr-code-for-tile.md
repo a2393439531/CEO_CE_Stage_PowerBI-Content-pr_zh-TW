@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a QR code for a tile"
-   description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
+   pageTitle="建立並排顯示的 QR 代碼"
+   description="在 Power BI 中的 QR 代碼可以真實世界中的任何項目直接連接到 Power BI 行動應用程式中沒有所需的搜尋相關的商業情報資訊。"
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,50 +20,52 @@
    ms.date="09/29/2016"
    ms.author="maggies"/>
 
-# Create a QR code for a tile in the Power BI service
+# Power BI 服務中建立磚的 QR 代碼
 
-QR codes in Power BI can connect anything in the real world directly to related BI information &amp;#151; no navigation or search needed.
+在 Power BI 中的 QR 代碼可以真實世界中的任何項目直接連接到相關的商業情報資訊 & #151;沒有瀏覽或搜尋所需。
 
-You can create a QR code in the Power BI service for tiles in any dashboard that you can edit. Then place the QR code in a key location. For example, you could paste it in an email, or print it out and paste it in a specific location. 
+在 Power BI 服務，您可以編輯任何儀表板中的方塊中，您可以建立 QR 代碼。 在機碼的位置，然後放置 QR 代碼。 比方說，您無法將它貼在電子郵件，或列印出與將它貼在特定位置。 
 
-Colleagues you've shared the dashboard with can <bpt id="p1">[</bpt>scan the QR code for access to the tile, right from their phone<ept id="p1">](powerbi-mobile-qr-code-for-tile.md)</ept>. They can use either the QR code scanner located in the Power BI app, or any other QR scanner installed on their phone. Read more about <bpt id="p1">[</bpt>how to share dashboards<ept id="p1">](powerbi-service-how-should-i-share-my-dashboard.md)</ept>.
+您已共用可以在儀表板的同事 [磚，來掃描 QR 代碼進行存取，直接從他們的電話](powerbi-mobile-qr-code-for-tile.md)。 他們可以使用 Power BI 應用程式中的程式碼 QR 掃描器或安裝在電話上的任何其他 QR 掃描。 深入了解 [如何共用儀表板](powerbi-service-how-should-i-share-my-dashboard.md)。
 
-## Add a QR code to a tile in the Power BI service
+## 加入 Power BI 服務以並排顯示 QR 代碼
 
-1. Open a dashboard in the Power BI service.
+1. 開啟 Power BI 服務儀表板。
 
-2. Select the ellipsis (...) in the top-right corner of the tile and select <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-service-qr-code-for-tile/fullscreen-icon.jpg)</ph>.
+2. 選取省略符號 （...）] 磚，然後選取右上角 **聚焦模式** ![](media/powerbi-service-qr-code-for-tile/fullscreen-icon.jpg)。
 
-2. Select the ellipsis (...) in the top-right corner and select <bpt id="p1">**</bpt>Generate QR code<ept id="p1">**</ept>. 
+2. 選取右上角中的省略符號 （...），然後選取 **產生 QR 代碼**。 
 
     ![](media/powerbi-service-qr-code-for-tile/powerbi_generate_qrcode.png)
 
-3. A dialog box with the QR code appears. 
+3. 使用 QR 代碼的對話方塊隨即出現。 
 
     ![](media/powerbi-service-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
 
-4. From here you can scan the QR code or download and save it so you can: 
+4. 您可以從這裡掃描 QR 代碼或下載並儲存它，以便您可以︰ 
 
-     - Add it to an email or other document, or 
-     - Print it and place it in a specific location. 
+     - 將它新增至電子郵件或其他文件，或 
+     - 列印出來，並將它放在特定位置。 
 
-## Print the QR code
+## 列印 QR 代碼
 
-Power BI generates the QR code as a JPG file, ready to print. 
+Power BI 會產生 JPG 檔案，準備好要列印 QR 代碼。 
 
-1. Select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept>, then open the JPG file on a computer connected to a printer.  
+1. 選取 **下載**, ，然後開啟 [連接到印表機的電腦上的 JPG 檔案。  
 
-    ><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> The JPG file has the same name as the tile. For example, "Opportunity Count - by Month, Sales Stage.jpg".
+    >
+            **提示︰** JPG 檔案具有相同名稱的磚。 例如，「 機會計數-依月份銷售 Stage.jpg 」。
 
-2. Print the file at 100% or “actual size”.  
+2. 列印在 100%或 「 實際大小 」 的檔案。  
 
-3. Cut out the QR code along its edge and glue it to a place relevant to the tile. 
+3. 剪下邊緣 QR 代碼，並黏附至相關方塊的位置。 
 
 
 ### 請參閱
 
--  <bpt id="p1">[</bpt>Connect to Power BI data from the real world<ept id="p1">](powerbi-mobile-data-in-real-world-context.md)</ept> with the mobile apps
--  [Scan a Power BI QR code from your phone](powerbi-mobile-qr-code-for-tile.md)
--  [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
--  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  
+            [在現實世界中連接至 Power BI 資料](powerbi-mobile-data-in-real-world-context.md) 使用行動應用程式
+-  [掃描您的電話 Power BI QR 代碼](powerbi-mobile-qr-code-for-tile.md)
+-  [在 Power BI 儀表板] 磚](powerbi-service-dashboard-tiles.md)
+-  [Power BI-基本概念](powerbi-service-basic-concepts.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Measures in Power BI Desktop"
-   description="Measures in Power BI Desktop"
+   pageTitle="Power BI Desktop 中的量值"
+   description="Power BI Desktop 中的量值"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,46 +19,46 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Measures in Power BI Desktop
+# Power BI Desktop 中的量值
 
-Power BI Desktop helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
+Power BI Desktop 可協助您建立按幾下即可深入了解您的資料。 但有時候這些資料就不包括回答一些最重要的問題所需的一切。 量值可協助您前往該處。
 
-Measures are used in some of the most common data analysis; for example, sums, averages, minimum or maximum values, counts, or more advanced calculations you create yourself using a DAX formula. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look.
+量值用於在某些最常見的資料分析。例如，計算的總和、 平均值、 最小或最大值、 計數或您自行使用 DAX 公式建立的其他進階的計算。 導出量值的結果永遠變更以回應您的報表，以便快速和動態特定資料瀏覽與程式互動。 讓我們仔細看。
 
-## Understanding measures
+## 了解量值
 
-In Power BI Desktop, measures are created and used in Report View or Data View. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
+在 Power BI Desktop，量值會建立和使用報告檢視或資料檢視中。 您自行建立的量值會出現在欄位清單與計算機圖示。 您可以在任何內容，並將它們新增至新的或現有的視覺效果，就像任何其他欄位命名量值。
 
 ![](media/powerbi-desktop-measures/MeasuresInPBID_MeasInFieldList.png)
 
-## Data Analysis Expressions
+## 資料分析運算式
 
-Measures calculate a result from an expression formula. When you create your own measures, you’ll use the <bpt id="p1">[</bpt>Data Analysis Expressions<ept id="p1">](https://msdn.microsoft.com/library/gg413422.aspx)</ept> (DAX) formula language. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating measures to calculate results for just about any data analysis need.
+量值計算的運算式的公式的結果。 當您建立您自己的量值時，您將使用 [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX) 公式語言。 DAX 包含 200 個以上的函數、 運算子和建構，程式的庫建立量值來計算結果幾乎任何資料分析需要廣大的靈活度。
 
-DAX formulas are a lot like Excel formulas. DAX even has many of the same functions like DATE, SUM, and LEFT. But, DAX’s functions are meant to work with relational data like we have in Power BI Desktop.
+DAX 公式非常類似 Excel 公式。 DAX 也有許多相同的函式，例如日期、 SUM 及左邊。 不過，DAX 的函式是使用類似我們具有 Power BI Desktop 中的關聯式資料。
 
-## Let’s look at an example
+## 讓我們看看一個範例
 
-Jan is a sales manager at Contoso. She’s been asked to provide reseller sales projections over the next fiscal year. She decides to base her estimates on last year’s sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
+1 月是 Contoso 的銷售經理。 她會被要求提供轉售商銷售預測下一個會計年度。 她決定要預估根據去年的銷售量，6%的年度增加，所產生的各種促銷，接下來的六個月的排程。
 
-To report the estimates, she imports last year’s sales data into Power BI Desktop. She finds the SalesAmount field in the Reseller Sales table. Because the data she imported only contains sales amounts for last year, she renames the SalesAmount field to Last Years Sales. She then drag Last Years Sales onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
+若要報告的估計，她匯入去年的銷售資料 Power BI Desktop。 她轉售商銷售資料表中尋找 [SalesAmount] 欄位。 因為她匯入的資料只包含去年的銷售量，她將欄位重新命名 SalesAmount 最後一年銷售量。 她然後將最後一年銷售拖曳到報表畫布。 它會出現在圖表視覺效果是去年所有轉售商銷售的總和的單一值。
 
-She notices that even though she did not specify a calculation herself, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in Last Years Sales.
+開發人員發現，即使自己並未指定自己的計算，其中一個已經自動提供。 Power BI Desktop 建立自己的量值可以加總所有的最後一年銷售額的值。
 
-But, Jan needs a measure to calculate sales projections for the coming year, which will be based on last year’s sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, she’ll create her own measure. Using the New Measure feature, she creates a new measure, then enters the following DAX formula:
+但是，Jan 必須計算銷售預測未來一年，這將會依據去年的銷售乘以 1.06 預期增加 6%的企業中的量值。 這項計算，則會建立自己的量值。 她使用新的量值的功能，建立新的量值，然後輸入下列 DAX 公式︰
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
-Jan then drags her new Projected Sales measure into the chart.
+然後年 1 月將她新 Projected Sales 量值拖曳到圖表。
 
 ![](media/powerbi-desktop-measures/MeasuresInPBID_LastYearSales.png)
 
-Very quickly and with minimal effort, Jan now has a measure to calculate projected sales. She can  further analyze her projections by filtering on specific resellers or by adding other fields to her report.
+非常快速且輕鬆，現在年 1 月都有量值來計算預測的銷售額。 她可以進一步分析預測，方法是透過篩選特定轉售商，或其報表中加入其他欄位。
 
 ## 進一步了解
 
-We’ve only provided you with a quick introduction to measures here, but there’s a lot more to help you learn how to create your own. Be sure to see the <bpt id="p1">[</bpt>Tutorial: Create your own measures in Power BI Desktop<ept id="p1">](powerbi-desktop-tutorial-create-measures.md)</ept>, where you can download a sample file and get step-by-step lessons on how to create more measures.  
+我們只提供您的簡介，量值，但還有更多協助您了解如何建立您自己。 請參閱 [教學課程︰ 建立您自己的量值在 Power BI Desktop](powerbi-desktop-tutorial-create-measures.md), ，其中您可以下載範例檔案並取得有關如何建立多個量值的循序漸進的課程。  
 
-To dive a little deeper into DAX, be sure to check out <bpt id="p1">[</bpt>DAX basics in Power BI Desktop<ept id="p1">](powerbi-desktop-quickstart-learn-dax-basics.md)</ept>. The <bpt id="p1">[</bpt>Data Analysis Expressions Reference<ept id="p1">](https://msdn.microsoft.com/library/gg413422.aspx)</ept> provides detailed articles on each of the functions, syntax, operators, and naming conventions. DAX has been around for several years in Power Pivot in Excel and SQL Server Analysis Services, so there are a lot of other great resources available, too. Be sure to check out the <bpt id="p1">[</bpt>DAX Resource Center Wiki<ept id="p1">](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)</ept>, where influential members of the BI community share their knowledge of DAX.
+若要深入一點 DAX，務必查看 [DAX 基本概念，在 Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md)。  [資料分析運算式參考](https://msdn.microsoft.com/library/gg413422.aspx) 提供詳細的文件個別的函式、 語法、 運算子和命名慣例。 DAX 已經行之幾年來，在 Power Pivot Excel 和 SQL Server Analysis Services，因此有許多其他很棒的資源可用，太。 請務必查看 [DAX 資源中心 Wiki](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), ，其中 BI 社群的影響力成員會共用 DAX 的知識。
 
 ﻿

@@ -1,7 +1,11 @@
 ## 常見問題集
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if I had previously created roles/rules for a dataset in the Power BI service? Will they still work if I do nothing?
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. Visuals will not render properly. You will have to re-create the roles/rules within Power BI Desktop and then published to the Power BI service.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I creates these roles for Analysis Services data sources?
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You can if you imported the data into Power BI Desktop. If you are using a live connection, you will not be able to configure RLS within the Power BI service. This is defined within the Analysis Services model on-premises.
+            **問題︰** 要是我先前建立的資料集的角色/規則在 Power BI 服務嗎？ 使用如果不執行任何動作？
+
+            **答案是︰** [否]。 無法正確呈現視覺效果。 您必須重新建立角色/內的規則 Power BI Desktop，然後將它們發行至 Power BI 服務。
+
+
+            **問題︰** 可以會建立這些角色，Analysis Services 資料來源？
+
+            **答案是︰** 如果將資料匯入 Power BI Desktop 可以。 如果您使用即時連接，您無法在 Power BI 服務中設定 RLS。 這被定義在 Analysis Services 模型在內部。

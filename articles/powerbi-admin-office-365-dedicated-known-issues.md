@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Office 365 dedicated - known issues"
-   description="Support for Office 365 dedicated customers - known issues. This topic describes issues specific to an Office 365 Dedicated customer. This includes limitations to the group feature as well as the iPhone app with vanity domains."
+   pageTitle="Office 365 專用的已知問題"
+   description="Office 365 專用的客戶群的已知問題的支援。 本主題描述特定 Office 365 專用的客戶的問題。 這包括 「 群組 」 功能，以及與虛名網域 iPhone 應用程式的限制。"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,25 +20,26 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Support for Office 365 dedicated customers - known issues
+# 支援 Office 365 專用的客戶群的已知問題
 
-Power BI is now supported for Office 365 Dedicated customers.  If you are an O365 Dedicated customer, you can sign in with an account from that tenant and use Power BI. There are two known issues currently.
+Power BI 現在支援 Office 365 專用的客戶。  如果您是 O365 專用的客戶，您可以從該租用戶的帳戶登入，並使用 Power BI。 目前有兩個已知的問題。
 
 ## 中
 
-When selecting <bpt id="p1">**</bpt>Members<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Calendar<ept id="p2">**</ept> in the Group context menu, you will be redirected to the Mail app instead.  <bpt id="p1">**</bpt>Files<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Conversations<ept id="p2">**</ept> work as expected.
+選取時 **成員** 或 **行事曆** 在群組的內容功能表中，您將會被重新導向至郵件應用程式改為。  
+            **檔案** 和 **交談** 如預期般運作。
 
 ![](media/powerbi-admin-office-365-dedicated-known-issues/group-menu.png)
 
-## iPhone App - sign in with vanity domain leads to error
+## iPhone 應用程式-使用虛名網域登入導致錯誤
 
-When you sign in, on the iPhone app, using a login with a vanity domain, you may encounter an error.
+時，在您登入 iPhone 應用程式中，使用登入使用虛名網域時，您可能會遇到錯誤。
 
-*Sign In error*  
-*An unexpected internal error occurred. 請再試一次。*
+*登入錯誤*  
+*發生未預期的內部錯誤。 請再試一次。*
 
-To work around this issue, sign in with the email address listed when you click on the user icon within the Power BI service instead of with the vanity domain.
+若要解決此問題，以登入列出當您按一下在虛名網域而不是 Power BI 服務中的 [使用者] 圖示上的電子郵件地址。
 
 ![](media/powerbi-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

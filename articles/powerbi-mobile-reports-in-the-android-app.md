@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the Android app"
-   description="Learn about viewing reports in the Power BI mobile app for Android phones. You create reports in the Power BI service, then interact with them in the mobile apps."
+   pageTitle="Android 應用程式中的報表"
+   description="深入了解 Android 手機 Power BI 行動應用程式中檢視報表。 Power BI 服務，來建立報表，然後在行動應用程式互動。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,54 +20,56 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="reports-in-the-power-bi-app-for-android-phones"></a>Reports in the Power BI app for Android phones
+# <a name="reports-in-the-power-bi-app-for-android-phones"></a>Android 手機的 Power BI 應用程式中的報表
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You <bpt id="p1">[</bpt>create and customize reports<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> in the Power BI service <bpt id="p2">[</bpt>(https://powerbi.com)<ept id="p2">](https://powerbi.com)</ept>.
+報表是您的資料，以代表不同的結果和深入觀點，從該資料的視覺效果的互動式檢視。 您 [建立和自訂報表](powerbi-service-create-a-new-report.md) 在 Power BI 服務 [(https://powerbi.com)](https://powerbi.com)。
 
-Then you view and interact with those reports in the <bpt id="p1">[</bpt>Android app<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>.
+然後您檢視並與其互動中的這些報表 [Android 應用程式](powerbi-mobile-android-app-get-started.md)。
 
-## <a name="open-a-power-bi-report"></a>Open a Power BI report
+## <a name="open-a-power-bi-report"></a>開啟 Power BI 報表
 
-- On the main page of the Power BI mobile app, tap Reports, then the report you want to open. 
+- 在 Power BI 行動應用程式主頁面上，點選報表，然後將您想要開啟報表。 
 
      ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-home.png)
 
-    Here you see the same Power BI reports <ph id="ph1">![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrpticon.png)</ph> and Excel workbooks that you have in the Power BI service.
+    您在這裡看到相同的 Power BI 報表 ![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrpticon.png) 和 Excel 活頁簿，您可以在 Power BI 服務。
 
-- On a dashboard, tap the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) on a tile &gt; <bpt id="p2">**</bpt>Open Report<ept id="p2">**</ept>.
+- 在 [儀表板中，點選 [省略符號 (**...**) 方塊 > **開啟報表**。
 
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-open-report-tile.png)
 
-    The report opens in landscape mode.
+    橫向模式中開啟報表。
 
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report.png)
 
-     > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&amp;A box don't open reports when you tap them. 
+     > [AZURE.NOTE]  並非所有的牌可以開啟報表。 比方說，當您點一下您建立的問與答中提問的磚不開啟報表。 
 
-## <a name="see-other-pages-in-a-power-bi-report"></a>See other pages in a Power BI report
+## <a name="see-other-pages-in-a-power-bi-report"></a>請參閱其他 Power BI 報表中的頁面
 
--   Swipe from one side or the other, or 
+-   撥動從一端或另一個，或 
 
--   Tap the Pages icon <ph id="ph1">![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-pages-icon.png)</ph> in the lower-right corner, then tap a page name. 
+-   點選 [頁面] 圖示 ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-pages-icon.png) 在右下角，然後點選 [頁面名稱。 
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Cross-filter and highlight a Power BI report page
+## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>交叉篩選和反白顯示 Power BI 報表頁面
 
--   Tap a value in a chart.
+-   點選圖表中的值。
 
     ![](media/powerbi-mobile-reports-in-the-android-app/PBI_Win10Uni_XFltrRptSm.png)
 
-    Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
+    點選紅色的"030 把孩子"泡泡在泡泡圖中的反白顯示其他圖表中相關的值。 在右上方的直條圖會顯示百分比，因為有些反白顯示的值大於總計值，而有些則較小。 
 
-## <a name="use-slicers-to-filter-the-report-page"></a>Use slicers to filter the report page
+## <a name="use-slicers-to-filter-the-report-page"></a>使用交叉分析篩選器來篩選 [報表] 頁面
 
-When designing a report in the Power BI service <bpt id="p1">[</bpt>(https://powerbi.com)<ept id="p1">](https://powerbi.com)</ept>, it's good to <bpt id="p2">[</bpt>add slicers to a report page<ept id="p2">](powerbi-service-tutorial-slicers.md)</ept>. Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+Power BI 服務中設計報表時 [(https://powerbi.com)](https://powerbi.com), ，最好將 [將交叉分析篩選器加入至報表頁面](powerbi-service-tutorial-slicers.md)。 然後當您或您的同事在您的行動裝置上檢視報表時，您可以使用交叉分析篩選器來篩選頁面。
 
--   Select a value in a slicer on the report page.
+-   在 [報表] 頁面上的交叉分析篩選器中選取的值。
 
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-slicer.png)
 
 
 ### <a name="see-also"></a>請參閱
 
-- <bpt id="p1">[</bpt>Get started with the Android app<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [開始使用 Android 的應用程式](powerbi-mobile-android-app-get-started.md)
+- 問題了嗎？ 
+            [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

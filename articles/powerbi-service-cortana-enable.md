@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Enable Cortana for Power BI"
-   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from mobile devices."
+   pageTitle="允許 Cortana Power bi"
+   description="使用 Power BI 的 Cortana 解答您的資料。 Cortana 啟動每個 Power BI 資料集，然後啟用 [Cortana 從行動裝置存取您的資料集。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
@@ -21,68 +21,73 @@
    ms.author="mihart"/>
 
 
-# <a name="enable-cortana-for-power-bi"></a>Enable Cortana for Power BI
+# <a name="enable-cortana-for-power-bi"></a>允許 Cortana Power bi
 
-Ask natural language questions in Cortana and find answers from data stored in Power BI.
+詢問 Cortana 的自然語言問題並且尋找解答從 Power BI 中儲存的資料。
 
-Before Cortana can look for answers in your Power BI datasets and reports, you'll need:
+Cortana 可以尋找解答您的 Power BI 資料集和報表之前，您將需要︰
 
--  a dataset in Power BI enabled for Cortana to access
+-  啟用 Cortana 存取 Power BI 中的資料集
 
--  to add the account you use with Power BI for Windows.
+-  若要將帳戶新增您使用與 Power BI for Windows。
 
-  >[AZURE.NOTE] Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
+  >[AZURE.NOTE] Cortana Power bi 是目前僅提供英文版本。 無法在行動裝置上目前可用 Cortana。
 
-## <a name="enable-cortana-to-access-data-in-power-bi"></a>Enable Cortana to access data in Power BI
-In the Power BI service, you'll need to repeat these steps for each dataset that you want Cortana to be able to access.
+## <a name="enable-cortana-to-access-data-in-power-bi"></a>允許 Cortana 存取 Power BI 中的資料
+在 Power BI 服務，您必須針對您想要能夠存取 Cortana 每個資料集重複上述步驟。
 
-1.  Sign-in to Power BI service.
+1.  登入 Power BI 服務。
 
-2. In the upper right corner, select the cog icon and choose <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+2. 在右上角，選擇齒輪圖示，然後選擇 [ **設定**。
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana_settings.png)
 
-3. Select the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> tab and select the dataset from the list on the left.
+3. 選取 **資料集** 索引標籤，從左側清單中選取的資料集。
 
-4.  Select <bpt id="p1">**</bpt>Q&amp;A and Cortana<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Allow Cortana to access this dataset<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Apply<ept id="p3">**</ept>.
+4.  選取 **問與答與 Cortana** > **允許 Cortana 存取此資料集** > **套用**。
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana-enable-new.png)
 
-    In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
+    在此範例中，我們正在啟用 Cortana 零售分析範例資料集上。
 
-    >[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+    >[AZURE.NOTE] 當新的資料集或自訂 Cortana 回應頁面加入至 Power BI 並啟用 Cortana 時，它可能需要 30 分鐘的時間就會開始出現的結果。  登入和移出 Windows 10，或在 Windows 10，否則重新啟動 Cortana 程序可讓新的內容會立即出現。
 
-    >[AZURE.IMPORTANT]If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
+    >[AZURE.IMPORTANT]如果您啟用 Cortana，資料集，而且該資料集內容的組件的一部分您自己，您必須重新發行您的同事也可以使用 Cortana。
 
-5. Determine which Windows 10 version you are running. Check which version you have by selecting <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>System<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>About<ept id="p3">**</ept>.
+5. 判斷您正在執行的 Windows 10 版本。 您可以選取哪一個版本的核取 **設定** > **系統** > **有關**。
 
-   -  If you have <bpt id="p1">[</bpt>Windows 10 version 1511 (Windows 10 November Update) up until 1607<ept id="p1">](http://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/)</ept>, add your work or school account and Microsoft account (complete steps 6 and 7 below).
+   -  如果您有 [Windows 10 版本 （Windows 10 年 11 月更新） 1511年為止 1607年](http://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/), ，加入您的工作或學校帳戶和 Microsoft 帳戶 （完成步驟 6 和 7）。
 
-   -  If you have <bpt id="p1">[</bpt>Windows 10 version 1607 (Windows 10 July 2016 update) or later<ept id="p1">](https://support.microsoft.com/en-us/kb/3176929)</ept>, add your work or school account (complete only step 6 below).
+   -  如果您有 [Windows 10 版本 1607年 （Windows 10 年 7 月 2016年更新） 或更新版本](https://support.microsoft.com/en-us/kb/3176929), 中，新增您的工作或學校帳戶 （完整只有步驟 6）。
 
-6. Add your work or school account for Cortana.
-   -  Open Windows Settings &gt; Accounts.
+6. 新增 Cortana 您工作或學校的帳戶。
+   -  開啟 [Windows 設定] > 帳戶。
 
          ![](media/powerbi-service-cortana-enable/power-bi-windows-accounts.png)
 
-   -  Scroll to the bottom and select <bpt id="p1">**</bpt>Add a work or school account<ept id="p1">**</ept>.
+   -  捲動至底部，然後選取 **新增工作或學校帳戶**。
 
          ![](media/powerbi-service-cortana-enable/power-bi-add-work-account.png)
 
-7. On the <bpt id="p1">**</bpt>Accounts<ept id="p1">**</ept> page, scroll to the bottom where you'll see <bpt id="p2">**</bpt>Add a Microsoft account<ept id="p2">**</ept>.
+7. 在 **帳戶** ] 頁面上，捲動至底部，您會看到 **新增 Microsoft 帳戶**。
       ![](media/powerbi-service-cortana-enable/power-bi-add-microsoft-account.png)
 
-   -  Sign in with the account you use with Power BI.
+   -  您可以使用 Power BI 帳戶登入。
 
-Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
+Cortana 將會使用這項工作或學校帳戶，來檢查潛在的 Power BI Cortana 您的問題的解答。
 
 ## <a name="see-also"></a>請參閱
-<bpt id="p1">[</bpt>Using Cortana with Power BI<ept id="p1">](powerbi-service-cortana-intro.md)</ept>
 
-<bpt id="p1">[</bpt>Create Cortana <bpt id="p2">*</bpt>Answer pages<ept id="p2">*</ept> in Power BI<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept>
+            [使用 Cortana 與 Power BI](powerbi-service-cortana-intro.md)
 
-<bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>
 
-<bpt id="p1">[</bpt>Power BI basic concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
+            [建立 Cortana *回答頁面* Power BI 中](powerbi-service-cortana-desktop-entity-cards.md)
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+
+            [問與答 Power BI 中](powerbi-service-q-and-a.md)
+
+
+            [Power BI 的基本概念](powerbi-service-basic-concepts.md)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

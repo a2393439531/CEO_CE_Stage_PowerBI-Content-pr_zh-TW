@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Troubleshooting Analyze in Excel"
-   description="Solutions to common issues for Analyze in Excel"
+   pageTitle="疑難排解在 Excel 中分析"
+   description="在 Excel 中進行分析的常見問題的解決方案"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,99 +20,101 @@
    ms.date="09/27/2016"
    ms.author="davidi"/>
 
-# Troubleshooting Analyze in Excel
+# 疑難排解在 Excel 中分析
 
-There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. This page provides solutions for common issues when using Analyze in Excel.
+有時候可能會使用在您收到非預期的結果或功能的 Excel 中進行分析時無法運作的如您預期般。 使用 [在 Excel 中進行分析時，此頁面會提供解決方案的常見問題。
 
-> <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> There's a separate page dedicated to describing and enabling <bpt id="p2">[</bpt>Analyze in Excel<ept id="p2">](powerbi-service-analyze-in-excel.md)</ept>.
+> 
+            **注意︰** 沒有專門用來描述及啟用的個別頁面 [在 Excel 中的進行分析](powerbi-service-analyze-in-excel.md)。
 
-> If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> 如果您遇到未列出，以下的案例，而且它會造成問題，您可以尋求進一步協助上 [社群網站](http://community.powerbi.com/), ，或者您可以建立 [支援票證](https://powerbi.microsoft.com/support/)。
 
-This article contains the following troubleshooting sections:
+本文包含下列的疑難排解章節︰
 
--   Update Excel libraries for the OLE DB provider
--   Determining whether you need to update your Excel libraries
--   Connection cannot be made error
--   Forbidden error
--   No data models
--   Token expired error
--   Unable to access on-premises Analysis services
--   Can't drag anything to the PivotTable Values area (no measures)
+-   更新的 OLE DB 提供者的 Excel 文件庫
+-   判斷是否需要更新您的 Excel 文件庫
+-   無法連接錯誤
+-   禁止的錯誤
+-   沒有資料模型
+-   權杖過期的錯誤
+-   無法存取內部部署 Analysis services
+-   無法將任何項目拖曳到樞紐分析表值區域 （沒有任何量值）
 
 
-## Update Excel libraries for the OLE DB provider
-To use <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>, your computer must have a current AS OLE DB provider installed. This <bpt id="p1">[</bpt>community post<ept id="p1">](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081)</ept> is a great source to verify your installation of the OLE DB provider, or to download a recent version.
+## 更新的 OLE DB 提供者的 Excel 文件庫
+若要使用 **在 Excel 中的進行分析**, ，電腦必須已安裝目前的 OLE DB 提供者。 這 [社群文章](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) 是確認您的安裝的 OLE DB 提供者，或下載最新版本的絕佳來源。
 
-The Excel libraries need to match your version of Windows in terms of its bit-level. If you have 64-bit Windows installed, you need to install the 64-bit OLE DB provider.
+Excel 文件庫必須符合您的 Windows 版本以其位元層級。 如果您有 64 位元 Windows 安裝，您需要安裝 64 位元 OLE DB 提供者。
 
-To download the latest Excel libraries, visit Power BI and select the <bpt id="p1">**</bpt>down arrow<ept id="p1">**</ept> in the upper right corner of the Power BI service, then select <bpt id="p2">**</bpt>Analyze in Excel updates<ept id="p2">**</ept>.
+若要下載最新的 Excel 文件庫，請瀏覽 Power BI，然後選取 **向下箭號** 右上角的 Power BI 服務，然後選取 **在更新 Excel 中的進行分析**。
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
-In the dialog that appears, select <bpt id="p1">**</bpt>Download (preview)<ept id="p1">**</ept>.
+在出現的對話方塊，選取 **下載 （預覽）**。
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
-## Determining whether you need to update your Excel libraries
-You can download the most recent version of the Excel OLE DB provider libraries from the links in the previous section. Once you download the appropriate OLD DB provider library and begin installation, checks are performed against your current installed version.
+## 判斷是否需要更新您的 Excel 文件庫
+您可以從上一節中的連結下載最新版的 Excel OLE DB 提供者程式庫。 一旦您下載適當的舊資料提供者程式庫，並開始安裝，針對您目前安裝的版本會進行檢查。
 
-If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
+如果 Excel OLE DB 提供者用戶端程式庫是最新狀態，將會看到一個對話方塊，如下所示︰
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
 C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
-Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
+或者，如果您要安裝新的版本比您的電腦上的版本還新，會出現下列對話方塊︰
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
-If you see the dialog prompting you to upgrade, you should continue with the installation to get the most recent version of the OLE DB provider installed in your computer.
+如果您看到的對話方塊，提示您升級時，您應該繼續進行安裝，以取得最新版本在電腦上安裝的 OLE DB 提供者。
 
-## Connection cannot be made error
-The primary cause for a <bpt id="p1">*</bpt>connection cannot be made<ept id="p1">*</ept> error is that your computer's OLE DB provider client libraries are not current. For information about how to determine the correct update, and for download links, see <bpt id="p1">**</bpt>Update Excel libraries for the OLE DB provider<ept id="p1">**</ept> earlier in this article.
+## 無法連接錯誤
+主要原因 *無法連接* 錯誤是電腦的 OLE DB 提供者用戶端程式庫不是最新。 如需有關如何判斷正確的更新資訊和下載連結，請參閱 **更新 Excel 文件庫的 OLE DB 提供者** 稍早在本文。
 
-## Forbidden error
-Some users have more than one Power BI account, and when Excel attempts to connect to Power BI using existing credentials, it may use credentials that do not have access to the dataset or report you want to access.
+## 禁止的錯誤
+有些使用者擁有多個 Power BI 帳戶，而且當 Excel 會嘗試連接到 Power BI 使用現有的認證，它可能會使用不需要存取資料集或您想要存取的報表的認證。
 
-When this occurs, you may  receive an error titled <bpt id="p1">**</bpt>Forbidden<ept id="p1">**</ept>, which means you may be signed into Power BI with credentials that do not have permissions to the dataset. After encountering the <bpt id="p1">**</bpt>forbidden<ept id="p1">**</ept> error, when prompted to enter your credentials, use the credentials that have permission to access the dataset you're trying to use.
+當發生這種情況時，您可能會收到錯誤標題為 **禁止**, ，這表示您可能要登入 Power BI 並沒有資料集的權限的認證。 在發生後 **禁止** 錯誤，當系統提示您輸入認證，使用有權存取您想要使用的資料集的認證。
 
-If you still run into errors, log into Power BI with the account that has permission, and verify that you can view and access the dataset in Power BI that you're attempting to access in Excel.
+如果您仍然遇到錯誤，以有權限的帳戶登入 Power BI，並確認您可以檢視並存取您嘗試存取在 Excel 中的 Power BI 中的資料集。
 
-## No data models
-If you encounter an error that states <bpt id="p1">**</bpt>Can't find OLAP cube model<ept id="p1">**</ept>, then the dataset you're trying to access has no data model, and therefore cannot be analyzed in Excel.
+## 沒有資料模型
+如果您遇到錯誤指出 **找不到 OLAP cube 模型**, ，則您正嘗試存取的資料集不包含資料模型，並因此無法在 Excel 中分析。
 
-## Token expired error
-If you receive a <bpt id="p1">**</bpt>token expired<ept id="p1">**</ept> error, it means you haven't recently used the <bpt id="p2">**</bpt>Analyze in Excel<ept id="p2">**</ept> feature on the computer you're using. Simply re-enter your credentials, or reopen the file, and the error should go away.
+## 權杖過期的錯誤
+如果您收到 **權杖過期** 錯誤，就表示您最近未曾使用 **在 Excel 中的進行分析** 所使用的電腦上的功能。 只需重新輸入您的認證，或重新開啟檔案，以及錯誤應該會消失。
 
-## Unable to access on-premises Analysis Services
-If you're trying to access a dataset that has connections to on-premises Analysis Services data, you may receive an error message. <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> does support connecting to datasets and reports on on-premises <bpt id="p2">**</bpt>Analysis Services<ept id="p2">**</ept> with a connection string, as long as your computer is on the same domain as the <bpt id="p3">**</bpt>Analysis Services<ept id="p3">**</ept> server, and your account has access to that <bpt id="p4">**</bpt>Analysis Services<ept id="p4">**</ept> server.
+## 無法存取內部部署 Analysis Services
+如果您正嘗試存取已連線到內部部署 Analysis Services 資料的資料集，您可能會收到錯誤訊息。 
+            **在 Excel 中分析** 支援連接至資料集和報表上的內部 **Analysis Services** 使用連接字串，只要您的電腦位於相同的網域 **Analysis Services** 伺服器和您的帳戶具有存取權， **Analysis Services** 伺服器。
 
-currently does not support connections to on-premises Analysis Services.
+目前不支援內部部署 Analysis Services 連接。
 
-## Can't drag anything to the PivotTable Values area (no measures)
+## 無法將任何項目拖曳到樞紐分析表值區域 （沒有任何量值）
 
-When <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> connects to an external OLAP model (which is how Excel connects to Power BI), the <bpt id="p2">*</bpt>PivotTable<ept id="p2">*</ept> <bpt id="p3">[</bpt>requires <bpt id="p4">**</bpt>measures<ept id="p4">**</ept> to be defined in the external model<ept id="p3">](https://support.microsoft.com/kb/234700)</ept>, since all calculations are performed on the server. This is different than when you work with a local data source (such as tables in Excel, or when you're working with datasets in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> or the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>), in which case the tabular model is available locally, and <bpt id="p3">[</bpt>you can use implicit measures<ept id="p3">](https://msdn.microsoft.com/library/gg399077.aspx)</ept>, which are measures that are generated dynamically and are not stored in the data model. In these cases, the behavior in Excel is different from the behavior in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> or the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>: there may be columns in the data that can be treated as measures in Power BI, but can't be used as values (measures) in Excel.
+當 **在 Excel 中的進行分析** 會連接到外部 OLAP 模型 （這是 Excel 連接到 Power BI 的方式）， *樞紐分析表* [需要 **量值** 外部模型中定義](https://support.microsoft.com/kb/234700), ，因為伺服器上執行所有的計算。 這是當您使用本機資料來源的不同 (例如在 Excel 中，或您正在使用中的資料集的資料表 **Power BI Desktop** 或 **Power BI 服務**)，在此情況下表格式模型可以使用在本機和 [您可以使用隱含量值](https://msdn.microsoft.com/library/gg399077.aspx), ，這是動態產生，並不會儲存在資料模型的量值。 在這些情況下，在 Excel 中的行為是不同的行為 **Power BI Desktop** 或 **Power BI 服務**︰ 有可能是資料行的資料可視為 Power BI 中的量值，但不能在 Excel 中的值 （量值）。
 
-To address this issue, you have a few options:
+若要解決此問題，您有幾個選項︰
 
-1.  Create <bpt id="p1">[</bpt>measures in your data model in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept><ept id="p1">](powerbi-desktop-tutorial-create-measures.md)</ept>, then publish the data model to the <bpt id="p3">**</bpt>Power BI service<ept id="p3">**</ept> and access that published dataset from Excel.
-2.  Create <bpt id="p1">[</bpt>measures in your data model from Excel PowerPivot<ept id="p1">](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)</ept>.
-3.  If you imported data from an Excel workbook that had only tables (and no data model), then you can <bpt id="p1">[</bpt>add the tables to the data model<ept id="p1">](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)</ept>, then follow the steps in option 2, directly above, to create measures in your data model.
+1.  建立 [中您的資料模型中的量值 **Power BI Desktop**](powerbi-desktop-tutorial-create-measures.md), ，然後將資料模型，以發行 **Power BI 服務** 及發行從 Excel 的資料集的存取。
+2.  建立 [從 Excel PowerPivot 資料模型中的量值](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)。
+3.  如果您匯入資料從 Excel 活頁簿具有僅資料表 （和任何資料模型），那麼您可以 [將資料表加入至資料模型](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42), ，然後遵循選項 2︰ 正上方，建立資料模型中的量值。
 
-Once your measures are defined in the model in the Power BI service, you'll be able to use them in the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> area in Excel PivotTables.
+一旦您的量值定義之模型的 Power BI 服務中，您就能夠使用它們 **值** Excel 樞紐分析表的區域。
 
 
 
 ## 另請參閱  
 
-[Analyze in Excel](powerbi-service-analyze-in-excel.md)
+[在 Excel 中分析](powerbi-service-analyze-in-excel.md)
 
-[Tutorial: Create your own measures in Power BI Desktop](powerbi-desktop-tutorial-create-measures.md)
+[教學課程︰ 在 Power BI Desktop 中建立您自己的量值](powerbi-desktop-tutorial-create-measures.md)
 
-[Measures in PowerPivot](https://msdn.microsoft.com/library/gg399077.aspx)
+[在 PowerPivot 中的量值](https://msdn.microsoft.com/library/gg399077.aspx)
 
-[Create a Measure in PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
+[在 PowerPivot 中建立量值](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 
-[Add worksheet data to a Data Model using a linked table](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
+[使用連結的資料表的資料模型中加入工作表資料](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[Differences between OLAP and non-OLAP PivotTables in Excel](https://support.microsoft.com/kb/234700)
+[Excel 中 OLAP 和非-OLAP 樞紐分析表之間的差異](https://support.microsoft.com/kb/234700)

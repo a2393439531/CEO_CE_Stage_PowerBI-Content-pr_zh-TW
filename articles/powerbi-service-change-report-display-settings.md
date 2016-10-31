@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Page display settings in a Power BI report"
-   description="Page display settings in a Power BI report"
+   pageTitle="頁面顯示 Power BI 報表中的設定"
+   description="頁面顯示 Power BI 報表中的設定"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,53 +21,57 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Page display settings in a Power BI report
+# 頁面顯示 Power BI 報表中的設定
 
-We understand it is critical to keep your report layout pixel perfect. Sometimes, it can be challenging, because you and your colleagues view those reports on screens with different aspect ratios and sizes. 
+我們了解，請務必保留報表的版面配置像素完美。 某些情況下，可能不容易，因為您與同事檢視這些報告在不同的外觀比例和大小與螢幕上。 
 
-The default display view is <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> and the default display size is <bpt id="p2">**</bpt>16:9<ept id="p2">**</ept>. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: <bpt id="p1">***</bpt>Page View<ept id="p1">***</ept> settings and <bpt id="p2">***</bpt>Page Size<ept id="p2">***</ept> settings.
+預設顯示的檢視 **大小** ，而預設的顯示大小為 **16:9**。 如果您想要鎖定在不同的外觀比例，或想要以不同方式符合您的報表，有兩項工具可協助您︰ ***頁面檢視*** 設定和 ***頁面大小*** 設定。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 
 
-## Page View settings
+## 頁面檢視設定
 
 ![](media/powerbi-service-change-report-display-settings/pbi-change-page-view.png)
 
 
 
-The <bpt id="p1">*</bpt>Page View<ept id="p1">*</ept> settings let you control the display of your report page relative to the browser window.  You can choose between:
+ *頁面檢視* 設定可讓您控制報表頁面相對於瀏覽器視窗的顯示。  您可以選擇︰
 
--   <bpt id="p1">**</bpt>Fit to Page<ept id="p1">**</ept> (default): contents are scaled to best fit the page
--   <bpt id="p1">**</bpt>Fit to Width<ept id="p1">**</ept>: contents are scaled to fit within the width of the page
--   <bpt id="p1">**</bpt>Actual Size<ept id="p1">**</ept>: contents are displayed at full size
+-   
+            **調整成一頁** （預設值）︰ 調整內容，以最符合頁面
+-   
+            **適合寬度**︰ 調整內容，以符合內頁面的寬度
+-   
+            **實際大小**︰ 以完整大小顯示內容
 
-Page View settings are available in both <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. In Editing View, a report owner can assign a Page View setting to individual report pages, and those settings are saved with the report. When a colleague opens that report in Reading View, she sees the report pages display using the owner's settings.  However, while working with the report in Reading View, she can temporarily change the Page View settings.  Once she leaves the report, the Page View settings revert back to those that were set by the report owner.
+頁面檢視設定兩者都有提供 [讀取檢視](powerbi-service-interact-with-a-report-in-reading-view.md) 和 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md)。 在 [編輯] 檢視報表擁有者可以指派給個別報表頁面的頁面檢視設定，這些設定會與報表一起儲存。 當同事在讀取檢視中開啟該報表時，她會看到報表頁面顯示使用擁有者的設定。  不過，工作讀取檢視報表時，她可以暫時變更的頁面檢視設定。  她離開報表，一旦頁面檢視設定回復這些報表擁有者所設定。
 
-## Page Size settings
+## 頁面大小設定
 
 ![](media/powerbi-service-change-report-display-settings/pbi-change-page-size.png)
 
-The <bpt id="p1">*</bpt>Page Size<ept id="p1">*</ept> settings control the display ratio and actual size (in pixels).  Page Size settings are only available in Editing View.
+ *頁面大小* 設定控制的顯示比例和實際大小 （以像素為單位）。  頁面大小設定僅可用於編輯的檢視。
 
--   4:3 ratio
+-   4:3 比例
 
--   16:9 ratio (default)
+-   比例 16:9 （預設值）
 
 -   Cortana
 
--   Letter
+-   字母
 
--   Custom (height and width in pixels)
+-   自訂 （高度和寬度，單位為像素）
 
 ## 下一個步驟
 
-<bpt id="p1">[</bpt>Learn how to use Page View and Page Size settings in your own Power BI reports<ept id="p1">](powerbi-service-tutorial-change-report-display-settings.md)</ept>.
+
+            [了解如何使用 Power BI 報表中的頁面檢視和頁面大小設定](powerbi-service-tutorial-change-report-display-settings.md)。
 
 ## 請參閱
 
-Read more about <bpt id="p1">[</bpt>reports in Power B<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [電源 B 中的報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

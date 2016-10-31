@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Show Categories with no Data"
-   description="Learn how to display empty columns in your visualizations"
+   pageTitle="顯示沒有資料的類別目錄"
+   description="了解如何在視覺效果中顯示空白資料行"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,18 +23,18 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Show Categories With No Data
+# 顯示沒有資料的類別目錄
 
-By default, column headings are only displayed in your reports if they contain data. For example, if you were displaying revenue by country and had no sales in Norway, then Norway would not appear anywhere in your visualization.
+根據預設，資料行標題是才顯示在報表中包含的資料。 例如，如果您已顯示依國家/地區的營收，並沒有挪威中的沒有銷售額，然後挪威不會出現任何地方在您的視覺效果。
 
-To display empty categories, click on the down-arrow in the field you want to change in the  <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, and select <bpt id="p2">**</bpt>Show items with no data<ept id="p2">**</ept>.
+若要顯示空的類別，按一下您想要變更的欄位中向下箭號  **視覺效果** 窗格，然後選取 **顯示沒有資料的項目**。
 
 ![](media/powerbi-learning-3-11c-display-empty-categories/3-11c_1.png)
 
-Any empty columns now appear in your visual with blank values.
+任何空的資料行現在顯示在 visual studio 會以空白值。
 
 ![](media/powerbi-learning-3-11c-display-empty-categories/3-11c_2.png)
 
-Once you select <bpt id="p1">**</bpt>Show items with no data<ept id="p1">**</ept> for any field in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane, it applies to all fields displayed in the Visualizations pane. So if you add another field, any items that have no data will also be shown, without having to revisit the drop-down menu.
+一旦您選取 **顯示沒有資料的項目** 中的任何欄位 **視覺效果** ] 窗格中，它會套用至所有視覺效果] 窗格中顯示的欄位。 因此如果您加入另一個欄位，不會有資料的任何項目也會顯示，而不必再次造訪下拉式選單。
 
 ![](media/powerbi-learning-3-11c-display-empty-categories/3-11c_3.png)

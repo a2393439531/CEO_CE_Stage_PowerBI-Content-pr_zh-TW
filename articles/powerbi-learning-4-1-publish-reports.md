@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Publish Power BI Desktop reports"
-   description="Easily get your Power BI Desktop reports into the service"
+   pageTitle="發行 Power BI Desktop 報表"
+   description="輕鬆地取得您的 Power BI Desktop 報表服務"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Publish Reports from Power BI Desktop to the Power BI Service
+# 將報表發行從 Power BI Desktop 至 Power BI 服務
 
-Publishing your reports to the Power BI service is fast and easy.
+您的報表發行至 Power BI 服務既快速又簡單。
 
-Once you've completed authoring your report in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, just select the <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept> button on the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> tab in Power BI Desktop, and the process begins.
+當您完成撰寫您的報表中 **Power BI Desktop**, ，只選取 **發行** 按鈕 **首頁** 在 Power BI Desktop 和程序] 索引標籤開始。
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_1.png)
 
-Your report and data, including visualizations, queries, and custom measures, are packaged together and uploaded to the Power BI service.
+您的報表和資料，包括視覺效果、 查詢和自訂量值會封裝在一起，並上傳至 Power BI 服務。
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_2.png)
 
->NOTE: It's common to refer to Power BI Desktop reports as <bpt id="p1">**</bpt>.pbix<ept id="p1">**</ept> files, which is the extension they're given in Windows.
+>注意︰ 通常會做為 Power BI Desktop 報表，請參閱 **.pbix** 檔案，它們會獲得 Windows 中的擴充功能。
 
-Once the upload is complete, a dialog box tells you the publishing process succeeded and a link is provided in that dialog to take you directly to your report in the Power BI service, in a web browser.
+上傳完成之後，對話方塊會告訴您發行程序成功，會在該對話方塊，您直接帶到您在 Power BI 服務，在網頁瀏覽器中的報表中提供的連結。
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_3.png)
 
-And that's it - it's easy to publish reports from Power BI Desktop to the Power BI service.
+然後就這麼容易-很容易就能將報表發行從 Power BI Desktop 至 Power BI 服務。
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_4.png)

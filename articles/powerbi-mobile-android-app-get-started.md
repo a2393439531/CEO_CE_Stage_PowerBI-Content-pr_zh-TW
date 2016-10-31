@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Get started with the Power BI for Android mobile app"
-   description="The Android mobile app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to business information."
+   pageTitle="開始使用 Power BI for Android 的行動裝置應用程式"
+   description="Microsoft Power BI 的 Android 行動應用程式會將 Power BI 帶入走，最新狀態、 觸控式行動存取商務資訊。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,94 +20,103 @@
    ms.date="09/30/2016"
    ms.author="maggies"/>
 
-# Get started with the Power BI for Android mobile app
+# 開始使用 Power BI for Android 的行動裝置應用程式
 
-The Android app for Microsoft Power BI brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere.
+Microsoft Power BI 的 Android 應用程式帶來口袋的商業資訊的最新狀態、 觸控式行動存取 Power BI。 檢視和公司儀表板從任何地方進行互動。
 
 ![](media/powerbi-mobile-android-app-get-started/power-bi-android-dashboard-optimized.png)
 
-You <bpt id="p1">[</bpt>create dashboards and reports in the Power BI service<ept id="p1">](powerbi-service-get-started.md)</ept> with your data. 
+您 [Power BI 服務中建立儀表板和報表](powerbi-service-get-started.md) 您的資料。 
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the Android app for Power BI.
+然後與您的儀表板和報表互動、 瀏覽資料，並分享，都可透過 Power BI 的 Android 應用程式。
 
 ## 首要之務
 
--   <bpt id="p1">**</bpt>Get the app<ept id="p1">**</ept>  <bpt id="p2">[</bpt>Get the Power BI for Android app<ept id="p2">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> from Google Play.
+-   
+            **取得應用程式**[Android 應用程式取得 Power BI](http://go.microsoft.com/fwlink/?LinkID=544867) 從 Google Play。  
 
-    ><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Power BI can run on a number of different Android phones. Your phone needs to be running the Android 4.4 operating system, or later. To check on your phone, go to <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>About device<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Android version<ept id="p3">**</ept>. 
+    >
+            **注意︰** Power BI 可在許多不同的 Android 電話上執行。 您的電話需要執行 Android 4.4 的作業系統，或更新版本。 若要檢查您的電話，請移至 **設定** > **裝置的相關** > **Android 版本**。 
 
--   <bpt id="p1">**</bpt>Start when you open the app<ept id="p1">**</ept>    Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android phone. Tap <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> to view and explore the samples, and get hands-on experience with the app. You can go back to the samples whenever you want from the dashboards home page.
+-   
+            **當您開啟應用程式時，啟動**    即使沒有註冊或登入，開啟應用程式，您可以快速瀏覽的快速概觀，您可以使用 Power BI 應用程式在 Android 電話執行的作業的登入頁面之後。 點選 **略過** 來檢視和瀏覽範例，以及取得應用程式的實際操作經驗。 您可以回到範例視需要從儀表板首頁。
 
--   Find out <bpt id="p1">[</bpt>what's new in the Power Bi mobile apps<ept id="p1">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+-   了解 [Power Bi 行動應用程式中新](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
-## Sign up for the Power BI service on the web
+## 註冊 Power BI 服務，在網站上
 
-If you haven't signed up yet, go to the <bpt id="p1">[</bpt>Power BI service (http://powerbi.com/)<ept id="p1">](http://powerbi.com/)</ept> to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android phone to see your own dashboards from anywhere.
+如果您還沒有註冊尚未，請移至 [Power BI 服務 (http://powerbi.com/)](http://powerbi.com/) 註冊您自己的帳戶建立和儲存儀表板和報表，以及將您的資料結合在一起。 然後登入 Power BI 在 Android 電話以查看您自己的儀表板，從任何地方。
 
-1.  In the Power BI service, tap <bpt id="p1">[</bpt>Sign up<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=513879)</ept> to create a Power BI account.
+1.  在 Power BI 服務，點選 [註冊](http://go.microsoft.com/fwlink/?LinkID=513879) 建立 Power BI 帳戶。
 
-2.   Start <bpt id="p1">[</bpt>creating your own dashboards and reports<ept id="p1">](powerbi-service-get-started.md)</ept>.
+2.   啟動 [建立您自己的儀表板和報告](powerbi-service-get-started.md)。
 
-## Get started with the Power BI app on your phone
+## 開始使用您的電話上的 Power BI 應用程式
 
-2.  On your Android phone, from the start screen open the Power BI for Android app.
+2.  在 Android 電話上，從 [開始] 畫面開啟 Power BI for Android 應用程式。
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-logo-android.png)
 
-3.  To view your Power BI dashboards and reports, tap <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept>.  
-   To view your Reporting Services mobile reports and KPIs, tap <bpt id="p1">**</bpt>SQL Server Reporting Services<ept id="p1">**</ept>.
+3.  若要檢視您的 Power BI 儀表板和報表，請點選 **Power BI**。  
+   若要檢視您的行動的 Reporting Services 報表和 Kpi，請點選 **SQL Server Reporting Services**。
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-connect.png)
 
-## Try the Power BI and Reporting Services samples  
-Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
+## 試用 Power BI 和 Reporting Services 範例  
+即使未註冊，您可以試用 Power BI 和 Reporting Services 範例。 下載應用程式之後，您可以檢視範例，或開始使用。 回到範例視需要從儀表板首頁。
 
-### Power BI samples
+### Power BI 範例
 
-You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
+您可以檢視並與其互動的 Power BI 儀表板範例中，但有幾件事，您不能處理它們。 您無法開啟儀表板背後的報告、 範例與其他人分享，或讓 [我的最愛]。
 
-1.   Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png)</ph> in the upper-left corner.
+1.   點選全域瀏覽按鈕 ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) 左上角。
   
-2.   Tap <bpt id="p1">**</bpt>Power BI samples<ept id="p1">**</ept>, then pick a role and explore the sample dashboard for that role.  
+2.   點選 **Power BI 範例**, ，然後選擇角色，並瀏覽該角色的範例儀表板。  
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-power-bi-samples.png)
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    >
+            **請注意**︰ 並非所有功能都都可以在這些範例。 例如，您無法檢視範例報表為基礎的儀表板。 
 
-### Reporting Services mobile report samples
+### Reporting Services 行動報表範例
 
-1.   Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png)</ph> in the upper-left corner.
+1.   點選全域瀏覽按鈕 ![](media/powerbi-mobile-android-app-get-started/power-bi-android-options-icon.png) 左上角。
 
-2.  Tap <bpt id="p1">**</bpt>Reporting Services samples<ept id="p1">**</ept>, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
+2.  點選 **Reporting Services 範例**, ，然後開啟零售報告或銷售報表] 資料夾來瀏覽其 Kpi 和行動的報告。
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-reporting-services-samples.png)
 
 ## 接下來該怎麼辦？
 
-See what else you can do in the Android phone app for Power BI with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
+了解其他您可以運用 Android 手機應用程式中 Power bi 儀表板和 Power BI 中的報表和 Reporting Services 行動報表和 Reporting Services web 入口網站中的 Kpi
 
-### Power BI dashboards
+### Power BI 儀表板
 
--   View your <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-dashboards-in-the-android-app.md)</ept>.
--   Explore the <bpt id="p1">[</bpt>tiles on your dashboards<ept id="p1">](powerbi-mobile-tiles-in-the-android-app.md)</ept>.
--   View <bpt id="p1">[</bpt>report page tiles<ept id="p1">](powerbi-mobile-report-page-tiles-in-the-android-app.md)</ept>.
--   Open <bpt id="p1">[</bpt>Power BI reports<ept id="p1">](powerbi-mobile-reports-in-the-android-app.md)</ept>.
--   View <bpt id="p1">[</bpt>your groups<ept id="p1">](powerbi-mobile-groups-in-the-android-app.md)</ept>.
--   <bpt id="p1">[</bpt>Annotate and share tiles<ept id="p1">](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)</ept>.
--   Share <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-share-a-dashboard-from-the-android-app.md)</ept>.
--   <bpt id="p1">[</bpt>Scan a Power BI QR code<ept id="p1">](powerbi-mobile-qr-code-for-tile.md)</ept> from your Android phone to open a related dashboard. 
--   View <bpt id="p1">[</bpt>notifications about updates to your Power BI account<ept id="p1">](powerbi-mobile-notification-center.md)</ept>, such as dashboards that colleagues share with you.
+-   檢視您 [儀表板](powerbi-mobile-dashboards-in-the-android-app.md)。
+-   瀏覽 [儀表板上的磚](powerbi-mobile-tiles-in-the-android-app.md)。
+-   檢視 [報告頁面磚](powerbi-mobile-report-page-tiles-in-the-android-app.md)。
+-   開啟 [Power BI 報告](powerbi-mobile-reports-in-the-android-app.md)。
+-   檢視 [群組](powerbi-mobile-groups-in-the-android-app.md)。
+-   
+            [加上註解和共用並排](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)。
+-   共用 [儀表板](powerbi-mobile-share-a-dashboard-from-the-android-app.md)。
+-   
+            [掃描 Power BI QR 代碼](powerbi-mobile-qr-code-for-tile.md) 從 Android 電話號碼，以開啟相關的儀表板。 
+-   檢視 [通知更新您的 Power BI 帳戶](powerbi-mobile-notification-center.md), ，例如同事分享您的儀表板。
 
     ![](media/powerbi-mobile-android-app-get-started/power-bi-android-notifications.png)
 
-### Reporting Services mobile reports and KPIs
+### Reporting Services 行動報表和 Kpi
 
-- <bpt id="p1">[</bpt>View Reporting Services mobile reports and KPIs<ept id="p1">](powerbi-mobile-android-kpis-mobile-reports.md)</ept> in the Android phone app for Power BI.
-- Create <bpt id="p1">[</bpt>KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with the SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+- 
+            [檢視行動的 Reporting Services 報表和 Kpi](powerbi-mobile-android-kpis-mobile-reports.md) Android 手機應用程式中的 Power BI。
+- 建立 [Reporting Services web 入口網站上的 Kpi](https://msdn.microsoft.com/library/mt683632.aspx)。
+- 
+            [建立您自己行動的報告與 SQL Server Mobile 報表發行者](https://msdn.microsoft.com/library/mt652547.aspx), ，並將它們發行至 Reporting Services web 入口網站。
 
 ### 請參閱
 
--  <bpt id="p1">[</bpt>Download the Android app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> from the Android app store.
--  [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  
+            [下載 Android 應用程式](http://go.microsoft.com/fwlink/?LinkID=544867) 從 Android 應用程式存放區。
+-  [開始使用 Power BI](powerbi-service-get-started.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

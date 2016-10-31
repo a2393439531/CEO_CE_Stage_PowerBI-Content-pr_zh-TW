@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Visualization types in Power BI"
-   description="Visualization types in Power BI"
+   pageTitle="在 Power BI 中的視覺效果類型"
+   description="在 Power BI 中的視覺效果類型"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,175 +19,189 @@
    ms.workload="powerbi"
    ms.date="09/17/2016"
    ms.author="mihart"/>
-# Visualization types in Power BI
+# 在 Power BI 中的視覺效果類型
 
 
-## Power BI visualizations
+## Power BI 視覺效果
 
-We'll be adding new visualizations, stay tuned!
+我們將持續加入新的視覺效果，但請密切注意 ！
 
-And check out the community site, visuals.powerbi.com, where you'll find a growing list of  custom visuals you can download and use in your own dashboards and reports. Feeling creative?  Watch this video to learn how to create and add your own visuals to the community site.  
+與社群網站，visuals.powerbi.com，其中您會發現清單的自訂視覺效果，您可以下載並使用您自己的儀表板和報表中。 感覺到創造力？  觀看這段影片以了解如何建立並加入您自己的視覺效果社群網站。  
 
-## List of visualizations available in Power BI
+## 使用 Power BI 中的視覺效果的清單
 
-All of these visualizations can be added to Power BI reports, specified in Q&amp;A, and pinned to dashboards.
+所有這些視覺效果可以加入至 Power BI 報表中，指定在問與答 A，並釘選到儀表板。
 
-### Bar and column charts
+### 列和資料行圖表
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 
 
  ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Bar charts are the standard for looking at a specific value across different categories.
 
-### Basic (Layered) and Stacked Area charts
+            **秘訣**︰ 橫條圖會查看不同類別的特定值的標準。
+
+### 基本 (Layered) 和堆疊區域圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: The Basic Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Basic Area chart<ept id="p1">](powerbi-service-tutorial-basic-area-chart.md)</ept>.
+            **秘訣**: 基本區域圖表根據與軸之間列填滿區域的折線圖。
 
-### Single number cards
+如需詳細資訊，請參閱 [教學課程︰ 基本區域圖](powerbi-service-tutorial-basic-area-chart.md)。
+
+### 單一數字的卡片
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
-For more information, see <bpt id="p1">[</bpt>Create a big number tile for a dashboard<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>.
+如需詳細資訊，請參閱 [建立大的數字磚儀表板](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)。
 
-### Multi row cards
+### 多個資料列的卡片
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 
-### Combo charts
+### 組合圖表
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/comboSmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: A Combo chart combines a column chart and a line chart. Choose from <bpt id="p1">*</bpt>Line and Stacked Column<ept id="p1">*</ept> and <bpt id="p2">*</bpt>Line and Clustered Column<ept id="p2">*</ept>.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Combo charts in Power BI<ept id="p1">](powerbi-service-tutorial-combo-chart-merge-visualizations.md)</ept>.
+            **秘訣**︰ 組合式圖表結合了直條圖和折線圖。 選擇 *列和堆疊的直條* 和 *號和叢集資料行*。
 
-### Doughnut charts
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的組合圖表](powerbi-service-tutorial-combo-chart-merge-visualizations.md)。
+
+### 環圈圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/donutSmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Doughnut charts are similar to Pie charts.  They show the relationship of parts to a whole.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Doughnut charts in Power BI<ept id="p1">](powerbi-service-tutorial-doughnut-charts.md)</ept>.
+            **秘訣**︰ 環圈圖的類似於圓形圖。  它們會顯示部份與整體的關係。
 
-### Funnel charts
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的環圈圖](powerbi-service-tutorial-doughnut-charts.md)。
+
+### 漏斗圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_funnel.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Funnels help visualize a process that has stages and items flow sequentially from one stage to the next.  Use a funnel when there is a sequential flow between stages, such as a sales process that starts with leads and ends with purchase fulfillment.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Funnel Charts in Power BI<ept id="p1">](powerbi-service-tutorial-funnel-charts.md)</ept>.
+            **秘訣**︰ 漏斗協助您設想有階段和項目到下一個循序從一個階段流程的處理序。  階段，例如銷售的程序會導致開始，並以購買履行之間序列流程時，請使用漏斗圖。
 
-### Gauge charts
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的漏斗圖](powerbi-service-tutorial-funnel-charts.md)。
+
+### 量測計的圖表
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/gauge_m.PNG)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Displays current status in the context of a goal.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Gauge Charts in Power BI<ept id="p1">](powerbi-service-tutorial-radial-gauge-charts.md)</ept>.
+            **秘訣**︰ 顯示目標的內容中的目前狀態。
+
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的量測計圖表](powerbi-service-tutorial-radial-gauge-charts.md)。
 
 ###   KPI
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Displays progress toward a measurable goal.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: KPIs in Power BI<ept id="p1">](powerbi-service-tutorial-kpi.md)</ept>.
+            **秘訣**︰ 顯示進度可測量的目標。
 
-### Line charts
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的 Kpi](powerbi-service-tutorial-kpi.md)。
+
+### 折線圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_line.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: emphasize the overall shape of an entire series of values, usually over time.
 
-### Maps (basic)
+            **秘訣**︰ 強調通常經過一段時間的值，整個系列的整體圖形。
+
+### 對應 （基本）
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi-Nancy_viz_map.png)
 
-<bpt id="p1">**</bpt>Ti﻿p<ept id="p1">**</ept>: are used to associate both categorical and quantitative information with spatial locations.
 
-For more information, see <bpt id="p1">[</bpt>Tips and tricks for map visuals<ept id="p1">](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md)</ept>.
+            **Ti p**︰ 用來將類別和數量的資訊空間位置與關聯。
 
-### Filled Maps (Choropleth)
+如需詳細資訊，請參閱 [秘訣和訣竅地圖視覺效果](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md)。
+
+### 填滿的對應 (Choropleth)
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_FilledMap.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: The more intense the color, the larger the value.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Filled Maps in Power BI<ept id="p1">](powerbi-service-tutorial-filled-maps-choropleths.md)</ept>.
+            **秘訣**︰ 更密集的色彩、 較大的值。
 
-### Matrix
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的填入對應](powerbi-service-tutorial-filled-maps-choropleths.md)。
+
+### 矩陣
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/matrix.png)
 
-### Pie charts
+### 圓形圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_pie.png)
 
-### Scatter and Bubble charts
+### 散佈圖和泡泡圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bubble.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Scatter charts in Power BI<ept id="p1">](powerbi-service-tutorial-scatter.md)</ept>.
+            **秘訣**︰ 在何種順序、 等不顯示 （散佈圖） 2 或 3 （泡泡） 數量的量值-之間的關聯性。
 
-### Slicers
+如需詳細資訊，請參閱 [教學課程︰ 散佈圖 Power BI 中的](powerbi-service-tutorial-scatter.md)。
+
+### 交叉分析篩選器
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/PBI_slicer.png)
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Slicers in Power BI<ept id="p1">](powerbi-service-tutorial-slicers.md)</ept>.
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的交叉分析篩選器](powerbi-service-tutorial-slicers.md)。
 
-### Standalone images
+### 獨立映像
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_image.png)
 
-For more information, see <bpt id="p1">[</bpt>Add an image widget to a dashboard<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>.
+如需詳細資訊，請參閱 [映像 widget 加入儀表板](powerbi-service-add-a-widget-to-a-dashboard.md)。
 
 ### 資料表
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/tableType.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: work well with quantitative comparisons among items where there are many categories.
 
-### Tree Maps
+            **秘訣**︰ 可搭配量化比較項目也有許多類別。
+
+### 樹狀目錄中的對應
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_tree.png)
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Treemaps in Power BI<ept id="p1">](powerbi-service-tutorial-treemaps.md)</ept>.
+如需詳細資訊，請參閱 [教學課程︰ 在 Power BI 中的 Treemaps](powerbi-service-tutorial-treemaps.md)。
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles.
 
-### Waterfall charts
+            **秘訣**︰ 也就是圖表之彩色矩形，代表值的大小。  它們可以是階層式，具有主要矩形內的巢狀的矩形。
+
+### 瀑布圖
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Waterfall charts show a running total as values are added or subtracted.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial Waterfall charts in Power BI<ept id="p1">](powerbi-service-tutorial-waterfall-charts.md)</ept>.
+            **秘訣**︰ 瀑布圖會顯示所執行的總加入或減去的值時。
+
+如需詳細資訊，請參閱 [Power BI 中的教學課程瀑布圖](powerbi-service-tutorial-waterfall-charts.md)。
 
 ###
 
-## Tell Q&amp;A which visualization to use
+## 告訴問答集若要使用哪一個視覺效果
 
-When typing natural language queries with Power BI Q&amp;A, you can specify the visualization type in your query.  例如：
+輸入時透過 Power BI 問與答的自然語言查詢，您可以在查詢中指定的視覺效果類型。  例如：
 
-"<bpt id="p1">***</bpt>sales by state as a treemap<ept id="p1">***</ept>"
+「***業績狀態為 treemap***」
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/QAtreeMap.png)
 
 
 ## 請參閱
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

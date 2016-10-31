@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Hyperlinks in tables"
-   description="Hyperlinks in tables"
+   pageTitle="資料表中的超連結"
+   description="資料表中的超連結"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,80 +19,84 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Hyperlinks in tables
+# 資料表中的超連結
 
-This topic teaches you how to create and work with hyperlinks in tables and matrixes.  URLs in Power BI tables (and matrixes) can function as hyperlinks. Underlined text in a table or matrix that changes color as you hover over it, is a hyperlink.  Clicking on it will take you to the linked URL. 
+本主題將教導您如何建立及使用資料表和矩陣中的超連結。  Power BI 資料表 （和矩陣） 中的 Url 可以做為超連結。 資料表或矩陣，以變更色彩，當您將滑鼠移過它，在加底線的文字是超連結。  按一下將您連結的 url。 
 
 ![](media/powerbi-service-hyperlinks-in-tables/hyperlinkedTable.png)
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Hyperlinks can also be added to <bpt id="p2">[</bpt>tiles on dashboards<ept id="p2">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>, <bpt id="p3">[</bpt>text boxes in reports<ept id="p3">](powerbi-service-add-a-hyperlink-to-a-text-box.md)</ept>, and <bpt id="p4">[</bpt>text boxes on dashboards<ept id="p4">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>.
+>
+>            **請注意**︰ 超連結也可以加入到 [儀表板上的磚](powerbi-service-edit-a-tile-in-a-dashboard.md), ，[文字方塊在報表中](powerbi-service-add-a-hyperlink-to-a-text-box.md), ，和 [儀表板上的文字方塊](powerbi-service-add-a-widget-to-a-dashboard.md)。
 
-## To create a hyperlink in Power BI table or matrix
+## 若要建立 Power BI 資料表或矩陣中的超連結
 
-Hyperlinks in tables and matrixes can be created in Power BI Desktop, but not from Power BI Service. Hyperlinks can also be created in Excel Power Pivot before the workbook is imported into Power BI. Both methods are described below.
+在 Power BI Desktop，而不是從 Power BI 服務，您可以建立資料表和矩陣中的超連結。 也可以將超連結建立 Excel 的 Power Pivot 中之前活頁簿匯入至 Power BI。 這兩種方法說明如下。
 
-## Create a table or matrix hyperlink in Power BI Desktop
-The procedure for adding a hyperlink depends on whether you've imported the data or connected to it using DirectQuery. Both scenarios are described below.
+## 在 Power BI Desktop 中建立資料表或矩陣的超連結
+加入超連結的程序取決於您是否已匯入資料或連接到使用 DirectQuery。 以下將描述這兩個案例。
 
-### For data imported into Power BI  
+### 資料匯入 Power BI  
 
-1. If the hyperlink doesn't already exist as a field in your dataset, use Desktop to add it as a <bpt id="p1">[</bpt>custom column<ept id="p1">](powerbi-desktop-common-query-tasks.md)</ept>.
+1. 如果超連結不存在的欄位中資料集，使用桌面來新增它做為 [自訂欄](powerbi-desktop-common-query-tasks.md)。
 
-2. Select the column and in the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab choose the dropdown for <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept>.
+2. 選取的資料行和 **模型** ] 索引標籤選擇下拉式清單中的 **資料類別**。
 
     ![](media/powerbi-service-hyperlinks-in-tables/PBI_data_category.png)
 
-3. Select <bpt id="p1">**</bpt>Web URL<ept id="p1">**</ept>.
+3. 選取 **Web URL**。
 
-4. Switch to Report view and create a table or matrix using the field categorized as a Web URL. The hyperlinks will be blue and underlined.
+4. 切換至 [報表檢視，並建立資料表或矩陣使用分類為網頁 URL 的欄位。 超連結會藍色和底線。
 
     ![](media/powerbi-service-hyperlinks-in-tables/power-bi-table-with-hyperlinks.png)
 
-4. <bpt id="p1">[</bpt>Publish the report from Desktop to Power BI service<ept id="p1">](powerbi-learning-4-1-publish-reports.md)</ept> and open the report in Power BI service. The hyperlinks will work there as well.
+4. 
+            [發行報表從桌面到 Power BI 服務](powerbi-learning-4-1-publish-reports.md) 在 Power BI 服務中開啟報表。 超連結也可以使用那里。
 
-### For data connected with DirectQuery
+### 資料連接和 DirectQuery
 
-You won't be able to create a new column in DirectQuery mode.  But if your data already contains URLs, you can turn those into hyperlinks.
+您無法在 DirectQuery 模式中建立新的資料行。  但是，如果您的資料已經包含 Url，您可以開啟成超連結。
 
-2. In Report view, create a table using a field that contains URLs.
+2. 在報表檢視中，建立包含 Url 的欄位的資料表。
 
-3. Select the column, and in the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, choose the dropdown for <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept>.
+3. 選取的資料行，然後在 **模型** 索引標籤上，選擇下拉式清單中的 **資料類別**。
 
-3. Select <bpt id="p1">**</bpt>Web URL<ept id="p1">**</ept>. The hyperlinks will be blue and underlined.
+3. 選取 **Web URL**。 超連結會藍色和底線。
 
-4. <bpt id="p1">[</bpt>Publish the report from Desktop to Power BI service<ept id="p1">](powerbi-learning-4-1-publish-reports.md)</ept> and open the report in Power BI service. The hyperlinks will work there as well.
+4. 
+            [發行報表從桌面到 Power BI 服務](powerbi-learning-4-1-publish-reports.md) 在 Power BI 服務中開啟報表。 超連結也可以使用那里。
 
-## Create a table or matrix hyperlink in Excel Power Pivot
+## 在 Excel 的 Power Pivot 中建立資料表或矩陣的超連結
 
-1.  Open the workbook in Excel.
+1.  在 Excel 中開啟活頁簿。
 
-2.  Select the <bpt id="p1">**</bpt>PowerPivot<ept id="p1">**</ept> tab and then choose <bpt id="p2">**</bpt>Manage<ept id="p2">**</ept>.
+2.  選取 **PowerPivot** 索引標籤，然後選擇 [ **管理**。
 
     ![](media/powerbi-service-hyperlinks-in-tables/createHyperlinkInPowerPivot2.png)
 
-3.  When Power Pivot opens, select the <bpt id="p1">**</bpt>Advanced <ept id="p1">**</ept>tab.
+3.  Power Pivot 開啟時，選取 **進階 **] 索引標籤。
 
     ![](media/powerbi-service-hyperlinks-in-tables/createHyperlinkInPowerPivot3.png)
 
-4.  Place your cursor in the column that contains the URLs that you'd like to turn into hyperlinks in Power BI tables.
+4.  將游標放在包含您想要變成 Power BI 資料表中的超連結 Url 的資料行。
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: The URLS must start with either <bpt id="p2">**</bpt>http:// , https://<ept id="p2">**</ept> or <bpt id="p3">**</bpt>www<ept id="p3">**</ept>.
+    >
+            **請注意**︰ 的 URL 開頭必須是 **http://、 https://** 或 **www**。
 
-5.  In the <bpt id="p1">**</bpt>Reporting Properties<ept id="p1">**</ept> group, select the <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept> dropdown and choose <bpt id="p3">**</bpt>Web URL<ept id="p3">**</ept>. 
+5.  在 **報告內容** 群組中，選取 **資料類別** 下拉式清單中選擇 [ **Web URL**。 
 
     ![](media/powerbi-service-hyperlinks-in-tables/createHyperlinksNew.png)
 
-6.  From the Power BI service, connect to this workbook.
+6.  從 Power BI 服務，連接至這個活頁簿。
 
-7.  Create a table visualization that includes the URL field.
+7.  建立包含 [URL] 欄位的資料表視覺效果。
 
     ![](media/powerbi-service-hyperlinks-in-tables/hyperlinksInTables.gif)
 
 
 ## 請參閱
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

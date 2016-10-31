@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create and Customize Simple Visualizations"
-   description="Customize three common types of visuals"
+   pageTitle="建立和自訂簡單的視覺效果"
+   description="自訂視覺效果的三種一般類型"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Create and Customize Simple Visualizations
+# 建立和自訂簡單的視覺效果
 
-In this article you learn how to create new bar charts, pie charts, and treemaps, and customize them to suit your reports.
+在這篇文章中，您學會如何建立新的橫條圖、 圓形圖和 treemaps，以及自訂它們以符合您的報表。
 
-There are two different ways to create a new visualization in Power BI Desktop:
+有兩種不同的方式，在 Power BI Desktop 中建立新的視覺效果︰
 
--   You can drag field names from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, and drop them on the report canvas. By default your visualization appears as a table of data.
+-   您可以拖曳欄位名稱，從 **欄位** ] 窗格中，並將它們放置在報表畫布。 預設的視覺顯示資料的資料表。
 
     ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_1.png)
 
--   You can also click the type of visualization you want to create in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane. With this method, the default visual is a blank placeholder that resembles the type of visual you selected.
+-   您也可以按一下您要建立視覺效果中的型別 **視覺效果** 窗格。 使用此方法，預設 visual 會是空白的預留位置，類似的 visual 您選取的型別。
 
     ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_2.png)
 
-Once you create your graph, map, or chart, you can begin dragging data fields onto the bottom portion of the <bpt id="p1">**</bpt>Visualization<ept id="p1">**</ept> pane to build and organize your visual. The available fields will change based on the type of visualization that you selected. As you drag and drop data fields, your visualization will automatically update to reflect changes.
+一旦您建立圖表、 地圖或圖表時，就可以開始資料欄位拖曳到底部 **視覺化** 窗格來建立與組織 visual studio。 可用的欄位會根據您選取的視覺效果類型而有所不同。 拖放資料欄位，您的視覺效果會自動更新以反映變更。
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_3.png)
 
-You can resize your visualization by selecting it and then dragging the handles in or out. You can also move your visualization anywhere on the canvas by clicking and dragging it. If you want to convert between different types of visualizations, select the visual you want to change and simply select a different visual from the icons in the <bpt id="p1">**</bpt>Visualization<ept id="p1">**</ept> pane. Power BI attempts to convert your selected fields to the new visual type as closely as possible.
+您可以選取它，然後拖曳控點，或縮小調整您的視覺效果。 您也可以移動的視覺任何地方在畫布上按一下並拖曳它。 如果您想要的視覺效果的不同類型之間轉換時，選取您想要變更，並只選取不同的視覺效果中圖示的視覺 **視覺化** 窗格。 Power BI 會嘗試儘可能密集地將選取的欄位轉換成新的視覺效果類型。
 
-As you hover over parts of your visualizations, you'll get a tooltip that contains details about that segment, such as labels and total value.
+當您暫留在組件的視覺效果，您將會包含有關該區段，例如，標籤和總計值的詳細資料的工具提示。
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_4.png)
 
-Select the <bpt id="p1">**</bpt>paintbrush<ept id="p1">**</ept> icon on the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane to make cosmetic changes to your visual, such as background alignment, title text, and data colors.
+選取 **小畫家** 圖示 **視覺效果** ] 窗格進行色彩變更為視覺效果，例如背景對齊、 標題文字和資料的色彩。
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_5.png)
 
-The available options for cosmetic changes to your visual vary depending on the type of visual you have selected.
+表面變更 visual studio 的可用選項視 visual 您所選取的類型而有所不同。

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Cleaning Irregularly Formatted Data"
-   description="You can tackle messy data in Power BI... see how"
+   pageTitle="清除不規則格式化的資料"
+   description="您可以處理雜亂 Power BI 資料...請參閱 < 如何"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,42 +23,42 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Cleaning Irregularly Formatted Data
+# 清除不規則格式化的資料
 
-While Power BI can import your data from almost any source, its visualization and modeling tools work best with columnar data. Sometimes your data will not be formatted in simple columns, which is often the case with Excel spreadsheets, where a table layout that looks good to the human eye is not necessarily optimal for automated queries. For example, the following spreadsheet has headers that span multiple columns.
+Power BI 可以幾乎任何來源匯入資料，而其視覺化和模型工具適合單欄式資料。 有時候您的資料則不會格式化以簡單的資料行通常是與 Excel 試算表，人類的眼睛喜歡表格版面配置不一定適合自動化的查詢。 例如，下列的試算表具有跨越多個資料行的標頭。
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_1.png)
 
-Fortunately, Power BI has tools to quickly transform multi-column tables into datasets that you can use.
+幸運的是，Power BI 提供工具，快速將多重資料行資料表轉換成資料集，您可以使用。
 
-## Transpose data
-For example, using <bpt id="p1">**</bpt>Transpose<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, you can flip data (turn columns to rows, and rows into columns) so you can break data down into formats that you can manipulate.
+## 轉置的資料
+比方說，使用 **轉置** 中 **查詢編輯器**, ，您可以反轉的資料 （會變成使用資料列和資料列的資料行的資料行），您可以細分資料格式，您可以操作。
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_2.png)
 
-Once you do that a few times, as described in the video, your table begins to shape into something that Power BI can more easily work with.
+一旦您的數次，視訊所述，您的資料表開始圖形轉換成 Power BI 可以更輕鬆地使用。
 
-## Format data
-You also may need to format data, so Power BI can properly categorize and identify that data once it's imported.
+## 將資料格式化
+您也可能需要格式化資料，讓 Power BI 可以正確分類及它匯入之後，識別該資料。
 
-With a handful of transformations, including <bpt id="p1">*</bpt>promoting rows into headers<ept id="p1">*</ept> into to break headers, using <bpt id="p2">**</bpt>Fill<ept id="p2">**</ept> to turn <bpt id="p3">*</bpt>null<ept id="p3">*</ept> values into the values found above or below in a given column, and <bpt id="p4">**</bpt>Unpivot Columns<ept id="p4">**</ept>, you can cleanse that data into a dataset that you can use in Power BI.
+使用少數幾個轉換，包括 *升級成標頭資料列* 到中斷標頭，使用 **填滿** 開啟 *null* 中的值高於或低於指定的資料行的值和 **取消樞紐資料行**, ，您可以清理資料至資料集，您可以使用 Power BI 中。
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_3.png)
 
-With Power BI, you can experiment with these transformations on your data, and determine which types get your data into the columnar format that lets Power BI work with it. And remember, all actions you take are recorded in the Applied Steps section of Query Editor, so if a transformation doesn't work the way you intended, you can simply click the <bpt id="p1">**</bpt>x<ept id="p1">**</ept> next to the step, and undo it.
+透過 Power BI，可以在您的資料上進行試驗這些轉換，並判斷哪些型別為可讓它使用 Power BI 的單欄式格式取得您的資料。 而且，記得，所有您採取的動作會記錄套用的步驟一節的查詢編輯器中，因此，如果轉換無法運作的方式，您要的您可以只按一下 **x** 旁邊步驟中，並將它復原。
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_5.png)
 
 
-## Create visuals
-Once your data is in a format that Power BI can use, by transforming and cleansing the data, you can begin to create visuals.
+## 建立視覺效果
+在您資料的格式，可以使用 Power BI，轉換並清理資料之後, 您就可以開始建立視覺效果。
 
 ![](media/powerbi-learning-1-5-cleaning-irregular-data/1-5_4.png)
 
-## What's Next
+## 後續步驟
 
-**恭喜！** You've completed this section of the <bpt id="p1">**</bpt>Guided Learning<ept id="p1">**</ept> course for Power BI. You now know how to <bpt id="p1">**</bpt>get data<ept id="p1">**</ept> into Power BI Desktop, and how to <bpt id="p2">*</bpt>shape<ept id="p2">*</ept> or <bpt id="p3">*</bpt>transform<ept id="p3">*</ept> that data, so you can create compelling visuals.
+**恭喜！** 您已完成的這一節 **引導式學習** Power BI 的課程。 現在您已經知道如何 **取得資料** 到 Power BI Desktop，以及如何 *圖形* 或 *轉換* 該資料，因此您可以建立吸引人的視覺效果。
 
-The next step in learning how Power BI works, and how to make it work <bpt id="p1">*</bpt>for you<ept id="p1">*</ept>, is to understand what goes into <bpt id="p2">**</bpt>modeling<ept id="p2">**</ept>. As you learned, a <bpt id="p1">**</bpt>dataset<ept id="p1">**</ept> is a basic building block of Power BI, but some datasets can be complex and based on many different sources of data. And sometimes, you need to add your own special touch (or <bpt id="p1">*</bpt>field<ept id="p1">*</ept>) to the dataset you create.
+下一個步驟中學習 Power BI 的運作方式，以及如何讓它運作 *您*, ，是了解放在哪個 **模型**。 您知道 **資料集** Power BI 的基本建置區塊，但某些資料集可以是複雜且根據許多不同的資料來源。 有時候，您需要新增您自己的特殊觸控和 (或 *欄位*) 至您建立資料集。
 
-You'll learn about <bpt id="p1">**</bpt>modeling<ept id="p1">**</ept>, and a whole lot more, in the next section. See you there!
+您將了解 **模型**, ，和還有許多下一節中的其他功能。 到時候見 ！

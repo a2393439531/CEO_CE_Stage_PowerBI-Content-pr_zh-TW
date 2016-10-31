@@ -1,6 +1,6 @@
 <properties
-pageTitle="Power BI (free) in your organization"
-description="This article looks at your options for Power BI (free) from an organization perspective. If you are the Administrator of your tenant, this will show you how to manage free sign ups."
+pageTitle="Power BI 組織中的 （免費）"
+description="這篇文章檢視 Power BI 組織觀點 （免費） 的選項。 如果您是您的租用戶系統管理員，這會顯示您如何管理可用登 ups。"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,77 +19,77 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="09/21/2016"
 ms.author="asaxton"/>
-# Power BI (free) in your organization
+# Power BI 組織中的 （免費）
 
-This will look at how the Power BI (free) offering can be used within your organization. An organization means that you have a tenant and can manage users and services within that tenant. As an administrator, you can control license assignment, or you can allow users to sign up as an individual. We will look at the Power BI (free) license and how you can control individual sign up.
+這要看看如何在組織中使用 Power BI （免費） 供應項目。 組織表示您有一個租用戶，而且可以管理使用者與該租用戶內的服務。 身為管理員，您可以控制授權指派，或您可以允許使用者以個人身分註冊。 我們將探討 Power BI （免費） 授權，以及如何控制個別登上。
 
-## Individual sign up versus license assignment
+## 個別註冊與授權指派
 
-Users within your organization can gain access to Power BI in two different ways. They can individually sign up for Power BI, or you can assign a Power BI license to them within the Office 365 admin portal.
+組織中的使用者可以存取 Power BI 中兩個不同的方式。 他們可以個別註冊 Power BI，或您可以在 Office 365 系統管理入口網站中為它們指派 Power BI 授權。
 
-Allowing individual sign up reduces the burden, from the organization administrators, by allowing the users that are interested in Power BI to sign up for free. 
+允許設定個別登組織系統管理員減少負擔，藉由使用 Power BI 註冊免費的感興趣的使用者。 
 
-For more control, you can block individual sign up and assign Power BI licenses yourself within the Office 365 admin center. This allows you to be specific of who can access what services within your organization. This is also a great option if you have to deal with auditing and need to know exactly who can use what.
+獲得更多控制，您可以向上封鎖個別登並自行指派 Power BI 授權，Office 365 系統管理中心內。 這可讓您能夠具體表示哪些人可以存取您組織內有哪些服務。 這也是不錯的選擇有以應付稽核和需要知道誰完全使用何種工具。
 
-## How to get the unlimited license block
-Within the Office 365 admin center, under <bpt id="p1">**</bpt>Billing<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Licenses<ept id="p2">**</ept>, you may or may not see Power BI (free) with unlimited licenses.
+## 如何取得無限制的授權區塊
+Office 365 系統管理中心內下 **計費** > **授權**, ，您可能會或可能不會看到 Power BI （免費） 並無限制的授權。
 
 ![](media/powerbi-admin-powerbi-free-in-your-organization/unlimited-licenses.png)
  
-This block of licenses will show up after the first time someone signs up for Power BI as an individual. During that process, this license block gets attached to your organization and a license is assigned to the user that is signing up.
+首次有人以個人身分的 Power bi 註冊之後，會顯示此區塊的授權。 過程中，這個授權區塊附加到您的組織，並將授權指派給登入的使用者。
 
-If you are blocking individual user sign up, and no one has signed up, you will not see this license block. You can either allow individual user sign ups and have one user sign up, or you can get free licenses through the add subscription Office 365 flow which will be talked about next.
+如果您封鎖個別使用者註冊時，沒有人已註冊，您將不會看到這個授權區塊。 您可以允許個別使用者正負號的 ups 和有一位使用者註冊，或您可以透過新增訂閱 Office 365 流程其中將討論下一步取得免費授權。
 
-Once the Power BI (free) license block is available, you can assign those licenses to your users. [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+使用 Power BI （免費） 授權區塊之後，您可以指派這些授權給使用者。 [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
 
-## Getting free licenses via add subscription within Office 365
+## 取得免費的授權，透過新增 Office 365 的訂用帳戶
 
-1.  Navigate to the <bpt id="p1">[</bpt>Office 365 admin center<ept id="p1">](https://portal.office.com/admin/default.aspx)</ept>.
-2.  On the left navigation pane, select <bpt id="p1">**</bpt>Billing<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Subscriptions<ept id="p2">**</ept>.
-3.  Select <bpt id="p1">**</bpt>Add subscriptions +<ept id="p1">**</ept> on the right side.
-4.  Under Other Plans, hover over the <bpt id="p1">**</bpt>ellipse (…)<ept id="p1">**</ept> for Power BI (free) and select <bpt id="p2">**</bpt>Buy now<ept id="p2">**</ept>.
+1.  瀏覽至 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx)。
+2.  在左的導覽窗格中，選取 **計費** > **訂閱**。
+3.  選取 **新增訂閱 +** 右側。
+4.  在其他的計劃，將滑鼠停留在 **省略號 （...）** Power bi （免費），然後選取 **立即購買**。
 
     ![](media/powerbi-admin-powerbi-free-in-your-organization/buy-powerbi-free.png)
 
-5.  Enter the number of licenses you would like to add and select <bpt id="p1">**</bpt>Check out now<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Add to cart<ept id="p2">**</ept>.
+5.  輸入您想要加入，然後選取的授權數量 **立即簽出** 或 **新增至購物車**。
 
-    > [AZURE.NOTE] You can add more at a later date if needed.
+    > [AZURE.NOTE] 您可以視需要新增更在較晚的日期。
 
-6.  Enter the needed information in the check out flow.
+6.  簽出流程中輸入所需的資訊。
 
-There is no purchase when using this approach, although you will need to either enter your credit card information for billing, or choose to be invoiced.
+無須購買任何產品時使用這種方法，但是您必須輸入信用卡帳單資訊，或選擇收費。
 
-If you decide later that you want to add more licenses, you can go back to <bpt id="p1">**</bpt>Add subscriptions<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Change license quantity<ept id="p2">**</ept> for Power BI (free).
+如果您稍後決定您想要新增更多授權，您可以移回至 **新增訂閱**, ，然後選取 **變更授權數量** Power bi （免費）。
 
 ![](media/powerbi-admin-powerbi-free-in-your-organization/change-license-quantity.png)
  
-You can now assign those licenses to your users. [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+您現在可以指定這些授權給您的使用者。 [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
 
-## Enable, or disable, individual user sign up in Azure Active Directory
+## 啟用或停用個別使用者註冊 Azure Active Directory 中
 
-As an administrator, you can choose to enable, or disable, individual user sign ups as part of Azure Active Directory (AAD). If you know how to leverage the AAD PowerShell commands, you can enable, or disable, ad-hoc subscriptions yourself. [進一步了解](https://technet.microsoft.com/library/jj151815.aspx)
+身為管理員，您可以選擇啟用或停用個別使用者登 ups 一部分的 Azure Active Directory (AAD)。 如果您知道如何運用 AAD PowerShell 命令，您可以啟用或停用，特定訂閱您自己。 [進一步了解](https://technet.microsoft.com/library/jj151815.aspx)
 
-The AAD setting that controls this is <bpt id="p1">**</bpt>AllowAdHocSubscriptions<ept id="p1">**</ept>. Most tenants will have this setting set to true, which means it is enabled. If you acquired Power BI through a partner, this may be set to false by default, which means it is disabled.
+AAD 控制的設定，這是 **AllowAdHocSubscriptions**。 大多數的租用戶必須設定為 true，表示它已啟用此設定。 如果您透過協力廠商取得 Power BI，這可能會為 false，根據預設，這表示已停用。
 
-1.  You need to first sign into Azure Active Directory using your Office 365 credential. The first line will prompt you for your credentials. The second line connects to Azure Active Directory.
+1.  您必須先登入 Azure Active Directory 使用 Office 365 認證。 第一行會提示您輸入您的認證。 第二行連接到 Azure Active Directory。
 
         $msolcred = get-credential
         connect-msolservice -credential $msolcred
     
     ![](media/powerbi-admin-powerbi-free-in-your-organization/aad-signin.png)
 
-2.  Once you are signed in, you can issue the following command to see what your tenant is currently configured for.
+2.  一旦您登入，您可以發出下列命令，請參閱您的租用戶目前設定的。
 
         Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 
-3.  You can this command to enable ($true) or disable ($false) AllowAdHocSubscriptions.
+3.  您可以啟用 ($true) 或停用 ($false) AllowAdHocSubscriptions 此命令。
 
         Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
-> [AZURE.NOTE] This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses.
+> [AZURE.NOTE] 此封鎖可防止註冊 Power BI 組織中的新使用者。 註冊 Power BI 之前停用組織的新註冊的使用者仍然會保留使用者的授權。
 
 ## 請參閱
 
-[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
-[Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-admin-free-with-custom-azure-directory.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[自助式註冊 Power bi](powerbi-service-self-service-signup-for-power-bi.md)  
+[註冊 Power BI （免費） 使用自訂的 Azure Active Directory 租用戶](powerbi-admin-free-with-custom-azure-directory.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

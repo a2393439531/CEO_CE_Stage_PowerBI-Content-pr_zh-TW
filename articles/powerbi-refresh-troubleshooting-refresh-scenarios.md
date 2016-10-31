@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Troubleshooting refresh scenarios"
-   description="Troubleshooting refresh scenarios"
+   pageTitle="重新整理的疑難排解案例"
+   description="重新整理的疑難排解案例"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,30 +20,30 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Troubleshooting refresh scenarios  
+# 重新整理的疑難排解案例  
 
-Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service. 
+您可以在這裡找到 Power BI 服務內的資料重新整理時，您可能會面臨不同案例的相關資訊。 
 
-> [AZURE.NOTE] If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> [AZURE.NOTE] 如果您遇到未列出，以下的案例，而且它會造成問題，您可以尋求進一步協助上 [社群網站](http://community.powerbi.com/), ，或者您可以建立 [支援票證](https://powerbi.microsoft.com/support/)。
 
-## Unsupported data source for refresh
-When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see <bpt id="p1">[</bpt>Troubleshooting unsupported data source for refresh<ept id="p1">](powerbi-admin-troubleshoot-unsupported-data-source-for-refresh.md)</ept>
+## 不支援的資料來源重新整理
+當設定資料集，您可能會收到錯誤，指出此資料集使用不支援的資料來源重新整理。 如需詳細資訊，請參閱 [疑難排解不支援的資料來源重新整理](powerbi-admin-troubleshoot-unsupported-data-source-for-refresh.md)
 
-## Dashboard doesn't reflect changes after refresh  
-Please wait about 10-15 minutes for refresh to be reflected in the dashboard tiles.  If it is still not showing up, re-pin the visualization to the dashboard.
+## 儀表板並不會反映更新後的變更  
+請等候大約 10-15 分鐘重新整理才會反映在 [儀表板] 磚。  如果它仍未顯示，重新釘選到儀表板的視覺效果。
 
-## GatewayNotReachable when setting credentials  
-You may encounter GatewayNotReachable when trying to set credentials for a data source. This could be the result of an outdated gateway.  Install the latest gateway and try again.
+## GatewayNotReachable 時設定認證  
+嘗試設定資料來源的認證時，您可能會遇到 GatewayNotReachable。 這可能是閘道的過期的結果。  安裝最新的閘道，並再試一次。
 
-## Processing Error: The following system error occurred: Type Mismatch  
-This could be an issue with your M script within your Power BI Desktop file or Excel Workbook.  It could also be due to an out of date Power BI Desktop version.
+## 處理錯誤:，發生下列系統錯誤︰ 類型不相符  
+這可能是您在 Power BI Desktop 檔案或 Excel 活頁簿內的 M 指令碼發生問題。  它也可能是因為過期的 Power BI Desktop 版本。
 
-## Tile refresh errors
-For a list of errors you may encounter with dashboard tiles, and explanations, see <bpt id="p1">[</bpt>Troubleshooting tile errors<ept id="p1">](powerbi-refresh-troubleshooting-tile-errors.md)</ept>.
+## 並排顯示重新整理錯誤
+如需使用儀表板圖格和說明可能遭遇的錯誤，請參閱 [疑難排解磚錯誤](powerbi-refresh-troubleshooting-tile-errors.md)。
 
 ## 另請參閱  
 
-[Data Refresh](powerbi-refresh-data.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[資料重新整理](powerbi-refresh-data.md)  
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+[疑難排解 Power BI 閘道-個人](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

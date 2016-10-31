@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and tricks for creating reports in Power BI Desktop"
-   description="Tips and tricks for creating reports in Power BI Desktop"
+   pageTitle="秘訣和技巧在 Power BI Desktop 中建立報表"
+   description="秘訣和技巧在 Power BI Desktop 中建立報表"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,78 +19,78 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Tips and tricks for creating reports in Power BI Desktop
+# 秘訣和技巧在 Power BI Desktop 中建立報表
 
-To get the most out of your data, sometimes you need a little extra help. We’ve put together some tips &amp; tricks you can use when creating reports in the Microsoft Power BI Desktop <bpt id="p1">*</bpt>and<ept id="p1">*</ept> in Microsoft Excel 2016, or Excel 2013 Pro-Plus editions with the Power Pivot add-in enabled and Power Query installed and enabled. 
+若要充分瞭解您的資料，有時您需要一些額外的協助。 我們匯集了一些秘訣和訣竅，您可以使用 Microsoft Power BI Desktop 中建立報表時 *和* 在 Microsoft Excel 2016 或與 Power Pivot 增益集啟用 Power Query 安裝並啟用 Excel 2013 Pro-Plus 版本。 
 
 
-## Learning to use the Query Editor
+## 學習如何使用查詢編輯器
 
-Query Editor in Power BI Desktop is similar to the Power Query add-in capability in Excel 2013. While there are several helpful articles in Power BI Support, you might also want to review the Power Query documentation on support.office.com to get started.
+Power BI Desktop 中的查詢編輯器就像在 Excel 2013 增益集功能 Power Query。 Power BI 支援人員有幾個有用的文章，您也可以檢閱 support.office.com 以便開始使用 Power Query 相關文件。
 
-You can get additional information from the <bpt id="p1">[</bpt>Power Query Resource Center<ept id="p1">](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94)</ept>.
+您可以取得其他資訊從 [電源查詢資源中心](https://support.office.com/article/Microsoft-Power-Query-for-Excel-Help-2b433a85-ddfb-420b-9cda-fe0e60b82a94)。
 
-You can also view the <bpt id="p1">[</bpt>Formula Reference<ept id="p1">](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f)</ept>.
+您也可以檢視 [公式參考](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f)。
 
-## Data types in Query Editor
+## 在 [查詢編輯器] 中的資料類型
 
-When using Query Editor in Power BI Desktop to load data, we do a best guess data type detection.  When using formulas, sometimes data type settings on columns are not preserved. You should check the data type of columns are correct after doing the following operations:  Load data initially to the query tab, First Row as Header, Add column, Group by, Merge, Append, and before pressing loading the data for the first time.
+使用 Power BI Desktop 中的查詢編輯器，將資料載入，我們最佳的猜測資料型別偵測。  當使用公式，有時不會保留資料行的資料類型設定。 您應該檢查資料行的資料類型正確無誤後執行下列作業︰ 將資料載入一開始查詢] 索引標籤，做為標頭，加入資料行，第一個資料列群組的合併，附加，並按下第一次載入資料之前。
 
-One key thing to remember: italics in the data grid do not mean the data type is correctly set, it just means the data is not considered as Text.
+請記得一個重點︰ 資料方格中，並不代表資料類型設定是否正確，它只是表示資料不會視為文字。
 
-## Reference queries in the Query Editor
+## 在 [查詢編輯器] 中的參考查詢
 
-In Query Editor's navigator, when you right click one of the queries, an option for "Reference" is available.  This is useful for the following reason:
+在查詢編輯器導覽中，當您以滑鼠右鍵按一下其中一個查詢，「 參考 」 的選項使用。  這很有用，原因如下︰
 
--   When you use files as the data source for a query, the absolute path to the file is stored in the query. When sharing or moving Power BI Desktop file or Excel workbook, you'll save time when you update the paths by updating it just once rather than the paths.
+-   當您使用檔案做為資料來源的查詢時，查詢中儲存檔案的絕對路徑。 當共用或移動 Power BI Desktop 檔案或 Excel 活頁簿時，節省的時間更新路徑的更新時只一次，而非路徑。
 
-By default all queries load to either an Excel worksheet or the data model (or both). Some queries are intermediary steps and not intended for end-users.  When referencing queries as mentioned above, this is often the case.  You can control query loading behavior by right clicking the query in the navigator and toggling the "Enable Load" option.  When "Enable Load" does not have a checkmark next to it, the query is still be available in the query tab and you can use it with other queries.  It is especially useful in combination with Merge, Append, and Reference transforms.  However since the query results are not loaded to the data model, the query will not clutter your reports field list or your data model. 
+根據預設所有查詢都載入至可能是 Excel 工作表或資料模型 （或兩者）。 某些查詢可中繼步驟，並不打算提供給使用者。  當參考的查詢，如先前所述，這通常是如此。  您可以控制查詢的載入行為，以滑鼠右鍵按一下 [導覽] 中的查詢，並切換 [啟用載入 」 選項。  當啟用負載 > 並沒有該索引標籤旁邊的核取記號時，查詢仍可在 [查詢] 索引標籤，並使用其他查詢。  與合併附加，特別有用，並參考轉換。  不過由於查詢結果不會載入至資料模型中，查詢將不干擾報表欄位清單或您的資料模型。 
 
-## Scatter charts need a point identifier
+## 散佈圖圖表需要點識別項
 
-Taking an example of a simple table of Temperatures and the Time the reading was taken. If you plot this directly on a scatter chart, Power BI Desktop aggregates all the values into a single point. To show individual data points you'll to add a field to the Details bucket in the field well.   A simple way to do this is on the query tab by using the "Add index column" option on the "Add Column" ribbon. 
+原本讀取採取溫度和時間的簡單資料表的範例。 如果您繪製直接在散佈圖上，Power BI Desktop 彙總所有值在單一點。 若要顯示個別資料點，您將也將欄位加入至欄位中的詳細資料值區。   簡單的作法是在 [查詢] 索引標籤上使用 「 加入資料行 」 功能區上的 「 加入索引資料行 」 選項。 
 
-## Reference lines in your report
+## 在報表中的程式碼行參考
 
-You can use a calculated column to define a reference line.  Identify the table and column on which you want to create a reference line.  Select "New Column" in the ribbon and, in the formula bar, type the following formula:
+您可以使用導出資料行來定義參考線。  找出您要建立參考資料表和資料行。  在功能區中選取 「 新的資料行 」，並在公式列中，輸入下列公式︰
 
     Target Value = 100
 
-This calculated column will return the value 100 regardless of where it is used.  Your new column will show up in the Field List.  Add the Target Value calculated column to a line chart to show how any series relates to that specific reference line.  
+此導出資料行將傳回值 100，無論使用的位置。  在欄位清單中，會顯示新的資料行。  將目標值的導出資料行加入至折線圖，顯示任何數列與該特定參考列關聯的方式。  
 
-## Sort by another column
+## 依另一個資料行排序
 
-When you use a categorical (string) value in Power BI Desktop for chart axes or in a slicer or filter, the default order is alphabetical. If you need to override this order, for example for things like days of the week or months, then you can tell Power BI Desktop to sort by a different column.To learn more, see <bpt id="p1">[</bpt>Sort by Column in Power BI Desktop<ept id="p1">](powerbi-desktop-sort-by-column.md)</ept>.
+當的圖表座標軸或交叉分析篩選器或篩選中，您可以使用 Power BI Desktop 中的類別 （字串） 值時，預設順序是依字母順序排列。 如果您需要覆寫此順序，例如等天週或月數，然後您可以告訴 Power BI Desktop 的不同資料行來排序。若要深入了解，請參閱 [依 Power BI Desktop 中的資料行排序](powerbi-desktop-sort-by-column.md)。
 
-## Building maps more easily with hints to Bing
+## 建置更輕鬆地將對應與 Bing 的提示
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps.  Bing uses some algorithms and hints to try to get the right location, but it's a best guess.   To increase the likelihood of correct geo-coding, you can use the following tips:
+Power BI 整合 Bing，以提供預設地圖座標 （稱為地理編碼的程序），以便於為您建立的對應。  Bing 使用某些演算法和提示來嘗試取得正確的位置，但它是最佳的猜測。   若要增加正確的地理編碼的可能性，您可以使用下列秘訣︰
 
-When you create a Map, you're often looking to plot Countries, States, and Cities.  If you use name columns after the geographic designation it will help Bing guess what you're looking to display. For example, if you have a field of US state names such as "California" and "Washington", Bing might return the location of Washington, DC instead of Washington State for the word "Washington".  Naming the column "State" will improve the geocoding.  The same is goes for columns named "Country", "State", and "City".   
+當您建立對應時，您通常想要繪製國家 （地區）、 狀態和城市。  如果您的地理指派之後，請使用名稱的資料行就能協助 Bing 猜出您想顯示。 例如，如果您有一個欄位的美式狀態名稱，例如 「 加州"和"Washington"，Bing 可能會傳回"Washington"這個字華盛頓特區而不是華盛頓州的位置。  「 狀態 」 命名資料行，將會改善地理編碼。  這也會針對名為 「 國家/地區 」、 「 狀態 」 和 「 City 」 的資料行。   
 
-Some designations are ambiguous when considered in the context of multiple countries/regions.  In some cases what one country/region considers a 'state' is treated as a 'province' or a 'county' or some other designation.  You can increase the accuracy of geo-coding by building columns that append multiple fields together and use those for plotting data locations.  An example would be instead of passing only "Wiltshire", you can pass "Wiltshire, England" to get a more accurate geo-coding result. 
+某些指定是當多個國家 （地區） 的內容中被視為模稜兩可。  在某些情況下哪一個國家/地區會考慮 'state' 會被視為 '省' 或 '郡' 或某些其他指定項目。  您可以藉由建置一起附加多個欄位，並使用這些來繪製資料位置的資料行增加地理編碼的精確度。  範例，而不是傳遞只是 「 Wiltshire 」 就是，您可以將 「 Wiltshire 英國 」 以取得更精確的地理編碼結果。 
 
-You can always provide specific latitude and longitude locations.  When you do this, you'll also need to pass a Location field,  otherwise the data is aggregated by default, so the location of the latitude and longitude may not match what you expected.
+您永遠可以提供特定的經度和緯度位置。  當您這樣做時，您還需要傳遞位置欄位，否則會彙總的資料依預設，所以的經度和緯度位置可能不符合預期。
 
-## Categorizing geographic fields to hint Bing's geocoding
+## 分類地理提示 Bing 的地理編碼的欄位
 
-In Power BI Desktop, you can ensure fields are correctly geocoded by setting the Data Category on the data fields.   In Power BI Desktop, select the desired table, go to the Advanced ribbon and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State or Province.  These data categories help Bing to correctly encode the date.To learn more, see <bpt id="p1">[</bpt>Data categorization in Power BI Desktop<ept id="p1">](powerbi-desktop-data-categorization.md)</ept>.
+在 Power BI Desktop，您可以確保資料欄位上設定資料的類別目錄欄位是正確進行地理編碼。   在 Power BI Desktop 所需的資料表，請移至進階的功能區，然後設定資料類別目錄至地址、 縣 （市）、 大陸、 國家/地區、 國家/地區、 郵遞區號、 省市。  這些資料類別有助於將 Bing 正確編碼的日期。若要深入了解，請參閱 [Power BI Desktop 中的資料分類](powerbi-desktop-data-categorization.md)。
 
-## Better geocoding with more specific locations
+## 更好的地理編碼為更特定的位置
 
-Sometimes, even when setting the data categories for mapping is insufficient.  Within the query you can build a more specific location like a street address using the Query Editor in Power BI Desktop.  Use the Add Column feature to build a custom column.  Then build the desired location as follows: 
+有時候，即使當設定為對應的資料類別是不夠的。  在查詢中，您可以建置更特定的位置，例如在 Power BI Desktop 中使用查詢編輯器的街道地址。  使用 [加入資料行功能來建置自訂的資料行。  然後建置所需的位置，如下所示︰ 
 
     = [Field1] & " " & [Field2]
 
-Then use this resulting field in the map visualizations. This is very useful for building Street addresses from Shipping Address fields that are common in data sets.  One note is that the concatenation only works with text fields.  If needed, convert the street number to a text data type before using it to build an address.
+然後使用此結果的欄位，在地圖視覺效果。 這是非常適合建置送貨地址欄位中的資料集常見街道地址。  一個事項是串連只適用於文字欄位。  如有需要再使用它來建置一個地址將街道號碼轉換成文字資料類型。
 
-## Histograms in the query stage
+## 在查詢階段中的長條圖
 
-There are several ways to build histograms, we'll start with the simplest and go from there:
+有數種方式來建立長條圖，我們將使用最簡單且移從那裡開始操作︰
 
-Simplest Histograms - Determine which query has the field you want to build a histogram on.  Use the "Reference" option for the query to create a new query and name it "FieldName Histogram". Use the "Group by" option in the "Transform" ribbon and select the "count rows" aggregate.  Ensure the data type is a number for the resulting aggregate column. Then visualize this data on the reports page.  This is fast and easy to build, but doesn't work well if you have many data points and does not allow brushing across visuals.
+最簡單的長條圖-判斷哪一個查詢具有您想要建置長條圖的欄位。  使用查詢的 「 參考 」 選項來建立新的查詢並將它命名為"FieldName 長條圖 」。 使用 「 轉換 」 的功能區中的 「 群組依據 」 選項，然後選取 「 計算資料列 」 的彙總。  請確定資料類型是產生的彙總資料行的數量。 然後以視覺化方式檢視報表] 頁面上的此資料。  這是快速而輕鬆地建置，但是如果您有許多資料點，且不允許跨視覺效果花招無法運作。
 
-Defining buckets to build a histogram - Determine which query has the field you want to build a histogram on.  Use the "Reference" option for the query to create a new query and name it "FieldName".  Now define the buckets with a rule.  Use the Add Custom Column option on the Add Column ribbon and build a custom rule.  A simple bucketing rule might look like this:
+您想要建立長條圖定義建置長條圖-決定哪一個查詢具有欄位的值區。  使用查詢的 「 參考 」 選項來建立新的查詢並將它命名為 「 欄位 」。  現在定義的規則值區。  使用 [加入資料行的功能區上的 [加入自訂資料行] 選項和建立自訂規則。  簡單的值區規則可能看起來像這樣︰
 
     if([FieldName] \< 2) then "\<2 min" else
     if([FieldName] \< 5) then "\<5 min" else
@@ -98,81 +98,81 @@ Defining buckets to build a histogram - Determine which query has the field you 
     if([FieldName] \< 30) then "\<30 min" else
     "longer")
 
-Ensure the data type is a number for the resulting aggregate column. Now you can use the group by technique described in Simplest Histogram to achieve the histogram.  This option handles more data points but still does not help with brushing.
+請確定資料類型是產生的彙總資料行的數量。 現在您可以使用群組的最簡單的長條圖中所述的技巧來達成長條圖。  此選項會處理多個資料點，但仍無法解決與花招。
 
-Defining a histogram that supports brushing -  Brushing is when visuals are linked together so that when a user selects a data point in one visual other visuals on the report page highlight or filter data points related to the selected data point.  Since we're manipulating data at query time, we will need to create a relationship between tables and ensure we know which detail item relates to the bucket in the histogram and vice-versa.
+定義視覺項目連結在一起，以便當使用者選取一個視覺化中的資料點時，支援花招-花招長條圖 [報表] 頁面上的其他視覺效果反白顯示，或篩選選取的資料點相關的資料點。  因為我們要處理的資料處理查詢的時候，我們需要建立資料表之間的關聯性，並確定我們知道哪些詳細項目與相關的值區中的長條圖，反之亦然。
 
-Start the process by using the "Reference" option on the query that has the field you want to build a histogram on.  Name the new query "Buckets".  For this example let's call the original query "Details".  Next remove all columns except the column you'll use as the bucket for the histogram.  Now use the "Remove Duplicates" feature in query, it's on the right click menu when you select the column, so the remaining values are the unique values in the column.   If you have decimal numbers you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets.  Now, check the data shown in the query preview.  If you see blank values or null you'll need to fix those up before creating a relationship.  See "Creating a relationship if my data has null or blank values".   Using this approach can be problematic due to the need to sort.  To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want".  Note: It's useful to think about the sort order before building any visuals.   
+使用您想要建置長條圖] 欄位的查詢上的 「 參考 」 選項，啟動處理程序。  新的查詢名稱 「 值區 」。  此範例假設命名為原始的查詢 [詳細資料]。  接下來，移除您將使用值區為長條圖的資料行以外的所有資料行。  現在在查詢中使用 「 移除重複 」 的功能，以滑鼠右鍵按一下功能表上選取資料行，使其餘的值資料行中的唯一值時。   如果您有您可以先使用提示來定義雜湊桶建置長條圖，以取得可管理一組值區的十進位數字。  現在，請檢查查詢預覽中所顯示的資料。  如果您看到空白值或 null 必須若要修正這些問題之前建立的關聯性。  請參閱 「 如果我的資料具有 null 或空白值，建立關聯性 」。   使用這種方法可能會有問題，因為需要排序。  取得要能正確排序值區，請參閱"排序順序︰ 讓我想要的順序顯示類別目錄 」。  附註︰ 最好考慮再建置任何視覺效果的排序次序。   
 
-Next step in the process is to define a relationship between the "Buckets" and "Details" queries on the buckets column.  In Power BI Desktop, click <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> in the ribbon.  Create a relationsship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram. 
+處理序中的下一個步驟是定義的值區的資料行上的 「 值區 」 和 [詳細資料] 查詢之間的關聯性。  在 Power BI Desktop，按一下 [ **管理關聯性** 功能區中。  建立的 relationsship，值區所在的左側的資料表中與詳細資料中右邊的資料表，並選取您所使用的長條圖的欄位。 
 
-Last step is to create the histogram.  Drag the Bucket field from the "Buckets" table.  Remove the default field from the resulting column chart.  Now from the "Details" table drag the histogram field into the same visual.  In the field well, change the default aggregate to Count.  The result is the histogram. If you create another visual like a treemap from the Details table, select a data point in treemap to see the histogram highlight and show the histogram for the selected data point relative to the trend for the entire data set.
+最後一個步驟是建立長條圖。  拖曳值區中的欄位 「 值區 」 資料表。  從產生的直條圖中移除預設的欄位。  現在從 [詳細資料] 資料表拖曳至 [長條圖] 欄位相同的視覺效果。  在欄位格式中，變更預設彙總數量。  結果是長條圖。 如果您建立另一個類似樹狀 visual 詳細資料資料表中，選取 treemap，若要查看反白顯示，並顯示選取的資料點，相對於整個資料集的趨勢長條圖長條圖資料點。
 
-## Histograms
+## 長條圖
 
-You can use a calculated field to define a Histogram.  Identify the table and column on which you want to create a histogram.  In the calculation area, type the following formula:
-> Frequency:=COUNTROWS(<ph id="ph1">\&lt;</ph>Column Name<ph id="ph2">\&gt;</ph>)
+您可以使用導出的欄位來定義長條圖。  找出您要建立長條圖的資料表和資料行。  在計算區域中，輸入下列公式︰
+> 頻率: = COUNTROWS (\<資料行名稱\>)
 
-Save your changes and return to your report.  Add the <ph id="ph1">\&lt;</ph>Column Name<ph id="ph2">\&gt;</ph> and the Frequency to a table then convert to a bar chart.  Ensure the <ph id="ph1">\&lt;</ph>Column Name<ph id="ph2">\&gt;</ph> is on the x-axis and the calculated field Frequency is on the y-axis.
+儲存變更並返回您的報表。  新增 \<資料行名稱\> 資料表然後將轉換成橫條圖的頻率。  請確定 \<資料行名稱\> 於 x 軸和 y 軸的頻率是導出的欄位。
 
-## Tips and tricks for creating relationships
+## 秘訣和訣竅建立關聯性
 
-Often when loading detail data sets from multiple sources, issues like null values, blank values, or duplicate values prevent you from creating relationships. 
+通常在多個來源載入詳細資料的資料集，問題像是 null 值、 空白值或重複的值會讓您無法建立關聯性。 
 
-Let's look at an example: 
+讓我們看看一個範例︰ 
 
-If we load data sets from of active customer support requests and another data set of work items that have schemas as follows:
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
+如果我們載入從作用中的客戶支援要求的資料集和另一個資料集的結構描述做為工作項目如下︰
+> CustomerInicdents: {I、 客戶名稱、 IssueName、 OpenedDate、 狀態} 工作項目: {工作項目識別碼、 i、 WorkItemName、 OpenedDate、 狀態、 客戶名稱} 
 
-When we want to track all incidents and workitems that relate to a specific a CustomerName we cannot simply create a relationship between these two data sets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.  
+當我們想要追蹤的所有事件和特定的客戶名稱與相關的工作項目我們只是無法建立下列兩個資料集之間的關聯性。  某些工作項目可能不相關的客戶名稱，因此該欄位是空白或 NULL。  可能有多個工作項目和任何特定的客戶名稱的 CustomerIncidents 記錄。  
 
-### Creating relationships when the data has null or blank values
+### 當資料具有 null 或空白值建立關聯性
 
-Often data sets contain columns with null or blank values.  This can cause problems when trying to use relationships.  You have essentially two options for addressing the issues.  You can remove the rows that have null or blank values.  You can do this using either the filter feature in the query tab or if you're merging queries, select the "keep only matching rows" option. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".   There's no right approach here - Filtering out rows at the query stage removes rows and can affect summary statistics and calculations.  The latter approach preserves that data rows but can make unrelated rows appear related in the model leading to miscalculations.  If you adopt the latter solution ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results.  Most importantly, evaluate which rows are kept/removed and understand overall impact on the analysis..  
+通常資料集包含 null 或空白值的資料行。  嘗試使用關聯性時，這可能會造成問題。  您有兩個選項基本上解決問題。  您可以移除具有 null 或空白值的資料列。  您可以執行此使用 [查詢] 索引標籤中的篩選功能，或如果您要合併的查詢，選取 [保留唯一相符的資料列 」 選項。 或者，您可以在關聯性通常工作，像是 「 NULL 」 字串和 「 （空白） 」 的值取代 null 或空白值。   發生不正確的方法-篩選出資料列的查詢階段移除資料列及摘要統計資料和計算可能會影響。  第二種方法會保留該資料列，但是可以讓不相關的資料列會出現在模型中導致計算上的錯誤相關。  如果您採用後者解決方案，確保您使用篩選器在檢視/圖表，以確保您能取得精確的結果。  最重要的是，評估哪些資料列會保持/移除，並了解整體影響分析...  
 
-### Creating relationships when the data has duplicate values
+### 當資料具有重複的值建立關聯性
 
-Often when loading detailed data sets from multiple sources, duplicate data values prevent you from creating relationships.  You can overcome this by creating a dimension table with the unique values from both data sets. 
+通常在多個來源載入詳細的資料集，重複的資料值會讓您無法建立關聯性。  您可以使用這兩個資料集的唯一值建立的維度資料表來克服。 
 
-Let's look at an example: 
+讓我們看看一個範例︰ 
 
-If we load data sets from of active customer support requests and another data set of work items that have schemas as follows:
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
+如果我們載入從作用中的客戶支援要求的資料集和另一個資料集的結構描述做為工作項目如下︰
+> CustomerInicdents: {I、 客戶名稱、 IssueName、 OpenedDate、 狀態} 工作項目: {工作項目識別碼、 i、 WorkItemName、 OpenedDate、 狀態、 客戶名稱} 
 
-When we want to track all incidents and workitems that relate to a specific CustomerName we cannot simply create a relationship between these two data sets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship - see Creating relationships if my data has null or blank values.  There might be multiple WorkItems and CustomerIncidents for a single CustomerName.  
+當我們想要追蹤的所有事件和特定的客戶名稱與相關的工作項目我們只是無法建立下列兩個資料集之間的關聯性。  某些工作項目可能不相關的客戶名稱，因此該欄位是空白或 NULL。  如果您有任何空白值或 null CustomerNames 資料表中，您可能仍然無法建立關聯性-請參閱建立關聯性，如果我的資料具有 null 或空白值。  可能有多個工作項目和 CustomerIncidents 的單一客戶名稱。  
 
-To create a relationship in this case, we need to create a logical data set of all the CustomerNames across the two data sets.  In the Query tab, you can use the following sequence to create the logical data set:
+在此情況下建立的關聯性，我們需要建立邏輯資料集的所有 CustomerNames 跨兩個資料集。  在 [查詢] 索引標籤中，您可以使用下列程序來建立邏輯資料集︰
 
-1.  Duplicate both queries, naming the first <bpt id="p1">**</bpt>Temp<ept id="p1">**</ept> and the second <bpt id="p2">**</bpt>CustomerNames<ept id="p2">**</ept>.
+1.  重複這兩個查詢，命名第一個 **Temp** ，第二個 **CustomerNames**。
 
-2.  In each query, remove all columns <bpt id="p1">*</bpt>except<ept id="p1">*</ept> the CustomerName column
+2.  在每個查詢中，移除所有資料行 *除了* CustomerName 資料行
 
-3.  In each query, use  <bpt id="p1">**</bpt>Remove Duplicate<ept id="p1">**</ept>.
+3.  在每個查詢，使用  **移除重複的**。
 
-4.  In the <bpt id="p1">**</bpt>CustomerNames<ept id="p1">**</ept> query, select the <bpt id="p2">**</bpt>Append<ept id="p2">**</ept> option in the ribbon, select the query <bpt id="p3">**</bpt>Temp<ept id="p3">**</ept>.
+4.  在 **CustomerNames** 查詢中，選取 **附加** 選項在功能區中，選取查詢 **Temp**。
 
-5.  In the <bpt id="p1">**</bpt>CustomerNames<ept id="p1">**</ept> query, select <bpt id="p2">**</bpt>Remove Duplicates<ept id="p2">**</ept>.
+5.  在 **CustomerNames** 查詢中，選取 **移除重複**。
 
-Now you have a dimension table that you can use to relate to CustomerIndicents and WorkItems that contains all the values of each.  
+現在您已擁有可用來與 CustomerIndicents 和工作項目相關的維度資料表，其中包含每個的所有值。  
 
-## Patterns to jump start your use of the Query Editor
+## 跳模式啟動您使用 [查詢編輯器
 
-Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
+查詢編輯器是非常強大和的方式可以操作資料至圖形加以清除，以便以視覺化方式檢視或建立模型開始。 有幾種模式，您應該要注意。
 
-### Temporary columns can be deleted after computing a result
+### 在計算結果後，才能刪除暫存資料行
 
-Often you need to build a calculation that transforms data from multiple columns into single new column.  This can be complex.  One easy way to overcome the problem is do decompose the operation into steps.  Start by duplicating the initial columns. Then build the steps a temporary columns. Then create the a column for the final result.  You can then delete the temporary columns so the final data set is not cluttered. This is possible because the query tab executes steps in order. 
+通常您需要建立多個資料行的資料轉換成單一的新資料行的計算。  這可能很複雜。  輕易地解決問題的其中一個是不要將分解成步驟作業。  開始複製的初始資料行。 然後建置步驟暫存資料行。 接著，建立的最終結果的資料行。  因此不包含最終資料集，您就可以刪除暫時的資料行。 這可能是因為 [查詢] 索引標籤會依序執行的步驟。 
 
-### Duplicate or Reference queries followed by merge to original query
+### 重複項目或參考後面合併至原始查詢的查詢
 
-Sometimes it's useful to compute summary statistics for a data set.  The easy way to do this is to duplicate or reference the query in the query tab. Then use <bpt id="p1">**</bpt>Group by<ept id="p1">**</ept> to compute the summary statistics.  Summary statistics help you normalize the data in the original data so they're more comparable as in .  This is especially useful for comparing individual values to the whole.  To do this go to the original query, and select the merge option.  Then merge the data from the summary statistics query matching on the appropriate identifiers.  Now you're ready to normalize the data as needed for your analysis.
+有時候很有用來計算資料集的摘要統計資料。  若要這樣做簡單的方法是重複或參考 [查詢] 索引標籤中的查詢。 然後使用 **分組** 來計算摘要統計資料。  摘要統計資料有助於正規化的原始資料中的資料，因此它們更能比較中。  這是特別適用於比較與整體的個別值。  若要前往原始的查詢，選取合併選項。  然後合併在適當的識別項比對的摘要統計資料查詢的資料。  現在您已準備好要將資料正規化，視需要針對您的分析。
 
-## Using DAX for the first time
+## 第一次使用 DAX
 
-DAX is the calculations formula language in Power BI Desktop.  It's optimized for BI analytics.  It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
+DAX 是 Power BI Desktop 中的計算公式語言。  它最適合 BI 分析。  它是什麼您可能已經熟悉如果您只使用過類似的查詢語言 SQL 有點不同。 線上和了解 DAX 文獻中有很好的資源。 
 
-[QuickStart: Learn DAX Basics in Power BI Desktop](powerbi-desktop-quickstart-learn-dax-basics.md)
+[快速入門︰ 了解 Power BI Desktop 中的 DAX 基本概念](powerbi-desktop-quickstart-learn-dax-basics.md)
 
-[Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
+[Data Analysis Expressions (DAX) 參考](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX 資源中心](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

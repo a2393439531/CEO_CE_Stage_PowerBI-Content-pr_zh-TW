@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Combination Charts"
-   description="Create your first combination chart"
+   pageTitle="組合圖"
+   description="建立第一個的組合圖"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,18 +23,18 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Combination Charts
+# 如何使用組合圖
 
-When you want to visualize two measures that have very different scales, such as revenue and units, a <bpt id="p1">**</bpt>combination chart<ept id="p1">**</ept> that shows a line and a bar with different axis scales is very useful. Power BI supports many different types of combination charts by default, including the popular <bpt id="p1">**</bpt>Line<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Stacked Columns<ept id="p2">**</ept> charts.
+當您想要以視覺化方式檢視兩個量值有非常不同的縮放比例，營收和單位，例如 **組合式圖表** ，顯示一條線並具有不同的軸刻度的列會很有幫助。 Power BI 支援許多不同類型的組合圖，根據預設，包括常用 **列** 和 **堆疊中的資料行** 圖表。
 
 ![](media/powerbi-learning-3-3-create-combination-charts/3-3_1.png)
 
-When you create a combination chart, you're presented with a field for <bpt id="p1">**</bpt>Shared Axis<ept id="p1">**</ept> (the X-axis), and then values for your two fields, in this case a column and a line. The two Y-axis legends appear on either side of the visualization.
+當您建立為組合式圖表時，您會有的欄位 **共用軸** （x 軸），然後您兩個欄位值，在此案例中的資料行和行。 兩個 y 軸圖例會出現在左邊或右邊視覺效果。
 
 ![](media/powerbi-learning-3-3-create-combination-charts/3-3_2.png)
 
-You can also split each column by category, by dragging a category into the Column Series field in the Visualizations pane. When you do so, each bar is proportionately colored based on the values within each category.
+也可以依類別、 分割每個資料行拖曳到資料行系列中的欄位 [視覺效果] 窗格的類別。 當您這麼做，每個橫條的色彩為按比例會根據每個分類內的值。
 
 ![](media/powerbi-learning-3-3-create-combination-charts/3-3_3.png)
 
-Combination charts are an effective way to visualize multiple measures that have very different scales in a single visualization.
+組合圖是以視覺化方式檢視有非常不同的多個量值的有效方式調整在單一的視覺效果。

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="R integration in Power BI Desktop"
-   description="Learn how to use R visuals in Power BI Desktop"
+   pageTitle="Power BI Desktop 中的 R 整合"
+   description="了解如何使用 Power BI Desktop 中的 R 視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,45 +22,46 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# R Visuals in Power BI
+# 在 Power BI 中的 R 視覺效果
 
-With Power BI Desktop, you can perform analytical and statistical analysis and create compelling visuals by integrating with R. You can host those R visualizations within the Power BI Desktop report.
+使用 Power BI Desktop，可以執行分析與統計分析並建立吸引人的視覺效果，藉由整合與。您可以裝載在 Power BI Desktop 報表內的 R 視覺效果。
 
-When you select the <bpt id="p1">**</bpt>R visual<ept id="p1">**</ept> icon from the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane, Power BI creates a placeholder on the canvas to host your R visual, and then presents an R script editor for you to use right on the canvas. As you add fields to the R visual, Power BI Desktop adds them to the R script editor pane.
+當您選取 **R visual** 圖示從 **視覺效果** ] 窗格中，Power BI 建立預留位置來裝載 R visual studio，在畫布上，然後提供 [R 指令碼編輯器，您可以使用在畫布上的權限。 您可以將欄位加入 visual，Power BI Desktop 會將它們加入至 R 指令碼編輯器窗格中。
 
 ![](media/powerbi-learning-3-11h-r-visual-integration/3-11h_1.png)
 
-Below what Power BI generates in the R script editor, you can begin creating your R script to generate the visual. Once your script is complete, select <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> and the following occurs:
+以下什麼 Power BI 會產生在 R 指令碼編輯器中，您可以開始建立您的 R 指令碼，以產生視覺效果。 您的指令碼完成之後，選取 **執行** ，會發生下列狀況︰
 
-1.  The data added to the visual (from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane) is sent from Power BI Desktop to the local installation of R
-2.  The script created in the Power BI Desktop R script editor is run on that local installation of R
-3.  Then Power BI Desktop gets a visual back from the R installation, and displays it on the canvas
+1.  新增視覺效果的資料 (從 **欄位** 窗格) 會從 Power BI Desktop 傳送至本機安裝的 R
+2.  R 的本機安裝上執行建立 Power BI Desktop R 指令碼編輯器中的指令碼
+3.  然後 Power BI Desktop 取得視覺效果回從 R 安裝，並將它顯示在畫布上
 
-It all happens quite quickly, and the result appears in the <bpt id="p1">**</bpt>R visual<ept id="p1">**</ept> visualization on the canvas.
+是相當快速，而且結果會出現在 **R visual** 在畫布上的視覺效果。
 
 ![](media/powerbi-learning-3-11h-r-visual-integration/3-11h_2.png)
 
-You can change the R visual by adjusting the R script, and then selecting <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> again. In the following image, we changed the visual to display circles instead of squares.
+您可以變更的 R 視覺方式調整的 R 指令碼，然後選取 **執行** 一次。 在下圖中，我們會變更視覺效果，顯示圓形，而不是正方形。
 
 ![](media/powerbi-learning-3-11h-r-visual-integration/3-11h_3.png)
 
-And since the R visual is just like any other visual in Power BI Desktop, you can interact with it and make connections with other visuals on the canvas as well. When you interact with other visuals on the canvas, through filtering or highlighting, the R visual automatically reacts just like any other Power BI visual, without needing to adjust the R script.
+而且由於 R visual 就像任何其他 visual Power BI Desktop 中，您可以與它互動並以其他視覺效果的連線也在畫布上。 當您在畫布上，透過篩選或反白顯示其他視覺效果與互動 visual R 自動反應就像 visual，任何其他 Power BI 而不需要調整的 R 指令碼。
 
-It's a great way to use the power of R, right in Power BI Desktop.
+它是使用 R 的威力，Power BI Desktop 中由左至右的好方法。
 
-## What's Next
+## 後續步驟
 
-**恭喜！** You've completed this <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI. You can consider yourself well-versed in the many visualizations offered in Power BI, and also knowledgeable about how to use, modify, and customize them. And good news: visualizations are essentially the same in Power BI Desktop and the Power BI service, so what you learned applies to both.
+**恭喜！** 完成這項工作 **視覺效果** 區段 **引導式學習** Power BI 的課程。 您可以考慮自己完善部分 Power BI 中提供的許多視覺效果中，也了解如何使用、 修改及自訂它們。 還有一個好消息︰ 視覺效果是基本上是相同的 Power BI Desktop 與 Power BI 服務，讓您了解適用於兩者。
 
-You're now ready to head to the cloud and get immersed in the Power BI service, where you can <bpt id="p1">**</bpt>Explore Data<ept id="p1">**</ept>. As you know, the flow of work looks something like the following:
+您現在準備好前往定域機組，並取得 immersed 在 Power BI 服務中，您可以在其中 **瀏覽資料**。 如您所知的工作流程看起來像下面這樣︰
 
--   Bring data into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, and create a report.
--   Publish to the Power BI service, where you create new <bpt id="p1">**</bpt>visualizations<ept id="p1">**</ept> and build dashboards
--   <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in <bpt id="p1">**</bpt>Power BI Mobile<ept id="p1">**</ept> apps
+-   將資料插入 **Power BI Desktop**, ，並建立報表。
+-   發行至 Power BI 服務，讓您建立新 **視覺效果** 和組建儀表板
+-   
+            **共用** 儀表板與其他人，特別是人員是在旅途
+-   檢視並與其互動共用儀表板和報表中 **行動 Power BI** 應用程式
 
 ![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
-Whether you create reports or just view and interact with them, you now know how all those cool visuals are created, and how they connected to the data. Next we get to see those visuals and reports in action.
+是否建立報表或只檢視並與之互動，現在您已經知道如何建立所有這些酷炫的視覺效果，以及如何它們連接至資料。 接下來，我們會看到這些視覺效果和動作中的報表。
 
-See you in the next section!
+下一節中見了 ！

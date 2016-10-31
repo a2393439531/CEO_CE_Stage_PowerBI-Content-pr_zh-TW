@@ -1,6 +1,6 @@
 <properties 
 pageTitle="安裝並設定工具以在 GitHub 中進行撰寫" 
-description="Tools and steps to get set up for authoring Power BI content in GitHub." 
+description="工具和步驟，以便開始撰寫 Power BI 內容在 GitHub 中的設定。" 
 services="contributor-guide" 
 documentationCenter="" 
 authors="mblythe"  
@@ -17,36 +17,38 @@ ms.service="contributor-guide"
 
 #安裝並設定工具以在 GitHub 中進行撰寫
 
-Follow the steps in this article to set up tools for contributing to the Power BI technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
+請依照這篇文章，以設定參與的 Power BI 的技術文件的工具。 休閒和偶爾參與者可能可以使用 GitHub 中步驟 2 所述的 UI。
 
-如果您不熟悉 Git，您可能想要想要檢閱一些 Git 術語：[https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary)。 In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter in this set of steps: <bpt id="p1">[</bpt>http://stackoverflow.com/questions/7076164/terminology-used-by-git<ept id="p1">](http://stackoverflow.com/questions/7076164/terminology-used-by-git)</ept>
+如果您不熟悉 Git，您可能想要想要檢閱一些 Git 術語：[https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary)。 此外，這個 StackOverflow 執行緒包含這組步驟中，您會遇到的 Git 名詞解釋︰ [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
 
 ## Contents
 
 - [建立 GitHub 帳戶並設定您的設定檔](#create-a-github-account-and-set-up-your-profile)
-- [Sign up for Disqus](#sign-up-for-disqus)
-- [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
+- [申請 Disqus](#sign-up-for-disqus)
+- [判斷您是否真的需要遵循這些步驟的其餘部分](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
 - [GitHub 中的權限](#permissions-in-github)
 - [安裝 Git for Windows](#install-git-for-windows)
 - [啟用雙因素驗證](#enable-two-factor-authentication)
 - [安裝 Markdown 編輯器](#install-a-markdown-editor)
 - [設定 Atom](#configure-atom)
-- [Fork the repository and copy it to your computer](#fork-the-repository-and-copy-it-to-your-computer)
+- [分岔儲存機制，並將它複製到您的電腦](#fork-the-repository-and-copy-it-to-your-computer)
 - [設定您的本機使用者名稱和電子郵件](#configure-your-user-name-and-email-locally)
 - [後續步驟](#next-steps)
 
 ## 建立 GitHub 帳戶並設定您的設定檔
 
-To contribute to the Power BI technical content, you'll need a <bpt id="p1">[</bpt>GitHub<ept id="p1">](http://www.github.com)</ept> account.
+若要對 Power BI 技術內容，您必須 [GitHub](http://www.github.com) 帳戶。
 
-If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
+如果您是 Microsoft 參與者，您需要設定您的 GitHub 帳戶，讓您清楚地識別身為 Microsoft 員工。 設定您的設定檔，如下所示︰
 
 - 
             **設定檔圖片**：您的圖片 (必要)
 - 
             **名稱**：您的名字和姓氏 (必要)
-- <bpt id="p1">**</bpt>Email<ept id="p1">**</ept>: your Microsoft email address (required)
-- <bpt id="p1">**</bpt>Company<ept id="p1">**</ept>: Microsoft Corporation (required)
+- 
+            **電子郵件**︰ 您的 Microsoft 電子郵件地址 （必要）
+- 
+            **公司**: Microsoft Corporation （必要）
 - 
             **位置**：列出您的位置 (必要)
 
@@ -55,90 +57,94 @@ If you are a Microsoft contributor, you need to set up your GitHub account so yo
 <p align="center">
  ![GitHub 設定檔範例](./media/tools-and-setup/githubprofile.png)
 
-## Sign up for Disqus
+## 申請 Disqus
 
-Every published Power BI technical article has a comment stream provided by the Disqus service.
+每個已發行的 Power BI 技術的文章內含 Disqus 服務所提供的註解資料流。
 
- ![Discus logo](./media/tools-and-setup/discus.png)
+ ![繼續討論標誌](./media/tools-and-setup/discus.png)
 
-If you are a Microsoft employee, and if you are the author of or a contributor to an article, you need to sign up for Disqus so you can participate in the comment stream for the article.
+如果您為 Microsoft 員工，而且如果您的作者或參與者的文章，您需要註冊 Disqus 讓您可以參與文件的註解資料流。
 
-1. Sign up for an account at <bpt id="p1">[</bpt>http://www.disqus.com/<ept id="p1">](http://www.disqus.com/)</ept>
-2. Fill out your profile as follows:
+1. 登入帳戶在 [http://www.disqus.com/](http://www.disqus.com/)
+2. 填妥您的設定檔，如下所示︰
 
- - <bpt id="p1">**</bpt>Full Name<ept id="p1">**</ept>: your full name as displayed in your Microsoft address book listing, plus the bracketed info, which is your alias plus @MSFT. Format: <bpt id="p1">*</bpt>First Last [alias@MSFT]<ept id="p1">*</ept>
- - <bpt id="p1">**</bpt>Location<ept id="p1">**</ept>: Your location
- - <bpt id="p1">**</bpt>Short Bio<ept id="p1">**</ept>: Your title
+ - 
+            **完整名稱**︰ 您的全名與顯示在您的清單，再加上括號括住的資訊，其為您的別名加 @MSFT Microsoft 通訊錄中。 格式︰ *先最後一個 [alias@MSFT]*
+ - 
+            **位置**︰ 您的部署位置
+ - 
+            **簡短簡歷**︰ 您的標題
 
-## Determine whether you really need to follow the rest of these steps
+## 判斷您是否真的需要遵循這些步驟的其餘部分
 
-You might not need to follow all the steps in this article. It depends on the sort of content contribution you want or need to make.
+您可能不需要遵循本文中的所有步驟。 這取決於您想要或需要進行內容投稿的排序。
 
-###Submit a text-only change to an existing article
+###送出至現有的發行項的純文字變更
 
-If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's web-based markdown editor to submit your changes. Just click the GitHub link in the article you want to modify:
+如果您只需要或想要讓現有的發行項中文字的更新，您可能不需要遵循其餘的步驟。 您可以使用 GitHub 的 web 架構的 markdown 編輯器提交您的變更。 只要按一下您想要修改的文件中的 [GitHub] 連結︰
 
  ![GitHub 設定檔範例](./media/tools-and-setup/contributetogit.png)
 
- Then, click the edit icon in the GitHub version of the article
+ 然後，按一下 [發行項的 GitHub 版中的 [編輯] 圖示
 
  ![GitHub 設定檔範例](./media/tools-and-setup/editicon.PNG)
 
- That opens the easy-to-use web editor that makes it easy to submit changes. You don't need to follow the other steps in this article.
+ 如此會開啟方便使用 web 編輯器，以簡化將變更送出。 您不需要遵循本文中的其他步驟。
 
-###All other changes
-You need to install the tools if you want to make any of the following sorts of changes:
+###所有其他變更
+您需要安裝工具，如果您想要進行任何下列類型的變更︰
 
- - Major changes to an article
- - Create and publish a new article
- - Add new images or update images
- - Update an article over a period of days without publishing changes each of those days
+ - 發行項的主要變更
+ - 建立及發行新的發行項
+ - 加入新的映像或更新映像
+ - 經過一段天未發行變更每個這些發行日的更新發行項
 
- Go to the next section!
+ 請移至下一節 ！
 
 ##GitHub 中的權限
 
-Anybody with a GitHub account can contribute to Power BI technical content through our public repository at <bpt id="p1">[</bpt>https://github.com/azure/powerbi-content<ept id="p1">](https://github.com/azure/powerbi-content)</ept>. 不需要任何特殊權限。
+透過我們公開的儲存機制，在 Power BI 技術內容有 GitHub 帳戶具有的任何人都可能導致 [https://github.com/azure/powerbi-content](https://github.com/azure/powerbi-content)。 不需要任何特殊權限。
 
-> [AZURE.NOTE] The powerbi-content repo will be private until further notice. You should work in the powerbi-content-pr repo.
+> [AZURE.NOTE] Powerbi 內容儲存機制會私用，否則在進一步通知。 您應該使用 powerbi-內容-pr 儲存機制。
 
-If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit <bpt id="p1">[</bpt>http://aka.ms/azuregithub<ept id="p1">](http://aka.ms/azuregithub)</ept> to obtain the read permissions that will let you make contributions through the private repo - click <bpt id="p2">**</bpt>Join a Team<ept id="p2">**</ept>, and join <bpt id="p3">**</bpt>cloud-enterprise-read<ept id="p3">**</ept>.
+如果您是 Microsoft 的員工使用 Power BI 內容時，您應該在我們的私用內容儲存機制，powerbi-內容-pr。 請瀏覽 [http://aka.ms/azuregithub](http://aka.ms/azuregithub) 若要取得讀取權限可讓您做出貢獻透過私用儲存機制中-按一下 **團隊一起**, ，和聯結 **定域機組企業讀取**。
 
 ## 安裝 Git for Windows
 
-Install Git for Windows from <bpt id="p1">[</bpt>http://git-scm.com/download/win<ept id="p1">](http://git-scm.com/download/win)</ept>. 此下載會安裝 Git 版本控制系統，並安裝 Git Bash，這是您可以用來與您的本機 Git 儲存機制互動的命令列 app。
+安裝 Git，從 windows [http://git-scm.com/download/win](http://git-scm.com/download/win)。 此下載會安裝 Git 版本控制系統，並安裝 Git Bash，這是您可以用來與您的本機 Git 儲存機制互動的命令列 app。
 
-You can accept the default settings; if you want the commands to be available within the Windows command line, select the option that enables it.
+您可以接受預設設定。如果您想用於 Windows 命令列命令，請，選取選項，讓它。
 
 <p align="center">
  ![GitHub 設定檔範例](./media/tools-and-setup/gitbashinstall.png)
 
-(Note: This is not the same as "Github for Windows". "Github for Windows" 是一個也能運作的不同的 GUI 型工具，如果您想要自行閱讀，請造訪下列位置： 
+(請注意︰ 這不是 「 Github for Windows 」 相同。 "Github for Windows" 是一個也能運作的不同的 GUI 型工具，如果您想要自行閱讀，請造訪下列位置： 
             [https://windows.github.com/](https://windows.github.com/)) 
 
 ## 啟用雙因素驗證
 
-You have to enable two factor authentication (2FA) on your GitHub account if you are working in the private content repository. It's required in the private repository.
+您必須啟用兩個因素驗證 (2FA) 在您的 GitHub 帳戶上如果您使用的私用內容儲存機制中。 您需要在專用的儲存機制中。
 
-To enable this, follow the instructions in both the following GitHub help topics:
+若要啟用此功能，請依照下列兩個 GitHub 說明主題中的指示︰
 
 - [有關雙因素驗證](https://help.github.com/articles/about-two-factor-authentication/)
-- [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
+- [建立命令列使用的存取權杖](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 
-After you enable 2FA, you have to enter the access token instead of your GitHub password at the command prompt when you try to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
+啟用 2FA 之後，您必須輸入存取權杖，而不是您的 GitHub 密碼，在命令提示字元中，當您嘗試從命令列存取 GitHub 儲存機制。 存取權杖不是當您設定 2FA 取得文字訊息的驗證碼。 它會類似如下的長字串︰ fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee。 關於這的一些注意事項︰
 
-- When you create your access token, save it in a text file to make it readily accessible when you need it.
+- 當您建立存取權杖時，請將它儲存在文字檔案，讓它可立即存取在需要時。
 
-- Later, when you need to paste the token, know there are two ways to paste in the command line:
+- 稍後，當您需要將語彙基元，知道有兩種方式可以在命令列中貼上︰
 
- - Click the icon in the upper left corner of the command line window&gt;Edit&gt;Paste.
- - Right-click the icon in the upper left corner of the window and click Properties&gt;Options&gt;QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
+ - 按一下命令列視窗左上角的圖示 > 編輯 > 貼。
+ - 在視窗的左上角的圖示上按一下滑鼠右鍵，然後按一下 [內容 > 選項 > 快速編輯模式。 這會設定命令列，因此您可以貼上以滑鼠右鍵按一下命令列視窗中。
 
 ## 安裝 Markdown 編輯器
 
-We author content using simple "markdown" notation in the files, rather than complex "markup" (HTML, XML, etc.). So, you'll need to install a markdown editor.
+我們撰寫內容，而在檔案中，使用簡單的 「 markdown 」 標記法比複雜 「 標記 」 （HTML、 XML 等）。 因此，您將需要安裝 markdown 編輯器。
 
-- <bpt id="p1">**</bpt>Atom<ept id="p1">**</ept>: Most of us use GitHub's Atom markdown editor: <bpt id="p2">[</bpt>http://atom.io<ept id="p2">](http://atom.io)</ept>. It does not require a license for business use. It has spell check. 
+- 
+            **Atom**︰ 大多數人使用 GitHub 的 Atom markdown 編輯器︰ [http://atom.io](http://atom.io)。 它不需要為商業使用授權。 它具有拼字檢查。 
 
 - 
             **記事本**：針對輕量型的選項，可以使用 [記事本]。
@@ -154,54 +160,54 @@ We author content using simple "markdown" notation in the files, rather than com
 
 如果您使用 Atom，您需要設定幾件事。
 
-- Atom 預設會使用 2 個空格做為定位點，但是 Markdown 預期是 4 個空格。 If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Power BI. So, configure Atom to use 4 spaces - you can find this setting under File&gt;Settings&gt;Editor Settings&gt;Tab Length. 
+- Atom 預設會使用 2 個空格做為定位點，但是 Markdown 預期是 4 個空格。 如果您將兩個預設值，您的文章會看起來漂亮在本機預覽中，但不是當匯入 Power BI。 因此，設定要使用 4 個空格 Atom-您可以在檔案中找到這項設定 > 設定 > 編輯器設定 >] 索引標籤的長度。 
 - 您可能也想要開啟該段落中的 Soft Wrap，這與 [記事本] 中的「自動換行」意思相同。 
-- To turn on the markdown preview, click Packages&gt;Markdown Preview&gt;Toggle Preview. 您可以使用 Ctrl-Shift-M 切換預覽 HTML 檢視。 
+- 若要開啟 markdown 預覽，按一下 [封裝 > Markdown 預覽 > 切換預覽。 您可以使用 Ctrl-Shift-M 切換預覽 HTML 檢視。 
 
-## Fork the repository and copy it to your computer
+## 分岔儲存機制，並將它複製到您的電腦
 
-1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork powerbi-content-pr, the private repo. Community contributors need to fork powerbi-content, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
+1. 在 GitHub 中建立儲存機制的 「 分叉 」: 移至頁面的右上方，然後按一下 [分支] 按鈕。 如果出現提示，請選取您的帳戶做為建立分叉的所在位置。 這會建立 Git 中心帳戶內儲存機制的複本。 一般而言，技術的寫入器和程式管理員需要分岔 powerbi-內容-出版品私用儲存機制。 社群貢獻者需要分岔 powerbi 內容，公用儲存機制。 您只需要將分岔一次。您第一次安裝之後，如果您想要將您的 「 分叉 」 複製到另一部電腦，您只需要執行的命令，請遵循本節中，將儲存機制複製到您的電腦中。  如果您選擇建立這兩個儲存機制分支，您必須建立的每個儲存機制的 「 分叉 」。
 
-2. Copy the Personal Access Token that you got from <bpt id="p1">[</bpt>https://github.com/settings/applications#personal-access-tokens<ept id="p1">](https://github.com/settings/applications#personal-access-tokens)</ept>. You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
+2. 複製個人存取權杖，所得 [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens)。 您可以接受語彙基元的預設權限。  將儲存個人的存取權杖，供日後重複使用文字檔案中。
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open GitBash.  在命令提示字元中輸入以下命令。  This command creates a powerbi-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<ph id="ph1">&lt;your Windows user name&gt;</ph>\powerbi-content(-pr).
+3. 接下來，複製到您的電腦使用您的認證儲存機制嵌入命令字串。  若要這樣做，請開啟 GitBash。  在命令提示字元中輸入以下命令。  此命令會在您的電腦上建立 powerbi-content(-pr) drectory。  如果您使用的預設位置，它將會位於 c:\users<your Windows user name>\powerbi-content(-pr)。
 
-Public repo:
+公用的儲存機制︰
 
         git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content.git
 
-Private repo:
+私用儲存機制︰
 
         git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content-pr.git
 
-For example, this clone command could look something like this:
+例如，此複製命令看起來可能像這樣︰
 
         git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-content-pr.git  
 
 ## 設定遠端儲存機制連接並設定認證
 
-Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
+輸入下列命令建立根存放庫的參考。 這會設定連線至 github 儲存機制，可讓您可以取得最新的變更到本機電腦，並回到您的變更發送至 GitHub。 在本機，讓您不必每次您嘗試存取的上游的儲存機制和分叉 GitHub 上的輸入您的名稱和密碼，此命令也會設定您的權杖。
 
-Public repo:
+公用的儲存機制︰
 
         cd powerbi-content
         git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content.git
         git fetch upstream
 
-Private repo:
+私用儲存機制︰
 
         cd powerbi-content-pr
         git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content-pr.git
         git fetch upstream
 
-這通常需要一些時間。 After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
+這通常需要一些時間。 執行這項操作之後，就不必再分叉或再次輸入認證。 您只必須分支到本機電腦上重新複製如果您在另一部電腦上設定的工具。
 
 
 ## 設定您的本機使用者名稱和電子郵件
 
 若要確保您以參與者身分正確列出，您需要在 Git 中本機設定您的使用者名稱和電子郵件。
 
-1. Start Git Bash, and switch into powerbi-content or powerbi-content-pr:
+1. 啟動 Git Bash，並切換至 powerbi 內容或 pr-powerbi-內容︰
 
    ````
    cd powerbi-content
@@ -218,7 +224,7 @@ Private repo:
     ````
     git config --global user.name "John Doe"
     ````
-3. Configure your email so it matches the primary email designated in your GitHub profile; if you're a MSFT employee, it should be your MSFT email address:
+3. 設定您的電子郵件，讓它符合 GitHub 設定檔; 中指定的主要電子郵件如果您是 MSFT 員工時，它應該 MSFT 的電子郵件地址︰
 
     ````
     git config --global user.email "alias@example.com"
@@ -227,14 +233,15 @@ Private repo:
 
 ##後續步驟
 
-- <bpt id="p1">[</bpt>Create a local working branch<ept id="p1">](./git-commands-for-master.md)</ept> on your computer so you can start work.
-- Copy <bpt id="p1">[</bpt>the markdown template<ept id="p1">](../markdown templates/markdown-template-for-new-articles.md)</ept> as the basis for a new article.
+- 
+            [建立本機工作分支](./git-commands-for-master.md) 上您的電腦，因此您可以開始工作。
+- 複製 [markdown 範本](../markdown templates/markdown-template-for-new-articles.md) 做為新的發行項的基礎。
 
 
 
 
 
-###Contributors' Guide Links
+###著作指南的連結
 
 - [概觀文章](./../README.md)
 - [指引文章的索引](./contributor-guide-index.md)
@@ -242,19 +249,19 @@ Private repo:
 
 
 <!--Anchors-->
-[Use a customer-friendly voice]: #use-a-customer-friendly-voice
-[Consider localization and machine translation]: #consider-localization-and-machine-translation
-[other style and voice issues to watch for]: #other-style-and-voice-issues-to-watch-for
+[使用適合客戶的聲音]: #use-a-customer-friendly-voice
+[請考慮當地語系化和機器翻譯]: #consider-localization-and-machine-translation
+[監看的其他樣式和聲音問題]: #other-style-and-voice-issues-to-watch-for
 
 
 [建立 GitHub 帳戶並設定您的設定檔]: #create-a-github-account-and-set-up-your-profile
-[Determine whether you really need to follow the rest of these steps]: #determine-whether-you-really-need-to-follow-the-rest-of-these-steps
+[判斷您是否真的需要遵循這些步驟的其餘部分]: #determine-whether-you-really-need-to-follow-the-rest-of-these-steps
 [GitHub 中的權限]: #permissions-in-github
 [安裝 Git for Windows]: #install-git-for-windows
 [啟用雙因素驗證]: #enable-two-factor-authentication
 [安裝 Markdown 編輯器]: #install-a-markdown-editor
-[Fork the repository and copy it to your computer]: #fork-the-repository-and-copy-it-to-your-computer
-[Install git-credential-winstore]: #install-git-credential-winstore
-[Sign up for Disqus]: #sign-up-for-disqus
+[分岔儲存機制，並將它複製到您的電腦]: #fork-the-repository-and-copy-it-to-your-computer
+[安裝 git-認證-winstore]: #install-git-credential-winstore
+[申請 Disqus]: #sign-up-for-disqus
 [設定您的本機使用者名稱和電子郵件]: #configure-your-user-name-and-email-locally
 [後續步驟]: #next-steps

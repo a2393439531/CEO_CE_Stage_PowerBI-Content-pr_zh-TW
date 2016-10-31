@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Share dashboards from the iPad app"
-   description="Read how you can invite colleagues to view your dashboards and snapshots of tiles from the Power BI app for iOS on your iPad."
+   pageTitle="從 iPad 應用程式共用儀表板"
+   description="閱讀如何您邀請同事，在您的 iPad 上檢視您的儀表板和 iOS 的 Power BI 應用程式分割的快照集。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,58 +20,62 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# Share dashboards from the iPad app (Power BI for iOS)
+# 共用從 iPad 應用程式 (適用於 iOS 的 Power BI) 儀表板
 
-You can invite colleagues to view and interact with your dashboards from the Power BI app for iOS on your iPad. You can also share <bpt id="p1">[</bpt>snapshots of tiles<ept id="p1">](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)</ept> with anyone, in or out of your email domain.
+您可以邀請同事檢視，並從您的 iPad 上的 iOS Power BI 應用程式儀表板進行互動。 您也可以共用 [磚的快照集](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) 與任何人，或縮小您的電子郵件網域。
 
-## Share a dashboard with colleagues
+## 與同事共用儀表板
 
-> [AZURE.NOTE]  The people you share dashboards with need to <bpt id="p1">[</bpt>sign up for Power BI<ept id="p1">](https://powerbi.microsoft.com)</ept>, too.
+> [AZURE.NOTE]  人們在您共用儀表板需要與 [註冊 Power BI](https://powerbi.microsoft.com), 、 太。
 
-1.  Tap the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png)</ph> icon in the upper-right corner of your dashboard.
+1.  點選 **共用** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) 儀表板右上角的圖示。
 
-2.  Tap <bpt id="p1">**</bpt>Invite a colleague<ept id="p1">**</ept>, then type email addresses and a message to accompany your dashboard invitation.
+2.  點選 **邀請同事**, ，然後輸入電子郵件地址和要幫助您完成您的儀表板邀請的訊息。
 
-3.  To allow resharing, leave <bpt id="p1">**</bpt>Allow recipients to share this dashboard<ept id="p1">**</ept> selected.
+3.  若要允許 resharing，保留 **允許收件者共用此儀表板** 選取。
 
-    > [AZURE.NOTE]    Allowing your colleagues to reshare means they can forward the email invitation to other colleagues, either through the web or the mobile apps. See <bpt id="p1">[</bpt>Notes about sharing dashboards<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards)</ept>, below.
+    > [AZURE.NOTE]    它們可以讓您的同事共用方式轉寄電子郵件邀請給其他同事，透過 web 或行動應用程式。 請參閱 [共用儀表板的相關注意事項](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards), 底下。
 
-4.  Tap <bpt id="p1">**</bpt>Send<ept id="p1">**</ept> in the upper-right corner.
+4.  點選 **傳送** 右上角。
 
-Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in one of the mobile apps, it's added to their Power BI.
+您的同事取得電子郵件邀請的直接連結至儀表板。 邀請到期後一個月。 開啟時，在瀏覽器或行動應用程式的其中一個，它會加入至其 Power BI。
 
-## Unshare a dashboard
+## 取消共用儀表板
 
-You can only unshare a dashboard if you're the dashboard owner.
+如果您的儀表板擁有者，您只可以取消共用儀表板。
 
-1.  Tap the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png)</ph> icon in the upper-right corner of your dashboard.
+1.  點選 **共用** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) 儀表板右上角的圖示。
 
-    You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
+    您會看到與您已共用此儀表板的同事的清單。 其名稱如下︰ 這些單字︰
 
-    -   <bpt id="p1">**</bpt>Pending<ept id="p1">**</ept>: They haven't viewed the dashboard yet.
+    -   
+            **暫止**︰ 它們還尚未檢視儀表板。
 
-    -   <bpt id="p1">**</bpt>Can View<ept id="p1">**</ept>: They can view the dashboard but not share it.
+    -   
+            **可以檢視**︰ 您可以檢視儀表板，但不是會共用它。
 
-    -   <bpt id="p1">**</bpt>Can View &amp; Invite<ept id="p1">**</ept>: They can view the dashboard and share it with other colleagues.
+    -   
+            **可以檢視與邀請**︰ 他們可以檢視儀表板及與其他同事共用。
 
-2.  Tap <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.
+2.  點選 **編輯**。
 
-3.  To unshare, tap the red circle next to a name and tap <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.
+3.  若要取消共用，並點選名稱旁邊的紅色圓形，然後點選 **刪除**。
 
-## Notes about sharing dashboards
+## 共用儀表板的相關注意事項
 
-You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard.
+您與同事看到的相同資料的儀表板。 因此，如果您有權限，以查看更多的資料，因此，它們將無法看到您的儀表板中的所有資料。
 
--   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
+-   如果您的同事尚未註冊 Power bi 嗎，要執行的作業，請參閱您的儀表板。
 
--   Your colleagues can see your dashboard and even see changes you make in the Power BI service online, after you save those changes.
+-   您的同事可以看到您的儀表板與甚至儲存這些變更之後在線上，Power BI 服務中進行的變更。
 
--   You can share snapshots of tiles with anyone, in or out of your email domain. You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
+-   您可以並排顯示的快照集與任何人共用，或縮小您的電子郵件網域。 您可以共用具有相同的電子郵件網域，為您的使用者與使用者的網域是不同、 但租用戶中註冊。 例如，假設您有網域 contoso.com 和 contoso2.com 租用戶中註冊。 如果您的電子郵件地址是 konrads@contoso.com，您可以共用與 ravali@contoso.com，以及 gustav@contoso2.com。
 
 ### 請參閱
 
-- [Dashboards in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md)
-- [Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
-- [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
-- <bpt id="p1">[</bpt>The iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI for iOS
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [在 iPad 應用程式中的儀表板](powerbi-mobile-dashboards-on-the-ipad-app.md)
+- [加上註解，並共用從 iPad 應用程式磚的快照集](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
+- [共用 Power BI 儀表板](powerbi-service-share-unshare-dashboard.md)
+- 
+            [IPad 應用程式](powerbi-mobile-iphone-app-get-started.md) ios Power bi
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

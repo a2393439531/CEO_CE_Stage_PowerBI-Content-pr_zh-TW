@@ -1,17 +1,17 @@
 
 
-#Metadata for Power BI technical articles
+#Power BI 技術文件的中繼資料
 
-All Power BI technical articles contain two metadata sections - a properties section and a tags section. 內容區段可讓某些網站自動化及搜尋引擎最佳化 (SEO) 內容，而標記區段可報告大量的內部內容。 兩個區段都是必要的。
+所有的 Power BI 技術文件包含兩個中繼資料區段的內容區段以及標記] 區段中。 內容區段可讓某些網站自動化及搜尋引擎最佳化 (SEO) 內容，而標記區段可報告大量的內部內容。 兩個區段都是必要的。
 
 - [語法]
 - [使用方式]
-- [Attributes and values for the properties section]
-- [Attributes and values for the tags section]
+- [屬性和值的屬性區段]
+- [屬性和 [標記] 區段的值]
 
 ##語法
 
-The properties section uses this syntax:
+[內容] 區段中，會使用此語法︰
 
     <properties
        pageTitle="<Page title that displays in search results and the browser tab | Microsoft Power BI>"
@@ -23,7 +23,7 @@ The properties section uses this syntax:
        editor="NA"
        tags="NA"/>
 
-The tags section uses this syntax:
+[標記] 區段中，會使用此語法︰
 
     <tags
        ms.service="powerbi"
@@ -37,54 +37,73 @@ The tags section uses this syntax:
 ##使用方式
 
 - 元素名稱與屬性名稱會區分大小寫。
-- 錯誤 <properties> section must be the first line of your file.
+- 錯誤 <properties> 區段必須是檔案的您的第一行。
 - 在每個中繼資料區段以及頁面標題之前保留空白列，以確保頁面標題在發佈程序期間會正確地轉換為 HTML。
 
-## Attributes and values for the properties section
+## 屬性和值的屬性區段
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>pageTitle<ept id="p1">**</ept>: Required; important to SEO. 此屬性的文字會出現在瀏覽器的索引標籤中，並且在搜尋結果內做為標題。 Use 55-60 characters including spaces and including the site identifier <bpt id="p1">*</bpt>| Microsoft Power BI<ept id="p1">*</ept> (typed as: space pipe space Microsoft Power BI).
+![](./media/article-metadata/checkmark-small.png)
+            **pageTitle**: SEO 很重要，則為必要。 此屬性的文字會出現在瀏覽器的索引標籤中，並且在搜尋結果內做為標題。 使用 55 60 個字元包括空格和包括站台識別碼 *|Microsoft Power BI* (型別為︰ 空間管道空間 Microsoft Power BI)。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>description<ept id="p1">**</ept>: Required; important for SEO (relevance) and site functionalities. Use at least 140 characters, but don't exceed 170 characters including spaces. Describe the  purpose of your content so customers will know whether to choose it from a list of search results. The value is usually displayed as the description or abstract paragraph in search results.
+![](./media/article-metadata/checkmark-small.png)
+            **描述**︰ 必要; 重要的 SEO （相關） 與站台功能。 使用至少 140 個字元，但不能超過 170 字元包括空格。 說明內容的目的，讓客戶將會知道是否要從搜尋結果的清單中選擇。 此值通常顯示為描述或抽象搜尋結果中的段落。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>services<ept id="p1">**</ept>: Always "powerbi" for Power BI content (Azure has multiple options).
+![](./media/article-metadata/checkmark-small.png)
+            **服務**︰ 一律 「 powerbi 」 （Azure 有多個選項） 的 Power BI 內容。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>documentationCenter<ept id="p1">**</ept>: "NA" for Power BI content.
+![](./media/article-metadata/checkmark-small.png)
+            **documentationCenter**:"NA"Power BI 內容。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>authors<ept id="p1">**</ept>: Required, one value only. 列出主要作者或文章主題專家 (SME) 的 GitHub 帳戶。 這項屬性會影響已發行文章上的署名。 即便屬性有多個名稱，也僅會顯示一個。
+![](./media/article-metadata/checkmark-small.png)
+            **作者**︰ 所需，只有一個值。 列出主要作者或文章主題專家 (SME) 的 GitHub 帳戶。 這項屬性會影響已發行文章上的署名。 即便屬性有多個名稱，也僅會顯示一個。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>manager<ept id="p1">**</ept>: Required if you are a Microsoft contributor. List the alias of the content publishing manager for the technology area. 如果您是社群參與者，請包含此屬性，但保留空白，以便我們填寫。
+![](./media/article-metadata/checkmark-small.png)
+            **管理員**︰ 如果您 Microsoft 參與者所需。 清單內容的發佈管理員技術領域的別名。 如果您是社群參與者，請包含此屬性，但保留空白，以便我們填寫。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>editor<ept id="p1">**</ept>: "NA" - Not used. 請勿將它用於其他用途。
+![](./media/article-metadata/checkmark-small.png)
+            **編輯器**:"NA"-不使用。 請勿將它用於其他用途。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>tags<ept id="p1">**</ept>: "NA" for Power BI content.
+![](./media/article-metadata/checkmark-small.png)
+            **標記**:"NA"Power BI 內容。
 
 
-## Attributes and values for the tags section
+## 屬性和 [標記] 區段的值
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.service<ept id="p1">**</ept>: Always "powerbi" for Power BI content (Azure has multiple options).
+![](./media/article-metadata/checkmark-small.png)
+            **ms.service**︰ 一律 「 powerbi 」 （Azure 有多個選項） 的 Power BI 內容。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.devlang<ept id="p1">**</ept>: "NA" for Power BI content.
+![](./media/article-metadata/checkmark-small.png)
+            **ms.devlang**:"NA"Power BI 內容。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.topic<ept id="p1">**</ept>: Required. Specifies the topic type. 大多數參與者建立的新頁面會是文章或參考。 NOTE: the list below is from Azure, and I have removed some of the options that definitely aren't valid for Power BI. We will decide how to use the remaining options as our site architecture is developed. If in doubt, use "article". 
+![](./media/article-metadata/checkmark-small.png)
+            **ms.topic**︰ 必要。 指定主題型別。 大多數參與者建立的新頁面會是文章或參考。 附註︰ 下列清單是從 Azure 中，我已移除的某些選項一定不是有效的 Power BI。 我們會決定如何使用我們的站台架構開發的其餘的選項。 如果有疑問，使用 「 文件 」。 
 
  - 
             **article**：概念性主題、教學課程、功能指南，或其他非參考文章
 
- - <bpt id="p1">**</bpt>campaign-page<ept id="p1">**</ept>: A page that is specifically designed as a landing page for external campaigns, and is not included as part of the primary site IA.  Should not be used for documentation articles or regular doc landing pages.
+ - 
+            **行銷頁面**︰ 頁面專為外部活動的登陸頁面，也不 IA.的主要站台的一部分  不應該使用文件的文件或一般登陸頁面的文件。
 
- - <bpt id="p1">**</bpt>get-started-article<ept id="p1">**</ept>: Assign to articles that are featured in the Get Started section of the left navigation for a service.
+ - 
+            **取得啟動文章**︰ 指派給文章中開始使用] 區段的左側導覽中的服務。
 
- - <bpt id="p1">**</bpt>hero-article<ept id="p1">**</ept>: A "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. 請將這個值只指派給顯示在您的服務之文章登陸頁面頂端的文章。
+ - 
+            **英雄文章**: 「 英雄 」 教學課程是設計用來介紹一項服務或功能，會取得訪客使用服務快速啟動並免費試用註冊及 MSDN 啟用磁碟機。 請將這個值只指派給顯示在您的服務之文章登陸頁面頂端的文章。
 
- - <bpt id="p1">**</bpt>home-page<ept id="p1">**</ept>: Top level documentation home page.
+ - 
+            **首頁**︰ 上方層級的文件首頁。
 
- - <bpt id="p1">**</bpt>infographic-page<ept id="p1">**</ept>: A page that features a browsable infographic or poster.
+ - 
+            **資訊圖頁面**︰ 功能可瀏覽資訊圖或海報的頁面。
 
- - <bpt id="p1">**</bpt>reference<ept id="p1">**</ept>: An API or language reference page (including REST API).
+ - 
+            **參考**︰ 的 API 或語言 （包括 REST API） 的參考頁面。
 
- - <bpt id="p1">**</bpt>video-page<ept id="p1">**</ept>: A page that features a video.
+ - 
+            **影片頁面**︰ 功能視訊的頁面。
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.tgt_pltfrm<ept id="p1">**</ept>: Required. Specifies the target platform. This value will be <bpt id="p1">**</bpt>NA<ept id="p1">**</ept> for most topics. NOTE: Still detemining whether we should use this for our mobile content.
+![](./media/article-metadata/checkmark-small.png)
+            **ms.tgt_pltfrm**︰ 必要。 指定目標平台。 這個值會是 **NA** 大部分主題。 注意︰ 仍然 detemining 是否應該使用這我們行動的內容。
 
  - **mobile-android**
  - **mobile-html**
@@ -93,14 +112,17 @@ The tags section uses this syntax:
  - **多個**
  - **na**
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.workload<ept id="p1">**</ept>: Always "powerbi" for Power BI content (Azure has multiple options).
+![](./media/article-metadata/checkmark-small.png)
+            **ms.workload**︰ 一律 「 powerbi 」 （Azure 有多個選項） 的 Power BI 內容。
 
-![](./media/article-metadata/checkmark-small.png) <bpt id="p1">**</bpt>ms.date<ept id="p1">**</ept>: Required. 指定文章上次被檢閱相關性、準確性、修正螢幕擷取畫面和可運作連結的日期。 以 mm/dd/yyyy 格式輸入日期。 此日期也會顯示於已發行文章上做為上次更新日期。
+![](./media/article-metadata/checkmark-small.png) 
+            **ms.date**︰ 必要。 指定文章上次被檢閱相關性、準確性、修正螢幕擷取畫面和可運作連結的日期。 以 mm/dd/yyyy 格式輸入日期。 此日期也會顯示於已發行文章上做為上次更新日期。
 
-![](./media/article-metadata/checkmark-small.png) <bpt id="p1">**</bpt>ms.author<ept id="p1">**</ept>: Required. 指定與主題相關的作者。 若要指定多個值，您應該以分號將值分開。 可接受 Microsoft 別名或完整的電子郵件地址。 長度不能超過 200 個字元。
+![](./media/article-metadata/checkmark-small.png) 
+            **ms.author**︰ 必要。 指定與主題相關的作者。 若要指定多個值，您應該以分號將值分開。 可接受 Microsoft 別名或完整的電子郵件地址。 長度不能超過 200 個字元。
 
 
-###Contributors' Guide Links
+###著作指南的連結
 
 - [概觀文章](./../README.md)
 - [指引文章的索引](./contributor-guide-index.md)
@@ -109,5 +131,5 @@ The tags section uses this syntax:
 <!--Anchors-->
 [語法]: #syntax
 [使用方式]: #usage
-[Attributes and values for the properties section]: #attributes-and-values-for-the-properties-section
-[Attributes and values for the tags section]: #attributes-and-values-for-the-tags-section
+[屬性和值的屬性區段]: #attributes-and-values-for-the-properties-section
+[屬性和 [標記] 區段的值]: #attributes-and-values-for-the-tags-section

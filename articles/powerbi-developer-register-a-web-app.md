@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Register a web app"
-   description="Register a web app"
+   pageTitle="註冊 web 應用程式"
+   description="註冊 web 應用程式"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,124 +20,136 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Register a web app
+# 註冊 web 應用程式
 
-This article shows you how to register a Power BI web app in Azure Active Directory (Azure AD). To allow your application access to the Power BI REST API, you need to register your application with <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see <bpt id="p1">[</bpt>Power BI permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+本文將說明如何在 Azure Active Directory (Azure AD) 中註冊 Power BI web 應用程式。 若要讓您的應用程式存取 Power BI REST API，您必須註冊您的應用程式 **Azure Active Directory**。 這可讓您建立您的應用程式的身分識別，並指定 Power BI REST 資源的權限。 如需 Power BI 權限，請參閱 [Power BI 權限](powerbi-developer-power-bi-permissions.md)。
 
-<bpt id="p1">**</bpt>Important<ept id="p1">**</ept> Before you register a Power BI app you need an <bpt id="p2">[</bpt>Azure Active Directory and an organizational user<ept id="p2">](powerbi-developer-create-an-azure-active-directory-tenant.md)</ept>, and a <bpt id="p3">[</bpt>Power BI service account<ept id="p3">](powerbi-developer-sign-up-for-power-bi-service.md)</ept>.
 
-There are two ways to register your web app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to your app, this can be done through the Azure Management Portal.
+            **重要** 註冊 Power BI 應用程式，您需要先 [Azure Active Directory 和組織使用者](powerbi-developer-create-an-azure-active-directory-tenant.md), ，和 [Power BI 服務帳戶](powerbi-developer-sign-up-for-power-bi-service.md)。
+
+若要註冊您的 web 應用程式的兩種方式︰ 使用 Power BI 應用程式註冊工具或 Azure 管理入口網站上。 Power BI 應用程式註冊工具是最簡單的選項，因為有幾個欄位來填入。 如果您想要變更您的應用程式，這可以透過 Azure 管理入口網站。
 
 <a name="webTool"></a>
-## Register a web app with Power BI App Registration Tool
-You need to register your web app in <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> to establish an identity for your application and specify permissions to Power BI REST resources. When you register a web app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from. The client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept> is used by the web app to securely identify themselves to the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>.
+## Web 應用程式向 Power BI 應用程式註冊工具
+您必須註冊您的 web 應用程式中 **Azure Active Directory** 來建立您的應用程式的身分識別並指定 Power BI REST 資源的權限。 當您註冊 web 應用程式時，您會收到 **用戶端識別碼** 和 **用戶端密碼**。   **用戶端識別碼** 應用程式用於向要求權限的使用者識別自己。 用戶端密碼 **金鑰** 供 web 應用程式用來安全地識別本身以 **Power BI 服務**。
 
-Here's how to register your web app with the <bpt id="p1">**</bpt>Power BI App Registration Tool<ept id="p1">**</ept>:
+以下是如何註冊您的 web 應用程式與 **Power BI 應用程式註冊工具**:
 
-1.  Go to dev.powerbi.com/apps.
-2.  In the <bpt id="p1">**</bpt>Power BI App Registration Tool<ept id="p1">**</ept>, follow these four steps:
+1.  請移至 dev.powerbi.com/apps。
+2.  在 **Power BI 應用程式註冊工具**, ，請依照下列四個步驟︰
 
-<bpt id="p1">**</bpt>Step 1<ept id="p1">**</ept> - Choose <bpt id="p2">**</bpt>Login in<ept id="p2">**</ept> to login to your Azure AD account. You will see your name in the Welcome line.
 
-<bpt id="p1">**</bpt>Step 2<ept id="p1">**</ept> – Enter information about your app.
+            **步驟 1** -選擇 **登入** 來登入您 Azure AD 的帳戶。 您會看到您在 [歡迎使用列的名稱。
 
-  * <bpt id="p1">**</bpt>App Name<ept id="p1">**</ept>: The name of your app.
-  * <bpt id="p1">**</bpt>App Type<ept id="p1">**</ept>: Choose Native app.
-  * <bpt id="p1">**</bpt>Redirect URI<ept id="p1">**</ept>: For a web app, a redirect uri gives AAD more details on the specific application that it will authenticate. An example <bpt id="p1">**</bpt>Redirect URI<ept id="p1">**</ept> looks like this: http://localhost/redirect.
-  * <bpt id="p1">**</bpt>Home Page<ept id="p1">**</ept>: The home page or sign on page for your web app.
+
+            **步驟 2** – 輸入您的應用程式的相關資訊。
+
+  * 
+            **應用程式名稱**︰ 應用程式的名稱。
+  * 
+            **應用程式類型**︰ 選擇 [原生應用程式。
+  * 
+            **重新導向 URI**: web 應用程式重新導向 uri 會提供 AAD 更多詳細資料就會進行驗證之特定應用程式。 範例 **重新導向 URI** 看起來像這樣︰ http://localhost/redirect。
+  * 
+            **首頁**︰ 首頁或登入您的 web 應用程式頁面。
 
 ![](media/powerbi-developer-register-a-web-app/register-tool-2.png)
 
-<bpt id="p1">**</bpt>Step 3<ept id="p1">**</ept> – Choose APIs to access. For more information about Power BI access permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+
+            **步驟 3** – 選擇 Api 來存取。 如需 Power BI 的存取權限的詳細資訊，請參閱 [Power BI 權限](powerbi-developer-power-bi-permissions.md)。
 
 ![](media/powerbi-developer-register-a-web-app/register-app-tool-3.png)
 
-<bpt id="p1">**</bpt>Step 4<ept id="p1">**</ept> - To register your app, click <bpt id="p2">**</bpt>Register App<ept id="p2">**</ept>. After the app is registered in Azure AD, you will get a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept> key. Make sure you copy the Client ID and Client Secret key. You can get the Client ID or Client Secret key later in the <bpt id="p1">**</bpt>Azure Management Portal<ept id="p1">**</ept>. See <bpt id="p1">[</bpt>How to get a client id in Azure Management Portal<ept id="p1">](#clientID)</ept> and <bpt id="p2">[</bpt>How to get a client secret key<ept id="p2">](#clientSecret)</ept>.
 
-You can now use your Client ID and Client Secret for your app. The next section shows how to register a web app with <bpt id="p1">**</bpt>Azure Management Portal<ept id="p1">**</ept>.
+            **步驟 4** -若要註冊您的應用程式，請按 **註冊應用程式**。 在 Azure AD 中註冊應用程式之後，您會得到 **用戶端識別碼** 和 **用戶端密碼** 索引鍵。 請確定您複製的用戶端識別碼和用戶端密碼金鑰。 您稍後可以取得用戶端識別碼或用戶端密碼金鑰 **Azure 管理入口網站**。 請參閱 [如何在 Azure 管理入口網站取得的用戶端識別碼](#clientID) 和 [如何取得用戶端秘密金鑰](#clientSecret)。
+
+您現在可以使用您的用戶端識別碼和用戶端密碼，您的應用程式。 下一節說明如何註冊 web 應用程式，與 **Azure 管理入口網站**。
 
 <a name="web"></a>
-## Register a web app with Azure Management Portal
-When you register a web app, you receive an <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and a client secret <bpt id="p2">**</bpt>Key<ept id="p2">**</ept>. The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from. The client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept> is used by the web app to securely identify themselves to the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>.
+## 註冊使用 Azure 管理入口網站的 web 應用程式
+當您註冊 web 應用程式時，您會收到 **用戶端識別碼** 和用戶端密碼 **金鑰**。  **用戶端識別碼** 應用程式用於向要求權限的使用者識別自己。 用戶端密碼 **金鑰** 供 web 應用程式用來安全地識別本身以 **Power BI 服務**。
 
-To learn how to authenticate a web app using an Azure AD <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and client secret <bpt id="p2">**</bpt>Key<ept id="p2">**</ept>, see <bpt id="p3">[</bpt>Authenticate a web app<ept id="p3">](powerbi-developer-authenticate-a-web-app.md)</ept>.
+若要了解如何驗證 web 應用程式使用 Azure AD **用戶端識別碼** 和用戶端密碼 **金鑰**, ，請參閱 [驗證 web 應用程式](powerbi-developer-authenticate-a-web-app.md)。
 
-Here's how to register a client app:
+以下是如何註冊用戶端應用程式︰
 
-1. Accept the <bpt id="p1">[</bpt>Microsoft Power BI API Terms<ept id="p1">](https://powerbi.microsoft.com/api-terms)</ept>.
-2. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
-3. In the left service panel, choose <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept>.
-4. Click any active directory.
+1. 接受 [Microsoft Power BI API 條款](https://powerbi.microsoft.com/api-terms)。
+2. 登入 https://manage.windowsazure.com 在 Microsoft Azure 訂閱。
+3. 在左側的服務面板中，選擇 [ **ACTIVE DIRECTORY**。
+4. 按一下任何一個 active directory。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-ad.png)
 
-5. Click <bpt id="p1">**</bpt>APPLICATIONS<ept id="p1">**</ept>.
+5. 按一下 [ **應用程式**。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-applications.png)
 
-6. Click <bpt id="p1">**</bpt>ADD<ept id="p1">**</ept>.
+6. 按一下 [ **新增**。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-add.png)
 
-7.  In <bpt id="p1">**</bpt>Tell us about your application<ept id="p1">**</ept>, enter a <bpt id="p2">**</bpt>NAME<ept id="p2">**</ept>, and choose <bpt id="p3">**</bpt>WEB APPLICATION AND/OR WEB API<ept id="p3">**</ept> for the type, and click <bpt id="p4">**</bpt>Next<ept id="p4">**</ept> icon.
+7.  在 **告訴我們您的應用程式**, ，輸入 **名稱**, ，然後選擇 [ **WEB 應用程式和/或 WEB API** 類型，然後按一下 [ **下一步** 圖示。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-web-app.png)
 
-8. In <bpt id="p1">**</bpt>App properties<ept id="p1">**</ept>, enter a <bpt id="p2">**</bpt>SIGN-ON URL<ept id="p2">**</ept> and <bpt id="p3">**</bpt>APP ID URI<ept id="p3">**</ept>. The <bpt id="p1">**</bpt>SIGN-ON URL<ept id="p1">**</ept> is your web app url such as https://localhost:44307. The <bpt id="p1">**</bpt>APP ID URI<ept id="p1">**</ept> is your Azure Tenant URI followed by your app name. For example, https://yourtenant.onmicrosoft.com/YourWebApp.
+8. 在 **應用程式屬性**, ，輸入 **登入 URL** 和 **應用程式識別碼 URI**。  **登入 URL** 是 web 應用程式 url，例如 https://localhost:44307。  **應用程式識別碼 URI** 您的 Azure 租用戶 URI 後面應用程式名稱。 例如 https://yourtenant.onmicrosoft.com/YourWebApp。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-properties.png)
 
-9.  Click the <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon.
-10. In the application page, choose <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept>. The <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept> page has a <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Key<ept id="p3">**</ept> for your app.
+9.  按一下 [ **完成** 圖示。
+10. 在 [應用程式] 頁面中，選擇 [ **設定**。  **設定** 頁面具有 **用戶端識別碼** 和 **金鑰** 應用程式。
 
     ![步驟 10](media/powerbi-developer-register-a-web-app/register-app-config.png)
 
-11. For a web app, you need a client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept>. In the <bpt id="p1">**</bpt>keys<ept id="p1">**</ept> section, select a duration. The key is displayed after you <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
+11. Web 應用程式，您需要用戶端密碼 **金鑰**。 在 **金鑰** 區段中，選取持續時間。 之後會顯示金鑰 **儲存** 它。 請確定您複製的機碼。否則，金鑰將無法使用日後巡覽至 [組態] 頁面時。
 
-12. In the <bpt id="p1">**</bpt>CONFIGURATION<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Add Application<ept id="p2">**</ept>.
-13. In <bpt id="p1">**</bpt>Permissions to other applications<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Power BI Service<ept id="p2">**</ept>.
+12. 在 **組態** 頁面上，按一下 **新增應用程式**。
+13. 在 **其他應用程式的權限**, ，選擇 [ **Power BI 服務**。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-permissions.png)
 
-    <bpt id="p1">**</bpt>Important<ept id="p1">**</ept> If you do not see <bpt id="p2">**</bpt>Power BI Service<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Permissions to other applications<ept id="p3">**</ept> list, you need to sign up for the <bpt id="p4">[</bpt>Power BI Service<ept id="p4">](https://www.powerbi.com/)</ept>. To sign up for the Power BI Service, you need at least one organizational user in your Azure Active Directory (AAD) tenant. If you do not have an Azure Active Directory (AAD) tenant, see <bpt id="p1">[</bpt>Create an Azure Active Directory tenant<ept id="p1">](powerbi-developer-create-an-azure-active-directory-tenant.md)</ept> to create an Azure AD tenant and an organizational user in your Azure AD tenant.
+    
+            **重要** 如果看不到 **Power BI 服務** 中 **其他應用程式的權限** ] 清單中，您需要註冊 [Power BI 服務](https://www.powerbi.com/)。 若要註冊 Power BI 服務，您必須至少一個組織的使用者 Azure Active Directory (AAD) 租用戶中。 如果您沒有 Azure Active Directory (AAD) 租用戶，請參閱 [建立 Azure Active Directory 租用戶](powerbi-developer-create-an-azure-active-directory-tenant.md) Azure AD 租用戶中建立 Azure AD 租用戶和組織使用者。
 
-14. Click <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon which is located at the lower right corner of the page.
-15. In the <bpt id="p1">**</bpt>permissions to other applications<ept id="p1">**</ept> group, dropdown  
-<bpt id="p1">**</bpt>Delegated Permissions<ept id="p1">**</ept>, and choose which operations your app is permitted to call. For more information about Power BI permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+14. 按一下 [ **完成** 位於頁面右下角的圖示。
+15. 在 **其他應用程式的權限** 群組、 下拉式清單中  
+
+            **委派權限**, ，然後選擇您的應用程式可以呼叫哪些作業。 如需 Power BI 權限的詳細資訊，請參閱 [Power BI 權限](powerbi-developer-power-bi-permissions.md)。
 
     ![](media/powerbi-developer-register-a-web-app/register-app-delegated.png)
 
 16. 按一下 **[儲存]**。
 
-    <bpt id="p1">**</bpt> Important <ept id="p1">**</ept> For a web app, you need a client secret <bpt id="p2">**</bpt>Key<ept id="p2">**</ept>. The client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept> is displayed after you <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
+    
+                ** 重要 ** web 應用程式，您需要用戶端密碼 **金鑰**。 用戶端密碼 **金鑰** 顯示之後 **儲存** 它。 請確定您複製的機碼。否則，金鑰將無法使用日後巡覽至 [組態] 頁面時。
 
 
 <a name="clientID"></a>
-## How to get a client app id
-When you register a web app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from.
+## 如何取得用戶端應用程式識別碼
+當您註冊 web 應用程式時，您會收到 **用戶端識別碼**。   **用戶端識別碼** 應用程式用於向要求權限的使用者識別自己。
 
-Here's how to get a client app id:
+以下是如何取得用戶端應用程式識別碼︰
 
-1. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
-2. In the left service panel, choose <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept>.
-3. Choose any active directory.
-4. Click <bpt id="p1">**</bpt>APPLICATIONS<ept id="p1">**</ept>.
-5. Choose an application.
-6. In the application page, choose <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept>.
-7. In the <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept> page, copy the <bpt id="p2">**</bpt>CLIENT ID<ept id="p2">**</ept>.
+1. 登入 https://manage.windowsazure.com 在 Microsoft Azure 訂閱。
+2. 在左側的服務面板中，選擇 [ **ACTIVE DIRECTORY**。
+3. 選擇任何一個 active directory。
+4. 按一下 [ **應用程式**。
+5. 選擇一個應用程式。
+6. 在 [應用程式] 頁面中，選擇 [ **設定**。
+7. 在 **設定** 頁面中，複製 **用戶端識別碼**。
 
-    ![step 1.3](media/powerbi-developer-register-a-web-app/register-app-clientid.png)
+    ![步驟 1.3](media/powerbi-developer-register-a-web-app/register-app-clientid.png)
 
 <a name="clientSecret"></a>
-## How to get a client secret
+## 如何取得用戶端密碼
 
-For a web app, you need a client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept>. When you register a web app, Azure AD generates a key (see step 11 above). In the <bpt id="p1">**</bpt>keys<ept id="p1">**</ept> section, select a duration. The key is displayed after you save it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
+Web 應用程式，您需要用戶端密碼 **金鑰**。 當您註冊 web 應用程式時，Azure AD 會產生金鑰 （請參閱上方步驟 11）。 在 **金鑰** 區段中，選取持續時間。 儲存之後，會顯示金鑰。 請確定您複製的機碼。否則，金鑰將無法使用日後巡覽至 [組態] 頁面時。
 
 ## 請參閱
 
-[Power BI permissions](powerbi-developer-power-bi-permissions.md)  
-[Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md)  
-[Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md)  
-[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI 權限](powerbi-developer-power-bi-permissions.md)  
+[Azure Active Directory 租用戶和組織使用者](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Power BI 服務帳戶](powerbi-developer-sign-up-for-power-bi-service.md)  
+[驗證 web 應用程式](powerbi-developer-authenticate-a-web-app.md)  
+[Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

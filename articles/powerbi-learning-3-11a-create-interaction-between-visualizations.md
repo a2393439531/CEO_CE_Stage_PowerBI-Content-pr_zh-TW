@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Group interactions among visualizations"
-   description="Specify which visuals interact on a dashboard, and which do not"
+   pageTitle="群組互動視覺效果"
+   description="指定儀表板上的視覺效果互動，哪些則否"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create Complex Interactions Between Visualizations
+# 建立複雜的互動視覺效果之間
 
-When you have multiple visualizations on the same report page, selecting a particular segment by clicking or using a slicer will affect all the visuals on that page. In some cases, though, you may want to slice only specific visuals. This is particularly true when using elements such as scatter plots, where limiting the data to a specific segment will remove crucial meaning. Fortunately, Power BI Desktop lets you control how interactions flow between visuals.
+當您有多個視覺效果相同的報表頁面上時，按一下，或使用交叉分析篩選器以選取特定的區段將會影響該頁面上的所有視覺效果。 不過，在某些情況下，您可能想配量只在特定視覺效果。 特別是當使用散佈圖等項目位置限制的特定區段的資料將會移除重要的意義。 幸運的是，Power BI Desktop 可讓您控制的互動視覺效果之間流動的方式。
 
-To change the interaction between your visualizations, select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> from the Visuals section of the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon to toggle <bpt id="p3">**</bpt>Edit Mode<ept id="p3">**</ept> on.
+若要變更的互動視覺效果，請選取 **編輯** 從視覺效果的區段 **首頁** 功能區切換 **編輯模式** 上。
 
-> Note: The <bpt id="p1">**</bpt>Edit Interactions<ept id="p1">**</ept> icon in Power BI Desktop has changed since the video was recorded.
+> 注意︰ **編輯互動** Power BI Desktop 中的圖示已變更，因為視訊錄製。
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_1.png)
 
-Now when you select a visual on your report canvas, you'll see a small opaque <bpt id="p1">*</bpt>filter<ept id="p1">*</ept> icon in the top right-hand corner of every other visual it will affect. To exclude a visual from the interaction, click the <bpt id="p1">*</bpt>None<ept id="p1">*</ept> symbol in the upper right corner, near the <bpt id="p2">*</bpt>filter<ept id="p2">*</ept> icon.
+當您選取視覺效果報表畫布上，您會看到小型的不透明 *篩選* 中將會影響每個其他 visual 右上角的圖示。 若要排除的互動視覺效果，請按一下 [ *無* 符號右上角附近 *篩選* 圖示。
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_2.png)
 
-In some instances you can adjust the type of filter interaction that happens between visuals. With <bpt id="p1">**</bpt>Edit Mode<ept id="p1">**</ept> toggled on, select the visual you use to filter. If you can change the type of interaction on another visual, a <bpt id="p1">*</bpt>pie chart<ept id="p1">*</ept> icon will appear next to the filter icon in the top right-hand corner.
+在某些情況下，您可以調整視覺效果之間的篩選器互動的型別。 使用 **編輯模式** 切換上，選取您用來篩選視覺效果。 如果您可以變更的互動視覺物件，另一個類型 *圓形圖* 圖示會出現在右上角中的篩選圖示旁邊。
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_3.png)
 
-Click the <bpt id="p1">*</bpt>pie chart<ept id="p1">*</ept> icon to highlight the segmented data. Otherwise, the data will be filtered. As before, you can click the <bpt id="p1">*</bpt>None<ept id="p1">*</ept> icon to remove all interaction.
+按一下 [ *圓形圖* 圖示，以反白顯示分割的資料。 否則，篩選的資料。 如之前，您可以按一下 *無* 圖示，以移除所有互動。
 
-A useful design tip is to draw a transparent shape around visuals that interact with each other, so it's clear to the user that they have an interactive relationship.
+實用的設計秘訣是透明的圖形周圍彼此互動，這樣就能向使用者他們有互動式的關聯性的視覺效果。
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_4.png)

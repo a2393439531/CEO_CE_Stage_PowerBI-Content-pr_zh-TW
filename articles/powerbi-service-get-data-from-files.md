@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get data from files"
-   description="Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI"
+   pageTitle="從檔案取得資料"
+   description="了解如何從 Excel、 Power BI Desktop 及 CSV 檔案將資料送入 Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,38 +20,42 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Get data from files
+# 從檔案取得資料
 ![](media/powerbi-service-get-data-from-files/file_icons.png)
 
-In Power BI, you can connect to or import data and reports from three types of files.
+您可在 Power BI 連接到，或從三種類型的檔案匯入資料和報表。
 
--   Microsoft Excel (.xlsx or .xlsm)
+-   Microsoft Excel （.xlsx 或.xlsm）
 -   Power BI Desktop (.pbix)
--   Comma Separated Value (.csv)
+-   以逗號分隔值 (.csv)
 
-## What does get data from a file really mean?
+## 什麼會從檔案取得資料平均真的？
 
-In Power BI the data you explore comes from a dataset. But in order to have a dataset, you first need to get some data. For this article, we're going to focus on getting data from files.
+在 Power BI 中您瀏覽的資料來自資料集。 但若要有一個資料集，您必須先取得一些資料。 在本文中，我們把重點放在從檔案取得資料。
 
-To better understand the importance of datasets, and how we get data for them, let’s look at an automobile. Take a seat in your car and look at the dashboard. That’s a lot like sitting in front of your computer looking at a dashboard in Power BI. The dashboard shows you all the things your car is doing; how fast the engine is revving, temperature, what gear you’re in, your speed, etc.
+若要進一步了解資料集，以及我們如何為其取得資料的重要性，讓我們看看汽車。 需要在您的車子的基座，並查看 [儀表板。 很像看看 Power BI 儀表板在電腦前一般。 儀表板會顯示賽車這項作業的項目速度引擎開始運轉，溫度、 哪些齒輪，您已位於您速度等。
 
-In Power BI, a dataset is like the engine in your car. The dataset provides the data, metrics, and information that’s displayed in your Power BI dashboard. Of course your engine, or dataset, needs fuel, and in Power BI, that fuel is data. Your car has a fuel tank that provides gas to the engine. Much the same in Power BI, you need a fuel tank that has data you can feed to your dataset. In our case, that fuel tank is a Power BI Desktop file, an Excel workbook file, or a .CSV file.
+在 Power BI 中的資料集是像是在車上引擎。 資料集提供資料、 度量和 Power BI 儀表板中顯示的資訊。 當然需要燃料，您的引擎或資料集，並在 Power BI 的燃料就是資料。 您的車子有提供引擎天然氣油箱。 變 Power BI 中，您需要油箱，您可以逐一將加入資料集的資料。 在本例中，該油箱是 Power BI Desktop 檔案，Excel 活頁簿檔案，或。CSV 檔案。
 
-We can even take it one step further. A fuel tank in a car has to be filled with gas. The gas for our Power BI Desktop, Excel, or .CSV file is data from another data source. We get data from another data source and put it into an Excel, Power BI Desktop, or .CSV file. If it's an Excel workbook or .CSV file, we can manually enter rows of data. Or, we can connect to an external data source to query and load data into our file. Once we have a file with some data, we can get it into Power BI as a dataset.
+我們可以更進一步它其中一個步驟。 在車上油箱有天然氣填滿。 我們的 Power BI Desktop，Excel 的天然氣或。CSV 檔是從其他資料來源的資料。 我們從其他資料來源取得資料，並將它放入 Excel 中，Power BI Desktop 或。CSV 檔案。 如果是 Excel 活頁簿或。CSV 檔案中，我們可以手動輸入資料的列。 或者，我們就可以連接至外部資料來源，以查詢和載入資料到我們的檔案。 一旦我們有一些資料檔案，我們也找得到到 Power BI 做為資料集。
 
-## Where your file is saved makes a difference
+## 儲存您的檔案差異
 
-<bpt id="p1">**</bpt>Local<ept id="p1">**</ept> - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can <bpt id="p2">*</bpt>import<ept id="p2">*</ept> your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those will appear in your Power BI site under Reports.
 
-<bpt id="p1">**</bpt>OneDrive - Business<ept id="p1">**</ept> – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel Power BI Desktop, or a .CSV file and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
+            **本機** -如果您將檔案儲存到本機磁碟機上您的電腦或另一個位置在組織中，您可以從 Power BI *匯入* 到 Power BI 檔案。 讓整個檔案不真的匯入 Power BI，您的檔案實際上會保留在本機磁碟機。 真正發生的情況是新的資料集建立在您的 Power BI 網站和資料，而且在某些情況下資料模型，會載入至資料集。 如果您的檔案會有任何報表，這些會出現在 [報表] 下的 Power BI 網站。
 
-<bpt id="p1">**</bpt>OneDrive - Personal<ept id="p1">**</ept> – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data &gt; Files &gt; OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
 
-<bpt id="p1">**</bpt>SharePoint Team-Sites<ept id="p1">**</ept> – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+            **OneDrive-商務** – 如果您有商務用 OneDrive 使用相同的帳戶登入 Power BI 與登入，這是由遠方最有效的方式在 Excel 的 Power BI Desktop，保留您的工作或。CSV 檔案您資料集、 報表和儀表板中 Power BI 中同步處理。 因為 Power BI 和 OneDrive 位於定域機組，Power BI 可連接至您放在 OneDrive 上的檔案大約每小時。 如果找不到任何變更，您的資料集、 報表和儀表板會自動更新，Power BI。
+
+
+            **OneDrive-個人** – 如果您將檔案儲存到您自己的 OneDrive 帳戶，就會顯示許多相同的優點就與商務用 OneDrive。 最大的差異是當您第一次連接到您的檔案 (使用取得資料 > 檔案 > OneDrive-個人) 需要您的 OneDrive 與您通常不同於您用於登入 Power BI 的 Microsoft 帳戶登入。 當登入您的 OneDrive 與您的 Microsoft 帳戶，請務必在選項中選取 [讓我保持登。 如此一來，Power BI 都能夠連接到每個小時的相關檔案，並確定您在 Power BI 中的資料集是在同步處理。
+
+
+            **SharePoint 小組網站** – 將 Power BI Desktop 檔案儲存到 SharePoint – 小組網站時，就如同儲存至商務用 OneDrive。 最大的差別是如何連接至檔從 Power BI。 您可以指定 URL，或連線至根資料夾。
 
 ## 準備好開始了嗎？
-See the following articles to learn more about getting your file into Power BI.
+請參閱下列文件，若要深入了解您的檔案放入 Power BI。
 
--   [Get data from Excel workbook files](articles/powerbi-service-excel-workbook-files.md)
--   [Get data from Power BI Desktop files](articles/powerbi-service-powerbi-desktop-files.md)
--   [Get data from Comma Separated Value files](articles/powerbi-service-comma-separated-value-files.md)
+-   [從 Excel 活頁簿檔案取得資料](articles/powerbi-service-excel-workbook-files.md)
+-   [從 Power BI Desktop 檔案取得資料](articles/powerbi-service-powerbi-desktop-files.md)
+-   [從逗號分隔值檔案取得資料](articles/powerbi-service-comma-separated-value-files.md)

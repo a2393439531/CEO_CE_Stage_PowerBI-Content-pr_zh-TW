@@ -1,6 +1,6 @@
 <properties
-   pageTitle="See the data used to create the visual"
-   description="This document shows how to view the data used to create a visual in Power BI."
+   pageTitle="查看用來建立視覺效果的資料"
+   description="本文件說明如何檢視用來建立視覺效果，在 Power BI 中的資料。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,30 +20,30 @@
    ms.date="09/12/2016"
    ms.author="mihart"/>
 
-# Reveal the data behind the visual
+# 顯示視覺效果背後的資料
 
-A Power BI visual is constructed using data from your datasets. If you're interested in seeing behind-the-scenes, Power BI lets you reveal the data that is being used to create the visual.
+Power BI 視覺是使用您的資料集的資料建構的。 如果您有興趣看看幕後，Power BI 可讓您顯示用來建立視覺效果的資料。
 
-1.  In Power BI service, open a report in <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept> or <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>, and select a visual.  In Power BI Desktop, open Report view.
+1.  在 Power BI 服務中，開啟報表 [讀取檢視](powerbi-service-open-a-report-in-reading-view.md) 或 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md), ，然後選取 [視覺效果。  在 Power BI Desktop 中開啟報表] 檢視中。
 
-2.  To see the data behind the visual, select <bpt id="p1">**</bpt>Explore<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>See data<ept id="p2">**</ept>.
+2.  若要查看視覺效果背後的資料，請選取 **瀏覽** > **看到資料**。
 
-3.  By default, the data displays below the visual.  To change this, in the top right corner of the visual, select the <bpt id="p1">**</bpt>Switch to vertical layout<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png)</ph>.
+3.  根據預設，資料會顯示下列視覺效果。  若要變更此設定，在視覺效果的右上角中，選取 **切換至垂直版面配置** 圖示 ![](media/powerbi-service-reports-see-data/power-bi-vertical-icon.png)。
 
     ![](media/powerbi-service-reports-see-data/power-bi-explore-see-data.png)
 
-4.  To export the data to a .csv file, select <bpt id="p1">**</bpt>Export data<ept id="p1">**</ept>.
+4.  若要將資料匯出至.csv 檔案中，選取 **匯出資料**。
 
     ![](media/powerbi-service-reports-see-data/power-bi-export-data.png)
 
-5. To hide the data, either de-select <bpt id="p1">**</bpt>Explore<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>See data<ept id="p2">**</ept> or select the <bpt id="p3">**</bpt>Hide data<ept id="p3">**</ept> icon <ph id="ph2">![](media/powerbi-service-reports-see-data/power-bi-hide-data-icon.png)</ph> from the top right corner of the visual.
+5. 若要隱藏的資料，請取消選取 **瀏覽** > **看到資料** 或選取 **隱藏資料** 圖示 ![](media/powerbi-service-reports-see-data/power-bi-hide-data-icon.png) 從視覺效果的右上角。
 
 ### 請參閱
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI reports](powerbi-service-reports.md)
+[Power BI 報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

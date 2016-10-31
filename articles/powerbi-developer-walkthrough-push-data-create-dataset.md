@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a dataset"
-   description="Walkthrough - Push data into a dashboard - Create a dataset in a Power BI dashboard"
+   pageTitle="建立資料集"
+   description="逐步解說-將資料發送到儀表板-Power BI 儀表板中建立資料集"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,35 +20,36 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 3: Create a dataset in a Power BI dashboard
+# 步驟 3︰ 建立 Power BI 儀表板中的資料集
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+逐步解說的這篇文章屬於 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)。
 
-In <bpt id="p1">**</bpt>step 2<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Get an authentication access token<ept id="p2">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, you got a token to authenticate to <bpt id="p3">**</bpt>Azure AD<ept id="p3">**</ept>. In this step, you use the token to call the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation.
+在 **步驟 2** 的推播資料到儀表板， [取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md), ，你的權杖來向 **Azure AD**。 在此步驟中，您可以使用語彙基元呼叫 [建立資料集](https://msdn.microsoft.com/library/mt203562.aspx) 作業。
 
-To make a call to a REST resource, you use a url that locates the resource, and you send a JavaScript Object Notation (JSON) string, which describes the dataset, to the Power BI service resource. A REST resource identifies the part of the Power BI service you want to work with. To push data into the dashboard, the target resource is a <bpt id="p1">**</bpt>Dashboard Dataset<ept id="p1">**</ept>. The URL that identifies a dataset is https://api.PowerBI.com/v1.0/myorg/datasets. If you are pushing data within a group, the url is https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+若要讓其他資源的呼叫，您使用的 url，找出資源，以及 JavaScript 物件標記法 (JSON) 字串，其中描述資料集，傳送到 Power BI 服務資源。 REST 資源會識別您想要使用的 Power BI 服務的一部分。 資料推送至儀表板，目標資源是 **儀表板資料集**。 識別資料集的 URL 是 https://api.PowerBI.com/v1.0/myorg/datasets。 如果您要推入群組中的資料，則 url 會是 https://api.PowerBI.com/v1.0/myorg/groups/ {group_id} / 資料集。
 
-To authenticate a Power BI REST operation, you add the token you got in <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept> to a request header:
+若要驗證 Power BI REST 作業，您新增從中取得的權杖 [取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md) 要求標頭︰
 
-When you call the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation, a new dataset is created in your dashboard.
+當您呼叫 [建立資料集](https://msdn.microsoft.com/library/mt203562.aspx) 作業，儀表板中建立新的資料集。
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-create-dataset.png)
 
-Here's how to create a dataset in a Power BI dashboard.
+以下是如何建立 Power BI 儀表板中的資料集。
 
-## Create a dataset in a Power BI dashboard
+## 建立 Power BI 儀表板中的資料集
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **請注意**︰ 開始使用之前，請確定您已經依照先前的步驟中 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md) 逐步解說。
 
-1. In the Console Application project you created in <bpt id="p1">[</bpt>Step 2 - Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, add <bpt id="p2">**</bpt>using System.Net;<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>using System.IO;<ept id="p3">**</ept> to Program.cs.
-2. In Program.cs, add the code below.
-3. Run the Console App, and login to your Power BI account. You should see <bpt id="p1">**</bpt>Dataset Created<ept id="p1">**</ept> in the Console Window. Also, you can login to your dashboard to see the new dataset.
+1. 在主控台應用程式專案中建立 [步驟 2-取得驗證的存取權杖](powerbi-developer-walkthrough-push-data-get-token.md), ，加入 **using System.Net;**, ，和 **using System.IO;** program.cs。
+2. 在 Program.cs 中，加入下列程式碼。
+3. 執行主控台應用程式，並登入您的 Power BI 帳戶。 您應該會看到 **建立資料集** 主控台視窗中。 此外，您可以登入您的儀表板，以查看新的資料集。
 
-**Sample push data into a dashboard**
+**範例資料發送到儀表板**
 
-Add this code into Program.cs.
+將此程式碼加入至 Program.cs。
 
-- In static void Main(string[] args):
+- 在靜態 void Main (string [] args):
 
     ```
     static void Main(string[] args)
@@ -61,7 +62,7 @@ Add this code into Program.cs.
     }
     ```
 
-- Add a CreateDataset() method:
+- 新增 CreateDataset() 方法︰
 
     ```
     #region Create a dataset in a Power BI dashboard
@@ -112,22 +113,22 @@ Add this code into Program.cs.
     #endregion
     ```
 
-The next step shows you how to <bpt id="p1">[</bpt>get a dataset to add rows into a Power BI table<ept id="p1">](powerbi-developer-walkthrough-push-data-get-datasets.md)</ept>.
+下一個步驟顯示如何以 [取得資料集，以便將資料列加入至 Power BI 資料表](powerbi-developer-walkthrough-push-data-get-datasets.md)。
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+以下是 [完整程式碼清單](#code)。
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-get-datasets.md)
+[下一步 >](powerbi-developer-walkthrough-push-data-get-datasets.md)
 
 ## 請參閱
-- [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)
-- [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
-- [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [取得要加入至 Power BI 資料表的資料列的資料集](powerbi-developer-walkthrough-push-data-get-datasets.md)
+- [取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md)
+- [建立資料集](https://msdn.microsoft.com/library/mt203562.aspx)
+- [將資料發送到 Power BI 儀表板](powerbi-developer-walkthrough-push-data.md)
+- [Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Power BI REST API 參考](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## 完整程式碼清單
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -240,4 +241,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

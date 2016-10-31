@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Drill down in a visualization in Power BI"
-   description="This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop."
+   pageTitle="在 Power BI 視覺效果，向下鑽研"
+   description="本文件說明如何在 Microsoft Power BI 服務和 Power BI Desktop 視覺效果，向下鑽研。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,76 +20,78 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Drill down in a visualization in Power BI
+# 在 Power BI 視覺效果，向下鑽研
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-  ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: To learn how to create hierarchies using Power BI Desktop, watch the video <bpt id="p2">[</bpt>How to create and add hierarchies<ept id="p2">](https://youtu.be/q8WDUAiTGeU)</ept>
+  >
+            **請注意**︰ 若要了解如何建立使用 Power BI Desktop 的階層，請觀看影片 [如何建立和加入階層](https://youtu.be/q8WDUAiTGeU)
 
-##  2 methods to drill down
-There are 2 different way to drill down (and up) in your visualization.  Both are described in this document. Both methods accomplish the same thing, so use whichever one you enjoy most.
+##  向下切入 2 方法
+2 個不同方式來向下切入您視覺效果中的 [向下 （和向上）。  同時會在本文中所述。 這兩種方法來完成相同的事，因此，使用您最喜歡的其中一個。
 
-## Method 1 for drill down
+## 向下鑽研的方法 1
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept> or <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>. Drill requires a visualization with a hierarchy. 
+1.  在 Power BI 中開啟報表 [讀取檢視](powerbi-service-open-a-report-in-reading-view.md) 或 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md)。 向下切入需要視覺效果的階層。 
 
-    A hierarchy is shown below.  The <bpt id="p1">*</bpt>Profit by Product <ept id="p1">*</ept>visualization has a hierarchy made up of <bpt id="p2">**</bpt>Product <ept id="p2">**</ept>and <bpt id="p3">**</bpt>Segment<ept id="p3">**</ept>; each product has one or more segments. By default, the visualization displays only the product data, because <bpt id="p1">*</bpt>Product <ept id="p1">*</ept>appears in the Axis bucket above <bpt id="p2">*</bpt>Segment<ept id="p2">*</ept>.
+    階層如下所示。   *收益依產品 *視覺效果具有組成階層 **產品 **和 **區段**; 每個產品都有一個或多個區段。 根據預設，視覺效果只有顯示產品的資料，因為 *產品 *會出現在上述的軸值區 *區段*。
 
-2.  To enable drill down, select the arrow icon in the top right corner of the visualization. When the icon is dark, drill is enabled.
+2.  若要啟用向下鑽研，選取在視覺效果的右上角的箭號圖示。 深色圖示時，會啟用鑽研。
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: The animation below shows using drilldown in Editing View.  Editing View allows us to see the hierarchy -- the two fields in the Axis bucket.
+    >
+            **請注意**︰ 動畫所示，使用 [編輯] 檢視中的 [向下鑽研。  編輯檢視可讓我們查看階層--貯體中軸的兩個欄位。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drilldown.png)
 
-3.  To drill down one field at a time, double-click one of the chart bars. 
+3.  若要向下鑽研一個欄位，一次，請按兩下圖表軸的其中一個。 
 
     ![](media/powerbi-service-drill-down-in-a-visualization/drillGA.gif)
 
-4.  To drill down all fields at once, select the double arrow in the top left corner of the visualization.
+4.  向下鑽研的所有欄位一次，選取左上角的視覺效果中的雙箭頭。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillAll.png)
 
-5.  To drill back up, select the up arrow in the top left corner of the visualization.
+5.  若要向下鑽研備份，選取左上角的視覺效果中的向上箭號。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillup2.png)
 
 
-## Method 2 for drill down
+## 向下鑽研的方法 2
 
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept> or <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>. Drill requires a visualization with a hierarchy. 
+1.  在 Power BI 中開啟報表 [讀取檢視](powerbi-service-open-a-report-in-reading-view.md) 或 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md)。 向下切入需要視覺效果的階層。 
 
-    A hierarchy is from the Financial sample is shown below.  The <bpt id="p1">*</bpt>Profit by Product <ept id="p1">*</ept>visualization has a hierarchy made up of <bpt id="p2">**</bpt>Product <ept id="p2">**</ept>and <bpt id="p3">**</bpt>Segment<ept id="p3">**</ept>; each product has one or more segments. By default, the visualization displays only the product data, because <bpt id="p1">*</bpt>Product <ept id="p1">*</ept>appears in the Axis bucket above <bpt id="p2">*</bpt>Segment<ept id="p2">*</ept>.
+    階層是從財務範例如下所示。   *收益依產品 *視覺效果具有組成階層 **產品 **和 **區段**; 每個產品都有一個或多個區段。 根據預設，視覺效果只有顯示產品的資料，因為 *產品 *會出現在上述的軸值區 *區段*。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-menu.png)
 
-2.  To enable drill down, select <bpt id="p1">**</bpt>Explore<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Drill Down<ept id="p2">**</ept>. The yellow bar next to <bpt id="p1">**</bpt>Drill Down<ept id="p1">**</ept> let's you know it's enabled.  
+2.  若要啟用向下鑽研，選取 **瀏覽** > **向下切入**。 下一步的黃色列 **向下切入** 您讓我們知道它已啟用。  
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-enable-drill.png)
 
-3.  Once enabled, drill down one field at a time by double-clicking one of the chart bars. In this example, I've double-clicked the product named <bpt id="p1">**</bpt>Velo<ept id="p1">**</ept> to see profit for Velo by Segment.
+3.  一旦啟用之後，向下鑽研一個欄位一次按兩下圖表軸的其中一個。 我在此範例中，按兩下名為 「 產品 **Velo** 查看區段所 Velo 的收益。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drilldown.png)
 
-4.  To drill down all fields at once, select <bpt id="p1">**</bpt>Expand all<ept id="p1">**</ept>.
+4.  若要向下鑽研的所有欄位一次，選取 **全部展開**。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-expand-all.png)
 
-5.  To drill back up, select <bpt id="p1">**</bpt>Drill Up<ept id="p1">**</ept>.
+5.  若要向下鑽研備份，請選取 **向上切入**。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-up.png)
 
-6.  To see the data being used to create the visual, select <bpt id="p1">**</bpt>See data<ept id="p1">**</ept>. The data is displayed in a pane below the visual. This pane remains as you continue drilling through the visual.
+6.  若要查看用來建立視覺效果的資料，請選取 **看到資料**。 資料會顯示在視覺效果下方的窗格。 這個窗格會維持不變您繼續鑽研視覺效果。
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-see-data.png)
 
 
 ### 請參閱
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI Preview reports](powerbi-service-reports.md)
+[Power BI 預覽報表](powerbi-service-reports.md)
 
-[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI 預覽的基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

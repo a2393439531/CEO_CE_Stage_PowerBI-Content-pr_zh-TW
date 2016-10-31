@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips for designing a great Power BI dashboard"
-   description="Tips for designing a great Power BI dashboard"
+   pageTitle="設計絕佳的 Power BI 儀表板的秘訣"
+   description="設計絕佳的 Power BI 儀表板的秘訣"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,69 +20,75 @@
    ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Tips for designing a great Power BI dashboard  
+# 設計絕佳的 Power BI 儀表板的秘訣  
 
-Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, that means making the most important information stand out, and making it clean and uncluttered﻿.
+既然您已建立儀表板，並加入一些磚，思考如何讓您的儀表板不只是這樣，但是功能也。 一般情況下，所指的將最重要的資訊獨立，並讓全新而且整齊。
 
-Here are a few tips.
+以下是一些秘訣。
 
-### Consider your audience  
-What are the key metrics that will help them make decisions? How will the dashboard be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
+### 請考慮您的對象  
+什麼是重要的計量，可幫助他們做出決策？ 如何使用儀表板？ 學或文化特性的假設，可能會影響設計選擇？ 您的觀眾需要哪些資訊才會成功？
 
-Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those can contain loads of details. Your readers can drill into the reports from your dashboard. So don't put the detail on the dashboard unless that's what your readers need to monitor.
+請記住，儀表板是概觀，從單一位置來監視資料的目前狀態。 儀表板根據基礎的報表和資料集，和那些可包含的詳細資料。 讀者可以鑽研儀表板的報表。 所以不要儀表板上放置的詳細資料，除非這是您的讀者需要監視。
 
-Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer tiles will be more readable.
+其中儀表板會顯示？ 如果它是大型監視器上，您可以在其上將更多的內容。 如果讀取器將其平板電腦上檢視它，則較少的磚會更容易閱讀。
 
-### Tell a story and keep it to one screen  
-Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard?
+### 故事，並將它保存至一個畫面  
+因為儀表板會顯示重要資訊一目了然，具有一個螢幕上的所有圖格是最佳的。 您可以避免捲軸上您的儀表板？
 
-Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
+為儀表板得過於雜亂嗎？  移除所有重要的資訊，可以輕鬆地讀取和解譯。
 
-### Make use of full screen mode
-Display your dashboard in <bpt id="p1">[</bpt>full screen<ept id="p1">](powerbi-service-dash-and-reports-fullscreen.md)</ept> without distractions.
+### 請使用全螢幕模式
+顯示儀表板中的 [全螢幕](powerbi-service-dash-and-reports-fullscreen.md) 沒有分散注意力的事情。
 
-### Make the most important information biggest  
-If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
+### 讓最大的最重要的資訊  
+文字和儀表板上的視覺效果都是相同的大小，如果您的讀者會很難專注於是最重要的。 比方說，卡片視覺效果很適合用來以醒目的方式顯示重要的數字︰  
 ![](media/powerbi-service-tips-for-designing-a-great-dashboard/PBI_card.png)
 
-But be sure to provide context.  
+但請務必提供內容。  
 
-Read about <bpt id="p1">[</bpt>creating a tile with just a number<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>.
+閱讀有關 [建立並排顯示的數字](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)。
 
-### Put the most important information in the upper corner
-Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
+### 將最重要的資訊放在右上角
+大部分的人讀取從上到下，因此最高層級的頂端和顯示方向移動的對象的詳細使用讀取 （由左到右、 從右至左） 的詳細資料。
 
-### Use the right visualization for the data and format it for easy reading  
-Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
+### 使用正確的視覺效果的資料並將其格式化以方便閱讀  
+避免為了各種不同的視覺效果不同。  視覺效果應該繪製圖片，並能輕鬆地 「 讀取 」 和解譯。  簡單的圖形視覺效果的一些資料和視覺效果，即已足夠。 其他資料可能會呼叫，但更複雜的視覺效果中的請務必使用的標題和標籤，以及其他自訂，以協助讀者。  
 
-- <bpt id="p1">[</bpt>Choose appropriate data visualizations<ept id="p1">](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx)</ept>. Be careful using charts that distort reality i.e. 3-D charts. Keep in mind that it is difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but they are not a data visualization best practice.
+- 
+            [選擇適當的資料視覺效果](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx)。 請務必小心使用扭曲實際上也就是 3d 圖表的圖表。 請記住，很難人腦解譯循環的圖形。 圓形圖、 甜甜圈圖表、 量測計和其他的循環的圖表類型看起來可能很但不是資料視覺效果最好。
 
-- Be consistent with chart scales on axes, chart dimension ordering and also the colors used for dimension values within charts.
+- 在與圖表刻度在軸，圖表維度排序用維度值內圖表的色彩一致。
 
-- Be sure to encode quantitative data nicely. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions i.e. 3.4 million not 3,400,000.
+- 請務必好好編碼量化的資料。 顯示數字時，不超過三或四個的數字。 顯示量值的其中一或兩個字方小數點和小數位數數千或數百萬亦即 3.4 萬不 3,400,000。
 
-- Don’t mix levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.
+- 請勿混合層級的有效位數和時間。 請確定會充分了解時間範圍。  沒有一個年度的某個特定月份的篩選圖表旁邊有上個月的圖表。
 
-- Don’t mix big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization that allows the use of a second axis.
+- 請勿混合使用大型與小型的量值，在相同的縮放比例，例如行或橫條圖上。  例如一個量值可以在數以百萬計和其他量值以千為單位。  這類大型調整時，它很難看到是以千為單位的量值的差異。  如果您需要混用，請選擇 [允許使用的第二個軸的視覺效果。
 
-- Don’t clutter your charts with data labels that are not needed. The values in bar charts are usually well understood without displaying the actual number.
+- 不會擾亂您不需要的資料標籤的圖表。 橫條圖中的值通常廣為人知而不會顯示實際數目。
 
-- Pay attention to how <bpt id="p1">[</bpt>charts are sorted<ept id="p1">](powerbi-service-change-how-a-chart-is-sorted.md)</ept>.  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+- 請注意如何 [排序圖表](powerbi-service-change-how-a-chart-is-sorted.md)。  如果您想要強調的最高或最低數字，量值來排序。  如果您想要能夠快速找到特定的類別內其他許多類別的人，排序軸。  
 
-- Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
+- 圓形圖是最佳有八個類別。 因為您無法比較的值以並排方式，是很難比在圓形圖中的值的比較橫條圖和直條圖。 圓形圖將很檢視組件的整體的關聯性，而不是比較的組件。 和量測計圖非常適合用來在目標的內容中顯示的目前狀態。
 
-For more visualization-specific guidance, see <bpt id="p1">[</bpt>Visualization types in Power BI<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept>.  
+多個特定視覺效果的指引，請參閱 [Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)。  
 
-## Learning More about Best Practice Dashboard Design  
-To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:
+## 進一步了解最佳作法儀表板設計  
+若要精通絕佳的儀表板設計的藝術，請考慮學習 visual 認知基本 Gestalt 原則以及如何以清楚地說明可採取動作內容中的資訊。 幸運的是，已有眾多的資源廣泛可用且執行我們的部落格內。 其中幾個我們最喜愛的書籍包括︰
 
-- <bpt id="p1">*</bpt>Information Dashboard Design<ept id="p1">*</ept> by Stephen Few  
-- <bpt id="p1">*</bpt>Show Me the Numbers<ept id="p1">*</ept> by Stephen Few  
-- <bpt id="p1">*</bpt>Now You See It<ept id="p1">*</ept> by Stephen Few  
-- <bpt id="p1">*</bpt>Envisioning Information<ept id="p1">*</ept> by Edward Tufte  
-- <bpt id="p1">*</bpt>Advanced Presentations<ept id="p1">*</ept> by Design by Andrew Abela   
+- 
+            *資訊的儀表板設計* Stephen 由幾個  
+- 
+            *顯示數字* Stephen 由幾個  
+- 
+            *現在您會看到它* Stephen 由幾個  
+- 
+            *構想資訊* Edward Tufte 的  
+- 
+            *進階簡報* Andrew Abela 所設計   
 
 ## 另請參閱  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

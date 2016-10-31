@@ -1,6 +1,6 @@
 <properties
-pageTitle="Troubleshooting tile errors"
-description="Common errors that may be encountered when a tile tries to refresh"
+pageTitle="並排顯示錯誤的疑難排解"
+description="磚會嘗試重新整理時可能遇到的常見錯誤"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,53 +19,53 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="08/15/2016"
 ms.author="asaxton"/>
-# Troubleshooting tile errors
+# 並排顯示錯誤的疑難排解
 
-Below are the common errors you may encounter with tiles along with an explanation.
+以下是常見的錯誤，您可能會遇到，磚，以及相關說明。
 
-> [AZURE.NOTE] If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> [AZURE.NOTE] 如果您遇到錯誤，未列出，而且它會造成問題，您可以尋求進一步協助上 [社群網站](http://community.powerbi.com/), ，或者您可以建立 [支援票證](https://powerbi.microsoft.com/support/)。
 
 ## 錯誤
 
-**Power BI encountered an unexpected error while loading the model. 請稍後再試。**
-or <bpt id="p1">**</bpt>Couldn't retrieve the data model. Please contact the dashboard owner to make sure the data sources and model exist and are accessible.<ept id="p1">**</ept>
+**Power BI 載入模型時發生未預期的錯誤。 請稍後再試。**
+或 **無法擷取資料模型。請連絡儀表板擁有者，以確定資料來源與模型存在且可存取。**
 
-We weren't able to access your data because the data source wasn't reachable. This could happen if the data source was removed, renamed, moved, offline, or permissions have changed. Check that the source is still in the location we are pointing to and you still have permission to access it. If that isn't the issue, the source may be slow. Try again later during a time when the load on the source is smaller. If it is an on-premise source, the data source owner may be able to provide more information. 
+我們無法存取您的資料，因為資料來源不可以連線。 如果資料來源已移除、 重新命名、 移動、 離線，或變更權限，則會發生此狀況。 請檢查來源仍處於我們所指向的位置，但仍有存取權限。 如果這樣還不問題時，來源可能會變慢。 請稍後再期間在來源上的負載較小。 如果是在內部部署來源，資料來源擁有者可以取得更多資訊。 
 
-**You don’t have permission to view this tile or open the workbook.**
+**您沒有檢視此磚，或開啟的活頁簿的權限。**
 
-Please contact the dashboard owner to make sure the data sources and model exist and are accessible for your account.
+請確定資料來源與模型存在且可存取您帳戶的儀表板擁有者。
 
-**Data shapes must contain at least one group or calculation that outputs data. Please contact the dashboard owner.**
+**資料圖形必須包含至少一個群組或輸出資料的計算。 請連絡儀表板擁有者。**
 
-We don't have any data to display because the query is empty. Try adding some fields from the field list to your visual and repinning it.
+我們沒有任何要顯示，因為查詢是空的資料。 請嘗試將某些欄位從欄位清單加入至 visual studio 並重新釘選它。
 
-**Can't display the data because Power BI can't determine the relationship between two or more fields.**
+**無法顯示資料，因為 Power BI 無法判斷兩個或多個欄位之間的關聯性。**
 
-You are trying to use two or more fields from tables that are not related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you have done this, you can add the fields back to the visual. This can be done in Power BI Desktop or Power Pivot for Excel. [進一步了解](powerbi-desktop-create-and-manage-relationships.md)
+您嘗試使用不相關的資料表中的兩個或多個欄位。 您需要從視覺效果中移除不相關的欄位，然後再建立資料表之間的關聯性。 一旦您已這麼做，您可以將欄位加入至視覺效果。 這可以完成在 Power BI Desktop 或 Power Pivot for Excel。 [進一步了解](powerbi-desktop-create-and-manage-relationships.md)
 
-**The groups in the primary axis and the secondary axis overlap. Groups in the primary axis can't have the same keys as groups in the secondary axis.**
+**主座標軸與副座標軸中的群組重疊。 主座標軸中的群組不能有副座標軸中的群組相同的索引鍵。**
 
-This is usually a transient issue. This will typically happen when you are moving groups from rows to columns. In this case, the error should disappear when you finish moving all the groups. If you still see the message, try switching fields between the rows and columns or the axis legend or removing fields from the visual.  
+這通常是暫時性的問題。 將通常會發生此移動群組資料列的資料行。 在此情況下，當您完成移動的所有群組，應該都會消失錯誤。 如果您仍然會看到此訊息，請嘗試切換欄位之間的資料列和資料行或軸圖例或移除欄位，從視覺效果。  
 
-**This visual has exceeded the available resources. Try filtering to decrease the amount of data displayed.**
+**此視覺效果已超出可用資源。 請嘗試篩選以減少顯示的資料量。**
 
-Your visual has attempted to query too much data for us to complete the result with the available resources. Try filtering the visual to reduce the amount of data in the result.
+Visual studio 已嘗試查詢太多資料，為我們完成結果與可用的資源。 請試著篩選視覺效果，以減少結果中的資料量。
 
-**We are not able to identify the following fields: {0}. Please update the visual with fields that exist in the dataset.**
+**無法識別下列欄位︰ {0}。 請以存在於資料集中的欄位更新視覺效果。**
 
-The field was likely deleted or renamed. You can remove the broken field from the visual, add a different field, and repin it.
+可能已刪除或重新命名此欄位。 您可以從視覺效果，移除中斷的欄位加入不同的欄位，並要重新固定它。
 
-**Couldn't retrieve the data for this visual. 請稍後再試。**
+**無法擷取此視覺效果的資料。 請稍後再試。**
 
-This is usually a transient issue. If you try again later and you still see this message, please contact support.
+這通常是暫時性的問題。 如果您稍後再試，而且您仍然可以看到此訊息，請連絡支援。
 
 ## 請連絡支援部門
 
-If you are still having an issue, please <bpt id="p1">[</bpt>contact support<ept id="p1">](https://support.powerbi.com)</ept> to investigate further.
+如果您仍然有問題，請 [連絡支援人員](https://support.powerbi.com) 進一步調查。
 
 ## 請參閱
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+[疑難排解 Power BI 個人閘道](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

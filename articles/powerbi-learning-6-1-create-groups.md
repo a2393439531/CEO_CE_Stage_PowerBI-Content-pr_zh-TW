@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Groups in Power BI"
-   description="Create a new group, set privacy levels, and invite your first members"
+   pageTitle="在 Power BI 中建立群組"
+   description="建立新的群組、 隱私權層級設定，並邀請您的第一個成員"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create a group in Power BI
+# 在 Power BI 中建立群組
 
-In this lesson, we start by creating a <bpt id="p1">*</bpt>group<ept id="p1">*</ept>. A <bpt id="p1">**</bpt>group<ept id="p1">**</ept> defines a set of users who have access to specific dashboards, reports, and data.
+在本課程中，我們先建立 *群組*。 A **群組** 定義一組特定的儀表板、 報表和資料的權限的使用者。
 
-Groups in Power BI are based on groups in Office 365, so if you've been using Office 365 groups to manage your group's email, calendar, and documents, you'll see that Power BI offers the same features, and more. When you create a group in Power BI, you're actually creating an Office 365 group.
+Power BI 中的群組根據 Office 365 中的群組，如果您已經使用 Office 365 群組來管理群組的電子郵件、 行事曆，以及文件，您可以看到 Power BI 提供相同的功能及其他。 當您在 Power BI 中建立群組時，實際上建立 Office 365 群組。
 
-This module uses the scenario of setting up a new finance group. We'll show how to set up the group, share dashboards, reports, and datasets into the group, and add members who'll have access to the items in the group.
+此模組會使用新的財務群組所設定的案例。 我們將示範如何設定群組、 共用儀表板、 報表和資料集組成群組，並新增將權限項目群組中的成員。
 
-I start here in My Workspace. These are the dashboards, reports, and datasets that I've created or that someone shared with me.
+我從這裡開始我的工作區中。 這些是儀表板、 報表和我所建立，或其他人共用我的資料集。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01myworkspace.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01myworkspace.png)
 
-If I expand My Workspace, I can select <bpt id="p1">**</bpt>Create a group<ept id="p1">**</ept>.
+如果展開我的工作區時，我可以選取 **建立群組**。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01expandMyWkspace.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01expandMyWkspace.png)
 
-Here I can give it a name. We're using the scenario or a finance group, so I'll call it Finance. Power BI makes sure the name doesn't exist on the domain.
+這裡，我可以為它命名。 我們將使用案例或財務群組，因此我稱它為 Finance。 Power BI 可確保名稱不存在網域上。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01creategroupdialog.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01creategroupdialog.png)
 
-I can set the privacy level by deciding whether anyone in my organization can see the contents of the group, or only its members.
+我可以決定是否在我的組織中的任何人都可以看到群組或只是其成員的內容來設定隱私權等級。
 
-I type email addresses, security groups, and distribution lists here. I select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to make them members of the group, and save the group.
+我輸入電子郵件地址，安全性群組和通訊群組清單在這裡。 我選擇 **新增** 來群組的成員，使其與儲存群組。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01savegroup.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01savegroup.png)
 
-On to the next lesson!
+到下一個課程 ！

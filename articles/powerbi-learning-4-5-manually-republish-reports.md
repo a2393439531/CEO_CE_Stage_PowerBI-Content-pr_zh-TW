@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Manually republishing and refreshing your data"
-   description="Manually update your dataset and report"
+   pageTitle="手動重新發行和重新整理您的資料"
+   description="手動更新您的資料集和報表"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Manually Republish and Refresh Your Data
+# 手動重新發行和重新整理資料
 
-You can update reports and datasets that you've already published from Power BI Desktop to the Power BI service. To do so, select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab in the ribbon.
+您可以更新報表和資料集已經發佈從 Power BI Desktop Power BI 服務。 若要這樣做，請選取 **發行** 從 **首頁** 在功能區] 索引標籤。
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_0.png)
 
-When you publish a report that already exists in the Power BI service, you're prompted to confirm that you want to replace the previous dataset and reports with the edited version you just chose to update.
+當您發行的報表已經存在，在 Power BI 服務時，您會提示您確認您想要以編輯您剛剛選擇更新的版本來取代先前的資料集和報表。
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_1.png)
 
-When you select <bpt id="p1">**</bpt>Replace<ept id="p1">**</ept>, the datasets and reports in the Power BI service are overwritten with the datasets and reports in the most recent Power BI Desktop version of the file.
+當您選取 **取代**, ，資料集和報表中的 Power BI 服務都會與資料集和報表檔案的最新的 Power BI Desktop 版本中覆寫。
 
-And just like any other <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> event from Power BI Desktop, you see a dialog that tells you the publish event was successful, and you get a link to the report in the Power BI service.
+如同任何其他 **發行** 從 Power BI Desktop 事件，您會看到一個對話方塊，告訴您發佈事件成功，和您在 Power BI 服務取得報表的連結。
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_2.png)
 
-This is a way to manually refresh your data. You can also automatically update datasets and reports; that process is covered in another learning topic.
+這是手動重新整理資料的方式。 您也會自動更新資料集和報表。其他學習主題涵蓋該程序。

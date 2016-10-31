@@ -1,53 +1,55 @@
-## Install the On-premises data gateway
+## 安裝內部部署資料閘道
 
-The data gateway installs and runs on your computer. It is best to install the gateway on a machine that can be left running all the time.
+安裝資料閘道，並在電腦上執行。 您最好在仍可繼續執行的電腦上安裝閘道。
 
-> [AZURE.NOTE] The gateway is supported only on 64-bit Windows operating systems.
+> [AZURE.NOTE] 閘道支援只能在 64 位元 Windows 作業系統上。
 
-For Power BI, the first choice you have to make is the mode of the gateway.
+Power bi，您必須進行的第一個選擇是閘道的模式。
 
--   <bpt id="p1">**</bpt>On-premises data gateway:<ept id="p1">**</ept> Multiple users can share and reuse a gateway in this mode. This gateway can be used by Power BI, PowerApps, Flow or Logic Apps. For Power BI, this includes support for both schedule refresh and DirectQuery
+-   
+            **內部資料閘道︰** 多位使用者可以共用及重複使用此模式中的閘道。 Power BI、 PowerApps、 流量或邏輯應用程式可以使用此閘道器。 Power bi，其中包括支援排程重新整理和 DirectQuery
 
--   <bpt id="p1">**</bpt>Personal:<ept id="p1">**</ept> This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This will launch the installation of the personal gateway.
+-   
+            **個人︰** 這僅適用於 Power BI，可用來當做個人而不需要任何系統管理員設定。 這僅能隨重新整理和排程重新整理。 這會啟動個人閘道安裝。
 
-> [AZURE.NOTE] If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
+> [AZURE.NOTE] 如果您在個人的模式中安裝閘道，您無法在同一部電腦上安裝另一個閘道。 
 
 ![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
-Here are a few things to consider before installing the gateway.
+以下是安裝閘道之前，要考慮的幾個事項。
 
--   If you are installing on a laptop, and your laptop is turned off, not connected to the internet, or asleep the gateway won’t work and the data in the cloud service will not be synchronized with your on-premises data.
+-   如果您要安裝的膝上型電腦上，膝上型電腦關機不連線到網際網路，或睡眠狀態閘道將無法運作，和雲端服務中的資料將不會同步您的內部資料。
 
--   If your machine is connected to a wireless network, the gateway may perform more slowly which will cause it to take longer to synchronize the data in the cloud service with your on-premises data.
+-   如果您的電腦連線到無線網路，閘道器可能會執行速度變慢這樣將會造成它需要更長的時間與內部部署資料同步處理雲端服務中的資料。
 
-Once the gateway is installed, you will need to sign in with your work or school account.
+安裝閘道之後，您必須使用您的工作或學校帳戶登入。
 
 ![on-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
 
-After you are signed in, you will have the option to configure a new gateway, or to migrate, restore, or take over an existing gateway.
+您登入之後，您必須選擇来設定新的閘道，或移轉、 還原或取代現有的閘道。
 
 ![on-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
 
-## Configure a new gateway
+## 設定新的閘道
 
-1.  Enter a <bpt id="p1">**</bpt>name<ept id="p1">**</ept> for the gateway
+1.  輸入 **名稱** 閘道
 
-2.  Enter a <bpt id="p1">**</bpt>recovery key<ept id="p1">**</ept>. This has to be a minimum of 8 characters.
+2.  輸入 **修復金鑰**。 這必須是 8 個字元的最小值。
 
-3.  Select <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept>.
+3.  選取 **設定**。
 
-> [AZURE.NOTE] The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
+> [AZURE.NOTE] 如果您需要移轉、 還原或高於閘道，將會需要修復金鑰。 請務必將此金鑰保存在安全的地方。
 
 ![on-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
 
-### Migrate, restore or take over an existing gateway
+### 移轉、 還原或取代現有的閘道
 
-You will need to select the gateway you want to recover and supply the recovery key that was used to first create the gateway. 
+您必須選取您想要復原，並提供修復金鑰，用於第一次建立閘道的閘道。 
 
-### On-premises data gateway connected
+### 連線的內部資料閘道
 
-Once the gateway is configured, you will be able to make use of it to connect to on-premises data sources. 
+一旦設定閘道，您將能夠使用它來連接到內部部署資料來源。 
 
-If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. For PowerApps, you will need to select a gateway for a defined connection for supported data sources.
+如果閘道 Power bi，您必須將您的資料來源加入至 Power BI 服務中的閘道。 如 PowerApps，您必須選取一個閘道，將支援的資料來源定義的連接。
 
-For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections 
+流程和邏輯應用程式，此閘道器已準備好搭配您的內部部署連線 

@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Get data from Excel workbook files"
-    description="Learn how to get data from Excel workbook files into Power BI"
+    pageTitle="從 Excel 活頁簿檔案取得資料"
+    description="了解如何從 Excel 活頁簿檔案將資料送入 Power BI"
     services="powerbi"
     documentationCenter=""
     authors="davidiseminger"
@@ -20,135 +20,142 @@
     ms.date="09/29/2016"
     ms.author="davidi"/>
 
-# Get data from Excel workbook files
+# 從 Excel 活頁簿檔案取得資料
 ![](media/powerbi-service-excel-workbook-files/excel_icon.png)
 
-Microsoft Excel is one of the most widely used business applications around. It’s also one of the most common ways to get your data into Power BI.
+Microsoft Excel 是其中一個最普遍使用的商務應用程式。 它也是其中一種最常見的方式來將資料送入 Power BI。
 
-## What types of workbooks does Power BI support?
+## Power BI 支援何種類型的活頁簿？
 
-Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Workbooks must be saved as .xlsx or .xlsm file type and be under 1 GB. Some features described in this article are only available in later versions of Excel.
+Power BI 支援匯入或連接到在 Excel 2007 和更新版本所建立的活頁簿。 活頁簿必須儲存為.xlsx 或.xlsm 檔案類型，而且會在 1 GB。 只使用在新版 Excel 中的這篇文章中所述的某些功能。
 
-#### Workbooks with ranges or tables of data
+#### 使用範圍或資料表的資料的活頁簿
 
-If your workbook has simple worksheets with ranges of data, to get the most out of your data in Power BI, be sure to format those ranges as tables. This way, when creating reports in Power BI, you’ll see named tables and columns in the Fields pane, making it much easier to visualize your data.
+如果您的活頁簿有大範圍的資料的簡單工作表，若要在 Power BI 中充分運用您的資料是確定格式化為資料表的範圍。 如此一來，在 Power BI 中建立報表時您會看到已命名的資料表和資料行中的欄位] 窗格中，讓它更容易將資料視覺化。
 
-#### Workbooks with data models
+#### 資料模型的活頁簿
 
-Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query (Get &amp; Transform in Excel 2016), or Power Pivot. Power BI supports all data model properties such as relationships, measures, hierarchies, and KPIs.
+活頁簿可以包含資料模型與一個或多個資料表的資料載入到它，藉由使用連結的資料表，Power Query 取得 & Excel 2016 中轉換、 或 Power Pivot。 Power BI 支援所有的資料模型內容，例如關聯性、 量值、 階層和 Kpi。
 
->   Note: Workbooks with data models cannot be shared across Power BI tenants. For example, a user who logs in to Power BI using a <bpt id="p1">*</bpt>contoso.com<ept id="p1">*</ept> account cannot share an Excel workbook with a user who logs in using a Power BI login account from <bpt id="p2">*</bpt>woodgrovebank.com<ept id="p2">*</ept>.
+>   注意︰ Power BI 租用戶之間無法共用活頁簿的資料模型。 例如，使用者登入 Power BI 使用 *contoso.com* 帳戶無法登入 Power BI 從登入帳戶的使用者與共用 Excel 活頁簿 *woodgrovebank.com*。
 
 
-#### Workbooks with connections to external data sources
+#### 連線到外部資料來源的活頁簿
 
-If you use Excel to connect to an external data source, once your workbook is in Power BI, you can create reports and dashboards based on data from that connected data source. You can also setup Scheduled Refresh to automatically connect right to the data source and get updates. You’ll no longer need to refresh manually from the Data ribbon in Excel. Any visualizations in reports and tiles in dashboards based on data from that data source are updated automatically. To learn more, see <bpt id="p1">[</bpt>Data refresh in Power BI<ept id="p1">](articles/powerbi-refresh-data.md)</ept>.
+如果您使用 Excel 來連接至外部資料來源，Power BI 活頁簿之後，您可以建立報表和儀表板，根據該連接的資料來源的資料。 您也可以設定排程以自動連接到資料來源的權限，並取得更新的重新整理。 您將不再需要手動重新整理資料功能區上，在 Excel 中。 在報表中的任何視覺效果和在該資料來源的資料為基礎的儀表板] 磚會自動更新。 若要深入了解，請參閱 [Power BI 中的資料重新整理](articles/powerbi-refresh-data.md)。
 
-#### Workbooks with Power View sheets, PivotTables and charts
+#### 具有 Power View 工作表、 樞紐分析表和圖表的活頁簿
 
-How your PowerView sheets and PivotTables and charts appear, or not appear, in Power BI depends on where your workbook file is saved and how you choose to get it into Power BI. We'll go into this more below.
+您如何 PowerView 工作表和樞紐分析表和圖表會出現，或未出現在 Power BI，取決於活頁簿檔案的儲存位置，並選擇將送入 Power BI 的方式。 我們將討論下列這個詳細資訊。
 
 #### 資料類型
 
-Power BI supports the following data types: Whole Number, Decimal Number, Currency, Date, True/False, Text. Marking data as specific data types in Excel will improve the Power BI experience.
+Power BI 可支援下列資料類型︰ 整數、 十進位數字、 貨幣、 日期、 True/False、 文字。 在 Excel 中的類型會標示為特定資料的資料來改善 Power BI 體驗。
 
-### Prepare your workbook for Power BI
+### 準備您的活頁簿 Power bi
 
-Watch this helpful video to learn more about how to make sure your Excel workbooks are ready for Power BI.
+此影片有幫助能深入了解如何確定您的 Excel 活頁簿已做好 Power BI。
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
 
-## Where your workbook file is saved makes a difference
+## 儲存活頁簿檔案差異
 
-<bpt id="p1">**</bpt>Local<ept id="p1">**</ept> - If you save your workbook file to a local drive on your computer or another location in your organization, from Power BI you can load your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data and the data model (if any) from the workbook are loaded into the dataset. If your workbook has any Power View sheets, those will appear in your Power BI site under Reports. Excel 2016 also has the <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> feature (under the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu). Using <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> is effectively the same as using <bpt id="p2">**</bpt>Get Data &gt; Files &gt; Local File<ept id="p2">**</ept> from Power BI, but is often easier to update your dataset in Power BI if you’re regularly making changes to the workbook.
 
-<bpt id="p1">**</bpt>OneDrive - Business<ept id="p1">**</ept> – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your work in Excel and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI <bpt id="p1">*</bpt>connects<ept id="p1">*</ept> to your workbook file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI. Just like if you saved your workbook to a local drive, you can also use Publish to update your dataset and reports in Power BI immediately; otherwise Power BI will automatically synchronize, usually within an hour.
+            **本機** -如果您儲存活頁簿檔案在本機磁碟機上您的電腦或另一個位置在您的組織從 Power BI，您可以載入檔案到 Power BI。 讓整個檔案不真的匯入 Power BI，您的檔案實際上會保留在本機磁碟機。 真正發生的情況是在 Power BI 中建立新的資料集和資料和活頁簿的資料模型 （如果有的話） 會載入到資料集。 如果您的活頁簿有任何 Power View 工作表，這些會出現在 [報表] 下的 Power BI 網站。 也有 Excel 2016 **發行** 功能 (在 **檔案** 功能表)。 使用 **發行** 實際上是使用相同 **取得資料 > 檔案 > 本機檔案** 從 Power BI，但通常是容易更新您在 Power BI 中的資料集，如果您定期活頁簿進行變更。
 
-<bpt id="p1">**</bpt>OneDrive - Personal<ept id="p1">**</ept> – If you save your workbook files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data &gt; Files &gt; OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing in with your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your workbook file about every hour and make sure your dataset and reports in Power BI are in-sync.
 
-<bpt id="p1">**</bpt>SharePoint Team-Sites<ept id="p1">**</ept> – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+            **OneDrive-商務** – 如果您有商務用 OneDrive，而您登入使用相同的帳戶登入與 Power BI，這是由遠方最有效的方法讓工作在 Excel 您資料集、 報表和儀表板 Power BI 中的保持同步。 因為 Power BI 和 OneDrive 位於定域機組，Power BI *連接* 至您的活頁簿檔案放在 OneDrive 上大約每個小時。 如果找不到任何變更，您的資料集、 報表和儀表板會自動更新，Power BI。 如果您在本機磁碟機儲存您的活頁簿，如同您也可以使用發佈更新資料集和 Power BI 中的報表立即;否則 Power BI 會自動同步處理，通常會在一小時內。
 
-## One Excel workbook – two ways to use it
-If you save your workbook files to <bpt id="p1">**</bpt>OneDrive<ept id="p1">**</ept>, you'll have a couple of ways you can explore your data in Power BI
+
+            **OneDrive-個人** – 如果您將活頁簿檔案儲存至您自己的 OneDrive 帳戶時，您會得到許多相同的優點就與商務用 OneDrive。 最大的差異是當您第一次連接到您的檔案 (使用取得資料 > 檔案 > OneDrive-個人) 需要您的 OneDrive 與您通常不同於您用於登入 Power BI 的 Microsoft 帳戶登入。 當登入您的 OneDrive 與您的 Microsoft 帳戶，請務必在選項中選取 [讓我保持登。 如此一來，Power BI 無法連接到您的活頁簿檔案大約每個小時，並確定您的資料集，並在 Power BI 中的報表是在同步處理。
+
+
+            **SharePoint 小組網站** – 將 Power BI Desktop 檔案儲存到 SharePoint – 小組網站時，就如同儲存至商務用 OneDrive。 最大的差別是如何連接至檔從 Power BI。 您可以指定 URL，或連線至根資料夾。
+
+## 一個 Excel 活頁簿 – 兩個的使用方式
+如果您儲存活頁簿檔案 **OneDrive**, ，您必須透過數種方式，您可以瀏覽 Power BI 中的資料
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_connect.png)
 
 
-### Import Excel data into Power BI
-When you choose <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>, any supported data in tables and/or a data model are imported into a new dataset in Power BI. If you have any Power View sheets, those will be re-created in Power BI as reports.
+### Excel 資料匯入至 Power BI
+當您選擇 **匯入**, ，資料表和/或資料模型中的任何支援的資料匯入至 Power BI 中的新資料集。 如果您有任何 Power View 工作表時，這些將重新建立 Power BI 中與報表。
 
-You can continue editing your workbook. When your changes are saved, they’ll be synchronized with the dataset in Power BI, usually within about an hour. If you need more immediate gratification, you can just click Publish again, and your changes are exported right then and there. Any visualizations you have in reports and dashboards will be updated, too.
+您可以繼續編輯您的活頁簿。 儲存您的變更，它們會內進行同步處理與 Power BI 中的資料集通常大約一小時。 如果您需要更多的立即 gratification，同樣地，您可以按一下發行，並會當場匯出您的變更。 您在報表中有任何視覺效果和儀表板將會更新，太。
 
-Choose this option if you’ve used Get &amp; Transform data or Power Pivot to load data into a data model, or if your workbook has Power View sheets with visualizations you want to see in Power BI.
+如果您使用 Get 和轉換資料或 Power Pivot 資料載入資料模型，或如果您的活頁簿具有 Power View 工作表與視覺效果要在 Power BI 中查看，請選擇這個選項。
 
-In Excel 2016, you can also use Publish &gt; Export. It's pretty much the same thing. To learn more, see <bpt id="p1">[</bpt>Publish to Power BI from Excel 2016<ept id="p1">](powerbi-service-publish-from-excel.md)</ept>.
+在 Excel 2016 中，您也可以使用發行 > 匯出。 它是幾乎相同的動作。 若要深入了解，請參閱 [從 Excel 2016 發行至 Power BI](powerbi-service-publish-from-excel.md)。
 
-### Connect, manage and view Excel in Power BI
-When you choose <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>, your workbook will appear in Power BI just like it would in Excel Online. But, unlike Excel Online, you’ll have some great features to help you pin elements from your worksheets right to your dashboards.
+### 連接、 管理及 Power BI 中檢視 Excel
+當您選擇 **連接**, ，就像在 Excel Online 中一樣，將會出現在 Power BI 的活頁簿。 但不同於 Excel Online 中，您將有一些很棒的功能，可協助您從您的工作表固定項目由右至儀表板。
 
-You can’t edit your workbook in Power BI. But if you need to make some changes, you can click Edit, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
+您無法編輯 Power BI 的活頁簿。 但如果您需要進行一些變更，您可以按一下 [編輯]，然後選擇 [編輯您在 Excel Online 中的活頁簿，或在 Excel 中開啟您的電腦上。 您所做的任何變更會放在 OneDrive 上儲存活頁簿。
 
-When choosing this way, no dataset is created in Power BI. Your workbook will appear in your Power BI workspace navigation pane under Reports. Connected workbooks have a special Excel icon.
+選擇這種方式，是在 Power BI 中建立不到資料集。 您的活頁簿會出現在 [報表] 下您 Power BI] 工作區瀏覽窗格中。 已連接的活頁簿是以特殊的 Excel 圖示。
 
-Choose this option if you only have data in worksheets, or you have ranges, PivotTables and charts you want to pin to dashboards.
+如果您只在資料工作表，或者您有範圍、 樞紐分析表和圖表，您要釘選到儀表板，請選擇這個選項。
 
-In Excel 2016, you can also use Publish &gt; Upload. It's pretty much the same thing. To learn more, see <bpt id="p1">[</bpt>Publish to Power BI from Excel 2016<ept id="p1">](articles/powerbi-service-publish-from-excel)</ept>.
+在 Excel 2016 中，您也可以使用發行 > 上傳。 它是幾乎相同的動作。 若要深入了解，請參閱 [從 Excel 2016 發行至 Power BI](articles/powerbi-service-publish-from-excel)。
 
-## Import or connect to an Excel workbook from Power BI
+## 匯入，或從 Power BI 連接到 Excel 活頁簿
 
-1.  In Power BI, in the navigation pane, click <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>.
+1.  在 Power BI 中瀏覽窗格中，按一下 **取得資料**。
 
     ![](media/powerbi-service-excel-workbook-files/excel_get_data_button.png)
 
-2.  In Files, click <bpt id="p1">**</bpt>Get<ept id="p1">**</ept>.
+2.  在檔案中，按一下 [ **取得**。
 
     ![](media/powerbi-service-excel-workbook-files/excel_files_get.png)
 
-3.  Find your file.
+3.  尋找檔案。
 
     ![](media/powerbi-service-excel-workbook-files/excel_find_your_file.png)
 
-4.  If your workbook file is on OneDrive or SharePoint - Team Sites, choose <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.
+4.  如果您的活頁簿檔案是在 OneDrive 或 SharePoint-小組網站選擇 **匯入** 或 **連接**。
 
 
-## Local Excel workbooks
-You can also use a local Excel file and upload it into Power BI. Simply select <bpt id="p1">**</bpt>Local File<ept id="p1">**</ept> from the previous menu, then navigate to where you have your Excel workbooks saved.
+## 本機的 Excel 活頁簿
+您也可以使用本機的 Excel 檔案，並將它上傳到 Power BI。 只需選取 **本機檔案** 從上一個功能表，然後瀏覽至您有儲存 Excel 活頁簿。
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_6.png)
 
-Once selected, choose to Upload your file into Power BI.
+一旦選取此選項，選擇將您的檔案上傳到 Power BI。
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_7.png)
 
-Once your workbook is uploaded, you get a notification that the workbook is ready.
+一旦上傳您的活頁簿時，您會收到通知，活頁簿已準備好。
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_8.png)
 
-Once the workbook is ready, you can find it in the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> section of Power BI.
+活頁簿準備就緒後，您可以找到它在 **報表** Power BI 的區段。
 
 ![](media/powerbi-service-excel-workbook-files/excel_import_9.png)
 
 
 
-## Publish from Excel 2016 to your Power BI site
-Using the <bpt id="p1">**</bpt>Publish to Power BI<ept id="p1">**</ept> feature in Excel 2016 is effectively the same as using <bpt id="p2">**</bpt>Get Data<ept id="p2">**</ept> in Power BI to import or connect to your file. We won't go into the details here, but you can see <bpt id="p1">[</bpt>Publish to Power BI from Excel 2016<ept id="p1">](articles/powerbi-service-publish-from-excel.md)</ept> to learn more.
+## 從 Excel 2016 發行到 Power BI 網站
+使用 **發行到 Power BI** Excel 2016 功能實際上是使用相同 **取得資料** Power BI 來匯入或連接至您的檔案中。 我們不會詳述細節，但是您可以看到 [從 Excel 2016 發行至 Power BI](articles/powerbi-service-publish-from-excel.md) 若要深入了。
 
 
 
 ## 新功能
-<bpt id="p1">**</bpt>Explore your data<ept id="p1">**</ept> - Once you get data and reports from your file into Power BI, it's time to explore. Just right-click the new dataset and then click Explore. If you chose to connect to a workbook file on OneDrive in step 4, your workbook will appear in Reports. When you click on it, it will open in Power BI, just as it would if it were in Excel Online.
 
-<bpt id="p1">**</bpt>Schedule refresh<ept id="p1">**</ept> - If your Excel workbook file connects to external data sources, or you imported from a local drive, you can setup scheduled refresh to make sure your dataset or report is always up-to-date. In most cases, setting up scheduled refresh is quite easy to do, but going into the details is outside the scope of this article. See <bpt id="p1">[</bpt>Data refresh in Power BI<ept id="p1">](articles/powerbi-refresh-data.md)</ept> to learn more.
+            **瀏覽資料** -一旦您將資料和報告檔中送入 Power BI，現在是時候來瀏覽。 只要以滑鼠右鍵按一下新的資料集，然後按一下 [瀏覽。 如果您選擇連接到活頁簿檔案放在 OneDrive 上在步驟 4 中，您的活頁簿將會顯示在報表中。 當您按一下它時，它會開啟中 Power BI，就像是在 Excel Online 中一樣。
+
+
+            **排程重新整理** -如果您的 Excel 活頁簿檔案連接到外部資料來源，或從本機磁碟機中匯入、 您可以設定排定的重新整理，以確定您的資料集或報表永遠是最新。 在大部分情況下，設定排定的重新整理是相當容易，但是進入細節已超出本文的範圍。 請參閱 [Power BI 中的資料重新整理](articles/powerbi-refresh-data.md) 若要深入了。
 
 ## 疑難排解
 
-Workbook file too big? Check out <bpt id="p1">[</bpt>Reduce the size of an Excel workbook to view it in Power BI<ept id="p1">](articles/powerbi-reduce-the-size-of-an-excel-workbook.md)</ept>.
+活頁簿檔案太大？ 簽出 [減少在 Power BI 中檢視 Excel 活頁簿大小](articles/powerbi-reduce-the-size-of-an-excel-workbook.md)。
 
-Currently, when you choose Import, Power BI only imports data that is part of a named table or a data model. As a result, if the workbook contains no named tables, Power View sheets, or Excel data models, you might see this error: <bpt id="p1">**</bpt>"We couldn't find any data in your Excel workbook"<ept id="p1">**</ept>. <bpt id="p1">[</bpt>This article<ept id="p1">](articles/powerbi-admin-troubleshoot-excel-workbook-data.md)</ept> explains how to fix your workbook and re-import it.
+目前，當您選擇匯入，Power BI 只會匯入資料的已命名的資料表或資料模型的一部分。 如此一來，如果活頁簿包含任何具名的資料表、 Power View 工作表或 Excel 資料模型，您可能會看到此錯誤︰ **「 我們找不到任何資料到 Excel 活頁簿 」**。 
+            [這篇文章](articles/powerbi-admin-troubleshoot-excel-workbook-data.md) 說明如何修正您的活頁簿並重新匯入。
 
 ## 請參閱
-[Publish to Power BI from Excel 2016](articles/powerbi-service-publish-from-excel.md)
+[從 Excel 2016 發行至 Power BI](articles/powerbi-service-publish-from-excel.md)
 
-[Power BI publisher for Excel](articles/powerbi-publisher-for-excel.md)
+[適用於 Excel 的 power BI 發行者](articles/powerbi-publisher-for-excel.md)
 
-[Data refresh in Power BI](articles/powerbi-refresh-data.md)
+[在 Power BI 中的資料重新整理](articles/powerbi-refresh-data.md)

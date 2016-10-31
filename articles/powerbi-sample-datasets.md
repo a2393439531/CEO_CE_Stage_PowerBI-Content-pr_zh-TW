@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Samples for Power BI"
-   description="Sample content packs and datasets for Power BI"
+   pageTitle="Power bi 範例"
+   description="範例內容的套件和 Power bi 的資料集"
    services="powerbi"
    documentationCenter=""
    authors="amac"
@@ -20,78 +20,95 @@
    ms.date="02/16/2016"
    ms.author="amac"/>
 
-# <a name="samples-for-power-bi-service"></a>Samples for Power BI service
+# <a name="samples-for-power-bi-service"></a>Power BI 服務的範例
 
-## <a name="about-the-samples"></a>About the samples
+## <a name="about-the-samples"></a>有關範例
 
-Want to try the Power BI service with industry-specific sample data?  
+要嘗試業界特定範例資料的 Power BI 服務？  
 
->[AZURE.NOTE] These samples are for use in the Power BI service...not Power BI Desktop.
+>[AZURE.NOTE] 這些範例並非用於 Power BI 服務...Power BI Desktop。
 
-Microsoft has created sample content for you to use with Power BI. Each of these samples is available as a <bpt id="p1">**</bpt>content pack<ept id="p1">**</ept> and as a separate Excel workbook. A <bpt id="p1">*</bpt>content pack<ept id="p1">*</ept> is a type of sample where the dataset is bundled with a dashboard and/or report. The sample content packs are available from within Power BI service, using <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>.   
+Microsoft 已建立範例內容，您可以使用 Power bi。 每個範例可做為 **內容組件** 和當做個別的 Excel 活頁簿。 A *內容組件* 是一種範例資料集隨附於儀表板和/或報表的位置。 範例內容套件是 Power BI 中提供服務，使用 **取得資料**。   
 
-The Excel workbooks that were used to create the content packs can be downloaded <bpt id="p1">[</bpt>as a zip file<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=535020)</ept> or <bpt id="p2">[</bpt>individually<ept id="p2">](powerbi-sample-downloads.md)</ept>. Advanced users may want to download the Excel workbooks to explore or edit the data models.
+您可以下載用來建立內容組件的 Excel 活頁簿 [為 zip 檔案](http://go.microsoft.com/fwlink/?LinkId=535020) 或 [個別](powerbi-sample-downloads.md)。 進階的使用者可能想要下載 Excel 活頁簿，瀏覽或編輯資料模型。
 
-## <a name="available-samples"></a>Available samples
+## <a name="available-samples"></a>可用的範例
 
-The following samples are available for the Power BI service. The samples use real data from obviEnce (<bpt id="p1">[</bpt>www.obvience.com<ept id="p1">](http://www.obvience.com/)</ept>) that has been anonymized.
+下列範例可供 Power BI 服務。 此範例會使用來自 obviEnce 的真實資料 ([www.obvience.com](http://www.obvience.com/)) 匿名的。
 
->[AZURE.TIP]  To learn how to connect to the samples, see <bpt id="p1">[</bpt>Tutorial: Using the sample content packs<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
+>[AZURE.TIP]  若要了解如何連接的範例，請參閱 [教學課程︰ 使用的範例內容套件](powerbi-sample-tutorial-connect-to-the-samples.md)。
 
 
-### <a name="customer-profitability-sample"></a>Customer Profitability sample  
-This industry sample dashboard and underlying dataset and report analyze a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability.
+### <a name="customer-profitability-sample"></a>客戶獲利率範例  
+這個產業範例儀表板與基礎資料集與報表分析財務長的重要指標她主管、 產品和客戶。 您可以調查哪些因素會影響公司的獲利率。
 
--   <bpt id="p1">[</bpt>Take a tour of the Customer Profitability sample<ept id="p1">](powerbi-sample-customer-profitability-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [客戶獲利率範例介紹](powerbi-sample-customer-profitability-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="human-resources-sample"></a>Human Resources sample  
-This industry sample dashboard and underlying dataset and report focus on the hiring strategy for a company by analyzing new hires, active employees, and employees who've left.  By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
+### <a name="human-resources-sample"></a>人力資源範例  
+這個產業範例儀表板與基礎資料集與報表分析新進、 使用中的員工和員工保留了專注於聘用策略的公司。  瀏覽資料，您可以找到自願性離職和偏差聘用策略的趨勢。
 
--   <bpt id="p1">[</bpt>Take a tour of the Human Resources sample<ept id="p1">](powerbi-sample-human-resources-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [人力資源範例介紹](powerbi-sample-human-resources-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="it-spend-analysis-sample"></a>IT Spend Analysis sample  
-In this industry sample dashboard and underlying dataset and report, we analyze the planned vs. actual costs of the IT department of a company. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
+### <a name="it-spend-analysis-sample"></a>IT 花分析範例  
+在這個產業範例儀表板與基礎資料集與報表，我們分析計劃與公司的 IT 部門的實際成本。 這項比較，有助於我們了解公司的年度規劃程度，並調查龐大偏離已計劃的區域。 公司在此範例會在執行計劃週期，每年，然後每季，便會產生新最新估計 (LE) 來協助分析中的變更 IT 花會計年度。
 
--   <bpt id="p1">[</bpt>Take a tour of the IT Spend Analysis sample<ept id="p1">](powerbi-sample-it-spend-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [IT 花分析範例介紹](powerbi-sample-it-spend-analysis-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="opportunity-analysis-sample"></a>Opportunity Analysis sample  
-This industry sample dashboard and underlying dataset and report explore a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+### <a name="opportunity-analysis-sample"></a>機會分析範例  
+這個產業範例儀表板與基礎資料集與報表瀏覽軟體公司的銷售通路。 銷售經理監視其直接和銷售通路相互合作，追蹤商機與營收地區、 交易和通道。
 
--   <bpt id="p1">[</bpt>Take a tour of the Opportunity Analysis sample<ept id="p1">](powerbi-sample-opportunity-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [介紹機會分析範例](powerbi-sample-opportunity-analysis-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="procurement-analysis-sample"></a>Procurement Analysis sample  
-This industry sample dashboard and underlying dataset and report analyze a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability
+### <a name="procurement-analysis-sample"></a>採購分析範例  
+這個產業範例儀表板與基礎資料集與報表分析財務長的重要指標她主管、 產品和客戶。 您可以調查哪些因素會影響公司的獲利率
 
--   <bpt id="p1">[</bpt>Take a tour of the Procurement Analysis sample<ept id="p1">](powerbi-sample-procurement-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [採購分析範例介紹](powerbi-sample-procurement-analysis-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="retail-analysis-sample"></a>Retail Analysis sample  
-This industry sample dashboard and underlying dataset and report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, and variance, as well as new store analysis.
+### <a name="retail-analysis-sample"></a>零售分析範例  
+這個產業範例儀表板與基礎資料集與報表來分析跨多個儲存區和學區的銷售資料的項目售出商品的零售。 度量比較今年的最後一年在這些區域中︰ 銷售、 單位、 毛利、 和變異數，以及外加新商店的分析。
 
--   <bpt id="p1">[</bpt>Take a tour of the Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [零售分析範例介紹](powerbi-sample-retail-analysis-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="sales-and-marketing-sample"></a>Sales and Marketing sample  
-This industry sample dashboard and underlying dataset and report analyze a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
+### <a name="sales-and-marketing-sample"></a>銷售與行銷範例  
+這個產業範例儀表板與基礎資料集與報表分析一家製造公司，VanArsdel ltd 它可讓 [監看業界與市場佔有率 VanArsdel 行銷長。  您可以瀏覽範例，來尋找公司的市場佔有率、 產品量、 銷售和情緒。
 
--   <bpt id="p1">[</bpt>Take a tour of the Sales and Marketing sample<ept id="p1">](powerbi-sample-sales-and-marketing-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [介紹銷售和行銷範例](powerbi-sample-sales-and-marketing-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
-### <a name="supplier-quality-sample"></a>Supplier Quality sample  
-This industry sample dashboard and underlying dataset and report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
+### <a name="supplier-quality-sample"></a>供應商品質範例  
+這個產業範例儀表板與基礎資料集和報表著重於其中一個典型的供應鏈挑戰 — 供應商品質分析。 兩個主要的度量資訊會於這項分析︰ 總缺失數和造成的總停機時間。 這個範例有兩個主要目標︰ 了解最佳及最差的供應商，相對於品質，並找出哪些工廠更好，找出及去除缺陷，能將停機時間降至最低。
 
--   <bpt id="p1">[</bpt>Take a tour of the Supplier Quality sample<ept id="p1">](powerbi-sample-supplier-quality-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
--  More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-   
+            [供應商品質範例介紹](powerbi-sample-supplier-quality-analysis-take-a-tour.md)。
+-   了解如何連接到 [Power BI 範例](powerbi-sample-tutorial-connect-to-the-samples.md)。
+-   
+            [閱讀免責聲明及下載此範例的 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkId=528592)。
+-  更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

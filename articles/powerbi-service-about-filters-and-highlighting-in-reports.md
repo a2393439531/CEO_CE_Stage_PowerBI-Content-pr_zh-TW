@@ -1,6 +1,6 @@
 <properties
-   pageTitle="About filters and highlighting in Power BI reports"
-   description="About filters and highlighting in Power BI reports"
+   pageTitle="關於篩選和反白顯示在 Power BI 報表"
+   description="關於篩選和反白顯示在 Power BI 報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,86 +19,94 @@
    ms.workload="powerbi"
    ms.date="10/24/2016"
    ms.author="mihart"/>
-# <a name="about-filters-and-highlighting-in-power-bi-reports"></a>About filters and highlighting in Power BI reports
-
-<bpt id="p1">***</bpt>Filters<ept id="p1">***</ept> remove all but the data you want to focus on.  <bpt id="p1">***</bpt>Highlighting<ept id="p1">***</ept> is not filtering since it does not remove data but instead highlights a subset of the visible data; the unhighlighted data remains visible but dimmed.
-
-There are a lot of different ways you can filter and highlight reports in Power BI. Putting all of that information in one article would get confusing, so we've broken it down like this:
-
--   Introduction to filters and highlighting (the article you're reading now)
-
--   The ways you can <bpt id="p1">[</bpt>create and use filters and highlighting in Editing View/reports that you own<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>. When you have editing permissions for a report, you can create, modify, and delete filters and highlighting in reports.
-
--   The ways you can <bpt id="p1">[</bpt>use filters and highlighting in a report shared with you or in report Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>. What you can do is more limited, but Power BI still gives you a wide range of filtering and highlighting options.  
-
--   <bpt id="p1">[</bpt>A detailed tour of the filter and highlighting controls available in Editing View<ept id="p1">](powerbi-service-how-to-use-a-report-filter.md)</ept> including an in-depth look at types of filters (e.g., date and time, numeric, text) and the difference between basic and advanced options.
-
--   Now that you've learned how filers and highlighting work by default, <bpt id="p1">[</bpt>learn how to change the way visualizations on a page filter and highlight each other<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
+# <a name="about-filters-and-highlighting-in-power-bi-reports"></a>關於篩選和反白顯示在 Power BI 報表
 
 
->[AZURE.TIP] How does Power BI knows how data is related?  It uses the relationships between the different tables and fields in the underlying <bpt id="p1">[</bpt>data model<ept id="p1">](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&amp;rs=en-US&amp;ad=US)</ept> to make items on a report page interact with each other.
+            ***篩選器*** 全部移除，但您想要專注於的資料。  
+            ***反白顯示*** 是未篩選，而是它不會移除資料，因為會反白顯示的可見的資料子集; unhighlighted 的資料仍然可見但呈現暗灰色。
+
+有許多種不同的方式，您可以篩選並反白顯示在 Power BI 中的報表。 將所有這些資訊放在一個發行項會收到令人困惑，因此我們已先將它向下細分，像這樣︰
+
+-   篩選和反白顯示 （您要現在閱讀的文件） 簡介
+
+-   您可以使用的方式 [建立及使用篩選器，並編輯檢視/您擁有之報表中反白顯示](powerbi-service-add-a-filter-to-a-report.md)。 當您編輯報表的權限，您可以建立、 修改和刪除篩選器和報表中反白顯示。
+
+-   您可以使用的方式 [使用篩選器和報表，與您共用或報表讀取檢視中反白顯示](powerbi-service-interact-with-a-report-in-reading-view.md)。 您可以執行就會較小，但 Power BI 仍可讓您廣泛的篩選和反白顯示的選項。  
+
+-   
+            [篩選和反白顯示 [編輯] 檢視中的控制項的詳細的介紹](powerbi-service-how-to-use-a-report-filter.md) 包括深入了解類型的篩選器 （例如，日期和時間、 數字的文字） 和基本和進階選項之間的差異。
+
+-   既然您已了解如何篩選器和反白顯示工作的預設值， [了解如何變更的方式上的視覺效果頁面篩選和反白顯示彼此](powerbi-service-visual-interactions.md)
 
 
-##  <a name="introduction-to-filters-and-highlighting-in-reports-using-the-filters-pane"></a>Introduction to filters and highlighting in reports using the Filters pane
+>[AZURE.TIP] Power BI 可以怎麼知道與資料產生關聯？  它會使用不同的資料表和欄位在基礎之間的關聯性 [資料模型](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US) 報表] 頁面中的項目彼此互動。
+
+
+##  <a name="introduction-to-filters-and-highlighting-in-reports-using-the-filters-pane"></a>篩選器和報表使用 [篩選] 窗格中反白顯示的簡介
 
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-add-filter-reading-view.png)
 
-Filters and highlighting can be applied using the <bpt id="p1">**</bpt>Filters<ept id="p1">**</ept> pane or by making selections directly on the report itself (ad-hoc, see bottom of page). The Filters pane shows the tables and fields used in the report and the filters that have been applied, if any. The filters are divided up into <bpt id="p1">**</bpt>Page level filters<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Report level filters<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Visual level filters<ept id="p3">**</ept>.  You'll only see visual level filters if you've selected a visualization on the report canvas.
+篩選和反白顯示可使用套用 **篩選** 窗格或直接在報表本身上進行選取 (臨機操作查看頁面底部)。 [篩選] 窗格顯示的資料表和欄位，如果有的話，用於報表和已套用的篩選器。 篩選器會劃分成 **頁面層級篩選**, ，**報告層級篩選**, ，和 **Visual 層級篩選**。  如果您已選取的報表畫布上的視覺效果，則只會看到視覺化層級篩選。
 
->[AZURE.TIP]   If the filter has the word <bpt id="p1">**</bpt>All<ept id="p1">**</ept> next to it, that means that entire field is being included as a filter.  For example, <bpt id="p1">**</bpt>Chain(All)<ept id="p1">**</ept> in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of <bpt id="p1">**</bpt>FiscalYear is 2013 or 2014<ept id="p1">**</ept> tells us that the report only includes data for the fiscal years of 2013 and 2014.
-
-
-##  <a name="filters-in-reading-view-verus-editing-view"></a>Filters in Reading View verus Editing View
-
-There are two modes for interacting with reports: <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>.  And the filtering capabilities available to you depend on which mode you're in.
-
--   In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
-
--   In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.
+>[AZURE.TIP]   如果篩選器有這個字 **所有** 旁邊，這表示整個欄位包含做為篩選條件。  例如， **Chain(All)** 以下螢幕擷取畫面中告訴我們此報表] 頁面包含所有存放區鏈結的相關資料。  相反地，報表層級篩選的 **FiscalYear 是 2013年或 2014年** 告訴我們報表，只包含 2013年和 2014年會計年度的資料。
 
 
-### <a name="the-filters-pane-in-reading-view"></a>The Filters pane in Reading View
+##  <a name="filters-in-reading-view-verus-editing-view"></a>在讀取檢視 verus 編輯檢視的篩選器
 
-If you only have access to a report in Reading View, the Filters pane looks like this:
+有兩種模式與報表互動︰ [讀取檢視](powerbi-service-interact-with-a-report-in-reading-view.md) 和 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md)。  可供您使用的篩選功能取決於您是在哪一個模式。
+
+-   在 [編輯] 檢視中，您可以加入報表、 頁面和視覺化篩選。 當您儲存報表時，篩選器，都會一起儲存。 篩選器，您已新增，但不是儲存變更，看看在讀取檢視報表的人可以進行互動。
+
+-   在讀取檢視中，您可以互動的任何頁面和視覺化篩選報表中已存在，但您將無法儲存您的篩選器變更。
+
+
+### <a name="the-filters-pane-in-reading-view"></a>在 [讀取] 檢視中的 [篩選] 窗格
+
+如果您只有在讀取檢視報表存取權，[篩選] 窗格看起來像這樣︰
 
 
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-filter-reading-view.png)
 
-So this page of the report has 6 page level filters and 1 report level filter.
+所以此報表的頁面都 6 頁面層級的篩選器和 1 的報告層級的篩選條件。
 
-To see if any visual level filters exist, select a visual. In the image below, the bubble chart has 6 filters applied.
+若要查看任何視覺化的層級篩選是否存在，選取 [視覺效果。 在下圖中，泡泡圖會有 6 套用的篩選器。
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-filter-visual-level.png)
 
-In Reading View, explore the data by modifying the existing filters. Learn how in the article <bpt id="p1">[</bpt>Interact with filters in Reading view<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>
+在讀取檢視中，瀏覽藉由修改現有的篩選條件的資料。 了解如何防範 [互動中讀取檢視篩選條件](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-### <a name="the-filters-pane-in-editing-view"></a>The Filters pane in Editing View
+### <a name="the-filters-pane-in-editing-view"></a>在 [編輯] 檢視中的 [篩選] 窗格
 
-When you have owner permissions for a report and open it in Editing View, you see that <bpt id="p1">**</bpt>Filters<ept id="p1">**</ept> is just one of several editing panes available.
+在您報表的擁有者權限，並編輯檢視中開啟它，您會看到 **篩選** 只是其中幾個編輯窗格可用。
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-add-filter-editing-view.png)
 
-As in Reading View (above) we see that this page of the report has 6 page level filters and 1 report level filter. And by selecting the bubble chart, we'd see it has 6 visual level filters applied.
+在讀取檢視 （如上所述） 我們現在看到這個報表的頁面已 6 頁面層級的篩選器和 1 的報告層級的篩選條件。 並選取泡泡圖中，我們會看到它有 6 visual 層級套用的篩選器。
 
-But in Editing View, there is so much more that we can do with filters and highlighting. The main difference being that we can add new filters. Learn how to do this and so much more in the article <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>
+但在 [編輯] 檢視中，還有很多，我們可以使用篩選器和反白顯示。 主要差異在於我們可以新增新的篩選條件。 了解如何執行此和文件中，甚至 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report.md)
 
-##  <a name="ad-hoc-filterting-and-highlighting"></a>Ad-hoc filterting and highlighting
-Select a field on the report canvas to filter and highlight the rest of the page. Select any empty space in the same visual to remove it. This type of filtering and highlighting is not saved with the report but is fun way to quickly explore data impacts. To fine-tune how this type of cross-filtering and cross-highlighting works, see <bpt id="p1">[</bpt>Visual interactions<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
+##  <a name="ad-hoc-filterting-and-highlighting"></a>臨機操作 filterting 和反白顯示
+選取的欄位來篩選並反白顯示網頁的其餘報表畫布上。 選取的任何空白區域，在相同的視覺效果，將它移除。 這種類型的篩選和反白顯示並不會與報表一起儲存，但其實很有趣的方式來快速瀏覽資料的影響。 若要微調的交叉篩選和交叉反白顯示此類型的運作方式，請參閱 [Visual 互動](powerbi-service-visual-interactions.md)
 
 ![](media/powerbi-service-about-filters-and-highlighting-in-reports/power-bi-adhoc-filter.gif)
 
 ### <a name="see-also"></a>請參閱
 
-<bpt id="p1">[</bpt>Interact with filters and highlighting (in Reading View)<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>
 
-<bpt id="p1">[</bpt>Add a filter to a report (in Editing View)<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>
+            [互動篩選和反白顯示 （在讀取檢視）](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-<bpt id="p1">[</bpt>Take a tour of report filters<ept id="p1">](powerbi-service-how-to-use-a-report-filter.md)</ept>
 
-<bpt id="p1">[</bpt>Change how report visuals cross-filter and cross-highlight each other<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
+            [將篩選加入至報表 （在編輯檢視）](powerbi-service-add-a-filter-to-a-report.md)
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [導覽報表篩選](powerbi-service-how-to-use-a-report-filter.md)
+
+
+            [變更報表的視覺效果交叉篩選及方式跨醒目提示的其他](powerbi-service-visual-interactions.md)
+
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

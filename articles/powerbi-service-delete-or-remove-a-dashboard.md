@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Remove a dashboard"
-   description="Remove a dashboard"
+   pageTitle="移除儀表板"
+   description="移除儀表板"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,27 +20,31 @@
    ms.date="10/01/2016"
    ms.author="mihart"/>
 
-# <a name="remove-a-dashboard"></a>Remove a dashboard  
+# <a name="remove-a-dashboard"></a>移除儀表板  
 
-Dashboards can be removed. Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
+儀表板可以移除。 移除儀表板並不會刪除基礎資料集或是該儀表板與相關聯的任何報表。
 
--   If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace does not remove the dashboard from their Power BI workspace.
+-   如果您的儀表板擁有者，您可以將它移除。 如果您已經與同事共用儀表板，儀表板移除您的 Power BI 工作區不會移除儀表板從其 Power BI] 工作區。
 
--   If a dashboard is shared with you and you no longer want to see it, you can remove it.  Removing a dashboard does not remove it from anyone else's Power BI workspace.
+-   如果已與您共用儀表板，您不再想要看到它，您可以將它移除。  移除儀表板並無法從其他人的 Power BI 工作區中移除。
 
--   If a dashboard is part of an <bpt id="p1">[</bpt>organizational content pack<ept id="p1">](powerbi-service-organizational-content-pack-delete.md)</ept>, the only way to remove it is to remove the associated dataset.
+-   如果儀表板屬於 [組織內容套件](powerbi-service-organizational-content-pack-delete.md), ，移除它的唯一方法是移除相關聯的資料集。
 
-## <a name="to-remove-a-dashboard"></a>To remove a dashboard  
-1.  In the navigation pane, right-click the dashboard to remove.  
+## <a name="to-remove-a-dashboard"></a>若要移除的儀表板  
+1.  在瀏覽窗格中，以滑鼠右鍵按一下要移除的儀表板。  
     ![](media/powerbi-service-delete-or-remove-a-dashboard/delete_or_remove2.png)
 
-2.  Select <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.  Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
+2.  選取 **移除**。  移除儀表板並不會刪除基礎資料集或是該儀表板與相關聯的任何報表。
 
->[AZURE.NOTE] Dashboards that are part of an organizational content packs have a different process for deleting.  See <bpt id="p1">[</bpt>Delete an organizational content pack<ept id="p1">](powerbi-service-organizational-content-pack-delete.md)</ept>.
+>[AZURE.NOTE] 儀表板的組織內容的一部分，組件已刪除的不同處理序。  請參閱 [刪除組織內容組件](powerbi-service-organizational-content-pack-delete.md)。
 
 ## <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Dashboards in Power BI<ept id="p1">](powerbi-service-dashboards.md)</ept>  
-<bpt id="p1">[</bpt>Get Started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [在 Power BI 儀表板](powerbi-service-dashboards.md)  
+
+            [開始使用 Power BI](powerbi-service-get-started.md)  
+
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

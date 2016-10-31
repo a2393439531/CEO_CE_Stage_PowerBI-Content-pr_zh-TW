@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Reports in Power BI"
-   description="Reports in Power BI"
+   pageTitle="在 Power BI 中的報表"
+   description="在 Power BI 中的報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,46 +19,47 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Reports in Power BI
+# 在 Power BI 中的報表
 
-Dashboards, reports, and datasets are at the heart of Power BI. A <bpt id="p1">**</bpt>report<ept id="p1">**</ept> is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.
+儀表板、 報表和資料集是 Power BI 的核心。 A **報表** 的多重遠近景深檢視是在您的資料，以代表不同的結果和深入觀點，從該資料的視覺效果。  報表可能需要單一的視覺效果或完整的視覺效果的頁面。
 
 ![](media/powerbi-service-reports/reportview.png)
 
-Need help understanding the building blocks that make up Power BI?  See <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+需要了解 Power BI 所組成的建置組塊的協助嗎？  請參閱 [Power BI-基本概念](powerbi-service-basic-concepts.md)。
 
-You can <bpt id="p1">[</bpt>create a report from scratch<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> or <bpt id="p2">[</bpt>have one shared with you<ept id="p2">](powerbi-service-share-unshare-dashboard.md)</ept>. And for some kinds of data, Power BI will <bpt id="p1">[</bpt>create a report for you as it adds the dataset<ept id="p1">](powerbi-service-get-data.md)</ept>.  
+您可以 [從頭開始建立報表](powerbi-service-create-a-new-report.md) 或 [有一個與您共用](powerbi-service-share-unshare-dashboard.md)。 與某些類型的資料，將 Power BI [為您建立報表，因為它可提高資料集](powerbi-service-get-data.md)。  
 
 
-## View reports in the navigation pane
+## 在瀏覽窗格中檢視報表
 
-Power BI can have more than one report-- as you add reports, their titles are added to the list under the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> heading (see screenshot below). The report you're currently viewing is highlighted. New reports have a yellow asterisk. Only one report can be open at a time.
+當您加入報表，power BI 可以有多個報表，其標題加入至下方的清單 **報表** 標題 （請參閱以下螢幕擷取畫面）。 您目前正在檢視的報表會反白顯示。 新的報表有一個黃色星號。 一次可以開啟一個報表。
 
 ![](media/powerbi-service-reports/navigator.png)
 
-## For more information about reports:
+## 如需有關報表的詳細資訊︰
 
-From the table of contents (on the left side of this browser page), expand <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> to see all the topics related to Power BI reports.
+從資料表中的內容 （在此瀏覽器頁面的左邊），依序展開 **報表** 若要查看所有 Power BI 報表與相關的主題。
 
-### Tips and troubleshooting
+### 秘訣與疑難排解
 
-- Don't forget that <bpt id="p1">[</bpt>creating a report<ept id="p1">](powerbi-service-create-a-new-report.md)</ept>  requires a <bpt id="p2">[</bpt>dataset<ept id="p2">](powerbi-service-get-data.md)</ept>.  
+- 別忘了， [建立報表](powerbi-service-create-a-new-report.md)  需要 [資料集](powerbi-service-get-data.md)。  
 
-- Make sure you understand the difference between <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. 
+- 請確定您了解差異 [讀取檢視](powerbi-service-interact-with-a-report-in-reading-view.md) 和 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md)。 
 
-- Familiarize yourself with the report editor by <bpt id="p1">[</bpt>Taking a tour<ept id="p1">](powerbi-service-the-report-editor-take-a-tour.md)</ept>.
+- 熟悉報表編輯器 [導覽](powerbi-service-the-report-editor-take-a-tour.md)。
 
-- Modify how your reports display using <bpt id="p1">[</bpt>page display settings<ept id="p1">](powerbi-service-change-report-display-settings.md)</ept>.
+- 修改您的報表顯示使用 [頁面上顯示設定](powerbi-service-change-report-display-settings.md)。
 
-- Do you know the difference between filter, highlight, cross-filter, and cross-highlight? If not, see <bpt id="p1">[</bpt>Filter and highlight data in reports<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+- 您知道篩選、 反白顯示、 交叉篩選和交叉醒目提示的差異嗎？ 如果沒有，請參閱 [篩選並反白顯示報表資料的](powerbi-service-about-filters-and-highlighting-in-reports.md)。
 
-- <bpt id="p1">[</bpt>Focus mode<ept id="p1">](powerbi-service-move-and-resize-a-visualization.md)</ept> and <bpt id="p2">[</bpt>full screen TV mode<ept id="p2">](powerbi-service-dash-and-reports-fullscreen.md)</ept> -- there is a difference.
+- 
+            [焦點模式](powerbi-service-move-and-resize-a-visualization.md) 和 [全螢幕電視模式](powerbi-service-dash-and-reports-fullscreen.md) -有所差異。
 
 
 ## 另請參閱
 
-[Get Started with Power BI](powerbi-service-get-started.md) 
+[開始使用 Power BI](powerbi-service-get-started.md) 
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

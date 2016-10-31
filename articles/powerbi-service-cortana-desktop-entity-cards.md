@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create custom Power BI answer cards for Cortana"
-   description="Create custom answer cards for Cortana in Power BI"
+   pageTitle="建立自訂 Power BI 回應卡 Cortana"
+   description="Cortana Power BI 中建立自訂回應卡"
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
@@ -21,62 +21,62 @@
    ms.author="mihart"/>
 
 
-# Use Power BI to create a custom Answer Page for Cortana
+# 使用 Power BI 建立自訂的回應頁面 Cortana
 
-Use the full capabilities of Power BI to create reports designed specifically to answer Cortana questions.
+若要建立報表，專門設計來解答 Cortana 使用 Power BI 的完整功能。
 
 ## 開始之前
 
-Before you can begin creating custom Answer Pages for Cortana, <bpt id="p1">[</bpt>enable Cortana for Power BI<ept id="p1">](powerbi-service-cortana-enable.md)</ept>.  
+您可以開始建立自訂回應頁面 Cortana，如之前 [Power bi 允許 Cortana](powerbi-service-cortana-enable.md)。  
 
-## Create an Answer Page for Cortana
-An <bpt id="p1">*</bpt>Answer Page<ept id="p1">*</ept> in a report is sized specifically for Cortana so that Cortana can show it as an answer to a question.  To create an Answer Page for Cortana:
+## 建立 Cortana 回應頁面
+ *回應頁面* 在報表中會調整大小，專為 Cortana 讓 Cortana 可以將其顯示為有問題的答案。  若要建立回應頁面 Cortana 的︰
 
-1. We recommend starting with a <bpt id="p1">[</bpt>blank report page<ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+1. 我們建議您從 [空白報表頁面](powerbi-service-add-a-page-to-a-report.md)。
 
-2. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon and choose <bpt id="p2">**</bpt>Page Size &gt; Cortana<ept id="p2">**</ept>.
+2. 在 **視覺效果** ] 窗格中，選取 [小畫家] 圖示，然後選擇 [ **頁面大小 > Cortana**。
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size.png)
 
-3. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
+3. 建立視覺效果或一組您想要出現在 Cortana，以回應特定的問題 （或問題集） 的視覺效果。
 
-4. Ensure that all visuals fit within the page borders.  Optionally, modify display settings, data labels, colors, and backgrounds.  
+4. 請確定所有視覺效果納入頁面框線。  （選擇性） 修改顯示設定、 資料標籤、 色彩和背景。  
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
 
-5. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon and choose <bpt id="p2">**</bpt>Page Information<ept id="p2">**</ept>. Enable Q&amp;A for this visual by moving the slider to <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+5. 將頁面命名，並加入替代名稱。  搜尋結果時，Cortana 就會使用這些名稱。 在 **視覺效果** ] 窗格中，選取 [小畫家] 圖示，然後選擇 [ **頁面資訊**。 藉由移動滑桿，以啟用問與答此視覺 **上**。
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
 
-    >[AZURE.TIP] To improve results, avoid using words that are also column names.
+    >[AZURE.TIP] 若要改善結果，請避免使用同時也資料行名稱。
 
-6. Optionally, if your report has page level filters, you can set <bpt id="p1">**</bpt>Require single selection<ept id="p1">**</ept>. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
+6. （選擇性） 如果您的報表有頁面層級篩選，您可以設定 **需要單一選取**。 Cortana 只會顯示此報表為答案一樣，且只有其中一個，篩選項目問題中指定。
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
-      For example, if you ask Cortana:
+      例如，如果您問 Cortana:
 
-      - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
+      - 「 顯示銷售的存放區名稱 」，此回應頁面不會因為不包含任何項目中所需的頁面層級篩選。
 
-      - "show sales for Cary Lindseys and Charlotte Lindseys," this Answer Page will not appear because you specified more than one item from the required page level filter.
+      - 「 Cary Lindseys 和 Charlotte Lindseys 顯示銷售 」，此回應頁面不會因為指定一個以上的項目所需的頁面層級的篩選條件。
 
-      - "show sales for Charlotte Lindseys," this Answer Page will display.
+      - 「 顯示銷售的 Charlotte Lindseys 」，會顯示此回應頁面。
 
-    Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+    現在，提出問題，包括 Cortana 大小的頁面名稱將會從傳回結果 Cortana。
 
-    >[AZURE.IMPORTANT]  Before your Answer Page can be accessed by Cortana, you will need to <bpt id="p1">[</bpt>Enable the dataset for Cortana<ept id="p1">](powerbi-service-cortana-enable.md)</ept>.
+    >[AZURE.IMPORTANT]  Cortana 可存取回應頁面之前，您必須 [啟用資料集的 Cortana](powerbi-service-cortana-enable.md)。
 
-## How does Cortana order the results?
+## Cortana 如何排序結果？
 
-Results with high scoring answers (such as a complete match of a specified page name) will appear first as a <bpt id="p1">*</bpt>best match<ept id="p1">*</ept> in Cortana. Multiple best matches can appear if there are multiple answers in Power BI. Medium or lower scoring answers, such as answers not based on a named page for Cortana or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
+（例如完成的比對指定的頁面名稱） 的高評分解答的結果將會顯示為第一個 *最符合項目* Cortana 中。 如果 Power BI 中有多個解答，可以出現多個最佳的相符項目。 中或低評分解答，例如不具名的頁面基礎 Cortana 或問題字不了解 Power BI 的答案會列為 Cortana 的最佳相符項目下方的連結。
 
->[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+>[AZURE.NOTE] 新的資料集或自訂 Cortana 回應頁面會加入至 Power BI 並啟用 Cortana 時花費 30 分鐘的時間就會開始出現在 Cortana 的結果。 登入和移出 Windows 10，或在 Windows 10，否則重新啟動 Cortana 程序可讓新的內容會立即出現。
 
 
 ## 請參閱
 
-[Using Cortana with Power BI](powerbi-service-cortana-intro.md)
+[使用 Cortana 與 Power BI](powerbi-service-cortana-intro.md)
 
-[Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
+[開始使用 Power BI Desktop](powerbi-desktop-getting-started.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

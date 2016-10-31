@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Running R Scripts in Power BI Desktop"
-   description="Running R Scripts in Power BI Desktop"
+   pageTitle="在 Power BI Desktop 中執行 R 指令碼"
+   description="在 Power BI Desktop 中執行 R 指令碼"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,60 +20,60 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Running R Scripts in Power BI Desktop
+# 在 Power BI Desktop 中執行 R 指令碼
 
-You can run R scripts directly in Power BI Desktop, and import the resulting datasets into a Power BI Desktop data model.
+您可以直接在 Power BI Desktop，執行 R 指令碼，並產生資料集匯入 Power BI Desktop 資料模型。
 
-## Installing R
+## 安裝 R
 
-To run R scripts in Power BI Desktop, you need to install <bpt id="p1">**</bpt>R<ept id="p1">**</ept> on your local machine. You can download and install <bpt id="p1">**</bpt>R<ept id="p1">**</ept> for free from many locations, including the <bpt id="p2">[</bpt>Revolution Open download page<ept id="p2">](https://mran.revolutionanalytics.com/download/)</ept>, and the <bpt id="p3">[</bpt>CRAN Repository<ept id="p3">](https://cran.r-project.org/bin/windows/base/)</ept>. The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
+若要執行 Power BI Desktop R 指令碼，您需要安裝 **R** 本機電腦上。 您可以下載並安裝 **R** 免費從許多位置，包括 [革命開放下載頁面](https://mran.revolutionanalytics.com/download/), ，而 [CRAN 儲存機制](https://cran.r-project.org/bin/windows/base/)。 目前版本的 Power BI Desktop 中的 R 指令碼支援的安裝路徑中的 Unicode 字元，以及空白 （空的字元）。
 
-## Running R Scripts
-With just a few steps in Power BI Desktop you can run R scripts and create a data model, from which you can create reports, and share them on the Power BI service. R scripting in Power BI Desktop now supports number formats that contain decimals (.) and commas (,).
+## 執行 R 指令碼
+Power BI Desktop 中的幾個步驟中，您可以執行 R 指令碼和建立資料模型，從中您就可以建立報表，並將 Power BI 服務上分享它們。 R 指令碼的 Power BI Desktop 現在支援包含小數點 （.） 和逗號 （，） 的數字格式。
 
-### Prepare an R Script
-To run an R script in Power BI Desktop, create the script in your local R development environment, and make sure it runs successfully.
+### 準備 R 指令碼
+若要執行 Power BI Desktop R 指令碼，在本機 R 開發環境中，建立指令碼並確定已順利執行。
 
-To run the script in Power BI Desktop, make sure the script runs successfully in a new and unmodified workspace. This means that all packages and dependencies must be explicitly loaded and run. You can use <bpt id="p1">*</bpt>source()<ept id="p1">*</ept> to run dependent scripts.
+若要執行 Power BI Desktop 指令碼，請確定指令碼順利執行新的和未修改的工作區中。 這表示，所有套件和相依性必須明確地載入並執行。 您可以使用 *source （)* 執行相依的指令碼。
 
-When preparing and running an R script in Power BI Desktop, there are a few limitations:
--   Only data frames are imported, so make sure the data you want to import to Power BI is represented in a data frame
--   Columns that are typed as Complex and Vector are not imported, and are replaced with error values in the created table.
--   Values that are N/A are translated to NULL values in Power BI Desktop
--   Any R script that runs longer than 30 minutes times out
--   Interactive calls in the R script, such as waiting for user input, halts the script’s execution
--   When setting the working directory within the R script, you <bpt id="p1">*</bpt>must<ept id="p1">*</ept> define a full path to the working directory, rather than a relative path
+當準備和執行 R 指令碼在 Power BI Desktop 時，有一些限制︰
+-   只有資料框架會匯入，因此請確定您要匯入至 Power BI 的資料都會在資料框架
+-   類型為複雜和向量的資料行不會匯入，並會在建立的資料表中的錯誤值取代。
+-   N/A 會轉譯為 Power BI Desktop 中的 NULL 值的值
+-   任何 R 指令碼執行時間超過 30 分鐘的逾時
+-   在 R 指令碼中，等待使用者輸入，例如互動式呼叫中止指令碼執行
+-   設定工作目錄中的 R 指令碼中，當您 *必須* 定義的工作目錄，而非相對路徑的完整路徑
 
 
-### Run your R Script and Import Data
+### 執行 R 指令碼並匯入資料
 
-1.   In Power BI Desktop, the R Script data connector is found in <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>. To run your R Script, select <bpt id="p1">**</bpt>Get Data <ph id="ph1">&amp;gt;</ph> More...<ept id="p1">**</ept>, then select <bpt id="p2">**</bpt>Other <ph id="ph2">&amp;gt;</ph> R Script<ept id="p2">**</ept> as shown in the following image.
+1.   在 Power BI Desktop 中找到的 R 指令碼資料連接器 **取得資料**。 若要執行 R 指令碼，請選取 **取得資料 &gt; 其他...**, ，然後選取 **其他 &gt; R 指令碼** 如下圖所示。
 
     ![](media/powerbi-desktop-r-scripts/r-scripts-1.png)
 
-2.   If R is installed on your local machine, the latest installed version is selected as your R engine. Simply copy your script into the script window and select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.
+2.   如果您的本機電腦上安裝 R，已安裝最新的版本會選取做為 R 引擎。 只要將您的指令碼複製到指令碼] 視窗，然後選取 **確定**。
 
     ![](media/powerbi-desktop-r-scripts/r-scripts-2.png)
 
-3.   If R is not installed, is not identified, or if there are multiple installations on your local machine, expand <bpt id="p1">**</bpt>R Installation Settings<ept id="p1">**</ept> to display installation options, or to select which installation you want to run the R script.
+3.   如果未安裝 R，就不會識別，或者如果有多個安裝在本機電腦上的，展開 **R 安裝設定** 以顯示 [安裝選項，或選取哪一個安裝您想要執行 R 指令碼。
 
     ![](media/powerbi-desktop-r-scripts/r-scripts-3.png)
 
-    If R is installed is not identified, you can explicitly provide its location in the text box provided when you expand <bpt id="p1">**</bpt>R Installation Settings<ept id="p1">**</ept>. In the above image, the path <bpt id="p1">*</bpt>C:\Program Files\R\R-3.2.0<ept id="p1">*</ept> is explicitly provided in the text box.
+    如果已安裝 R 會無法識別，您可以明確地提供它的位置，在文字方塊中提供當您展開 **R 安裝設定**。 在上述映像路徑 *C:\Program Files\R\R-3.2.0* 在文字方塊中明確提供。
 
-    R installation settings are centrally located in the R Scripting section of the Options dialog. To specify your R installation settings, select <bpt id="p1">**</bpt>File &gt; Options and settings<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Options &gt; R Scripting<ept id="p2">**</ept>. If multiple installations of R are available, a drop-down menu appears that allows you to  select which installation to use.
+    [選項] 對話方塊的 R 指令碼區段中，集中 R 安裝設定。 若要指定 R 安裝設定，請選取 **檔案 > 選項和設定** 然後 **選項 > R 指令碼**。 如果有多個安裝 R，則會出現下拉式選單，可讓您選取要使用哪一個安裝。
 
     ![](media/powerbi-desktop-r-scripts/r-scripts-4.png)
 
-4.   Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to run the R Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
+4.   選取 **確定** 執行 R 指令碼。 當指令碼順利執行時，然後您可以選擇新增到 Power BI 模型產生的資料框架。
 
 ### 重新整理
-You can refresh an R script in Power BI Desktop. When you refresh an R script, Power BI Desktop runs the R script again in the Power BI Desktop environment.
+您可以重新整理 Power BI Desktop 中的 R 指令碼。 當您重新整理的 R 指令碼時，Power BI Desktop R 指令碼一次 Power BI Desktop 的環境中執行。
 
 ### 詳細資訊
 
-Take a look at the following additional information about R in Power BI.
+請看看 R 下列其他資訊 Power BI 中。
 
--   [Create R Visuals in Power BI Desktop](powerbi-desktop-r-visuals.md)
+-   [在 Power BI Desktop 建立 R 視覺效果](powerbi-desktop-r-visuals.md)
 
--   [Use an external R IDE with Power BI](powerbi-desktop-r-ide.md)
+-   [使用 Power BI 外部的 R IDE](powerbi-desktop-r-ide.md)

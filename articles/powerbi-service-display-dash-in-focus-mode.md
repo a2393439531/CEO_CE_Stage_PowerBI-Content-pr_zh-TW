@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display a dashboard tile in Focus mode"
-   description="Documentation for displaying a Power BI dashboard tile or report visual in Focus mode, aka Pop Out."
+   pageTitle="儀表板並排顯示中聚焦模式"
+   description="顯示的 Power BI 儀表板磚或焦點模式，亦即顯示出視覺化的報表文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,40 +21,41 @@
    ms.date="08/29/2016"
    ms.author="mihart"/>
 
-# Display a dashboard tile or report visual in Focus mode
+# 顯示儀表板磚或視覺焦點模式的報表
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
 
-## What is Focus mode?  
+## 什麼是焦點模式？  
 
-<bpt id="p1">***</bpt>Focus<ept id="p1">***</ept> mode lets you expand (pop out) a dashboard tile or report visual to see more detail.  While in Focus mode for a dashboard tile, you can view and modify the filters that were applied when this visual was created.  And while in Focus mode for a report visual, you can view and modify the Visual level and Page level filters.
 
->[AZURE.NOTE] Currently, Focus mode is not available for tiles created from Q&amp;A or for map tiles. 
+            ***焦點*** 模式可讓您展開 （pop 外） 的儀表板] 磚或視覺化的報表，以查看詳細資料。  在 [儀表板圖格的焦點模式，您可以檢視和修改此視覺效果建立時已套用的篩選。  而在報表視覺焦點模式下，您可以檢視並修改視覺化層級和頁面層級篩選。
 
->[AZURE.NOTE]  &gt;Focus is different from full screen mode.  Full screen mode is available for <bpt id="p1">[</bpt>dashboards and reports <ept id="p1">](powerbi-service-dash-and-reports-fullscreen.md)</ept> and <bpt id="p2">[</bpt>tiles<ept id="p2">](powerbi-service-display-tile-in-full-screen-mode.md)</ept>.
+>[AZURE.NOTE] 目前，聚焦模式不是可從問答集建立的磚或地圖底圖。 
 
-1.  Hover over the tile or visual and select the <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg)</ph>.  
+>[AZURE.NOTE]  > 重點是從全螢幕模式不同。  全螢幕模式適用於 [儀表板和報表 ](powerbi-service-dash-and-reports-fullscreen.md) 和 [磚](powerbi-service-display-tile-in-full-screen-mode.md)。
+
+1.  將滑鼠停留在磚或視覺和選取 **聚焦模式** 圖示 ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg)。  
 
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_hoverTile-new.jpg)
 
-2.  It opens and fills the entire canvas. 
+2.  它會開啟，並填滿整張畫布。 
 
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocus-new3.jpg)
 
-3.  Expand the Filters pane to see all filters applied to this visual.  
+3.  展開 [篩選] 窗格，以查看所有的篩選套用到此視覺化。  
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters-new2.jpg)
 
-4.  Explore further by modifying the filters and, if you discover something interesting, pin the visual to a dashboard.   
+4.  瀏覽進一步修改篩選條件，如果您發現一些有趣的東西，釘選視覺效果的儀表板。   
 
-6.  Leave Focus mode and return to the dashboard by selecting the Focus mode icon (in the top left corner of the visual).
+6.  離開焦點模式並返回儀表板選取 [焦點模式] 圖示 （在視覺效果的左上角）。
 
-## Go from Focus mode to Full Screen mode
-Once in Focus mode, the tile or visual can then be <bpt id="p1">[</bpt>viewed in full screen (TV Mode.)<ept id="p1">](powerbi-service-display-tile-in-full-screen-mode.md)</ept> Full Screen Mode displays without the distraction of menus and navigation buttons.
+## 從模式焦點移至全螢幕模式
+一旦在焦點模式中，磚或視覺接著可以 [檢視全螢幕 （電視模式）。](powerbi-service-display-tile-in-full-screen-mode.md)全螢幕模式顯示的功能表和瀏覽按鈕所干擾。
 
 
 ## 請參閱  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

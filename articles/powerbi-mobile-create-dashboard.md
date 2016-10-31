@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View dashboards in the Power BI mobile apps"
-   description="You create or connect to dashboards in the Power BI service. Then you can view them in the Power BI mobile apps."
+   pageTitle="Power BI 行動應用程式中檢視儀表板"
+   description="您建立或連接至 Power BI 服務中的儀表板。 然後您可以在 Power BI 行動應用程式中檢視它們。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,52 +19,54 @@
    ms.workload="powerbi"
    ms.date="10/03/2016"
    ms.author="maggies"/>
-# View dashboards in the Power BI mobile apps
+# Power BI 行動應用程式中檢視儀表板
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
+儀表板是貴公司的生命週期和處理程序的入口網站。 儀表板是概觀，從單一位置監視業務的目前狀態。
 
-## Create dashboards in the Power BI service
-**You don't create dashboards in the mobile apps.** 
+## 在 Power BI 服務中建立儀表板
+**行動應用程式中，請勿建立儀表板。** 
 
-To see more dashboards on your mobile device, you need to create or connect to them on your computer. 
+若要查看您的行動裝置上的多個儀表板，您需要建立或連接至這些電腦上。 
 
-1. Go to the Power BI service (<bpt id="p1">[</bpt>https://www.powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>) and <bpt id="p2">[</bpt>sign up for an account<ept id="p2">](powerbi-service-self-service-signup-for-power-bi.md)</ept>.
+1. 移至 Power BI 服務 ([https://www.powerbi.com](https://www.powerbi.com)) 和 [登入帳戶](powerbi-service-self-service-signup-for-power-bi.md)。
 
-2. <bpt id="p1">[</bpt>Create your own Power BI dashboards<ept id="p1">](powerbi-service-create-a-dashboard.md)</ept>, or connect to existing <bpt id="p2">[</bpt>content packs for a variety of services<ept id="p2">](powerbi-content-packs-services.md)</ept>.
+2. 
+            [建立 Power BI 儀表板](powerbi-service-create-a-dashboard.md), ，或連接到現有 [內容的各種服務的組件](powerbi-content-packs-services.md)。
 
-Here's a Power BI dashboard in the Power BI service:
+以下是 Power BI 儀表板中的 Power BI 服務︰
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-service-dashboard-sm.png)
 
 
-## View dashboards in the Power BI mobile apps
+## Power BI 行動應用程式中檢視儀表板
 
-Then these same dashboards will appear automatically in your Power BI mobile app. Dashboards refresh in real time, automatically, so no need to manually refresh them.
+然後這些相同的儀表板也會自動出現在 Power BI 行動應用程式。 儀表板即時，會自動重新整理，因此不需要手動重新整理。
 
-Here's the same dashboard as seen on a mobile phone:
+在行動電話所見，以下是相同的儀表板︰
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard.png)
 
-From here, you can:
+從這裡開始，您可以︰
 
-- Share the dashboard with colleagues <ph id="ph1">![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png)</ph>.
-- <bpt id="p1">[</bpt>Make the dashboard one of your favorites<ept id="p1">](powerbi-mobile-favorites.md)</ept> <ph id="ph1">![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png)</ph>.
-- Tap the arrow next to the dashboard name to go back to My Workspace.
+- 與同事共用儀表板 ![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png)。
+- 
+            [讓您的最愛的其中一個儀表板](powerbi-mobile-favorites.md) ![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png)。
+- 點選要回到我的工作區的儀表板名稱旁的箭號。
 
     ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-breadcrumb.png)
 
-## Create a phone view of a dashboard in the Power BI service
+## 在 Power BI 服務建立電話檢視儀表板
 
-If you're the dashboard owner, <bpt id="p1">*</bpt>in the Power BI service<ept id="p1">*</ept> you can create a view of the dashboard specifically for phones in portrait mode. 
+如果您的儀表板擁有者 *在 Power BI 服務* 您可以建立專為手機的儀表板檢視直向模式。 
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-phone-dashboard-in-progress.png)
 
-Read more about <bpt id="p1">[</bpt>creating a phone view of a dashboard<ept id="p1">](powerbi-service-create-dashboard-phone-view.md)</ept>.
+深入了解 [建立電話檢視儀表板](powerbi-service-create-dashboard-phone-view.md)。
 
 
-### More about dashboards in the Power BI mobile apps
-- [Dashboards in the iPad app for Power BI for iOS](powerbi-mobile-dashboards-on-the-ipad-app.md)
-- [Dashboards in the iPhone app for Power BI for iOS](powerbi-mobile-dashboards-in-the-iphone-app.md)
-- [Dashboards in the Power BI mobile app for Windows 10 devices](powerbi-mobile-dashboards-in-the-win10phone-app.md)
-- [Dashboards in the Power BI app for Android phones](powerbi-mobile-dashboards-in-the-android-app.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+### 進一步了解 Power BI 行動應用程式中的儀表板
+- [在 Power BI 的 iPad 應用程式適用於 iOS 的儀表板](powerbi-mobile-dashboards-on-the-ipad-app.md)
+- [在 iPhone iOS 的應用程式的 Power BI 儀表板](powerbi-mobile-dashboards-in-the-iphone-app.md)
+- [在 Power BI 行動應用程式適用於 Windows 10 裝置的儀表板](powerbi-mobile-dashboards-in-the-win10phone-app.md)
+- [儀表板中 Android 手機的 Power BI 應用程式](powerbi-mobile-dashboards-in-the-android-app.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

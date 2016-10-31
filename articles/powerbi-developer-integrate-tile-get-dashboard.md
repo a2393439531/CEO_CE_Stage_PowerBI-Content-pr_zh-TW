@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a Power BI dashboard"
-   description="Walkthrough to Integrate a tile into an app - Get a Power BI dashboard"
+   pageTitle="取得 Power BI 儀表板"
+   description="逐步解說將磚整合到應用程式-取得 Power BI 儀表板"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,33 +20,35 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 2: Get a dashboard
+# 步驟 2︰ 取得一個儀表板
 
 ## 簡介
 
-In <bpt id="p1">**</bpt>step 1<ept id="p1">**</ept> of Integrate a tile into an app, <bpt id="p2">[</bpt>Register a web app with Azure AD<ept id="p2">](powerbi-developer-integrate-tile-register.md)</ept>, you register a web app so that your app can authenticate to <bpt id="p3">**</bpt>Azure Active Directory<ept id="p3">**</ept>. In this step, you use an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> API to get a dashboard. After you get a dashboard, you can get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> tile.
+在 **步驟 1** 整合到應用程式磚的 [向 Azure AD 註冊 web 應用程式](powerbi-developer-integrate-tile-register.md), ，您註冊 web 應用程式，讓您的應用程式可以驗證至 **Azure Active Directory**。 在此步驟中，您會使用 **存取權杖**, ，而 **Power BI** API 來取得儀表板。 取得一個儀表板之後，您可以取得 **Power BI** 並排顯示。
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-dashboard.png)
 
-To get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> dashboard, you use the <bpt id="p2">[</bpt>Get Dashboards<ept id="p2">](https://msdn.microsoft.com/library/mt465739.aspx)</ept> operation which gets a list of <bpt id="p3">**</bpt>Power BI<ept id="p3">**</ept> dashboards. From the list of dashboards, you can get a dashboard id. Once you have a dashboard id, you can get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> tile.
+若要取得 **Power BI** 儀表板，使用 [取得儀表板](https://msdn.microsoft.com/library/mt465739.aspx) 作業就會取得一份 **Power BI** 儀表板。 從清單中的儀表板，您可以取得儀表板識別碼。 儀表板識別碼之後，您可以取得 **Power BI** 並排顯示。
 
-Before you can call the <bpt id="p1">[</bpt>Get Dashboards<ept id="p1">](https://msdn.microsoft.com/library/mt465739.aspx)</ept> operation, or any other <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> operation, you need to get an Azure Active Directory <bpt id="p3">**</bpt>authentication access token<ept id="p3">**</ept> (access token). An <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> is used to allow your app access to <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> dashboards and tiles. To learn more about Azure Active Directory <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> flow, see <bpt id="p2">[</bpt>Azure AD Authorization Code Grant Flow<ept id="p2">](https://msdn.microsoft.com/library/azure/dn645542.aspx)</ept>. The next section shows you how to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> in a web app.
+您可以呼叫之前 [取得儀表板](https://msdn.microsoft.com/library/mt465739.aspx) 作業，或任何其他 **Power BI** 作業，您需要取得 Azure Active Directory **驗證存取權杖** （存取權杖）。  **存取權杖** 可讓您的應用程式存取 **Power BI** 儀表板和並排顯示。 若要深入了解 Azure Active Directory **存取權杖** 流程，請參閱 [Azure AD 授權碼授與流程](https://msdn.microsoft.com/library/azure/dn645542.aspx)。 下一節中會示範如何取得 **存取權杖** 的 web 應用程式。
 
 <a name="get-token"/>
-## Get an authentication access token
+## 取得驗證存取權杖
 
-Here's how to get an authentication access token to call a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> operation.
+以下是如何取得驗證的存取權杖來呼叫 **Power BI** 作業。
 
--   <bpt id="p1">**</bpt>Step 1:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get an authorization code from Azure AD<ept id="p2">](#auth-code)</ept>
--   <bpt id="p1">**</bpt>Step 2:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get an access token from authorization code<ept id="p2">](#access-token)</ept>
+-   
+            **步驟 1:** [從 Azure AD 取得授權碼](#auth-code)
+-   
+            **步驟 2:** [從授權碼取得存取權杖](#access-token)
 
 <a name="auth-code"/>
-### Step 1: Get an authorization code from Azure AD
+### 步驟 1︰ 從 Azure AD 取得授權碼
 
-The first step to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> is to get an authorization code from <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept>. To do this, you construct a query string with the following properties, and redirect to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept>.
+若要取得第一個步驟 **存取權杖** 是取得授權碼從 **Azure AD**。 若要這樣做，請建構查詢字串具有下列屬性，並重新導向至 **Azure AD**。
 
 
-**Authorization code query string**
+**授權程式碼查詢字串**
 
 ```
 var @params = new NameValueCollection
@@ -68,9 +70,9 @@ var @params = new NameValueCollection
 };
 ```
 
-After you construct a query string, you redirect to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> to get an <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>.  Below is a complete C# method to construct an <bpt id="p1">**</bpt>authorization code<ept id="p1">**</ept> query string, and redirect to <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept>. In the next step, you get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> using the <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>.
+建構查詢字串之後，您重新導向至 **Azure AD** 取得 **授權碼**。  以下是完整 C# 方法來建構 **授權碼** 查詢字串，並重新導向至 **Azure AD**。 在下一個步驟中，您會得到 **存取權杖** 使用 **授權碼**。
 
-**Get authorization code**
+**取得授權碼**
 
 ```
 public void GetAuthorizationCode()
@@ -114,11 +116,11 @@ public void GetAuthorizationCode()
 ```
 
 <a name="access-token"/>
-### Step 2: Get an access token from authorization code
+### 步驟 2︰ 取得存取權杖的授權碼
 
-In step 1 to get an authentication access token, you get an <bpt id="p1">**</bpt>authorization code<ept id="p1">**</ept> from Azure AD. Once <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> redirects back to your web app with an <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>, you use the <bpt id="p3">**</bpt>authorization code<ept id="p3">**</ept> to get an access token. Below is a C# method to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>. In the next section, you get a <bpt id="p1">**</bpt>dashboard<ept id="p1">**</ept> using an <bpt id="p2">**</bpt>access token<ept id="p2">**</ept>.
+在步驟 1 中取得驗證存取權杖，您會得到 **授權碼** 從 Azure AD。 一次 **Azure AD** 重新導向回到您的 web 應用程式與 **授權碼**, ，您使用 **授權碼** 以取得存取權杖。 以下是 C# 方法來取得 **存取權杖**。 在下一節中，您會得到 **儀表板** 使用 **存取權杖**。
 
-**Get access token**
+**取得存取權杖**
 
 ```
 public string GetAccessToken(string authorizationCode, string clientID, string clientSecret, string redirectUri)
@@ -142,11 +144,11 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
 }
 ```
 
-## Get dashboard using access token
+## 取得儀表板使用存取權杖
 
-Now that you have an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, you can call the <bpt id="p2">[</bpt>Get Dashboards<ept id="p2">](https://msdn.microsoft.com/library/mt465739.aspx)</ept> operation. The <bpt id="p1">[</bpt>Get Dashboards<ept id="p1">](https://msdn.microsoft.com/library/mt465739.aspx)</ept> operation returns a list of dashboards. You can get a dashboard from the list of dashboards. Below is a complete C# method to get a dashboard. Once you have a <bpt id="p1">**</bpt>dashboard<ept id="p1">**</ept>, you can get a <bpt id="p2">**</bpt>tile<ept id="p2">**</ept>. See <bpt id="p1">[</bpt>Step 3: Get a Power BI tile<ept id="p1">]( powerbi-developer-integrate-tile-get-tile.md)</ept>.
+您現在已 **存取權杖**, ，您可以呼叫 [取得儀表板](https://msdn.microsoft.com/library/mt465739.aspx) 作業。  [取得儀表板](https://msdn.microsoft.com/library/mt465739.aspx) 作業會傳回一份儀表板。 您可以從清單中的儀表板取得儀表板。 以下是完整 C# 方法來取得儀表板。 一旦 **儀表板**, ，您可以取得 **磚**。 請參閱 [步驟 3︰ 取得 Power BI 磚]( powerbi-developer-integrate-tile-get-tile.md)。
 
-**Get dashboard**
+**取得儀表板**
 
 ```
 //Get a dashboard id.
@@ -195,17 +197,17 @@ public class PBIDashboard
 
 ## 下一個步驟
 
-To integrate a tile into an app, you need to get a tile. In the next step, you learn how to <bpt id="p1">[</bpt>Get a Power BI tile<ept id="p1">](powerbi-developer-integrate-tile-get-tile.md)</ept>.
+若要將磚整合到應用程式，您需要取得並排顯示。 在下一個步驟中，您了解如何 [取得 Power BI 磚](powerbi-developer-integrate-tile-get-tile.md)。
 
-[Next Step &gt;](powerbi-developer-integrate-tile-get-tile.md)
+[下一步 >](powerbi-developer-integrate-tile-get-tile.md)
 
 ## 請參閱
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
-[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
-[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
-[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
-[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)  
-[Step 3: Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[將磚整合到應用程式逐步解說](powerbi-developer-integrate-tile.md)  
+[整合的並排顯示範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[設定整合的並排顯示範例](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Azure AD 授權碼授與流程](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
+[取得作業儀表板](https://msdn.microsoft.com/library/mt465739.aspx)  
+[步驟 3︰ 取得 Power BI 磚](powerbi-developer-integrate-tile-get-tile.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

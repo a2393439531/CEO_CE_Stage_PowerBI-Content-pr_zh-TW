@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Refresh a dataset created from a Power BI Desktop file - local"
-   description="Refresh a dataset created from a Power BI Desktop file on a local drive"
+   pageTitle="重新整理從 Power BI Desktop 檔案-本機建立的資料集"
+   description="重新整理從本機磁碟機上的 Power BI Desktop 檔案建立資料集"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,46 +20,46 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Refresh a dataset created from a Power BI Desktop file on a local drive  
+# 重新整理從本機磁碟機上的 Power BI Desktop 檔案建立資料集  
 
-## What’s supported?  
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+## 支援的項目？  
+在 Power BI，立即重新整理和重新整理排程時，才支援建立從 Power BI Desktop 檔案匯入從何處取得資料/查詢編輯器用來連接到並從任何下列資料來源載入資料的本機磁碟機的資料集︰  
 
-### Power BI Gateway - Personal
--   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
--   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+### Power BI 閘道個人
+-   Power BI Desktop 的取得資料和查詢編輯器中顯示的所有線上資料來源。
+-   除了 Hadoop 檔案 (HDFS) 和 Microsoft Exchange Power BI Desktop 的取得資料和查詢編輯器] 中顯示所有內部部署資料來源。
 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-> [AZURE.NOTE] A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+> [AZURE.NOTE] 閘道必須安裝和執行中，Power BI，以連接到內部部署資料來源重新整理資料集。
 
-You can perform a one-time, manual refresh right in Power BI Desktop by selecting Refresh on the Home ribbon. When you select Refresh here, the data in the <bpt id="p1">*</bpt>file’s<ept id="p1">*</ept> model is refreshed with updated data from the original data source. This kind of refresh, entirely from within the Power BI Desktop application itself, is different from manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
+您可以執行一次，手動重新整理 Power BI Desktop 中選取 [首頁] 功能區上的 [重新整理的權限。 當您重新整理在這裡選取、 在資料 *檔的* 的原始資料來源更新資料重新整理模型。 這類的重新整理，完全由 Power BI Desktop 內應用程式本身，不同於 Power BI 中的手動或排程重新整理且請務必了解其差異。
 
 ![](media/powerbi-refresh-desktop-file-local-drive/pbix-refresh.png)
 
-When you import your Power BI Desktop file from a local drive, data, along with other information about the model is loaded into a dataset in the Power BI service. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using <bpt id="p1">**</bpt>Refresh now<ept id="p1">**</ept> or you can setup a refresh schedule by using <bpt id="p2">**</bpt>Schedule Refresh<ept id="p2">**</ept>.
+當您從匯入 Power BI Desktop 檔案的本機磁碟機時，以及有關模型的其他資訊的資料載入 Power BI 服務中的資料集。 在 Power BI 服務中，沒有 Power BI Desktop，您會想要重新整理在資料集中的資料，因為那是您的報表，請在 Power BI 服務，為基礎。 因為外部資料來源，您可以使用手動重新整理資料集 **立即重新整理** 或您可以藉由設定重新整理排程 **排程重新整理**。
 
-When you refresh the dataset, Power BI does not connect to the file on the local drive to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data it then loads into the dataset. 
+當您重新整理資料集時，Power BI 未連接到要查詢的本機磁碟機上的檔案，更新資料。 它會在資料集中使用資訊直接連接到資料來源以更新資料的查詢它，然後載入資料集。 
 
-> [AZURE.NOTE] Refreshed data in the dataset is not synchronized back to the file on the local drive.
+> [AZURE.NOTE] 重新整理資料集內的資料不同步回至本機磁碟機上的檔案。
 
-## How do I schedule refresh?  
-When you setup a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+## 我要如何排程重新整理？  
+當您安裝的重新整理排程時，Power BI 會直接連接到資料來源連接資訊和認證，使用更新的資料，資料集查詢，然後將更新的資料載入資料集。 也會更新報表和 Power BI 服務中的資料集為基礎的儀表板中的任何視覺效果。
 
-For details on how to setup schedule refresh, see <bpt id="p1">[</bpt>Configure Schedule Refresh<ept id="p1">](powerbi-refresh-scheduled-refresh.md)</ept>.
+如需有關如何安裝排程重新整理的詳細資訊，請參閱 [設定排程重新整理](powerbi-refresh-scheduled-refresh.md)。
 
-## When things go wrong  
-When things go wrong, it’s usually because Power BI can’t sign into data sources, or if the dataset connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+## 不測風雲時  
+發生錯誤時，通常是因為 Power BI 無法登入的資料來源，或如果資料集連接到內部部署資料來源，閘道已離線。 請確定 Power BI 可登入的資料來源。 如果您用來登入的資料來源的密碼變更，或從資料來源取得登出 Power BI，請務必嘗試登入您的資料來源中資料來源認證一次。
 
-Be sure to leave the <bpt id="p1">**</bpt>Send refresh failure notification email to me<ept id="p1">**</ept> checked. You’ll want to know right away if a scheduled refresh fails.
+請務必保留 **傳送重新整理失敗通知電子郵件給我** 檢查。 您會想要立刻知道如果排定的重新整理失敗。
 
 ## 疑難排解
 
-Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
+有時候重新整理資料可能不會如預期般。 通常這會是與閘道連線的問題。 看看閘道疑難排解文件的工具和已知的問題。
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[疑難排解 Power BI 閘道-個人](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

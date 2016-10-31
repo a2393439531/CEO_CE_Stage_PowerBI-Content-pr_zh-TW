@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Load a Power BI report into an IFrame"
-   description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
+   pageTitle="Power BI 報表載入 IFrame"
+   description="若要將報告整合到應用程式的逐步解說 IFrame 中載入報表"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,17 +20,17 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 3: Load a report into an IFrame
+# 步驟 3︰ 將報表載入 IFrame
 
 ## 簡介
 
-In <bpt id="p1">**</bpt>step 2<ept id="p1">**</ept> of Integrate a report into an app, <bpt id="p2">[</bpt>Get a Power BI report<ept id="p2">](powerbi-developer-integrate-report-get-report.md)</ept>, you get a Power BI report. In this step, you load a report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>.
+在 **步驟 2** 整合至應用程式中，報表的 [取得 Power BI 報表](powerbi-developer-integrate-report-get-report.md), ，取得 Power BI 報表。 您可以在此步驟中，載入至報表 **IFrame**。
 
 ![](media\powerbi-developer-integrate-report\integrate-report-load-report-iframe.png)
 
-To load a report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>, you set the <bpt id="p2">**</bpt>src<ept id="p2">**</ept> attribute of an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>embedUrl<ept id="p4">**</ept> property of a <bpt id="p5">**</bpt>report<ept id="p5">**</ept>, and create an <bpt id="p6">**</bpt>onload<ept id="p6">**</ept> handler to post a message with an <bpt id="p7">**</bpt>access token<ept id="p7">**</ept> to get access to the report visual. Below is JavaScript code to load a report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>.
+若要載入至報表 **IFrame**, ，您設定 **src** 屬性 **IFrame** 至 **embedUrl** 屬性 **報表**, ，並建立 **onload** 張貼的訊息處理常式 **存取權杖** 才能存取報表視覺化。 以下是載入至報表的 JavaScript 程式碼 **IFrame**。
 
-**Load a report into an IFrame**
+**IFrame 中載入報表**
 
 ```
 //Configure IFrame for the report after you have an Access Token. See Default.aspx.cs to learn how to get an Access Token
@@ -66,18 +66,18 @@ function postActionLoadReport() {
 }
 ```
 
-If you downloaded and ran the <bpt id="p1">[</bpt>Integrate a report sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept>, the sample will look similar to below.
+如果您下載並執行 [整合報表範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app), ，看起來類似下列範例。
 
 ![](media\powerbi-developer-integrate-report\integrate-report-sample.png)
 
 ## 結論
-In this walkthrough you learned how to integrate a report into an app by getting a report, and then loading the report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a report sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept>  which shows all the parts working to embed a report into an ASP.NET web app. You can also view the complete <bpt id="p1">[</bpt>Integrate a report into an app code listing<ept id="p1">](powerbi-developer-integrate-report-code.md)</ept>.
+在本逐步解說中，您學會如何取得在報表中，然後載入至報表將報表整合到應用程式 **IFrame**。 您可以下載完整 [整合報表範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  會顯示所有組件，將報表內嵌至 ASP.NET web 應用程式運作。 您也可以檢視完整 [將報告整合到應用程式程式碼清單](powerbi-developer-integrate-report-code.md)。
 
 ## 請參閱
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
-[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
-[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
-[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[將報告整合到應用程式逐步解說](powerbi-developer-integrate-report.md)  
+[整合的報表範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[設定整合的報表範例](powerbi-developer-integrate-report-register.md#configure-sample)  
+[取得報表作業](https://msdn.microsoft.com/library/mt634543.aspx)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

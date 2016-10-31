@@ -1,19 +1,19 @@
-## How the gateway works 
+## 閘道器的運作方式 
 
 ![on-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
 
-Let’s first look at what happens when a user interacts with an element connected to an on-premises data source. 
+讓我們先看看使用者與連線至內部部署資料來源的項目互動時，會發生什麼事。 
 
-> [AZURE.NOTE] For Power BI, you will need to configure a data source for the gateway.
+> [AZURE.NOTE] Power bi，您必須設定閘道器的資料來源。
 
-1.  A query will be created by the cloud service, along with the encrypted credentials for the on-premises data source, and sent to the queue for the gateway to process.
+1.  將雲端服務，以及內部資料來源的加密認證所建立的查詢，並將它傳送至閘道處理佇列中。
 
-2.  The gateway cloud service will analyze the query and will push the request to the <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](https://azure.microsoft.com/documentation/services/service-bus/)</ept>.
+2.  閘道器雲端服務會分析查詢，並將推播要求 [Azure 服務匯流排](https://azure.microsoft.com/documentation/services/service-bus/)。
 
-3.  The on-premises data gateway polls the <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](https://azure.microsoft.com/documentation/services/service-bus/)</ept> for pending requests.
+3.  內部資料閘道民調 [Azure 服務匯流排](https://azure.microsoft.com/documentation/services/service-bus/) 的暫止要求。
 
-4.  The gateway gets the query, decrypts the credentials and connects to the data source(s) with those credentials.
+4.  閘道取得的查詢、 解密認證，並連接到資料來源，使用這些認證。
 
-5.  The gateway sends the query to the data source for execution.
+5.  閘道會將查詢傳送至資料來源，以便執行。
 
-6.  The results are sent from the data source, back to the gateway, and then onto the cloud service. The service then uses the results.
+6.  結果資料來源傳送至閘道器，再到雲端服務。 服務接著會將結果。

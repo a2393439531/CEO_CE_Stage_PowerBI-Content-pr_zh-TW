@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Spark on HDInsight with DirectQuery"
-   description="Spark on HDInsight with DirectQuery"
+   pageTitle="DirectQuery 與 HDInsight 上的 Spark"
+   description="DirectQuery 與 HDInsight 上的 Spark"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,50 +20,50 @@
    ms.date="09/09/2016"
    ms.author="asaxton"/>
 
-# Spark on HDInsight with DirectQuery
+# DirectQuery 與 HDInsight 上的 Spark
 
-Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports based on data and metric you already have in your Spark cluster. With DirectQuery, queries are sent back to your Azure HDInsight Spark cluster as you explore the data in the report view. This experience is suggested for users who are familiar with the entities they connect to.
+DirectQuery 以在 Azure HDInsight Spark 可讓您建立動態報告根據資料和度量您已在 Spark 叢集。 使用 DirectQuery，查詢會傳送回到您的 Azure HDInsight Spark 叢集，當您瀏覽 [報表] 檢視中的資料。 對於熟悉使用者與它們連線至實體，建議這種經驗。
 
-> [AZURE.WARNING] Automatic tile refresh has been disabled for dashboard tiles built on Spark based datasets. You can select <bpt id="p1">**</bpt>Refresh Dashboard Tiles<ept id="p1">**</ept> to refresh manually. Reports are not impacted and should remain up-to-date. 
+> [AZURE.WARNING] Spark 基礎資料集上建置的儀表板磚已停用自動並排顯示重新整理。 您可以選取 **重新整理儀表板磚** 手動重新整理。 報表不會受到影響，應保持最新狀態。 
 
--   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
--   Q&amp;A is not available for DirectQuery datasets.
--   Schema changes are not picked up automatically.
--   Groups are only available with <bpt id="p1">[</bpt>Power BI Pro<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>.
+-   每個動作，例如選取資料行或新增篩選條件會傳送回資料庫 – 查詢，選取非常大的欄位之前，請考慮選擇適當的視覺效果類型。
+-   問答集不適用於 DirectQuery 資料集。
+-   不會自動挑選結構描述變更。
+-   群組，僅適用於 [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md)。
 
-These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at <bpt id="p1">[</bpt>Use BI tools with Apache Spark on Azure HDInsight<ept id="p1">](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)</ept>
+隨著我們持續改善使用體驗，可能會變更這些限制和備註。 連接的步驟如下所述。  其他文件，請參閱 [使用 BI 工具，使用 Azure HDInsight 上的 Apache Spark](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
 
-1. Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> at the bottom of the left navigation pane.  
+1. 選取 **取得資料** 左的導覽窗格的底部。  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/getdata3.png)  
 
-2. Select <bpt id="p1">**</bpt>Databases &amp; More<ept id="p1">**</ept>.  
+2. 選取 **資料庫和其他資訊**。  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/GetData.png)
 
-3. Select the <bpt id="p1">**</bpt>Spark on HDInsight<ept id="p1">**</ept> connector and choose <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.  
+3. 選取 **HDInsight 上的 Spark** 連接器，然後選擇 **連接**。  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/Connect.png)  
 
-4. Enter the name of the <bpt id="p1">**</bpt>server<ept id="p1">**</ept> you want to connect to, as well as your <bpt id="p2">**</bpt>username<ept id="p2">**</ept> and <bpt id="p3">**</bpt>password<ept id="p3">**</ept>. The server is always in the form <ph id="ph1">\&lt;</ph>clustername<ph id="ph2">\&gt;</ph>.azurehdinsight.net, see more details about finding these values below.  
+4. 輸入的名稱 **伺服器** 您想要連接，以及您 **username** 和 **密碼**。 伺服器一定是在表單中 \<clustername\>。 azurehdinsight.net，查看更多詳細尋找下面這些值。  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/parameters.png)  
 
-5. Once connected, you'll see a new dataset with named “SparkDataset”. You can also access the dataset through the placeholder tile that is created.  
+5. 連線之後，您會看到新的具名 「 SparkDataset 」 資料集。 您也可以透過建立 [預留位置] 磚存取資料集。  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/tile.PNG)  
 
-6. Drilling into the dataset, you can explore all of the tables and columns in your database. Selecting a column will send a query back to the source, dynamically creating your visual. These visuals can be saved in a new report, and pinned back to your dashboard.
+6. 深入探索資料集，您可以瀏覽的所有資料表和資料行在資料庫中。 選取資料行，將查詢傳送回來源，以動態方式建立視覺效果。 這些視覺效果可儲存在新的報表，並釘選回到您的儀表板。
 
-## Finding your Spark on HDInsight parameters  
-The server is always in the form <ph id="ph1">\&lt;</ph>clustername<ph id="ph2">\&gt;</ph>.azurehdinsight.net, and can be found in your portal:  
+## 尋找您的 Spark HDInsight 參數  
+伺服器一定是在表單中 \<clustername\>。 azurehdinsight.net，可以在您的入口網站中找到︰  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/ParametersFull.png)
 
-The username and password can also be found in the portal.
+使用者名稱和密碼也可以在入口網站中找到。
 
 ## 疑難排解  
-If you're hitting issues executing queries against your cluster, verify the application is still running and restart if necessary.
+如果您要達到問題對您的叢集執行查詢，確認應用程式仍在執行中，必要時重新啟動。
 
-You can also allocate additional resources in the Resource Manager:  
+您也可以將配置的資源管理員中的其他資源︰  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/ResourceManager.png)
 
 ## 請參閱  
 
-[Get started with Power BI](powerbi-service-get-started.md)  
-[Get Data for Power BI](powerbi-service-get-data.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[開始使用 Power BI](powerbi-service-get-started.md)  
+[取得 Power BI 中的資料](powerbi-service-get-data.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

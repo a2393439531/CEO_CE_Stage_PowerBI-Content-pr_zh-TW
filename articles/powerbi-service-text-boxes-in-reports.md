@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Text boxes in Power BI reports"
-   description="Documentation about adding and creating text boxes in a Microsoft Power BI report."
+   pageTitle="Power BI 報表中的文字方塊"
+   description="新增和建立 Microsoft Power BI 報表中的文字方塊中的相關文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,35 +19,35 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Text Boxes in Power BI reports
+# Power BI 報表中的文字方塊
 
-In Editing View, add a text box to a report and then pin it to a dashboard. 
+在 [編輯] 檢視中，將文字方塊加入報表，然後將它釘選到儀表板。 
 
-##  Add a text box to a report
-1.  Place your cursor anywhere on the report canvas and select <bpt id="p1">**</bpt>Text Box<ept id="p1">**</ept>.
+##  將文字方塊加入報表
+1.  將游標放在報表畫布上的任何位置，然後選取 **文字方塊**。
 
     ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox.png)
 
-2.  Type your text into the text box and, optionally, format font, color, and text alignment. 
+2.  您的文字輸入文字方塊中，並選擇性地格式字型、 色彩以及文字對齊方式。 
 
     ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox2.png)
 
-3.  To position the text box, select the grey area at the top and drag. And to resize the Text Box, select and drag any of the outline handles. 
+3.  若要將文字方塊中，選取上方的灰色區域並拖曳。 要調整大小的文字方塊中，選取並拖曳任何外框的控制代碼。 
 
     ![](media/powerbi-service-text-boxes-in-reports/TextBoxSmaller.gif)
 
-4.  To close the text box, select any blank space on the report canvas.
+4.  若要關閉 [] 文字方塊中，選取報表畫布上的任何空白區域。
 
-5.  Select the pin icon  <ph id="ph1">![](media/powerbi-service-text-boxes-in-reports/PBI_PinTile.png)</ph> to pin the text box to a dashboard. 
+5.  選取 [釘選圖示  ![](media/powerbi-service-text-boxes-in-reports/PBI_PinTile.png) 釘選到儀表板的文字方塊。 
 
 ### 請參閱
 
-[Add a hyperlink to a text box](powerbi-service-add-a-hyperlink-to-a-text-box.md)
+[加入文字方塊中的超連結](powerbi-service-add-a-hyperlink-to-a-text-box.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display a dashboard tile in full screen mode (TV mode)"
-   description="Display a dashboard tile in full screen TV mode"
+   pageTitle="儀表板並排顯示以全螢幕模式 （電視模式）"
+   description="儀表板並排顯示以全螢幕電視"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,46 +20,47 @@
    ms.date="08/29/2016"
    ms.author="mihart"/>
 
-# Display a dashboard tile in full screen mode
+# 在全螢幕模式中顯示儀表板] 磚
 
-Tiles must first be <bpt id="p1">[</bpt>popped out<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept> before they can be displayed in full screen mode.
+並排顯示，必須先 [彈出](powerbi-service-display-dash-in-focus-mode.md) 它們可以在全螢幕模式中顯示之前。
 
-## What is Full Screen Mode?
+## 什麼是全螢幕模式？
 
-Display your <bpt id="p1">[</bpt>dashboards, reports<ept id="p1">](powerbi-service-dash-and-reports-fullscreen.md)</ept>, and tiles without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is sometimes referred to as TV Mode.
+顯示您 [儀表板、 報告](powerbi-service-dash-and-reports-fullscreen.md), ，和圖磚，而不受干擾的功能表和導覽按鈕。  您一眼隨時取得您企業的系統管理員權仗的完整檢視。 這有時候稱為電視模式。
 
-Some uses for full screen mode are:
+全螢幕模式的一些用法如下︰
 
-- presenting your tile at a meeting or conference
-- displaying your tile in an office on a dedicated large screen or projector
-- looking at your tile on a small screen
-- reviewing your tile in locked mode -- you can touch the screen or mouse over the tile without opening the underlying report
+- 呈現您在會議或會議的標題
+- 在辦公室專用大螢幕或投影機上顯示磚
+- 查看小型螢幕上的磚
+- 檢閱您的標題中的鎖定模式-您可以透過磚觸控螢幕或滑鼠，而不需要開啟基礎的報表
 
 
-## To turn full screen mode on (and off)
+## 若要啟動全螢幕模式 （或關閉）
 
-1. <bpt id="p1">[</bpt>Pop out the tile and display it in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+1. 
+            [彈出磚，並顯示在聚焦模式](powerbi-service-display-dash-in-focus-mode.md)。
 
     ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen.png)
 
-    Your tile fills the report canvas.
+    您的並排顯示填滿報表畫布。
 
     ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen2.png)
 
-3. From the top menubar, select this icon    <ph id="ph1">![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen-icon.png)</ph> to display the tile in Full Screen mode.
+3. 從頂端功能表列中，選取此圖示    ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen-icon.png) 以全螢幕模式顯示磚。
 
-4.  In full screen mode, the tile fills your entire screen.
+4.  在全螢幕模式中，並排顯示填滿整個螢幕。
 
     ![](media/powerbi-service-display-tile-in-full-screen-mode/power-bi-full-screen4.png)
 
-4. To exit full screen mode, select the <bpt id="p1">**</bpt>Exit Full Screen<ept id="p1">**</ept> icon located in the bottom right corner of the screen.
+4. 若要結束全螢幕模式，請選取 **結束全螢幕** 位於螢幕的右下角的圖示。
 
     ![](media/powerbi-service-display-tile-in-full-screen-mode/powerbi-full-screen-close.png)
 
 ## 請參閱
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

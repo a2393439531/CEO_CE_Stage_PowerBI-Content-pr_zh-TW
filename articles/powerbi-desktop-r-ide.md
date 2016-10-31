@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use an external R IDE with Power BI"
-   description="You can launch and use an external IDE with Power BI"
+   pageTitle="使用 Power BI 外部的 R IDE"
+   description="您可以啟動並使用 Power BI 外部的 IDE"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,83 +20,88 @@
    ms.date="09/15/2016"
    ms.author="davidi"/>
 
-# Use an external R IDE with Power BI
+# 使用 Power BI 外部的 R IDE
 
-With <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, you can use your external R IDE (Integrated Development Environment) to create and refine R scripts, then use those scripts in Power BI.
+使用 **Power BI Desktop**, ，您可以使用外部 R IDE （整合式開發環境） 來建立並改善 R 指令碼，然後在 Power BI 中使用這些指令碼。
 
 ![](media/powerbi-desktop-r-ide/r-ide_1a.png)
 
-### Enabling an external R IDE
+### 啟用外部 R IDE
 
-Previously, you had to use the R script editor in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> to create and run R scripts. With this release, you can launch your external R IDE from <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> to create Power BI visuals and reports.
+之前，您必須使用 R 指令碼編輯器中的 **Power BI Desktop** 建立和執行 R 指令碼。 在此版本中，您可以啟動您從外部的 R IDE **Power BI Desktop** 和您的資料會自動匯入並顯示在 R 的 IDE。 在這裡，您可以修改該外部 R IDE 中的指令碼，然後將它貼回至 **Power BI Desktop** 建立 Power BI 視覺效果和報表。
 
-Beginning with the September 2016 release of <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> (version 2.39.4526.362), you can specify which R IDE you would like to use, and have it launch automatically from within <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>.
+開頭為 2016 年 9 月發行的 **Power BI Desktop** （版本 2.39.4526.362），您可以指定您想要使用，並將它從自動啟動的 R IDE **Power BI Desktop**。
 
 ### 需求
 
-To use this feature, you need to install an <bpt id="p1">**</bpt>R IDE<ept id="p1">**</ept> on your local computer. <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> does not include, deploy or install the R engine, so you must separately install <bpt id="p2">**</bpt>R<ept id="p2">**</ept> on your local computer. You can choose which R IDE to use, with the following options:
+若要使用這項功能，您需要安裝 **R IDE** 本機電腦上。 
+            **Power BI Desktop** 不含、 部署或安裝的 R 引擎，所以您必須個別安裝 **R** 本機電腦上。 您可以選擇哪些 R IDE，可使用下列選項︰
 
--   You can install your favorite R IDE, many of which are available for free, such as the <bpt id="p1">[</bpt>Revolution Open download page<ept id="p1">](https://mran.revolutionanalytics.com/download/)</ept>, and the <bpt id="p2">[</bpt>CRAN Repository<ept id="p2">](https://cran.r-project.org/bin/windows/base/)</ept>.
+-   您可以安裝您最喜愛的 R IDE，其中有許多是使用免費的例如 [革命開放下載頁面](https://mran.revolutionanalytics.com/download/), ，而 [CRAN 儲存機制](https://cran.r-project.org/bin/windows/base/)。
 
--   <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> also supports <bpt id="p2">[</bpt>R Studio<ept id="p2">](https://www.rstudio.com/)</ept> and <bpt id="p3">**</bpt>Visual Studio 2015<ept id="p3">**</ept> with <bpt id="p4">[</bpt><bpt id="p5">*</bpt>R Tools for Visual Studio<ept id="p5">*</ept><ept id="p4">](https://beta.visualstudio.com/vs/rtvs/)</ept> editors.
+-   
+            **Power BI Desktop** 也支援 [R Studio](https://www.rstudio.com/) 和 **Visual Studio 2015** 與 [*R Tools for Visual Studio*](https://beta.visualstudio.com/vs/rtvs/) 編輯器。
 
--   You can also install a different R IDE and have <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> launch that <bpt id="p2">**</bpt>R IDE<ept id="p2">**</ept> by doing one of the following:
-    -   You can associate <bpt id="p1">**</bpt>.R<ept id="p1">**</ept> files with the external IDE you want <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> to launch.
-    -   You can specify the .exe that <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> should launch by selecting <bpt id="p2">*</bpt>Other<ept id="p2">*</ept> from the <bpt id="p3">**</bpt>R Script Options<ept id="p3">**</ept> section of the <bpt id="p4">**</bpt>Options<ept id="p4">**</ept> dialog. You can bring up the <bpt id="p1">**</bpt>Options<ept id="p1">**</ept> dialog by going to <bpt id="p2">**</bpt>File &gt; Options and settings &gt; Options<ept id="p2">**</ept>.
+-   您也可以安裝不同的 R IDE，並讓 **Power BI Desktop** 啟動這個 **R IDE** 進行下列其中一項︰
+    -   您可以建立關聯 **。R** 檔案與您想要的外部 IDE **Power BI Desktop** 來啟動。
+    -   您可以指定.exe， **Power BI Desktop** 選取應該啟動 *其他* 從 **R 指令碼選項** 區段 **選項** ] 對話方塊。 您必須將 **選項** ] 對話方塊，請前往 **檔案 > 選項和設定 > 選項**。
 
         ![](media/powerbi-desktop-r-ide/r-ide_1b.png)
 
-If you have multiple R IDEs installed, you can specify which will be launched by selecting it from the <bpt id="p1">*</bpt>Detected R IDEs<ept id="p1">*</ept> drop-down in the <bpt id="p2">**</bpt>Options<ept id="p2">**</ept> dialog.
+如果您有多個安裝的 R Ide，您可以指定將由環境中啟動的 *偵測到 R 的 Ide* 下拉式清單中 **選項** ] 對話方塊。
 
-By default, <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> will launch <bpt id="p2">**</bpt>R Studio<ept id="p2">**</ept> as the external R IDE if it's installed on your local computer; if <bpt id="p3">**</bpt>R Studio<ept id="p3">**</ept> is not installed and you have <bpt id="p4">**</bpt>Visual Studio 2015<ept id="p4">**</ept> with <bpt id="p5">**</bpt>R Tools for Visual Studio<ept id="p5">**</ept>, that will be launched instead. If neither of those R IDEs is installed, the application associated with <bpt id="p1">**</bpt>.R<ept id="p1">**</ept> files is launched.
+根據預設， **Power BI Desktop** 將會啟動 **R Studio** 做為外部 R IDE 如果它安裝在本機電腦; 如果 **R Studio** 未安裝，並可 **Visual Studio 2015** 與 **R Tools for Visual Studio**, ，改為將會啟動。 如果安裝任一這些 R 的 Ide，與應用程式相關聯 **。R** 檔案就會啟動。
 
-And if no <bpt id="p1">**</bpt>.R<ept id="p1">**</ept> file association exists, it's possible to specify a path to a custom IDE in the <bpt id="p2">*</bpt>Browse to your preferred R IDE<ept id="p2">*</ept> section of the <bpt id="p3">**</bpt>Options<ept id="p3">**</ept> dialog. You can also launch a different R IDE by selecting the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> gear icon beside the <bpt id="p2">**</bpt>Launch R IDE<ept id="p2">**</ept> arrow icon, in <bpt id="p3">**</bpt>Power BI Desktop<ept id="p3">**</ept>.
+如果沒有 **。R** 檔案關聯存在，就可以指定自訂的 IDE 中的路徑 *瀏覽至您慣用的 R IDE* 區段 **選項** ] 對話方塊。 您也可以藉由選取啟動不同的 R IDE **設定** 齒輪圖示旁邊 **啟動 R IDE** 箭號圖示，請在 **Power BI Desktop**。
 
-### Launching an R IDE from Power BI Desktop
+### 啟動 Power BI Desktop 從 R IDE
 
-To launch an R IDE from <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, take the following steps.
+若要啟動從 R IDE **Power BI Desktop**, ，請執行下列步驟。
 
-1.   Load data into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>.
+1.   將資料載入 **Power BI Desktop**。
 
-2.   Select some fields from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane that you want to work with. If you haven't enabled script visuals yet, you'll be prompted to do so.
+2.   選取中的某些欄位 **欄位** 您想要使用的窗格。 如果您尚未啟用指令碼視覺效果，系統會提示您執行這項操作。
 
    ![](media/powerbi-desktop-r-ide/r-ide_3.png)
 
-3.   When script visuals are enabled, you can select an R visual from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, which creates a blank R visual that's ready to display the results of your script. The <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept> pane also appears.
+3.   當啟用指令碼視覺效果時，您可以選取從 R visual **視覺效果** ] 窗格中，這會建立空白 R visual 準備好要顯示您的指令碼的結果。  **R 指令碼編輯器** 窗格也會出現。
 
    ![](media/powerbi-desktop-r-ide/r-ide_4.png)
 
-4.   Now you can select the fields you want to use in your R script. When you select a field, the <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept> field automatically creates script code based on the field or fields you select. You can either create (or paste) your R script directly in the <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept> pane, your you can leave it empty.
+4.   現在您可以選取您想要使用 R 指令碼中的欄位。 當您選取欄位， **R 指令碼編輯器** 欄位會自動建立指令碼，根據您選取的欄位。 您可以建立 （或貼上） 直接在 R 指令碼 **R 指令碼編輯器** ] 窗格中，您您可以將它保留空白。
 
    ![](media/powerbi-desktop-r-ide/r-ide_5.png)
 
-   > <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The default aggregation type for R visuals is <bpt id="p2">*</bpt>do not summarize<ept id="p2">*</ept>.
+   > 
+            **注意︰** R 視覺效果的預設彙總類型是 *不摘要*。
 
-5.   You can now launch your R IDE directly from <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>. Select the <bpt id="p1">**</bpt>Launch R IDE<ept id="p1">**</ept> button, found on the right side of the <bpt id="p2">**</bpt>R script editor<ept id="p2">**</ept> title bar, as shown below.
+5.   您現在可以啟動直接從您 R 的 IDE **Power BI Desktop**。 選取 **啟動 R IDE** ] 按鈕，右側 **R 指令碼編輯器** 標題列，如下所示。
 
    ![](media/powerbi-desktop-r-ide/r-ide_6.png)
 
-6.   Your specified R IDE is launched by Power BI Desktop, as shown in the following image (in this image, <bpt id="p1">**</bpt>RStudio<ept id="p1">**</ept> is the default R IDE).
+6.   指定的 R IDE 為啟動 Power BI Desktop，如下圖所示 (此圖中 **RStudio** 是 R IDE 的預設值)。
 
    ![](media/powerbi-desktop-r-ide/r-ide_7.png)
 
-   > <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> adds the first three lines of the script so it can import your data from <bpt id="p3">**</bpt>Power BI Desktop<ept id="p3">**</ept> once you run the script.
+   > 
+            **注意︰** **Power BI Desktop** 新增指令碼的前三行，讓它可以匯入您的資料從 **Power BI Desktop** 之後執行指令碼。
 
-7.   Any script you created in the <bpt id="p1">**</bpt>R script editor pane<ept id="p1">**</ept> of <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> appears starting in line 4 in your R IDE. At this point you can create your R script in the R IDE. Once your R script is complete in your R IDE, you need to copy and paste it back into the <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept> pane in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>, <bpt id="p3">*</bpt>excluding<ept id="p3">*</ept> the first three lines of the script that <bpt id="p4">**</bpt>Power BI Desktop<ept id="p4">**</ept> automatically generated. Do not copy the first three lines of script back into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, those lines were only used to import your data to your R IDE from <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>.
+7.   任何您在建立指令碼 **R 指令碼編輯器窗格** 的 **Power BI Desktop** 會出現在 R IDE 中的第 4 行開始。 此時，您可以在 R IDE 中建立 R 指令碼。 在 R 指令碼在 R IDE 中完成之後，您需要複製並貼到 **R 指令碼編輯器** ] 窗格中的 **Power BI Desktop**, ，*排除* 指令碼的前三行， **Power BI Desktop** 自動產生。 請不要的複製的指令碼的前三行回 **Power BI Desktop**, ，這些行只用於匯入資料，從您 R ide **Power BI Desktop**。
 
 
-### Known Limitations
+### 已知的限制
 
-Launching an R IDE directly from Power BI Desktop has a few limitations:
+啟動 Power BI Desktop 直接從 R IDE 有一些限制︰
 
--  Automatically exporting your script from your R IDE into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> is not supported.
+-  自動匯出您的指令碼從您的 R IDE 到 **Power BI Desktop** 不支援。
 
--  <bpt id="p1">**</bpt>R Client<ept id="p1">**</ept> editor (RGui.exe) is not supported, because the editor itself does not support opening files.
+-  
+            **R 的用戶端** 編輯器 (RGui.exe) 不支援，因為在編輯器本身並不支援開啟檔案。
 
 ### 詳細資訊
 
-Take a look at the following additional information about R in Power BI.
+請看看 R 下列其他資訊 Power BI 中。
 
--   [Running R Scripts in Power BI Desktop](powerbi-desktop-r-scripts.md)
+-   [在 Power BI Desktop 中執行 R 指令碼](powerbi-desktop-r-scripts.md)
 
--   [Create Power BI visuals using R](powerbi-desktop-r-visuals.md)
+-   [建立使用 R 的 Power BI 視覺效果](powerbi-desktop-r-visuals.md)

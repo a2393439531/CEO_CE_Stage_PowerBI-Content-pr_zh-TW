@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Explore your time-based data"
-   description="Discover hierarchical drill-down tools for date fields"
+   pageTitle="瀏覽以時間為基礎的資料"
+   description="探索日期欄位的階層式向下鑽研工具"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,41 +23,42 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Explore Time-Based Data
+# 瀏覽以時間為基礎的資料
 
-It's easy to analyze time-based data with Power BI. The modeling tools in Power BI Desktop automatically include generated fields that let you drill down through years, quarters, months, and days with a single click.  
+很容易分析 Power bi 以時間為基礎的資料。 模型化工具，在 Power BI Desktop 中的自動包含產生的欄位，可讓您透過年、 季、 月和日只要按一下向下鑽研。  
 
-When you create a table visualization in your report using a date field, Power BI Desktop automatically includes breakdowns by time period. For example, the single date field in the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table was automatically separated into Year, Quarter, Month and Day by Power BI, as shown in the following image.
+當您使用 [日期] 欄位在報表中建立資料表的視覺效果時，Power BI Desktop 自動依時間週期包括細項。 在單一日期的欄位，例如 **日期** 資料表已自動分成年、 季、 月和日的 Power BI，如下圖所示。
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_1.png)
 
-Visualizations display data at the <bpt id="p1">*</bpt>year<ept id="p1">*</ept> level by default, but you can change that by turning on <bpt id="p2">**</bpt>Drill Down<ept id="p2">**</ept> in the top right-hand corner of the visual.
+視覺效果顯示資料在 *年* 層級的預設值，但是您可以變更，方法是開啟 **向下切入** 中視覺效果的右上角。
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_2.png)
 
-Now when you click on the bars or lines in your chart, it drills down to the next level of time hierarchy, for example from <bpt id="p1">*</bpt>years<ept id="p1">*</ept> to <bpt id="p2">*</bpt>quarters<ept id="p2">*</ept>. You can continue to drill down until you reach the most granular level of the hierarchy, which in this example is <bpt id="p1">*</bpt>days<ept id="p1">*</ept>. To move back up through the time hierarchy, click on <bpt id="p1">**</bpt>Drill Up<ept id="p1">**</ept> in the top left-hand corner of the visual.
+現在當您按一下的橫條或線條在圖表中，它切入下一個層級的時間階層中，例如從 *年* 至 *季*。 您可以繼續向下切入，直到您到達最細微的層級的階層，在此範例中是 *天*。 若要向上移動到的時間階層，按一下 **向上切入** 左上角的視覺效果中。
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_3.png)
 
-You can also drill down through all of the data shown on the visual, rather than one selected period, by using the <bpt id="p1">**</bpt>Drill All<ept id="p1">**</ept> double-arrow icon, also in the top right-hand corner of the visual.
+您也可以切入所有視覺效果，在所顯示的資料，而不是一段期間，使用選取的 **所有向下切入** 雙箭頭圖示，也在視覺效果的右上角。
 
 ![](media/powerbi-learning-2-6a-explore-time-based-data/2-6a_4.png)
 
-As long as your model has a date field, Power BI will automatically generate different views for different time hierarchies.
+只要您的模型有日期欄位，Power BI 會自動產生不同的檢視不同的時間階層。
 
-## What's Next
+## 後續步驟
 
-**恭喜！** You've completed this section of the <bpt id="p1">**</bpt>Guided Learning<ept id="p1">**</ept> course for Power BI. Now that you know about <bpt id="p1">*</bpt>modeling<ept id="p1">*</ept> data, you're ready to learn about the fun stuff waiting in the next section: <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept>.
+**恭喜！** 您已完成的這一節 **引導式學習** Power BI 的課程。 既然您了解 *模型* 資料，您準備好要深入了解有趣等候下一節中的項目︰ **視覺效果**。
 
-As mentioned before, this course builds your knowledge by following the common flow of work in Power BI:
+之前有提到，本課程會遵循一般的 Power BI 中的工作流程建置您的知識︰
 
--   Bring data into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, and create a report.
--   Publish to the Power BI service, where you create new <bpt id="p1">**</bpt>visualizations<ept id="p1">**</ept> and build dashboards
--   <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in <bpt id="p1">**</bpt>Power BI Mobile<ept id="p1">**</ept> apps
+-   將資料插入 **Power BI Desktop**, ，並建立報表。
+-   發行至 Power BI 服務，讓您建立新 **視覺效果** 和組建儀表板
+-   
+            **共用** 儀表板與其他人，特別是人出門人員
+-   檢視並與其互動共用儀表板和報表中 **行動 Power BI** 應用程式
 
 ![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
-While you might not do all that work yourself, you'll <bpt id="p1">*</bpt>understand<ept id="p1">*</ept> how those dashboards were created, and how they connected to the data... and when you're done with this course, you'll be able to create one of your own.
+雖然您可能不會執行所有該工作自行，您將 *了解* 如何建立這些儀表板，以及它們連線到 [資料]，當您完成本課程，您就能夠建立自己的其中一個。
 
-See you in the next section!
+下一節中見了 ！

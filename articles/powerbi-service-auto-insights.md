@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Quick Insights in Power BI"
-   description="Documentation for viewing Quick Insights with Power BI service."
+   pageTitle="在 Power BI 中的即時掌握所有資訊"
+   description="檢視即時掌握所有資訊與 Power BI 服務文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -22,94 +22,98 @@
    ms.author="mihart"/>
 
 
-# Quick Insights with Power BI
+# 快速理解 Power BI
 
-Have a new dataset and not quite sure where to start?  Need to build a dashboard fast?  Want to quickly look for insights you may have missed?
+有新的資料集並不是很確定從何處著手？  需要建置快速的儀表板嗎？  想要快速查詢，以了解您可能會遺失嗎？
 
-Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Quick Insights). You can even run Quick Insights on a Quick Insight!
+執行快速的探討，以產生您的資料為基礎的有趣互動式視覺效果。 （即時掌握所有資訊） 的整個資料集或特定的儀表板] 磚 （範圍即時掌握所有資訊），可以執行即時掌握所有資訊。 您甚至可以快速深入了解在執行即時掌握所有資訊 ！
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Quick Insights is not available in Power BI Desktop and does not work with direct query - it only works with data uploaded to Power BI.
+>
+            **請注意**︰ 即時掌握所有資訊不適用於 Power BI Desktop，並不適用於直接查詢-它僅適用於資料上傳至 Power BI。
 
-The Quick Insights feature is built on a growing <bpt id="p1">[</bpt>set of advanced analytical algorithms<ept id="p1">](powerbi-service-auto-insights-types.md)</ept> developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+快速了解功能為基礎的成長 [組進階分析的演算法](powerbi-service-auto-insights-types.md) 與我們就會繼續使用，讓更多人以直覺的方式，其資料中尋找 insights 的 Microsoft Research 合作開發。
 
-## Run Quick Insights on a dataset
+## 執行快速分析資料集
 
-Watch Amanda run Quick Insights on a sample dataset, pin one of these Quick Insights as a tile on his dashboard, and open a Quick Insight in Focus mode.
+觀看 Amanda 範例資料集，為他的儀表板上的磚快速資訊的其中一個連接上執行即時掌握所有資訊和焦點模式開啟快速深入了解。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EOASjs5mj6s" frameborder="0" allowfullscreen></iframe>
 
-Now it's your turn. Explore Quick Insights using the Supplier Quality Analysis sample.
+現在您了。 探索使用供應商品質分析範例即時掌握所有資訊。
 
-1. In the left navigation pane, under <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> select the ellipses (...) and choose <bpt id="p2">**</bpt>Quick Insights<ept id="p2">**</ept>.
+1. 在左的導覽窗格中，在 **資料集** 選取省略符號 （...），然後選擇 **即時掌握所有資訊**。
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesl.png)
 
-2. Power BI uses <bpt id="p1">[</bpt>various algorithms<ept id="p1">](powerbi-service-auto-insights-types.md)</ept> to search for trends in your dataset.
+2. Power BI 使用 [各種演算法](powerbi-service-auto-insights-types.md) 來搜尋您的資料集的趨勢。
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)
 
-3. Within seconds, your insights are ready.  Select <bpt id="p1">**</bpt>View Insights<ept id="p1">**</ept> to display visualizations.
+3. 秒鐘內，您的見解準備。  選取 **檢視 Insights** 顯示視覺效果。
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
-    Or, in the leftnav, select the ellipses (...) and choose <bpt id="p1">**</bpt>View Insights<ept id="p1">**</ept>.
+    或是在 leftnav 選取省略符號 （...），然後選擇 [ **檢視 Insights**。
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Some datasets can't generate Insights because the data isn't statistically significant.  To learn more, see <bpt id="p1">[</bpt>Optimize your data for Quick Insights<ept id="p1">](powerbi-service-auto-insights-optimize.md)</ept>.
+    >
+            **請注意**︰ 某些資料集無法產生深入資訊，因為資料不是統計上明顯。  若要深入了解，請參閱 [最佳化您的資料，以快速了解](powerbi-service-auto-insights-optimize.md)。
 
-4. The visualizations display in a special <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept> canvas with up to 32 separate Insight cards. Each card has a chart or graph plus a short description.
+4. 在特殊的視覺效果顯示 **即時掌握所有資訊** 畫布與最多 32 個不同的深入了解卡。 每張卡片擁有圖表或圖形的簡短描述。
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsMore.png)
 
-## Interact with the Quick Insight cards
+## 快速深入了解卡片的互動
 
   ![](media/powerbi-service-auto-insights/PBI_hover.png)
 
-1. Hover over a card and select the pin icon to add the visualization to a dashboard.
+1. 將滑鼠停留在卡片，然後選取要加入至儀表板的視覺效果釘選圖示。
 
-2. Hover over a card and select the Focus mode icon to display the card fullscreen.
+2. 將滑鼠停留在卡片，然後選取要顯示卡全螢幕的焦點模式圖示。
 
-3. In Focus mode you can:
-  - <bpt id="p1">[</bpt>filter<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> the visualizations.  To display the filters, in the top right corner, select the arrow.
+3. 在焦點模式中，您可以︰
+  - 
+            [篩選](powerbi-service-interact-with-a-report-in-reading-view.md) 視覺效果。  若要顯示篩選，請在右上角中，選取箭頭。
 
-  - Pin the insight card to a dashboard.
+  - 深入了解卡片的儀表板的 pin。
 
-  - Run Quick Insights on the card itself. This is referred to as <bpt id="p1">**</bpt>Scoped Quick Insights<ept id="p1">**</ept>. In the top-right corner, select the lightbulb icon or <bpt id="p1">**</bpt>Get Insights<ept id="p1">**</ept>.
+  - 智慧卡本身上執行即時掌握所有資訊。 這指 **範圍即時掌握所有資訊**。 在右上角，選取 [燈泡圖示或 **取得深入了解**。
 
     ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
-    The insight displays on the left and new insight cards, based solely on the data in that single insight, display along the right.
+    深入了解會顯示在左側和右側顯示的新深入了解卡，只會依據該單一深入了解中的資料。
 
     ![](media/powerbi-service-auto-insights/power-bi-insights-on-insight.png)
 
-4.  To return to the original Quick Insights canvas, in the top-left corner, select <bpt id="p1">**</bpt>Exit Focus mode<ept id="p1">**</ept>.
+4.  若要返回原始的即時掌握所有資訊畫布，左上角選取 **結束聚焦模式**。
 
 
-## Run Quick Insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to the data used to create a single dashboard tile. This is referred to as <bpt id="p1">**</bpt>Scoped Quick Insights<ept id="p1">**</ept>.
+## 執行即時掌握所有資訊的儀表板] 磚
+不要搜尋以了解針對整個資料集，縮小搜尋範圍，以用來建立單一儀表板圖格的資料。 這指 **範圍即時掌握所有資訊**。
 
-1. <bpt id="p1">[</bpt>Open the tile in Focus mode<ept id="p1">](/powerbi-service-display-dash-in-focus-mode.md)</ept>.
-2. In the top right corner, select <bpt id="p1">**</bpt>Get Insights<ept id="p1">**</ept>.
+1. 
+            [焦點模式開啟磚](/powerbi-service-display-dash-in-focus-mode.md)。
+2. 在右下角的頂端，選取 **取得深入了解**。
 
     ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
-3. Power BI displays the insight cards along the right side of the tile.
+3. Power BI 顯示方塊右邊的深入了解卡片。
 
     ![](media/powerbi-service-auto-insights/pbi-insights-tile.png)
 
-4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.
+4. 一個深入了解是否 pique 您感興趣？ 選取該進一步深入的見解卡。 所選的深入了解出現在左側和右側顯示的新深入了解卡，只會依據該單一深入了解中的資料。
 
-5. Continue digging into your data, and when you find an interesting insight, pin its visual to your dashboard by selecting <bpt id="p1">**</bpt>Pin visual<ept id="p1">**</ept> from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular insight was helpful or not.
+5. 繼續栽進您的資料，然後當您發現有趣的見解，釘選其視覺效果，您的儀表板選取 **Pin visual** 從右上角。 此外，您可以傳送意見反應，讓資料集擁有者知道特定的深入了解是否是很有幫助。
 
     ![](media/powerbi-service-auto-insights/useful.png)
 
 
 ## 請參閱
 
-[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
+[最佳化 Power BI 快速了解您的資料](powerbi-service-auto-insights-optimize.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

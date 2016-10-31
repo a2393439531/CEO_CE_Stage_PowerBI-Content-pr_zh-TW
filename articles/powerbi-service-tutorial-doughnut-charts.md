@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Doughnut charts in Power BI"
-   description="Tutorial: Doughnut charts in Power BI"
+   pageTitle="教學課程︰ 在 Power BI 中的環圈圖"
+   description="教學課程︰ 在 Power BI 中的環圈圖"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,48 +20,48 @@
    ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Tutorial: Doughnut charts in Power BI
+# 教學課程︰ 在 Power BI 中的環圈圖
 
-A  doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
+環圈圖是類似於圓形圖，在於它會顯示部份與整體的關係。 唯一的差別是中央是空白的而且可允許的標籤或圖示的空間。
 
-## Create a doughnut chart
+## 建立環圈圖
 
-To follow along, sign in to Power BI and select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Samples<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Retail Analysis Sample<ept id="p3">**</ept>. 
+要跟著做，請登入 Power BI，然後選取 **取得資料** \> **範例** \> **零售分析範例**。 
 
-1. From the "Retail Analysis Sample" dashboard, select the <bpt id="p1">**</bpt>Total Stores<ept id="p1">**</ept> tile to open the "Retail Analysis Sample" report.
+1. 「 零售分析範例 」 儀表板中，選取 **總商店** 磚以開啟 「 零售分析範例 」 報告。
 
-2. Select <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept> to open the report in Editing View.
+2. 選取 **編輯報表** 編輯檢視中開啟報表。
 
-3. Add a new report page.
+3. 加入新的報表頁面。
 
-4. Create a Waterfall chart that displays this year's sales by category.
+4. 建立依類別顯示今年銷售量瀑布圖。
 
-  - From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Last Year Sales<ept id="p3">**</ept>.
+  - 從 **欄位** 窗格中，選取 **銷售** \> **Last Year Sales**。
 
-  - Convert to a doughnut chart. If Last Year Sales is not in the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> area, drag it there.
+  - 將轉換成環圈圖。 如果不是處於 Last Year Sales **值** 區域中，將它拖曳到那里。
 
         ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
 
-  - Select <bpt id="p1">**</bpt>Item<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Category<ept id="p2">**</ept> to add it to the Legend area. 
+  - 選取 **項目** \> **類別** 將它加入至圖例區域。 
 
         ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 
-## Tips and Tricks for doughnut charts
+## 環圈圖的秘訣與竅門
 
--   The sum of the doughnut chart values must add up to 100%.
+-   環圈圖圖表值的總和必須新增多達 100%。
 
--   Too many categories make it difficult to read and interpret.
+-   太多的類別讓您更難以讀取和轉譯。
 
--   Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
+-   環圈圖適合用於比較的整數，而不是比較彼此的個別區段的特定區段。 
 
 ## 請參閱
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

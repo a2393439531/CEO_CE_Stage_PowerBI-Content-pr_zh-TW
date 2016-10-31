@@ -1,38 +1,38 @@
-# Single web page conversion guide
+# 單一 web 網頁轉換指南
 
-1.  Visit the target website and `File -> Save As`
-2.  Save the page using its `github-file-name`
-3.  Open the command prompt and navigate to the web page's folder
-4.  Run pandoc to convert the topic `pandoc -f html -t markdown_github <github-file-name>.html -o <github-file-name>.md`
-5.  Rename the assets folder from <ph id="ph1">`&lt;github-file-name&gt;_files`</ph> to <ph id="ph2">`&lt;github-file-name&gt;`</ph>. There maybe a warning but click through it anyway.
-6.  Open the markdown file using <bpt id="p1">[</bpt>notepad++<ept id="p1">](https://notepad-plus-plus.org/)</ept>.
-7.  Remove any unwanted content like headers, footers, and sidebars.
-8.  Fix the H1 headding by adding a hashtag and space before the H1 heading and removing the double underline below it.
-9.  Remove the empty span tags using search and replace
+1.  請移至目標網站， `File -> Save As`
+2.  儲存頁面使用它 `github-file-name`
+3.  開啟命令提示字元並瀏覽至網頁的資料夾
+4.  執行 pandoc 轉換主題 `pandoc -f html -t markdown_github <github-file-name>.html -o <github-file-name>.md`
+5.  重新命名 [assets] 資料夾，從 `<github-file-name>_files` 到 `<github-file-name>`。 那里可能會導致警告但點選它還是。
+6.  開啟 markdown 檔使用 [notepad + +](https://notepad-plus-plus.org/)。
+7.  移除任何不必要的內容，如頁首、 頁尾和提要欄位。
+8.  修正 H1 headding 加入雜湊標記和空間之前 H1 標題和移除雙底線。
+9.  移除空的範圍內使用的標記搜尋和取代
     
-    1.  Press <ph id="ph1">`Ctrl+H`</ph> or navigate from the menu `Search -> Replace`
-    2.  Make sure these options are checked
-        -  Wrap around
-        -  Search Mode: Regular expression
-        -  Search Mode: . matches newline
-    3.  Find what: <ph id="ph1">`&lt;span&gt;(.*?)&lt;/span&gt;`</ph> Replace with: <ph id="ph2">`\1`</ph>
-    4.  Replace all
+    1.  按 `Ctrl+H` 或從功能表瀏覽 `Search -> Replace`
+    2.  請確定這些選項會檢查
+        -  換行
+        -  規則運算式的搜尋模式︰
+        -  搜尋模式:。 符合新行字元
+    3.  尋找目標︰ `<span>(.*?)</span>` 取代︰ `\1`
+    4.  全部取代
 
-10.  Fix the image links:
+10.  修正該映像連結︰
 
     1.  Search： `\!\[(.*?)\]\(./<github-file-name>_files/`
     2.  取代： `![\1]\(media/<github-file-name/`
-    3.  In the file explorer move the image folder to a media directory, create one if one does not exisit.
-    4.  In the image folder remove any non-image items such as .js, .css, .php, and any unused images from the removed sections of the page (logos and icons).
+    3.  在 [檔案總管] 中移動映像資料夾至媒體目錄中建立一個萬一不 exisit。
+    4.  映像資料夾中移除頁面 （標誌和圖示） 的已移除的區段中的任何非影像項目，例如.js、.css、 php，以及任何未使用的映像。
 
-11.  Open the markdown file in the editor of your choice. 
+11.  在您選擇的編輯器中開啟 markdown 檔案。 
 
-12. Compare the markdown content from the original web page. You may have to fix a few other things such as making sure ordered lists are spaced out correctly. There may be a few <ph id="ph1">`&lt;span&gt;`</ph> tags that need to be removed or other formatting changes that need to be made. Any tables that did not get converted will need to be fixed as well.
+12. 從原始網頁 markdown 內容進行比較。 您可能要修正一些其他的資訊，例如讓確定排序的清單正確分開。 可能有少數 `<span>` 需要移除的標記或其他格式設定變更而需要進行。 任何未不會取得轉換的資料表必須也固定。
 
-13.  Add any relevant metadata to your topic.
+13.  將任何相關的中繼資料加入至您的主題。
 
-14.  Add your topic to the github repo (don't for get your image folder), make the commit to a local branch.
+14.  將主題加入至 github 儲存機制 （沒有取得映像資料夾），認可對本機分支。
 
-15.  Push the branch to your private fork and submit a pull request to the master branch
+15.  將分支推送至私用分叉及提取要求提交到主要分支
 
-16.  Wait for your topic to pass validation and make any fixes as necessary. Once you are satisfied sign off on the pull request using <ph id="ph1">`#sign-off`</ph>.
+16.  等候通過驗證，並進行任何修正，視您的主題。 一旦您滿意的登關閉提取要求使用 `#sign-off`。

@@ -1,24 +1,24 @@
-<properties pageTitle="Documentation Example - Video" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Video" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-影片" metaKeywords="" description="這是範例文件" services="" documentationCenter="" title="Documentation Example - Video" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - AZURE.VIDEO Markdown Extension #
+# 範例-AZURE。視訊的 Markdown 延伸模組 #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.
+這是用來測試及驗證 azure.microsoft.com 的發佈系統的範例文件文件。
 
-The content between the lines below demonstrates the use of a Video.
+下列程式行之間的內容將示範使用視訊。
 
 
 ---
-Video!!!!!
+視訊!!!
 
-Some text goes here...
+此處為一些文字...
 
 > [AZURE.VIDEO azure-storage-queues-batch-processing]
 
-Some other text here ...
+一些其他文字這裡...
 
 > [AZURE.VIDEO introduction-to-hdinsight-service]
 
-More video
+多個視訊
 
 > [AZURE.VIDEO what-is-active-directory]
 

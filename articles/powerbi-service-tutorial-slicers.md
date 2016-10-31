@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Slicers in Power BI"
-   description="Tutorial: Slicers in Power BI"
+   pageTitle="在 Power BI 中的教學課程︰ 交叉分析篩選器"
+   description="在 Power BI 中的教學課程︰ 交叉分析篩選器"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,110 +21,111 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Tutorial: slicers in Power BI  
+# 在 Power BI 中的教學課程︰ 交叉分析篩選器  
 
-Your VP of Sales wants to be able to look at a number of metrics, for the entire division and for each individual District Manager. She could create a separate report page for each manager, or she could use a slicer. A slicer narrows the portion of the dataset shown in the other visualizations on the page.  Slicers are an alternate way of filtering.
+您銷售副總裁希望能查看的度量，整個部門和每個個別的學區管理員的數目。 她可以為每個管理員，建立個別的報表頁面上，或者她可以使用交叉分析篩選器。 交叉分析篩選器會縮小頁面上的其他視覺效果中顯示的資料集的部分。  交叉分析篩選器篩選的替代方式。
 
     ![](media/powerbi-service-tutorial-slicers/slicer2.gif)
 
-## When to use a slicer  
-Slicers are a great choice in the following situations.
+## 使用交叉分析篩選器的時機  
+交叉分析篩選器會在下列情況的絕佳選擇。
 
--   To display commonly-used or important filters on the report canvas for easier access.
+-   若要顯示常用或重要篩選報表畫布上的，以方便存取。
 
--   To make it easier to see the current filtered state without having to open a drop-down list to find the filtering details.
+-   為了讓您更輕鬆地看到目前已篩選的狀態，而不用開啟下拉式清單來查看篩選詳細資料。
 
-- When you want to hide columns you don't need but still be able to use them to filter - this makes for narrower, cleaner tables.
+- 當您想要隱藏資料行，您不需要但仍然能夠使用它們來篩選-這使得較小、 更簡潔的表格。
 
-- To create more focused reports - since slicers are floating objects you can put them next to the interesting part of the report you want your users to focus on.
+- 若要建立更多著重報告-因為交叉分析篩選器浮動物件，您可以將他們希望使用者將焦點放在報表的有趣部分旁邊。
 
-## Create a slicer
+## 建立交叉分析篩選器
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7rrvpa6KUto" frameborder="0" allowfullscreen></iframe>
 
-1.  Open the <bpt id="p1">[</bpt>Retail Analysis Sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour)</ept> in <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> and <bpt id="p3">[</bpt>add a new report page<ept id="p3">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+1.  開啟 [零售分析範例](powerbi-sample-retail-analysis-take-a-tour) 中 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md) 和 [新增新的報表頁面](powerbi-service-add-a-page-to-a-report.md)。
 
-2. From the Fields pane, select <bpt id="p1">**</bpt>District &gt; District Manager<ept id="p1">**</ept>. 
+2. 從 [欄位] 窗格中，選取 **學區 > 學區管理員**。 
 
     ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_chartFirst.png)
 
-3.  Convert the visualization to a slicer. In the Visualizations pane, select the slicer icon.
+3.  將視覺效果轉換成交叉分析篩選器。 在視覺效果] 窗格中，選取 [交叉分析篩選器] 圖示。
 
     ![](media/powerbi-service-tutorial-slicers/PBI_Slicer_select.png)
 
-## Format the slicer
+## 格式化交叉分析篩選器
 
-1. With the slicer selected, in the Visualizations pane, select the paint roller icon <ph id="ph1">![](media/powerbi-service-tutorial-slicers/power-bi-paintroller.png)</ph> to display the Format options.
+1. 使用交叉分析篩選器選取，請在 [視覺效果] 窗格中，選取 [小畫家滾輪圖示 ![](media/powerbi-service-tutorial-slicers/power-bi-paintroller.png) 顯示格式選項。
 
-2. Select <bpt id="p1">**</bpt>General &gt; Outline color<ept id="p1">**</ept> and choose dark blue and change the <bpt id="p2">**</bpt>Weight<ept id="p2">**</ept> to <bpt id="p3">**</bpt>6<ept id="p3">**</ept>.
+2. 選取 **一般 > 外框色彩** 及選擇深藍色，以及變更 **權數** 至 **6**。
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_outline2.png)
 
-3. Under <bpt id="p1">**</bpt>Selection Controls<ept id="p1">**</ept>, by default, <bpt id="p2">**</bpt>Select All<ept id="p2">**</ept> is <bpt id="p3">**</bpt>Off<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Single Select<ept id="p4">**</ept> is <bpt id="p5">**</bpt>On<ept id="p5">**</ept>. This means that I have to use the CTRL key to select more than one name at a time. Turn <bpt id="p1">**</bpt>Select All<ept id="p1">**</ept> to <bpt id="p2">**</bpt>On<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Single Select<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Off<ept id="p4">**</ept>.
+3. 在 **選取控制項**, ，根據預設， **全選** 是 **關閉** 和 **單一選取** 是 **上**。 這表示，必須使用 CTRL 鍵同時選取多個名稱。 開啟 **選取所有** 到 **上** 和 **單一選取** 至 **關閉**。
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_selectionControls2.png)
 
-  - Notice that the slicer now has a <bpt id="p1">**</bpt>Select All<ept id="p1">**</ept> option at the top of the list. Toggle <bpt id="p1">**</bpt>Select All<ept id="p1">**</ept> to select all of the names or to select none of the names.
+  - 請注意，現在有交叉 **全選** 位於清單頂端] 選項。 切換 **全選** 選取所有的名稱，或選取沒有任何名稱。
 
-  - And you can now select more than one name without having to use the CTRL key.
+  - 此外，您現在可以選取多個名稱，而不需要使用 CTRL 鍵。
 
-4. Under <bpt id="p1">**</bpt>Items<ept id="p1">**</ept>, increase the text size to 14pt.  We want to be sure that our colleagues notice this slicer.
+4. 在 **項目**, ，將文字大小增加至 14 pt。  我們想要確定我們與同事注意到此交叉分析篩選器。
 
-5. Lastly, set <bpt id="p1">**</bpt>Font color<ept id="p1">**</ept> to a dark red.  This will distinguish the selected names from the unselected names in our slicer.
+5. 最後，設定 **字型色彩** 成深紅色。  這會將選取的名稱區別我們交叉分析篩選器未選取的名稱。
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_font2.png)
 
-6. Have fun exploring the other options available for slicers.
+6. 請享用瀏覽其他可用的選項交叉分析篩選器。
 
-## Use the slicer in a report
+## 在報表中使用交叉分析篩選器
 
-1. Add some additional visualizations to the report page or open the <bpt id="p1">[</bpt>Retail Analysis sample report<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept> and select the <bpt id="p2">**</bpt>District Monthly Sales<ept id="p2">**</ept> tab.
+1. 將一些其他的視覺效果加入至 [報表] 頁面上，或開啟 [零售分析範例報表](powerbi-sample-retail-analysis-take-a-tour.md) ，然後選取 **學區的每月銷售** ] 索引標籤。
 
     ![](media/powerbi-service-tutorial-slicers/power-bi-retail-sample.png)
 
-2. Slice the report page for Carlos. Notice how the other visualizations update to reflect these selections.
+2. 配量的 Carlos 的報表頁面。 請注意其他視覺效果如何更新以反映這些選取項目。
 
     ![](media/powerbi-service-tutorial-slicers/slicer2.gif)
 
-3. Sort the slicer alphabetically by District Manager last name.  Select the ellipses (...) in the top right corner of the slicer and choose <bpt id="p1">**</bpt>District Manager<ept id="p1">**</ept>.
+3. 學區管理員姓氏依字母順序排序的交叉分析篩選器。  在右上角的交叉分析篩選器中選取省略符號 （...），然後選擇 [ **學區管理員**。
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sort2.png)
 
     ![](media/powerbi-service-tutorial-slicers/PBI_slicer_sorted.png)
 
-## Control what effect the slicer has on other visuals on the page
+## 控制頁面上的其他視覺效果對何種影響交叉分析篩選器
 
-Do you want the slicer to only filter some of the visuals on the report page?  Use the <bpt id="p1">**</bpt>Visual interactions<ept id="p1">**</ept> control to set this up.
+您想交叉分析篩選器只篩選 [報表] 頁面上的視覺效果的一些嗎？  使用 **Visual 互動** 控制項來設定此項目。
 
-1. Select the slicer to make it active and, from the menu bar, choose <bpt id="p1">**</bpt>Visual interactions<ept id="p1">**</ept>.
+1. 選取 [交叉分析篩選器讓它成為作用，並從功能表列中，選擇 [ **Visual 互動**。
 
     ![](media/powerbi-service-tutorial-slicers/pbi-slicer-interactions.png)
 
-2. Filter controls will appear above all the other visuals on the page. If the slicer should filter a visual, select the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> icon.  If the slicer should have no effect on the visual, select the <bpt id="p1">**</bpt>None<ept id="p1">**</ept> icon.
+2. 篩選器控制項以上所有會出現在頁面上的其他視覺效果。 如果交叉分析篩選器應該篩選視覺效果，請選取 **篩選** 圖示。  如果交叉分析篩選器應該不會影響視覺效果，請選取 **無** 圖示。
 
     ![](media/powerbi-service-tutorial-slicers/filter-controls.png)
 
-For more information, see <bpt id="p1">[</bpt>Visual interactions in a Power BI report<ept id="p1">](documentation/powerbi-service-visual-interactions.md)</ept>.
+如需詳細資訊，請參閱 [Power BI 報表中的視覺互動](documentation/powerbi-service-visual-interactions.md)。
 
-##  Limitations of slicers in Power BI
-There are a few limitations to using slicers in Power BI, which are the following:
-1.  Slicers do not support input fields.
+##  在 Power BI 中的交叉分析篩選器的限制
+有一些限制使用交叉分析篩選器在 Power BI 中，如下所示︰
+1.  交叉分析篩選器不支援輸入的欄位。
 
-2.  A single slicer cannot be used across an entire report. A slicer only impacts the current page.
+2.  整個報表無法使用單一的交叉分析篩選器。 交叉分析篩選器只會影響目前的頁面。
 
-3.  Slicers cannot be pinned to a dashboard.
+3.  交叉分析篩選器無法釘選到儀表板。
 
-4.  Drilldown is not supported for slicers.
+4.  交叉分析篩選器不支援向下鑽研。
 
-Do you have ideas for how to improve Power BI? <bpt id="p1">[</bpt>Submit an idea<ept id="p1">](https://ideas.powerbi.com/forums/265200-power-bi-ideas)</ept>.
+您有如何改進 Power BI 的想法嗎？ 
+            [提出構想](https://ideas.powerbi.com/forums/265200-power-bi-ideas)。
 
 ## 請參閱  
- [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
+ [報表中加入視覺效果](powerbi-service-add-visualizations-to-a-report-i.md)  
 
- [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+ [在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+ [Power BI-基本概念](powerbi-service-basic-concepts.md)  
 
-[Try it out -- it's free!](https://powerbi.com/)  
+[試試看-它的免費 ！](https://powerbi.com/)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

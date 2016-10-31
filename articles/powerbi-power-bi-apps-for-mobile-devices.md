@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI apps for mobile devices"
-   description="The Power BI mobile apps keep you connected to your data anywhere, anytime. View Power BI dashboards and reports on your mobile device. "
+   pageTitle="行動裝置的 power BI 應用程式"
+   description="Power BI 行動應用程式保持您連接到您的資料，任何一處，任何時候。 檢視您的行動裝置上的 Power BI 儀表板和報表。 "
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,105 +20,129 @@
    ms.date="09/26/2016"
    ms.author="maggies"/>
 
-# Power BI apps for mobile devices  
+# 行動裝置的 power BI 應用程式  
 
-Stay connected to your data from anywhere, anytime with the Power BI mobile apps. Try viewing and interacting with your Power BI dashboards on your mobile device &amp;#151; be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone, or Windows 10 device.
+保持連線到您的資料從任何地方，隨時使用 Power BI 行動應用程式。 請嘗試檢視並與 Power BI 儀表板上您的行動裝置 & #151; 互動是 （iPad、 iPhone、 iPod Touch 或 Apple Watch） iOS Android 手機或 Windows 10 裝置。
 
-See <bpt id="p1">[</bpt>what's new in the Power BI mobile apps<ept id="p1">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+請參閱 [Power BI 行動應用程式中新](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
 ![](media/powerbi-powerbi-apps-for-mobile-devices/pbi_phone_photo_crop2.png)
 
 
-## The iPhone and iPod Touch app (Power BI for iOS)
-<bpt id="p1">[</bpt>Get started with the iPhone app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> (Power BI for iOS).
+## IPhone 和 iPod Touch 應用程式 (適用於 iOS 的 Power BI)
 
--   Download the <bpt id="p1">[</bpt>iPhone app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> (Power BI for iOS).
+            [開始使用 iPhone 應用程式](powerbi-mobile-iphone-app-get-started.md) (適用於 iOS 的 Power BI)。
 
-### Power BI dashboards
+-   下載 [iphone](http://go.microsoft.com/fwlink/?LinkId=522062) (適用於 iOS 的 Power BI)。
 
--   View your <bpt id="p1">[</bpt>Power BI dashboards<ept id="p1">](powerbi-mobile-dashboards-in-the-iphone-app.md)</ept>.
--   Interact with <bpt id="p1">[</bpt>tiles<ept id="p1">](powerbi-mobile-tiles-in-the-iphone-app.md)</ept> on your dashboards.
--   Set <bpt id="p1">[</bpt>data alerts<ept id="p1">](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)</ept> for your data.
--   View Power BI on your <bpt id="p1">[</bpt>Apple Watch<ept id="p1">](powerbi-mobile-apple-watch.md)</ept>.
--   Share <bpt id="p1">[</bpt>Power BI dashboards<ept id="p1">](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)</ept>.
--   Interact with <bpt id="p1">[</bpt>reports on your iPhone<ept id="p1">](powerbi-mobile-reports-in-the-iphone-app.md)</ept>.
--   Annotate and <bpt id="p1">[</bpt>share tiles<ept id="p1">](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)</ept>.
--   <bpt id="p1">[</bpt>Scan a Power BI QR code<ept id="p1">](powerbi-mobile-qr-code-for-tile.md)</ept> from your iPhone
--   <bpt id="p1">[</bpt>Create picture tiles<ept id="p1">](powerbi-mobile-picture-tiles-in-the-iphone-app.md)</ept> with your iPhone app
+### Power BI 儀表板
 
-### SQL Server mobile reports and KPIs
+-   檢視您 [Power BI 儀表板](powerbi-mobile-dashboards-in-the-iphone-app.md)。
+-   互動 [磚](powerbi-mobile-tiles-in-the-iphone-app.md) 儀表板上。
+-   設定 [資料警示](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) 為您的資料。
+-   檢視上的 Power BI 您 [Apple Watch](powerbi-mobile-apple-watch.md)。
+-   共用 [Power BI 儀表板](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)。
+-   互動 [報告 iPhone](powerbi-mobile-reports-in-the-iphone-app.md)。
+-   加上註解和 [共用並排](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)。
+-   
+            [掃描 Power BI QR 代碼](powerbi-mobile-qr-code-for-tile.md) 從 iPhone
+-   
+            [建立圖片方塊](powerbi-mobile-picture-tiles-in-the-iphone-app.md) iPhone 應用程式
 
-- <bpt id="p1">[</bpt>View SQL Server mobile reports and KPIs<ept id="p1">](powerbi-mobile-iphone-kpis-mobile-reports.md)</ept> on the Reporting Services web portal.
-- <bpt id="p1">[</bpt>Create KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+### SQL Server 行動報表及 Kpi
 
-## The iPad app (Power BI for iOS)
-<bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-ipad-app-get-started.md)</ept> (Power BI for iOS).
+- 
+            [檢視 SQL Server 行動報表及 Kpi](powerbi-mobile-iphone-kpis-mobile-reports.md) Reporting Services web 入口網站上。
+- 
+            [Reporting Services web 入口網站上建立 Kpi](https://msdn.microsoft.com/library/mt683632.aspx)。
+- 
+            [建立您自己行動的報告與 SQL Server Mobile 報表發行者](https://msdn.microsoft.com/library/mt652547.aspx), ，並將它們發行至 Reporting Services web 入口網站。
 
--   Download the <bpt id="p1">[</bpt>iPad app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> (Power BI for iOS).
+## IPad 應用程式 (適用於 iOS 的 Power BI)
 
-### Power BI dashboards and reports
+            [開始使用 iPad 應用程式](powerbi-mobile-ipad-app-get-started.md) (適用於 iOS 的 Power BI)。
 
--   View your <bpt id="p1">[</bpt>Power BI dashboards<ept id="p1">](powerbi-mobile-dashboards-on-the-ipad-app.md)</ept>.
--   Interact with <bpt id="p1">[</bpt>tiles on your Power BI dashboards<ept id="p1">](powerbi-mobile-tiles-in-the-ipad-app.md)</ept>.
--   Open <bpt id="p1">[</bpt>Power BI reports<ept id="p1">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> from your dashboard.
--   <bpt id="p1">[</bpt>Share Power BI dashboards<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md)</ept>.
--   <bpt id="p1">[</bpt>Annotate and share a snapshot<ept id="p1">](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)</ept> of a tile.
--   View your <bpt id="p1">[</bpt>groups' Power BI dashboards and reports<ept id="p1">](powerbi-service-mobile-groups-in-the-ipad-app.md)</ept>.
+-   下載 [iPad 應用程式](http://go.microsoft.com/fwlink/?LinkId=522062) (適用於 iOS 的 Power BI)。
 
-### Mobile reports and KPIs in the Reporting Services web portal
+### Power BI 儀表板和報表
 
-- <bpt id="p1">[</bpt>View SQL Server mobile reports and KPIs<ept id="p1">](powerbi-mobile-ipad-kpis-mobile-reports.md)</ept> on the Reporting Services web portal.
-- <bpt id="p1">[</bpt>Create KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+-   檢視您 [Power BI 儀表板](powerbi-mobile-dashboards-on-the-ipad-app.md)。
+-   互動 [Power BI 儀表板上的磚](powerbi-mobile-tiles-in-the-ipad-app.md)。
+-   開啟 [Power BI 報告](powerbi-mobile-reports-on-the-ipad-app.md) 儀表板。
+-   
+            [共用 Power BI 儀表板](powerbi-mobile-share-dashboards-from-the-ipad-app.md)。
+-   
+            [加上註解，並共用快照](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) 並排顯示。
+-   檢視您 [群組的 Power BI 儀表板和報表](powerbi-service-mobile-groups-in-the-ipad-app.md)。
 
-## The Power BI app for Android phones
-<bpt id="p1">[</bpt>Get started with the Power BI app for Android phones<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>.
+### 行動報表及 Reporting Services web 入口網站中的 Kpi
 
--   Download the <bpt id="p1">[</bpt>Power BI app for Android phones<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept>.
+- 
+            [檢視 SQL Server 行動報表及 Kpi](powerbi-mobile-ipad-kpis-mobile-reports.md) Reporting Services web 入口網站上。
+- 
+            [Reporting Services web 入口網站上建立 Kpi](https://msdn.microsoft.com/library/mt683632.aspx)。
+- 
+            [建立您自己行動的報告與 SQL Server Mobile 報表發行者](https://msdn.microsoft.com/library/mt652547.aspx), ，並將它們發行至 Reporting Services web 入口網站。
 
-### Power BI dashboards and reports
+## Android 手機 Power BI 應用程式
 
--   View your <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-dashboards-in-the-android-app.md)</ept>.
--   View your <bpt id="p1">[</bpt>Power BI groups<ept id="p1">](powerbi-mobile-groups-in-the-android-app.md)</ept>.
--   Explore the <bpt id="p1">[</bpt>tiles on your dashboards<ept id="p1">](powerbi-mobile-tiles-in-the-android-app.md)</ept>.
--   <bpt id="p1">[</bpt>Annotate and share tiles<ept id="p1">](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)</ept>.
--   Share <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-share-a-dashboard-from-the-android-app.md)</ept>.
--   <bpt id="p1">[</bpt>Scan a Power BI QR code<ept id="p1">](powerbi-mobile-qr-code-for-android.md)</ept> from your Android phone.
+            [開始使用 Power BI 應用程式的 Android 手機](powerbi-mobile-android-app-get-started.md)。
 
-### SQL Server mobile reports and KPIs
+-   下載 [Android 手機的 Power BI 應用程式](http://go.microsoft.com/fwlink/?LinkID=544867)。
 
-- <bpt id="p1">[</bpt>View SQL Server mobile reports and KPIs<ept id="p1">](powerbi-mobile-android-kpis-mobile-reports.md)</ept> on the Reporting Services web portal.
-- <bpt id="p1">[</bpt>Create KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+### Power BI 儀表板和報表
 
-## The Power BI mobile app for Windows 10 devices
-<bpt id="p1">[</bpt>Get started with the Power BI mobile app for Windows 10<ept id="p1">](powerbi-mobile-win10phone-app-get-started.md)</ept>.
+-   檢視您 [儀表板](powerbi-mobile-dashboards-in-the-android-app.md)。
+-   檢視您 [Power BI 群組](powerbi-mobile-groups-in-the-android-app.md)。
+-   瀏覽 [儀表板上的磚](powerbi-mobile-tiles-in-the-android-app.md)。
+-   
+            [加上註解和共用並排](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)。
+-   共用 [儀表板](powerbi-mobile-share-a-dashboard-from-the-android-app.md)。
+-   
+            [掃描 Power BI QR 代碼](powerbi-mobile-qr-code-for-android.md) 從 Android 手機。
 
--   Download the <bpt id="p1">[</bpt>Power BI app for Windows 10 devices<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=526478)</ept>
+### SQL Server 行動報表及 Kpi
 
-### Power BI dashboards and reports
+- 
+            [檢視 SQL Server 行動報表及 Kpi](powerbi-mobile-android-kpis-mobile-reports.md) Reporting Services web 入口網站上。
+- 
+            [Reporting Services web 入口網站上建立 Kpi](https://msdn.microsoft.com/library/mt683632.aspx)。
+- 
+            [建立您自己行動的報告與 SQL Server Mobile 報表發行者](https://msdn.microsoft.com/library/mt652547.aspx), ，並將它們發行至 Reporting Services web 入口網站。
 
--   View your <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-dashboards-in-the-win10phone-app.md)</ept>.
--   <bpt id="p1">[</bpt>Pin Power BI tiles and dashboards<ept id="p1">](powerbi-mobile-pin-dashboard-from-win10phone-app.md)</ept> to your device's Start screen as live tiles.
--   Explore the <bpt id="p1">[</bpt>tiles on your dashboards<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept>.
--   <bpt id="p1">[</bpt>Share tiles<ept id="p1">](powerbi-mobile-share-a-tile-from-the-win10phone-app.md)</ept>.
--   Share <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md)</ept>.
--   Interact with <bpt id="p1">[</bpt>your reports<ept id="p1">](powerbi-mobile-reports-in-the-windows-app.md)</ept>.
--   View your <bpt id="p1">[</bpt>groups' dashboards and reports<ept id="p1">](powerbi-mobile-groups-in-the-win10phone-app.md)</ept>.
+## Power BI 行動應用程式適用於 Windows 10 裝置
 
-### SQL Server mobile reports and KPIs
+            [開始使用 Power BI 行動應用程式的 Windows 10](powerbi-mobile-win10phone-app-get-started.md)。
 
-- <bpt id="p1">[</bpt>View SQL Server mobile reports and KPIs<ept id="p1">](powerbi-mobile-win10-kpis-mobile-reports.md)</ept> on the Reporting Services web portal.
-- <bpt id="p1">[</bpt>Create KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+-   下載 [Power BI 應用程式適用於 Windows 10 裝置](http://go.microsoft.com/fwlink/?LinkId=526478)
+
+### Power BI 儀表板和報表
+
+-   檢視您 [儀表板](powerbi-mobile-dashboards-in-the-win10phone-app.md)。
+-   
+            [釘選 Power BI 磚和儀表板](powerbi-mobile-pin-dashboard-from-win10phone-app.md) 到即時顯示為您的裝置 [開始] 畫面。
+-   瀏覽 [儀表板上的磚](powerbi-mobile-tiles-in-the-win10phone-app.md)。
+-   
+            [共用並排](powerbi-mobile-share-a-tile-from-the-win10phone-app.md)。
+-   共用 [儀表板](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md)。
+-   互動 [報表](powerbi-mobile-reports-in-the-windows-app.md)。
+-   檢視您 [群組的儀表板和報表](powerbi-mobile-groups-in-the-win10phone-app.md)。
+
+### SQL Server 行動報表及 Kpi
+
+- 
+            [檢視 SQL Server 行動報表及 Kpi](powerbi-mobile-win10-kpis-mobile-reports.md) Reporting Services web 入口網站上。
+- 
+            [Reporting Services web 入口網站上建立 Kpi](https://msdn.microsoft.com/library/mt683632.aspx)。
+- 
+            [建立您自己行動的報告與 SQL Server Mobile 報表發行者](https://msdn.microsoft.com/library/mt652547.aspx), ，並將它們發行至 Reporting Services web 入口網站。
 
 
-## Enterprise support for Power BI mobile apps
+## Power BI 行動應用程式的企業支援
 
--  Enterprises can <bpt id="p1">[</bpt>configure Power BI mobile apps for iOS and Android with Microsoft Intune<ept id="p1">](powerbi-admin-mobile-intune.md)</ept> to manage devices and applications.
+-  企業可以 [設定適用於 iOS 和 Android 的 Power BI 行動應用程式使用 Microsoft Intune](powerbi-admin-mobile-intune.md) 來管理裝置和應用程式。
 
 ## 請參閱
 
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)
 

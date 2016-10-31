@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display dashboards and reports in Full Screen mode (TV mode)"
-   description="Display dashboards and reports in TV mode, aka Full Screen Mode."
+   pageTitle="在全螢幕模式 （電視模式） 中顯示儀表板和報表"
+   description="電視模式，也就是全螢幕模式中顯示儀表板和報表。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,78 +21,79 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Display dashboards and reports in Full Screen mode (TV mode)
+# 在全螢幕模式 （電視模式） 中顯示儀表板和報表
 
-## What is Full Screen mode?
+## 什麼是全螢幕模式？
 
-Display your dashboards, reports, tiles, and visuals without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is sometimes referred to as TV Mode.
+顯示儀表板、 報表、 圖格和視覺效果，而不受干擾的功能表和導覽按鈕。  您一眼隨時取得您企業的系統管理員權仗的完整檢視。 這有時候稱為電視模式。
 
-Some uses for Full Screen mode are:
+全螢幕模式的一些用法如下︰
 
-- presenting your dashboard, tile, visual, or report at a meeting or conference
-- displaying in an office on a dedicated large screen or projector
-- viewing on a small screen
-- reviewing in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report or dashboard
+- 呈現您的儀表板，並排顯示視覺物件，或在會議或會議報告
+- 在辦公室專用大螢幕或投影機上顯示
+- 在小螢幕上檢視
+- 檢閱在鎖定模式-您可以透過磚觸控螢幕或滑鼠，而不需要開啟基礎的報表或儀表板
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Full Screen mode is different than <bpt id="p2">[</bpt>Focus (Pop out) mode<ept id="p2">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+>
+>            **請注意**︰ 全螢幕模式是不同於 [焦點 (Pop 出) 模式](powerbi-service-display-dash-in-focus-mode.md)。
 
-Watch Amanda open and navigate her dashboard in fullscreen mode and then apply some URL parameters to control the default display. Then follow the step-by-step instructions below the video to try it out yourself.
+觀看 Amanda 開啟並巡覽她在全螢幕模式中的儀表板，然後再套用至控制項的預設顯示某些 URL 參數。 然後遵循以下視訊，試試看您自己的逐步指示。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c31gZkyvC54" frameborder="0" allowfullscreen></iframe>
 
-## To turn Full Screen mode on (and off) for a dashboard or report
+## 若要開啟 [儀表板或報表上 （或關閉） 的全螢幕模式
 
-1. From the Power BI menu bar above your dashboard or report, select the <bpt id="p1">**</bpt>Full Screen<ept id="p1">**</ept> icon.
+1. 從 Power BI 的功能表列上您的儀表板或報表，請選取 **全螢幕** 圖示。
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TvModeIcon-new.jpg)
 
-2. Your dashboard or report page fills the entire screen.
+2. 您的儀表板或報表頁面填滿整個螢幕。
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TVMode.jpg)
 
-3. Use the <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> button to navigate to the previous page in your browser. If the previous page was a Power BI service page, it will display in Full Screen mode.  Full Screen mode will persist until you close Full Screen.
+3. 使用 **回** 按鈕瀏覽至您的瀏覽器中的上一頁。 如果前一頁 Power BI 服務] 頁面，它會顯示在全螢幕模式。  全螢幕模式會持續保留，直到您關閉全螢幕。
 
-3. To exit Full Screen mode, select the <bpt id="p1">**</bpt>Close Full Screen<ept id="p1">**</ept> icon.
+3. 若要結束全螢幕模式，請選取 **關閉全螢幕** 圖示。
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/exit-fullscreen-new.png)
 
-## To turn Full Screen mode on (and off) for a dashboard tile or report visual
+## 以全螢幕模式上 （和關閉） 的儀表板磚或報表視覺化
 
-1. While in Full Screen mode for a report or a dashboard, select the Focus mode icon <ph id="ph1">![](media/powerbi-service-display-dash-in-focus-mode/PBI_popOut.jpg)</ph>  for a specific tile or specific visual. The tile or visual will display full screen without menus or chrome.
+1. 在報表或儀表板的全螢幕模式下，選取 [焦點模式圖示 ![](media/powerbi-service-display-dash-in-focus-mode/PBI_popOut.jpg)  特定方塊或特定 visual。 磚或視覺會顯示功能表或 chrome 的全螢幕。
 
     ![](media/powerbi-service-dash-and-reports-fullscreen/fullscreen-tile.png)
 
-2. To exit, hover to reveal the options menu and select the Exit icon to return to the dashboard (for tiles) or to the report (for visuals).
+2. 若要結束，請將滑鼠停留顯示選項] 功能表，然後選取 [結束] 圖示以返回儀表板 （方塊），或報表 （適用於視覺效果）。
 
     ![](media/powerbi-service-dash-and-reports-fullscreen/viz-fullscreen-menu-new.png)
 
 
-## Dashboards in Full Screen mode
+## 儀表板以全螢幕模式
 
-### Fit to screen
-Full Screen mode for dashboards offers some display options that are not available for reports.
+### 調整成螢幕大小
+儀表板的全螢幕模式提供了一些不適用於報表的顯示選項。
 
-Sometimes dashboards will display in Full Screen mode with scrollbars (see above). To remove scrollbars, move your cursor to an empty area on your screen to reveal the Full Screen options menu.  
+有時候儀表板會顯示在全螢幕模式具有捲軸 （如上述）。 若要移除捲軸，將游標移至的空白區域，螢幕顯示全螢幕的 [選項] 功能表上。  
 ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options-new.png)
 
-  And select the <bpt id="p1">**</bpt>Fit to screen<ept id="p1">**</ept> icon.
+  選取 **調整成螢幕大小** 圖示。
     ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-screen-new.png)
 
-### Fit to width
-And sometimes you don't care about scrollbars, but want the dashboard or report to fill the entire width of the available space.  Select the <bpt id="p1">**</bpt>Fit to width<ept id="p1">**</ept> icon. ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-width.png)
+### 適合寬度
+有時候您不在意捲軸，但想儀表板或報表，以填滿可用空間的整個寬度。  選取 **適合寬度** 圖示。 ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-width.png)
 
 ### 列印
-To print a dashboard from Full Screen mode, select the Print icon.
+若要從全螢幕模式列印儀表板，請選取 [列印] 圖示。
 ![](media/powerbi-service-dash-and-reports-fullscreen/print-icon.png)
 
-## Reports in Full Screen mode
-### Display report pages
-Full Screen reports don't have the option to print or the options for <bpt id="p1">**</bpt>Fit to screen<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Fit to width<ept id="p2">**</ept>.  However, when a report is in Full Screen mode, you can use the forward and reverse arrows to move through the report pages.
+## 以全螢幕模式的報表
+### 顯示報表頁面
+完整的畫面報告沒有列印選項或選項 **調整成螢幕大小** 或 **適合寬度**。  不過，在全螢幕模式中報表時，您可以使用正向和反向箭號報告頁面間移動。
 
   ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options-reports.png)。
 
 ## 請參閱  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

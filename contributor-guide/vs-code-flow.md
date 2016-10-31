@@ -1,6 +1,6 @@
 <properties
-pageTitle="Visual Studio Code - Flow"
-description="Walkthough of how to use Visual Studio code with the Power BI repo."
+pageTitle="Visual Studio 程式碼的流程"
+description="如何使用 Visual Studio 程式碼和 Power BI 儲存機制的逐步教學課程。"
 services=""
 documentationCenter=""
 authors="guyinacube"
@@ -16,95 +16,95 @@ ms.workload=""
 ms.date="11/09/2015"
 ms.author="asaxton"/>
 
-# Visual Studio Code - Flow
+# Visual Studio 程式碼的流程
 
-This will walk through how you can use Visual Studio Code with the Power BI Git repo. You can download VS Code from https://code.visualstudio.com/.
+這會逐步引導您可以使用 Visual Studio 程式碼與 Power BI Git 儲存機制。 您可以從 https://code.visualstudio.com/ VS 程式碼。
 
 ## 優點
 
-There are a few advantages to using Visual Studio Code instead of another tool, like ATOM.  Mainly because of the Git integration that makes the process a little smoother, and allows you to work within a single tool for most activities. There is also a working files section which makes it nice to ignore the other articles.
+有幾個優點，而不是 ATOM 之類的其他工具使用 Visual Studio 程式碼。  由於製作程序更加順暢，並可讓您在單一工具中，供大部分活動使用的 Git 整合。 另外還有這樣好忽略其他的文件的工作檔案區段。
 
-## Update your local repro first
+## 第一次更新您的本機重新產生
 
-You still need to use the Git command line for a few operations.  The first of which is that we should always do a pull before you begin making changes.  This makes sure that your repo/branch is in line with the main Azure master branch.
+您仍然需要使用 Git 命令列的一些作業。  首先是，我們應該一律提取之前您開始進行變更。  如此可確保您的儲存機制/分支會根據主要的 Azure 主要分支。
 
-To pull the updates from Azure/powerbi-content-pr, run the following command.
+若要從 Azure/powerbi 內容-pr 拉更新，請執行下列命令。
 
     git pull Azure master
     
 ![](media/vs-code-flow/gitpull.png)
  
-You will see <bpt id="p1">**</bpt>Azure<ept id="p1">**</ept> listed in the command above.  In your case, it may be <bpt id="p1">**</bpt>upstream<ept id="p1">**</ept>.  You will get an error indicating it doesn't exist.  Also, it is <bpt id="p1">*</bpt>case sensitive<ept id="p1">*</ept>!  You can verify what yours is by doing a <bpt id="p1">*</bpt>git remote show<ept id="p1">*</ept>.
+您會看到 **Azure** 上述命令中所列。  在您的情況下，可能是 **上游**。  您會收到錯誤指出不存在。  此外，它是 *區分大小寫*！  您可以確認您是否方法 *git 遠端顯示*。
 
-It is a good idea to run a status command to make sure we are in sync.
+它是個不錯的主意執行狀態的命令，並確定我們都保持同步。
 
     git status
 
 ![](media/vs-code-flow/gitstatus.png)
 
-In this case, the local repo was ahead of <bpt id="p1">**</bpt>origin<ept id="p1">**</ept>.
+在此情況下，本機儲存機制已提前 **原點**。
 
-As it indicates, just do a <bpt id="p1">**</bpt>push<ept id="p1">**</ept> and <bpt id="p2">**</bpt>origin<ept id="p2">**</ept> should match your local repo.  
+因為它會指出，只要做 **推播** 和 **原點** 應符合您的本機儲存機制。  
 
     git push
 
 ![](media/vs-code-flow/gitpush.png)
 
-## Local folder
+## 本機資料夾
 
-This assumes that you already have cloned the repro to your computer, and it resides in a local folder. 
+這是假設您已經有複製重現到您的電腦，以及其所在的本機資料夾中。 
 
-After you open VS Code, go to <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Open folder...<ept id="p2">**</ept>.  Point it to your local clone folder.  This will display all files in that structure.
+開啟 VS 程式碼之後，請移至 **檔案** > **開啟資料夾...**。  指向您的本機副本資料夾。  這會顯示所有檔案，該結構中。
 
 ![](media/vs-code-flow/vs-code-folders.png)
 
-## Working files
+## 工作檔案
 
-As you edit files, they will display in the <bpt id="p1">**</bpt>Working files<ept id="p1">**</ept> section. You can remove them from working files by clicking on the X next to it.  
+當您編輯檔案，它們會顯示在 **工作檔案** 一節。 您可以移除這些工作檔案上它旁邊的 [X] 即可。  
 
-This list will persist as you open and close VS Code. It makes for a hand way to focus on the files you won, and ignore the others as noise. The only downside to this area is you can't resize it.
+當您開啟及關閉 VS 程式碼，將會保留這份清單。 它會以專注於您贏了，這些檔案，並略過雜訊其他手動方式。 此區域的唯一缺點是無法調整大小。
 
-## Markdown preview
+## Markdown 預覽
 
-You can see the preview of the markdown by doing one of the following.
+您可以看到 markdown 的預覽，進行下列其中一項。
 
-- Right click on a file and select <bpt id="p1">**</bpt>Open Preview<ept id="p1">**</ept>.
+- 以滑鼠右鍵按一下檔案，然後選取 **開啟預覽**。
 
     ![](media/vs-code-flow/vs-code-preview1.png)
 
-- Select the <bpt id="p1">**</bpt>Open Preview<ept id="p1">**</ept> icon in the upper right, when you have the article opened.
+- 選取 **開啟預覽** 右上方，當有開啟的文件中的圖示。
 
     ![](media/vs-code-flow/vs-code-preview2.png)
 
-## Git Commits
+## Git 認可
 
-This is where VS Code is nice.  As you make changes, VS Code will track the changes you make for checkin purposes.  As you change items, the Git icon, on the left, will have a number indicator next to it showing the number of changes.
+這是其中 VS Code 好用。  您所做的變更，VS 程式碼將會追蹤所做的變更進行簽入。  項目變更時，[Git] 圖示，左邊，將有編號的指標旁它顯示的變更數目。
 
 ![](media/vs-code-flow/vs-code-git.png)
 
-Selecting that icon will show us the list of changes.
+選取該圖示會顯示我們的變更清單。
 
 ![](media/vs-code-flow/vs-code-git2.png)
 
-You can select the <bpt id="p1">**</bpt><ph id="ph1">+</ph><ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Changes<ept id="p2">**</ept> bar by hovering over it.  Or, you can select a <bpt id="p1">**</bpt><ph id="ph1">+</ph><ept id="p1">**</ept> next to each individual file that you want to commit.  Selecting the <bpt id="p1">**</bpt><ph id="ph1">+</ph><ept id="p1">**</ept> will <bpt id="p2">*</bpt>stage<ept id="p2">*</ept> the file.
+您可以選取 **+** 上 **變更** 列上方。  或者，您可以選取 **+** 您想要認可的每個個別檔案旁邊。  選取 **+** 將 *階段* 檔案。
 
 ![](media/vs-code-flow/vs-code-stage.png)
 
 ![](media/vs-code-flow/vs-code-stage2.png)
 
-Once you have your files staged, you can add a comment in the message box, and then select the check icon.  The checkmark icon will actually do the commit action for Git.
+暫存檔案之後，您可以在訊息方塊中，加入註解，然後選取 [核取圖示。  核取記號圖示，將實際執行 Git 認可動作。
 
 ![](media/vs-code-flow/vs-code-commit.png)
 
-## Pushing the files back to GitHub
+## 將檔案推送至 GitHub 的上一步
 
-Once you have committed some files, you will need to go back to the git command shell and issue a <bpt id="p1">**</bpt>push<ept id="p1">**</ept> command to send it back to GitHub.
+一旦您擁有已確認某些檔案，您必須回到 git 命令殼層並問題 **推播** 命令傳送至 GitHub。
 
     git push
 
-You can keep going back into edit files, commit, and push as you work.
+您可以保留回到編輯檔案、 認可和推送到您工作。
 
-## Pull Request
+## 提取要求
 
-Once you are don with all of your changes, you will need to issue a <bpt id="p1">**</bpt>Pull Request<ept id="p1">**</ept> which is done on the GitHub site itself.
+當您使用的所有變更 don，您必須發出 **提取要求** 本身 GitHub 網站上，這完成。
 

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect OneDrive for Business to Power BI"
-   description="OneDrive for Business and Excel files are a match made in the cloud"
+   pageTitle="連接至 Power BI 企業 OneDrive"
+   description="商務和 Excel 檔案的 OneDrive 是在雲端中進行比對"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,33 +23,33 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect OneDrive for Business to Power BI
+# 連接至 Power BI 企業 OneDrive
 
-Get seamless integration between Power BI and Excel when you save your Excel workbooks to OneDrive.
+當您將 Excel 活頁簿儲存到 OneDrive，請取得 Power BI 與 Excel 之間的緊密整合。
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_1.png)
 
-Because OneDrive is in the cloud, just like Power BI, a live connection is made between Power BI and OneDrive. If you make changes to your workbook on OneDrive, those changes are <bpt id="p1">*</bpt>automatically synchronized<ept id="p1">*</ept> with Power BI. Your visualizations in reports and dashboards are kept up-to-date. If your workbook connects to external data sources like a database or an OData feed, you can use Power BI's <bpt id="p1">**</bpt>Schedule refresh<ept id="p1">**</ept> features to check for updates. Need to ask questions about data in your workbook? No problem. You can use Power BI's <bpt id="p1">**</bpt>Q &amp; A<ept id="p1">**</ept> features to do just that.
+因為 OneDrive 定域機組，如同 Power BI 中將會對即時連接 Power BI 和 OneDrive。 如果您對您的活頁簿放在 OneDrive 上的變更，這些變更會 *自動同步處理* Power bi。 視覺效果報表和儀表板中的會保持最新狀態。 如果您的活頁簿連接到外部資料來源，例如資料庫或 OData 摘要時，您可以使用 Power BI **排程重新整理** 檢查更新的功能。 需要詢問您的活頁簿中的資料有關的問題？ 沒問題。 您可以使用 Power BI **問與答** 這麼做的功能。
 
-There are two ways to connect to your Excel files on OneDrive for Business:
+有兩種方式可連接到您的 Excel 檔案放在 OneDrive 上企業︰
 
-1.   Import Excel data into Power BI
-2.   Connect, manage, and view Excel in Power BI
+1.   Excel 資料匯入至 Power BI
+2.   連接、 管理及 Power BI 中檢視 Excel
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_3.png)
 
-### Import Excel data into Power BI
-When you choose to import Excel data into Power BI, table data from your workbook is loaded into a new dataset in Power BI. If you have any <bpt id="p1">**</bpt>Power View<ept id="p1">**</ept> sheets in your workbook, those are imported and new reports are automatically created in Power BI, too.
+### Excel 資料匯入至 Power BI
+當您選擇將 Excel 資料匯入 Power BI 時，便會從您的活頁簿的資料表資料載入至 Power BI 中的新資料集。 如果您有任何 **Power View** 活頁簿中的工作表，這些會匯入新的報表會自動建立和 Power BI 中太。
 
-Power BI will maintain the connection between it and the workbook file on your OneDrive for Business. If you make any changes to your workbook, when you save, those changes will be <bpt id="p1">*</bpt>automatically synchronized<ept id="p1">*</ept>* with Power BI, usually within an hour. If your workbook connects to external data sources, you can setup scheduled refresh so the dataset in Power BI is kept up-to-date. Because visualizations in reports and dashboard in Power BI will use the data from the dataset, as you explore, your queries are lightning fast.
+Power BI 將會保留它與您的 OneDrive 上的活頁簿檔案企業之間的連線。 如果您的活頁簿儲存時進行任何變更，這些變更將會 *自動同步處理** 透過 Power BI，通常會在一小時內。 如果您的活頁簿連接至外部資料來源，您可以設定排定的重新整理，因此 Power BI 中的資料集保持最新狀態。 在報表中的視覺效果和在 Power BI 儀表板會使用資料集中，當您瀏覽，因為您的查詢會快速閃電。
 
-### Connect, Manage and View Excel in Power BI
-When you choose to connect to the Excel workbook, you'll get a seamless experience of working with your workbook in Excel and Power BI. When you connect this way, the workbook's report has a small Excel icon next to it.
+### 連接、 管理及 Power BI 中檢視 Excel
+當您選擇連接到 Excel 活頁簿時，您會收到使用 Excel 和 Power BI 的活頁簿的感覺。 當您連接如此一來時，活頁簿的報表有小型的 Excel 圖示旁邊。
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_4.png)
 
-In the report, you see your Excel workbook in Power BI just as you would in <bpt id="p1">**</bpt>Excel Online<ept id="p1">**</ept>. You can explore and edit your worksheets in Excel Online by selecting Edit from the ellipses menu. When you make changes, any visualizations you've pinned to dashboards are updated automatically.
+在報表中，您看到 Power BI 的 Excel 活頁簿中一樣 **Excel Online**。 您可以瀏覽和編輯您的工作表在 Excel Online 中編輯從功能表中選取省略符號。 當您進行變更時，會自動更新任何已釘選到儀表板的視覺效果。
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_5.png)
 
-No dataset is created in Power BI. All of the data remains in the workbook on OneDrive. One of the many advantages to this approach is that you can setup <bpt id="p1">**</bpt>scheduled refresh<ept id="p1">**</ept> if your workbook connects to external data sources. You can select elements such as PivotTables and charts and <bpt id="p1">**</bpt>pin<ept id="p1">**</ept> them right to dashboards in Power BI. If you make any changes, they're automatically reflected in Power BI. And, you can use Power BI's awesome <bpt id="p1">**</bpt>Q &amp; A<ept id="p1">**</ept> features to ask questions about the data in your workbook.  
+在 Power BI 會建立沒有資料集。 所有的資料會保留在 OneDrive 上的活頁簿。 這種方法很多優點之一是您可以設定 **排定的重新整理** 如果您的活頁簿連接至外部資料來源。 您可以選取項目，例如樞紐分析表和圖表和 **pin** 這些儀表板 Power BI 中以滑鼠右鍵。 如果您進行任何變更，它們是自動反映在 Power BI 中。 而且，您可以使用 Power BI 實在太酷了 **問與答** 詢問有關您的活頁簿中的資料問題的功能。  

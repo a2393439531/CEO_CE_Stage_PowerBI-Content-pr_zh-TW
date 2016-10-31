@@ -1,15 +1,15 @@
-<properties pageTitle="Documentation Example - Includes with Images" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Includes with Images" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-包含與映像" metaKeywords="" description="這是範例文件" services="" documentationCenter="" title="Documentation Example - Includes with Images" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Includes with Images #
+# 範例-包含與映像 #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+這是用來測試及驗證 azure.microsoft.com 的發佈系統的範例文件文件。  
 
-The content between the lines below demonstrates an article that references an include that contains an image.  
+下列程式行之間的內容將示範參考包含映像包含的文章。  
 
 
 ---
-## Includes with Images ##
+## 包含與映像 ##
 
-The result is the following one:
+結果會是下列其中一個︰
 
 [AZURE.INCLUDE [include-short-name](../includes/example-include-images.md)]

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Interact with a report in Reading View in Power BI"
-   description="Interact with a report in Reading View in Power BI"
+   pageTitle="在 Power BI 中的 [讀取] 檢視中的報表進行互動"
+   description="在 Power BI 中的 [讀取] 檢視中的報表進行互動"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,87 +20,87 @@
    ms.date="08/20/2016"
    ms.author="mihart"/>
 
-# Interact with a report in Reading View in Power BI
+# 在 Power BI 中的 [讀取] 檢視中的報表進行互動
 
-##  Reading view
+##  讀取檢視
 
-Reading view is not as interactive as Editing view, but it still gives you many options for exploring the data. Which comes in useful when viewing reports <bpt id="p1">[</bpt>shared with you<ept id="p1">](powerbi-service-share-unshare-dashboard.md)</ept>, since these can only be opened in Reading View.
+讀取檢視不是以 [編輯] 檢視中，為互動式，但它仍能提供許多選項來瀏覽資料。 其中有實用檢視報告時 [與您共用](powerbi-service-share-unshare-dashboard.md), ，因為這些只在讀取檢視中開啟。
 
-In Reading View you can cross-highlight and cross-filter visuals on a page.  Simply highlight or select  a value in one visual and instantly see its impact on the other visuals. Use the Filter pane to add and modify filters on a report page, and change the way values are sorted in a visualization. Reading view is a fun and safe way to play with and get to know your data.
+讀取檢視可以跨反白顯示和交叉篩選頁面上的視覺效果。  只要反白或選取一個視覺化中的值並立即看到其影響其他視覺效果上。 使用 [篩選] 窗格來加入和修改報表] 頁面上的篩選器和變更的值會排序在視覺效果的方式。 讀取檢視是有趣且安全的方式使用，並了解您的資料。
 
 
-##  Cross-highlight the related visualizations on a page
+##  跨反白顯示在頁面上相關的視覺效果
 
-The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations will change based on that selection.
+單一報表頁面上的視覺效果 「 連線 」 彼此。  這表示如果您一種視覺效果中選取一個或多個值，將會變更其他視覺效果會根據該選取項目。
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/pagefilter3b.gif)
 
->[AZURE.NOTE] To select more than one element in a visualization, hold down the CTRL key.
+>[AZURE.NOTE] 若要選取多個項目在視覺效果，請按住 CTRL 鍵。
 
-##  Hover over visual elements to see the details
+##  將滑鼠停留在視覺項目，以查看詳細資料
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/amarillachart.png)
 
 
-##  Sort the data in a visualization
+##  排序視覺效果中的資料
 
-Select the ellipses (...) to open <bpt id="p1">**</bpt>Sort by<ept id="p1">**</ept>. Select the dropdown arrow to choose which field to sort by or select the AZ icon to switch between ascending and descending.    
+選取省略符號 （...） 開啟 **排序**。 選取下拉式箭號，以選擇哪一個欄位排序，或選取 [AZ] 圖示以切換遞增和遞減。    
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_ChangeChartSort.gif) 
 
-##  Interact with filters
+##  使用篩選器互動
 
-If the report author added filters to a page in a report, you can interact with them in Reading View. Changes you make will not be saved with the report.
+如果報表作者加入篩選報表中的頁面，您可以與它們互動讀取檢視。 您所做的變更將不會與報表一起儲存。
 
-1.  Select the Filter icon in the upper-right corner.
+1.  選取右上角的篩選圖示。
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/filters.png)  
 
-2.  You'll see all filters that have been applied to the visual you have selected (Visual level filters), across the whole report page (Page level filters), and across the entire report (Report level filters).
+2.  您會看到所有已套用的篩選視覺效果來選取 （視覺層級篩選），橫跨整個報表頁面 （頁面層級篩選），並在整個報表 （報表層級篩選）。
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-reading-filters.png)
 
-3.  Hover over a filter and expand it by selecting the down arrow.
+3.  將滑鼠停留在篩選條件，並選取向下箭號來展開它。
 
     ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
 
-4.  Make changes to the filters and see how the visuals are impacted. Here are a few to try:
+4.  進行變更的篩選器，請參閱 [視覺效果如何受到影響。 以下是嘗試幾個︰
 
-    -   Filter on <bpt id="p1">**</bpt>Fashions Direct<ept id="p1">**</ept> instead of <bpt id="p2">**</bpt>Lindseys<ept id="p2">**</ept> by removing the checkmark from one and adding it to the other.
+    -   篩選 **的方式直接** 而不是 **Lindseys** 藉由移除其中一個核取記號，加入其他。
 
         ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
 
-    -   Or completely removing filtering on <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> by selecting the eraser icon <ph id="ph1">![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png)</ph> or by adding a checkmark to the <bpt id="p2">**</bpt>Fashions Direct<ept id="p2">**</ept> box.
+    -   或完全移除篩選 **鏈結** 選取橡皮擦圖示 ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png) 或藉由新增一個核取記號來 **的方式直接** 方塊。
 
-    -   Select the <bpt id="p1">**</bpt>District<ept id="p1">**</ept> page level filter and switch to <bpt id="p2">**</bpt>Advanced filtering<ept id="p2">**</ept>. Filter to show only districts that start with <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> and don't contain the number 4.
+    -   選取 **學區** 頁面層級篩選，並切換至 **進階篩選**。 若要顯示的篩選器只 districts 開頭的 **FD** 而且不包含數字 4。
 
         ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-advanced-filter.png)
 
 
-##      Zoom in on individual visuals
+##      放大個別視覺效果
 
-Hover over a visual and select the <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg)</ph>. When you view a visualization in Focus mode, it expands to fill the entire report canvas.
+將滑鼠停留在視覺效果，然後選取 **聚焦模式** 圖示 ![](media/powerbi-service-interact-with-a-report-in-reading-view/PBI_PopOutIcon.jpg)。 當您檢視視覺效果聚焦模式中時，它會展開以填滿整份報表畫布。
 
 ![](media/powerbi-service-interact-with-a-report-in-reading-view/powerbi-focus-mode.png)
 
-For more information, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept> and <bpt id="p2">[</bpt>About filters and highlighting in reports<ept id="p2">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+如需詳細資訊，請參閱 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report.md) 和 [需篩選和報告中反白顯示](powerbi-service-about-filters-and-highlighting-in-reports.md)。
 
-##  Adjust the display dimensions
-Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  To adjust, select <bpt id="p1">**</bpt>View<ept id="p1">**</ept> and choose:
+##  調整顯示的大小
+在許多不同的裝置使用不同的螢幕大小和外觀比例上檢視報告。  預設呈現可能不想要查看您的裝置上。  若要調整，請選取 **檢視** 選擇︰
 
- - Fit to Page: scale content to best fit the page
- - Fit to Width: scale content to the width of the page
- - Actual Size: display content at full size  
+ - 大小︰ 將內容調整成符合頁面
+ - 適合寬度︰ 將內容調整為頁面的寬度
+ - 實際大小︰ 以完整大小顯示內容  
 
-  In Reading View, the display option you select is temporary - it is not saved when you close the report.
+  在讀取檢視中，您選取的顯示選項是暫時-不會儲存在您關閉報表。
 
-  For more information: <bpt id="p1">[</bpt>Tutorial: Change display settings in a report<ept id="p1">](powerbi-service-tutorial-change-report-display-settings.md)</ept>.
+  如需詳細資訊︰ [教學課程︰ 在報表中的變更顯示設定](powerbi-service-tutorial-change-report-display-settings.md)。
 
 
 ## 請參閱
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[About filters and highlighting in Power BI reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+[關於篩選和反白顯示在 Power BI 報表](powerbi-service-about-filters-and-highlighting-in-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

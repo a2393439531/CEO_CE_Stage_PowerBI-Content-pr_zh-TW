@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI get started with third party apps"
-   description="Power BI get started with third party apps"
+   pageTitle="Power BI 開始使用協力廠商應用程式"
+   description="Power BI 開始使用協力廠商應用程式"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,43 +20,43 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Get started with third party apps
+# 開始使用協力廠商應用程式
 
-With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third party app which integrates Power BI tiles into a custom built web application. When you use a third party app, you will be asked to grant that application certain permissions to your Power BI account and resources. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. See <bpt id="p1">[</bpt>Revoke third party app permissions<ept id="p1">](#revoke)</ept>.
+透過 Power BI，您可以使用建置由公司或個人 Microsoft 以外的應用程式。 例如，您可以使用協力廠商應用程式以便將 Power BI 磚整合到自訂內建的 web 應用程式。 當您使用協力廠商應用程式時，將會要求您授與該應用程式特定 Power BI 帳戶和資源的權限。 請務必只授予您已知且信任的應用程式的權限。 隨時都可以撤銷應用程式的權限。 請參閱 [撤銷協力廠商應用程式的權限](#revoke)。
 
-Here are the types of access an application can request.
+以下是一種應用程式可以要求的存取權。
 
-## Power BI App permissions
+## Power BI 應用程式權限
 
--   **View all Dashboards (preview)**
+-   **檢視所有儀表板 （預覽）**
 
-  - This permission gives an application the ability to view all dashboards you have access to. This includes dashboards that you own, have gotten from content packs, and have been shared to you and are in groups that you belong to. The application cannot make any modifications to the dashboard. Among other things, this permission can be used by an application to embed your dashboard content into its experiences.
+  - 此權限可讓應用程式能夠檢視您具有存取權的所有儀表板。 這包括您所擁有、 內容的組件，了解並共用您和您所屬的群組中的儀表板。 應用程式無法進行任何修改的儀表板。 在其他方面，此權限可用應用程式，將您的儀表板內容內嵌至其的經驗。
 
--   **View all Reports (preview)**
+-   **檢視所有報告 （預覽）**
 
-  - This permission gives an application the ability to view all reports you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. Part of viewing the report, means that the application can also see the data within it. The application cannot make any modifications to the reports themselves. Among other things, this permission can be used by an application to embed your report content into its experiences.
+  - 此權限為應用程式提供可檢視所有報告，您可以存取的能力。 這包括您擁有內容的組件，了解，則您所屬的群組中的報表。 檢視報表時，表示應用程式也可以查看資料的一部分。 應用程式無法進行任何修改自己的報告。 在其他方面，此權限可用應用程式，將報表內容內嵌至其的經驗。
 
--   **View all Datasets**
+-   **檢視所有資料集**
 
-  - This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read the data in a dataset. The permission does not give the application rights to add or make changes to a dataset.
+  - 此權限可讓應用程式，列出您可以存取的所有資料集。 這包括您擁有內容的組件，了解，則您所屬的群組中的資料集。 應用程式可以看到您的資料集，以及其結構，包括資料表和資料行名稱的名稱。 此權限讓權限可讀取的資料集中的資料。 權限並不授予新增或變更資料集的應用程式權限。
 
--   **Read and Write all Datasets**
+-   **讀取和寫入所有資料集**
 
-  - This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read and write the data in a dataset. The application can also create new datasets, or make modifications to existing ones. This is commonly used by an application to send to data directly to Power BI.
+  - 此權限可讓應用程式，列出您可以存取的所有資料集。 這包括您擁有內容的組件，了解，則您所屬的群組中的資料集。 應用程式可以看到您的資料集，以及其結構，包括資料表和資料行名稱的名稱。 此權限可讓您讀取和寫入資料集內的權限。 應用程式也可以建立新的資料集，或修改現有項目。 這常用的應用程式傳送資料至 Power BI 直接。
 
--   **View user's Groups**
+-   **檢視使用者的群組**
 
-  -  This permission gives the application the ability to list all groups that you are a member of. It can use this permission along with some of the other permissions listed to view or update content for that particular group. The application cannot make modifications to the group itself.
+  -  此權限可讓應用程式，列出所有您所隸屬的群組。 它可以使用此權限，以及檢視或更新該特定群組的內容中列出的其他權限。 應用程式不能修改群組本身。
 
 <a name="revoke"/>
-## Revoke third party app permissions
+## 撤銷協力廠商應用程式的權限
 
-You revoke permissions for a third party app by going to the Office 365 My Apps site.
+您可以撤銷的協力廠商應用程式的權限移至 Office 365 我的應用程式的站台。
 
-On the <bpt id="p1">**</bpt>Office 365 My apps<ept id="p1">**</ept> site, here's how to revoke third party permissions:
+在 **Office 365 我的應用程式** 站台，撤銷協力廠商的權限的方法如下︰
 
-1. Go to <bpt id="p1">[</bpt>Office 365 My Apps site<ept id="p1">](https://portal.office.com/myapps)</ept>.
-2. On the <bpt id="p1">**</bpt>My apps<ept id="p1">**</ept> page, locate the third party app.
-3. Hover over the app tile, click the <bpt id="p1">**</bpt>(...)<ept id="p1">**</ept> button, and click <bpt id="p2">**</bpt>Remove<ept id="p2">**</ept>.
+1. 移至 [Office 365 我的應用程式的站台](https://portal.office.com/myapps)。
+2. 在 **我的應用程式** 頁面上，找出協力廠商應用程式。
+3. 將滑鼠停留在應用程式磚中，按一下 **（...）** ] 按鈕，然後按一下 [ **移除**。
 
   ![](media/powerbi-service-power-bi-get-started-third-party-apps/remove.png)

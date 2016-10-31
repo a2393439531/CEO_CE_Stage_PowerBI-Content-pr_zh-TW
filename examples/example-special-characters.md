@@ -1,67 +1,67 @@
-<properties pageTitle="Documentation Example - Special Characters" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Special Characters" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-特殊字元" metaKeywords="" description="這是範例文件" services="" documentationCenter="" title="Documentation Example - Special Characters" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Special Characters #
+# 範例-特殊字元 #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+這是用來測試及驗證 azure.microsoft.com 的發佈系統的範例文件文件。  
 
-The content between the lines below demonstrates the use of various characters so that you can see how they will be rendered within azure.microsoft.com.  
+下列程式行之間的內容會示範使用各種字元，讓您可以看到 azure.microsoft.com 內的呈現方式。  
 
 http://www.ascii.cl/htmlcodes.htm
 
 
 ---
-## Special Characters in this heading: &amp; &lt; &gt; « » √ – — ™ © ® ‘ ’ “ ”#
+## 此標題中的特殊字元: （& s) < > «» √ – —™ ©® ' '"」#
 
 
-| 字元     |  值  |  HTML Code | 描述 |
+| 字元     |  值  |  HTML 程式碼 | 描述 |
 |--------------|----------|---------|------|
-| &#38;        |   &     | `&#38;` | ampersand |
+| &#38;        |   &     | `&#38;` | 連字號 |
 | &#60;        |   <     | `&#60;` | 小於 |
 | &#62;        |   >     | `&#62;` | 大於 |
-| « » |   « »   | n/a | chevrons |
-| &amp;#x2713;       |   √     | `&#x2713;` | 勾選記號 |
-| &#8211;       |   –     | `&#8211;` | en dash |
-| &#8212;       |   —     | `&#8212;` | em dash |
-| &#8482;       |   ™     | `&#8482;`  | trade mark sign |
-| &#169;       |   ©     | `&#169;` | copyright sign |
-| &#174;       |   ®     | `&#174;` | registered trade mark sign |
-| &#8218;       |   “     | `&#8218;` | left single quotation mark |
-| &#8219;       |   ”     | `&#8219;` | right single quotation mark |
-| &#8220;       |   “     | `&#8220;` | left double quotation mark |
-| &#8221;       |   ”     | `&#8221;` | right double quotation mark |
-| &euro;        |   €     | `&euro;` | euro sign |
+| « » |   « »   | n/a | > 形箭號 |
+| & #x 2713;       |   √     | `&#x2713;` | 勾選記號 |
+| &#8211;       |   –     | `&#8211;` | 短破折號 |
+| &#8212;       |   —     | `&#8212;` | ca 系統管理員 |
+| &#8482;       |   ™     | `&#8482;`  | 交易標示符號 |
+| &#169;       |   ©     | `&#169;` | 著作權符號 |
+| &#174;       |   ®     | `&#174;` | 已註冊的交易標示符號 |
+| &#8218;       |   “     | `&#8218;` | 左的單引號 |
+| &#8219;       |   ”     | `&#8219;` | 右單引號 |
+| &#8220;       |   “     | `&#8220;` | 左的雙引號 |
+| &#8221;       |   ”     | `&#8221;` | 右雙引號 |
+| &euro;        |   €     | `&euro;` | 歐元符號 |
 
 ---
 
-## Numbered list with special characters
+## 使用特殊字元的編號的清單
 
 1. 編號清單
 2. & < > « » √ – — ™ © ® ‘ ’ “ ”
-3. End of numbered list
+3. 編號清單的結尾
 
 ---
 
-## Bullet list with special characters
+## 使用特殊字元的項目符號清單
 
-- Bullet list
+- 項目符號清單
 - & < > « » √ – — ™ © ® ‘ ’ “ ”
-- End of bullet list
+- 項目符號清單的結尾
 
 ---
 
-## Note with special characters
+## 請注意，含有特殊字元
 
-> [AZURE.NOTE] A note with special characters:  &lt; &gt; « » √ – — ™ © ® ‘ ’ “ ”
-
----
-
-## Link with special characters
-
-[a link with special characters: &lt; &gt; « » √ – — ™ © ® ‘ ’ “ ”](http://azure.microsoft.com/)
+> [AZURE.NOTE] 請注意，含有特殊字元︰ < > «» √ – —™ ©® ' '"」
 
 ---
 
-## Code with special characters
+## 連結含有特殊字元
+
+[使用特殊字元的連結︰ < > «» √ – —™ ©® ' '"」](http://azure.microsoft.com/)
+
+---
+
+## 程式碼含有特殊字元
 
 `Inline with special characters: < > « » √ – — ™ © ® ‘ ’ “ ”`
 

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Power BI Archived Workspace"
-   description="Power BI Archived Workspace after managing your Office 365 tenant"
+   pageTitle="Power BI 封存工作區"
+   description="Power BI 封存工作區之後管理 Office 365 租用戶"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,34 +20,42 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Power BI Archived Workspace  
+# Power BI 封存工作區  
 
-With Power BI, anyone can sign up and start using the service in a few minutes.  Later, your organization's IT department may choose to take over managing Power BI for users in your organization.  If this takeover occurs, you will benefit from central management of users and permissions in your organization and you may be able to take advantage of streamlined sign-in using the same username and password you use for other services in your organization. 
+有了 Power BI 的任何人都可以註冊並開始使用服務，在幾分鐘的時間。  稍後，您的組織 IT 部門可能會選擇接管您的組織中的使用者管理 Power BI。  發生此接管時，您將獲得使用者權限的中央管理組織中，您可以利用簡化登入使用相同的使用者名稱和密碼在組織中使用其他服務。 
 
-Any content you created before your IT department started managing Power BI will be placed in a Power BI Archived Workspace, which is accessible from the left navigation of <bpt id="p1">[</bpt>Power BI<ept id="p1">](https://app.powerbi.com)</ept>.  You should start creating new Power BI content in My Workspace, which is secured and managed by your organization's IT department.  Your Archived Workspace will continue to exist, but there are restrictions on actions you can perform on content in your Archived Workspace.  To remove these restrictions, you will need to migrate the content from your Archived Workspace to your My Workspace, managed by your IT department.
+您的 IT 部門開始管理 Power BI 之前所建立的任何內容將會放在 Power BI 封存工作區中，從左側導覽中的可存取 [Power BI](https://app.powerbi.com)。  您應該開始建立新的 Power BI 的內容，在我的工作區，這是受到保護，您的組織所管理的 IT 部門。  您的封存工作區會持續存在，但有一些限制您可以針對內容封存工作區中執行的動作。  若要移除這些限制，您必須將內容從您的封存工作區移轉到了我的工作區，由您的 IT 部門。
 
-## Restrictions in your Archived Workspace  
-No content will be deleted from your Archived Workspace.  You can continue to get data, create reports and dashboards, and refresh datasets.  Existing users you have shared content with will still be able to view the content in their Archived Workspace too.
+## 封存工作區中的限制  
+從您的封存工作區，將會不刪除任何內容。  您可以繼續取得資料、 建立報表和儀表板，並重新整理資料集。  您有共用的內容與現有的使用者仍然可以也在他們的封存工作區中檢視內容。
 
-However, there are some restrictions on content in your Archived Workspace:
+不過，有一些限制封存工作區中的內容︰
 
--   <bpt id="p1">**</bpt>OneDrive for Business.  <ept id="p1">**</ept> You will no longer be able to get data or refresh from OneDrive for Business for datasets in your Archived Workspace.  If you try to connect to this source, you will receive a warning.
+-   
+            **商務用 OneDrive。** 您將不再能夠取得資料，或重新整理來自商務用 OneDrive 的封存工作區中的資料集。  如果您嘗試連接到此來源，您會收到一則警告。
 
--   <bpt id="p1">**</bpt>Sharing dashboards.  <ept id="p1">**</ept> You can't share dashboards with other users from your Archived Workspace.  Any users that already have access will continue to be able to view shared dashboards by accessing their Archived Workspace.
+-   
+            **共用儀表板。** 您不能與其他使用者共用儀表板，從您的封存工作區。  已經有存取權的任何使用者仍可以藉由存取他們的封存工作區中檢視共用儀表板。
 
--   <bpt id="p1">**</bpt>Creating groups.  <ept id="p1">**</ept> You can't create groups in your Archived Workspace.
+-   
+            **建立群組。** 您無法封存工作區中建立群組。
 
--   <bpt id="p1">**</bpt>Access on Power BI mobile apps.  <ept id="p1">**</ept><ph id="ph1">﻿</ph>While you can still view content on the web in your Archived Workspace, this content will no longer appear in the Power BI mobile apps.
+-   
+            **Power BI 行動應用程式的存取。**﻿雖然您仍然可以檢視從封存工作區中的網站上的內容，此內容不會再出現在 Power BI 行動應用程式。
 
-## Migrating Content in your Archived Workspace  
-To continue to use Power BI, you should create new content in your My Workspace, managed by your IT department.   You should also plan to migrate any content in your Archived Workspace to your My Workspace.  How you migrate content depends on the kind of content:
+## 移轉您的封存工作區中的內容  
+若要繼續使用 Power BI，您應該建立新的內容在我的工作區中受管理的 IT 部門。   您還應該規劃移轉到我的工作區的封存工作區中的任何內容。  移轉內容的方式取決於這類型的內容︰
 
--   <bpt id="p1">**</bpt>Excel or Power BI Desktop ﻿Datasets.  <ept id="p1">**</ept> Migrate these datasets by switching from your Archived Workspace to My Workspace and re-uploading the Excel or Power BI Desktop file by clicking the "My Data" button.  If you set up scheduled refresh, you will need to reconfigure those settings for the new dataset in My Workspace.
+-   
+            **Excel 或 Power BI Desktop 資料集。** 移轉這些資料集從您的封存工作區切換到我的工作區，並重新上傳 Excel 或 Power BI Desktop 檔案，依序按一下 [我的資料] 按鈕。  如果您設定排定的重新整理時，您必須重新設定這些設定我的工作區中的新資料集。
 
--   <bpt id="p1">**</bpt>Other Datasets.  <ept id="p1">**</ept> Switch to My Workspace and then click the Get Data button to reconnect to any other datasets you created in your Archived Workspace.  You may need to re-enter security or connection information.
+-   
+            **其他資料集。** 切換至 [我的工作區，然後按一下 [重新連接至您建立封存工作區中的其他資料集取得資料] 按鈕。  您可能需要重新輸入安全性或連接資訊。
 
--   <bpt id="p1">**</bpt>Reports.  <ept id="p1">**</ept> Reports that were contained in Excel or Power BI Desktop files or reports installed as part of content packs will be automatically recreated once you re-upload the corresponding Excel or Power BI Desktop file or reconnect to the content pack.  If you created your own reports through the Power BI service, you will need to recreate those reports in your My Workspace.
+-   
+            **報表。** 在 Excel 或 Power BI Desktop 檔案或安裝為重新上傳對應 Excel 或 Power BI Desktop 檔案或重新連線至內容的組件之後自動產生的內容組件一部分的報表中包含的報表。  如果您建立您自己的報表透過 Power BI 服務，您必須重新建立我的工作區中的這些報表。
 
--   <bpt id="p1">**</bpt>Dashboards.  <ept id="p1">**</ept> Dashboards installed as part of content packs will be automatically recreated when you reconnect to the content pack in My Workspace.  If you created your own dashboards through the Power BI service, you will need to recreate those dashboards in your My Workspace.
+-   
+            **儀表板。** 當您重新連線到我的工作區的內容組件安裝過程中的內容組件的儀表板會自動重新建立。  如果您建立您自己的儀表板，透過 Power BI 服務，您必須重新建立這些儀表板，在我的工作區中。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)  

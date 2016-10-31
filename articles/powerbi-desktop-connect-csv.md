@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to CSV files in Power BI Desktop"
-   description="Easily connect to and use CSV file data in Power BI Desktop"
+   pageTitle="連接至 Power BI Desktop 中的 CSV 檔案"
+   description="輕鬆地連接到並在 Power BI Desktop 中使用 CSV 檔案資料"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,47 +20,47 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect to CSV files in Power BI Desktop
+# 連接至 Power BI Desktop 中的 CSV 檔案
 
-Connecting to a comma-separated value (<bpt id="p1">*</bpt>CSV<ept id="p1">*</ept>) file from Power BI Desktop is a lot like connecting to an Excel workbook. Both are easy, and this article steps you through how to connect to any CSV file to which you have access.
+連線至以逗號分隔值 (*CSV*) 從 Power BI Desktop 檔案很像連接至 Excel 活頁簿。 兩者都很簡單，和本文章會引導您了解如何連接到任何您具有存取權的 CSV 檔案。
 
-To start with, from Power BI Desktop select <bpt id="p1">**</bpt>Get Data &gt; CSV<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon.
+若要開始，從 Power BI Desktop 選取 **取得資料 > CSV** 從 **首頁** 功能區。
 
 ![](media/powerbi-desktop-connect-csv/connect-to-csv_1.png)
 
-Select your CSV file from the <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> dialog that appears.
+選取您的 CSV 檔從 **開啟** 出現的對話方塊。
 
 ![](media/powerbi-desktop-connect-csv/connect-to-csv_2.png)
 
-When you select <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>, Power BI Desktop accesses the file and determines certain file attributes, such as the file origin, delimiter type, and how many rows should be used to detect the data types in the file.
+當您選取 **開啟**, ，Power BI Desktop 存取檔案，並判斷特定的檔案屬性，例如檔案來源，分隔符號類型，以及多少資料列應該用來偵測資料類型，在檔案中。
 
-These file attributes and options are shown in the drop-down selections at the top of the <bpt id="p1">**</bpt>CSV import<ept id="p1">**</ept> dialog window, shown below. You can change any of these detected settings manually, by choosing another option from any of the drop-down selectors.
+這些檔案屬性和選項會顯示在頂端的下拉式清單選取項目 **CSV 匯入** 對話方塊視窗中，如下所示。 您可以變更任何這些偵測到的設定以手動方式，是藉由從下拉式清單選取器的任何選擇另一個選項。
 
 ![](media/powerbi-desktop-connect-csv/connect-to-csv_3.png)
 
-When you’re satisfied with the selections, you can select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> to import the file into Power BI Desktop, or you can select <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> to open <bpt id="p3">**</bpt>Query Editor<ept id="p3">**</ept> and further shape or transform the data before importing it.
+當您滿意所做的選擇時，您可以選取 **負載** 檔案匯入至 Power BI Desktop，或者您可以選取 **編輯** 開啟 **查詢編輯器** 進一步圖形或匯入之前轉換資料。
 
-Once you load the data into Power BI Desktop, you see the table and its columns (which are presented as Fields in Power BI Desktop) in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, along the right of the Report view in Power BI Desktop.
+一旦您將資料載入 Power BI Desktop，您看到資料表和其資料行 （其中會顯示為 Power BI Desktop 中的欄位） 中 **欄位** ] 窗格中的，[報告] 檢視中 Power BI Desktop 右側。
 
 
 ![](media/powerbi-desktop-connect-csv/connect-to-csv_4.png)
 
-That’s all you have to do – the data from your CSV file is now in Power BI Desktop.
+這是您只需要 – 從 CSV 檔案資料現在是 Power BI Desktop。
 
-You can use that data in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
+您可以使用 Power BI Desktop 中的資料來建立視覺效果，報表或其他您可能想要使用連線，例如 Excel 活頁簿、 資料庫或任何其他資料來源匯入的資料進行互動。
 
 
 
 ## 詳細資訊
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿有各式各樣的資料，您可以連接到使用 Power BI Desktop。 如需有關資料來源的詳細資訊，請參閱下列資源︰
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [開始使用 Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Power BI Desktop 中的資料來源](powerbi-desktop-data-sources.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [圖形，並結合資料與 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+-   [連接到 Power BI Desktop 中的 Excel 活頁簿](powerbi-desktop-connect-excel.md)   
 
--   [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
+-   [Power BI Desktop 中直接輸入資料](powerbi-desktop-enter-data-directly-into-desktop.md)   

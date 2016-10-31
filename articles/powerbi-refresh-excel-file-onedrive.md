@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Refresh a dataset created from an Excel workbook - cloud"
-   description="Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online"
+   pageTitle="重新整理 Excel 活頁簿-雲端中建立的資料集"
+   description="重新整理從 OneDrive 或 SharePoint Online 上的 Excel 活頁簿中建立的資料集"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,87 +20,91 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
+# 重新整理從 OneDrive 或 SharePoint Online 上的 Excel 活頁簿中建立的資料集
 
-You can import Excel workbooks that are stored on your local machine, or in cloud storage such as OneDrive for Business or SharePoint Online. We will look at the advantages of using cloud storage for your excel files. For more information on how to import Excel files into Power BI, see <bpt id="p1">[</bpt>Get data from Excel workbook files<ept id="p1">](powerbi-service-excel-workbook-files.md)</ept>.
+您可以匯入 Excel 活頁簿儲存在本機電腦，或在雲端儲存體，例如 OneDrive 商業或 SharePoint Online。 我們將為您的 excel 檔案使用雲端儲存體的優點。 如需有關如何將 Excel 檔案匯入 Power BI 的詳細資訊，請參閱 [從 Excel 活頁簿檔案取得資料](powerbi-service-excel-workbook-files.md)。
 
-## What are the advantages?  
-Importing files from OneDrive, or SharePoint Online, is a great way to make sure the work you’re doing in Excel stays in-sync with the Power BI service. Any data you’ve loaded into your file’s model is imported into the dataset and any reports you’ve created in the file are loaded into Reports in Power BI. If you make changes to your file on OneDrive, or SharePoint Online, like add new measures, change column names, or edit visualizations, once you save, those changes will be updated in Power BI too, usually within about an hour.
+## 優點有哪些？  
+從 OneDrive 或 SharePoint Online，匯入檔案時請確認您所做的工作中，Excel 會留在同步處理與 Power BI 服務的好方法。 您已將檔案的模型載入任何資料匯入資料集和任何您已在檔案中建立的報表載入 Power BI 中的報表。 如果您變更檔案的 OneDrive 或 SharePoint Online，像是新增新的量值、 變更資料行名稱，或編輯視覺效果，一旦儲存之後，這些變更將會更新 Power BI 中，通常內大約一小時。
 
-When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that is loaded into the Excel data model and the structure of the data model, are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive, or SharePoint Online, about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in the Power BI service.
+當您從匯入 Excel 活頁簿您個人的 OneDrive 時，活頁簿時，就像在工作表及/或資料載入 Excel 資料模型和結構的資料模型中，資料表中的任何資料會匯入 Power BI 中的新資料集。 任何 Power View 視覺效果時都會重新建立在報表中。 Power BI 會自動連結上 OneDrive 或 SharePoint Online 的活頁簿，大約每個小時檢查更新。 如果活頁簿已變更，Power BI 會重新整理資料集和 Power BI 服務中的報表。
 
-You can refresh on the dataset in the Power BI service. When you manually refresh, or schedule refresh, on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive, or SharePoint Online. 
+您可以重新整理 Power BI 服務中的資料集上。 當您手動重新整理，或排程重新整理資料集、 Power BI 直接連接到外部資料來源查詢更新的資料會再載入至資料集。 重新整理從 Power BI 中的資料集不會重新整理 OneDrive 或 SharePoint Online 上的活頁簿中的資料。 
 
-## What’s supported?  
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+## 支援的項目？  
+在 Power BI，立即重新整理和重新整理排程時，才支援建立從 Power BI Desktop 檔案匯入從何處取得資料/查詢編輯器用來連接到並從任何下列資料來源載入資料的本機磁碟機的資料集︰  
 
-### Power BI Gateway - Personal
--   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
--   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+### Power BI 閘道個人
+-   Power BI Desktop 的取得資料和查詢編輯器中顯示的所有線上資料來源。
+-   除了 Hadoop 檔案 (HDFS) 和 Microsoft Exchange Power BI Desktop 的取得資料和查詢編輯器] 中顯示所有內部部署資料來源。
 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-> [AZURE.NOTE] A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+> [AZURE.NOTE] 閘道必須安裝和執行中，Power BI，以連接到內部部署資料來源重新整理資料集。
 
-## OneDrive or OneDrive for Business. What’s the difference?  
-If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
+## OneDrive 或商務用 OneDrive。 有何不同？  
+如果您有個人 OneDrive 和商務用 OneDrive，建議您保留任何您想要匯入 Power BI，商務用 OneDrive 中的檔案。 原因如下︰ 您可能使用兩個不同的帳戶來登入它們。
 
-Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different <bpt id="p1">[</bpt>Microsoft account<ept id="p1">](http://www.microsoft.com/account/default.aspx)</ept>.
+通常可以無縫連接到 Power BI 中的商務用 OneDrive，因為您用來登入 Power BI 與相同的帳戶通常是用來登入商務用 OneDrive 的相同帳戶。 但與使用不同的可能登入您的個人 OneDrive [Microsoft 帳戶](http://www.microsoft.com/account/default.aspx)。
 
-When you sign in with your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI  
+當您登入您的 Microsoft 帳戶，務必選取 [讓我保持登。 Power BI 再同步處理您在 Power BI 中的資料集在 Power BI Desktop 檔案中進行任何更新  
     ![](media/powerbi-refresh-desktop-file-onedrive/Refresh_SignIn_KeepMeSignedIn.png)
 
-If you make changes to your file on OneDrive that cannot be synchronized with the dataset or reports in Power BI, because your Microsoft account credentials might have changed, you’ll need to connect to and import your file again from your personal OneDrive.
+如果您無法進行同步處理與資料集或報表，Power BI 中的 OneDrive 上的檔案可能變更您的 Microsoft 帳戶認證進行變更，您必須連接到並再次匯入檔案，從您的個人 OneDrive。
 
 
-## Options for connecting to Excel file
-When you connect to an Excel workbook in OneDrive for Business, or SharePoint Online, you’ll have two options on how to get what’s in your workbook into Power BI.
+## 連結到 Excel 檔案選項
+當您連線到在 OneDrive 中的 Excel 活頁簿 for Business 或 SharePoint Online 時，您將有關於如何讓何謂到 Power BI 活頁簿中的兩個選項。
 
-<bpt id="p1">[</bpt><bpt id="p2">**</bpt>Import Excel data into Power BI<ept id="p2">**</ept><ept id="p1">](powerbi-service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi)</ept> – When you import an Excel workbook from your OneDrive for Business, or SharePoint Online, it works as described above.
 
-<bpt id="p1">[</bpt><bpt id="p2">**</bpt>Connect, Manage, and View Excel in Power BI<ept id="p2">**</ept><ept id="p1">](powerbi-service-excel-workbook-files.md#one-excel-workbook-two-ways-to-use-it)</ept> – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business, or SharePoint Online.
+            [
+            **Excel 資料匯入至 Power BI**](powerbi-service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – 當您匯入 Excel 活頁簿從您的 OneDrive Business 或 SharePoint Online 運作上面所述。
 
-When you connect to an Excel workbook this way, a dataset is not created in Power BI. However, the workbook will appear in the Power BI service under Reports with an Excel icon next to the name. Unlike with Excel Online, when you connect to your workbook from Power BI, if your workbook has connections to external data sources that load data into the Excel data model, you can setup a refresh schedule.
 
-When you setup a refresh schedule this way, the only difference is refreshed data goes into the workbook’s data model on OneDrive, or SharePoint Online, rather than a dataset in Power BI.
+            [
+            **連線管理，並在 Power BI 中檢視 Excel**](powerbi-service-excel-workbook-files.md#one-excel-workbook-two-ways-to-use-it) – 使用此選項時，您建立連接從 Power BI 由右至您的活頁簿放在 OneDrive 上的公司或 SharePoint Online。
 
-## How do I make sure data is loaded to the Excel data model?  
-When you use Power Query (Get &amp; Transform data in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the <bpt id="p1">**</bpt>Add this data to the Data Model<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>Load To<ept id="p2">**</ept> dialog box.
+當您連接到 Excel 活頁簿如此一來時，在 Power BI 中將不會建立資料集。 不過，活頁簿會出現在名稱旁的 Excel 圖示 [報表] 下的 Power BI 服務。 不同於 Excel Online，當您連接到您的活頁簿從 Power BI，如果您的活頁簿有連線到外部資料來源的資料載入 Excel 資料模型中，您可以使用設定的重新整理排程。
 
-> [AZURE.NOTE] The images here show Excel 2016.
+當您設定的重新整理排程，如此一來，唯一的差異會重新整理資料都會送到活頁簿的資料模型上 OneDrive，或 SharePoint Online，而不是 Power BI 中的資料集。
 
-In <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Load To…<ept id="p2">**</ept>  
+## 如何確定資料載入到 Excel 資料模型？  
+當您使用 Power Query （Get 和轉換資料，Excel 2016） 來連接到資料來源時，您有幾個選項，將資料載入的位置。 若要確定您將資料載入資料模型，您必須選取 **將此資料加入至資料模型** 選項 **載入至** 對話方塊。
+
+> [AZURE.NOTE] 以下影像顯示 Excel 2016。
+
+在 **導覽**, ，按一下 [ **載入至...**  
     ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_1.png)
 
-Or, If you click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> in Navigator, you’ll open the Query Editor. There you can click <bpt id="p1">**</bpt>Close &amp; Load To….<ept id="p1">**</ept>  
+或者，如果您按一下 **編輯** 導覽] 中，您會開啟 [查詢編輯器] 中。 您可以按一下 [那里 **關閉及載入至...**  
     ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_2.png)
 
-Then in <bpt id="p1">**</bpt>Load To<ept id="p1">**</ept>, make sure you select <bpt id="p2">**</bpt>Add this data to the Data Model<ept id="p2">**</ept>.  
+接著在 **載入至**, ，請確定您選取 **將此資料加入至資料模型**。  
     ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_3.png)
 
-### What if I use Get External Data in Power Pivot?  
-No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.
+### 如果使用 Power Pivot 中取得外部資料？  
+沒問題。 每當您連線到使用 Power Pivot 時，從內部部署或線上資料來源的查詢資料，資料就會自動載入至資料模型。
 
-## How do I schedule refresh?  
-When you setup a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+## 我要如何排程重新整理？  
+當您安裝的重新整理排程時，Power BI 會直接連接到資料來源連接資訊和認證，使用更新的資料，資料集查詢，然後將更新的資料載入資料集。 也會更新報表和 Power BI 服務中的資料集為基礎的儀表板中的任何視覺效果。
 
-For details on how to setup schedule refresh, see <bpt id="p1">[</bpt>Configure Schedule Refresh<ept id="p1">](powerbi-refresh-scheduled-refresh.md)</ept>.
+如需有關如何安裝排程重新整理的詳細資訊，請參閱 [設定排程重新整理](powerbi-refresh-scheduled-refresh.md)。
 
-## When things go wrong  
-When things go wrong, it’s usually because Power BI can’t sign into data sources, or if the dataset connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+## 不測風雲時  
+發生錯誤時，通常是因為 Power BI 無法登入的資料來源，或如果資料集連接到內部部署資料來源，閘道已離線。 請確定 Power BI 可登入的資料來源。 如果您用來登入的資料來源的密碼變更，或從資料來源取得登出 Power BI，請務必嘗試登入您的資料來源中資料來源認證一次。
 
-Be sure to leave the <bpt id="p1">**</bpt>Send refresh failure notification email to me checked<ept id="p1">**</ept>. You’ll want to know right away if a scheduled refresh fails.
+請務必保留 **傳送重新整理失敗通知電子郵件給我檢查**。 您會想要立刻知道如果排定的重新整理失敗。
 
-## Important notes  
-\* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
+## 重要注意事項  
+\* OData 摘要連接和從 Power Pivot 查詢不支援重新整理。 當使用 OData 摘要做為資料來源時，使用 Power Query。
 
 ## 疑難排解
 
-Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
+有時候重新整理資料可能不會如預期般。 通常這會是與閘道連線的問題。 看看閘道疑難排解文件的工具和已知的問題。
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[疑難排解 Power BI 閘道-個人](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

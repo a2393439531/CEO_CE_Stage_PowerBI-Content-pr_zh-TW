@@ -1,6 +1,6 @@
-<properties pageTitle="Documentation Example - Selectors" description="This is an example document" title="Documentation Example - Selectors" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-選取器" description="這是範例文件" title="Documentation Example - Selectors" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
 
-# Documentation Example - Selectors
+# 文件範例-選取器
 
 > [AZURE.SELECTOR]
 > - [Windows Phone](http://link.com)

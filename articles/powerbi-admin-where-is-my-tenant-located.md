@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Where is my Power BI tenant located?"
-   description="Learn where your Power BI tenant is located and how that location is selected. This is important to understand as it can impact interactions you have with the service."
+   pageTitle="我的 Power BI 租用戶位於何處？"
+   description="了解您的 Power BI 租用戶所在的位置，以及如何選取該位置。 這是一定要了解，因為它可以影響您有與服務互動。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -19,33 +19,33 @@
    ms.workload="powerbi"
    ms.date="09/16/2016"
    ms.author="asaxton"/>
-# Where is my Power BI tenant located?
+# 我的 Power BI 租用戶位於何處？
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0fOxaHJPvdM?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Learn where your Power BI tenant is located and how that location is selected. This is important to understand as it can impact interactions you have with the service.
+了解您的 Power BI 租用戶所在的位置，以及如何選取該位置。 這是一定要了解，因為它可以影響您有與服務互動。
 
-## How to determine where your Power BI tenant is located
+## 如何判斷您的 Power BI 租用戶所在的位置
 
-The find the region your tenant is in, you can do the following.
+尋找您的租用戶 」 中的區域中，您可以執行下列作業。
 
-1. Select the <bpt id="p1">**</bpt>?<ept id="p1">**</ept> within the Power BI service.
+1. 選取 **嗎？** 在 Power BI 服務。
 
-2. Select <bpt id="p1">**</bpt>About Power BI<ept id="p1">**</ept>.
+2. 選取 **解 Power BI**。
 
-3. Look for the value next to <bpt id="p1">**</bpt>Your data is stored in<ept id="p1">**</ept>. This is the region you are located in.
+3. 尋找值旁邊 **您的資料會儲存在**。 這是您所在的區域。
 
 ![](media/powerbi-admin-where-is-my-tenant-located/power-bi-data-region.png)
 
-## How the data region is selected
+## 如何選取資料區域
 
-The data region is based on the country that was selected when the tenant was first created. This applies to sign up for Office 365 in addition to Powe rBI as this information is shared. If this is a new tenant, when you sign up, you will see a country drop down.
+資料區域根據第一次建立租用戶時已選取的國家/地區。 這適用於註冊 Office 365 Powe rBI 除了為共用此資訊。 如果這是新的租用戶，當您註冊時，您會看到一個下拉式清單中的國家/地區。
 
 ![](media/powerbi-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
-This selection is what drives the location of where your data will be stored. Power BI will pick a data region closest to this selection.
+此選項時，哪些磁碟機的資料儲存位置。 Power BI 會選擇這個選項最接近的資料區域。
 
-> [AZURE.WARNING] This selection cannot be changed!
+> [AZURE.WARNING] 無法變更此選取項目 ！
 
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

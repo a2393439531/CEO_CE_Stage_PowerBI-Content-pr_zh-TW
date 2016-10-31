@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Matrixes and tables"
-   description="Sometimes a matrix or table is the visual you need"
+   pageTitle="矩陣和資料表"
+   description="矩陣或資料表有時候是您需要的視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,21 +23,21 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Tables and Matrixes
+# 如何使用資料表和矩陣
 
-In addition to an abundance of charts, Power BI Desktop also supports more tabular visualizations. In fact, when you grab a categorical field or text field and drag it onto the report canvas, you get a table of results by default. You can scroll up and down through the table, and initially it will be sorted alphabetically.
+除了豐富的圖表，Power BI Desktop 還支援多個表格式視覺效果。 事實上，當您抓取類別欄位或文字欄位，並將它拖曳到報表畫布上，預設會取得資料表的結果。 您可以向上或向下捲動到資料表，和一開始它將會依字母順序排序。
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_1.png)
 
 
-If you have numerical information in a table, such as revenue, a total sum will appear at the bottom. You can manually sort by each column by clicking on its header to toggle ascending or descending order. If a column is not wide enough to display all of its contents, click and drag the header sideways to expand it.
+如果您有數字的資訊，在資料表中，例如營收，總計的總和會出現在底部。 您可以手動排序每個資料行的標頭來切換遞增或遞減順序，即可。 如果資料行不是寬度不足以顯示所有內容，按一下並拖曳側邊的標頭將它展開。
 
-The order of the fields in the <bpt id="p1">*</bpt>Values<ept id="p1">*</ept> bucket in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane determines the order in which they appear in your table.
+中的欄位順序 *值* 貯體中 **視覺效果** 窗格決定資料表中出現的順序。
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_2.png)
 
-A <bpt id="p1">**</bpt>matrix<ept id="p1">**</ept> is similar to a table, but it has different category headers on the columns and rows. As with tables, numerical information will be automatically totaled along the bottom and right side of the matrix.
+A **矩陣** 類似於資料表，但有不同的類別上的資料行和資料列的標頭。 在使用資料表時，數字資訊將會自動總計下方以及右側的矩陣。
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_3.png)
 
-There are many cosmetic options available for matrixes, such as auto-sizing columns, toggling row and column totals, setting colors, and more. When creating a matrix, make sure your categorical data (the non-number data) is on the left of the matrix, and the numeric files on the right to ensure the horizontal scroll bar appears, and to make sure that scrolling behavior works properly.
+有許多表面的選項適用於矩陣，例如自動調整大小資料行，切換資料列和資料行總計、 設定色彩等等。 當建立矩陣，請確定您類別的資料 （非數字資料） 左邊的矩陣中，而且以確保水平捲軸右邊的數值檔案隨即出現，而且以確定該捲動行為可正常運作。

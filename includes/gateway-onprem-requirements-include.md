@@ -1,20 +1,20 @@
 ## 需求
 
-**Minimum Requirements:**
+**最低需求︰**
 
-- .NET 4.5 Framework
-- 64-bit version of Windows 7 / Windows Server 2008 R2 (or later)
+- .NET 4.5 framework
+- 64 位元版本的 Windows 7 / Windows Server 2008 R2 （或更新版本）
 
 **建議：**
 
-- 8 Core CPU
-- 8 GB Memory
-- 64-bit version of Windows 2012 R2 (or later)
+- 8 核心 CPU
+- 8 GB 的記憶體
+- 64 位元版本的 Windows 2012 R2 （或更新版本）
 
-**Related Considerations:**
+**相關的考量︰**
 
-- The gateway cannot be installed on a domain controller
+- 無法在網域控制站上安裝閘道
 
-- You shouldn't install a gateway on a computer, such a laptop, that may be turned off, asleep, or not connected to the Internet because the gateway can't run under any of those circumstances. In addition, gateway performance might suffer over a wireless network.
+- 您不應該安裝閘道的電腦上，這類的膝上型電腦，可能已關閉，睡眠狀態，或未連線到網際網路，因閘道器無法在這些情況下執行。 此外，透過無線網路的閘道效能可能會降低。
 
-- Analysis Services is not required to use the gateway. You can use the gateway to connect to an Analysis Services data source.
+- 若要使用閘道，並不需要分析服務。 您可以使用閘道來連接到 Analysis Services 資料來源。

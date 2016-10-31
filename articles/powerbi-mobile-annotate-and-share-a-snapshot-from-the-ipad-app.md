@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a snapshot of a tile from the iPad app"
-   description="Read about sharing snapshots of tiles from the Microsoft Power BI app for iOS on the iPad. You can send tile snapshots to anyone, not just colleagues."
+   pageTitle="加上註解，並共用從 iPad 應用程式磚的快照集"
+   description="了解共用從 ipad 的 iOS 的 Microsoft Power BI 應用程式區塊的快照集。 您可以在任何人，不只是同事傳送並排顯示快照集。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,37 +20,39 @@
    ms.date="10/11/2016"
    ms.author="maggies"/>
 
-# <a name="annotate-and-share-a-snapshot-of-a-tile-from-the-ipad-app-(power-bi-for-ios)"></a>Annotate and share a snapshot of a tile from the iPad app (Power BI for iOS)  
+# <a name="annotate-and-share-a-snapshot-of-a-tile-from-the-ipad-app-(power-bi-for-ios)"></a>加上註解，並共用從 iPad 應用程式 (適用於 iOS 的 Power BI) 磚的快照集  
 
-When you share a tile from the <bpt id="p1">[</bpt>iPad app for Microsoft Power BI<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> for iOS, you're sharing a snapshot of the tile. Your recipients see the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+當您共用從磚 [Microsoft Power BI 的 iPad 應用程式](http://go.microsoft.com/fwlink/?LinkId=522062) ios 平台，您正在共用並排的快照集。 收件者完全地傳送郵件時，請參閱 [] 磚。 無法開啟儀表板。 您可以將快照集的方塊傳送給任何人 — 不只是相同的電子郵件網域中的同事。
 
-You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
+您可以將註解，行、 文字或戳記 — 至某個磚共用快照集之前。
 
-1.  Tap a tile to open it in focus mode.
+1.  點選磚聚焦模式中開啟它。
 
     ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-bubble-tile-focus-mode.png)
 
 
-2.  Tap the share icon <ph id="ph1">![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-share-tile.png)</ph> in the upper-right corner of the tile.
+2.  點選 [共用] 圖示 ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-share-tile.png) 右上角的方塊。
 
-3.  To annotate the tile, in the Edit window:  
+3.  在 [編輯] 視窗中的並排顯示加上註解︰  
     ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/PBI_iPad_AnnotateIcons.png)
 
-    -   To draw lines of different colors and thicknesses, tap the paintbrush icon, then tap the arrow in the lower-left corner.  
+    -   若要繪製行不同的色彩和粗細，點選 [小畫家] 圖示，然後點選左下角的箭號。  
 
-    -   To type comments, tap the <bpt id="p1">**</bpt>A<ept id="p1">**</ept>, then tap the arrow on the left end of the black bar at the center.  
+    -   若要輸入的註解，請點選 **A**, ，然後點選 [左邊中央的黑色列上的箭號。  
 
-    -   To paste stamps (like emoticons) on the tile, tap the smiley face, then tap the arrow in the lower-left corner.   
+    -   要貼上 （例如表情符號） 的戳記，方塊上，點選笑臉，然後點選左下角的箭號。   
         ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-tile-annotate.png)
 
-    -   After annotating, to send it tap the share icon <ph id="ph1">![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-share-tile.png)</ph> in the upper-right corner again.
+    -   註釋之後, 將它點選共用圖示 ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-share-tile.png) 在右上角一次。
 
-4.  Tap the Mail icon, type the recipients' names, and modify the message, if you want.  
+4.  點選 [郵件] 圖示、 輸入收件者的名稱和訊息，如果您想修改。  
 
     ![](media/powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app/power-bi-ipad-tile-mail.png)
 
-5.  Tap <bpt id="p1">**</bpt>Send<ept id="p1">**</ept>.
+5.  點選 **傳送**。
 
 ### <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> (Power BI for iOS)  
-<bpt id="p1">[</bpt>Share dashboards from the iPad app<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md)</ept>
+
+            [開始使用 iPad 應用程式](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS)  
+
+            [從 iPad 應用程式共用儀表板](powerbi-mobile-share-dashboards-from-the-ipad-app.md)

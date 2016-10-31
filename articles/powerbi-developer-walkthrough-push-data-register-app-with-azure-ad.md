@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Register an app with Azure AD"
-   description="Walkthrough - Push data into a dashboard - Register an app with Azure AD"
+   pageTitle="使用 Azure AD 註冊應用程式"
+   description="逐步解說-將資料發送到儀表板-使用 Azure AD 註冊應用程式"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,39 +20,40 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 1: Register an app with Azure AD
+# 步驟 1︰ 使用 Azure AD 註冊應用程式
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+逐步解說的這篇文章屬於 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)。
 
-The first step to push data into a Power BI dashboard is to register your app in Azure AD. You need to do this first so that you have a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> that identifies your app in Azure AD. Without a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>, Azure AD cannot authenticate your app.
+資料發送到 Power BI 儀表板的第一個步驟是在 Azure AD 中註冊您的應用程式。 您必須先執行此作業，因此您必須 **用戶端識別碼** ，Azure AD 中識別您的應用程式。 不含 **用戶端識別碼**, ，Azure AD 無法驗證您的應用程式。
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you register an app for Power BI, you need to <bpt id="p2">[</bpt>Sign up for Power BI<ept id="p2">](powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+>
+            **請注意**︰ 在 Power bi 註冊應用程式之前，您需要 [註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)。
 
-Here are the steps to register an app in Azure AD.
+以下是 Azure AD 中註冊應用程式的步驟。
 
-## Register an app in Azure AD
+## 在 Azure AD 中註冊應用程式
 
-1. Go to dev.powerbi.com/apps.
-2. Click <bpt id="p1">**</bpt>Sign in with your existing account<ept id="p1">**</ept>, and sign into your Power BI account.
-3. Enter an <bpt id="p1">**</bpt>App Name<ept id="p1">**</ept> such as "Sample push data app".
-4. For <bpt id="p1">**</bpt>App Type<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Native app<ept id="p2">**</ept>.
-5. Enter a <bpt id="p1">**</bpt>Redirect URL<ept id="p1">**</ept>, such as <bpt id="p2">**</bpt>https://login.live.com/oauth20_desktop.srf<ept id="p2">**</ept>. For a <bpt id="p1">**</bpt>Native client app<ept id="p1">**</ept>, a redirect uri gives <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept> more details on the specific application that it will authenticate. The standard Uri for a client app is https://login.live.com/oauth20_desktop.srf.
-6. For <bpt id="p1">**</bpt>Choose APIs to access<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Read and Write All Datasets<ept id="p2">**</ept>. For all Power BI app permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
-7. Click <bpt id="p1">**</bpt>Register app<ept id="p1">**</ept>, and save the <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> that was generated. A <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> identifies the app in Azure AD.
+1. 請移至 dev.powerbi.com/apps。
+2. 按一下 [ **使用現有的帳戶登入**, ，然後登入 Power BI 帳戶。
+3. 輸入 **應用程式名稱** 例如 「 範例發送資料應用程式 」。
+4. 如 **應用程式類型**, ，選擇 [ **原生應用程式**。
+5. 輸入 **重新導向 URL**, ，例如 **https://login.live.com/oauth20_desktop.srf**。 如 **原生用戶端應用程式**, ，重新導向 uri 會提供 **Azure AD** 更多詳細資料，就會進行驗證之特定應用程式。 用戶端應用程式的標準 Uri 是 https://login.live.com/oauth20_desktop.srf。
+6. 如 **選擇 Api 來存取**, ，選擇 [ **讀取和寫入所有資料集**。 所有的 Power BI 應用程式權限，請參閱 [Power BI 權限](powerbi-developer-power-bi-permissions.md)。
+7. 按一下 [ **註冊應用程式**, ，並儲存 **用戶端識別碼** 產生。 A **用戶端識別碼** 識別 Azure AD 中的應用程式。
 
-Here's how your <bpt id="p1">**</bpt>Register an Application for Power BI<ept id="p1">**</ept> page should look:
+以下是如何您 **註冊 Power bi 應用程式** 頁面應該看起來︰
 
 ![](media\powerbi-developer-walkthrough-push-data\powerbi-developer-sample-register-app.png)
 
-The next step shows you how to <bpt id="p1">[</bpt>get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>.
+下一個步驟顯示如何以 [取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md)。
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-get-token.md)
+[下一步 >](powerbi-developer-walkthrough-push-data-get-token.md)
 
 ## 請參閱
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Register a client app](powerbi-developer-register-a-client-app.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md)  
+[逐步解說︰ 將資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)  
+[註冊用戶端應用程式](powerbi-developer-register-a-client-app.md)  
+[Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

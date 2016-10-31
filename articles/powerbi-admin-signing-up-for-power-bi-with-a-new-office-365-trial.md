@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Signing up for Power BI with a new Office 365 Trial"
-   description="Signing up for Power BI with a new Office 365 Trial"
+   pageTitle="註冊 Power BI 使用新的 Office 365 試用版"
+   description="註冊 Power BI 使用新的 Office 365 試用版"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,29 +19,29 @@
    ms.workload="powerbi"
    ms.date="08/15/2016"
    ms.author="asaxton"/>
-# Signing up for Power BI with a new Office 365 Trial
+# 註冊 Power BI 使用新的 Office 365 試用版
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-If you are having problems signing up for Power BI with your work email address, one potential workaround is to sign up for an Office 365 trial first and then signing up for Power BI.  You will be able to use Power BI even after the Office 365 trial expires. 
+如果您有註冊 Power BI 與您的工作電子郵件地址，其中一個可能的因應措施是註冊 Office 365 試用版第一次，然後註冊 Power BI 的問題。  您可以使用 Power BI，即使在 Office 365 試用到期。 
 
-> [AZURE.NOTE] You cannot use personal email addresses such as @live.com or @gmail.com with Office 365 or Power BI. For more information, see <bpt id="p1">[</bpt><ept id="p1">](powerbi-service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi)</ept>.
+> [AZURE.NOTE] 您無法使用個人的電子郵件地址，例如 @live.com 或 @gmail.com 與 Office 365 或 Power BI。 如需詳細資訊，請參閱 [](powerbi-service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi)。
 
-1.  Sign up for an Office 365 trial <bpt id="p1">[</bpt>on the Office 365 web site<ept id="p1">](https://go.microsoft.com/fwlink/p/?LinkID=403802)</ept>.
+1.  註冊 Office 365 試用版 [Office 365 網站上](https://go.microsoft.com/fwlink/p/?LinkID=403802)。
 
-2.  When you complete that signup process, you will be given a new sign in name that looks like you@yourcompany.onmicrosoft.com.  This will be the sign in name you will use for Power BI as well.
+2.  當您完成該註冊程序時，將有新的登 you@yourcompany.onmicrosoft.com 看起來的名稱。  這是登入名稱也用於 Power BI。
 
-3.  Sign up for Power BI <bpt id="p1">[</bpt>using this link<ept id="p1">](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&amp;ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1)</ept>.  If you are prompted, sign in using the sign in name and password you selected for Office 365 in Step 1.
+3.  註冊 Power BI [使用此連結](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1)。  如果系統提示您登入使用的登入名稱和您選取在步驟 1 中的 Office 365 的密碼。
 
-    > [AZURE.NOTE] If you already sign into Power BI or Office 365 with an organization login, you may want to use an InPrivate browser session to log in with the new account you created.
+    > [AZURE.NOTE] 如果您已經登入 Power BI 或 Office 365 與組織登入，您可能想要使用 InPrivate 瀏覽器工作階段登入您所建立的新帳戶。
 
-4.  That's it!  When you're finished, you will be redirected to Power BI.
+4.  就這麼簡單 ！  當您完成時，您將會重新導向至 Power BI。
 
-### Important Considerations
+### 重要的考量
 
--   By using this signup method you are creating a new organizational tenant and you will become the administrator of the tenant.  Because sharing in Power BI is only allowed within a single tenant, you will not be able to share with users outside this tenant.  For example, if you create the tenant yourcompany.onmicrosoft.com in Step 2, you will not be able to share with users at yourcompany.com.  You can add new users to your tenant, then share with them, as described in <bpt id="p1">[</bpt>this help topic<ept id="p1">](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&amp;rs=en-SG&amp;ad=SG)</ept>.
+-   使用此註冊方法中，您要建立新的組織租用戶，您就會成為租用戶系統管理員。  因為單一租用戶中只允許在 Power BI 中共用，您將無法與此租用戶以外的使用者共用。  例如，如果您在步驟 2 中建立租用戶 yourcompany.onmicrosoft.com，您將無法與 yourcompany.com 在使用者共用。  您也可以將新使用者新增至您的租用戶，然後中所述，共用 [本說明主題](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG)。
 
 ## 請參閱
 
-[Administering Power BI in your organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[管理組織中的 Power BI](powerbi-admin-administering-power-bi-in-your-organization.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

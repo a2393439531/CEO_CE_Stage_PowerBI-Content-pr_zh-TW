@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Get started with Power BI Q&amp;A"
-   description="Tutorial: get started with Power BI Q&amp;A with the Retail Analysis sample"
+   pageTitle="教學課程︰ 開始使用 Power BI 問與答"
+   description="教學課程︰ 開始使用 Power BI 問與答零售分析範例"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,57 +19,57 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Tutorial: use Power BI Q&amp;A with the Retail Analysis sample
+# 零售分析範例與教學課程︰ 使用 Power BI 問與答
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&amp;A.  
+有時候獲得解答，從您的資料最快的方法是使用自然語言詢問問題。  在本教學課程中我們將探討建立相同的視覺效果的 2 個不同的方式︰ 建置在報表中，並詢問問題問與答。  
 
-## Method 1: using the report editor
-1. From your Power BI workspace, select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Samples<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Retail Analysis Sample<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Connect<ept id="p4">**</ept>.
+## 方法 1︰ 使用報表編輯器
+1. 從 Power BI 工作區中，選取 **取得資料** \> **範例** \> **零售分析範例** > **連接**。
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_1.png)
 
-2. The dashboard contains an area chart tile for "Last Year Sales and This Year Sales."  Select this tile. 
+2. 儀表板包含區域圖磚 「 最後一個年度銷售額與本年度銷售量 」。  選取此方塊。 
 
-    -   If this tile was created with Q&amp;A, selecting the tile will open Q&amp;A. 
+    -   建立這張牌的問答集，如果選取方塊將會開啟問與答。 
 
-    -   But this tile was created in a report, so the report opens to the page that contains this visualization.
+    -   但是，報表會開啟至包含此視覺效果的頁面在報表中，建立這張牌。
 
-3. Open the report in Editing View by selecting <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept>.
+3. 在 [編輯] 檢視中開啟報表，藉由選取 **編輯報表**。
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_2.png)
 
-4. Select the area chart and review the settings in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane.  The report creator built this chart by selecting these 3 values (<bpt id="p1">**</bpt>Time &gt; FiscalMonth<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Sales &gt; This Year Sales<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Sales &gt;Last Year Sales &gt;Value<ept id="p3">**</ept>) and organizing them in the <bpt id="p4">**</bpt>Axis<ept id="p4">**</ept> and <bpt id="p5">**</bpt>Values<ept id="p5">**</ept> wells.
+4. 選取區域圖，並檢閱在設定 **欄位** 窗格。  報表建立者這張圖表中選取建置的 3 個值 (**時間 > FiscalMonth**, ，**銷售 > 本年度銷售額**, ，**銷售 > Last Year Sales > 值**) 並將它們在組織 **軸** 和 **值** 改良。
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_3.png)
 
-## Method 2: using Q&amp;A
-How would we go about creating this same line chart using Q&amp;A?
+## 方法 2︰ 使用問與答
+我們如何呢建立使用問與答此相同折線圖？
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-questionbox.png)
 
-1.  Navigate back to your the Retail Analysis Sample dashboard.
+1.  瀏覽回到您是零售分析範例儀表板。
 
-2.  Using natural language, type something like this into the question box:
+2.  使用自然語言時，輸入類似下面的 [問題]:
 
-    **what were this year sales and last year sales by month as area chart**
+    **依區域圖顯示的月份是今年銷售量與去年銷售**
 
-    As you type your question, Q&amp;A picks the best visualization to display your answer; and the visualization changes dynamically as you modify the question. Also, Q&amp;A helps you format your question with suggestions, auto-complete, and spelling corrections.
+    當您輸入您的問題，問與答挑選最佳的視覺效果，以顯示您的答案。和視覺效果動態變更當您修改這個問題。 此外，問與答幫助您格式化您一些建議，自動完成和拼字修正的問題。
 
-    When you finish typing your question, the result is the exact same chart that we saw in the report.  But creating it this way was much faster!
+    當您完成輸入您的問題時，則結果會是完全相同的圖表，我們看到在報表中。  但此方法建立更快速 ！
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/powerbi-qna-areachart.png)
 
-4. Similar to working with reports, within Q&amp;A you have access to the Visualizations, Filters and Fields panes.  Open these panes to further explore and modify your visual.
+4. 類似於處理報表，問與答內您可以存取 [視覺效果、 篩選和欄位] 窗格。  開啟這些窗格，以進一步探索和修改 visual studio。
 
-3.  To pin the chart to your dashboard, select the pin icon <ph id="ph1">![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png)</ph>.
+3.  若要釘選到儀表板的圖表，請選取 [釘選圖示 ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png)。
 
 ## 請參閱
 
-[What type of questions can I ask Q&amp;A?](powerbi-service-q-and-a.md)
+[問與答時可提出的問題類型？](powerbi-service-q-and-a.md)
 
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)
+[問與答 Power BI 中](powerbi-service-q-and-a.md)
 
-[Make your data work well with Q&amp;A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+[讓您有效搭配問與答 Power BI 中的資料](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[preparing a workbook for Q&amp;A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+[活頁簿準備問與答](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

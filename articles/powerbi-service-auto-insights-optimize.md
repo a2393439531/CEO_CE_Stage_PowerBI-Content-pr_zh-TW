@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Optimize your data for Power BI Quick Insights"
-   description="Optimize your data for Power BI Quick Insights. If Power BI doesn't find insights in your data, here are some things you can do"
+   pageTitle="最佳化 Power BI 快速了解您的資料"
+   description="最佳化 Power BI 快速了解您的資料。 如果 Power BI 資料中找不到 insights，以下是的一些您可以"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,24 +20,24 @@
    ms.date="09/12/2016"
    ms.author="mihart"/>
 
-# Optimize your data for Power BI Quick Insights
-Want to improve Quick Insights results?  If you are a datasest owner, try these:
+# 最佳化 Power BI 快速了解您的資料
+想要改善即時掌握所有資訊的結果嗎？  如果您是 datasest 擁有者，請嘗試下列︰
 
-- Hide or unhide columns in your dataset. Power BI Auto Insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
+- 隱藏或取消隱藏資料集中的資料行。 Power BI 自動了解並不會搜尋隱藏資料行。  因此隱藏重複或不必要的資料行和取消隱藏有趣的資料行。
 
-- Use a mix of data types such as names, times, dates, and numbers.
+- 使用混合資料類型，例如名稱、 時間、 日期和數字。
 
-- Avoid (or hide) columns with duplicate information.  This takes valuable time away from searching for meaningful patterns.  For example, one column with state names spelled out and another column with state name abbreviations.
+- 避免 （或隱藏） 具有重複資訊的資料行。  這會帶離搜尋有意義之模式的寶貴時間。  比方說，一個資料行具有狀態名稱拼出，另一個資料行的狀態名稱縮寫。
 
--   Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns. To generate Insights, your dataset needs to have at least one dimension and one measure.
+-   取得錯誤訊息，表示您的資料不統計上明顯？  這種情形，是非常簡單，或分別為沒有太多資料，或不具有日期或數值資料行的模型。 若要產生深入資訊，您的資料集必須有至少一個維度和一個量值。
 
 
 ### 請參閱
 
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI 快速了解](powerbi-service-auto-insights.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

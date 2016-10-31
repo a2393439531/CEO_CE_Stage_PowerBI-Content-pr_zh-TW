@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Alternate Email Address for Power BI"
-   description="Alternate Email Address for Power BI"
+   pageTitle="Power BI 的備用電子郵件地址"
+   description="Power BI 的備用電子郵件地址"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,24 +20,24 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Alternate Email Address for Power BI
+# Power BI 的備用電子郵件地址
 
-By default, the email address you used to sign up to Power BI with is used to send you updates about activity in Power BI.  For example, when someone sends you a sharing invitation it will go to this address.
+根據預設，您用來登入以使用 Power BI 的電子郵件地址用於傳送 Power BI 中的活動更新的資訊。  例如，當有人傳送共用邀請給您時就會移至這個位址。
 
-Sometimes you may want these emails delivered to an alternate email address rather than the one you originally used to sign up for Power BI with.
+有時候，您可以傳遞至備用電子郵件地址，而非您原本用來與 Power bi 註冊這些電子郵件。
 
-Here's how to do that:
+若要這麼做的方法如下︰
 
-1.  Go to your <bpt id="p1">[</bpt>Office 365 personal info page<ept id="p1">](https://portal.office.com/account/#personalinfo)</ept>.  If you are prompted to, sign in with the email address and password you use for Power BI.
+1.  移至您 [Office 365 個人資訊] 頁面，](https://portal.office.com/account/#personalinfo)。  系統會提示您，如果電子郵件地址和密碼登入您用於 Power BI。
 
-2.  Slick the edit link in the Contact details section.  
+2.  Slick 連絡人詳細資料區段中的 [編輯] 連結。  
 
-    > [AZURE.NOTE] If you do not see an Edit link, this means your email address is managed by your Office 365 administrator and you will need to contact them to update your email address.
+    > [AZURE.NOTE] 如果看不到的編輯連結，這表示您的電子郵件地址由您的 Office 365 系統管理員，您必須連絡的方式更新您的電子郵件地址。
 
     ![](media/powerbi-admin-alternate-email-address-for-power-bi/contact-details.png)
 
-3.  In the Alternate email field, enter the email address you would like Power BI updates to be sent to.
+3.  在 [備用電子郵件欄位中輸入您想要傳送到 Power BI 更新電子郵件地址。
 
-> [AZURE.NOTE] Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.
+> [AZURE.NOTE] 變更此設定不會影響哪些電子郵件地址用來傳送服務更新、 電子報，以及其他促銷通訊。  這些通常會被傳送電子郵件地址原本使用 Power bi 註冊時。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

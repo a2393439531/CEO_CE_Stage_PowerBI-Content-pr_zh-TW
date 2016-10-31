@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Set data alerts in the Power BI mobile app for Windows 10"
-   description="Learn to set alerts to notify you when data in a dashboard changes beyond limits you set in the Power BI mobile app for Windows 10 and in the Power BI service."
+   pageTitle="在 Windows 10 的 Power BI 行動應用程式中設定資料警示"
+   description="了解如何設定警示，超出限制的儀表板中的資料變更時通知您在 Windows 10 的 Power BI 行動應用程式和 Power BI 服務中設定。"
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,86 +20,88 @@
    ms.date="10/04/2016"
    ms.author="maggies"/>
 
-# Set data alerts in the Power BI mobile app for Windows 10  
+# 在 Windows 10 的 Power BI 行動應用程式中設定資料警示  
 
-You can set alerts in the Power BI mobile app for Windows 10 and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts in the Power BI mobile app and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+Power BI 服務，以通知您的儀表板中的資料變更時超出限制您設定和 Windows 10 的 Power BI 行動應用程式中，您可以設定警示。 警示適用於包含單一數字，例如卡和量測計的磚。 您可以在 Power BI 行動應用程式中設定資料警示，並查看它們在 Power BI 服務，反之亦然。 只有您可以查看資料警示設定，即使您的儀表板或磚的快照集共用。
 
-> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
+> [AZURE.WARNING] 資料驅動的警示通知提供您資料的相關資訊。 如果您的裝置被偷，仍建議您將 Power BI 服務關閉所有資料驅動的警示規則。 
 > 
-> Learn more about <bpt id="p1">[</bpt>managing data alerts in the Power BI service<ept id="p1">](powerbi-service-set-data-alerts.md)</ept>.
+> 深入了解 [管理 Power BI 服務中的資料警示](powerbi-service-set-data-alerts.md)。
 
-## Set data alerts
+## 設定資料警示
 
-1.  Tap a number or gauge tile in a dashboard to open it.  
+1.  點選數字或量測計中開啟它的儀表板] 磚。  
 
-2.  Tap the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-off.png)</ph> to add an alert.  
+2.  點選鈴鐺圖示 ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-off.png) 新增警示。  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-tap-alert.png)
 
-3.  Tap the plus icon (+).
+3.  請點選加號 （+） 圖示。
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-no-alerts-yet.png)
 
-4.  Choose to receive alerts above or below a value, and type the value.
+4.  選擇接收警示的上方或下方的值，並輸入值。
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-set-alert.png)
 
-4.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
+4.  決定是否要接收每小時或每日警示，以及是否也會收到一封電子郵件時收到警示。
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
+    >
+            **請注意**︰ 除非在這段期間實際重新整理資料，沒有收到每隔一小時或每一天的警示。
 
-6.  You can change the alert title, too.
+6.  您可以變更警示的標題。
 
-6.  Tap the check mark.
+6.  點選核取記號。
 
-7.  A single tile can have alerts for values both above and below thresholds. In <bpt id="p1">**</bpt>Manage alerts<ept id="p1">**</ept>, tap the plus sign (+).
+7.  單一並排顯示可能值高於及低於臨界值的警示。 在 **管理警示**, ，請點選加號 （+）。
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-add-another-alert.png)
 
-## Receiving alerts
+## 接收警示
 
-You receive alerts in the Power BI <bpt id="p1">[</bpt>Notification Center<ept id="p1">](powerbi-mobile-notification-center.md)</ept> in the Power BI mobile app or in the Power BI service, along with notifications about new dashboards that someone has shared with you.
+您在 Power BI 中接收警示 [通知中心](powerbi-mobile-notification-center.md) 在 Power BI 行動應用程式或 Power BI 服務，以及有關新儀表板通知別人已經與您共用。
 
-Data sources are often set to refresh daily, although some refresh more often. When the data in the dashboard is refreshed, if the data being tracked reaches one of the thresholds you've set, several things will happen.
+雖然某些重新整理頻率，資料來源通常會設定為每天，重新整理。 儀表板中的資料重新整理時，如果正在追蹤的資料達到您所設定的臨界值的其中一個，將會發生幾件事。
 
-1.  Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent.
+1.  Power BI 會檢查以查看是否已超過一小時或 24 小時以上 （取決於您選取的選項） 自上一次警示已傳送。
 
-    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
+    只要資料已超出臨界值，您會收到警示，每隔一小時或每隔 24 小時。
 
-2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
+2.  如果您已經設定傳送電子郵件警示，您會發現類似下面的收件匣中。
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Notification center<ept id="p2">**</ept><ept id="p1">](powerbi-mobile-notification-center.md)</ept> <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-alert-notifications-icon.png)</ph> and adds a new alert icon to the applicable tile <ph id="ph2">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/powerbi-alert-tile-notification-icon.png)</ph> .
+3.  Power BI 新增訊息至您 [**通知中心**](powerbi-mobile-notification-center.md) ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-alert-notifications-icon.png) ，並將新的警示圖示加入至適用的磚 ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/powerbi-alert-tile-notification-icon.png) 。
 
-4. Open your Notification center to see the alert details.
+4. 開啟您的通知中心，請參閱警示詳細資料。
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+>
+            **請注意**︰ 警示只能在資料重新整理。 當資料重新整理時，Power BI 會查看警示會為該資料。 如果資料已達到警示的閾值，則會觸發警示。
 
 ## 管理警示
 
-You can manage individual alerts in the Power BI mobile app or <bpt id="p1">[</bpt>manage all your alerts in the Power BI service<ept id="p1">](powerbi-service-set-data-alerts.md)</ept>.
+您可以管理 Power BI 行動應用程式中的個別警示或 [管理 Power BI 服務中的所有警示](powerbi-service-set-data-alerts.md)。
 
-### Manage alerts in the Power BI mobile app
+### 在 Power BI 行動應用程式中管理警示
 
-1.  In a dashboard, tap a card or gauge tile that has an alert.  
+1.  在儀表板中，點選卡片或警示的並排顯示量測計。  
 
-2.  Tap the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-on.png)</ph>.  
+2.  點選鈴鐺圖示 ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-on.png)。  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-has-alerts.png)
 
-3. Tap the alert to change a value or turn it off.
+3. 點選 [變更值，或將它關閉的警示。
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-add-another-alert.png)
 
-4. To delete the alert altogether, right-click or tap and hold &gt; <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.
+4. 若要完全刪除警示，以滑鼠右鍵按一下或點選並按住 > **刪除**。
 
-## Tips and troubleshooting
-- Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
-- Alerts only work with numeric data.
-- Alerts only work on data that is refreshed. They don't work on static data.
+## 秘訣與疑難排解
+- 警示目前不支援 Bing 磚或卡片磚與日期/時間量值。
+- 警示只適用於數值資料。
+- 警示僅用於資料重新整理。 它們不適用於靜態資料。
 
 ### 請參閱  
-- [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
-- [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
-- [Get started with Power BI](powerbi-service-get-started.md)  
+- [管理您的 Power BI 服務警示](powerbi-service-set-data-alerts.md)
+- [Power BI 行動通知中心](powerbi-mobile-notification-center.md)
+- [開始使用 Power BI](powerbi-service-get-started.md)  

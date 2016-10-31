@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Previous monthly updates to Power BI Desktop"
-   description="Feature updates from previous releases of Power BI Desktop"
+   pageTitle="Power BI Desktop 先前每月更新"
+   description="從舊版的 Power BI Desktop 功能更新"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,828 +19,842 @@
    ms.workload="powerbi"
    ms.date="09/30/2016"
    ms.author="davidi"/>
-# Previous monthly updates to Power BI Desktop
+# Power BI Desktop 先前每月更新
 
-This article describes previous updates to <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>. For the most current month's release, check out <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> latest updates<ept id="p1">](powerbi-desktop-latest-update.md)</ept>.
+本文將說明以先前的更新 **Power BI Desktop**。 如需最新的月份版本中，請參閱 [**Power BI Desktop** 最新更新](powerbi-desktop-latest-update.md)。
 
-The following sections describe previous months' updates to <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>.
+下列章節將說明幾個月的更新 **Power BI Desktop**。
 
-## August 2016 Update (2.37.4464.321)
+## 2016 年 8 月更新 (2.37.4464.321)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您可以隨時 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-August introduced a full harvest of new features for Power BI Desktop:
+8 月針對 Power BI Desktop 採用完整的蒐集的新功能︰
 
--   <bpt id="p1">**</bpt>[video]<ept id="p1">**</ept> excerpts play in a new browser tab, when the feature is being discussed.
--   Some features have an <bpt id="p1">**</bpt>[article]<ept id="p1">**</ept> that provides more detail.
--   Most features are explained in the monthly update <bpt id="p1">**</bpt>[blog]<ept id="p1">**</ept> post.
--   Lastly, some features are self-explanatory and don't need and article or video.
+-   
+            **[視訊]** 摘錄播放在新的瀏覽器索引標籤中所討論的功能。
+-   有些功能 **[發行項]** ，提供更多詳細資料。
+-   大部分的功能說明中的每月更新 **[部落格]** 文章。
+-   最後，某些功能一看就懂並不需要且發行項或視訊。
 
-You can also watch the <bpt id="p1">**</bpt>Latest Updates<ept id="p1">**</ept> video from the beginning, right inside this article, by clicking on the <bpt id="p2">**</bpt>play<ept id="p2">**</ept> icon on the video image found below the list of updates.
+您也可以觀賞 **最新更新** 視訊從一開始就直接在本文中，按一下 [上 **播放** 上找到的更新清單下方的視訊影像圖示。
 
-The following updates are new to Power BI Desktop this month:
+下列更新是本月新手 Power BI Desktop:
 
-### Report View:
+### 報表檢視︰
 
--   Drill-down (or back up) on line charts <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=3m1s)</ept>
--   Continuous axis for the Date axis <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>  <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=3m48s)</ept>
--   General availability of Inline Hierarchies <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-inline-hierarchy-labels.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/0VvG7Eqoke8?t=4m6s)</ept>
--   Predefined matrix styles (similar to table formatting in Excel) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=4m59s)</ept>
--   Reorder fields, in charts and tooltips <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=6m23s)</ept>
--   Color formatting for KPI visuals <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=7m9s)</ept>
+-   向下鑽研 （或備份） 的折線圖 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
+-   日期軸連續軸 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)[[影片]](https://youtu.be/0VvG7Eqoke8?t=3m48s)
+-   公開上市的內嵌階層 [[發行項]](powerbi-desktop-inline-hierarchy-labels.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
+-   預先定義的矩陣 （類似於 Excel 中的格式設定的資料表） 的樣式 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=4m59s)
+-   重新排列欄位，請在圖表和工具提示 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=6m23s)
+-   格式化的 KPI 視覺效果色彩 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=7m9s)
 
-### Analytics (New!)
+### 分析 （新功能 ！）
 
--   The all-new <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-analytics-pane.md)</ept> <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p4">[</bpt>[video]<ept id="p4">](https://youtu.be/0VvG7Eqoke8?t=8m22s)</ept>
--   Dynamic reference lines <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=9m40s)</ept>
-
-
-### Data Connectors:
-
--   New data connectors:
-    -   Snowflake connector (Preview) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>
--   Improvements to existing connectors:
-    -   Impala connector - DirectQuery support <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-impala.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>
-    -   Web connector - Web page previews <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=12m28s)</ept>
-    -   General availability for the SAP Business Warehouse connector <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-sap-bw-connector.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>
+-   全新 **分析** 窗格 [[發行項]](powerbi-desktop-analytics-pane.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=8m22s)
+-   動態參考行 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=9m40s)
 
 
-### Query Editor improvements:
+### 資料連接器︰
 
--   Option to Merge/Append as New Query <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=14m24s)</ept>
+-   新的資料連接器︰
+    -   雪花式連接器 （預覽版） [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+-   改進現有的連接器︰
+    -   Impala 連接器-DirectQuery 支援 [[發行項]](powerbi-desktop-connect-impala.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+    -   Web 連接器-網頁預覽 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=12m28s)
+    -   SAP 商務倉儲連接器公開上市 [[發行項]](powerbi-desktop-sap-bw-connector.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+
+
+### 查詢編輯器增強功能︰
+
+-   為新的查詢選項合併/附加 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=14m24s)
 
 ### 其他改進
 
--   Auto-recover Desktop files <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=16m9s)</ept>
+-   自動復原桌面檔案 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>注意︰ 您也可以 [查看所有可用的資料來源至 Power BI Desktop](powerbi-desktop-data-sources.md); 我們清單與日俱增，因此請經常回來查看。
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>, where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), ，您可以在哪裡取得有關這些新功能的詳細的資訊 （這是相同的部落格文章上面清單中的參考）。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
 
-## July 2016 Update (2.37.4464.321)
+## 2016 年 7 月更新 (2.37.4464.321)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您可以隨時 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-July brought another great collection of new features and highly anticipated data connectors to Power BI Desktop. The following enhancements were new to Power BI Desktop in July:
+7 月的新功能的另一個絕佳的集合，而高預期 Power BI Desktop 資料連接器。 下列增強功能是以 Power BI Desktop 7 月份最新內容︰
 
-### Report View:
+### 報表檢視︰
 
--   Predefined table styles <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/g8ccfjffWmw?t=1m25s)</ept>
--   Shape Maps update - use custom maps <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-shape-map.md)</ept>  <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>  <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/g8ccfjffWmw?t=2m21s)</ept>
+-   預先定義的資料表樣式 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[影片]](https://youtu.be/g8ccfjffWmw?t=1m25s)
+-   圖形對應更新-使用自訂的對應 [[發行項]](powerbi-desktop-shape-map.md)[[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)[[影片]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
-### Data Connectors:
+### 資料連接器︰
 
--   New data connectors:
-    -   Amazon Redshift <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-redshift.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-    -   Impala <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-impala.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
--   Improvements to existing connectors:
-    -   Web connector - support for specifying a connection timeout  <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-    -   CSV and Text - support for fixed-width delimited files <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-    -   Improvements and changes to the SAP Business Warehouse connector <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-sap-bw-connector.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-
-
-### Query Editor improvements:
-
--   Use <bpt id="p1">**</bpt>R<ept id="p1">**</ept> script in Query Editor <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-r-in-query-editor.md)</ept>  <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
--   Query parameter enhancements:
-    -   List query output as <bpt id="p1">*</bpt>allowed values<ept id="p1">*</ept> for a parameter <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
--   Overwrite existing user-defined functions <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
+-   新的資料連接器︰
+    -   Amazon Redshift [[發行項]](powerbi-desktop-connect-redshift.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Impala [[發行項]](powerbi-desktop-connect-impala.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   改進現有的連接器︰
+    -   Web 連接器-指定連接逾時支援  [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   固定寬度分隔的檔案支援 CSV 和文字- [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   改進和變更至 SAP 商務倉儲連接器 [[發行項]](powerbi-desktop-sap-bw-connector.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+### 查詢編輯器增強功能︰
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>, where you can get more detailed information about each of these features (this is the same blog post references in the list above).
+-   使用 **R** 指令碼在 [查詢編輯器 [[發行項]](powerbi-desktop-r-in-query-editor.md)[[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   查詢參數的增強功能︰
+    -   列出做為查詢輸出 *允許的值* 參數 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   覆寫現有的使用者定義函式 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+>注意︰ 您也可以 [查看所有可用的資料來源至 Power BI Desktop](powerbi-desktop-data-sources.md); 我們清單與日俱增，因此請經常回來查看。
+
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), ，您可以在哪裡取得有關這些功能的詳細的資訊 （這是相同的部落格文章上面清單中的參考）。
+
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
-## June 2016 Update (2.36.4434.362)
+## 2016 年 6 月更新 (2.36.4434.362)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您可以隨時 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-June provided a shining collection of interesting updates for Power BI Desktop.
+6 月 Power BI Desktop 提供有趣的更新的元素集合。
 
-### Report View:
+### 報表檢視︰
 
--   New visual - Shape Maps <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=3m9s)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-shape-map.md)</ept>
--   Searchable slicers <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=6m25s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Configurable line chart labels <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=7m21s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   New sign-in entry points <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=2m30s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
+-   新的 visual-圖形對應 [[視訊]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[文件]](powerbi-desktop-shape-map.md)
+-   可搜尋的交叉分析篩選器 [[視訊]](https://youtu.be/sZsL2l6oS4A?t=6m25s) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   可設定列圖表標籤 [[視訊]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   新的登入的進入點 [[視訊]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 
-### Data Access:
+### 資料存取︰
 
--   Row Level Security <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-rls.md)</ept>
+-   資料列層級安全性 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/) [[文件]](powerbi-desktop-rls.md)
 
-### Data Connectors:
+### 資料連接器︰
 
--   New data connector: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Azure Enterprise
--   Enhanced SAP BW and HANA connectors: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Allow multi-select of values for Variables/Parameters
-    -   Support for Hierarchies in SAP BW
--   Enhanced OData connector - imports Open Type columns <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Enhanced Access DB connector - button to <bpt id="p1">**</bpt>Select Related Tables<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Navigator<ept id="p2">**</ept> dialog <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
+-   新的資料連接器︰ [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   Azure 企業
+-   增強的 SAP BW 和 HANA 連接器︰ [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   變數/參數允許多重選取的值
+    -   支援 SAP BW 中的階層
+-   增強的 OData 連接器-匯入開啟型別資料行 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   增強的 Access 資料庫連接器-] 按鈕以 **選取相關資料表** 中 **導覽** 對話方塊 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 
-### Data Connectors:
+### 資料連接器︰
 
--   Templates - option to <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Query parameter enhancements: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Option to always allow Parameter specification
-    -   Create new parameter directly in context
--   Option to generate Step Names in English <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Descriptions for Query Steps <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=8m14s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   New Data Transformations: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Extract Week Day and Month Name from a DateTime column
-    -   Merging dates and Times into a DateTime column
-    -   Extract Time.Start/End of Hour/Minute/Second
+-   範本-選項 **負載** 或 **編輯** [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   查詢參數的增強功能︰ [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   若要一律允許參數規格的選項
+    -   直接在內容中建立新的參數
+-   以英文產生步驟名稱選項 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   如需查詢的步驟描述 [[視訊]](https://youtu.be/sZsL2l6oS4A?t=8m14s) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   新的資料轉換︰ [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   從日期時間資料行中擷取週日期及月份名稱
+    -   將合併到 DateTime 資料行的日期和時間
+    -   擷取 Time.Start/End 小時/分鐘/秒
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>注意︰ 您也可以 [查看所有可用的資料來源至 Power BI Desktop](powerbi-desktop-data-sources.md); 我們清單與日俱增，因此請經常回來查看。
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sZsL2l6oS4A" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
 
 
-## May 2016 Update (2.35.4399.381)
+## 5 月 2016年更新 (2.35.4399.381)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您可以隨時 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-May brought another large collection of compelling updates for Power BI Desktop:
+可能帶來令人讚嘆的 Power BI Desktop 的更新另一個大型集合︰
 
-### Report View:
+### 報表檢視︰
 
--   Customizable tooltips <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/KnDs4amt9-c?t=172)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-custom-tooltips.md)</ept>
--   Conditional formatting in tables <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/KnDs4amt9-c?t=313)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-conditional-table-formatting.md)</ept>
--   Publish to Pyramid server <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Scrolling loads more data in charts <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/KnDs4amt9-c?t=426)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Keyboard nudging for visuals <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   可自訂的工具提示 [[視訊]](https://youtu.be/KnDs4amt9-c?t=172) [[文件]](powerbi-desktop-custom-tooltips.md)
+-   在資料表中的條件式格式化 [[視訊]](https://youtu.be/KnDs4amt9-c?t=313) [[文件]](powerbi-desktop-conditional-table-formatting.md)
+-   發行至 Pyramid server [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   捲動載入更多的資料，在圖表中 [[視訊]](https://youtu.be/KnDs4amt9-c?t=426) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   微調的視覺效果的鍵盤 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 ### 分析
 
--   Quick Calcs - % of grand total <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   快速 Calcs-總計的 % [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
-### Data Connectivity:
+### 資料連接︰
 
--   New data connectors: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   新的資料連接器︰ [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
     -   Informix
     -   comScore Digital Analytix
     -   Troux
     -   Planview Enterprise
--   Improved DB2 connector <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Text/CSV connector exposes editable settings in preview dialog <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Improved relational database connectors with Display Schema information
--   Data Source Settings enhancements <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Advanced <bpt id="p1">**</bpt>Filter Rows<ept id="p1">**</ept> dialog mode <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Inline Input controls for Function invocation within <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Query Parameters: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
-    -   Ability to convert queries to parameters (and vice versa)
-    -   Support for URL parameterization and multi-part URLs in <bpt id="p1">**</bpt>Web<ept id="p1">**</ept> connector
-    -   Support for parameterization in <bpt id="p1">**</bpt>Conditional Columns<ept id="p1">**</ept> dialog
--   Ability to <bpt id="p1">**</bpt>Save As<ept id="p1">**</ept> a Power BI Template <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Support for reordering Query Steps using drag-and-drop <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Date picker support in <bpt id="p1">**</bpt>Conditional Columns<ept id="p1">**</ept> dialog input Date fields <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   New context menu entry to create new queries from the <bpt id="p1">**</bpt>Queries<ept id="p1">**</ept> pane <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   改善 DB2 連接器 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Text/CSV 連接器會公開預覽] 對話方塊中的可編輯設定 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   改善顯示結構描述資訊的關聯式資料庫連接器
+-   資料來源設定增強功能 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   進階 **篩選的資料列** 對話方塊模式 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   內嵌輸入控制項中的函式引動過程 **查詢編輯器** [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   查詢參數︰ [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+    -   轉換查詢參數 （反之亦然） 的能力
+    -   URL 參數化和多部分的 Url，在支援 **Web** 連接器
+    -   進行中的參數化的支援 **條件的資料行** 對話方塊
+-   能夠 **另存新檔** Power BI 範本 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   重新排序查詢的步驟，使用拖放支援 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   日期選擇器中的支援 **條件的資料行** 對話方塊輸入日期欄位 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   新的內容功能表項目來建立新的查詢從 **查詢** 窗格 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>注意︰ 您也可以 [查看所有可用的資料來源至 Power BI Desktop](powerbi-desktop-data-sources.md); 我們清單與日俱增，因此請經常回來查看。
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KnDs4amt9-c" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
-## April 2016 Update (2.34.4372.322)
+## 2016 年 4 月更新 (2.34.4372.322)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您可以隨時 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-In April, we showered our great Power BI customers with another collection of compelling updates for Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+在 4 月我們 showered 絕佳 Power BI 客戶與另一個集合的嶄新的 Power BI Desktop 的更新。 下列增強功能是本月新手 Power BI Desktop:
 
-### Report View:
+### 報表檢視︰
 
--   Additional styles on a table, matrix, and multi-row card
--   Trend lines on single visuals
--   New drill action – <bpt id="p1">**</bpt>See Records<ept id="p1">**</ept>
--   Map auto-zoom during drill/filter
--   In-line hierarchy labels for expanded view (Preview - <bpt id="p1">[</bpt>see the article<ept id="p1">](powerbi-desktop-inline-hierarchy-labels.md)</ept>)
+-   資料表、 矩陣和多重資料列卡上的其他樣式
+-   在單一的視覺效果的趨勢線
+-   新的向下鑽研動作 – **看到記錄**
+-   自動縮放對應期間向下切入/篩選
+-   內嵌展開之檢視的階層標籤 (Preview- [請參閱文章](powerbi-desktop-inline-hierarchy-labels.md))
 
 ### 資料模型化：
 
--   Modelling operations are no longer blocked while visuals are refreshing
--   Time Intelligence with built-in date hierarchy fields (Preview)
--   Data model synonyms
+-   重新整理視覺效果時不會再封鎖模型化作業
+-   時間智慧使用內建的日期階層欄位 （預覽）
+-   資料模型的同義字
 
-### Data Connectivity:
+### 資料連接︰
 
 -   查詢參數
--   Power BI Template files
--   New <bpt id="p1">*</bpt>Online Services<ept id="p1">*</ept> category in Get Data dialog
--   New Connectors:
-    -   SharePoint Folder
+-   Power BI 範本檔案
+-   新 *線上服務* 類別目錄中取得資料] 對話方塊
+-   新的連接器︰
+    -   SharePoint 資料夾
     -   Webtrends
     -   SparkPost
     -   tyGraph
--   Conditional Columns
--   DirectQuery – Specify DirectQuery vs. Import mode in data source dialogs
--   Column type indicator in Query Editor preview column headers
--   Reorder Queries and Query Groups using Drag &amp; Drop gestures
--   Query Management menu in the ribbon
+-   條件式的資料行
+-   DirectQuery – 指定 DirectQuery vs。匯入資料來源] 對話方塊中的模式
+-   查詢編輯器預覽資料行標頭中的資料行類型指標
+-   重新排列查詢和使用拖放手勢查詢群組
+-   查詢功能區中的 [管理] 功能表
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>注意︰ 您也可以 [查看所有可用的資料來源至 Power BI Desktop](powerbi-desktop-data-sources.md); 我們清單與日俱增，因此請經常回來查看。
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-april-update-feature-summary/)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-april-update-feature-summary/), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7IFZTYJR3Gk" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
 
-## March 2016 Update (2.33.4337.281)
+## 2016 年 3 月更新 (2.33.4337.281)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您現在可以 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-March brings all sorts of renewal and freshness, including another round of Power BI Desktop additions. The following enhancements are new to Power BI Desktop this month:
+3 月提供各式各樣的更新和最新狀態，包括另一回合的 Power BI Desktop 新增項目。 下列增強功能是本月新手 Power BI Desktop:
 
-### Report View:
+### 報表檢視︰
 
--   Publish reports to a Group Space in the Power BI service
--   Reports with KPI trends now respect <bpt id="p1">*</bpt>Do Not Summarize<ept id="p1">*</ept> model settings from SSAS MD
--   Data Point warnings are now non-intrusive
+-   將報表發行至 Power BI 服務群組空間
+-   KPI 趨勢現在關於報表 *不摘要* 模型從 SSAS MD 設定
+-   現在已非干擾式資料點警告
 
 
 ### 資料模型化：
 
--   You can now change the data type of a column when using DirectQuery mode
--   Ability to assume Referential Integrity on relationships (for those imported, and created) in DirectQuery
--   DirectQuery for Oracle and Teradata is now part of Power BI Desktop (no long a preview feature)
+-   您現在可以使用 DirectQuery 模式時變更資料行的資料類型
+-   在 DirectQuery （適用於所匯入，並且建立） 作為參考完整性的關聯性的能力
+-   適用於 Oracle 和 Teradata DirectQuery 現在是 Power BI Desktop （不再預覽功能） 的一部分
 
-### Data Connectivity:
+### 資料連接︰
 
--   A new SAP BW Connector (preview feature)
--   Support for Command Timeout in the user interface (UI)
--   There's a setting available to disable Privacy Level prompts at the machine level (including a registry key)
--   Query Group Management enhancements:
-    -   Expand/Collapse All
-    -   Retain Query Group expansion state
--   New Transformations:
-    -   Remove Blanks using the Column Filter menu
-    -   Convert Duration values to Years
-    -   Keep Duplicates
--   Support for whitespace and line feeds in Query Editor preview
--   Include hints for <bpt id="p1">*</bpt>sample input values<ept id="p1">*</ept> in the <bpt id="p2">**</bpt>Change Type with Locale<ept id="p2">**</ept> dialog
--   Enhancements to the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window:
-    -   Add schema information to navigation hierarchy for ODBC sources
-    -   Ability to disable preview from <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>
-    -   Technical name support
--   Load: Auto-step to disambiguate conflicting column names (case-insensitive comparison)
--   You can now rename queries directly from the <bpt id="p1">**</bpt>Queries<ept id="p1">**</ept> pane
+-   新的 SAP BW 連接器 （預覽功能）
+-   支援使用者介面 (UI) 中的命令逾時
+-   沒有提供停用隱私權層級提示 （包括登錄機碼） 的電腦層級設定
+-   查詢群組管理增強功能︰
+    -   展開/摺疊所有
+    -   保留查詢群組展開狀態
+-   新的轉換︰
+    -   移除空白使用資料行篩選功能表
+    -   持續時間值轉換為年
+    -   保留重複項目
+-   支援的查詢編輯器預覽中的空白字元和行摘要
+-   包含提示 *範例輸入值* 中 **的地區設定的變更類型** 對話方塊
+-   若要增強功能 **導覽** 視窗︰
+    -   將結構描述資訊加入至 ODBC 來源的導覽階層
+    -   停用從預覽功能 **導覽**
+    -   技術名稱支援
+-   負載︰ 自動步驟釐清衝突的資料行名稱 （不區分大小寫的比較）
+-   您現在可以重新命名查詢，直接從 **查詢** 窗格
 
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-march-update-feature-summary/)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-march-update-feature-summary/), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eAayYDF9QzY" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
 
 
 
-## February 2016 Update (2.32.4307.362)
+## 2016 年 2 月更新 (2.32.4307.362)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您現在可以 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-We're leaping ahead with more updates this month! February brings 29 days to the month (it's a leap year), and with it, 29 improvements to this monthly update of Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+我們正在躍直接與其他更新本月份 ！ 2 月帶來 29 天月份名稱 （它為閏年)，而且有 29 改進 Power BI desktop 這個每月更新。 下列增強功能是本月新手 Power BI Desktop:
 
-### Report View:
+### 報表檢視︰
 
--   See Data Behind a Visual (including <bpt id="p1">*</bpt>Export Data to CSV<ept id="p1">*</ept>)
--   Map improvements – plot map with latitude/longitude only
--   KPI consumption release support (including navigation hierarchy support and KPI trend for SSAS MD)
--   SSAS Exploration Mode: Support for <bpt id="p1">**</bpt>Display<ept id="p1">**</ept> folders in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane
--   Ribbon layout improvements: Contextual ribbon tab for <bpt id="p1">**</bpt>Report Tools<ept id="p1">**</ept>
--   New KPI visual
--   Get reports opened to the same page that was visible when they were saved
--   <bpt id="p1">**</bpt>Edit Query<ept id="p1">**</ept> option in table context menu in the Fields pane (<bpt id="p2">**</bpt>Report<ept id="p2">**</ept><ph id="ph1"> &amp; </ph><bpt id="p3">**</bpt>Data<ept id="p3">**</ept> views)
--   <bpt id="p1">**</bpt>Duplicate Page<ept id="p1">**</ept> from the ribbon
+-   請參閱資料背後視覺化 (包括 *資料匯出至 CSV*)
+-   Map 改善 – 經緯度只繪製地圖
+-   KPI 耗用量版本支援 （包括支援瀏覽階層及 KPI 趨勢的 SSAS MD）
+-   SSAS 探勘模式︰ 支援 **顯示** 資料夾中的 **欄位** 窗格
+-   功能區上配置的改進︰ 內容的功能區索引標籤，如 **報表工具**
+-   新的 KPI visual
+-   取得開啟相同的頁面在儲存時所看到的報告
+-   
+            **編輯查詢** 資料表內容功能表中的欄位] 窗格中的選項 (**報表** & **資料** 檢視)
+-   
+            **複製頁面** 從功能區
 
 
 ### 資料模型化：
 
--   Ability to define hierarchies
--   Performance Improvement: Table &amp; Column rename optimizations
+-   能夠定義階層
+-   效能改進︰ 資料表和資料行重新命名的最佳化
 
-### Data Connectivity:
+### 資料連接︰
 
--   <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> support for Oracle and Teradata databases
--   <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> – support for creating Calculated Columns
--   Support for publishing Analysis Services Live reports
--   JSON File connector
--   SQL Sentry connector
--   Support for jagged CSV files
--   Exchange Connector – OAuth support
--   SharePoint List Connector – URL validation
--   Database Connectors – ability to disable Navigation Columns in Query previews (Performance optimization)
--   Web Connector – fine-grained scoping of Credentials
--   <bpt id="p1">**</bpt>Enter Data<ept id="p1">**</ept> dialog UX enhancements
--   SAP HANA – Support for single sign-on with Windows Authentication (Power BI Desktop only)
--   SAP HANA – Support for <bpt id="p1">**</bpt>Field<ept id="p1">**</ept> labels
--   Alphabetical sort of columns in <bpt id="p1">**</bpt>Choose Columns<ept id="p1">**</ept> builder
--   Improved performance of renaming/removing/reordering columns
--   Virtualized Preview in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>
--   Visual indicator for unloaded queries in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>
--   1-click Percentage transform
+-   
+            **DirectQuery** 支援 Oracle 和 Teradata 資料庫
+-   
+            **DirectQuery** – 建立導出資料行的支援
+-   支援發行 Analysis Services 即時報表
+-   JSON 檔案連接器
+-   SQL Sentry 連接器
+-   不規則的 CSV 檔的支援
+-   Exchange 連接器 – OAuth 支援
+-   SharePoint 清單連接器 – URL 驗證
+-   資料庫連接器 – 能夠停用瀏覽資料行中查詢預覽 （效能最佳化）
+-   Web 連接器 – 更細緻的範圍的認證
+-   
+            **輸入資料** 對話方塊 UX 增強功能
+-   SAP HANA – 使用 Windows 驗證 (僅限 Power BI Desktop) 來進行單一登入支援
+-   SAP HANA – 支援 **欄位** 標籤
+-   中的資料行的字母順序排序 **選擇資料行** 產生器
+-   改善的效能的重新命名/移除/重新排列資料行
+-   虛擬化中的預覽 **查詢編輯器**
+-   卸載的查詢中的視覺指標 **查詢編輯器**
+-   1 按一下百分比轉換
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J5gZ65Wexh4" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
 
-## January 2016 Update (2.31.4280.361)
+## 2016 年 1 月更新 (2.31.4280.361)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您現在可以 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-Ring in the new year with another collection of improvements and enhancements to Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+在新的一年與另一個集合的增強功能和增強功能，Power BI Desktop 響鈴。 下列增強功能是本月新手 Power BI Desktop:
 
-### Report View:
+### 報表檢視︰
 
--   Add borders to a visual
--   Add an image background to a visual
-
-
-### Data Connectivity:
-
--   DirectQuery: you can now create measures when using DirectQuery mode
--   You can now refresh data for individual tables from the Field List (in <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view and <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> view), rather than (and in addition to) just being able to <bpt id="p3">**</bpt>refresh all<ept id="p3">**</ept> from the ribbon
--   General Availability (GA) for SQL Server Analysis Services Multidimensional models Exploration mode (no longer a preview feature)
--   Enhancements to hierarchy support
--   General Availability (GA) for the SAP HANA connector (no longer a preview feature)
--   Ability to append multiple tables within a single Append operation
--   Option to disable data previews to download in the background (performance optimization)
-
-### Other Improvements:
-
--   Support for Internet Explorer 9 (IE9) browser
--   Performance improvements for report rendering, cross-highlighting, and otherwise
--   Improvements to R integration in Power BI Desktop
+-   將框線加入至視覺效果
+-   將影像背景加入至視覺效果
 
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx)</ept>, where you can get more detailed information about each of these new features.
+### 資料連接︰
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+-   DirectQuery︰ 您現在可以建立量值時使用 DirectQuery 模式。
+-   您現在可以重新整理個別的資料表，從欄位清單的資料 (在 **報表** 檢視和 **資料** 檢視)，而非 （和除了） 只能夠以 **全部重新整理** 從功能區
+-   公開上市 (GA) 的 SQL Server Analysis Services 多維度模型探勘模式 （不會再預覽功能）
+-   支援階層的增強功能
+-   公開上市 (GA) SAP HANA 連接器 （不再預覽功能）
+-   要附加多個資料表中單一的附加作業的能力
+-   若要停用資料預覽下載背景 （效能最佳化） 選項
+
+### 其他改進功能︰
+
+-   Internet Explorer 9 (IE9) 瀏覽器支援
+-   報表轉譯跨數醒目提示，以及其他效能改進
+-   Power BI Desktop 中的 R 整合的增強功能
+
+
+要更新的詳細資訊？ 看看 [部落格文章](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), ，您可以在其中取得每個新功能的詳細的資訊。
+
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
 
 
-## December 2015 Update (2.30.4246.181)
+## 2015 年 12 月更新 (2.30.4246.181)
 
-December is a month for giving, and the Power BI team is following suit with more updates, features, and more functionality in this month's Power BI Desktop update. The following enhancements are new to Power BI Desktop this month:
+年 12 月每月，而且 Power BI 小組之後，跟其他更新、 功能及更多的功能，在本月的 Power BI Desktop 更新。 下列增強功能是本月新手 Power BI Desktop:
 
-### Report Authoring:
+### 報表撰寫︰
 
--   Formatting Pane and Ribbon:
-    - Format data labels per category services
-    - Change the number of decimal places shown in visuals
-    - Change text size in visuals
-    - Ability to layout visuals accurately: alignment, distribute, size, position
-    - Set styles across multiple visuals through <bpt id="p1">**</bpt>Format Painter<ept id="p1">**</ept>
-    - Optimized <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon layout
-
-
--   Enhancements to Visualizations:
-    - Visual cue for sort state in <bpt id="p1">**</bpt>Table<ept id="p1">**</ept> visual
-    - New visual: <bpt id="p1">**</bpt>Stacked Area<ept id="p1">**</ept> chart
-    - Smart tooltips for <bpt id="p1">**</bpt>Area<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Line<ept id="p2">**</ept> charts on hover
-    - Ability to create reference line/region for a <bpt id="p1">**</bpt>Cartesian<ept id="p1">**</ept> visual
-    - Improved data labels for <bpt id="p1">**</bpt>Pie<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Scatter<ept id="p2">**</ept> charts
+-   格式化窗格和 [功能區︰
+    - 每個類別目錄服務的格式資料標籤
+    - 變更視覺效果中顯示的小數位數
+    - 變更文字大小，以視覺方式
+    - 版面配置的視覺效果能夠精確地︰ 對齊方式、 散發、 大小、 位置
+    - 跨多個視覺圖形，透過設定樣式 **複製格式**
+    - 最佳化 **首頁** 功能區配置
 
 
--   [R Visuals integration in Power BI Desktop (Preview feature)](powerbi-desktop-r-visuals.md)
+-   視覺效果的增強功能︰
+    - 在排序狀態的視覺提示 **資料表** visual
+    - 新的 visual: **堆疊區域圖** 圖表
+    - 聰明的工具提示 **區域** 和 **行** 停留圖表
+    - 建立參考列/地區的能力 **笛卡兒** visual
+    - 改善資料標籤 **圓形圖** 和 **散佈** 圖表
 
 
--   Suggested table-to-table relationships when trying to create visuals involving two tables which are not related
+-   [Power BI Desktop （預覽功能） 中的 R 視覺效果整合](powerbi-desktop-r-visuals.md)
+
+
+-   建議的資料表的資料表關聯性時嘗試建立視覺效果涉及兩個資料表的不相關
 
 
 ### 資料模型化：
 
--   Relationships View
-    - Zooming slider
-    - Fit Zoom to screen
-    - Reset layout
-    - Ability to zoom in CTRL+(mouse selection range)
+-   關聯性] 檢視
+    - 縮放滑桿
+    - 調整的縮放至螢幕
+    - 重設配置
+    - 若要放大 CTRL + （滑鼠選取範圍） 的能力
 
-### Data Connectivity:
+### 資料連接︰
 
--   [SSAS Multidimensional support - hierarchies support](powerbi-desktop-ssas-multidimensional.md)
--   Stripe Connector
--   Smartsheet Connector
--   <bpt id="p1">**</bpt>Enter Data<ept id="p1">**</ept>: paste or enter data to create a table
--   DirectQuery improvements: support for all data types of T-SQL and SAP HANA, resulting in performance improvements
--   ODBC Connector: support for selecting User/System DSNs
--   CSV Connector: ability to specify Column Delimiter in the Source dialog
+-   [SSAS 多維度支援-階層支援](powerbi-desktop-ssas-multidimensional.md)
+-   等量磁碟區連接器
+-   Smartsheet 連接器
+-   
+            **輸入資料**︰ 貼上或輸入資料來建立資料表
+-   DirectQuery 改進︰ 支援所有的資料類型的 T-SQL 和 SAP HANA，導致效能改進
+-   選取使用者] 或 [系統 Dsn 的 ODBC 連接器︰ 支援
+-   在 [來源] 對話方塊中指定資料行分隔符號的能力 CSV 連接器︰
 
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/iW5VH8iIyfE" frameborder="0" allowfullscreen></iframe>
 
 
 
-## November 2015 Update (2.29.4217.221)
+## 2015 年 11 月更新 (2.29.4217.221)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您現在可以 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-Another month, another big collection of new features and improvements for Power BI Desktop. Improvements range from new data connectors to new modeling capabilities. Here are 26 new features and improvements:
+另一個月份，另一個大的集合的新功能和增強功能的 Power BI Desktop。 改進範圍從新的資料連接器到新的模型化功能。 以下是 26 的新功能和增強功能︰
 
-### Report Authoring:
+### 報表撰寫︰
 
--   Play Axis for Scatter Chart
--   Horizontal Slicers
--   Slicer Selection Behaviors (single vs. multi-select)
--   Control Z-order
--   Background Colors for Slides
--   Interactions between Visuals – Subview (tile by)
--   Duplicate Pages
--   Support for KPIs and Images in Tables, Matrices and Cards
--   Better Tooltips on Area Charts &amp; Line Charts
--   Ability to change Text size in Cards &amp; Tables/Matrix
--   Improved tooltips and labels in Field Well and Formatting panes
--   Ability to see Categories with no data
--   Improved Default Sort behaviors for visuals
--   Ability to control Axis Scale display units
--   Visuals Refresh Optimizations when applying basic modeling operations  
+-   播放軸的散佈圖
+-   水平交叉分析篩選器
+-   交叉分析篩選器選取項目行為 （單一和多重選取）
+-   控制項疊置順序
+-   投影片的背景色彩
+-   視覺效果 – 子檢視 （並排顯示依據） 之間的互動
+-   重複的頁面
+-   Kpi 和資料表、 矩陣和卡片中的映像支援
+-   更好的工具提示區域圖和折線圖
+-   可以變更卡片和資料表/矩陣中的文字大小
+-   改良的工具提示和也欄位和 [格式] 窗格中的標籤
+-   檢視類別沒有資料的能力
+-   改良的視覺效果的預設排序行為
+-   能夠控制軸刻度顯示單位
+-   視覺效果會套用基本模型作業時，重新整理最佳化  
 
 ### 資料模型化：
 
--   Basic Automatic Date Features
+-   基本的自動日期功能
 
-### Data Connectivity:
+### 資料連接︰
 
--   [SSAS Multidimensional support](powerbi-desktop-ssas-multidimensional.md)
+-   [SSAS 多維度的支援](powerbi-desktop-ssas-multidimensional.md)
 -   [SAP Hana](powerbi-desktop-sap-hana.md)
 -   [R 指令碼](powerbi-desktop-r-scripts.md)
--   DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
--   Azure Data Lake
+-   適用於 SQL Server、 Azure SQL Database 和 Azure SQL 資料倉儲的 DirectQuery
+-   Azure 資料湖
 -   Marketo
 
-### Data Transformations:
+### 資料轉換︰
 
--   Improved Function Invocation experience
--   Option to set Credentials at Server vs. Database level
--   Add Prefix/Suffix to a Text column
+-   改進的函式引動過程經驗
+-   在伺服器與設定認證的選項。資料庫層級
+-   將前置詞/後置詞加入至文字資料行
 
-### Other Improvements:
+### 其他改進功能︰
 
--   New Documentation Website, now also including localized content
+-   新的文件網站，現在也包括當地語系化內容
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx)</ept>, where you can get more detailed information about each of these new features.
+要更新的詳細資訊？ 看看 [部落格文章](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), ，您可以在其中取得每個新功能的詳細的資訊。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/ErHvpkyQjSg" frameborder="0" allowfullscreen></iframe>
 
 
 
-## October 2015 Update (2.28.4190.122)
+## 2015 年 10 月更新 (2.28.4190.122)
 
-October brings another large collection of updates to Power BI Desktop:
+10 月會將另一個大型更新集合帶到 Power BI Desktop:
 
-### Report Authoring:
--   Custom Visualizations
--   Insert Visual from the Ribbon
--   Improved Default Sorting
--   Tooltips &amp; Data Labels on Funnel Charts
--   Slicer Improvements:
-    - Ability to Sort items
-    - Ability to change Font Size
--   Additional Formatting Options for Gauges
--   Data Point Label layout improvements
--   KPI Consumption (Preview Feature)
+### 報表撰寫︰
+-   自訂視覺效果
+-   從功能區中插入 Visual
+-   改良的預設排序
+-   工具提示和漏斗圖上的資料標籤
+-   交叉分析篩選器的增強功能︰
+    - 來排序項目
+    - 若要變更字型大小的能力
+-   量測計的其他格式化選項
+-   資料點標籤配置增強功能
+-   KPI 耗用量 （預覽功能）
 
 ### 資料模型化：
 
--   Semi-Select support for DAX formulas in Data view
+-   選取 [半資料檢視中的 DAX 公式的支援
 
-### Data Connectivity:
--   Azure Document DB connector
--   Mailchimp connector
--   DirectQuery for SQL Server and Azure SQL Database (Preview Feature)
+### 資料連接︰
+-   Azure 文件 DB 連接器
+-   Mailchimp 連接器
+-   適用於 SQL Server 和 Azure SQL Database （預覽功能） 的 DirectQuery
 
 
-### Data Transformations:
--   Filter by “not earliest/latest date”
--   Filter by “is in previous N minutes/hours/seconds”
--   Copy/Paste Queries between Power BI Desktop and Excel
--   Support for Special Characters in Split Column
--   Refresh Previews in Merge Queries dialog
--   Monospaced font for Query Editor Preview
+### 資料轉換︰
+-   「 不早/最新日期 」 來篩選
+-   篩選 」 是在前一個 N 分鐘/小時/秒 」
+-   複製/貼上 Power BI Desktop 和 Excel 之間的查詢
+-   支援分割資料行中的特殊字元
+-   在合併的查詢] 對話方塊中重新整理預覽
+-   查詢編輯器預覽的等寬字型
 
-### Other Improvements:
--   Refresh Single Table (vs. All) from Report &amp; Data Views
--   Option to enable Preview features
--   In-Product Ratings experience
+### 其他改進功能︰
+-   重新整理單一資料表 (vs。All) 從報表和資料檢視
+-   若要啟用預覽功能的選項
+-   在產品分級體驗
 
-You can view a video of all these updates, too.
+您也可以檢視這些更新的視訊。
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
 
 
-For more information, <bpt id="p1">[</bpt>check out the blog announcement<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx)</ept> that describes more details about each update.
+如需詳細資訊， [簽出部落格宣告](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx) 描述有關每個更新的詳細資訊。
 
 
 
-## September 2015 Update (2.27.4163.351)
+## 2015 年 9 月更新 (2.27.4163.351)
 
-The following massive collection of 44 features has been added to this update:
+此更新已加入下列 44 功能的大型集合︰
 
-### Report Authoring
+### 報表撰寫
 
-- Report-level filters
-- Drill Up/Down for column and scatter charts
-- New Page Size and Page View options
-- Support for inserting Shapes in the Report canvas
-- Fields pane improvements
-    - Search Box to make it easier to find fields by name
-    - “Expand/Collapse All” to improve navigation when there are multiple tables in the Fields pane
-    - Field well cardinality support, drag-replace for buckets with 1 item
-    - Additional Data Labels formatting options
-    - Chart Cartesian Axis Improvements:
-        - X-Axis label direction (horizontal / diagonal)
-        - Support for Logarithmic &amp; Linear scales for values in Y-axis
-        - Display Text for hyperlinks in text boxes
-        - Improvements to existing visualizations: Table, Matrix, Slicer, Scatter Chart, Single Cards, Combo Charts and Gauges
-        - Support for displaying Color Saturation values in tooltips
-        - Ability to resize images and apply additional formatting options
+- 報表層級篩選
+- 資料行和散佈圖的向下切入向上 /
+- 新的頁面大小和頁面檢視表選項
+- 支援在報表畫布中插入圖形
+- 欄位] 窗格的增強功能
+    - 搜尋方塊，讓您更輕鬆地依名稱尋找欄位
+    - 「 展開/摺疊所有 「 若要改善瀏覽 [欄位] 窗格中有多個資料表
+    - 欄位也基數支援中，使用 1 個項目值區拖曳取代
+    - 其他的資料標籤格式設定選項
+    - 圖表笛卡兒軸增強功能︰
+        - X 軸標籤方向 （水平 / 對角線）
+        - 在 y 軸的值的對數和線性標尺的支援
+        - 顯示文字的文字方塊中的超連結
+        - 現有的視覺效果的增強功能︰ 資料表、 矩陣、 交叉分析篩選器、 散佈圖中，一張紙牌組合圖表和量測計
+        - 支援工具提示中顯示色彩飽和度值
+        - 調整影像大小，並套用其他格式化選項的功能
 
 
-### Data Modeling
+### 資料模型化
 
-- Calculated Tables.
-- Relationships view:
-    - Create relationships via drag/drop between two tables in the diagram.
-    - Delete relationships in relationship view by selecting and hitting the Delete key.
-    - Rename/delete tables and columns
-- Data view:
-    - Copy Table contents to clipboard.
-- Field Summarization:
-    - Support for additional operations in the Fields pane: median, standard deviation, and variance
-    - Default summarization: Users can now customize the default summarization operation for any given field in their model
+- 導出的資料表。
+- 檢視關聯性︰
+    - 建立透過拖放在圖表中的兩個資料表之間的關聯性。
+    - 選取並按下 Delete 鍵刪除關聯性] 檢視中的關聯性。
+    - 重新命名/刪除資料表和資料行
+- 資料檢視︰
+    - 將目錄複製到剪貼簿。
+- 欄位的摘要︰
+    - 如需在 [欄位] 窗格中的其他作業的支援︰ 中間值、 標準差和變異數
+    - 預設摘要︰ 使用者現在可以自訂其模型中任何給定欄位的預設摘要作業
 
-### Data Connectivity
+### 資料連接
 
-- Support for on-premises Spark distributions
-- Support for SharePoint lists from non-English sites
-- Exchange connector - Enhanced support, now allowing connections to multiple mailboxes
-- Excel Workbook Connector – Automatic Column Type detection when importing .XLS files
-- “Select Related Tables” option when connecting to database sources
-- Enhanced Active Directory connector credentials, allowing alternate Windows Credentials
-- Improved Function Invocation experience when loading functions from a data source (such as a database)
-- “Import Excel Workbook Contents” feature released last month now also supports external connections to Analysis Services tabular models
-- New option to “Delete All” entries in the Data Source Settings dialog
-- Option to “Enable Relationship Import during Refresh operations”
+- 在內部 Spark 散發套件的支援
+- 從非英文網站的 SharePoint 清單的支援
+- Exchange 連接器-增強的支援，現在可讓多個信箱的連線
+- Excel 活頁簿連接器 – 自動的資料行型別偵測時匯入。XLS 檔案
+- [選取相關的資料表] 選項，當連接到資料庫的來源
+- 增強的 Active Directory 連接器認證，讓其他的 Windows 認證
+- 從資料來源 （例如資料庫） 載入函式時更好的函式引動過程體驗
+- 已發行現在上個月的 「 匯入 Excel 活頁簿內容 」 功能也支援 Analysis Services 表格式模型的外部連接
+- 新的選項，在 [資料來源設定] 對話方塊的 [全部刪除] 項目
+- [重新整理作業期間啟用關聯性匯入] 選項
 
-### Data Transformations and Query Editor Improvements
+### 資料轉換和查詢編輯器增強功能
 
-- Copy to clipboard (available for cells/columns/tables)
-- Filter date columns by earliest/latest date (dynamic filter)
-- Extract min/max date/time value from a column
-- Replace Values - Provision for specifying special characters
-- “Detect Column Types” option to trigger type detection on demand
-- “Refresh All Previews” to refresh all Query Editor previews with a single click
-- Performance Improvements:
-    - Choose Columns dialog: Faster user experience for dealing with wide tables
-    - Auto-filter &amp; Expand/Aggregate popups: Faster for large number of values/fields
+- 複製到剪貼簿 （適用於資料格/資料行/資料表）
+- 篩選日期資料行的最早的/最新的日期 （動態篩選）
+- 擷取資料行的最小/最大日期/時間值
+- 取代值-指定特殊字元的佈建
+- [偵測資料行類型] 選項來觸發隨選類型偵測
+- [重新整理所有預覽] 以重新都整理所有的查詢編輯器預覽，只要按一下
+- 效能改進︰
+    - 選擇資料行] 對話方塊︰ 處理的寬資料表更快的使用者經驗
+    - 自動篩選及展開/彙總的快顯功能表︰ 更快，大量的值/欄位
 
-The following video covers these features in more detail.
+下列影片涵蓋這些功能的詳細資料。
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
 
-For more information about this update, <bpt id="p1">[</bpt>check out the blog announcement<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx)</ept> that describes more details about each update.
+如需有關這項更新， [簽出部落格宣告](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx) 描述有關每個更新的詳細資訊。
 
-## August 2015 Update (2.26.4128.403)
-
-
-The following features have been added to this update:
-
-**Overall Improvements:**
-
--   Import Excel Power BI artifacts (Data Model, Queries, Power View) into a new Power BI Desktop file
-
--   HDInsight Spark connector
-
--   Azure SQL Data Warehouse connector
-
--   Support for custom MDX/DAQ queries when importing data from SSAS
-
--   Live Analysis Services Connections: ability to change the database from <bpt id="p1">**</bpt>Edit Queries<ept id="p1">**</ept> dialog
-
-**Navigator dialog improvements:**
-
--   Resizable Navigator dialog
-
--   Ability to multi-select items in Navigator (CTRL+click, SHIFT+click, etc)
-
-**Query Editor improvements:**
-
--   Query Group creation/deletion improvements (multi-select, etc.)
-
--   Ability to Split Query (i.e. refactor common base steps into a new query)
-
--   Query Icons to reflect type of query in Queries navigator pane
-
-**Data Modeling improvements:**
-
--   Resizing of columns in Data View
-
--   Moving Measures from one table to another
+## 2015 年 8 月更新 (2.26.4128.403)
 
 
-Take a look at the following video for more details about this update:
+此更新中已新增了下列功能︰
+
+**整體的改進︰**
+
+-   Excel 的 Power BI 成品 (資料模型中，查詢，Power View) 匯入到新的 Power BI Desktop 檔案
+
+-   HDInsight Spark 連接器
+
+-   Azure SQL 資料倉儲連接器
+
+-   自訂 MDX/DAQ 查詢從 SSAS 匯入資料時的支援
+
+-   即時 Analysis Services 連接︰ 變更資料庫能力 **編輯查詢** 對話方塊
+
+**將巡覽器] 對話方塊改良功能︰**
+
+-   可調整大小的巡覽器對話方塊
+
+-   多重選取的項目，在導覽 （CTRL + 按一下 SHIFT + 按一下，等等） 的能力
+
+**查詢編輯器增強功能︰**
+
+-   查詢群組建立/刪除改進功能 （多重選取等）。
+
+-   分割查詢 （也就是重整通用基底逐步執行新的查詢） 的能力
+
+-   查詢圖示，以反映查詢瀏覽器窗格中的查詢類型
+
+**資料模型化增強功能︰**
+
+-   資料檢視中的資料行的調整大小
+
+-   移動到另一個資料表的量值
+
+
+看看下列的影片，如需有關此更新的詳細資訊︰
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/2v7LUD7MJaw" frameborder="0" allowfullscreen></iframe>
 
-## July 2015 Update (2.25.4095.554)
+## 2015 年 7 月更新 (2.25.4095.554)
 
-The following features have been added in this update:
+此更新中已加入下列功能︰
 
--   <bpt id="p1">**</bpt>New Data Connectors<ept id="p1">**</ept>: appFigures, Quickbooks Online, Zendesk, Github, Twilio and SweetIQ.
+-   
+            **新的資料連接器**: appFigures Quickbooks Online、 Zendesk、 Github、 Twilio 和 SweetIQ。
 
--   <bpt id="p1">**</bpt>New Transformations<ept id="p1">**</ept>: Extract First/Last/Range of characters from a Text Column; Option to specify Join Type in the Merge Queries dialog; Ability to customize Quote Style in Split Column by Delimiter dialog.
+-   
+            **新的轉換**︰ 擷取第一個/最後一個字元範圍從文字資料行。若要在合併的查詢] 對話方塊中，指定聯結類型選項若要自訂分隔符號] 對話方塊中分割資料行的加上引號樣式的能力。
 
--   <bpt id="p1">**</bpt>Report Authoring Improvements<ept id="p1">**</ept>: New visualizations (Area Chart, Waterfall, Donut &amp; Matrix); New visual formatting and customization options (labels, titles, background, legend, colors, etc.); Insert Textbox and Picture in your report; Support for hyperlinks in reports and report tables; Undo/Redo actions.
+-   
+            **報表撰寫改進**︰ 新的視覺效果 （區域圖、 瀑布、 甜甜圈和矩陣）。新增視覺格式設定和自訂選項 （標籤、 標題、 背景、 圖例、 色彩等）。插入文字方塊和圖片在您的報表。支援的報表和報表資料表; 中的超連結復原/取消復原動作。
 
--   <bpt id="p1">**</bpt>Direct Report Exploration<ept id="p1">**</ept> over Analysis Services Tabular Models.
+-   
+            **部屬探勘** 透過 Analysis Services 表格式模型。
 
--   <bpt id="p1">**</bpt>Data Modeling:<ept id="p1">**</ept> New Data View &amp; Relationships views.
+-   
+            **資料模型化︰** 新資料檢視和關聯性的檢視。
 
--   Publish reports to PowerBI.com, directly from Power BI Desktop.
+-   要將報表發行至 PowerBI.com，，直接從 Power BI Desktop。
 
--   Support for opening Recent Files in Start Page and "File -<ph id="ph1">\&gt;</ph> Open" menu.
+-   支援在開始頁面中開啟最近使用的檔案和 「 檔案-\> 開啟 「 功能表。
 
--   Support for Exchange UPN Credentials in the Exchange connector.﻿
+-   Exchange UPN 認證中的 Exchange 連接器的支援。﻿
 
-In addition to all these new features, we’re also making <bpt id="p1">**</bpt>Power BI Desktop available in 42 different languages.<ept id="p1">**</ept> Get the full list of languages and install the one you want from <bpt id="p1">[</bpt>our official download page<ept id="p1">](https://www.microsoft.com/download/details.aspx?id=45331)</ept>.
+除了所有這些新功能，我們也將會讓 **Power BI Desktop 提供 42 不同語言版本。** 取得語言的完整清單，並安裝您想要從 [我們正式的下載頁面](https://www.microsoft.com/download/details.aspx?id=45331)。
 
-Take a look at the following video for more details:
+看看下列的影片，如需詳細資訊︰
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/JCaCcdMnsyM" frameborder="0" allowfullscreen></iframe>
 
-## May 2015 Update (2.23.4036.161)
+## 2015 年更新 (2.23.4036.161)
 
-The following features have been added in this update:
+此更新中已加入下列功能︰
 
-**Modeling Features**
+**模型化功能**
 
--   Calculated Columns
+-   導出資料行
 
--   Data Categorization
+-   資料分類
 
--   Sort By Another Column
+-   依另一個資料行排序
 
--   Improved DAX Formula Editor: Function Help and Prototype
+-   改良的 DAX 公式編輯器︰ 函式的說明和原型
 
-**Get Data &amp; Query**
+**取得資料和查詢**
 
--   New <bpt id="p1">**</bpt>ODBC Tables<ept id="p1">**</ept> connector (Beta)
+-   新 **ODBC 資料表** 連接器 (Beta)
 
--   Improved to the <bpt id="p1">**</bpt>Excel Workbook<ept id="p1">**</ept> connector: better column type inference and faster load for data previews
+-   若要改善 **Excel 活頁簿** 連接器︰ 更好的資料行型別推斷並更快速載入資料預覽
 
--   New Text Column Filters - <bpt id="p1">**</bpt>Does Not Begin With<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Does Not End With<ept id="p2">**</ept>
+-   新的文字資料行篩選器- **開頭不是** 和 **結尾不是**
 
--   Enhanced Privacy Levels dialog﻿
+-   增強的隱私權等級對話方塊﻿
 
-Take a look at the following video for details:
+看看下列的影片，如需詳細資訊︰
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/LS0zMfup1pQ" frameborder="0" allowfullscreen></iframe>
 
 
-## April 2015 Update (2.22.4009.122)
+## 2015 年 4 月更新 (2.22.4009.122)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您現在可以 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-The following features have been added in this update:
+此更新中已加入下列功能︰
 
-**Modeling Features**
+**模型化功能**
 
--   Initial support for DAX Measures
+-   初始支援 DAX 量值
 
--   New DAX functions
+-   新的 DAX 函數
 
--   Data Types &amp; Formatting options in Report view
+-   報表檢視中的資料類型和格式選項
 
--   Rename &amp; Delete fields in Report view
+-   重新命名和刪除報表檢視中的欄位
 
-**Get Data &amp; Query**
+**取得資料和查詢**
 
--   OData V4 support
+-   OData V4 支援
 
--   Support for Custom ADFS Authentication Services
+-   自訂 ADFS 驗證服務的支援
 
--   Updated Facebook connector due to Facebook API changes
+-   因為 Facebook API 變更而更新的 Facebook 連接器
 
--   Unified Options dialog
+-   統一的選項] 對話方塊
 
--   Option to disable Native Database query prompts
+-   若要停用原生資料庫查詢提示選項
 
--   Support for <bpt id="p1">**</bpt>Fixed Decimal Number<ept id="p1">**</ept> type
+-   支援 **固定十進位數字** 類型
 
--   Alternate Windows Credentials
+-   替代的 Windows 認證
 
--   Remove Blank Rows
+-   移除空白資料列
 
--   Median Operation available for <bpt id="p1">**</bpt>Group By<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Aggregate Column<ept id="p2">**</ept>
+-   適用於中間值作業 **Group By** 和 **彙總資料行**
 
--   Convert <bpt id="p1">**</bpt>DateTimeZone<ept id="p1">**</ept> value to <bpt id="p2">**</bpt>Local Time<ept id="p2">**</ept>
+-   轉換 **DateTimeZone** 值 **當地時間**
 
 **改善效能**
 
--   Faster load of medium &amp; large datasets by about 20%
+-   更快的載入之大約 20%的中型和大型資料集
 
--   Improved time to open an existing PBIX file by about 50%
+-   若要開啟現有的 PBIX 檔案大約 50%的改善的時間
 
-You can watch the following video for details: 
+您可以觀看下列影片，如需詳細資訊︰ 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FuL8agVKrcg" frameborder="0" allowfullscreen></iframe>
 
-## March 2015 Update (2.21.3975.261)
+## 2015 年 3 月更新 (2.21.3975.261)
 
-The following features have been added in this update:
+此更新中已加入下列功能︰
 
--   <bpt id="p1">**</bpt>Google Analytics<ept id="p1">**</ept> connector
+-   
+            **Google Analytics** 連接器
 
--   Additional operators for <bpt id="p1">**</bpt>date filtering in Query view<ept id="p1">**</ept>
+-   其他運算子 **查詢檢視中的日期篩選**
 
--   **Automatic Model Relationship Detection**
+-   **模型自動偵測關聯性**
 
--   Enhanced <bpt id="p1">**</bpt>Add Relationship<ept id="p1">**</ept> dialog
+-   增強式 **加入關聯性** 對話方塊
 
--   <bpt id="p1">**</bpt>Report Pages Re-ordering<ept id="p1">**</ept> (drag &amp; drop)
+-   
+            **重新排序的報表頁面** （拖曳和卸除）
 
--   ~40-50% <bpt id="p1">**</bpt>Performance<ept id="p1">**</ept> <bpt id="p2">**</bpt>Improvement<ept id="p2">**</ept> filling database tables without filters/transforms
+-   大約 40-50% **效能** **改進** 填入資料庫資料表，而不需要篩選/轉換
 
--   Lots of bug fixes
+-   很多 bug 修正
 
-You can watch the following video for more details:
+您可以觀看下列影片，如需詳細資訊︰
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJTcGro08TI" frameborder="0" allowfullscreen></iframe>
 
-## February 2015 Update (2.20.3945.102)
+## 2015 年 2 月更新 (2.20.3945.102)
 
-The following features have been added or improved in this update:
+新增或改善此更新中的下列功能︰
 
 - 效能改善
-- Dynamics CRM Online connector
-    > *Note: Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
-- Navigator Dialog improvements
-    -   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
-    -   Show Selected Items option
-    -   Improved Search capabilities in the Navigator tree
--   New Transformations
-    -   Age and Subtract operations for Date/Time columns
-    -   Aggregate Columns: Option to disable new columns’ prefix
--   Field List improvements
-    -   Expand/Collapse tables
-    -   Hide/Unhide fields
-    -   Optimized layout (spacing, margins, and fonts)
--   Report Pages Navigation - Keyboarding support
--   Lots of bug fixes
+- Dynamics CRM Online 連接器
+    > *注意︰ 目前，只有 crm.microsoft.com 網域內的 Url 以接受此對話方塊。 這不包括非生產環境的租用戶。 我們將我們年 3 月更新中修正此問題。 暫時的解決方法是使用 「 從 OData 」 此摘要連接。*
+- 將巡覽器] 對話方塊改良
+    -   更好預覽經驗的多維度來源 （Analysis Services 和 SAP BusinessObjects）
+    -   顯示選取的項目選項
+    -   在導覽樹狀目錄中的改進的搜尋功能
+-   新的轉換
+    -   日期/時間資料行的年齡和 Subtract 作業
+    -   若要停用新的資料行前置詞的彙總的資料行︰ 選項
+-   欄位清單增強功能
+    -   展開/摺疊資料表
+    -   隱藏/取消隱藏欄位
+    -   最佳化的配置 （間距、 邊界和字型）
+-   報表頁面瀏覽-Keyboarding 支援
+-   很多 bug 修正
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 
-**January 2015 Update (2.19.3923.101)**
+**2015 年 1 月更新 (2.19.3923.101)**
 
-This month we've made a number of improvements and bug fixes under the covers. Please try out the new version and continue to send us feedback if you find any issues!
+本月份我們做了一些改良和 bug 修正在幕後。 請試試新的版本，並繼續傳送意見給我們，如果您發現任何問題 ！

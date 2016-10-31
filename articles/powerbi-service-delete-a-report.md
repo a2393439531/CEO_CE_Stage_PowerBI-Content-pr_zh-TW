@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Delete a report from Power BI"
-   description="Delete a report from Power BI"
+   pageTitle="從 Power BI 中刪除報表"
+   description="從 Power BI 中刪除報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,20 +20,20 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Delete a report from Power BI  
+# 從 Power BI 中刪除報表  
 
-Don't worry, deleting a report does not delete the dataset that the report is based on.  And any visualizations that you pinned from the report are also safe -- they remain on the dashboard until you delete them individually.
+別擔心，刪除報表不會刪除報表為基礎的資料集。  而且也會有任何視覺效果，從報表釘選安全--個別刪除之前維持在儀表板。
 
-## To delete a report:  
-1.  In the left navigation pane, right-click the report to delete and select <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.  
+## 若要刪除報表︰  
+1.  在左的導覽窗格中，以滑鼠右鍵按一下要刪除選取的報表 **移除**。  
     ![](media/powerbi-service-delete-a-report/deleteareport1_new.png)
 
-2.  Confirm the deletion.
+2.  確認刪除。
 
 >**注意：**  
->If the report is part of a <bpt id="p1">[</bpt>content pack<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>, you will not be able to delete it using this method.  See <bpt id="p1">[</bpt>Deleting an organizational content pack<ept id="p1">](powerbi-service-organizational-content-pack-delete.md)</ept>. 
+>如果報表是屬於 [內容組件](powerbi-service-organizational-content-packs-introduction.md), ，不能使用這個方法之刪除。  請參閱 [刪除組織內容套件](powerbi-service-organizational-content-pack-delete.md)。 
 
 ## 請參閱  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

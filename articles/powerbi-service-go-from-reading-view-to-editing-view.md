@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Go from Reading View to Editing View in Power BI"
-   description="Go from Reading View to Editing View in Power BI"
+   pageTitle="從編輯 Power BI 中的檢視讀取檢視"
+   description="從編輯 Power BI 中的檢視讀取檢視"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,29 +20,29 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Go from Reading View to Editing View in Power BI
+# 從編輯 Power BI 中的檢視讀取檢視
 
-In Editing View in Power BI (compared to <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>) you can dig even deeper into your data by adding and removing fields, changing visualization type, creating new visualizations, and adding and deleting visualizations and pages from the report.  To edit a report, you must be the owner of the report.
+在 Power BI 中編輯] 檢視 (相較於 [讀取檢視](powerbi-service-interact-with-a-report-in-reading-view.md)) 您可以更深入了解您的資料的加入和移除欄位、 變更視覺效果類型，建立新的視覺效果，以及加入和刪除視覺效果和頁面從報表。  若要編輯報表，您必須是報表的擁有者。
 
-1.  In Reading View, select <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept>. 
+1.  在 [讀取] 檢視中，選取 **編輯報表**。 
 
     ![](media/powerbi-service-go-from-reading-view-to-editing-view/EditReportnew.png)
 
-    The report is now in Editing View and uses the same <bpt id="p1">[</bpt>display settings<ept id="p1">](powerbi-service-change-report-display-settings.md)</ept> you last used in Reading View.
+    報告目前處於編輯的檢視，而且會使用相同 [顯示設定](powerbi-service-change-report-display-settings.md) 上次使用讀取檢視。
 
-2. To return to <bpt id="p1">**</bpt>Reading View<ept id="p1">**</ept>, select Reading View from the top navigation bar.
+2. 若要返回 **讀取檢視**, ，請選取上方導覽列中讀取檢視。
 
     ![](media/powerbi-service-go-from-reading-view-to-editing-view/ReadingViewReturnnew.png)
 
-There are so many ways to <bpt id="p1">[</bpt>edit your report<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>, slicing and dicing your data to discover insights and get answers to questions.  The next topic, <bpt id="p1">[</bpt>Interact with a report in Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>, lists and describes these in detail.
+有許多方式 [編輯報表](powerbi-service-interact-with-a-report-in-editing-view.md), 、 切割和細分發現見解，並取得問題解答資料。  下一個主題 [編輯檢視中的報表互動](powerbi-service-interact-with-a-report-in-editing-view.md), 、 列出及描述這些詳細資料。
 
 
 ## 請參閱
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[開始使用 Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md) 
+[Power BI-基本概念](powerbi-service-basic-concepts.md) 
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/) 
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/) 

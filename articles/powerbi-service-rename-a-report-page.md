@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Rename a report page in Power BI"
-   description="Documentation on how to rename a report page in Microsoft Power BI service."
+   pageTitle="重新命名在 Power BI 報表頁面"
+   description="有關如何重新命名報表頁面 Microsoft Power BI 服務中的文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,36 +20,36 @@
    ms.workload="powerbi"
    ms.date="08/25/2016"
    ms.author="mihart"/>
-# Rename a report page in Power BI
+# 重新命名在 Power BI 報表頁面
 
-##  What happens when I rename a report page?
+##  當我重新命名報表頁面時，會發生什麼事？
 
-Don't like the name of a page in your Power BI report?  A new name is just a click away. 
+不喜歡網頁在 Power BI 報表中的名稱嗎？  您只要按一下新的名稱。 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1.  Open the report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+1.  在報表開啟 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md)。
 
-2. Locate the report page tabs at the bottom of the Power BI window.
+2. 找出報表頁面索引標籤底部的 [Power BI] 視窗。
 
     ![](media/powerbi-service-rename-a-report-page/report-page-tabs.png)
 
-2.  Open the report page that you'd like to rename by selecting the tab.
+2.  開啟您想要重新命名所選取的索引標籤 [報表] 頁面。
 
-4. Double-click the name on the tab to highlight it.  
+4. 連按兩下加以反白顯示] 索引標籤上的名稱。  
 
     ![](media/powerbi-service-rename-a-report-page/hilite-tab.png)
 
-5. Type a new report page name and select ENTER.
+5. 輸入新的報表頁面名稱，然後選擇 ENTER。
 
     ![](media/powerbi-service-rename-a-report-page/new-name.png)
 
 ##  請參閱
 
-[Rename a report](powerbi-service-rename-a-report.md)
+[重新命名報表](powerbi-service-rename-a-report.md)
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+[Power BI-基本概念](powerbi-service-basic-concepts.md)*
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

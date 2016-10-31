@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Change the type of visualization in a Power BI report"
-   description="Change the type of visualization in a Power BI report"
+   pageTitle="變更 Power BI 報表中的視覺效果的類型"
+   description="變更 Power BI 報表中的視覺效果的類型"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,27 +20,28 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Change the type of visualization in a Power BI report
+# 變更 Power BI 報表中的視覺效果的類型
 
-Try different types of visualizations in Power BI to see which one illustrates your data best. 
+請嘗試不同類型的 Power BI，以查看哪一個最能說明資料中的視覺效果。 
 
-1.  Open your <bpt id="p1">[</bpt>report in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and <bpt id="p2">[</bpt>create a visualization<ept id="p2">](powerbi-service-add-visualizations-to-a-report-i.md)</ept>, if your report doesn't have any yet.
+1.  開啟您 [編輯檢視報表](powerbi-service-go-from-reading-view-to-editing-view.md) 和 [建立視覺效果](powerbi-service-add-visualizations-to-a-report-i.md), ，如果報表沒有任何尚未。
 
-2.  In the Visualizations pane, select the new visualization type.  
+2.  在 [視覺效果] 窗格中，選取新的視覺效果類型。  
 
     ![](media/powerbi-service-change-the-type-of-visualization-in-a-report/changeviz.gif)
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: You can <bpt id="p2">[</bpt>pin your visualization<ept id="p2">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept> to your dashboard as a tile.
+>
+            **請注意**︰ 您可以 [釘選的視覺](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) 為磚儀表板。
 
-If you changed the visualization type in the report after you pinned it to your dashboard, the tile does not automatically update. So, if you pinned the visualization as a line chart and then, in the report, changed it to a bar chart, the already-pinned version of this data will remain a line chart. Pin the bar chart to see it too on the dashboard.
+如果您變更報表中的視覺效果類型，固定儀表板之後，該方塊不會自動更新。 因此，當您固定為折線圖的視覺效果，然後在報表中，將其變更橫條圖，此資料的已釘選版本依然折線圖。 Pin 太儀表板上看到的橫條圖。
 
 
 
 
 ###  請參閱
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+進一步了解 [Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

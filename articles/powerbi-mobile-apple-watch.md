@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Power BI Apple Watch app"
-   description="Power BI Apple Watch app"
+   pageTitle="Power BI Apple Watch 應用程式"
+   description="Power BI Apple Watch 應用程式"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,66 +20,68 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="power-bi-apple-watch-app"></a>Power BI Apple Watch app
+# <a name="power-bi-apple-watch-app"></a>Power BI Apple Watch 應用程式
 
-With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. Check the blog post.
+Power BI Apple Watch 應用程式中，您可以檢視 Kpi，並從 Power BI 儀表板，卡片磚，您監看式 」 權限。 Kpi 和卡片磚最適合小型螢幕上提供的活動訊號量值。 請檢查部落格文章。
  
-## <a name="install-the-apple-watch-app"></a>Install the Apple Watch app
-The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you <bpt id="p1">[</bpt>download the Power BI app to your iPhone<ept id="p1">]</ept><bpt id="p2">(http://go.microsoft.com/fwlink/?LinkId=522062 "</bpt>Download the iPhone app<ept id="p2">")</ept> from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to <bpt id="p1">[</bpt>install Apple Watch applications<ept id="p1">](https://support.apple.com/en-us/HT204784)</ept>.
+## <a name="install-the-apple-watch-app"></a>安裝 Apple Watch 應用程式
+Power BI Apple Watch 應用程式搭配 Power BI for iOS 應用程式，所以當您 [Power BI 應用程式下載到您的 iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "iPhone 應用程式下載") 從 Apple 應用程式存放區，就會自動同時下載 Power BI 監看式應用程式。 Apple 本指南說明如何 [Apple Watch 應用程式安裝](https://support.apple.com/en-us/HT204784)。
 
-## <a name="sync-your-dashboard-with-power-bi-on-your-apple-watch"></a>Sync your dashboard with Power BI on your Apple Watch
-1. In Power BI on your iPhone, open the dashboard you want to sync with the Apple Watch. 
+## <a name="sync-your-dashboard-with-power-bi-on-your-apple-watch"></a>同步處理與 Apple Watch 上的 Power BI 儀表板
+1. 在 iPhone 上的 Power BI，開啟您想要同步處理與 Apple Watch 儀表的板。 
 
-2. Select the ellipsis (...) &gt; <bpt id="p1">**</bpt>Sync with Watch<ept id="p1">**</ept>.
+2. 選取省略符號 （...） > **與監看式同步處理**。
 
-Power BI shows an indicator that the dashboard is synced with the watch.
+Power BI 會顯示在儀表板已同步處理與監看式指標。
 
-You can only sync one dashboard at a time with the watch.
+您可以只同步處理一個儀表板與監看式一次。
 
-> <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
+> 
+            **秘訣**︰ 若要檢視您的監看式方塊從多個儀表板，在 Power BI 服務中，建立新的儀表板，並釘選到它的所有相關方塊。
 
-## <a name="use-the-power-bi-app-on-the-apple-watch"></a>Use the Power BI app on the Apple Watch
-Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
+## <a name="use-the-power-bi-app-on-the-apple-watch"></a>在 Apple Watch 上使用 Power BI 應用程式
+要取得 Power BI Apple Watch 應用程式從監看式的跳板，或 （若已設定），請按一下 [Power BI widget 直接從監看式表面。
 
 ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
 
-The Power BI Apple Watch app consists of two parts.
+Power BI Apple Watch 應用程式是由兩個部分所組成。
 
--   The <bpt id="p1">**</bpt>index screen<ept id="p1">**</ept> allows a quick overview of all KPI and card tiles from the synced dashboard.
+-    **索引螢幕** 可讓所有的 KPI 和卡片的快速概觀圖格同步處理的儀表板。
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
 
--   The <bpt id="p1">**</bpt>in-focus tile<ept id="p1">**</ept>: Click a tile on the index screen for an in-depth view of a specific tile.
+-    **單元的焦點磚**︰ 按一下某個特定方塊的詳盡檢視的索引螢幕上的磚。
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
  
-## <a name="set-a-custom-power-bi-widget"></a>Set a custom Power BI widget
-You can also display a specific Power BI tile directly on the Apple Watch face, so it's visible and accessible at all times.
+## <a name="set-a-custom-power-bi-widget"></a>設定自訂的 Power BI widget
+您也可以直接在 Apple Watch 朝上顯示某個特定的 Power BI 方塊，所以根本是可見和可存取。
 
-The Power BI Apple Watch widget updates close to the time your data updates, keeping your needed information always up to date.
+Power BI Apple Watch widget 更新時間接近您的資料更新，讓所需的資訊永遠最新。
 
-### <a name="add-a-power-bi-widget-to-your-watch-face"></a>Add a Power BI widget to your watch face
+### <a name="add-a-power-bi-widget-to-your-watch-face"></a>新增 Power BI widget 監看式圖示
 
-See <bpt id="p1">[</bpt>Customize your Apple Watch face<ept id="p1">](https://support.apple.com/en-us/HT205536)</ept> in the Apple Guide.
+請參閱 [自訂 Apple Watch 朝](https://support.apple.com/en-us/HT205536) Apple 指南中。
 
-### <a name="change-the-text-on-the-widget"></a>Change the text on the widget
-Given the small space on the Apple Watch face, the Power BI Apple Watch app lets you change the title of the widget to fit the small space.
+### <a name="change-the-text-on-the-widget"></a>變更小工具上的文字
+提供 Apple Watch 朝上的小空間，Power BI Apple Watch 應用程式可讓您變更成小小的空間 widget 的標題。
 
--   On your iPhone, go to the Apple Watch control app, select Power BI, navigate to the widget name field, and type a new name.
+-   您在 iPhone 上移至 Apple Watch 控制應用程式選取 Power BI、 瀏覽至小工具的 [名稱] 欄位中，輸入新名稱。
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_oniphone.png)
 
  
-> [AZURE.NOTE]  If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face. 
+> [AZURE.NOTE]  如果您不要變更名稱，Power BI widget 會縮短符合監看式表面上的小空間中的字元數的名稱。 
 
 ### <a name="see-also"></a>請參閱
 
-Your feedback will help us decide what to implement in the future, so please don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
+您的意見反應將協助我們決定要實作在未來，因此請別忘了您想要在 Power BI 行動應用程式中查看其他功能進行投票。 
 
--   Download the <bpt id="p1">[</bpt>Power BI iPhone mobile app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept>
--   Follow <bpt id="p1">[</bpt><ph id="ph1">@MSPowerBI</ph> on Twitter<ept id="p1">](https://twitter.com/MSPowerBI)</ept>
--   Join the conversation at the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-   下載 [Power BI iPhone 行動應用程式](http://go.microsoft.com/fwlink/?LinkId=522062)
+-   請依照下列 [@MSPowerBI 的 Twitter](https://twitter.com/MSPowerBI)
+-   加入在交談 [Power BI 社群](http://community.powerbi.com/)
 
-<bpt id="p1">[</bpt>Get started with the iPhone app for Power BI<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept>
+
+            [開始使用 iPhone 應用程式的 Power BI](powerbi-mobile-iphone-app-get-started.md)
 
 

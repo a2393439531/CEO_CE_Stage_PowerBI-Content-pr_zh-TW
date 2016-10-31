@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a Power BI report"
-   description="Walkthrough to Integrate a report into an app - Get a Power BI report"
+   pageTitle="取得 Power BI 報表"
+   description="逐步解說將報表整合到應用程式-取得 Power BI 報表"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,33 +20,35 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 2: Get a report
+# 步驟 2︰ 取得報表
 
 ## 簡介
 
-In <bpt id="p1">**</bpt>step 1<ept id="p1">**</ept> of Integrate a report into an app, <bpt id="p2">[</bpt>Register a web app with Azure AD<ept id="p2">](powerbi-developer-integrate-report-register.md)</ept>, you register a web app so that your app can authenticate to <bpt id="p3">**</bpt>Azure Active Directory<ept id="p3">**</ept>. In this step, you use an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> API to get a report.
+在 **步驟 1** 整合至應用程式中，報表的 [向 Azure AD 註冊 web 應用程式](powerbi-developer-integrate-report-register.md), ，您註冊 web 應用程式，讓您的應用程式可以驗證至 **Azure Active Directory**。 在此步驟中，您會使用 **存取權杖**, ，而 **Power BI** API 來取得報表。
 
 ![](media\powerbi-developer-integrate-report\integrate-report-get-report.png)
 
-To get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> report, you use the <bpt id="p2">[</bpt>Get Reports<ept id="p2">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation which gets a list of <bpt id="p3">**</bpt>Power BI<ept id="p3">**</ept> reports. From the list of reports, you can get a report <bpt id="p1">**</bpt>embedUrl<ept id="p1">**</ept>. Once you have a report <bpt id="p1">**</bpt>embedUrl<ept id="p1">**</ept>, you can load a report into an <bpt id="p2">**</bpt>IFrame<ept id="p2">**</ept>.
+若要取得 **Power BI** 報告，您使用 [取得報表](https://msdn.microsoft.com/library/mt634543.aspx) 作業就會取得一份 **Power BI** 報表。 從清單中的報表，您可以看到一個報告 **embedUrl**。 一旦您有一份報表 **embedUrl**, ，您可以載入至報表 **IFrame**。
 
-Before you can call the <bpt id="p1">[</bpt>Get Reports<ept id="p1">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation, or any other <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> operation, you need to get an Azure Active Directory <bpt id="p3">**</bpt>authentication access token<ept id="p3">**</ept> (access token). An <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> is used to allow your app access to <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> reports. To learn more about Azure Active Directory <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> flow, see <bpt id="p2">[</bpt>Azure AD Authorization Code Grant Flow<ept id="p2">](https://msdn.microsoft.com/library/azure/dn645542.aspx)</ept>. The next section shows you how to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> in a web app.
+您可以呼叫之前 [取得報表](https://msdn.microsoft.com/library/mt634543.aspx) 作業，或任何其他 **Power BI** 作業，您需要取得 Azure Active Directory **驗證存取權杖** （存取權杖）。  **存取權杖** 可讓您的應用程式存取 **Power BI** 報表。 若要深入了解 Azure Active Directory **存取權杖** 流程，請參閱 [Azure AD 授權碼授與流程](https://msdn.microsoft.com/library/azure/dn645542.aspx)。 下一節中會示範如何取得 **存取權杖** 的 web 應用程式。
 
 <a name="get-token"/>
-## Get an authentication access token
+## 取得驗證存取權杖
 
-Here's how to get an authentication access token to call a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> operation.
+以下是如何取得驗證的存取權杖來呼叫 **Power BI** 作業。
 
--   <bpt id="p1">**</bpt>Step 1:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get an authorization code from Azure AD<ept id="p2">](#auth-code)</ept>
--   <bpt id="p1">**</bpt>Step 2:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get an access token from authorization code<ept id="p2">](#access-token)</ept>
+-   
+            **步驟 1:** [從 Azure AD 取得授權碼](#auth-code)
+-   
+            **步驟 2:** [從授權碼取得存取權杖](#access-token)
 
 <a name="auth-code"/>
-### Step 1: Get an authorization code from Azure AD
+### 步驟 1︰ 從 Azure AD 取得授權碼
 
-The first step to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> is to get an authorization code from <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept>. To do this, you construct a query string with the following properties, and redirect to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept>.
+若要取得第一個步驟 **存取權杖** 是取得授權碼從 **Azure AD**。 若要這樣做，請建構查詢字串具有下列屬性，並重新導向至 **Azure AD**。
 
 
-**Authorization code query string**
+**授權程式碼查詢字串**
 
 ```
 var @params = new NameValueCollection
@@ -68,9 +70,9 @@ var @params = new NameValueCollection
 };
 ```
 
-After you construct a query string, you redirect to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> to get an <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>.  Below is a complete C# method to construct an <bpt id="p1">**</bpt>authorization code<ept id="p1">**</ept> query string, and redirect to <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept>. In the next step, you get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> using the <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>.
+建構查詢字串之後，您重新導向至 **Azure AD** 取得 **授權碼**。  以下是完整 C# 方法來建構 **授權碼** 查詢字串，並重新導向至 **Azure AD**。 在下一個步驟中，您會得到 **存取權杖** 使用 **授權碼**。
 
-**Get authorization code**
+**取得授權碼**
 
 ```
 public void GetAuthorizationCode()
@@ -114,11 +116,11 @@ public void GetAuthorizationCode()
 ```
 
 <a name="access-token"/>
-### Step 2: Get an access token from authorization code
+### 步驟 2︰ 取得存取權杖的授權碼
 
-In step 1 to get an authentication access token, you get an <bpt id="p1">**</bpt>authorization code<ept id="p1">**</ept> from Azure AD. Once <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> redirects back to your web app with an <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>, you use the <bpt id="p3">**</bpt>authorization code<ept id="p3">**</ept> to get an access token. Below is a C# method to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>. In the next section, you get a <bpt id="p1">**</bpt>report<ept id="p1">**</ept> using an <bpt id="p2">**</bpt>access token<ept id="p2">**</ept>.
+在步驟 1 中取得驗證存取權杖，您會得到 **授權碼** 從 Azure AD。 一次 **Azure AD** 重新導向回到您的 web 應用程式與 **授權碼**, ，您使用 **授權碼** 以取得存取權杖。 以下是 C# 方法來取得 **存取權杖**。 在下一節中，您會得到 **報表** 使用 **存取權杖**。
 
-**Get access token**
+**取得存取權杖**
 
 ```
 public string GetAccessToken(string authorizationCode, string clientID, string clientSecret, string redirectUri)
@@ -142,11 +144,11 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
 }
 ```
 
-## Get report using access token
+## 取得報表使用存取權杖
 
-Now that you have an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, you can call the <bpt id="p2">[</bpt>Get Reports<ept id="p2">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation. The <bpt id="p1">[</bpt>Get Reports<ept id="p1">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation returns a list of reports. You can get a report from the list of reports. Below is a complete C# method to get a report. Once you have a <bpt id="p1">**</bpt>report<ept id="p1">**</ept>, you can load it into an <bpt id="p2">**</bpt>IFrame<ept id="p2">**</ept>. See <bpt id="p1">[</bpt>Step 3: Load a Power BI report into an IFrame<ept id="p1">](powerbi-developer-integrate-report-load-report-iframe.md)</ept>.
+您現在已 **存取權杖**, ，您可以呼叫 [取得報表](https://msdn.microsoft.com/library/mt634543.aspx) 作業。  [取得報表](https://msdn.microsoft.com/library/mt634543.aspx) 作業會傳回一份報表。 您可以取得報表的報表清單中。 以下是完整 C# 方法以取得報告。 一旦 **報表**, ，您可以將它載入 **IFrame**。 請參閱 [步驟 3: Power BI 報表載入 IFrame](powerbi-developer-integrate-report-load-report-iframe.md)。
 
-**Get report**
+**取得報表**
 
 ```
 protected void GetReport(int index)
@@ -193,17 +195,17 @@ public class PBIReport
 
 ## 下一個步驟
 
-To integrate a report into an app, you load a report into an IFrame. In the next step, you learn how to <bpt id="p1">[</bpt>Load a report into an IFrame<ept id="p1">](powerbi-developer-integrate-report-load-report-iframe.md)</ept>.
+若要將報表整合到應用程式，您載入報表 IFrame。 在下一個步驟中，您了解如何 [報表載入 IFrame](powerbi-developer-integrate-report-load-report-iframe.md)。
 
-[Next Step &gt;](powerbi-developer-integrate-report-load-report-iframe.md)
+[下一步 >](powerbi-developer-integrate-report-load-report-iframe.md)
 
 ## 請參閱
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
-[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
-[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
-[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
-[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)  
-[Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[將報告整合到應用程式逐步解說](powerbi-developer-integrate-report.md)  
+[整合的報表範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[設定整合的報表範例](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Azure AD 授權碼授與流程](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
+[取得報表作業](https://msdn.microsoft.com/library/mt634543.aspx)  
+[步驟 3︰ 將 IFrame 載入 Power BI 報表](powerbi-developer-integrate-report-load-report-iframe.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create and submit a visual to the gallery"
-   description="Create and submit a visual to the gallery"
+   pageTitle="建立並提交視覺效果，組件庫"
+   description="建立並提交視覺效果，組件庫"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,26 +20,26 @@
    ms.date="09/23/2016"
    ms.author="asaxton"/>
 
-# Create and submit a visual to the gallery
+# 建立並提交視覺效果，組件庫
 
-Want to create your own visual and add it to the Visuals Gallery for others to use?  Just follow these few steps.
+要建立您自己的 visual，並將它加入至視覺效果庫中的其他人使用？  只要遵循幾個步驟執行。
 
 ![](media/powerbi-custom-visuals-create-for-the-gallery/example_viz.png)
 
-## Create a custom visual with the Power BI Developer tools
+## 使用 Power BI 開發人員工具建立的自訂視覺效果
 
-You can create a custom visual using the Power BI Developer Tools. In the Power BI <bpt id="p1">**</bpt>Developer Tools<ept id="p1">**</ept>, design and test a custom visual by writing custom visual <bpt id="p2">**</bpt>TypeScript<ept id="p2">**</ept> code, and creating CSS. Once you've tested your custom visual, you can export it to Power BI, or submit it to the <bpt id="p1">**</bpt>Power BI visuals<ept id="p1">**</ept> gallery.
+您可以建立使用 Power BI 開發人員工具的自訂視覺效果。 在 Power BI 中 **開發人員工具**, 、 設計和撰寫自訂視覺效果，以測試自訂視覺效果 **TypeScript** 程式碼，並建立 CSS。 一旦測試過您的自訂視覺效果，您可以將它匯出至 Power BI 或提交到 **Power BI 視覺效果** 組件庫。
 
-To learn more about the Developer Tools, see <bpt id="p1">[</bpt>Get started with Developer Tools<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md)</ept>.
+若要深入了解開發人員工具，請參閱 [開始著手開發人員工具](powerbi-custom-visuals-getting-started-with-developer-tools.md)。
 
-## Submit your custom visual to the Power BI custom visuals gallery
+## 送出至 Power BI 自訂視覺效果庫您自訂視覺效果
 
-Submit your custom visual to the Power BI visuals gallery via email. To learn how, see <bpt id="p1">[</bpt>Get started with Developer Tools<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery)</ept>.
+送出至 Power BI 視覺效果庫透過電子郵件程式自訂視覺效果。 若要了解做法，請參閱 [開始著手開發人員工具](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery)。
 
 ## 請參閱
 
-[Custom visuals in Power BI](powerbi-custom-visuals.md)  
-[Download a custom visual from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
-[Use a custom visual in a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
-[Use a custom visual in a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[在 Power BI 自訂視覺效果](powerbi-custom-visuals.md)  
+[從組件庫下載的自訂視覺效果](powerbi-custom-visuals-download-from-the-gallery.md)  
+[報表 （Power BI 服務） 中使用的自訂視覺效果](powerbi-custom-visuals-add-to-report.md)  
+[報表 (Power BI Desktop) 中使用的自訂視覺效果](powerbi-custom-visuals-use.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

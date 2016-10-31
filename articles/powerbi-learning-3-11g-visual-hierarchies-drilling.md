@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Visual hierarchies and drill-down"
-   description="Learn to drill into hierarchies, and manage how levels are shared"
+   pageTitle="視覺階層和向下鑽研"
+   description="了解如何向下切入的階層，及管理共用層級的方式"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,26 +22,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Visual hierarchies and drill-down behavior
+# 視覺階層和向下鑽研行為
 
-When you add a <bpt id="p1">*</bpt>date<ept id="p1">*</ept> field to a visual in the <bpt id="p2">*</bpt>Axis<ept id="p2">*</ept> field bucket, Power BI automatically adds a time hierarchy that includes <bpt id="p3">*</bpt>Year<ept id="p3">*</ept>, <bpt id="p4">*</bpt>Quarter<ept id="p4">*</ept>, <bpt id="p5">*</bpt>Month<ept id="p5">*</ept> and <bpt id="p6">*</bpt>Day<ept id="p6">*</ept>. By doing this, Power BI allows your visuals to have time-based interaction with those viewing your reports, by letting users drill-down through those different time levels.
+當您將加入 *日期* 欄位至視覺效果中 *軸* 欄位的值區，Power BI 會自動加入包含的時間階層 *年*, ，*季*, ，*月* 和 *天*。 如此一來，Power BI 可讓您有時間為基礎的互動，以檢視您的報表，讓使用者向下切入到這些不同的時間層級的視覺效果。
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_1.png)
 
-With a hierarchy in place, you can begin drilling down through the time hierarchy. For example, clicking a year in the chart drills down to the next level in the hierarchy, in this case <bpt id="p1">*</bpt>Quarters<ept id="p1">*</ept>, which are then displayed in the visual.
+就地階層中，您可以開始向下切入時間階層。 例如，在此情況下按一下圖表向下切入，在階層中，下一個層級中的之年 *季*, ，它接著會顯示在視覺效果。
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_2.png)
 
-In that automatically created hierarchy, you can also manage to which level your shared report allows people to drill. To do this, in the Visualizations pane, simply click the X beside the hierarchy that you want to remove. The deleted level is removed from the report, and drilling no longer displays that level.
+自動建立階層架構中，您也可以管理層級共用的報表可讓使用者向下切入。 若要這樣做，請在 [視覺效果] 窗格中，只要按一下您想要移除之階層旁的 X。 已刪除的層級已經移除了報表，並深入探索不會再顯示的層級。
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_3.png)
 
-If you need to get that level of the hierarchy back, just remove the <bpt id="p1">*</bpt>date<ept id="p1">*</ept> field, and then add it again from the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane, and the hierarchy is once again created for you automatically.
+如果您需要取得的層級之階層後，只會移除 *日期* 欄位，然後再加入一次從 **欄位** ] 窗格中，與階層會再一次為您自動建立。
 
-There may be times when you don't want the hierarchy to be used for a visual. You can control that by selecting the down-arrow button beside the <bpt id="p1">*</bpt>Date<ept id="p1">*</ept> field (once you've added it to a visual), and select <bpt id="p2">**</bpt>Date<ept id="p2">**</ept> rather than <bpt id="p3">**</bpt>Date Hierarchy<ept id="p3">**</ept>. That prompts Power BI to show the raw date values in the visual.
+有時候可能會當您不想要用於視覺階層。 您可以選取旁邊的向下箭號按鈕來控制， *日期* 欄位 （當您新增至視覺效果），然後選取 **日期** 而 **日期階層**。 會提示 Power BI 視覺效果中顯示的原始日期值。
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_4.png)
 
-You can also expand all data elements currently visible at once, rather than selecting a single quarter, or a single year. To do that, select the <bpt id="p1">*</bpt>Drill all<ept id="p1">*</ept> icon in the top left of the visual, which is a double-down arrow icon.
+您也可以展開目前可見，而不是選取單一季或每年的所有資料元素。 若要這樣做，請選取 *向下切入所有* 左上角的圖示方的視覺效果，也就是雙向下箭號圖示。
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_5.png)

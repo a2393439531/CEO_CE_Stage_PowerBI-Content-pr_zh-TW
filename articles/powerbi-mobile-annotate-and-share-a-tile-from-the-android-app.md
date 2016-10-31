@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a tile from the Android app"
-   description="Annotate and share a tile from the Android app for Power BI"
+   pageTitle="加上註解，並共用從 Android 應用程式磚"
+   description="加上註解，並共用從 Android 應用程式磚 Power bi"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,40 +19,41 @@
    ms.workload="powerbi"
    ms.date="09/26/2016"
    ms.author="maggies"/>
-# Annotate and share a tile from the Android app for Power BI
+# 加上註解，並共用從 Android 應用程式磚 Power bi
 
-When you share a snapshot of a tile from the <bpt id="p1">[</bpt>Android app for Microsoft Power BI<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+當您共用的磚，以從快照集 [Android 應用程式的 Microsoft Power BI](powerbi-mobile-android-app-get-started.md), ，收件者會完全地傳送郵件時，請參閱並排的快照集。 無法開啟儀表板。 您可以將快照集的方塊傳送給任何人 — 不只是相同的電子郵件網域中的同事。
 
-You can add annotations — lines, comments, or stickers — to a tile before you share a snapshot.
+您可以將註解，線條、 註解或貼紙 — 至某個磚共用快照集之前。
 
 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/pbi_and_annotate.png)
 
-1. Open a <bpt id="p1">[</bpt>dashboard in the Android app<ept id="p1">](powerbi-mobile-dashboards-in-the-android-app.md)</ept> for Power BI.
+1. 開啟 [Android 應用程式儀表板](powerbi-mobile-dashboards-in-the-android-app.md) Power bi。
 
-    Need to <bpt id="p1">[</bpt>download the Android app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> first?
+    需要 [下載 Android 應用程式](http://go.microsoft.com/fwlink/?LinkID=544867) 第一次？
 
-2. Tap a tile to open it in focus mode.
+2. 點選磚聚焦模式中開啟它。
 
-3. Tap the share icon <ph id="ph1">![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_ShareSnapIcon.png)</ph> in the upper-right corner of the tile.
+3. 點選 [共用] 圖示 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_ShareSnapIcon.png) 右上角的方塊。
 
-4. To annotate the tile, tap an icon in the lower bar in the Edit window.
+4. 若要加上註解區塊，點選下方列在 [編輯] 視窗中的圖示。
 
     ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/power-bi-android-annotate-bar.png)
 
-    -   Tap the paintbrush to draw lines of different colors and thicknesses, then tap <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+    -   點選以繪製線條的不同的色彩和寬度，然後點選 [小畫家 **完成**。
 
-    -   Tap the smiley face to add stickers (like emoticons) on the tile, then tap <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+    -   點選臉貼紙 （例如表情符號） 加入磚，然後點選 [ **完成**。
 
-    -   Tap the <bpt id="p1">**</bpt>AA<ept id="p1">**</ept> to type comments, then tap <bpt id="p2">**</bpt>Done<ept id="p2">**</ept>.
+    -   點選 **AA** 輸入註解，然後點選 **完成**。
 
-    -   Tap the microphone to record a message, which is displayed as text on your tile. Then tap <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+    -   點選麥克風來記錄訊息會顯示為磚上的文字。 然後點選 [ **完成**。
 
-5. After annotating, tap <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> in the upper-right corner and send, using any sharing app you have on your Android phone.
+5. 之後註解，請點選 **共用** 在右上角和傳送中，使用您在 Android 電話有任何共用的應用程式。
 
 ### 請參閱
 
--  <bpt id="p1">[</bpt>Download the Android app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> from Google play
--  [Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
--  [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)
--  [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  
+            [下載 Android 應用程式](http://go.microsoft.com/fwlink/?LinkID=544867) 從 Google play
+-  [共用的儀表板，從 Android 應用程式](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
+-  [開始使用 Android 的應用程式的 Power BI](powerbi-mobile-android-app-get-started.md)
+-  [開始使用 Power BI](powerbi-service-get-started.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

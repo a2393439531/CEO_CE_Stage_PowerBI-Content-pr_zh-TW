@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Featured dashboards in Power BI"
-   description="Documentation on how to create a Featured dashboard in Power BI"
+   pageTitle="在 Power BI 中的精選儀表板"
+   description="如何在 Power BI 中建立的精選的儀表板上的文件"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,57 +21,58 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Featured dashboards in Power BI
+# 在 Power BI 中的精選儀表板
 
-## Create a Featured dashboard
+## 建立優惠的儀表板
 
-Many of you have one dashboard that you visit more than any others.  It might be the dashboard you use to run your business, or it might contain an aggregation of tiles from many different dashboards and reports.
+許多您有一個您瀏覽超過任何其他的儀表板。  它可能是您用來執行您的企業儀表板，或可能包含許多不同的儀表板和報表的並排顯示彙總。
 
-To make it easier to reach the dashboard you care about most, we added the ability to feature a dashboard in your workspace. This means Power BI will always open to this dashboard (instead of the last dashboard you visited).  And you can reach your Featured dashboard at any time by selecting  <bpt id="p1">**</bpt>Featured dashboard<ept id="p1">**</ept> in the left navigation pane.
+若要讓您更輕鬆地連線到您關心的儀表板最，我們新增了功能在您的工作區中的儀表板的功能。 這表示 Power BI 會永遠開啟此儀表板 （而不是您瀏覽的最後一個儀表板）。  您也可以選取在任何時間到達精選的儀表板和  **精選的儀表板** 左的導覽窗格中。
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: You can also select a few dashboards and set them as <bpt id="p2">*</bpt>favorites<ept id="p2">*</ept>. See <bpt id="p1">[</bpt>Dashboard favorites<ept id="p1">](powerbi-service-favorite-dashboards.md)</ept>.
+>
+            **請注意**︰ 您也可以選取幾個儀表板，並設定為 *我的最愛*。 請參閱 [儀表板的最愛](powerbi-service-favorite-dashboards.md)。
 
 
-The <bpt id="p1">**</bpt>Featured dashboard<ept id="p1">**</ept> section of your left navpane will be greyed out until you set a dashboard as featured.
+ **精選的儀表板** 您左 navpane 一節將會呈現灰色，直到您設定儀表板功能。
 
 ![](media/powerbi-service-featured-dashboards/featured-on-navpane2new.png)
 
-### To set a dashboard as <bpt id="p1">**</bpt>Featured<ept id="p1">**</ept>
+### 若要設定的儀表板為 **精選**
 
-Watch Amanda create a featured dashboard and then follow the instructions below the video to try it out yourself.
+觀看 Amanda 建立精選的儀表板，然後依照 [視訊下列指示來試試看自己。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7-gQWhUZSsk" frameborder="0" allowfullscreen></iframe>
 
 
-1. From the top-right corner of the dashboard, select the '...' and choose <bpt id="p1">**</bpt>Set as Featured dashboard<ept id="p1">**</ept>.
+1. 從儀表板右上角，選取 [...] 選擇 [ **設成精選的儀表板**。
 
     ![](media/powerbi-service-featured-dashboards/featured-dropdown2.png)
 
-2. Confirm your selection.
+2. 確認您的選擇。
 
     ![](media/powerbi-service-featured-dashboards/confirm-featured.png)
 
-3. After you see the Success message, the <bpt id="p1">**</bpt>Featured dashboard<ept id="p1">**</ept> option is activated in the left navpane.
+3. 您會看到成功訊息之後 **精選的儀表板** 中左 navpane 啟動選項。
 
     ![](media/powerbi-service-featured-dashboards/featured-only2new.png)
 
 
-## Change the Featured dashboard
+## 變更精選的儀表板
 
-Of course, if you change your mind later you can set a new dashboard as the Featured dashboard, or you can remove the Featured dashboard altogether.
+當然，如果您改變心意稍後您可以設定新的儀表板的精選的儀表板，或您可以完全移除精選的儀表板。
 
-1. Select the ‘…’ and choose <bpt id="p1">**</bpt>Disable Featured dashboard<ept id="p1">**</ept>.
+1. 選取 [...] 選擇 [ **停用功能的儀表板**。
 
     ![](media/powerbi-service-featured-dashboards/change-featured.png)
 
-2. Confirm that you no longer want to feature this particular dashboard. Un-featuring a dashboard does not remove it from your workspace.  
+2. 確認您不再想要這個特定的儀表板的功能。 未包含儀表板不會移除從工作區。  
 
     ![](media/powerbi-service-featured-dashboards/confirm-unfeature.png)
 
 ## 請參閱
 
-[Get Started with Power BI](powerbi-service-get-started.md)
+[開始使用 Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

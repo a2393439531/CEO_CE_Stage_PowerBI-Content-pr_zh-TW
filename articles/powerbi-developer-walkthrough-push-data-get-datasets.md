@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a dataset to add rows"
-   description="Walkthrough to push data - Get a dataset to add rows into a Power BI table"
+   pageTitle="取得要加入資料列的資料集"
+   description="逐步解說來發送資料-取得 Power BI 資料表加入資料列的資料集"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,37 +20,38 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 4: Get a dataset to add rows into a Power BI table
+# 步驟 4︰ 取得資料集，以便將資料列加入至 Power BI 資料表
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+逐步解說的這篇文章屬於 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)。
 
-In <bpt id="p1">**</bpt>step 3<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Create a dataset in a Power BI dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data-create-dataset.md)</ept>, you called the <bpt id="p3">[</bpt>Create Dataset<ept id="p3">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation to create a dataset in a dashboard. In this step, you use the <bpt id="p1">[</bpt>Get Datasets<ept id="p1">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset.
+在 **步驟 3** 的推播資料到儀表板， [Power BI 儀表板中建立資料集](powerbi-developer-walkthrough-push-data-create-dataset.md), ，您呼叫 [建立資料集](https://msdn.microsoft.com/library/mt203562.aspx) 儀表板中建立資料集的作業。 在此步驟中，您會使用 [取得資料集](https://msdn.microsoft.com/library/mt203567.aspx) 作業和 Newtonsoft.Json 來取得資料集識別碼。 您使用在步驟 4 中的資料集的識別碼將資料列加入資料集。
 
-To push data into a Power BI dashboard, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a <bpt id="p1">**</bpt>Dataset ID<ept id="p1">**</ept>. You get a <bpt id="p1">**</bpt>Dataset ID<ept id="p1">**</ept> using the <bpt id="p2">[</bpt>Get Dataset<ept id="p2">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation. The <bpt id="p1">**</bpt>Get Dataset<ept id="p1">**</ept> operation returns a JSON string containing a list of all datasets in a Power BI dashboard. The recommended way to deserialize a JSON string is with <bpt id="p1">[</bpt>Newtonsoft.Json<ept id="p1">](http://www.newtonsoft.com/json)</ept>.
+將資料發送到 Power BI 儀表板，您需要參考資料集中的資料表。 若要參考的資料表中資料集，您首先需要取得 **集識別碼**。 您取得 **集識別碼** 使用 [取得資料集](https://msdn.microsoft.com/library/mt203567.aspx) 作業。  **取得資料集** 作業會傳回 JSON 字串，包含 Power BI 儀表板中的所有資料集的清單。 還原序列化的 JSON 字串的建議的方式是使用 [Newtonsoft.Json](http://www.newtonsoft.com/json)。
 
-Here's how you get a dataset.
+以下是如何將資料集。
 
-## Get a Power BI dataset
+## 取得 Power BI 資料集
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **請注意**︰ 開始使用之前，請確定您已經依照先前的步驟中 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md) 逐步解說。
 
-1. In the Console Application project you created in Step 2: Walkthrough to push data, <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, install the Newtonsoft.Json NuGet package. Here's how to install the package:
+1. 在主控台應用程式專案中建立在步驟 2︰ 發送資料的逐步解說 [取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md), ，安裝 Newtonsoft.Json NuGet 封裝。 若要安裝封裝的方法如下︰
 
-     a. In Visual Studio 2015, choose <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>NuGet Package Manager<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Package Manager Console<ept id="p3">**</ept>.
+     a. 在 Visual Studio 2015 中，選擇 [ **工具** > **NuGet 封裝管理員** > **Package Manager Console**。
 
-     b。 In <bpt id="p1">**</bpt>Package Manager Console<ept id="p1">**</ept>, enter Install-Package Newtonsoft.Json.
+     b。 在 **Package Manager Console**, ，輸入 Install-package Newtonsoft.Json。
 
-2. After the package is installed, add <bpt id="p1">**</bpt>using Newtonsoft.Json;<ept id="p1">**</ept> to Program.cs.
+2. 安裝封裝之後，加入 **使用 Newtonsoft.Json;** program.cs。
 
-3. In Program.cs, add the code below to get a <bpt id="p1">**</bpt>Dataset ID<ept id="p1">**</ept>.
+3. 在 Program.cs 中，新增下列取得程式碼 **集識別碼**。
 
-4. Run the Console App, and login to your Power BI account. You should see <bpt id="p1">**</bpt>Dataset ID:<ept id="p1">**</ept> followed by an id in the Console Window.
+4. 執行主控台應用程式，並登入您的 Power BI 帳戶。 您應該會看到 **集識別碼︰** 後面接著在主控台視窗中的識別碼。
 
-**Sample get a dataset**
+**資料集的範例 get**
 
-Add this code into Program.cs.
+將此程式碼加入至 Program.cs。
 
-- In static void Main(string[] args):
+- 在靜態 void Main (string [] args):
 
   ```
   static void Main(string[] args)
@@ -67,7 +68,7 @@ Add this code into Program.cs.
   }
   ```
 
-- Add a GetDatset() method:
+- 新增 GetDatset() 方法︰
 
   ```
     #region Get a dataset to add rows into a Power BI table
@@ -111,22 +112,22 @@ Add this code into Program.cs.
     #endregion
 ```
 
-The next step shows you how to <bpt id="p1">[</bpt>add rows to a Power BI table<ept id="p1">](powerbi-developer-walkthrough-push-data-add-rows.md)</ept>.
+下一個步驟顯示如何以 [將資料列加入至 Power BI 資料表](powerbi-developer-walkthrough-push-data-add-rows.md)。
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+以下是 [完整程式碼清單](#code)。
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-add-rows.md)
+[下一步 >](powerbi-developer-walkthrough-push-data-add-rows.md)
 
 ## 請參閱
-- [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)
+- [將資料列加入至 Power BI 資料表](powerbi-developer-walkthrough-push-data-add-rows.md)
 - [Newtonsoft.Json](http://www.newtonsoft.com/json)
-- [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [取得資料集](https://msdn.microsoft.com/library/mt203567.aspx)
+- [將資料發送到 Power BI 儀表板](powerbi-developer-walkthrough-push-data.md)
+- [Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Power BI REST API 參考](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## 完整程式碼清單
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -282,4 +283,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="What's new in the latest Power BI Desktop update?"
-   description="What's new in the latest Power BI Desktop update?"
+   pageTitle="什麼是新的最新的 Power BI Desktop 更新？"
+   description="什麼是新的最新的 Power BI Desktop 更新？"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,82 +19,86 @@
    ms.workload="powerbi"
    ms.date="09/30/2016"
    ms.author="davidi"/>
-# What's new in the latest Power BI Desktop update?
+# 什麼是新的最新的 Power BI Desktop 更新？
 
-## September 2016 Update (2.39.4526.362)
+## 2016 年 9 月更新 (2.39.4526.362)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+您現在可以 [下載最新版本的 Power BI Desktop](https://powerbi.microsoft.com/desktop)。
 
-September cultivated another crop of new features for Power BI Desktop. With this month's updates, we're continuing to add links beside new updates:
+9 月的 Power BI Desktop cultivated 另一個裁剪外框的新功能。 本月份的更新與不斷加入新的更新旁邊的連結︰
 
--   <bpt id="p1">**</bpt>[video]<ept id="p1">**</ept> excerpts play in a new browser tab, when the feature is being discussed.
--   Some features have an <bpt id="p1">**</bpt>[article]<ept id="p1">**</ept> that provides more detail.
--   Most features are explained in the monthly update <bpt id="p1">**</bpt>[blog]<ept id="p1">**</ept> post.
--   Lastly, some features are self-explanatory and don't need and article or video.
+-   
+            **[視訊]** 摘錄播放新的瀏覽器索引標籤中所討論的功能。
+-   有些功能 **[發行項]** ，提供更多詳細資料。
+-   大部分的功能說明中的每月更新 **[部落格]** 文章。
+-   最後，某些功能一看就懂並不需要且發行項或視訊。
 
-You can also watch the <bpt id="p1">**</bpt>Latest Updates<ept id="p1">**</ept> video from the beginning, right inside this article, by clicking on the <bpt id="p2">**</bpt>play<ept id="p2">**</ept> icon on the video image found below the list of updates.
+您也可以觀賞 **最新更新** 視訊從一開始就直接在本文中，按一下 [上 **播放** 上找到的更新清單下方的視訊影像圖示。
 
-The following updates are new to Power BI Desktop this month:
+下列更新是本月新手 Power BI Desktop:
 
-### Report View:
+### 報表檢視︰
 
--   ArcGIS Maps for Power BI (Preview) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=2m8s)</ept>
--   Mobile report layout (Preview) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>  <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=3m59s)</ept>
--   Updated drill behavior <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-inline-hierarchy-labels.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/pcUr6E8g_KI?t=5m6s)</ept>
+-   Power BI （預覽） 的 ArcGIS 對應 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/pcUr6E8g_KI?t=2m8s)
+-   行動報表配置 （預覽） [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)[[影片]](https://youtu.be/pcUr6E8g_KI?t=3m59s)
+-   更新向下鑽研行為 [[發行項]](powerbi-desktop-inline-hierarchy-labels.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/pcUr6E8g_KI?t=5m6s)
 
 
 ### 分析
 
--   Forecasting (Preview) <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-analytics-pane.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/pcUr6E8g_KI?t=6m6s)</ept>
--   Use your own R IDE <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=6m56s)</ept>
+-   預測 （預覽） [[發行項]](powerbi-desktop-analytics-pane.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/pcUr6E8g_KI?t=6m6s)
+-   使用您自己的 R IDE [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/pcUr6E8g_KI?t=6m56s)
 
 
-### Data Connectors:
+### 資料連接器︰
 
--   New data connectors:
-    -   Snowflake connector DirectQuery support <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   ProjectPlace connector <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-impala.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Improvements to existing connectors:
-    -   Oracle connector - improved Navigator previews performance <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   OData connector - support for <bpt id="p1">*</bpt>Select Related Tables<ept id="p1">*</ept> option <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   SAP Business Warehouse and SAP HANA connectors - enhancements to parameter input interface <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-sap-bw-connector.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   Web connector - support for specifying HTTP request headers within the dialog <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=8m5s)</ept>
+-   新的資料連接器︰
+    -   雪花式連接器 DirectQuery 支援 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   ProjectPlace 連接器 [[發行項]](powerbi-desktop-connect-impala.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   改進現有的連接器︰
+    -   Oracle 連接器-改善的導覽預覽效能 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   OData 連接器-支援 *選取相關資料表* 選項 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   SAP 商務倉儲和 SAP HANA 連接器-參數的增強功能輸入介面 [[發行項]](powerbi-desktop-sap-bw-connector.md) [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   Web 連接器-指定的對話方塊內的 HTTP 要求標頭的支援 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/pcUr6E8g_KI?t=8m5s)
 
 
-### Query Editor improvements:
+### 查詢編輯器增強功能︰
 
--   Query Dependencies view <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=8m37s)</ept>
--   Show Errors experience <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Query Editor ribbon support for scalar values <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Add function invocation column <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Expand &amp; Aggregate columns - support for <bpt id="p1">*</bpt>Load More<ept id="p1">*</ept> values <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   New transform - convert Table Column to a list <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Keyboarding - support for <bpt id="p1">*</bpt>smart typing<ept id="p1">*</ept> in drop-down menus <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
+-   查詢的相依性檢視 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/pcUr6E8g_KI?t=8m37s)
+-   顯示錯誤經驗 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   純量值的查詢編輯器功能區支援 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   將函式引動過程的資料行加入 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   展開和彙總資料行-支援 *多負載* 值 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   新轉換-將資料表資料行轉換為 list [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Keyboarding-支援 *智慧輸入* 下拉式功能表中 [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### 其他改進
 
--   In-product links to the <bpt id="p1">**</bpt>Power BI Community<ept id="p1">**</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/0VvG7Eqoke8?t=16m9s)</ept>
+-   在產品會連結到 **Power BI 社群** [[部落格]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[影片]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>注意︰ 您也可以 [查看所有可用的資料來源至 Power BI Desktop](powerbi-desktop-data-sources.md); 我們清單與日俱增，因此請經常回來查看。
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>, where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+要更新的詳細資訊？ 看看 [部落格文章](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/), ，您可以在哪裡取得有關這些新功能的詳細的資訊 （這是相同的部落格文章上面清單中的參考）。
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+下列影片描述，並顯示每個這些更新。 您也可以看到視訊部落格文章。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>注意︰ 您也可能想要學習 [的新 Power BI 服務](powerbi-service-whats-new.md), ，也請查閱 [的 Power bi 行動應用程式中的新功能](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
-## More videos
+## 其他影片
 
-Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content.
+例如了解 Power BI 透過視訊和其他有趣的內容？ 請查看下列視訊來源與內容的集合。
 
--   <bpt id="p1">[</bpt>Power BI channel<ept id="p1">](https://www.youtube.com/user/mspowerbi)</ept> - Power BI on YouTube
--   <bpt id="p1">[</bpt>Guy in a Cube channel<ept id="p1">](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)</ept> - fresh videos on Power BI features and capabilities
--   <bpt id="p1">[</bpt>Guided Learning for Power BI<ept id="p1">](https://powerbi.microsoft.com/guided-learning/)</ept> - a sequential learning tour of Power BI, in bite-size pieces
+-   
+            [Power BI 通道](https://www.youtube.com/user/mspowerbi) -YouTube 上的 Power BI
+-   
+            [在 Cube 通道 Guy](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) -全新的影片，Power BI 功能
+-   
+            [引導式學習 Power bi](https://powerbi.microsoft.com/guided-learning/) -循序學習點滴大小分段 Power BI 的教學課程
 
-## Previous months' updates
+## 上個月更新
 
-Looking for previous months' updates? You can find them in the <bpt id="p1">[</bpt>Power BI Desktop Monthly Updates archive<ept id="p1">](powerbi-desktop-latest-update-archive.md)</ept> article.
+尋找上一個月的更新嗎？ 您可以找到它們在 [Power BI Desktop 每月更新封存](powerbi-desktop-latest-update-archive.md) 文件。

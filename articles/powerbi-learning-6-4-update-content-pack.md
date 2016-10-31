@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Update Content Packs"
-   description="Easily push content packs changes to others in your organization"
+   pageTitle="更新內容的組件"
+   description="輕鬆地內容組件的變更發送至其他組織中"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Edit a content pack in Power BI
+# 編輯在 Power BI 內容組件
 
-In this lesson, we're going to edit the original content pack we created previously, and see how that updates the other people who've connected to it.
+在這一課中，我們要編輯之前，我們建立的原始內容組件，並請參閱 < 可更新的其他人已連接到它的方式。
 
-I'm back in My Workspace, editing my original dashboard.
+我在 [我的工作區，編輯我原始的儀表板。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
 
-Anytime I make any change to the dashboard, I get this reminder that I've changed something that I've shared with others in a content pack, and prompting me to update the shared version.
+每當我的儀表板進行任何變更，我會收到此提醒我已變更我已與其他人共用內容的組件中的項目和提示我更新的共用的版本。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04uvmadechanges.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04uvmadechanges.png)
 
-I go back to the settings icon and select <bpt id="p1">**</bpt>View content pack<ept id="p1">**</ept> to see the content packs I've already published.
+我回到 [設定] 圖示，然後選取 **檢視內容的組件** 查看我已經發佈的內容套件。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04viewcontpk.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04viewcontpk.png)
 
-I see the content pack I made. This little icon tells me I've changed something in the content pack, and I need to edit the content pack so others can see my changes.
+我看到所做的內容組件。 這個小圖示告訴我已變更的內容組件中的項目，而且我需要編輯內容的組件，讓其他人可以看到我的變更。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04updatecontpk.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04updatecontpk.png)
 
-When I select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, I'm back at the screen where I can edit the title and description, but this time it has an <bpt id="p2">**</bpt>Update<ept id="p2">**</ept> button, so I select that.
+當我選取 **編輯**, ，我回的畫面，我可以編輯標題和描述，但這次它有 **更新** ] 按鈕，所以我選擇的。
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04contpksuccess.png)
+![共用及 Power BI 中共同作業](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04contpksuccess.png)
 
-Power BI takes those changes and publishes the updated content pack to the content pack gallery.
+Power BI 會採用這些變更，並將更新的內容套件發佈至內容的組件庫。
 
-Anybody who has connected to my content pack gets a message that the content pack has changed, and asks if they want to accept the changes or keep the older version.
+已連接到我的內容套件的任何人取得內容的組件已經變更，並詢問他們是否要接受變更，或是保留較舊版本的訊息。
 
-So as the content pack owner, you can manage the versions that your colleagues are using.
+內容的組件擁有者，因此您可以管理您的同事正在使用的版本。

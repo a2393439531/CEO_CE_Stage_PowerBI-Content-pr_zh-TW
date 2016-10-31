@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Duplicate a Report Page"
-   description="Save time with similar report page layouts"
+   pageTitle="複製報表頁面"
+   description="節省時間與類似的報表頁面配置"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,14 +23,14 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Duplicate a Report Page
+# 複製報表頁面
 
-Individual pages of a report can be quite complex, with multiple visualizations that interact in specific ways and have precise formatting. Occasionally when building a report, you may want to use the same visuals and layouts for two different page topics. For example, if you've just put together a report page on gross revenue, you may want an almost identical page on net revenue.
+報表的個別頁面可能相當複雜，具有特定的方式互動且精確格式化多個視覺效果。 偶爾當建立報表，您可能要使用相同的視覺效果和版面配置的兩個不同的頁面主題。 比方說，如果您剛匯集了報表頁面總收益，您可能想淨收益幾乎完全相同的頁面。
 
-Recreating all of your work would be difficult, but with Power BI Desktop you can just duplicate a report page.
+重新建立所有的工作很難，但您只可以使用 Power BI Desktop 複製報表頁面。
 
-Right-click on the tab you want to copy, and select <bpt id="p1">**</bpt>Duplicate Page<ept id="p1">**</ept>.
+以滑鼠右鍵按一下您要複製的索引標籤，然後選取 **複製頁面**。
 
 ![](media/powerbi-learning-3-11b-duplicate-page/3-11b_1.png)
 
-You can then rename the new page tab as appropriate, update the text title if you have one, and then update your visuals with the new field you want to track.
+您可以再重新命名新的頁面索引標籤以適當地更新文字標題如果有一個項目，然後使用您想要追蹤的新欄位更新視覺效果。

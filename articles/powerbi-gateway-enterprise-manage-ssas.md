@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your data source - Analysis Services"
-description="How to manage the on-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode."
+pageTitle="管理您的資料來源-Analysis Services"
+description="如何管理內部部署資料閘道和資料來源屬於該閘道。 這是多維度和表格式模式的 Analysis Services。"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,209 +19,210 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# Manage your data source - Analysis Services
+# 管理您的資料來源-Analysis Services
 
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
+當您安裝內部部署資料閘道之後時，您必須加入可以搭配閘道使用的資料來源。 這篇文章將探討如何使用閘道器和資料來源。 排定的重新整理或即時連接，您可以使用 Analysis Services 資料來源。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
 
-## Download and install the gateway
+## 下載並安裝閘道
 
-You can download the gateway from the Power BI service. Select <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Data Gateway<ept id="p2">**</ept>, or by going to the <bpt id="p3">[</bpt>gateway download page<ept id="p3">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept>.
+您可以從 Power BI 服務的閘道。 選取 **下載** > **資料閘道**, ，或移至 [閘道下載頁面](https://go.microsoft.com/fwlink/?LinkId=698861)。
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
-## Limitations of Analysis Services live connections
+## Analysis Services 即時連接的限制
 
-You can use a live connection against tabular or multidimensional instances.
+您可以使用即時連接對表格式或多維度執行個體。
 
-|**Server version**|**Required SKU**|
+|**伺服器版本**|**必要的 SKU**|
 |---|---|
-|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
-|2014|Business Intelligence and Enterprise SKU|
-|2016|Standard SKU or higher|
+|2012 SP1 CU4 或更新版本|Business Intelligence 和 Enterprise SKU|
+|2014|Business Intelligence 和 Enterprise SKU|
+|2016|標準 SKU 或更高版本|
 
-- Cell level Formatting and translation features are not supported.
-- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+- 資料格層級的格式，並不支援轉譯功能。
+- 動作和命名集不會公開至 Power BI，但您仍然可以連接到多維度 cube，其中也包含動作或命名集，並建立視覺效果和報表。
 
-## Add a gateway
+## 新增閘道
 
-To add a Gateway, simply <bpt id="p1">[</bpt>download<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept> and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+若要新增閘道，只要 [下載](https://go.microsoft.com/fwlink/?LinkId=698861) 和您的環境中的伺服器上安裝 「 企業閘道 」。 安裝閘道之後，它會顯示在清單中下閘道 **管理閘道**。
 
-> [AZURE.NOTE] <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept> will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] 
+            **管理閘道** 直到至少一個閘道的系統管理員，就不會顯示。 這種情形是藉由新增為系統管理員，或您安裝和設定閘道。
 
-## Remove a gateway
+## 移除閘道
 
-Removing a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
+移除閘道也會刪除該閘道] 下的任何資料來源。  這也會中斷任何儀表板和依賴這些資料來源的報表。
 
-1.  Select the gear icon <ph id="ph1">![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png)</ph> in the upper-right corner &gt; <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+1.  選擇齒輪圖示 ![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png) 右上角 > **管理閘道**。
 
-2.  Gateway &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>
+2.  閘道 > **移除**
 
     ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
 
-## Add a data source
+## 加入資料來源
 
-You can add a data source by either selecting a gateway and click <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept>, or go to Gateway &gt; <bpt id="p2">**</bpt>Add data source<ept id="p2">**</ept>.
+您可以加入資料來源選取閘道器和按一下 **新增資料來源**, ，或移至閘道 > **新增資料來源**。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
 
-You can then select the <bpt id="p1">**</bpt>Data Source Type<ept id="p1">**</ept> from the list. Select Analysis Services if you are connecting to either a Multidimensional or Tabular server.
+然後您可以選取 **資料來源類型** 從清單中。 如果您要連接到多維度或表格式伺服器，請選取 [Analysis Services。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2-ssas.png)
 
-You will then want to fill in the information for the data source which includes the <bpt id="p1">**</bpt>Server<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Database<ept id="p2">**</ept>.  
+您接著要填入資料來源包含的資訊 **伺服器** 和 **資料庫**。  
 
-The <bpt id="p1">**</bpt>Username<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Password<ept id="p2">**</ept> that you enter will be used by the gateway to connect to the Analysis Services instance. 
+ **Username** 和 **密碼** ，輸入將用於閘道連接到 Analysis Services 執行個體。 
 
-> [AZURE.NOTE] The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how <bpt id="p1">[</bpt>credentials<ept id="p1">](powerbi-gateway-onprem.md#credentials)</ept> are stored.
+> [AZURE.NOTE] 您輸入的 Windows 帳戶必須具有伺服器系統管理員權限，您要連接到執行個體。 如果設定此帳戶的密碼到期，使用者無法取得連接錯誤，如果密碼不更新資料來源。 如需詳細資訊，請參閱主要內部部署資料閘道文件，以深入了解如何 [認證](powerbi-gateway-onprem.md#credentials) 儲存。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-ssas.png)
 
-You can click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> after you have everything filled in.  You can now use this data source for scheduled refresh, or live connections, against an Analysis Services instance that is on premises.  You will see <bpt id="p1">*</bpt>Connection Successful<ept id="p1">*</ept> if it succeeded.
+您可以按一下 **新增** 填入的所有項目之後。  現在，您可以使用排定的重新整理此資料來源，或即時針對未在內部部署的 Analysis Services 執行個體的連接。  您會看到 *連線成功* 如果成功。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
 ### 進階設定
 
-You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to live connections. [進一步了解](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+您可以設定您的資料來源的私密性等級。 這會控制如何 mashed 資料，設定。 這只用於排定的重新整理。 它不適用於即時連線。 [進一步了解](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
-## 'Get Data' experience for Analysis Services in Power BI site
+## [取得資料] 體驗 Power BI 網站中的 Analysis Services
 
-A unique option for Analysis Services is to use Get Data within the Power BI service directly. You can connect to a live Analysis Services data source that is configured within the gateway without needing Power BI Desktop. Your account needs to be listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab for the data source, under the gateway, for it to show up in the list. To connect to the data source, you can do the following.
+Analysis Services 的唯一選項是直接使用 Power BI 服務內的取得資料。 您可以連接到即時的 Analysis Services 資料來源，而不需要 Power BI Desktop 在閘道中設定。 您的帳戶必須列在 **使用者** 下閘道器，讓它顯示在清單中的資料來源] 索引標籤。 若要連接到資料來源，您可以執行下列程式碼。
 
-1. Within the Power BI service, select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>.
+1. 在 Power BI 服務中，選取 **取得資料**。
 
-2. Select <bpt id="p1">**</bpt>Databases<ept id="p1">**</ept>.
+2. 選取 **資料庫**。
 
-3. Select <bpt id="p1">**</bpt>SQL Server Analysis Services<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.
+3. 選取 **SQL Server Analysis Services** > **連接**。
 
-4. Select a data source from the list. Any Analysis Services data source that you have access to will be listed here.
+4. 從清單中選取資料來源。 此處會列出您可以存取任何 Analysis Services 資料來源。
 
-5. Select the model that you want to connect to. Then select <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.
+5. 選取您想要連接到的模型。 然後選取 **連接**。
 
-You will see a dataset show up with the name of the server. You can then select that dataset and begin to create reports on it. This will be working against live data.
+您會看到顯示的伺服器名稱的資料集。 然後，您可以選取該資料集，並開始在其上建立報表。 這會使用針對即時資料。
 
-## Usernames with Analysis Services
+## Analysis services 的使用者名稱
 
-Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property <bpt id="p1">[</bpt>EffectiveUserName<ept id="p1">](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth)</ept>. This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [進一步了解](https://msdn.microsoft.com/library/ms677605.aspx)
+每次使用者連線至 Analysis Services 的報表與互動的有效使用者名稱會傳遞至閘道，然後拖曳至您的內部部署 Analysis Services 伺服器。 電子郵件地址，您用來登入 Power BI，是我們會將傳遞至 Analysis Services 做為有效的使用者。 這會在連接屬性中傳遞 [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth)。 此電子郵件地址應該符合本機 Active Directory 網域中定義的 UPN。 UPN 是 Active Directory 帳戶的屬性。 然後該 Windows 帳戶必須已經存在於 Analysis Services 角色。 如果相符項目無法找到，在 Active Directory 中，將無法成功登入。 [進一步了解](https://msdn.microsoft.com/library/ms677605.aspx)
 
-You can also map your Power BI sign in name with a local directory UPN. [進一步了解](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)
+您也可以對應您的 Power BI 登入名稱與本機目錄 UPN。 [進一步了解](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-### How do I tell what my UPN is?
+### 如何知道我 UPN 為何？
 
-You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+您可能不知道您 UPN 為何，以及您可能不是網域系統管理員。 您可以使用下列命令從您的工作站，以查明您帳戶的 UPN。
 
     whoami /upn
 
-The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and If this doesn't match the email address you sign into Power BI with, you may want to look at how to <bpt id="p1">[</bpt>Map user names<ept id="p1">](#map-user-names)</ept>.
+結果看起來類似電子郵件地址，但這是用來在您的網域帳戶的 UPN。 如果您使用的 Analysis Services 資料來源進行即時連線，而且如果這不符合您登入 Power BI 與電子郵件地址，您可能想要看看如何 [將使用者名稱對應](#map-user-names)。
 
-## Map user names
+## 將使用者名稱對應
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
-For Analysis Services data sources, you can configure custom User Principal Name (UPN) rules. This will help you if your Power BI service login names do not match your local directory UPN. For example, if you sign into Power BI with john@contoso.com, but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
+Analysis Services 資料來源，您可以設定自訂的使用者主要名稱 (UPN) 規則。 如果您的 Power BI 服務登入名稱不符合您的本機目錄 UPN，這將協助您。 例如，如果您登入 Power BI 與 john@contoso.com，但您的本機目錄 UPN john@contoso.local，您可以設定對應規則，讓 john@contoso.local 傳遞至 Analysis Services。
 
-To get to the UPN Mapping screen, do the following.
+若要取得 UPN 的對應畫面，請執行下列項目。
 
-1. Go to the <bpt id="p1">**</bpt>gear icon<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Manage Gateways<ept id="p2">**</ept>.
+1. 移至 **齒輪圖示** ，然後選取 **管理閘道**。
 
-2. Expand the gateway that contains the Analysis Services data source. Of, if you haven't created the Analysis Services data source, you can do that at this point.
+2. 展開包含 Analysis Services 資料來源的閘道。 如果您尚未建立 Analysis Services 資料來源，您可以做的此時。
 
-3. Select the data source and then select the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab.
+3. 選取資料來源，然後選取 **使用者** ] 索引標籤。
 
-4. Select <bpt id="p1">**</bpt>Map user names<ept id="p1">**</ept>.
+4. 選取 **將使用者名稱對應**。
 
     ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names.png)
     
-You will then see options to add rules as well as test for a given user.
+然後，您會看到加入規則，以及針對指定的使用者測試的選項。
 
-> [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your <bpt id="p1">**</bpt>Replace (original value)<ept id="p1">**</ept> is <bpt id="p2">*</bpt>@contoso.com<ept id="p2">*</ept> and your <bpt id="p3">**</bpt>With (New name)<ept id="p3">**</ept> is <bpt id="p4">*</bpt>@contoso.local<ept id="p4">*</ept>, all users with a sign in that contains <bpt id="p5">*</bpt>@contoso.com<ept id="p5">*</ept> will then be replaced with <bpt id="p6">*</bpt>@contoso.local<ept id="p6">*</ept>. Also, if your <bpt id="p1">**</bpt>Replace (Original name)<ept id="p1">**</ept> is <bpt id="p2">*</bpt>dave@contoso.com<ept id="p2">*</ept> and your <bpt id="p3">**</bpt>With (New name)<ept id="p3">**</ept> is <bpt id="p4">*</bpt>dave@contoso.local<ept id="p4">*</ept>, a user with the sign in of v-dave@contoso.com would be sent as v-dave<bpt id="p5">*</bpt>@contoso.local<ept id="p5">*</ept>.
+> [AZURE.NOTE] 貴用戶 inadvertantly 變更您不想要的使用者。 比方說，如果您 **（原始值） 來取代** 是 *@contoso.com* 和 **（新的名稱） 與** 是 *@contoso.local*, ，包含所有使用者的登入， *@contoso.com* 會再被取代 *@contoso.local*。 此外，如果您 **（原始名稱） 取代** 是 *dave@contoso.com* 和 **（新的名稱） 與** 是 *dave@contoso.local*, ，v-dave@contoso.com 登入的使用者會被傳送為 v dave*@contoso.local*。
 
-Currently you can only supply rules for <bpt id="p1">**</bpt>Effective user names<ept id="p1">**</ept>.
+目前僅提供規則 **有效的使用者名稱**。
 
-### Working with mapping rules
+### 使用對應規則
 
-To create a mapping rule, enter a value for <bpt id="p1">**</bpt>Original name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>New Name<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.
+若要建立對應規則，請輸入一個值 **原始名稱** 和 **新名稱** ]，然後選取 **新增**。
 
 |欄位|描述
 |---|---|
-|Replace (Orignal name)|The email address that you signed into Power BI with.|
-|With (New Name)|The value you want to replace it with. The result of the replacement is what will be passed to the <bpt id="p1">*</bpt>EffectiveUserName<ept id="p1">*</ept> property for the Analysis Services connection.|
+|取代 （原來的名稱）|您登入 Power BI 與電子郵件地址。|
+|（新的名稱）|您想要將它取代為的值。 取代的結果就是將傳遞至 *EffectiveUserName* Analysis Services 連接的屬性。|
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-effective-user-names.png)
 
-When you select an item in the list, you can choose to re-order it by using the <bpt id="p1">**</bpt>chevron icons<ept id="p1">**</ept>, or <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> the entry.
+當您在清單中選取項目時，您可以選擇重新使用排序 **> 形箭號圖示**, ，或 **刪除** 項目。
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-entry-selected.png)
 
-### Using Wildcard(*)
+### 使用 Wildcard(*)
 
-You can use a wildcard for your <bpt id="p1">**</bpt>Replace (Original name)<ept id="p1">**</ept> string. It can only be used on its own and not with any other string part. This will allow you to take all users and pass a single value to the data source. This is useful when you want all users in your organization to use the same user in your local environment.
+您可以使用萬用字元，代表您 **（原始名稱） 取代** 字串。 它僅適用於本身並不會與任何其他字串部分。 這可讓您採取所有使用者，並將單一值傳遞給資料來源。 當您希望所有使用者在您的組織您的本機環境中使用相同的使用者，這非常有用。
 
-### Test a mapping rule
+### 測試對應規則
 
-You can validate what an original name will be replaced with by entering a value for <bpt id="p1">**</bpt>Original name<ept id="p1">**</ept> and selecting <bpt id="p2">**</bpt>Test rule<ept id="p2">**</ept>.
+您可以驗證功能的原始名稱將會取代輸入的值 **原始名稱** ，然後選取 **測試規則**。
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-test-mapping-rule.png)
 
-> [AZURE.NOTE] Rules that are saved will take a few minutes for the service to start using them. Within the browser, the rule will work immediately.
+> [AZURE.NOTE] 儲存規則都有幾分鐘的時間才能開始使用這些服務。 在瀏覽器中的規則會立即生效。
 
-### Limitations for mapping rules
+### 對應規則限制
 
-- Mapping is for the specific data source that is being configured. It is not a global settings. If you have multiple Analysis Services data sources, you will have to map the users for each data source.
+- 對應是正在設定之特定資料來源。 它不是全域設定。 如果您有多個 Analysis Services 資料來源，您必須針對每個資料來源的使用者對應。
 
-## Remove a data source
+## 移除資料來源
 
-Removing a data source will break any dashboards or reports that rely on the given data source.  
+移除資料來源會中斷任何儀表板或仰賴特定的資料來源的報表。  
 
-To remove a Data Source, go to the Data Source &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+若要移除資料來源，請移至資料來源 > **移除**。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
-## Manage administrators
+## 管理系統管理員
 
-On the Administrators tab, for the gateway, you can add, and remove, users that can administer the gateway. You can only add users at this time. Security groups cannot be added.
+在系統管理員] 索引標籤的 [閘道，您可以加上移除，使用者可以管理閘道。 您只可以在此階段中新增使用者。 無法新增安全性群組。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
 
 ## 管理使用者
 
-On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
+[使用者] 索引標籤的資料來源，您可以加入，並移除使用者或安全性群組，可以使用此資料來源。
 
-> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
+> [AZURE.NOTE] 使用者清單只可以發行報表的控制項。 報表擁有者可以建立儀表板或內容的組件，並與其他使用者所共用。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
-## Using the data source
+## 使用資料來源
 
-After you have created the data source, it will be available to use with either live connections, or through scheduled refresh. 
+建立資料來源之後，它可使用其中一個即時的連線，或透過排定的重新整理。 
 
-> [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> [AZURE.NOTE] 伺服器和資料庫名稱必須符合 Power BI Desktop 與內部部署資料閘道器內的資料來源之間 ！
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use <bpt id="p1">*</bpt>SERVER\INSTANCE<ept id="p1">*</ept>, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
+您的資料集與在閘道中的資料來源之間的連結根據您的伺服器名稱和資料庫名稱。 這些都必須相符。 比方說，如果您提供之 IP 位址的伺服器名稱，在 Power BI Desktop，您必須為資料來源的閘道設定中使用的 IP 位址。 如果您使用 *伺服器 \ 執行個體*, ，在 Power BI Desktop，您必須使用相同資料來源的閘道設定中。
 
-This is the case for both live connections and scheduled refresh.
+這是即時連接和排定的重新整理的狀況。
 
-### Using the data source with live connections
+### 使用即時連接的資料來源
 
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source in order to publish live connection datasets. The selection, for live connections, occurs within Power BI Desktop when you first import data.
+您必須確定伺服器和資料庫名稱相符項目 Power BI Desktop 與設定的資料來源之間的閘道。 您也要確定您的使用者列在 **使用者** 為了發佈即時連接的資料集的資料來源] 索引標籤。 當您第一次匯入資料選取範圍，如即時連接，就會發生在 Power BI Desktop。
 
-After you publish, either from Power BI Desktop or <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
+發行之後，從 Power BI Desktop 或 **取得資料**, ，您的報表應該開始工作。 可能需要幾分鐘的時間之後建立的閘道，可連接內的資料來源。
 
-### Using the data source with scheduled refresh
+### 使用排定的重新整理資料來源
 
-If you are listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
+如果您列出 **使用者** ] 索引標籤設定閘道，以及伺服器和資料庫名稱比對中的資料來源，您會看到閘道使用排定的重新整理選項。
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## 另請參閱
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[內部資料閘道](powerbi-gateway-onprem.md)  
+[內部資料閘道-深入](powerbi-gateway-onprem-indepth.md)  
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

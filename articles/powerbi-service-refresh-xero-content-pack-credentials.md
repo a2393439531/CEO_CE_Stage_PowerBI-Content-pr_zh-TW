@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="How to refresh your Xero content pack credentials"
-   description="If you use the Xero Power BI content pack, you may have experienced a problem with the content pack’s daily refresh due to a recent Power BI service incident."
+   pageTitle="如何重新整理您 Xero 內容套件的認證"
+   description="如果您使用 Xero Power BI 內容套件，您可能發生問題內容組件的每日更新，因為新的 Power BI 服務事件。"
    services="powerbi" 
    documentationCenter="" 
    authors="joeshoukry" 
@@ -20,45 +20,45 @@
    ms.date="10/07/2016"
    ms.author="yshoukry"/>
 
-# How to refresh your Xero content pack credentials if refresh failed
+# 如何重新整理您 Xero 內容套件的認證，如果重新整理失敗
 
-If you use the Xero Power BI content pack, you may have experienced some problems with the content pack’s daily refresh due to a recent Power BI service incident.
+如果您使用 Xero Power BI 內容套件，您可能會發生內容組件的每日更新，因為新的 Power BI 服務事件的一些問題。
 
-You can see if your content pack refreshed successfully by checking the last refresh status for your Xero dataset as shown in the screenshot below.
+如果您的內容套件會重新整理成功，您可以看到藉由檢查上次重新整理狀態 Xero 資料集，如以下螢幕擷取畫面所示。
 
 ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-refresh-failed.png)
 
-If you do see that refresh failed as shown above, please follow these steps to renew your content pack credentials.
+如果您看到該重新整理失敗如上所示，請依照下列步驟來更新您的內容套件的認證。
 
-1. Click the ellipsis (...) next to your Xero dataset, then click <bpt id="p1">**</bpt>Schedule refresh<ept id="p1">**</ept>. This opens the settings page for the Xero content pack.
+1. 按一下您的 Xero 資料集旁邊的省略符號 （...），然後按一下 [ **排程重新整理**。 這會開啟 Xero 內容組件的 [設定] 頁面。
 
     ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-schedule-refresh.png)
  
-2. In the <bpt id="p1">**</bpt>Settings for Xero<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Data source credentials<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Edit credentials<ept id="p3">**</ept>.
+2. 在 **Xero 設定** 頁面上，選取 **資料來源認證** > **編輯認證**。
 
     ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-settings-page.png)
 
-3. Enter your organization’s name &gt; <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+3. 輸入您的組織名稱 > **下一步**。
 
     ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-configure.png)
 
-4. Sign in with your Xero account.
+4. Xero 帳戶登入。
 
     ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-welcome.png)
 
-4. Now that your credentials are updated, let’s make sure the refresh schedule is set to run daily. Check that by clicking the ellipsis (...) next to your Xero dataset, then clicking <bpt id="p1">**</bpt>Schedule refresh<ept id="p1">**</ept> again.
+4. 現在，您的認證會更新，讓我們來確定設定重新整理排程每日執行。 按一下您的 Xero 資料集旁邊的省略符號 （...），然後按一下 [檢查 **排程重新整理** 一次。
 
     ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-refresh-schedule.png)
 
-5. You can also choose to refresh the dataset immediately. Click the ellipsis (...) next to your Xero dataset, then click <bpt id="p1">**</bpt>Refresh now<ept id="p1">**</ept>.
+5. 您也可以選擇立即重新整理資料集。 按一下您的 Xero 資料集旁邊的省略符號 （...），然後按一下 [ **立即重新整理**。
 
     ![](media/powerbi-service-refresh-xero-content-pack-credentials/powerbi-xero-refresh-now.png)
 
-If you are still having refresh issues, please don’t hesitate to reach out to us at <bpt id="p1">[</bpt>http://support.powerbi.com<ept id="p1">](http://support.powerbi.com)</ept> 
+如果您仍然有重新整理問題，請寄信到與我們聯繫在 [http://support.powerbi.com](http://support.powerbi.com) 
 
-To learn more about the Xero content pack for Power BI, please visit the <bpt id="p1">[</bpt>Xero content pack help page<ept id="p1">](powerbi-content-pack-xero.md)</ept>.
+若要深入了解 Power BI 的 Xero 內容組件，請造訪 [Xero 內容的組件說明網頁](powerbi-content-pack-xero.md)。
 
 
 ### 請參閱  
 
--  More questions? [Try the Power BI Community](http://community.powerbi.com/)
+-  更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

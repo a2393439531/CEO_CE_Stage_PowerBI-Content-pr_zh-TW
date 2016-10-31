@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Load a Power BI tile into an IFrame"
-   description="Walkthrough to Integrate a tile into an app - Load a tile into an IFrame"
+   pageTitle="載入 IFrame Power BI 磚"
+   description="逐步解說將磚整合到應用程式-載入 IFrame 磚"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,17 +20,17 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 4: Load a tile into an IFrame
+# 步驟 4︰ 載入 IFrame 磚
 
 ## 簡介
 
-In <bpt id="p1">**</bpt>step 3<ept id="p1">**</ept> of Integrate a tile into an app, <bpt id="p2">[</bpt>Get a Power BI tile<ept id="p2">](powerbi-developer-integrate-tile-get-tile.md)</ept>, you get a Power BI tile. In this step, you load a tile into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>.
+在 **步驟 3** 整合到應用程式磚的 [取得 Power BI 磚](powerbi-developer-integrate-tile-get-tile.md), ，取得 Power BI] 磚。 在此步驟中，載入到磚 **IFrame**。
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-load-tile-iframe.png)
 
-To load a tile into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>, you set the <bpt id="p2">**</bpt>src<ept id="p2">**</ept> attribute of an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>embedUrl<ept id="p4">**</ept> property of a <bpt id="p5">**</bpt>tile<ept id="p5">**</ept>, and create an <bpt id="p6">**</bpt>onload<ept id="p6">**</ept> handler to post a message with an <bpt id="p7">**</bpt>access token<ept id="p7">**</ept> to get access to the tile visual. Below is JavaScript code to load a tile into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>.
+若要載入到磚 **IFrame**, ，您設定 **src** 屬性 **IFrame** 至 **embedUrl** 屬性 **磚**, ，並建立 **onload** 張貼的訊息處理常式 **存取權杖** 以存取磚視覺。 以下是 JavaScript 程式碼載入到磚 **IFrame**。
 
-**Load a tile into an IFrame**
+**載入 IFrame 磚**
 
 ```
 //Configure IFrame for the tile after you have an Access Token. See Default.aspx.cs to learn how to get an Access Token
@@ -66,19 +66,19 @@ function postActionLoadTile() {
 }
 ```
 
-If you downloaded and ran the <bpt id="p1">[</bpt>Integrate a tile sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)</ept>, the sample will look similar to below.
+如果您下載並執行 [整合並排顯示範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app), ，看起來類似下列範例。
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-sample.png)
 
 ## 結論
-In this walkthrough you learned how to integrate a tile into an app by getting the tile in a dashboard, and then loading the tile into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a tile sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)</ept>  which shows all the parts working to embed a tile into an ASP.NET web app. You can also view the complete <bpt id="p1">[</bpt>Integrate a tile into an app code listing<ept id="p1">](powerbi-developer-integrate-tile-code.md)</ept>.
+在本逐步解說中，您學會如何取得方塊在儀表板，然後載入到磚將磚整合到應用程式 **IFrame**。 您可以下載完整 [整合並排顯示範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  會顯示所有組件，將磚內嵌至 ASP.NET web 應用程式運作。 您也可以檢視完整 [磚整合應用程式程式碼清單](powerbi-developer-integrate-tile-code.md)。
 
 ## 請參閱
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
-[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
-[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
-[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)  
-[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[將磚整合到應用程式逐步解說](powerbi-developer-integrate-tile.md)  
+[整合的並排顯示範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[設定整合的並排顯示範例](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[取得作業儀表板](https://msdn.microsoft.com/library/mt465739.aspx)  
+[取得圖格作業](https://msdn.microsoft.com/library/mt465741.aspx)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

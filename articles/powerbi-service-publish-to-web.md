@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Publish to web from Power BI"
-   description="With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device."
+   pageTitle="從 Power BI 發佈到網站"
+   description="使用 Power BI 發佈到網站，您可以輕鬆地內嵌互動式 Power BI 視覺效果線上，例如部落格文章，透過電子郵件或社交媒體，在任何裝置上的網站。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,163 +20,168 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Publish to web from Power BI
+# 從 Power BI 發佈到網站
 
-With Power BI <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
+有了 Power BI **發佈到網站**, ，您可以輕鬆地將內嵌互動式 Power BI 視覺效果線上，例如部落格文章，透過電子郵件或社交媒體網站，在任何裝置上。
 
-You can also easily edit, update, refresh or un-share your published visuals.
+您也可以輕易地編輯、 更新、 更新或取消共用您已發行的視覺效果。
 
-> [AZURE.WARNING] When you use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+> [AZURE.WARNING] 當您使用 **發佈到網站**, ，網際網路上的任何人，則可以檢視報表或在發行的 visual。 不沒有檢視這些報表時使用任何驗證。 只使用報表和所有網際網路 （未經授權的公用成員） 應該會看到資料的 web 發行。 之前發行這份報表，請確定您有權共用公開的資料和視覺效果。 不會發行機密或專屬的資訊。 如果有疑問，請檢查發行前您組織的原則。
 
-## How to use Publish to Web
+## 如何使用發佈到網站
 
-<bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the <bpt id="p1">**</bpt>Limitations<ept id="p1">**</ept> section below for a complete list of cases where Publish to web is not supported. Please review the <bpt id="p1">**</bpt>Warning<ept id="p1">**</ept> earlier in this article before using Publish to web.
 
-You can watch how this feature works in the following <bpt id="p1">*</bpt>short video<ept id="p1">*</ept>. Then, follow the steps below to try it yourself.
+            **將發行至 web** 可用的報告，您可以編輯您個人或群組工作區中。  您無法使用已與您共用的報表或依賴資料列層級安全性來保護資料的報表與 web 發行。 請參閱 **限制** 下面章節針對不支援發佈到網站時的完整清單。 請檢閱 **警告** 稍早之前使用發佈至 web 的這篇文章。
+
+您可以觀賞這項功能在下列的運作方式 *短片*。 然後，遵循下列步驟來自己試試看。
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 
-The following steps describe how to use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>.
+下列步驟說明如何使用 **發佈到網站**。
 
 
-1.  On a report in your workspace that you can edit, select <bpt id="p1">**</bpt>File  &gt; Publish to web<ept id="p1">**</ept>.
+1.  在報表中，您可以編輯工作區中，選取 **檔案 > 發佈到網站**。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web1.png)
 
-2.  Review the content on the dialog, and select <bpt id="p1">**</bpt>Create embed code<ept id="p1">**</ept> as shown in the following dialog.
+2.  檢閱的內容，在對話方塊中，然後選取 **建立內嵌程式碼** 下列對話方塊中所示。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web2_GA.PNG)
 
-3.  Review the warning, shown in the following dialog, and confirm that the data is okay to embed in a public website. If so, select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.
+3.  檢閱警告，顯示在下列對話方塊中，並確認資料是否可以將內嵌在公開網站。 如果需要，選取 **發行**。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web3_GA.PNG)
 
-4.  A dialog appears that provides a link that can be sent in email, embedded in code (such as an iFrame), or that you can paste directly into your web page or blog.
+4.  提供的連結，可傳送電子郵件，內嵌於程式碼 （例如 iFrame)，或您可以直接將您的網頁或部落格貼上] 對話方塊隨即會出現。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web4.png)
 
-5.  If you’ve previously created an embed code for the report, the embed code quickly appears. You can only create one embed code for each report.
+5.  如果您先前已建立報表的內嵌程式碼，內嵌程式碼快速會出現。 您可以只建立一個內嵌的程式碼的每個報表。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web5.png)
 
 
-## Tips and Tricks for View modes
+## 秘訣和訣竅的檢視模式
 
-When you embed content within a blog post, you typically need to fit it within a specific size of the screen.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given area of the iFrame, so you also need to set an appropriate View Mode when editing the report.
+當您內嵌的部落格文章中的內容時，通常需要符合特定螢幕的大小。  您也可以調整高度和寬度的 iFrame 標記，如有需要但您可能也需要確保報表符合 iFrame，特定區域，因此您也必須設定適當的檢視模式，當編輯報表。
 
-The following table provides guidance about the View Mode, and how it will appear when embedded.
+下表提供的檢視模式，和內嵌時的顯示方式的相關指引。
 
 
-|View Mode|How it looks when embedded|
+|檢視模式|內嵌時的外觀|
 |---|---|
-|![](media/powerbi-service-publish-to-web/Publish_To_Web6b.png)| <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame you provided. When embedded in an iFrame, using <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> can result in <bpt id="p2">**</bpt>letterboxing<ept id="p2">**</ept>, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately.|
-|![](media/powerbi-service-publish-to-web/Publish_To_Web6d.png)| <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
-|![](media/powerbi-service-publish-to-web/Publish_To_Web6c.png)| <bpt id="p1">**</bpt>Fit to width<ept id="p1">**</ept> ensures the content fits within the horizontal area for your iFrame. A border will still be shown, but the content will scale to use all the horizontal space available.  |
+|![](media/powerbi-service-publish-to-web/Publish_To_Web6b.png)| 
+            **大小** 都會使用頁面高度與寬度的報表。 如果您將您的頁面設定為 「 Dynamic 」 的外觀比例 16:9 或 4:3 等您的內容會縮放以符合您所提供的 iFrame。 當內嵌在 iFrame，使用 **大小** 可能會導致 **letterboxing**, ，其中灰色背景顯示在 iFrame 的部分內容之後為調整以符合 iFrame。 若要降低 letterboxing，適當地設定您 iFrame 高度或寬度。|
+|![](media/powerbi-service-publish-to-web/Publish_To_Web6d.png)| 
+            **實際大小** 可確保報表 [報表] 頁面上保留其大小。 這會導致出現在您 iFrame 中的捲軸。 設定的 iFrame 高度和寬度，以避免捲軸。 |
+|![](media/powerbi-service-publish-to-web/Publish_To_Web6c.png)| 
+            **適合寬度** 可確保內容是否符合您 iFrame 的水平區域。 仍將顯示框線，但是內容會調整以使用所有的水平空間可用。  |
 
-## Tips and tricks for iFrame height and width
+## 秘訣和訣竅 iFrame 高度和寬度
 
-The embed code you receive after you Publish to web will look like the following:
+您收到之後您發行至 web 的內嵌程式碼會如下所示︰
 
 ![](media/powerbi-service-publish-to-web/Publish_To_Web7.png)
 
-You can edit the width and height manually to ensure it is precisely how you want it to fit onto the page into which you're embedding it.
+您可以編輯以手動方式以確保它正是您要如何配合拖曳到頁面在其中內嵌它的高度與寬度。
 
-To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accomodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
+若要達到更理想，您可以嘗試加入 iFrame 的高度 56 像素為單位。 這所帶來的底端列的目前大小。 如果您的報表頁面會使用動態的大小下, 表提供一些您可以使用以達到 letterboxing 不適當的大小。
 
-|Ratio|大小|Dimension (Width x Height)|
+|比率|大小|維度 （寬度 x 高度）|
 |---|---|---|
-|16:9|小型|640 x 416 px|
+|16:9|小型|640 x 416 像素|
 |16:9|中型|800 x 506 px|
-|16:9|大型|960 x 596 px|
-|4:3|小型|640 x 536 px|
-|4:3|中型|800 x 656 px|
+|16:9|大型|960 x 596 像素|
+|4:3|小型|640 x 536 像素|
+|4:3|中型|800 x 656 像素|
 |4:3|大型|960 x 776 px|
 
 
-## Managing embed codes
+## 管理內嵌程式碼
 
-Once you create a <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code, you can manage the codes you create from the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> menu of the Power BI service. Managing embed codes includes the ability to remove the destination visual or report for a code (rendering the embed code unusable), or getting the embed code again.
+一旦您建立 **發佈到網站** 內嵌程式碼，您可以管理的程式碼，您從建立 **設定** ] 功能表上的 Power BI 服務。 管理內嵌程式碼的工作包括能夠移除目的地 visual 或報表中的程式碼中 （而內嵌程式碼無法使用），或再次取得內嵌程式碼。
 
-1.  To manage your <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed codes, open the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> gear and select <bpt id="p3">**</bpt>Manage embed codes<ept id="p3">**</ept>.
+1.  若要管理您 **發佈到網站** 內嵌代碼，請開啟 **設定** 齒輪，然後選取 **管理內嵌程式碼**。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web8.png)
 
-2.  The list of embed codes you’ve created appears, as shown in the following image.
+2.  您已建立的內嵌代碼的清單隨即出現，如下圖所示。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web9.png)
 
-3.  For each <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code in the list, you can either retrieve the embed code, or delete the embed code and thus make any links to that report or visual no longer work.
+3.  每個 **發佈到網站** 內嵌程式碼或在清單中，您可以擷取內嵌程式碼，或刪除內嵌程式碼，並因此對該報表中的任何連結 visual 無法再運作。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web10.png)
 
-4.  If you select <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>, you’re asked if you’re sure you want to delete the embed code.
+4.  如果您選取 **刪除**, ，詢問您是否確定要刪除內嵌程式碼。
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web11.png)
 
 
-## Updates to reports, and data refresh
+## 更新報表和資料重新整理
 
-After you create your <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in Publish to web embed codes.
+在建立之後您 **發佈到網站** 內嵌程式碼和共用它，報表將依據您所做的任何變更。 不過，它是一定要知道，可能需要更新您的使用者可以看見一段時間。 更新報表或視覺花大約一小時才會反映在發佈到 web 內嵌程式碼。
 
-When you initially use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> to get an embed code, the embed code link is immediately active and can be viewed by anyone who opens the link.  After the initial Publish to web action, subsequent updates to reports or visuals to which a Publish to web link points can take approximately one hour to be visible to your users.
+當您最初使用 **發佈到網站** 內嵌程式碼，請將內嵌程式碼連結立即作用中然後開啟連結的人可以檢視。  之後初始發行至 web 動作、 報告或發佈為 web 連結點可讓使用者看見大約一小時的視覺效果的後續更新。
 
-To learn more, see the <bpt id="p1">**</bpt>How it works<ept id="p1">**</ept> section later in this article. If you need your updates to be immediately available, you can delete the embed code and create a new one.
+若要深入了解，請參閱 **它的運作方式** 本文稍後的章節。 如果您需要您立即可用的更新，您可以刪除內嵌程式碼，並建立一個新。
 
-## Data refresh
+## 資料重新整理
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. You can disable automatic refresh by selecting <bpt id="p1">**</bpt>do not refresh<ept id="p1">**</ept> on the schedule for the dataset used by the report.  
+資料重新整理會自動反映在內嵌的報表或視覺化。 可能需要大約 1 小時重新整理的資料會顯示內嵌程式碼。 您可以選取 [停用自動重新整理 **不重新整理** 上使用報表的資料集的排程。  
 
-## Custom visuals
+## 自訂視覺效果
 
-Custom visuals are supported in <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>. When you use Publish to web, users with whom you share your published visual do not need to enable custom visuals to view the report.
+自訂視覺效果中支援 **發佈到網站**。 當您使用發行到 web 時，與您共用已發行 visual studio 的使用者不需要啟用檢視報表的自訂視覺效果。
 
 ## 限制
 
-<bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> is supported for the vast majority of data sources and reports in the Power BI service, however, the following are not currently supported or available with Publish to web:
+
+            **發佈到網站** 支援的絕大多數的 Power BI 服務中的資料來源和報表，不過，下列目前不支援或使用網頁發行︰
 
 
-1.  Reports using real-time data sources.
+1.  使用即時資料來源的報表。
 
-2.  Reports using row level security.
+2.  使用資料列層級安全性的報表。
 
-3.  Reports using Analysis Services Tablular hosted on premises.
+3.  使用 Analysis Services Tablular 裝載在內部部署的報表。
 
-4.  Reports shared to you directly or through an organizational content pack.
+4.  共用您直接或透過組織內容套件的報告。
 
-5.  Reports in a group in which you are not an edit member.
+5.  您有不編輯成員的群組中的報表。
 
-6.  "R" Visuals are not currently supported in Publish to web reports.
+6.  "R"視覺項目目前不支援在發佈網站報告。
 
 
-## Understanding the embed code status column
+## 了解內嵌程式碼狀態] 欄
 
-When viewing the <bpt id="p1">**</bpt>Manage embed codes<ept id="p1">**</ept> page for your <bpt id="p2">**</bpt>Publish to web<ept id="p2">**</ept> embed codes, a status column is provided. Embed codes are active by default, but you may encounter any of the states listed below.  
+檢視時 **管理內嵌代碼** 頁，以查看您 **發佈到網站** 內嵌程式碼，提供狀態的資料行。 內嵌程式碼作用中根據預設，但您可能會遇到的任何狀態下面所列。  
 
 |狀態|說明|
 |---|---|
-|**[作用中]**|The report is available for Internet users to view and interact with.|
-|**已封鎖**|The content of the report violates the <bpt id="p1">[</bpt>Power BI Terms of Service<ept id="p1">](https://powerbi.microsoft.com/terms-of-service)</ept>. It has been blocked by Microsoft. Contact support if you believe the content was blocked in error.|
-|**不支援**|The report's data set is using row level security, or another unsupported configuration. See the <bpt id="p1">**</bpt>Limitations<ept id="p1">**</ept> section for a complete list.|
+|**[作用中]**|報表是網際網路使用者可以檢視並與其互動。|
+|**已封鎖**|報表的內容違反 [Power BI 服務條款](https://powerbi.microsoft.com/terms-of-service)。 它已被 microsoft 封鎖。 如果您認為錯誤封鎖內容，請連絡支援。|
+|**不支援**|報表的資料集使用資料列層級安全性或另一個不支援的組態。 請參閱 **限制** 區段，如需完整清單。|
 
 
-## How to report a concern with Publish to web content
+## 如何報告關於發行到 web 內容
 
-To report a concern related to <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> content embedded in a website or blog, use the <bpt id="p2">**</bpt>Flag<ept id="p2">**</ept> icon in the bottom bar, shown in the following image. You’ll be asked to send an email to Microsoft explaining the concern. Microsoft will evaluate the content based on the Power BI Terms of Service, and take appropriate action.
+報表與相關考量 **發佈到網站** 內容內嵌在網站或部落格，請使用 **旗標** 圖示下方的列，如下圖所示。 您將會要求一封電子郵件傳送給 Microsoft 說明問題。 Microsoft 會評估內容會根據 「 Power BI 服務條款，並採取適當動作。
 
-To report a concern, select the <bpt id="p1">**</bpt>flag<ept id="p1">**</ept> icon in the bottom bar of the Publish to web report you see.
+若要報告問題，請選取 **旗標** 底列的 [發佈到 web 報告，您會看到的圖示。
 
 ![](media/powerbi-service-publish-to-web/Publish_To_Web12_GA.PNG)
 
-## Licensing and Pricing
+## 授權與價格
 
-You need to be a Microsoft Power BI user to use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>. The consumers of your report (the readers, viewers) do not need to be Power BI users.
+您必須使用 Microsoft Power BI 使用者 **發佈到網站**。 報表 （讀取器，檢視器） 的取用者不需要為 Power BI 的使用者。
 
-## How it works (technical details)
+## 其運作方式 （技術詳細資料）
 
-When you create an embed code using <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>, the report is made visible to users on the Internet. It’s publicly available so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures the report can be viewed by thousands of concurrent users without any impact on performance.  
+當您建立內嵌程式碼使用 **發佈到網站**, ，網際網路上，報表就會顯示給使用者。 它是公開可用的因此您可以預期輕鬆分享未來透過社交媒體報表檢視器。 當使用者檢視報表時，藉由開啟直接的公用 URL 或內嵌在網頁或部落格、 檢視 Power BI 會快取報表定義和檢視報表所需的查詢的結果。 這個方法可確保數千名並行使用者，而不會對效能的任何影響檢視報表。  
 
-The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code only when you’re satisfied with the settings.
+如果您更新報表定義 （例如，如果您變更它的檢視模式），或重新整理報表資料，可以花大約一小時之前變更會反映在您的使用者檢視報表的版本，是長時間執行，快取。 因此建議您預備工作工作量，並建立 **發佈到網站** 內嵌程式碼，只有當您滿意的設定時。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

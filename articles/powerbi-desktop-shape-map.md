@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use Shape Maps in Power BI Desktop (Preview)"
-   description="Create relative comparisons to regions using shape maps in Power BI Desktop"
+   pageTitle="在 Power BI Desktop （預覽） 中使用圖形對應"
+   description="建立可在 Power BI Desktop 中使用圖形對應區域的相對比較"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,113 +20,116 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Shape Maps in Power BI Desktop (Preview)
+# 在 Power BI Desktop （預覽） 中的圖形對應
 
-In Power BI Desktop, you create a <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual to show relative comparisons of regions on a map by applying different colors to different regions. In contrast to the <bpt id="p1">**</bpt>Map<ept id="p1">**</ept> visual, <bpt id="p2">**</bpt>Shape Map<ept id="p2">**</ept> cannot show precise geographical locations of data points on a map; instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
+在 Power BI Desktop，您會建立 **圖案對應** 視覺化地圖上顯示相對比較的區域，將不同的色彩套用至不同的區域。 相對於 **對應** 視覺化， **圖案對應** 無法顯示精確點在地圖上的地理位置資料; 相反地，其主要用途是來著色它們以不同的方式，在地圖上顯示區域的相對比較。
 
-<bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visuals are based on ESRI/TopoJSON maps which have the compelling ability to use custom maps that you can create, such as geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, but custom maps will be enabled when this features comes out of Preview, which is expected with the next Power BI Desktop monthly update.
 
-## Creating Shape Maps
+            **圖形對應** 視覺項目以 ESRI/TopoJSON 對應具有吸引人能夠使用自訂的對應，您可以建立，例如地理位置，座位安排、 floor 計劃，以及其他等等。 使用自訂對應的功能不適用於此預覽版本中的 **圖案對應**, ，但此功能時，才會啟用自訂對應來自下一步的 Power BI Desktop 每月更新所預期的預覽。
 
-You can test the <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called <bpt id="p2">**</bpt>Use Custom Maps<ept id="p2">**</ept>.
+## 建立圖形對應
 
-The <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual is in Preview, and must be enabled in Power BI Desktop. To enabled <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>File &gt; Options and Settings &gt; Options &gt; Preview Features<ept id="p2">**</ept>, then select the <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept> checkbox. You'll need to restart Power BI Desktop after you make the selection.
+您可以測試 **圖案對應** 與對應的控制項，會傳送此預覽版本，或只要它符合呼叫下一節中所述的需求，您可以使用您自己的自訂對應 **使用自訂的對應**。
+
+ **圖案對應** visual 僅供預覽，而且您必須啟用 Power BI Desktop 中。 為已啟用 **圖案對應**, ，請選取 **檔案 > 選項和設定 > 選項 > 預覽功能**, ，然後選取 **圖案對應** 核取方塊。 您必須重新啟動 Power BI Desktop 之後進行選擇。
 
 ![](media/powerbi-desktop-shape-map/shape-map_1a.png)
 
-Once <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> is enabled, click the <bpt id="p2">**</bpt>Shape Map<ept id="p2">**</ept> control from the <bpt id="p3">**</bpt>Visualizations<ept id="p3">**</ept> pane.
+一次 **圖案對應** 已啟用，按一下 [ **圖案對應** 控制項從 **視覺效果** 窗格。
 
 ![](media/powerbi-desktop-shape-map/shape-map_2.png)
 
-Power BI Desktop creates an empty <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual design canvas.
+Power BI Desktop 建立空 **圖案對應** 視覺化設計畫布。
 
 ![](media/powerbi-desktop-shape-map/shape-map_3.png)
 
-Take the following steps to create a <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>:
+執行下列步驟來建立 **圖案對應**:
 
-1.  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, drag a data field that has the region names (or abbreviations) onto the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> bucket, and a data measure field into the <bpt id="p3">**</bpt>Values<ept id="p3">**</ept> bucket (you won't see a map yet).
+1.  在 **欄位** ] 窗格中，區域名稱 （或縮寫） 的資料欄位拖曳到 **位置** 值區，以及資料量值欄位到 **值** （您還不會看到對應） 的值區。
 
-    > <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> See the section titled <bpt id="p2">**</bpt>Getting Map Data<ept id="p2">**</ept>, below, for information on how to quickly get map data to test <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept>.
+    > 
+            **附註︰** 請參閱節 **取得地圖資料**, 底下，如需如何快速取得地圖資料來測試 **圖案對應**。
 
     ![](media/powerbi-desktop-shape-map/shape-map_3a.png)
 
-2.  In the <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> settings pane, expand <bpt id="p2">**</bpt>Shape<ept id="p2">**</ept>, and select from the <bpt id="p3">**</bpt>Standard Maps<ept id="p3">**</ept> drop-down to show your data. At this point the rendering appears, as shown in the following image.
+2.  在 **格式** 設定] 窗格中，展開 **圖形**, ，然後選取從 **標準對應** 下拉式清單來顯示您的資料。 此時會呈現出現，如下圖所示。
 
     ![](media/powerbi-desktop-shape-map/shape-map_3b.png)
 
-    > <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> In the <bpt id="p2">**</bpt>Region Keys<ept id="p2">**</ept> section at the end of this article is a collection of tables that have map regions keys you can use to test the <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept> visual.
+    > 
+            **附註︰** 中 **區域金鑰** 這篇文章的最後一節是集合的資料表，可用來測試對應區域索引鍵 **圖案對應** 視覺化。
 
-3.  You can then modify the map projection and zooming settings, as well as the colors of data points, from the <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
+3.  然後，您可以修改地圖投射和縮放設定，以及資料點的色彩從 **格式** 設定] 窗格中。 您也可以修改縮放設定。 例如，您可以變更色彩、 設定最大值和最小值，並以此類推。
 
     ![](media/powerbi-desktop-shape-map/shape-map_3d.png)
 
-4.  You can also add a category data column to the <bpt id="p1">**</bpt>Legend<ept id="p1">**</ept> bucket, and classify the map regions based on categories.
+4.  您也可以加入至類別資料行 **圖例** 貯體，並分類類別為基礎的地圖區域。
 
-## Use Custom Maps
+## 使用自訂的對應
 
-You can use custom maps with <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> as long as they are in the <bpt id="p2">**</bpt>TopoJSON<ept id="p2">**</ept> format. If your map is in another format, you can use online tools such as <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Map Shaper<ept id="p2">**</ept><ept id="p1">](http://mapshaper.org/)</ept> to convert your <bpt id="p3">*</bpt>shapefiles<ept id="p3">*</ept> or your <bpt id="p4">*</bpt>GeoJSON<ept id="p4">*</ept> maps into the <bpt id="p5">**</bpt>TopoJSON<ept id="p5">**</ept> format.
+您可以使用具有自訂對應 **圖案對應** ，只要它們位於 **TopoJSON** 格式。 如果您的對應是在另一種格式，您可以使用的線上工具例如 [**對應設計師**](http://mapshaper.org/) 轉換您 *形狀檔* 或 *GeoJSON* 會對應到 **TopoJSON** 格式。
 
-To use your <bpt id="p1">**</bpt>TopoJSON<ept id="p1">**</ept> map file, add a ShapeMap visual to your report and add some data to the <bpt id="p2">*</bpt>Location<ept id="p2">*</ept> and <bpt id="p3">*</bpt>Values<ept id="p3">*</ept> buckets. Then, in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane with the <bpt id="p2">**</bpt>Format<ept id="p2">**</ept> section selected (the paintbrush icon, shown as (1) in the following image), expand the <bpt id="p3">**</bpt>Shape<ept id="p3">**</ept> section and select <bpt id="p4">**</bpt>+ Add Map<ept id="p4">**</ept>.
+若要使用您 **TopoJSON** 檔案對應 ShapeMap 視覺效果加入至報表，將一些資料加入 *位置* 和 *值* 值區。 然後，在 **視覺效果** 窗格 **格式** 區段選取 （小畫家圖示下, 圖中顯示為 (1)），依序展開 **圖形** 區段，然後選取 **+ 加入地圖**。
 
 ![](media/powerbi-desktop-shape-map/shape-map_6.png)
 
 
-## Getting Map Data
+## 取得地圖資料
 
-To quickly get data into a model so you can test <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, you can copy one of the tables at the end of this article, then select <bpt id="p2">**</bpt>Enter Data<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> ribbon.
+若要快速取得資料到模型，因此您可以測試 **圖案對應**, ，就可以複製本文中，結尾的資料表，然後選取 **輸入資料** 從 **首頁** 功能區。
 
 ![](media/powerbi-desktop-shape-map/shape-map_4.png)
 
-You can then paste the table into Power BI Desktop. The top row is automatically identified as a header.
+然後您可以將資料表貼入 Power BI Desktop。 上方資料列會自動被視為標頭。
 
 ![](media/powerbi-desktop-shape-map/shape-map_5.png)
 
-You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> and the table is added to the data model for Power BI Desktop.
+您可以輸入新的資料行，只要輸入新的資料行名稱 （在空白資料行右邊），然後在每個資料格，就像您可以在 Excel 中加入值。 完成時，選取 [ **負載** 和資料表會加入至資料模型的 Power BI Desktop。
 
 
-## Preview Behavior and Requirements
+## 預覽行為及需求
 
-There are a few considerations and requirements for this Preview release of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>:
+有幾個考量和需求，此預覽版本的 **圖案對應**:
 
--   The <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual is in Preview, and must be enabled in Power BI Desktop. To enabled <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>File &gt; Options and Settings &gt; Options &gt; Preview Features<ept id="p2">**</ept>, then select the <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept> checkbox.
+-    **圖案對應** visual 僅供預覽，而且您必須啟用 Power BI Desktop 中。 為已啟用 **圖案對應**, ，請選取 **檔案 > 選項和設定 > 選項 > 預覽功能**, ，然後選取 **圖案對應** 核取方塊。
 
--   Currently, you must also have the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> bucket set in order for the <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> classification to work properly. We anticipate improving this behavior in the final release of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>.
+-   目前，您也必須擁有 **值** 在順序中設定的值區 **圖例** 分類才能正常運作。 預計會改善這種行為的最終發行版本 **圖案對應**。
 
--   The release version of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> will have a user interface that shows the map keys of the currently selected map; in this Preview, you can reference the map region keys in the tables found in the following <bpt id="p2">**</bpt>Region Keys<ept id="p2">**</ept> section of this article.
+-   發行版本 **圖案對應** 都會有使用者介面會顯示對應的索引鍵的目前選取的對應; 在此預覽中，您可以參考下列中找到的資料表中的地圖區域索引鍵 **區域金鑰** 一節。
 
-## Region Keys
+## 區域索引鍵
 
-Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this Preview release to test <bpt id="p2">**</bpt>Shape Map<ept id="p2">**</ept>.
+使用下列 **區域金鑰** 在此預覽版本，若要測試 **圖案對應**。
 
-### Australia: States
+### 澳洲︰ 狀態
 
-|id|abbr|iso|名稱|postal|
+|id|abbr|iso|名稱|郵遞區號|
 |---|---|---|---|---|
-|au-wa| WA| AU-WA|  Western Australia|  WA|
-|au-vic|Vic|AU-VIC| Victoria|   VIC|
-|au-tas |Tas|AU-TAS|    Tasmania    |TAS|
-|au-sa  |SA |AU-SA  |South Australia|   SA|
-|au-qld |Qld|AU-QLD |Queensland|    QLD|
-|au-nt  |NT |AU-NT  |Northern Territory|    NT|
-|au-nsw |NSW|AU-NSW |New South Wales|   NSW|
-|au-act |ACT|AU-ACT |Australian Capital Territory|  ACT|
+|au wa| WA| AU WA|  澳洲西部|  WA|
+|au vic|Vic|AU VIC| 維多利亞|   VIC|
+|au 工作 |工作|AU 工作|    塔斯馬尼亞    |工作|
+|au sa  |SA |AU SA  |南澳大利亞|   SA|
+|au qld |Qld|AU QLD |昆士蘭|    QLD|
+|au nt  |NT |AU NT  |北半球領域|    NT|
+|au nsw |NSW|AU NSW |新南威爾斯|   NSW|
+|au act |ACT|AU ACT |澳大利亞首都領土|  ACT|
 
 
-### Austria: States
+### 奧地利︰ 狀態
 
-|id|    iso|    名稱|   name-en|    postal|
+|id|    iso|    名稱|   名稱-en|    郵遞區號|
 |---|---|---|---|---|
-|at-wi| AT-9|   Wien|   維也納| WI|
-|at-vo| AT-8|   Vorarlberg| Vorarlberg| VO|
-|at-tr| AT-7|   Tirol|  Tyrol|  TR|
-|at-st| AT-6|   Steiermark| Styria| ST|
-|at-sz| AT-5|   Salzburg|   Salzburg|   SZ|
-|at-oo| AT-4|   Oberösterreich| Upper Austria|  OO|
-|at-no| AT-3|   Niederösterreich|   Lower Austria|  否|
-|at-ka| AT-2|   Kärnten|    Carinthia|  KA|
-|at-bu| AT-1|   Burgenland| Burgenland| BU|
+|在 wi-fi| 在 9|   科技|   維也納| 工作指導|
+|在 vo| 在 8|   Vorarlberg| Vorarlberg| VO|
+|在 tr| 在 7|   Tirol|  蒂羅爾叛變|  TR|
+|在 st| 在 6|   Steiermark| Styria| ST|
+|在 sz| 在 5|   Salzburg|   Salzburg|   SZ|
+|在 oo| 在 4|   Oberösterreich| 上層奧地利|  OO|
+|在無| 在 3|   Niederösterreich|   較低的奧地利|  否|
+|在 ka| 在 2|   Kärnten|    Carinthia|  KA|
+|在 bu| 在-1|   Burgenland| Burgenland| BU|
 
-### Brazil: States
+### 巴西︰ 狀態
 
 |id|
 |---|
@@ -135,102 +138,102 @@ Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this 
 |Goias
 |Sergipe
 |聖保羅
-|Santa Catarina
+|聖 Catarina
 |Roraima
 |Rondonia
-|Rio Grande do Sul
-|Rio Grande do Norte
+|Rio 摩卡不要 Sul
+|Rio 摩卡不要 Norte
 |Rio de Janeiro
 |Piaui
 |Parana
 |Paraiba
-|Para
+|並行
 |Minas Gerais
 |Mato Grosso
 |Maranhao
-|Mato Grosso do Sul
-|Distrito Federal
+|Mato Grosso 執行 Sul
+|Distrito 聯邦
 |Ceara
-|Espirito Santo
-|Bahia
+|Espirito 島
+|布
 |Amazonas
 |Amapa
 |Alagoas
 |Acre
-|Litigated Zone 1
-|Litigated Zone 2
-|Litigated Zone 3
-|Litigated Zone 4
+|訴訟區域 1
+|訴訟區域 2
+|訴訟區域 3
+|訴訟區域 4
 
-### Canada: Provinces
+### 加拿大︰ 省
 
-|id|    iso |名稱|  postal|
+|id|    iso |名稱|  郵遞區號|
 |---|---|---|---|
-|ca-nu| CA-NU|  Nunavut|    NU|
-|ca-nt| CA-NT|  Northwest Territories|  NT
-|ca-yt| CA-YT|  Yukon|  YT
-|ca-sk| CA-SK|  Saskatchewan|   SK
-|ca-qc| CA-QC|  Quebec| QC
-|ca-pe| CA-PE|  Prince Edward Island|   PE
-|ca-on| CA-ON|  Ontario|    ON
-|ca-ns| CA-NS|  Nova Scotia |NS
-|ca-nl| CA-NL|  Newfoundland and Labrador|  NL
-|ca-nb| CA-NB|  New Brunswick| NB
-|ca-mb| CA-MB|  Manitoba|   MB
-|ca-bc| CA-BC|  British Columbia    |BC
-|ca-ab| CA-AB|  Alberta |AB
+|ca nu| CA NU|  努勒維特|    NU|
+|ca nt| CA NT|  西北領地|  NT
+|ca yt| CA YT|  Yukon|  YT
+|ca sk| CA SK|  薩克其萬|   SK
+|ca qc| CA QC|  魁北克| QC
+|ca pe| CA PE|  王子 Edward 島|   PE
+|ca 上| CA ON|  安大略|    ON
+|ca ns| CA NS|  斯科 |NS
+|ca nl| CA NL|  紐芬蘭和拉布拉多|  NL
+|ca nb| CA NB|  New Brunswick| NB
+|ca mb| CA MB|  曼尼托巴|   MB
+|ca bc| CA BC|  不列顛哥倫比亞省    |BC
+|ca ab| CA AB|  目前 |AB
 
 
-### France: Regions
+### 法國︰ 區域
 
-|id |名稱|  name-en|
+|id |名稱|  名稱-en|
 |---|---|---|
 |Alsace |Alsace|    Alsace
-|Rhone-Alpes|   Rhône-Alpes|    Rhone-Alpes
+|隆恩 Alpes|   Rhône Alpes|    隆恩 Alpes
 |Provence-Alpes-Cote d'Azur|    Provence-Alpes-Côte d'Azur| Provence-Alpes-Cote d'Azur
-|Poitou-Charentes|  Poitou-Charentes|   Poitou-Charentes
+|Poitou Charentes|  Poitou Charentes|   Poitou Charentes
 |Picardie   |Picardie|  Picardy
-|Pays de la Loire|  Pays de la Loire|   Pays de la Loire
-|Nord-Pas-de-Calais|    Nord-Pas-de-Calais| Nord-Pas-de-Calais
-|Midi-Pyrenees| Midi-Pyrénées|  Midi-Pyrenees
-|Lorraine|  Lorraine|   Lorraine
+|支付 de la Loire|  支付 de la Loire|   支付 de la Loire
+|Nord Pas de-Calais|    Nord Pas de-Calais| Nord Pas de-Calais
+|Midi Pyrenees| Midi Pyrénées|  Midi Pyrenees
+|賴|  賴|   賴
 |Limousin|  Limousin|   Limousin
-|Languedoc-Roussillon|  Languedoc-Roussillon|   Languedoc-Roussillon
-|Ile-del-France|    Île-de-France|  Ile-de-France
-|Haute-Normandie|   Haute-Normandie|    Upper Normandy
-|Franche-Comte| Franche-Comté|  Franche-Comte
-|Corse| Corse|  Corsica
-|Champagne-Ardenne| Champagne-Ardenne|  Champagne-Ardenne
-|Centre-Val de Loire|   Centre-Val de Loire|    Centre-Val de Loire
+|Languedoc Roussillon|  Languedoc Roussillon|   Languedoc Roussillon
+|Ile-del-法國|    Île-de-法國|  Ile-de-France
+|Haute Normandie|   Haute Normandie|    上限同時
+|Franche-Comte| Franche Comté|  Franche-Comte
+|函式庫| 函式庫|  科西嘉島
+|上香檳 Ardenne| 上香檳 Ardenne|  上香檳 Ardenne
+|中心 Val de Loire|   中心 Val de Loire|    中心 Val de Loire
 |Bretagne|  Bretagne|   Brittany
-|Bourgogne| Bourgogne|  Burgundy
-|Basse-Normandie|   Basse-Normandie|    Lower Normandy
+|Bourgogne| Bourgogne|  勃
+|Basse Normandie|   Basse Normandie|    較低的同時
 |Auvergne|  Auvergne|   Auvergne
 |Aquitaine| Aquitaine|  Aquitaine
 
-### Germany: States
+### 德國︰ 狀態
 
-|id|    iso|    名稱|   name-en|    postal
+|id|    iso|    名稱|   名稱-en|    郵遞區號
 |---|---|---|---|---|
-|de-be| DE-BE|  Berlin| Berlin| BE
-|de-th| DE-TH|  Thüringen|  Thuringia|  TH
-|de-st| DE-ST|  Sachsen-Anhalt| Saxony-Anhalt|  ST
-|de-sn| DE-SN|  Sachsen |Saxony|    SN
-|de-mv| DE-MV|  Mecklenburg-Vorpommern| Mecklenburg-Vorpommern| MV
-|de-bb| DE-BB|  Brandenburg |Brandenburg|   BB
-|de-sh| DE-SH|  Schleswig-Holstein| Schleswig-Holstein| SH
-|de-sl| DE-SL|  Saarland|   Saarland|   SL
-|de-rp| DE-RP|  Rheinland-Pfalz|    Rhineland-Palatinate|   RP
-|de-nw| DE-NW|  Nordrhein-Westfalen|    North Rhine-Westphalia| NW
-|de-ni| DE-NI|  Niedersachsen|  Lower Saxony|   NI
-|de-he| DE-HE|  Hessen| Hesse|  HE
-|de-hh| DE-HH|  Hamburg|    Hamburg|    HH
-|de-hb| DE-HB|  Bremen| Bremen| HB
-|de-by| DE-BY|  Bayern| Bavaria|    BY
-|de-bw| DE-BW|  Baden-Württemberg|  Baden-Wurttemberg|  BW
+|de-是| DE-是|  柏林| 柏林| 是
+|de th| DE TH|  Thüringen|  Thuringia|  TH
+|de st| DE ST|  Sachsen Anhalt| 克遜 Anhalt|  ST
+|de sn| DE SN|  Sachsen |克遜|    SN
+|de mv| DE MV|  Mecklenburg Vorpommern| Mecklenburg Vorpommern| MV
+|de bb| DE BB|  布蘭登 |布蘭登|   BB
+|de-sh| DE-SH|  Schleswig Holstein| Schleswig Holstein| SH
+|de sl| DE SL|  Saarland|   Saarland|   SL
+|de rp| DE RP|  Rheinland Pfalz|    Rhineland Palatinate|   RP
+|de nw| DE NW|  Nordrhein Westfalen|    北歐萊茵 Westphalia| NW
+|de ni| DE NI|  Niedersachsen|  較低的克遜|   NI
+|de 他| DE 他|  Hessen| Hesse|  他
+|de hh| DE HH|  Hamburg|    Hamburg|    HH
+|de hb| DE HB|  Bremen| Bremen| HB
+|de-由| DE-由|  Bayern| 巴伐利亞|    由
+|de bw| DE BW|  巴登 Württemberg|  巴登 Wurttemberg|  BW
 
 
-### Ireland: Counties
+### 愛爾蘭︰ 郡
 
 |id|
 |---|
@@ -254,156 +257,156 @@ Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this 
 |Kildare
 |Kerry
 |Galway
-|Dublin
+|都柏林
 |Donegal
-|Cork
+|軟木
 |Clare
 |Cavan
 |Carlow
 
 
-### Italy: Regions
+### 義大利︰ 區域
 
-|id|iso|名稱|name-en|postal|
+|id|iso|名稱|名稱-en|郵遞區號|
 |---|---|---|---|---|
-|it-vn| IT-34|  Veneto| Veneto| VN
-|it-vd| IT-23|  Valle d'Aosta|  Aosta Valley|   VD
-|it-um| IT-55|  Umbria| Umbria| UM
-|it-tt| IT-32|  Trentino-Alto Adige|    Trentino-South Tyrol|   TT
-|it-tc| IT-52|  Toscana|    Tuscany|    TC
-|it-sc| IT-82|  Sicilia|    Sicily| SC
-|it-sd| IT-88|  Sardegna|   Sardinia|   SD
-|it-pm| IT-21|  Piemonte|   Piedmont|   PM
-|it-ml| IT-67|  Molise| Molise| ML
-|it-mh| IT-57|  Marche| Marche| MH
-|it-lm| IT-25|  Lombardia|  Lombardy|   LM
-|it-lg| IT-42|  Liguria|    Liguria|    LG
-|it-lz| IT-62|  Lazio|  Lazio|  LZ
-|it-fv| IT-36|  Friuli-Venezia Giulia|  Friuli-Venezia Giulia|  FV
-|it-er| IT-45|  Emilia-Romagna| Emilia-Romagna| ER
-|it-cm| IT-72|  Campania|   Campania|   CM
-|it-lb| IT-78|  Calabria|   Calabria|   LB
-|it-bc| IT-77|  Basilicata| Basilicata| BC
-|it-pu| IT-75|  Apulia| Puglia| PU
-|it-ab| IT-65|  Abruzzo|    Abruzzo|    AB
+|it vn| IT 34|  Veneto| Veneto| VN
+|it vd| IT 23|  耶 d'Aosta|  Aosta 矽谷|   VD
+|it um| IT 55|  翁布里| 翁布里| UM
+|it tt| IT 32|  Trentino Alto Adige|    Trentino 南部蒂羅爾叛變|   TT
+|it tc| IT 52|  Toscana|    塔斯卡尼|    TC
+|it sc| IT 82|  Sicilia|    西西里島| SC
+|it sd| IT 88|  Sardegna|   Sardinia|   SD
+|it pm| IT 21|  Piemonte|   蒙特|   PM
+|it ml| IT 67|  Molise| Molise| ML
+|it mh| IT-57|  Marche| Marche| MH
+|it lm| IT 25|  Lombardia|  倫巴底|   LM
+|it lg| IT 42|  Liguria|    Liguria|    LG
+|it lz| IT 62|  Lazio|  Lazio|  LZ
+|it fv| IT 36|  Friuli-Venezia Giulia|  Friuli-Venezia Giulia|  FV
+|它-e| IT 45|  Emilia-Romagna| Emilia-Romagna| ER
+|it cm| IT 72|  坎佩尼亞|   坎佩尼亞|   CM
+|it lb| IT 78|  Calabria|   Calabria|   LB
+|it bc| IT 77|  Basilicata| Basilicata| BC
+|it pu| IT 75|  Apulia| Puglia| PU
+|it ab| IT 65|  Abruzzo|    Abruzzo|    AB
 
 
-### Mexico: States
+### 墨西哥︰ 狀態
 
-|id|    abreviatura|    iso|    名稱|   name-en|    postal|
+|id|    abreviatura|    iso|    名稱|   名稱-en|    郵遞區號|
 |---|---|---|---|---|---|
-|mx-zac|    Zac.|   MX-ZAC| Zacatecas|  Zacatecas|  ZA
-|mx-yuc|    Yuc.|   MX-YUC| Yucatán|    Yucatan|    YU
-|mx-ver|    Ver.|   MX-VER| Veracruz|   Veracruz|   VE
-|mx-tla|    Tlax.|  MX-TLA| Tlaxcala|   Tlaxcala|   TL
-|mx-tam|    Tamps.| MX-TAM| Tamaulipas| Tamaulipas| TM
-|mx-tab|    Tab.|   MX-TAB| Tabasco|    Tabasco|    TB
-|mx-son|    Son.|   MX-SON| Sonora| Sonora| SO
-|mx-sin|    Sin.|   MX-SIN| Sinaloa|    Sinaloa|    SI
-|mx-slp|    S.L.P.| MX-SLP| San Luis Potosí|    San Luis Potosi|    SL
-|mx-roo|    Q.R.|   MX-ROO| Quintana Roo|   Quintana Roo|   QR
-|mx-que|    Qro.|   MX-QUE| Querétaro|  Queretaro|  QE
-|mx-pue|    Pue.|   MX-PUE| Puebla| Puebla| PU
-|mx-oax|    Oax.|   MX-OAX| Oaxaca| Oaxaca| OA
-|mx-nle|    N.L.|   MX-NLE| Nuevo León| Nuevo Leon| NL
-|mx-nay|    Nay.|   MX-NAY| Nayarit|    Nayarit|    NA
-|mx-mor|    Mor.|   MX-MOR| Morelos|    Morelos|    MR
-|mx-mic|    Mich.|  MX-MIC| Michoacán|  Michoacan|  MC
-|mx-mex|    Méx.|   MX-MEX| Estado de México|   Mexico State|   MX
-|mx-jal|    Jal.|   MX-JAL| Jalisco|    Jalisco|    JA
-|mx-hid|    Hgo.|   MX-HID| Hidalgo|    Hidalgo|    HI
-|mx-gro|    Gro.|   MX-GRO| Guerrero|   Guerrero|   GR
-|mx-gua|    Gto.|   MX-GUA| Guanajuato| Guanajuato| GT
-|mx-dur|    Dgo.|   MX-DUR| Durango|    Durango|    DU
-|mx-dif|    Col.|   MX-DIF| Ciudad de México|   Mexico City|    DF
-|mx-col|    Coah.|  MX-COL| Colima| Colima| CL
-|mx-coa|    Chis.|  MX-COA| Coahuila|   Coahuila|   CA
-|mx-chh|    Chih.|  MX-CHH| Chihuahua|  Chihuahua|  CH
-|mx-chp|    CDMX.|  MX-CHP| Chiapas|    Chiapas|    CP
-|mx-cam|    Camp.|  MX-CAM| Campeche|   Campeche|   CM
-|mx-bcs|    B.C.S.| MX-BCS| Baja California Sur|    Baja California Sur|    BS
-|mx-bcn|    B.C.|   MX-BCN| Baja California|    Baja California|    BN
-|mx-agu|    Ags.|   MX-AGU| Aguascalientes| Aguascalientes| AG
+|mx zac|    Zac。|   MX ZAC| Zacatecas|  Zacatecas|  ZA
+|mx yuc|    Yuc。|   MX YUC| Yucatán|    尤卡坦|    YU
+|mx ver|    Ver.|   MX VER| Veracruz|   Veracruz|   V
+|mx tla|    Tlax。|  MX TLA| 斯卡拉|   斯卡拉|   TL
+|mx tam|    Tamps。| MX TAM| Tamaulipas| Tamaulipas| TM
+|mx] 索引標籤|    索引標籤。|   MX] 索引標籤| 塔瓦斯科|    塔瓦斯科|    TB
+|mx son|    兒子。|   MX SON| [艷陽天]| [艷陽天]| 因此
+|mx sin|    Sin。|   MX SIN| Sinaloa|    Sinaloa|    SI
+|mx slp|    S.L.P.| MX SLP| San Luis Potosí|    San Luis Potosi|    SL
+|mx roo|    Q.R.|   MX ROO| Quintana Roo|   Quintana Roo|   QR
+|mx 佇列|    Qro。|   MX 佇列| Querétaro|  Queretaro|  QE
+|mx pue|    Pue。|   MX PUE| Puebla| Puebla| PU
+|mx oax|    Oax。|   MX OAX| Oaxaca| Oaxaca| OA
+|mx nle|    N.L.|   MX NLE| 祕世| 祕 Leon| NL
+|mx 雅倫|    雅倫。|   MX 雅倫| Nayarit|    Nayarit|    NA
+|mx 程式|    Mor.|   MX 程式| Morelos|    Morelos|    MR
+|mx mic|    Mich.|  MX MIC| Michoacán|  Michoacan|  MC
+|mx mex|    Méx。|   MX MEX| Estado de México|   墨西哥狀態|   MX
+|mx jal|    Jal。|   MX JAL| Jalisco|    Jalisco|    JA
+|mx hid|    Hgo。|   MX HID| Hidalgo|    Hidalgo|    HI
+|mx 群組|    群組|   MX 群組| Guerrero|   Guerrero|   GR
+|mx gua|    Gto。|   MX GUA| Guanajuato| Guanajuato| GT
+|mx 工期|    Dgo。|   MX 工期| Durango|    Durango|    DU
+|mx 差異|    欄。|   MX 差異| Ciudad de México|   墨西哥城|    自由度
+|mx 欄|    Coah。|  MX 欄| Chiapas| Chiapas| CL
+|mx 真品證明書|    Chis。|  MX 真品證明書| Coahuila|   Coahuila|   CA
+|mx chh|    Chih。|  MX CHH| 齊驊華|  齊驊華|  CH
+|mx 香港特別行政區中文|    CDMX。|  MX 香港特別行政區中文| Chiapas|    Chiapas|    CP
+|mx 攝影機|    訓練營。|  MX 攝影機| Campeche|   Campeche|   CM
+|mx bcs|    B.C.S.| MX BCS| 墨西哥加州 Sur|    墨西哥加州 Sur|    BS
+|mx bcn|    B.C.|   MX BCN| 墨西哥加州|    墨西哥加州|    BN
+|mx agu|    Ag。|   MX AGU| Aguascalientes| Aguascalientes| AG
 
 
-### Netherlands: Provinces
+### 荷蘭︰ 省
 
-|id|    iso|    名稱|   name-en|
+|id|    iso|    名稱|   名稱-en|
 |---|---|---|---|
-|nl-zh| NL-ZH|  Zuid-Holland|   South Holland
-|nl-ze| NL-ZE|  Zeeland|    Zeeland
-|nl-ut| NL-UT|  Utrecht|    Utrecht
-|nl-ov| NL-OV|  Overijssel| Overijssel
-|nl-nh| NL-NH|  Noord-Holland|  North Holland
-|nl-nb| NL-NB|  Noord-Brabant|  North Brabant
-|nl-li| NL-LI|  Limburg|    Limburg
-|nl-gr| NL-GR|  Groningen|  Groningen
-|nl-ge| NL-GE|  Gelderland| Gelderland
+|nl 和| NL 和|  Zuid 荷蘭|   南部荷蘭
+|nl z| NL Z|  Zeeland|    Zeeland
+|nl ut| NL UT|  Utrecht|    Utrecht
+|nl 動作| NL 動作|  Overijssel| Overijssel
+|nl nh| NL NH|  北荷蘭|  北歐荷蘭
+|nl nb| NL NB|  北 Brabant|  北歐 Brabant
+|nl l| NL L|  Limburg|    Limburg
+|nl gr| NL GR|  Groningen|  Groningen
+|nl ge| NL GE|  Gelderland| Gelderland
 |nl-fr| NL-FR|  Fryslân|    Friesland
-|nl-fl| NL-FL|  Flevoland|  Flevoland
-|nl-dr| NL-DR|  Drenthe|    Drenthe
+|nl 奧蘭多市| NL 奧蘭多市|  Flevoland|  Flevoland
+|nl dr| NL DR|  Drenthe|    Drenthe
 
-### UK: Countries
+### 英國︰ 國家 （地區)
 
 |id|    iso|    名稱|
 |---|---|---|
-|gb-wls|    GB-WLS| Wales
-|gb-sct|    GB-SCT| Scotland
-|gb-nir|    GB-NIR| Northern Ireland
-|gb-eng|    GB-ENG| England
+|gb wls|    GB WLS| Wales
+|gb sct|    GB SCT| 蘇格蘭
+|gb nir|    GB NIR| 北馬愛爾蘭
+|gb eng|    GB ENG| 英國
 
-### USA: States
+### 美國︰ 狀態
 
-|id|    名稱|   postal|
+|id|    名稱|   郵遞區號|
 |---|---|---|
-|us-mi| Michigan|   MI
-|us-ak| Alaska| AK
-|us-hi| Hawaii| HI
-|us-fl| 佛羅里達州|    FL
-|us-la| Louisiana|  LA
-|us-ar| Arkansas|   AR
-|us-sc| South Carolina| SC
-|us-ga| Georgia|    GA
-|us-ms| Mississippi|    MS
-|us-al| Alabama|    AL
-|us-nm| New Mexico| NM
-|us-tx| Texas|  TX
-|us-tn| Tennessee|  TN
-|us-nc| North Carolina| NC
-|us-ok| Oklahoma|   [確定]
-|us-az| Arizona|    AZ
-|us-mo| 密蘇里州|   MO
-|us-va| 維吉尼亞州|   VA
-|us-ks| Kansas| KS
-|us-ky| 肯塔基州|   KY
-|us-co| Colorado|   CO
-|us-md| Maryland|   MD
-|us-wv| West Virginia|  WV
-|us-de| Delaware|   DE
-|us-dc| District of Columbia|   DC
-|us-il| Illinois|   IL
-|us-oh| 俄亥俄州|   OH
-|us-ca| California| CA
-|us-ut| Utah|   UT
-|us-nv| Nevada| NV
-|us-in| Indiana|    IN
-|us-nj| New Jersey| NJ
-|us-ri| Rhode Island|   RI
-|us-ct| Connecticut|    CT
-|us-pa| Pennsylvania|   PA
-|us-ny| New York|   NY
-|us-ne| Nebraska|   NE
-|us-ma| Massachusetts|  MA
-|us-ia| Iowa|   IA
-|us-nh| New Hampshire|  NH
-|us-or| Oregon| 或
-|us-mn| Minnesota|  MN
-|us-vt| Vermont|    VT
-|us-id| Idaho|  ID
-|us-wi| Wisconsin|  WI
-|us-wy| Wyoming|    WY
-|us-sd| South Dakota|   SD
-|us-nd| North Dakota|   ND
-|us-me| Maine|  ME
-|us-mt| Montana|    MT
-|us-wa| 華盛頓| WA
+|我們英哩| 密西根|   MI
+|我們-ak| 阿拉斯加| AK
+|我們為大家| 夏威夷| HI
+|我們-佛羅里達州| 佛羅里達州|    FL
+|我們-la| 路易斯安那州|  洛杉磯
+|我們-ar| Arkansas|   AR
+|我們-sc| South Carolina| SC
+|我們-ga| 喬治亞|    GA
+|我們 ms| 密西西比|    MS
+|我們-al| 算是|    AL
+|我們-nm| 新墨西哥州| NM
+|我們 tx| 德州|  TX
+|我們-tn| 美國|  TN
+|我們的 nc| 北卡羅來那州| NC
+|我們的 [確定]| Oklahoma|   [確定]
+|我們-az| 亞歷桑那|    AZ
+|我們慢動作| 密蘇里州|   MO
+|我們-va| 維吉尼亞州|   VA
+|我們-市| Kansas| 市
+|我們-ky| 肯塔基州|   KY
+|我們的 co| Colorado|   CO
+|我們-md| Maryland|   MD
+|我們-wv| 西維吉尼亞州|  WV
+|我們-de| Delaware|   DE
+|我們 dc| District of Columbia|   DC
+|我們的 il| 伊利諾|   IL
+|我們-喔| 俄亥俄州|   喔
+|我們 ca| 加州| CA
+|我們-ut| 猶他州|   UT
+|我們-內華達州拉斯維加斯| Nevada| 內華達州拉斯維加斯
+|我們單元| 印第安納|    IN
+|我們-nj| 紐澤西州| NJ
+|我們-ri| 羅德島|   RI
+|我們-ct| Connecticut|    CT
+|我們-pa| 賓州|   PA
+|我們-ny| New York|   NY
+|我們-ne| 送到內布拉斯加|   NE
+|我們的 ma| 麻州|  MA
+|我們-ia| 愛荷華州|   IA
+|我們-nh| 新罕布夏州|  NH
+|我們-或| 奧勒崗| 或
+|我們-mn| 明尼蘇達|  MN
+|我們-vt| Vermont|    VT
+|我們識別碼| 更改為 Idaho|  ID
+|我們的指導| 威斯康辛|  工作指導
+|我們-wy| Wyoming|    WY
+|我們-sd| 南達科他|   SD
+|我們-nd| 北達科他|   ND
+|我們-我| Maine|  我
+|我們-mt| Montana|    MT
+|我們-wa| 華盛頓| WA

@@ -1,5 +1,5 @@
-### This is content within the include ###
+### 這是內包含的內容 ###
 
-An include with an image:
+包含與映像︰
 
-![windows-azure-logo](./media/example-include-images/windows-azure.png)
+![windows azure 標誌](./media/example-include-images/windows-azure.png)

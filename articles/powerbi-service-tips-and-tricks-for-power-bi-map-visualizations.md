@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and Tricks for Power BI Map visualizations"
-   description="Tips and Tricks for Power BI Map visualizations"
+   pageTitle="秘訣和訣竅 Power BI 地圖視覺效果"
+   description="秘訣和訣竅 Power BI 地圖視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,38 +21,38 @@
    ms.date="08/22/2016"
    ms.author="mihart"/>
 
-# Tips and Tricks for Power BI Map visualizations  
+# 秘訣和訣竅 Power BI 地圖視覺效果  
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, you can use the following tips:
+Power BI 整合 Bing，以提供預設地圖座標 （稱為地理編碼的程序），以便於為您建立的對應。 Bing 使用某些演算法和提示來嘗試取得正確的位置，但它是最佳的猜測。 若要增加正確的地理編碼的可能性，您可以使用下列秘訣︰
 
-**1.**
+**1.使用地理位置詞彙**
 
-When columns are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as <bpt id="p1">*</bpt>California<ept id="p1">*</ept> and <bpt id="p2">*</bpt>Washington<ept id="p2">*</ept>, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of <bpt id="p3">*</bpt>Washington, DC<ept id="p3">*</ept> instead of Washington State for the word <bpt id="p4">*</bpt>Washington<ept id="p4">*</ept>. Naming that column <bpt id="p1">*</bpt>State<ept id="p1">*</ept> will improve the geocoding. The same is true for columns named <bpt id="p1">*</bpt>Country<ept id="p1">*</ept>, <bpt id="p2">*</bpt>State<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>City<ept id="p3">*</ept>.   
+根據指定的地理命名資料行，最好 Bing 猜出您想要顯示。 例如，如果您有一個人的欄位狀態名稱如 *加州* 和 *華盛頓*, ，Bing 如果資料行不是根據地理指定 （在此情況下狀態），可能會傳回的位置 *華盛頓特區* 而不是華盛頓州 word *華盛頓*。 命名該資料行 *狀態* 將可改善地理編碼。 同樣適用於資料行名稱為 *國家/地區*, ，*狀態*, ，和 *城市*。   
 
-**2.**
+**2.使用逗號將多個內容新增至地理區域欄位**
 
-Some designations are ambiguous when considered in the context of multiple countries or regions. You can increase the accuracy of geo-coding by building columns that append multiple fields together and use those for plotting data locations. For example, instead of passing only <bpt id="p1">*</bpt>Wiltshire<ept id="p1">*</ept>, you can pass <bpt id="p2">*</bpt>Wiltshire, England<ept id="p2">*</ept> to get a more accurate geo-coding result. 
+某些指定是當多個國家 （地區） 的內容中被視為模稜兩可。 您可以藉由建置一起附加多個欄位，並使用這些來繪製資料位置的資料行增加地理編碼的精確度。 例如，而不是只傳遞 *Wiltshire*, ，您可以傳遞 *Wiltshire 英國* 以取得更精確的地理編碼結果。 
 
-**3.**
+**3.使用特定的緯度和經度**
 
-You can always provide specific latitude and longitude locations. When you do this, you also need to fill the <bpt id="p1">*</bpt>Location<ept id="p1">*</ept> field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level. Latitude and Longitude fields must be in <bpt id="p1">*</bpt>Decimal Number<ept id="p1">*</ept> format, which you can set in the data model.
+您永遠可以提供特定的經度和緯度位置。 當您這樣做時，您也需要填滿 *位置* 欄位建立視覺效果時。 否則，根據預設，比方說，緯度彙總的資料，並會在狀態層級，而不是縣 （市） 層級成對的經度。 經度和緯度欄位必須是 *十進位數字* 格式，您可以在資料模型中設定。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 
-## Categorizing geographic fields to hint Bing's geocoding  
-In Power BI Desktop, you can ensure fields are correctly geocoded by setting the <bpt id="p1">*</bpt>Data Category<ept id="p1">*</ept> on the data fields. In Power BI Desktop, select the desired table, go to the <bpt id="p1">**</bpt>Advanced<ept id="p1">**</ept> ribbon and then set the <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Address<ept id="p3">**</ept>, <bpt id="p4">**</bpt>City<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Continent<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Country/Region<ept id="p6">**</ept>, <bpt id="p7">**</bpt>Country<ept id="p7">**</ept>, <bpt id="p8">**</bpt>Postal Code<ept id="p8">**</ept>, <bpt id="p9">**</bpt>State<ept id="p9">**</ept> or <bpt id="p10">**</bpt>Province<ept id="p10">**</ept>. These data categories help Bing correctly encode the date. To learn more, see <bpt id="p1">[</bpt>Data categorization in Power BI Desktop<ept id="p1">](powerbi-desktop-data-categorization.md)</ept>.
+## 分類地理提示 Bing 的地理編碼的欄位  
+在 Power BI Desktop，您可以確定欄位設定是正確進行地理編碼 *資料類別* 上的資料欄位。 在 Power BI Desktop，選取所需的資料表，請移至 **進階** 功能區，然後設定 **資料類別** 至 **位址**, ，**縣 （市)**, ，**大陸**, ，**國家/地區**, ，**國家/地區**, ，**郵遞區號**, ，**狀態** 或 **州/省**。 這些資料類別有助於將 Bing 正確編碼的日期。 若要深入了解，請參閱 [Power BI Desktop 中的資料分類](powerbi-desktop-data-categorization.md)。
 
-## Better geocoding with more specific locations  
-Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Within the query, you can build a more specific location like a street address using <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> in Power BI Desktop.  Use the <bpt id="p1">**</bpt>Add Column<ept id="p1">**</ept> feature to build a custom column, then build the desired location as follows: 
+## 更好的地理編碼為更特定的位置  
+有時候，即使設定對應的資料分類不夠 Bing 正確猜出您的意圖。 在查詢中，您可以建置更特定的位置，例如街道地址，使用 **查詢編輯器** Power BI Desktop 中。  使用 **加入資料行** 功能來建置自訂的資料行，然後建置所需的位置，如下所示︰ 
 
 
     = [Field1] & " " & [Field2]
 
-Then use the resulting field in the map visualizations. This approach is very useful for building Street addresses from Shipping Address fields, which are common in data sets. Note that concatenation only works with text fields. If necessary, convert the street number to a <bpt id="p1">*</bpt>text<ept id="p1">*</ept> data type before using it to build an address.  
+然後使用地圖視覺效果中產生的欄位。 這種方法是非常適合建置街道地址，從資料集中常見的送貨地址欄位。 請注意，串連僅適用於文字欄位。 如有必要，將轉換的街道號碼 *文字* 資料型別，再使用它來建置一個地址。  
 
 ## 請參閱
 
-[Power Bi visualizations](powerbi-service-visualizations-for-reports.md)
+[Power Bi 視覺效果](powerbi-service-visualizations-for-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

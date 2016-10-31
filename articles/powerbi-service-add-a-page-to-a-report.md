@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add a page to a Power BI report"
-   description="Add a page to a Power BI report"
+   pageTitle="新增 Power BI 報表頁面"
+   description="新增 Power BI 報表頁面"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,24 +20,24 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Add a page to a Power BI report  
-## Add a new blank page
+# 新增 Power BI 報表頁面  
+## 加入新的空白頁面
 
-No reason to crowd up a report page -- just add a new blank page.
+沒有理由參觀報表頁面-只要加入新的空白頁面。
 
-Select the yellow plus icon and then type a new name for the page.  
+選擇黃色加號圖示，然後輸入 [頁面的新名稱。  
 ![](media/powerbi-service-add-a-page-to-a-report/reorderPages2.gif)
 
-## Duplicate a page
-From the top control bar, in <bpt id="p1">[</bpt>Editing mode<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>, select the <bpt id="p2">**</bpt>Duplicate this page<ept id="p2">**</ept> icon.
+## 複製頁面
+從上面的控制項列在 [編輯模式](powerbi-service-interact-with-a-report-in-editing-view.md), ，請選取 **複製此頁面** 圖示。
 
 ![](media/powerbi-service-add-a-page-to-a-report/PBI_duplicate.png)
 
-Your new page is created and becomes the active page. To rename it, double-click the name on the tab to highlight it, and type a new name.  For more information, see <bpt id="p1">[</bpt>rename a report and report page<ept id="p1">]()</ept>
+新頁面已建立，並成為使用中的頁面。 若要將它重新命名，連按兩下加以，反白顯示] 索引標籤上的名稱並輸入新名稱。  如需詳細資訊，請參閱 [重新命名報表和報表頁面]()
 
 
 ## 請參閱  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

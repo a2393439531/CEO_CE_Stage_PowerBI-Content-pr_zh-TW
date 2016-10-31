@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin a tile from one dashboard to another dashboard"
-   description="Pin a tile from one dashboard to another dashboard"
+   pageTitle="釘選到另一個儀表板從一個儀表板磚"
+   description="釘選到另一個儀表板從一個儀表板磚"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,34 +20,42 @@
    ms.date="10/14/2016"
    ms.author="mihart"/>
 
-# <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Pin a tile from one dashboard to another dashboard  
+# <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>釘選到另一個儀表板從一個儀表板磚  
 
-﻿One way to add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept> is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&amp;A or a report. 
+﻿其中一種方式新增 [儀表板磚](powerbi-service-dashboard-tiles.md) 是藉由複製另一個儀表板。 按一下時，這些磚都回到建立-在問與答或報表的連結。 
 
->[AZURE.NOTE] You cannot pin tiles from shared dashboards.
+>[AZURE.NOTE] 您無法釘選磚從共用的儀表板。
 
-1.  <bpt id="p1">[</bpt>Get data<ept id="p1">](powerbi-service-get-data.md)</ept>. This example uses the <bpt id="p1">[</bpt>IT Spend Analysis sample<ept id="p1">](powerbi-sample-it-spend-analysis-take-a-tour.md)</ept>.
-2.  Open a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept>.
-3.  Hover over the tile you want to pin, select the ellipses (...) and choose the pin <ph id="ph1">![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/PBI_PinTile.png)</ph> icon.  
+1.  
+            [取得資料](powerbi-service-get-data.md)。 這個範例會使用 [IT 花分析範例](powerbi-sample-it-spend-analysis-take-a-tour.md)。
+2.  開啟 [儀表板](powerbi-service-dashboards.md)。
+3.  暫留在您想要釘選選取省略符號 （...），選擇 [pin 磚 ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/PBI_PinTile.png) 圖示。  
     ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/power-bi-tile-menu.png)
 
-4.  Pin the tile to an existing dashboard or to a new dashboard. 
+4.  釘選磚至現有的儀表板或新的儀表板。 
 
-    -   <bpt id="p1">**</bpt>Existing dashboard<ept id="p1">**</ept>: select the name of the dashboard from the dropdown.
-    -   <bpt id="p1">**</bpt>New dashboard<ept id="p1">**</ept>: type the name of the new dashboard.
+    -   
+            **現有的儀表板**︰ 從下拉式清單中選取的儀表板名稱。
+    -   
+            **新的儀表板**︰ 輸入新的儀表板的名稱。
 
     ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/PBI_PinToAnotherDash.png)
 
-5.  Select Pin.
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to the selected dashboard.
+5.  選取 pin 碼。
+    成功的訊息 （靠近右上角） 可讓您知道已新增的視覺效果，做為選取的儀表板] 的磚。
 
     ![](media/powerbi-pin-a-tile-from-one-dashboard-to-another/pinSuccess.png)
-6.  From the navigation pane, select the dashboard with the new tile. There, you can <bpt id="p1">[</bpt>rename, resize, link, and move<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> the pinned visualization.
+6.  從 [瀏覽] 窗格中，選取 [儀表板與新的方塊。 您可以在這裡， [重新命名、 調整大小、 連結和移動](powerbi-service-edit-a-tile-in-a-dashboard.md) 釘選視覺效果。
 
 ## <a name="see-also"></a>另請參閱  
-<bpt id="p1">[</bpt>Reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-<bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>  
-<bpt id="p1">[</bpt>Power BI Preview - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>  
-<bpt id="p1">[</bpt>Dashboards in Power BI Preview<ept id="p1">](powerbi-service-dashboards.md)</ept>  
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [在 Power BI 中的報表](powerbi-service-reports.md)  
+
+            [問與答 Power BI 中](powerbi-service-q-and-a.md)  
+
+            [Power BI 預覽的基本概念](powerbi-service-basic-concepts.md)  
+
+            [Power BI 預覽中的儀表板](powerbi-service-dashboards.md)  
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

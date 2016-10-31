@@ -1,6 +1,6 @@
 <properties
-pageTitle="On-premises data gateway FAQ"
-description="This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway."
+pageTitle="內部資料閘道器常見問題集"
+description="這是內部部署資料閘道器常見問題集。 這會收集同一個地方閘道常見問題集。"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,73 +19,109 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# On-Premises Data Gateway FAQ
+# 內部資料閘道常見問題集
 
 <!-- Shared FAQ shared Include -->
 [AZURE.INCLUDE [gateway-onprem-faq-shared-include](../includes/gateway-onprem-faq-shared-include.md)]
 
 ## Analysis Services
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I use msdmpump.dll to create custom effective username mappings for Analysis Services?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is not supported at this time.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I use the gateway to connect to a multidimensional (OLAP) instance.  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes! The enterprise gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
+            **問題︰** 可以使用 msdmpump.dll Analysis services 建立自訂的有效使用者名稱對應嗎？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure. 
+            **答案是︰** [否]。 不支援這一次。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How can I find out what effective username is being passed to my on-premises Analysis Services server?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> We answer this in the <bpt id="p2">[</bpt>troubleshooting article<ept id="p2">](powerbi-gateway-onprem-tshoot.md)</ept>.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> I have 25 databases in Analysis Services, is there a way to have them all enabled for the gateway at once?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is on the roadmap, but we don’t have a timeframe.
+            **問題︰** 可以使用閘道來連接到多維度 (OLAP) 執行個體。  
+
+            **答案是︰** 是 ！ 「 企業閘道支援即時連接到 Analysis Services 表格式和多維度模型。
+
+
+            **問題︰** 要是我使用 Windows 驗證的內部部署伺服器不同的網域中的電腦上安裝閘道器嗎？  
+
+            **答案是︰** 不保證一定。 所有這取決於兩個網域之間的信任關係。 如果兩個不同網域中受信任的網域模型，然後閘道可能能夠連接到 Analysis Services 伺服器，而且可以解決的有效使用者名稱。 如果沒有，您可能會遇到登入失敗。 
+
+
+            **問題︰** 我要如何找出何種有效的使用者名稱傳遞至我的內部部署 Analysis Services 伺服器？  
+
+            **答案是︰** 我們回答這在 [疑難排解文件](powerbi-gateway-onprem-tshoot.md)。
+
+
+            **問題︰** 我有 25 資料庫 Analysis Services 中，有方法可以讓它們全部已啟用閘道嗎？  
+
+            **答案是︰** [否]。 這在藍圖，但還沒時間範圍。
 
 ## 系統管理
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I have more than one admin for a gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes! When you manage a gateway, you can go to the administrator’s tab to add additional admins.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Does the gateway admin need to be an admin on the machine where the gateway is installed?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The gateway admin is used to manage the gateway from within the service. 
+            **問題︰** 可以有多個閘道的系統管理員嗎？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I prevent users in my organization from creating a gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is on the roadmap, but we don’t have a timeframe.
+            **答案是︰** 是 ！ 當您管理的閘道時，您可以移至系統管理員的索引標籤，以新增其他系統管理員。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I get usage and statistics information of the gateways in my organization?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is on the roadmap, but we don’t have a timeframe.
+
+            **問題︰** 閘道管理員必須是系統管理員，在電腦上的安裝閘道嗎？  
+
+            **答案是︰** [否]。 閘道管理員用來管理的服務中的閘道。 
+
+
+            **問題︰** 可以防止使用者在我的組織從建立閘道嗎？  
+
+            **答案是︰** [否]。 這在藍圖，但還沒時間範圍。
+
+
+            **問題︰** 可以取得使用量和統計資料資訊的閘道在我的組織？  
+
+            **答案是︰** [否]。 這在藍圖，但還沒時間範圍。
 
 ## Power BI
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If I'm using the current Power BI gateway for enterprise deployments, do I need to upgrade?
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes, but it is simple to do so as it just works the same way you upgraded to the latest enterprise gateway. Simple install the new on-premises data gateway to upgrade your existing gateway.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Do i need to upgrade the personal gateway?
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No, you can keep using the personal gateway for Power BI.
+            **問題︰** 如果我在企業部署使用目前的 Power BI 閘道，我要升級？
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How often are tiles in a dashboard, in Power BI, refreshed when connected through the enterprise gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> About ten minutes. DirectQuery connections are just that. This doesn’t mean that a tile issues a query to your on-premises server, and shows new data, every ten minutes.
+            **答案是︰** 是的但很容易做到，因為它只適用於相同的方式，在升級至最新的企業閘道。 簡易安裝新的內部部署資料閘道，以升級您現有的閘道。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources? Do I need a gateway for this scenario?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes, you can upload the workbook. And, no, you don’t need a gateway. But, because the data will reside in the Excel data model, reports in Power BI based on the Excel workbook will not be live. In order to refresh reports in Power BI, you’d have to re-upload an updated workbook each time. Or, use the gateway with scheduled refresh.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If users share dashboards that has a DirectQuery connection, will those other users be able to see the data even though they might not have the same permissions.  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
+            **問題︰** Do i 需要升級個人閘道嗎？
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Is a Pro license required to use the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes.
+            **答案是︰** 否，您可以繼續使用個人閘道 Power bi。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Is a Pro license required for users when interacting with a dashboard or report that makes use of the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Why can't I connect to my Oracle server?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see <bpt id="p1">[</bpt>Installing the Oracle Client<ept id="p1">](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client)</ept>.
+            **問題︰** 頻率會並排顯示在儀表板，在 Power BI 中透過 「 企業閘道 」 連線時重新整理嗎？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Will the gateway work with ExpressRoute?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. For more information about ExpressRoute and Power BI, see <bpt id="p1">[</bpt>Power BI and ExpressRoute<ept id="p1">](powerbi-admin-power-bi-expressroute.md)</ept>.
+            **答案是︰** 約十分鐘。 DirectQuery 連接是指。 這並不表示磚內部部署伺服器，請發出查詢，並顯示新的資料，每十分鐘。
+
+
+            **問題︰** 可以上傳連接至內部部署資料來源的 Power Pivot 資料模型的 Excel 活頁簿嗎？ 需要針對此案例的閘道嗎？  
+
+            **答案是︰** 是，您可以上傳活頁簿。 並不會，您不需要閘道。 但是，因為資料將位於 Excel 資料模型中，請在 Excel 活頁簿為基礎的 Power BI 中的報表將無法即時。 若要重新整理 Power BI 中的報表，您必須每次重新上傳更新的活頁簿。 或者，使用閘道與排定的重新整理。
+
+
+            **問題︰** 如果使用者共用儀表板具有 DirectQuery 連線，將這些其他的使用者能夠查看的資料，即使它們沒有相同的權限。  
+
+            **答案是︰** 連接至 Analysis Services 儀表板，使用者只會看到他們擁有存取權的資料。 如果使用者沒有相同的權限，他們將無法看到任何資料。 其他資料來源，所有使用者會都共用該資料來源輸入系統管理員的認證。
+
+
+            **問題︰** 是 Pro 授權，才能使用閘道嗎？  
+
+            **答案是︰** [是]。
+
+
+            **問題︰** 是 Pro 授權與儀表板或報表，以便使用閘道的互動時，所需的使用者嗎？  
+
+            **答案是︰** [是]。
+
+
+            **問題︰** 為何我無法連線到我的 Oracle 伺服器？  
+
+            **答案是︰** 您可能需要安裝 Oracle 用戶端並設定適當的伺服器資訊以連接到 Oracle 伺服器 tnsnames.ora 檔案。 這是外部閘道個別安裝。 如需詳細資訊，請參閱 [安裝 Oracle 用戶端](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client)。
+
+
+            **問題︰** 將閘道使用 ExpressRoute 嗎？  
+
+            **答案是︰** [是]。 如需 ExpressRoute 和 Power BI 的詳細資訊，請參閱 [Power BI 和 ExpressRoute](powerbi-admin-power-bi-expressroute.md)。
 
 ## 請參閱
-[On-premises data gateway](powerbi-gateway-onprem.md)  
-[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[內部資料閘道](powerbi-gateway-onprem.md)  
+[深入的內部資料閘道](powerbi-gateway-onprem-indepth.md)  
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

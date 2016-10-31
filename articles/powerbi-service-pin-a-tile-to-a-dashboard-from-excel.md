@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin a tile to a Power BI dashboard from Excel"
-   description="Pin a tile to a Power BI dashboard from Excel on OneDrive for Business. Pin ranges, charts, tables"
+   pageTitle="從 Excel 的 Power BI 儀表板磚的 pin 碼"
+   description="從商務用 onedrive 的 Excel 的 Power BI 儀表板磚的 pin。 Pin 碼範圍、 圖表、 資料表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,85 +21,85 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Pin a tile to a Power BI dashboard from Excel
+# 從 Excel 的 Power BI 儀表板磚的 pin 碼
 
-Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks. Then follow the step-by-step instructions below the video to try it out yourself.
+監看式將示範數種方式匯入資料，並連接到 Excel 活頁簿。 然後遵循以下視訊，試試看您自己的逐步指示。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l8JoB7w0zJA" frameborder="0" allowfullscreen></iframe>
 
->[AZURE.NOTE]  You can view, but not pin, tiles from workbooks that have been shared with you.
+>[AZURE.NOTE]  您可以檢視，但無法釘選磚，從已與您共用的活頁簿。
 
-## Connect your Excel workbook from OneDrive for Business to Power BI
+## 從商務用 OneDrive 的 Excel 活頁簿連接至 Power BI
 
-1.  Upload your workbook to your OneDrive for Business.
+1.  將您的活頁簿上傳至您的商務用 OneDrive。
 
-2. From Power BI, <bpt id="p1">[</bpt>connect to that workbook<ept id="p1">](powerbi-bring-in-whole-excel-files.md)</ept>.
+2. 從 Power BI [連接到該活頁簿](powerbi-bring-in-whole-excel-files.md)。
 
-3.  In Power BI, the workbook is listed in the left navigation pane under <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept>. The <ph id="ph1">![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_workbookIcon.png)</ph> icon indicates this is an Excel workbook and the yellow asterisk indicates it's new.
+3.  在 Power BI 活頁簿會列在左的導覽窗格中 **報表**。  ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_workbookIcon.png) 圖示表示這是 Excel 活頁簿，黃色星號表示其為新增。
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedFromExcel.png)
 
-4.  Open the workbook in Power BI by selecting the report name.
+4.  選取報表名稱，在 Power BI 中開啟活頁簿。
 
->[AZURE.NOTE]  Changes you make to the workbook in Power BI are not saved and do not affect the original workbook on OneDrive for Business. If you sort, filter, or change values in Power BI, those changes cannot be saved or pinned. To update the workbook, open it in Excel Online by selecting the ellipses and choosing <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. Changes to the workbook may take a few minutes to be updated in the tiles.     
+>[AZURE.NOTE]  您在 Power BI 活頁簿所做的變更不會儲存，而且不會影響商務用 OneDrive 上的原始活頁簿。 如果您排序、 篩選，或變更在 Power BI 中的值，這些變更無法儲存或釘選。 若要更新的活頁簿，開啟在 Excel Online 中選取省略符號，選擇 **編輯**。 活頁簿的變更可能需要幾分鐘的時間在磚中更新。     
 
 
-## Pin a range to a dashboard
-One way to add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept> is from within an Excel workbook. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
+## 釘選到儀表板的範圍
+其中一種方式新增 [儀表板磚](powerbi-service-dashboard-tiles.md) 是從 Excel 活頁簿中。 範圍可以固定從 Excel 活頁簿已在您的 OneDrive 儲存商業或其他群組共用文件庫。 範圍可以包含資料、 圖表、 資料表、 樞紐分析表、 樞紐分析圖，以及其他 Excel 組件。
 
-1. Highlight the cells that you'd like to pin to a dashboard.
+1. 反白顯示您想要釘選到儀表板的資料格。
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectRange.png)
 
-2.  Select the pin <ph id="ph1">![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png)</ph> icon. 
+2.  選取 [釘選 ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) 圖示。 
 
-3.  Pin the tile to an existing dashboard or to a new dashboard. 
+3.  釘選磚至現有的儀表板或新的儀表板。 
 
-    -   Existing dashboard: select the name of the dashboard from the dropdown.
+    -   現有的儀表板︰ 從下拉式清單中選取的儀表板名稱。
 
-    -   New dashboard: type the name of the new dashboard.
+    -   新的儀表板︰ 輸入新的儀表板的名稱。
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_dashDialog1.png)
 
-3.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+3.  選取 **Pin**。
 
-    A Success message (near the top right corner) lets you know the range was added, as a tile, to your dashboard.
+    成功的訊息 （靠近右上角） 可讓您知道已新增的範圍，做為您的儀表板] 的磚。
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_pinnedToDash1.png)
 
-4.  From the navigation pane, select the dashboard with the new tile. There, you can <bpt id="p1">[</bpt>rename, resize, link, and move<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> the pinned visualization.
+4.  從 [瀏覽] 窗格中，選取 [儀表板與新的方塊。 您可以在這裡， [重新命名、 調整大小、 連結和移動](powerbi-service-edit-a-tile-in-a-dashboard.md) 釘選視覺效果。
 
-## Pin an entire table or pivot chart to a dashboard
+## 釘選儀表板的整個資料表或樞紐分析圖
 
-1.  To pin a table or pivot table, select the entire range of the table.
+1.  若要釘選的資料表或樞紐分析表，請選取資料表的整個範圍。
 
-  - For tables, make sure to include the headers.
+  - 對於資料表，請務必包含標頭。
 
-  - For pivot tables, make sure to include every visible part of the pivot table, including filters if used.
+  - 樞紐分析表中，確定包含樞紐分析表，包括篩選器，如果使用每個可見部分。
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-excel/PBI_selectTable.png)
 
-2. Follow steps 2-4 above.
+2. 請依照下列步驟 2-4 上面。
 
->[AZURE.NOTE] A tile created from a table or pivot table will show the entire table.  If you add/remove/filter rows or columns in the original workbook, they will also be added/removed/filtered in the tile.
+>[AZURE.NOTE] 從資料表或樞紐分析表建立一個方塊會顯示整個資料表。  如果您加入/移除/篩選資料列或原始活頁簿中的資料行，它們也會新增/移除/篩選並排顯示中。
 
-## View the workbook linked to the tile
+## 檢視活頁簿連結至磚
 
-Clicking a workbook tile opens the linked workbook. Since the workbook file is located on the owner’s OneDrive for Business, viewing the workbook requires you have Read permissions for the workbook. If you do not have permission to view the file, you will receive an error message. For more information, see <bpt id="p1">[</bpt>Dashboard tiles in Power BI<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>
+按一下活頁簿磚會開啟連結的活頁簿。 因為活頁簿檔案位於擁有者的商務用 OneDrive 上，檢視活頁簿需要擁有活頁簿的 「 讀取 」 權限。 如果您沒有檢視此檔案的權限，您會收到錯誤訊息。 如需詳細資訊，請參閱 [Power BI 中並排顯示的儀表板](powerbi-service-dashboard-tiles.md)
 
->[AZURE.NOTE] Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel Desktop are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, time slicers. For a full list of unsupported features see <bpt id="p1">[</bpt>Unsupported Features in Excel Services REST API<ept id="p1">](http://msdn.microsoft.com/library/office/ff394477.aspx)</ept>
+>[AZURE.NOTE] 不支援的功能︰ Power BI 使用 Excel Services 擷取活頁簿磚。 因此，Excel 服務 REST API 中不支援某些功能從 Excel 桌面，因為它們不會看到 Power BI 中的方塊上。 例如︰ 走勢圖圖示設定條件式格式化，時間交叉分析篩選器。 如需完整清單，不支援的功能，請參閱 [Excel 服務 REST API 中不支援的功能](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
 
 ## 請參閱
 
-[Share a dashboard that has links to an Excel workbook](powerbi-service-share-dashboard-that-links-to-excel.md)
+[共用的儀表板可連結至 Excel 活頁簿](powerbi-service-share-dashboard-that-links-to-excel.md)
 
-[Bring whole Excel files into Power BI](powerbi-bring-in-whole-excel-files.md)
+[Power BI 中帶入 Excel 檔案](powerbi-bring-in-whole-excel-files.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI 預覽的基本概念](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI Preview](powerbi-service-dashboards.md)
+[Power BI 預覽中的儀表板](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

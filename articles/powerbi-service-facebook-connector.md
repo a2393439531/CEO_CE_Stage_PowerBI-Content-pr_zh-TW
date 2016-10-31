@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Third-party service: Facebook connector for Power BI Desktop"
-   description="Third-party service: Facebook connector for Power BI Desktop"
+   pageTitle="第三方服務︰ Power BI Desktop 的 Facebook 連接器"
+   description="第三方服務︰ Power BI Desktop 的 Facebook 連接器"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,16 +19,16 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Third-party service: Facebook connector for Power BI Desktop
+# 第三方服務︰ Power BI Desktop 的 Facebook 連接器
 
-The Facebook connector in Power BI Desktop relies on the Facebook Graph API. As such, features and availability may vary over time.
+Power BI Desktop 中的 Facebook 連接器依賴 Facebook 圖形 API。 同樣地，功能與可用性可能隨時間變化。
 
-You can see a <bpt id="p1">[</bpt>tutorial about the Facebook Connector for Power BI Desktop<ept id="p1">](powerbi-desktop-tutorial-facebook-analytics.md)</ept>.
+您可以看到 [教學課程有關的 Power BI Desktop Facebook 連接器](powerbi-desktop-tutorial-facebook-analytics.md)。
 
-Facebook expired v1.0 of its Graph API on April 30<ph id="ph1">&lt;sup&gt;</ph>th<ph id="ph2">&lt;/sup&gt;</ph> 2015. Power BI uses the Graph API behind the scenes for the Facebook connector, allowing you to connect to your data and analyze it.
+Facebook 上年 4 月 30 過期的 Graph api v1.0<sup>th</sup> 2015年。 Power BI 使用 Graph API 在幕後 Facebook 連接器，可讓您連接到您的資料進行分析。
 
-Queries that were built before April 30<ph id="ph1">&lt;sup&gt;</ph>th<ph id="ph2">&lt;/sup&gt;</ph> 2015 may no longer work or return less data. Subsequent to April 30<ph id="ph1">&lt;sup&gt;</ph>th<ph id="ph2">&lt;/sup&gt;</ph> 2015, Power BI leverages v2.2 in all calls to the Facebook API. If your query was built prior to April 30, 2015 and you have not used it since, you’ll likely need to authenticate again, to approve the new set of permissions that we’ll ask for.
+年 4 月 30 日之前所建立的查詢<sup>th</sup> 2015年可能不再運作或傳回較少的資料。 4 月 30 日之後<sup>th</sup> 2015，Power BI 會運用 v2.2 Facebook API 的所有呼叫中。 2015 年 4 月 30 日之前所建立的查詢，且不使用它之後，如果您將可能需要重新驗證，以核准的新的我們將要求的權限集。
 
-Although we attempt to release updates in accordance with any changes, the API may change in a way that affects the results of the queries we generate. In some cases, certain queries may no longer be supported. Due to this dependency we cannot guarantee the results of your queries when using this connector.
+我們嘗試發行更新，根據的任何變更，但可能會變更 API 的方式會影響我們產生的查詢的結果。 在某些情況下，某些查詢可能不受支援。 由於此相依性中，我們無法保證您的查詢結果時使用此連接器。
 
-More details on the change in the Facebook API are available <bpt id="p1">[</bpt>here<ept id="p1">](https://developers.facebook.com/docs/apps/changelog#v2_0)</ept>.
+如需詳細資訊，在 Facebook API 中的變更 [這裡](https://developers.facebook.com/docs/apps/changelog#v2_0)。

@@ -1,49 +1,49 @@
-<properties title="" pageTitle="Power BI technical content contributors' guide index" description="Lists the articles available in the Power BI technical content contributors' guide for powerbi.microsoft.com." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+<properties title="" pageTitle="Power BI 技術內容參與者指南索引" description="列出可用 powerbi.microsoft.com 的 Power BI 技術內容參與者的指南中的文章。" metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/19/2014" ms.author="mblythe" />
 
-#Power BI technical content contributors' guide index
+#Power BI 技術內容參與者指南索引
 
-##General guidance
+##一般指導方針
 
-- [Content channel guidance](./content-channel-guidance.md)
+- [內容通道指引](./content-channel-guidance.md)
 
-- [Style and voice](./style-and-voice.md)
+- [樣式和聲音](./style-and-voice.md)
 
 
-##Authoring articles: tools, processes, guidance
+##撰寫文章︰ 工具、 程序、 指引
 
-- [Tools and setup for authoring in GitHub](./tools-and-setup.md)
+- [工具和撰寫在 GitHub 中的安裝程式](./tools-and-setup.md)
 
 - [建立新的文章或更新現有文章的 Git 命令](./git-commands-for-master.md)
 
-- [How to undo almost anything with git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+- [如何復原幾乎與 git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
-- [Git troubleshooting](https://microsoft.sharepoint.com/teams/azurecontentguidance/wiki/Pages/Git%20Troubleshooting.aspx)
+- [Git 疑難排解](https://microsoft.sharepoint.com/teams/azurecontentguidance/wiki/Pages/Git%20Troubleshooting.aspx)
 
-- [File names and locations for Power BI technical articles](./file-names-and-locations.md)
+- [Power BI 技術文件的檔案名稱與位置](./file-names-and-locations.md)
 
-- [Linking guidelines](./create-links-markdown.md/)
+- [連結的指導方針](./create-links-markdown.md/)
 
-- [Retire or rename an article](./retire-or-rename-an-article.md)
+- [淘汰或重新命名文件](./retire-or-rename-an-article.md)
 
-- [Search page guidance, aka SEO](./powerbi-search-page-guidance.md)
+- [搜尋頁面的指引，也稱為 SEO](./powerbi-search-page-guidance.md)
 
 
-##Authoring articles: markdown
+##撰寫文件︰ markdown
 
-- [Markdown basics](https://help.github.com/articles/markdown-basics/)
+- [Markdown 基本概念](https://help.github.com/articles/markdown-basics/)
 
-- [Printable markdown cheatsheet](./media/documents/markdown-cheatsheet.pdf?raw=true)
+- [可列印的 markdown cheatsheet](./media/documents/markdown-cheatsheet.pdf?raw=true)
 
-- [GitHub-flavored markdown](https://help.github.com/articles/github-flavored-markdown/)
+- [GitHub 特定 markdown](https://help.github.com/articles/github-flavored-markdown/)
 
-- [Create tables in markdown](./create-tables-markdown.md)
+- [在 markdown 中建立資料表](./create-tables-markdown.md)
 
-- [Create images in markdown](./create-images-markdown.md)
+- [在 markdown 中建立映像](./create-images-markdown.md)
 
 - [在我們的技術文件中使用的自訂 Markdown 擴充功能](./custom-markdown-extensions.md)
 
-- [Markdown template for technical articles](../examples/_markdown-template.md)
+- [技術文件的 markdown 範本](../examples/_markdown-template.md)
 
-- [Metadata for Power BI technical articles](./article-metadata.md)
+- [Power BI 技術文件的中繼資料](./article-metadata.md)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Filled Maps (Choropleths) in Power BI"
-   description="Documentation - tutorial on creating Filled Maps (Choropleths) in Power BI"
+   pageTitle="教學課程︰ 填滿的對應 (Choropleths)，在 Power BI 中"
+   description="文件-教學課程，說明建立 Power BI 中的填入對應 (Choropleths)"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,94 +21,98 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# Tutorial: filled maps (choropleths) in Power BI  
+# 教學課程︰ 填滿 Power BI 中的對應 (choropleths)  
 
-A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
+分布的圖使用顯示比例值不同地理位置或地區如何網底或濃淡或模式。  快速顯示陰影，範圍從 light （較不頻繁的/較低） 使用這些相對差異暗色調 （更頻繁的/多個）。    
 
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/large_map.png)
 
-## When to use a filled map  
-Filled maps are a great choice:
+## 何時使用分布的圖  
+填滿的對應是相當好的選擇︰
 
--   to display quantitative information on a map.
+-   若要在地圖上顯示數量的資訊。
 
--   to show spatial patterns and relationships.
+-   若要顯示空間模式和關聯性。
 
--   when your data is standardized.
+-   當您的資料已經過標準化。
 
--   when working with socioeconomic data.
+-   當使用社會的資料。
 
--   when defined regions are important.
+-   當定義的區域是重要的。
 
--   to get an overview of the distribution across the geographic locations.
+-   若要取得跨地理位置的分佈的概觀。
 
-## Create a basic filled map
-In this video, Kim creates a basic map and converts it to a filled map.
+## 建立基本的布的圖
+在這段影片中，Kim 建立基本地圖，並將它轉換為分布圖。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 
-To create your own filled map, <bpt id="p1">[</bpt>download the Sales and Marketing sample<ept id="p1">](powerbi-sample-downloads.md)</ept> by signing in to Power BI and selecting <bpt id="p2">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Files <ph id="ph2">\&gt;</ph> Local File <ph id="ph3">\&gt;</ph> Sales and Marketing<ept id="p2">**</ept>.
+若要建立您自己的填滿的對應， [下載銷售和行銷範例](powerbi-sample-downloads.md) 登入 Power BI，然後選取 **取得資料 \> 檔案 \> 本機檔案 \> 銷售與行銷**。
 
 
-1.  Start on a <bpt id="p1">[</bpt>blank report page <ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept> in <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> from the Sales and Marketing Sample dataset  
+1.  開啟 [空白報表頁面 ](powerbi-service-add-a-page-to-a-report.md) 中 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md) 銷售與行銷 」 範例資料集  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img001.png)
 
-2.  and select the <bpt id="p1">**</bpt>Geo<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>State<ept id="p2">**</ept> field.    
+2.  選取 **地理** \> **狀態** 欄位。    
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img002.png)
 
-3.  <bpt id="p1">[</bpt>Convert the chart<ept id="p1">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept> to a filled map. Notice that <bpt id="p1">**</bpt>State<ept id="p1">**</ept> is now in the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> well. Bing Maps uses the field in the <bpt id="p1">**</bpt>Location<ept id="p1">**</ept> well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the filled map.  
+3.  
+            [將圖表轉換](powerbi-service-change-the-type-of-visualization-in-a-report.md) 填滿的對應。 請注意， **狀態** 現在處於 **位置** 良好。 Bing 地圖服務會使用中的欄位 **位置** 也用來建立對應。  此位置可以是不同的有效位置︰ 國家/地區、 狀態、 郡、 城市、 郵遞區號或其他郵遞區號等等。Bing 地圖在世界各地提供填滿的圖形。 沒有位置 1-mb 有效的項目，Power BI 無法建立填滿的對應。  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img003.png)
 
-4.  Filter the map to display only the continental United States.
+4.  篩選地圖來顯示只有美國大陸。
 
-    a.  At the bottom of the Visualizations pane, look for the <bpt id="p1">**</bpt>Filters<ept id="p1">**</ept> area.
+    a.  在 [視覺效果] 窗格的底部，尋找 **篩選** 區域。
 
-    b。  Hover over <bpt id="p1">**</bpt>State<ept id="p1">**</ept> and click the expand chevron  
+    b。  將滑鼠停留在 **狀態** 和展開 > 形箭號  
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img004.png)
 
-    c.  Place a checkmark next to <bpt id="p1">**</bpt>All<ept id="p1">**</ept> and remove the checkmark next to <bpt id="p2">**</bpt>AK<ept id="p2">**</ept>.
+    c.  旁放置一個核取記號 **所有** 並移除旁邊的核取記號 **AK**。
 
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img005.png)
 
-5.  Select <bpt id="p1">**</bpt>SalesFact<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Sentiment<ept id="p2">**</ept> to add it to the <bpt id="p3">**</bpt>Values<ept id="p3">**</ept> well. The field in the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> well controls the map shading.  
+5.  選取 **SalesFact** \> **情緒** 將它加入至 **值** 良好。 中的欄位 **值** 也可控制地圖的陰影。  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img006.png)
 
-6.  The filled map is shaded in blue, with light blue representing the lower sentiment numbers and dark blue representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
+6.  布的圖是藍色，代表較低的情感數字的淺藍色與深藍色表示更高版本，更正值情感變暗。  此處我反白為止 Wyoming (WY) 和情感是很好，請參閱狀態 74。  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/img007.png)
 
-7.  <bpt id="p1">[</bpt>Add the filled map as a dashboard tile (pin the visual)<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+7.  
+            [填滿的地圖加入做為儀表板] 的磚 (pin 視覺效果)](powerbi-service-dashboard-tiles.md)。 
 
-8.  <bpt id="p1">[</bpt>Save the report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+8.  
+            [將報表儲存](powerbi-service-save-a-report.md)。
 
-## Highlighting and cross-filtering  
-For information about using the Filters pane, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+## 反白顯示和交叉篩選  
+使用 [篩選] 窗格的相關資訊，請參閱 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report.md)。
 
-Highlighting a Location in a Filled Map cross-filters the other visualizations on the report page... and vice versa.
+反白顯示填滿的對應中的位置交叉篩選...在報表頁面上的其他視覺效果，反之亦然。
 
-1.  On the filled map, select a state.  This highlights the other visualizations on the page. Selecting <bpt id="p1">**</bpt>Texas<ept id="p1">**</ept>, for example, shows me that Sentiment is 74, Texas is in the Central District <ph id="ph1">\#</ph>23, and that most of the sales volume comes from the Moderation and Convenience segments.   
+1.  在填滿地圖上，選取狀態。  這會反白顯示在頁面上的其他視覺效果。 選取 **德州**, ，比方說，顯示我情感是 74，德州位於中央學區 \#23，且大部分的銷售量來自仲裁及便利性的區段。   
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img008.png)
 
-2.  On the line chart, toggle between <bpt id="p1">**</bpt>No<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>. This filters the Filled Map to show Sentiment for VanArsdel and for VanArsdel's competition.  
+2.  在折線圖上切換 **否** 和 **是**。 這會篩選填滿地圖來顯示情緒 VanArsdel 和 VanArsdel 的競賽。  
     ![](media/powerbi-service-tutorial-filled-maps-choropleths/img009.gif)
 
 ## 疑難排解  
-Map data can be ambiguous.  For example, there's a Paris, France, but there's also a Paris, Texas. Your geographic data is probably stored in separate columns – a column for city names, a column for state or province names, etc. – so Bing may not be able to tell which Paris is which. If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the Visualizations <ph id="ph1">\&gt;</ph> Latitude area.  And do the same for your longitude data.  
+地圖資料可能是模稜兩可。  例如，沒有巴黎，法國，但是巴黎汀也存在。 您的地理資料可能會儲存在個別的資料行 – 縣 （市） 名稱的資料行、 縣市或鄉鎮名稱、 等 – 的資料行，所以 Bing 可能無法判斷哪個是會在巴黎。 如果您的資料集已經包含經度和緯度資料，Power BI 會有特殊欄位，讓地圖資料的模稜兩可。 只要拖曳欄位，其中包含緯度資料視覺效果 \> 緯度區域。  並對經度資料執行相同的。  
 ![](media/powerbi-service-tutorial-filled-maps-choropleths/PBI_Latitude.png) 
 
-If you have permissions to edit the dataset in Power BI Desktop, watch this video for help addressing map ambiguity.
+如果您有權限可編輯 Power BI Desktop 中的資料集，觀看這段影片中定址對應模稜兩可的說明。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-If you do not have access to latitude and longitude data, <bpt id="p1">[</bpt>follow these instructions to update your dataset<ept id="p1">](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7)</ept>.
+如果您沒有存取經度和緯度資料 [遵循這些指示來更新您的資料集](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7)。
 
-For more help with Map visualizations, see <bpt id="p1">[</bpt>Tips and tricks for map visualizations<ept id="p1">](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations)</ept>.
+如需有關地圖視覺效果，請參閱 [秘訣和訣竅地圖視覺效果](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations)。
 
 ## 請參閱  
- [Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
-<bpt id="p1"> [</bpt>Visualization types in Power BI<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept><ph id="ph1">
-</ph><bpt id="p2"> [</bpt>Change the type of visualization being used<ept id="p2">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept><ph id="ph2">
-</ph><bpt id="p3"> [</bpt>Pin a visualization to a dashboard<ept id="p3">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>  
- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-[Try it out -- it's free!](https://powerbi.com/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+ [報表中加入視覺效果](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
+
+             [在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+ [變更視覺效果所使用的型別](powerbi-service-change-the-type-of-visualization-in-a-report.md)
+ [釘選視覺效果的儀表板](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+ [Power BI-基本概念](powerbi-service-basic-concepts.md)  
+[試試看-它的免費 ！](https://powerbi.com/)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

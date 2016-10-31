@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View report page tiles in the iPhone app"
-   description="Read about viewing and interacting with live report tiles in a dashboard in the Power BI mobile app for iOS on your iPhone."
+   pageTitle="檢視報表] 頁面中並排顯示 iPhone 應用程式"
+   description="閱讀有關檢視與您在 iPhone 上的 iOS Power BI 行動應用程式中的儀表板中並排顯示即時報表互動。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,26 +20,26 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# View report page tiles in the iPhone app (Power BI for iOS)
+# 檢視報表] 頁面中並排顯示 iPhone 應用程式 (適用於 iOS 的 Power BI)
 
-When you <bpt id="p1">[</bpt>create a dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> in the Power BI service, you add individual visuals from Power BI reports as tiles on the dashboard. You can also <bpt id="p1">[</bpt>pin a whole Power BI report page as a live tile<ept id="p1">](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)</ept>. You can view these report tiles in the Power BI app for the iPhone.
+當您 [建立儀表板](powerbi-service-dashboards.md) 在 Power BI 服務中，您將新增個別視覺效果從 Power BI 報表為儀表板上的磚。 您也可以 [整個 Power BI 報表頁面，為動態磚釘選](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)。 您可以檢視這些報表磚中 iPhone 的 Power BI 應用程式。
 
-1.  When you open a <bpt id="p1">[</bpt>dashboard in the iPhone app<ept id="p1">](powerbi-mobile-dashboards-in-the-iphone-app.md)</ept>, you see a small image of the report.
+1.  當您開啟 [iPhone 應用程式中的儀表板](powerbi-mobile-dashboards-in-the-iphone-app.md), ，您會看到報表的小型影像。
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-dashboard-report-page.png)
 
-2. Tap the tile. The pinned live report page opens the report in landscape mode. 
+2. 點選的磚。 釘選的即時報表頁面以橫向模式開啟報表。 
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-dashboard-report-page-landscape.png)
 
-6.  To get back to the list of dashboards, tap the arrow next to the report page title, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+6.  若要回到儀表板的清單，請點選報表頁面標題旁的箭號，然後點選 [ **我的工作區**。
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-iphone-app/power-bi-iphone-report-breadcrumb.png)
 
 
 ### 請參閱
 
-- [Tiles in the iPhone app](powerbi-mobile-tiles-in-the-iphone-app.md)
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-- [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [IPhone 應用程式中磚](powerbi-mobile-tiles-in-the-iphone-app.md)
+- [開始使用 iPhone 應用程式的 Power BI](powerbi-mobile-iphone-app-get-started.md)
+- [開始使用 Power BI](powerbi-service-get-started.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

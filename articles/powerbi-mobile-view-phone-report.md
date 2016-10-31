@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View and interact with Power BI reports optimized for your phone"
-   description="Read about interacting with report pages optimized for viewing in the Power BI phone apps."
+   pageTitle="檢視並與其互動 Power BI 報表適合您的電話"
+   description="了解 Power BI phone 應用程式中檢視最佳化的報表頁面進行互動。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,57 +20,62 @@
    ms.date="09/27/2016"
    ms.author="maggies"/>
 
-# View and interact with Power BI reports optimized for your phone 
+# 檢視並與其互動 Power BI 報表適合您的電話 
 
-When you create a Power BI report in Power BI Desktop, you can also create a version of that <bpt id="p1">[</bpt>report optimized for viewing in the Power BI app on a phone<ept id="p1">](powerbi-desktop-create-phone-report.md)</ept>.
+當您在 Power BI Desktop 建立 Power BI 報表時，您也可以建立新版的 [最佳化成適合在 Power BI 應用程式在電話上檢視報表](powerbi-desktop-create-phone-report.md)。
 
-Then, when you open a Power BI report on a phone, Power BI automatically detects if the report has been optimized for phones. If a phone-optimized report exists, the Power BI phone app automatically opens the optimized report.
+然後，當您開啟在電話上的 Power BI 報表，Power BI 會自動偵測的電話，已經過最佳化報表。 如果電話最佳化的報表，Power BI 電話應用程式會自動開啟最佳化的報表。
 
 ![](media/powerbi-mobile-view-phone-report/07-power-bi-phone-report-portrait.png)
 
 
-If a phone-optimized report doesn’t exist, you can still open the report in the non-optimized landscape view by changing the phone’s orientation.  
+如果不存在電話最佳化的報表，您仍可以變更電話的方向非最佳化 [橫向] 檢視中開啟報表。  
 
-Even in a phone-optimized report, if you change your phone to landscape, the report will open in the non-optimized view with the original report layout.
+即使在電話最佳化報表中，如果您變更您的電話為橫向，報表會開啟非最佳化的檢視，與原始報表配置中。
 
-If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+如果只適合某些頁面，您會看到 [縱向] 檢視中的訊息，表示可用的報表集。
 
 ![](media/powerbi-mobile-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
-all the other features of Power BI reports still work in phone-optimized reports. Read more about what you can do in:
+Power BI 報表的其他所有功能仍都在電話最佳化的報表。 深入了解您可以執行︰
 
-*   <bpt id="p1">[</bpt>Reports on iPhones<ept id="p1">](powerbi-mobile-reports-in-the-iphone-app.md)</ept>. 
-*   <bpt id="p1">[</bpt>Reports on Android phones<ept id="p1">](powerbi-mobile-reports-in-the-android-app.md)</ept>.
+*   
+            [報告的 Iphone](powerbi-mobile-reports-in-the-iphone-app.md)。 
+*   
+            [Android 的行動電話上報告](powerbi-mobile-reports-in-the-android-app.md)。
 
-## View other pages in the report
+## 檢視報表中的其他頁面
 
-- View other pages in the report by swiping from the side or tapping the pages icon <ph id="ph1">![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-page-icon.png)</ph>.
+- 檢視報表中的其他頁面，方法是來自撥動或點選頁面圖示 ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-page-icon.png)。
 
-## Cross-highlight visuals
-Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
+## 跨反白顯示視覺效果
+跨反白顯示的電話的視覺效果報表方式相同，但 Power BI 服務和 [橫向] 檢視中的行動電話上的報告中︰ 當您選取的資料在一個視覺化時，會反白顯示該頁面上的其他視覺效果中的相關的資料。
 
-Read more about <bpt id="p1">[</bpt>filtering and highlighting in Power BI<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+深入了解 [篩選和反白顯示在 Power BI 中](powerbi-service-about-filters-and-highlighting-in-reports.md)。
 
-## Select visuals
-In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
+## 選取視覺效果
+當您選取視覺效果、 電話報表會反白顯示該 visual 著重於，逐出畫布筆勢的電話報表。
 
-With the visual selected, you can do things like scroll within the visual. To de-select a visual, just touch anywhere outside the visual area.
+與選取視覺效果，您可以像是視覺效果中的捲軸。 若要取消選取視覺效果，只要觸碰任何地方的可見區域外。
 
-## Open visuals in focus mode
-Phone reports offer a focus mode, so you can focus on a single visual to get a bigger view of the visual and explore the visual and the report.
+## 焦點模式中開啟視覺效果
+電話報表會提供為焦點的模式，讓您可以專注於單一視覺效果，取得視覺效果的較大的檢視和瀏覽視覺效果和報表。
 
-What you do in focus mode carries over to the report canvas and vice versa, for a seamless exploration experience. For example, if you highlight a value in a visual, then return to the whole report, the report as a whole will be filtered to the value you highlighted in the visual.
+要在焦點模式承報表畫布，反之亦然，順暢地瀏覽經驗。 比方說，如果您反白顯示視覺效果中的值，然後返回 [整份報表，會篩選整個報表視覺效果中以反白顯示的值。
 
-Some actions are only possible in focus mode, due to screen size constraints:
+某些動作時，才可以在焦點模式中，因為螢幕的大小限制︰
 
-- <bpt id="p1">**</bpt>Drill down<ept id="p1">**</ept>, then back up into the information displayed in the visual, if hierarchy levels are defined.
-    Read more about <bpt id="p1">[</bpt>drilling down and up<ept id="p1">](powerbi-service-drill-down-in-a-visualization.md)</ept> in Power BI.
-- <bpt id="p1">**</bpt>Sort<ept id="p1">**</ept> the values in the visual.
-- <bpt id="p1">**</bpt>Revert<ept id="p1">**</ept>: Clear exploration steps you've taken on a visual and revert to the definition set when the report was created.
+- 
+              **向下切入**, ，然後備份到顯示視覺效果，如果階層層級定義的資訊。
+  深入了解 [向下和向上切入](powerbi-service-drill-down-in-a-visualization.md) Power BI 中。
+- 
+            **排序** 視覺效果中的值。
+- 
+            **還原**︰ 清除探勘步驟您已經在視覺上並還原為報表建立時設定的定義。
 
-    Revert is available at the report level, clear all exploration from all visuals, or at the visual level, clearing all exploration from the specific visual selected.   
+    還原在報表層級、 清除所有視覺效果，從所有的瀏覽或在視覺效果層級，清除所有探勘從選取的特定視覺效果。   
 
 ### 請參閱
-- [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
-- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [建立報表的 Power BI 電話應用程式最佳化](powerbi-desktop-create-phone-report.md)
+- [在 Power BI 建立儀表板電話檢視](powerbi-service-create-dashboard-phone-view.md)
+- 更多的問題嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

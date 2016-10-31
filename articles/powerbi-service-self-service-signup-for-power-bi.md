@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Self-Service Sign up for Power BI"
-   description="Self-Service Sign up for Power BI. This looks at how an individual can sign up for Power BI (free), a trial or purchase Power BI Pro."
+   pageTitle="自助式註冊 Power bi"
+   description="自助式註冊 Power bi。 這會查看如何個人可以註冊 Power BI （免費），試用或購買 Power BI Pro。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -19,157 +19,162 @@
    ms.workload="powerbi"
    ms.date="10/10/2016"
    ms.author="asaxton"/>
-# Self-service sign up for Power BI
+# 自助式註冊 Power bi
 
-Signing up for Power BI, as an individual, is easy! You can choose to use a free account, a Pro trial account, or purchase Power BI Pro, even if you are in an existing organization. Once you have determined which you would like to use, this article will walk you through the steps to get up and running.
+註冊 Power BI，為個別且很容易 ！ 您可以選擇使用免費帳戶、 Pro 試用帳戶或購買 Power BI Pro，即使您是在現有的組織。 一旦您決定您想要使用，本文將逐步引導您逐步完成啟動並執行。
 
-> [AZURE.NOTE] If you are in an organization, individual sign up may be disabled. See <bpt id="p1">[</bpt>Individual Sign up has been turned off<ept id="p1">](#individual-sign-up-has-been-turned-off)</ept> for more information if you get an error indicating it has been turned off.
+> [AZURE.NOTE] 如果您是在組織中，個別登上可能會停用。 請參閱 [個別註冊關閉](#individual-sign-up-has-been-turned-off) 如需詳細資訊如果您收到錯誤，指出已關閉。
 
-## What email address can be used with Power BI?
+## 哪些電子郵件地址可以搭配 Power BI？
 
-Power BI requires that you use a work, or school, email address to sign up. Power BI does not support email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com and others.
+Power BI 會要求您使用公司或學校，若要註冊的電子郵件地址。 Power BI 不支援取用者的電子郵件服務或電信提供者所提供的電子郵件地址。 這包括 outlook.com、 hotmail.com、 gmail.com 等等。
 
-If you try to sign up with a personal email address, you will get a message indicating to use a work or school email address.
+如果您嘗試登入，以個人的電子郵件地址，就會使用工作或學校電子郵件地址的訊息。
 
-> [AZURE.NOTE] Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin.
+> [AZURE.NOTE] Power BI 不支援自助註冊.gov 或.mil 位址這一次。 請連絡您的 O365 管理員。
 
-## Signing up for Power BI (free) as an individual
+## Power BI （免費） 的個人身分登入
 
-The quickest way to sign up for Power BI is to sign up for a Power BI (free) account. There is no cost to this account, and it allows you to use many of the features available in the service. [進一步了解](https://powerbi.microsoft.com/pricing/)
+若要註冊 Power BI 最快的方式是註冊 Power BI （免費） 的帳戶。 此帳戶，不需要支付費用，它可讓您使用多個服務提供的功能。 [進一步了解](https://powerbi.microsoft.com/pricing/)
 
-> [AZURE.NOTE] If you receive a message that we already know you, try navigating to https://app.powerbi.com and signing in.
+> [AZURE.NOTE] 如果您收到一則訊息，我們已經知道您嘗試瀏覽至 https://app.powerbi.com，登入。
 
-To sign up for Power BI, you can do the following.
+若要註冊 Power BI，您可以執行下列程式碼。
 
-1.  Browse to powerbi.com.
+1.  瀏覽至 powerbi.com。
 
-2.  Select <bpt id="p1">**</bpt>Get started free<ept id="p1">**</ept>.
+2.  選取 **開始免費**。
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
 
-    Or you can go to <bpt id="p1">**</bpt>Products<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Pricing<ept id="p2">**</ept> and select <bpt id="p3">**</bpt>Sign up<ept id="p3">**</ept>.
+    您可以跳到 **產品** > **定價** ，然後選取 **註冊**。
     
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1a.png)
 
-3.  In the dialog to choose how to get started, select <bpt id="p1">**</bpt>Sign up<ept id="p1">**</ept> under Power BI.
+3.  在 [選擇如何開始使用] 對話方塊中，選取 **註冊** 在 Power BI。
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
 
-4.  Enter the email address you are signing up with, and then select <bpt id="p1">**</bpt>Sign up<ept id="p1">**</ept>. Be sure your email address is allowed for sign up. [進一步了解](#what-email-address-can-be-used-with-power-bi)
+4.  輸入您要註冊，然後再選取電子郵件地址 **註冊**。 請務必允許註冊的電子郵件地址。 [進一步了解](#what-email-address-can-be-used-with-power-bi)
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
 
-5.  If your account does not exist within an organization, you will get a message indicating to check your email.
+5.  如果您的帳戶在組織內不存在，就會指出要檢查您的電子郵件訊息。
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 
-    If your account is part of an existing organization, you will get a message asking you to sign in with that account. Select <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept> and sign in with your Office 365 login.
+    如果您的帳戶屬於現有的組織，您會取得訊息，詢問您要使用該帳戶登入。 選取 **繼續** 並以您的 Office 365 登入登入。
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
 
-6.  If you received an email, select the link within the email to verify your email address. This will bring you back into the sign up flow. You may need to supply some additional information about yourself.
-7.  If you have an existing Office 365 account, you will see a message asking you to select <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>.
+6.  如果您收到一封電子郵件時，選取 [驗證您的電子郵件地址的電子郵件中的連結。 這將會讓您回到恢復註冊流程。 您可能需要提供一些關於您自己的額外資訊。
+7.  如果您有現有的 Office 365 帳戶，您會看到一個訊息，要求您選取 **啟動**。
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup6.png)
     
-8.  You will then be taken to https://app.powerbi.com and you can begin using Power BI as a free user.
+8.  您將會被重新導向 https://app.powerbi.com，就可以開始使用 Power BI 做為可用的使用者。
 
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a free account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>.
+當您在服務中，您可以確認您有一個免費帳戶，移至 **齒輪** 圖示，然後選取 **管理個人儲存體**。
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
  
-## Power BI Pro 60 day trial
+## Power BI Pro 60 天試用版
 
-After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see <bpt id="p1">[</bpt>Power BI Pricing<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>. To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
+您已註冊您的免費帳戶之後，您可以選擇性地選擇免費試用專業版。 您必須於試用期間所有的 Pro 功能的存取權。 Power BI Pro 有免費版本的 Power BI 的所有功能和其他共同作業和資料重新整理功能。 它也會有更高的資料容量和串流處理限制的資料。 如需詳細資訊，請參閱 [Power BI 定價](https://powerbi.microsoft.com/pricing)。 若要試用 60 天免費試用版 Power BI Pro，登入 Power BI，然後再試其中的 Power BI Pro 功能︰
 
--   Create and publish customized <bpt id="p1">[</bpt>content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>
--   Share <bpt id="p1">[</bpt>refreshable<ept id="p1">](powerbi-refresh-data.md)</ept> team dashboards and reports using <bpt id="p2">[</bpt>groups<ept id="p2">](powerbi-service-create-a-group-in-power-bi.md)</ept>
--   Connect to on-premises data using <bpt id="p1">[</bpt>Personal Gateway<ept id="p1">](powerbi-personal-gateway.md)</ept>
--   Enable live interactive connectivity to the following sources:
+-   建立及發行自訂 [內容組件](powerbi-service-organizational-content-packs-introduction.md)
+-   共用 [可重新整理](powerbi-refresh-data.md) 小組儀表板和報表使用 [群組](powerbi-service-create-a-group-in-power-bi.md)
+-   連接到內部資料使用 [個人閘道](powerbi-personal-gateway.md)
+-   啟用即時的互動式連線到下列來源︰
     -   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
-    -   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md)
-    -   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
+    -   [Azure HDInsight 上的 Spark](powerbi-spark-on-hdinsight-with-direct-connect.md)
+    -   [Azure SQL 資料倉儲](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
     -   [Azure SQL 資料庫](powerbi-azure-sql-database-with-direct-connect.md)
 
-When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting <bpt id="p1">**</bpt>Manage personal storage<ept id="p1">**</ept>. Then select <bpt id="p1">**</bpt>Try Pro for free<ept id="p1">**</ept> on the right.
+當您嘗試這些功能時，系統會提示您免費的試用版。 您也可以選擇讓前往齒輪圖示，並選取使用它 **管理個人儲存體**。 然後選取 **免費試用的 pro 提示** 右邊。
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
  
-Then you can select <bpt id="p1">**</bpt>Start trial<ept id="p1">**</ept>.
+接著，您可以選取 **開始試用**。
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
 
 > **附註**
 >
->-   If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
->-   Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the <bpt id="p1">**</bpt>manage storage<ept id="p1">**</ept> page in Power BI.
->-   If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a <bpt id="p1">[</bpt>Power BI Pro subscription trial<ept id="p1">](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&amp;dl=POWER_BI_PRO)</ept>.  You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. [進一步了解](powerbi-admin-purchasing-power-bi-pro.md)
+>-   如果您需要更多時間評估 Power BI，您可以要求延長 60 天的試用期。
+>-   利用此產品中的 Power BI Pro 試用版的使用者不會出現在 Office 365 系統管理入口網站 Power BI 專業人員的試用使用者 （它們顯示為 Power BI 免費使用者）。 它們會不過，顯示為 Power BI Pro 試用版中的使用者 **可管理儲存體** Power BI 中的頁面。
+>-   如果您是 IT 系統管理員想要取得並部署至組織中的多個使用者的 Power BI 試用版授權，而不需要單獨接受試用版條款的個別使用者，您可以註冊 [試用 Power BI Pro 訂閱](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO)。  您必須是 Office 365 全域或計費管理員或建立新的租用戶註冊試用版的系統管理員。 [進一步了解](powerbi-admin-purchasing-power-bi-pro.md)
  
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a Pro trial account by going to the <bpt id="p1">*</bpt><bpt id="p2">*</bpt>gear<ept id="p2">*</ept> icon and selecting <ept id="p1">*</ept><bpt id="p3">*</bpt>Manage personal storage<ept id="p3">*</ept>*.
+當您在服務中，您可以確認您有 Pro 試用帳戶，請前往 **齒輪* 圖示，然後選取 **管理個人儲存體**。
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
-## Purchasing Power BI Pro as an individual
+## 採購 Power BI Pro 以個人身分
 
-You can purchase Power BI Pro from the start, or can choose to upgrade to Pro after your free trial has ended. If your account is part of an organization, you can purchase Power BI Pro as an individual if your organization has not disabled individual purchases.
+您可以購買 Power BI Pro 從 [開始]，或者可以選擇您的免費試用結束後，升級到 Pro。 如果您的帳戶是組織的一部分，您可以購買 Power BI Pro 以個人身分如果組織未停用個別購買情況。
 
-To purchase Power BI Pro as an individual, you can do the following.
+若要購買 Power BI Pro 以個人身分，您可以執行下列程式碼。
 
-1.  Browse to <bpt id="p1">[</bpt>powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>.
+1.  瀏覽至 [powerbi.com](https://www.powerbi.com)。
 
-2.  Select <bpt id="p1">**</bpt>Products<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Pricing<ept id="p2">**</ept>.
+2.  選取 **產品** > **定價**。
 
-3.  Select <bpt id="p1">**</bpt>Purchase<ept id="p1">**</ept>.
+3.  選取 **購買**。
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro1.png)
 
-4.  Answer the questions that are presented to guide the purchase. As an individual, there will be an option to select <bpt id="p1">**</bpt>Myself<ept id="p1">**</ept>. 
+4.  回答引導購買所提出的問題。 為個別且將會選取一個選項 **自行**。 
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro2.png)
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [進一步了解](powerbi-admin-purchasing-power-bi-pro.md)
+    > 
+            **請注意**︰ 如果您有興趣購買您的小組或組織所需的選項，您可以閱讀貴組織購買 Power BI Pro。 [進一步了解](powerbi-admin-purchasing-power-bi-pro.md)
 
-5.  If you aren’t already signed into Power BI, you will need to sign in with your Power BI (free) account.
+5.  如果您尚未登入 Power BI，您必須使用帳戶登入 Power BI （免費）。
 
-6.  You will need to provide information to make the purchase.
+6.  您必須提供資訊以進行購買。
 
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a Pro account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>.
+當您在服務中，您可以確認您有 Pro 帳戶移至 **齒輪** 圖示，然後選取 **管理個人儲存體**。
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro3.png)
 
-## Individual Sign up has been turned off
+## 個別註冊已關閉
 
-When trying to sign up for Power BI, you may encounter the following message.
+若要註冊 Power BI 時，可能會遇到下列的訊息。
 
     Your IT department has turned off signup for Microsoft Power BI.
  
 ![](media/powerbi-service-self-service-signup-for-power-bi/allowadhocsubscriptionfalse.png)
 
-This could be because your organization has disabled individual sign ups. It could also be because you purchased Office 365 through a partner. 
+這可能是因為您的組織已停用個別登 ups。 它也可能是因為您透過協力廠商購買 Office 365。 
             [深入了解](powerbi-admin-syndication-partner.md)。
 
-If your organization has disabled individual sign ups, you will need to work with your IT group to get a Power BI license assigned to your account in order to continue.
+如果您的組織已停用個別登 ups，您必須使用您的 IT 團隊以取得 Power BI 授權指派給您的帳戶，才能繼續。
 
 ## 疑難排解
 
-In many cases, registering for Power BI can be achieved by following the simple self-service signup process listed above. However, there are several reasons why you may not be able to complete self-service signup.  The table below summarizes some of the most common reasons you may not be able to complete signup and ways you can workaround these issues.
+在許多情況下，可以依照上面所列的簡單自助式註冊程序達成 Power bi 註冊。 不過，有幾個原因為何您可能無法完成自助註冊。  下表摘要說明一些最常見的原因，您可能無法完成註冊，以及可以解決這些問題的方法。
 
-| **Symptom / Error Message** | **Cause and Workaround** |
+| **徵兆 / 錯誤訊息** | **原因和解決方法** |
 |---|---|
-| <bpt id="p1">**</bpt>Personal email addresses (e.g. nancy@gmail.com)<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> 或 <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Power BI does not support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To complete signup, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can <bpt id="p1">[</bpt>register for a new Office 365 trial subscription and use that email address to sign up<ept id="p1">](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)</ept>. |
-| <bpt id="p1">**</bpt>.gov or .mil email addresses<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *Power BI unavailable: Power BI is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.* <br /><br /> 或 <br /><br /> *We can't finish signing you up. It looks like Microsoft Power BI isn't currently available for your work or school.* | Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin. |
-| <bpt id="p1">**</bpt>Self-service signup disabled<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *We can't finish signing you up. Your IT department has turned off signup for Microsoft Power BI. Contact them to complete signup.* <br /><br /> 或 <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Your organization’s IT administrator has disabled self-service signup for Power BI. <br /><br /> To complete signup, contact your IT administrator and ask them to follow the instructions on the page below to allow existing users to sign up for Power BI and to allow new users to join your existing tenant. <br/><br/> You may also experience this problem if you signed up for Office 365 through a partner. [進一步了解](powerbi-admin-syndication-partner.md) <br /><br /> [Power BI in Your Organization](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
-| <bpt id="p1">**</bpt>Email address is not an Office 365 ID<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To complete signup, use the ID that your organization has assigned to for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your IT administrator. <br /><br /> If you still can't sign up and are able to complete a more advanced setup process, you can <bpt id="p1">[</bpt>register for a new Office 365 trial subscription and use that email address to sign up<ept id="p1">](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)</ept>. |
+| 
+            **個人電子郵件地址 (例如 nancy@gmail.com)** 您收到訊息，以在註冊期間如下︰ <br /><br /> *您已輸入個人電子郵件地址︰ 請輸入您的公司電子郵件地址，因此我們可以安全地儲存貴公司的資料。* <br /><br /> 或 <br /><br /> *看起來像個人的電子郵件地址。 輸入您工作的地址，讓我們可以先將您與其他人連線，在您的公司。 此外，別擔心。 我們將不會與任何人共用您的地址。* | Power BI 不支援取用者的電子郵件服務或電信提供者所提供的電子郵件地址。 <br /><br /> 若要完成註冊，請嘗試再次使用指派的公司或學校電子郵件地址。 <br /><br /> 如果仍然無法註冊，而且願意完成更進階的安裝程序，您可以 [註冊新的 Office 365 試用訂閱和使用該電子郵件地址登入，](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)。 |
+| 
+            **.gov 或.mil 電子郵件地址** 您收到訊息，以在註冊期間如下︰ <br /><br /> *Power BI 無法使用︰ Power BI 不適用於具有.gov 或.mil 電子郵件地址的使用者在此階段。 使用另一個工作電子郵件地址，或稍後再回來查看。* <br /><br /> 或 <br /><br /> *我們無法完成您註冊。 看來 Microsoft Power BI 目前無法使用為您的工作或學校。* | Power BI 不支援自助註冊.gov 或.mil 位址這一次。 請連絡您的 O365 管理員。 |
+| 
+            **停用自助式註冊** 您收到訊息，以在註冊期間如下︰ <br /><br /> *我們無法完成您註冊。 您的 IT 部門已經關閉 Microsoft Power BI 註冊。 您可以連絡他們完成註冊。* <br /><br /> 或 <br /><br /> *看起來像個人的電子郵件地址。 輸入您工作的地址，讓我們可以先將您與其他人連線，在您的公司。 此外，別擔心。 我們將不會與任何人共用您的地址。* | 貴組織的 IT 系統管理員已停用自助式註冊 Power bi。 <br /><br /> 若要完成註冊，請連絡您的 IT 系統管理員並要求他們以允許註冊 Power BI，並允許新使用者加入現有的租用戶的現有使用者] 頁面上，依照指示。 <br/><br/> 如果您註冊 Office 365 透過合作夥伴，也可能會遇到這個問題。 [進一步了解](powerbi-admin-syndication-partner.md) <br /><br /> [在您的組織中的 power BI](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
+| 
+            **電子郵件地址不是 Office 365 ID** 您收到訊息，以在註冊期間如下︰ <br /><br /> *我們找不到您在 contoso.com。  您在公司或學校使用不同的識別碼？ <br /><br /> 請嘗試登入，以及如果無法運作，請連絡您的 IT 部門。* | 您的組織使用 Id 來登入 Office 365 和其他 Microsoft 服務，不同於您的電子郵件地址。  例如，電子郵件地址可能 Nancy.Smith@contoso.com，但您的識別碼是 nancys@contoso.com。 <br /><br /> 若要完成註冊，用於指派給您的組織識別碼登入 Office 365 或其他 Microsoft 服務。  如果您不知道這是什麼，請連絡您的 IT 系統管理員。 <br /><br /> 如果您仍然無法註冊，並可以完成更進階的安裝程序，您可以 [註冊新的 Office 365 試用訂閱和使用該電子郵件地址登入，](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)。 |
 
 ## 請參閱
 
-[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
-[Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)  
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[採購 Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+[無法新增 Office 365 夥伴訂用帳戶的 Power BI](powerbi-admin-syndication-partner.md)  
+[Power BI 組織中的 （免費）](powerbi-admin-powerbi-free-in-your-organization.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

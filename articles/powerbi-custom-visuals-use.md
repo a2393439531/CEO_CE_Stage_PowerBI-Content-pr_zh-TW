@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add a custom visual to a report (Desktop)"
-   description="Add a custom visual to a report in Desktop"
+   pageTitle="報表中加入自訂視覺效果 （桌面）"
+   description="桌面中對報表新增的自訂視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,54 +20,55 @@
    ms.date="09/30/2016"
    ms.author="mihart"/>
 
-# Add a custom visual to a report (Desktop)  
+# 報表中加入自訂視覺效果 （桌面）  
 
-You've <bpt id="p1">[</bpt>downloaded a custom visual template<ept id="p1">](powerbi-custom-visuals-download-from-the-gallery.md)</ept> and saved it to your computer or another location.  The next step is to import that visual template into a report so that it is added, as an option, to your Visualization pane.
+您已經 [下載自訂的視覺化範本](powerbi-custom-visuals-download-from-the-gallery.md) 並儲存至您的電腦或另一個位置。  匯入的視覺化範本報表以便加入，為您的視覺效果] 窗格的選項，為下一個步驟。
 
 ![](media/powerbi-custom-visuals-use/pbi-custom-viz-icon.png)
 
 >[AZURE.IMPORTANT]
-A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
-When a report with a custom visual is saved using the <bpt id="p1">**</bpt>Save As<ept id="p1">**</ept> option, a copy of the custom visual template is saved with the new report.
+自訂的視覺化範本新增至特定報表匯入。 如果您想要在另一個報表中使用的視覺化範本，您需要將它匯入以及該報表。
+使用儲存的自訂視覺效果時 **另存新檔** 選項，自訂的視覺化範本的複本儲存在新的報表。
 
 
-1. Open Power BI Desktop and select the report where you want to add the custom visualization.  Open the report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>.
+1. 開啟 Power BI Desktop，然後選取您要加入自訂視覺效果的報表。  在報表開啟 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md)。
 
-2.  There are two options to import a custom visual template: from the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu or from the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane.
+2.  有兩個自訂的視覺化範本匯入選項︰ 從 **檔案** 功能表或從 **視覺效果** 窗格。
 
-    **From the Desktop File menu**
+    **從桌面檔案功能表**
 
-    - On the report <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Import<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Power BI Custom Visual<ept id="p3">**</ept>. You must be in the editing view.  
+    - 在報表上 **檔案** ] 功能表上，選擇 [ **匯入** &gt; **Power BI 自訂視覺**。 您必須在 [編輯] 檢視。  
       ![](media/powerbi-custom-visuals-use/power-bi-import.png)
 
-    **From the Visualization pane**
-    - In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, choose <bpt id="p2">**</bpt>Insert (…)<ept id="p2">**</ept>.
+    **從 [視覺效果] 窗格**
+    - 在 **視覺效果** ] 窗格中，選擇 [ **插入 （...）**。
       ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
-    - Select <bpt id="p1">**</bpt>Import a custom visual<ept id="p1">**</ept>.  
+    - 選取 **匯入自訂視覺效果**。  
       ![](media/powerbi-custom-visuals-use/InsertPane.png)  
 
-3. <bpt id="p1">**</bpt>Review the warning<ept id="p1">**</ept>.
+3. 
+            **檢閱警告**。
 
-    A custom visual has access to the data in the report you use in the custom visual, and can perform actions on your behalf. If you share the report with others, when they view the report the custom visual can do the same, but for your co-workers. Take care to review the custom visual to ensure it comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.  
+    自訂視覺項目具有您在使用自訂視覺效果，並可以代替您執行動作的報表中資料的存取權。 如果在檢視報表時，與其他人共用報表自訂視覺效果就可以完成相同，但針對您的同事。 請小心檢閱自訂視覺效果，以確定其來自可信任的來源。 Microsoft 建議您搭配您的 IT 部門如果您不確定是否要使用特定自訂視覺化您取得 Power BI 視覺效果庫、 透過電子郵件，或從其他來源。  
 
     ![](media/powerbi-custom-visuals-use/caution.png)
 
-4. Select a .pbiviz file in the <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> dialog.
+4. 選取在.pbiviz 檔案 **開啟** ] 對話方塊。
 
-5. An icon (also called a <bpt id="p1">*</bpt>template<ept id="p1">*</ept>) is added to your <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane.  
+5. 圖示 (也稱為 *範本*) 加入至您 **視覺效果** 窗格。  
 
     ![](media/powerbi-custom-visuals-use/VisualUse.png)
 
-6. Select the custom visual template to add it to your report as you would with any of the other templates in the Visualizations pane. Add fields and filters and build your visual.
+6. 選取自訂的視覺化範本，以如同使用任何視覺效果] 窗格中的其他範本加入至報表。 加入欄位和篩選器，並建立 visual studio。
 
-7.  Format the custom visual as you would any other visual.  From the <bpt id="p1">**</bpt> Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon. The formatting options available will vary by visual type.
+7.  如同任何其他 visual 格式化自訂視覺效果。  從 ** 視覺效果** ] 窗格中，選取 [小畫家] 圖示。 可用的格式化選項會根據視覺效果類型而有所不同。
 
 ### 請參閱
 
-[Add a custom visual to a report in the Power BI Service](powerbi-custom-visuals-add-to-report.md)  
-[Create and submit a custom visual](powerbi-custom-visuals-create-for-the-gallery.md)  
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-Back to <bpt id="p1">[</bpt>Custom Visualizations in Power BI<ept id="p1">](powerbi-custom-visuals.md)</ept>  
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[自訂視覺效果加入 Power BI 服務中的報表](powerbi-custom-visuals-add-to-report.md)  
+[建立並提交的自訂視覺效果](powerbi-custom-visuals-create-for-the-gallery.md)  
+[在 Power BI 中的視覺效果](powerbi-service-visualizations-for-reports.md)  
+回到 [中 Power BI 自訂視覺效果](powerbi-custom-visuals.md)  
+[Power BI 自訂視覺效果的組件庫](https://app.powerbi.com/visuals)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

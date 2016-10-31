@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI tile into an app code listing"
-   description="Walkthrough to Integrate a tile into an app - Load a tile into an IFrame"
+   pageTitle="將 Power BI 磚整合到應用程式程式碼清單"
+   description="逐步解說將磚整合到應用程式-載入 IFrame 磚"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,19 +20,19 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Integrate a tile into an app code listing
+# 將磚整合到應用程式程式碼清單
 
 ## 簡介
 
-In the <bpt id="p1">[</bpt>Integrate a tile into an app walkthrough<ept id="p1">](powerbi-developer-integrate-tile.md)</ept> you learn how to embed a <bpt id="p2">**</bpt>tile<ept id="p2">**</ept> using an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a tile sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)</ept> which shows all the parts to embed a tile. Alternatively, you can view the essential source code below. Please note this is only the essential source code, not an entire web project.
+在 [磚整合應用程式逐步解說](powerbi-developer-integrate-tile.md) 您了解如何將內嵌 **磚** 使用 **IFrame**。 您可以下載完整 [整合並排顯示範例](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) 會顯示內嵌方塊的所有組件。 或者，您可以檢視下列基本來源的程式碼。 請注意這是只有基本來源的程式碼，不是整個 web 專案。
 
-**Sample Source Code**
+**範例的原始程式碼**
 
-- [Sample JavaScript to load a tile into an IFrame (Default.aspx)](#default-aspx)
-- [Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)](#default-code)
+- [將方塊載入 IFrame (Default.aspx) 的範例 JavaScript](#default-aspx)
+- [範例 C# 程式碼來取得存取權杖，取得儀表板，並取得並排顯示 (Default.aspx.cs)](#default-code)
 
 <a name="default-aspx"/>
-## Sample JavaScript to load a tile into an IFrame (Default.aspx)
+## 將方塊載入 IFrame (Default.aspx) 的範例 JavaScript
 ```
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
@@ -80,7 +80,7 @@ In the <bpt id="p1">[</bpt>Integrate a tile into an app walkthrough<ept id="p1">
 ```
 
 <a name="default-code"/>
-## Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)
+## 範例 C# 程式碼來取得存取權杖，取得儀表板，並取得並排顯示 (Default.aspx.cs)
 ```
 /* NOTE: This code is for sample purposes only. In a production application, you could use a MVC design pattern.
 * In addition, you should provide appropriate exception handling and refactor authentication settings into
@@ -289,5 +289,5 @@ public class PBITile
 
 ## 請參閱
 
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[將磚整合到應用程式逐步解說](powerbi-developer-integrate-tile.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

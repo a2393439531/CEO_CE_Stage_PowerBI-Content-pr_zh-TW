@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create and Configure a Dashboard"
-   description="Customize dashboards in Power BI"
+   pageTitle="建立及設定儀表板"
+   description="自訂 Power bi 儀表板"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,28 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create and Configure A Dashboard
+# 建立及設定儀表板
 
-<bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> in Power BI are one-page collections of visualizations that are created from within the Power BI service. You create dashboards by <bpt id="p1">**</bpt>pinning<ept id="p1">**</ept> visualizations from reports that you authored and published using Power BI Desktop, or visualizations you created within the Power BI service itself. <bpt id="p1">**</bpt>Pinning<ept id="p1">**</ept> a visual to a dashboard is a lot like pinning a picture to a corkboard on a wall - it sticks the visual there, in a particular spot, for others to see. To pin a visual, open its report on the Power BI service. Hover over the visual you want to pin and select the <bpt id="p1">**</bpt>pin<ept id="p1">**</ept> icon.
+
+            **儀表板** Power BI 中都是一頁的集合都從建立 Power BI 服務中的視覺效果。 建立儀表板由 **固定** 視覺效果，從您撰寫和使用 Power BI Desktop 發行或視覺效果 Power BI 中建立服務本身的報表。 
+            **釘選** 視覺效果的儀表板，很像固定在牆上的圖片給 corkboard-就會那里視覺化，在特定的位置，讓其他人看見。 若要釘選視覺效果，請開啟它的報表上的 Power BI 服務。 將滑鼠停留在您想要釘選，選取 [視覺效果 **pin** 圖示。
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_1.png)
 
-A dialog appears, where you select a destination dashboard for the visual from the drop-down menu, or you can create a new dashboard. You also get a preview of what the pinned visual will look like in the dashboard. You can pin visualizations from multiple reports and pages to a single dashboard, allowing you to combine different datasets and sources into a single page of insights.
+對話方塊隨即出現，其中您選取視覺效果的目的地儀表板，從下拉式功能表中，或者您可以建立新的儀表板。 您也可以取得預覽的儀表板的釘選的視覺外觀。 您可以釘選視覺效果從多個報表和網頁的單一儀表板，可讓您深入探討的單一頁面中結合不同資料集和來源。
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_2.png)
 
-On <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept>, you can add any sort of visualization including graphs, maps, images, and shapes, by "pinning" them. Once a visual is pinned to a dashboard, it's called a <bpt id="p1">**</bpt>tile<ept id="p1">**</ept>.
+在 **儀表板**, ，您可以新增任何類型的視覺效果包括圖表、 地圖、 影像和圖形，由 「 固定 」 它們。 一旦視覺效果已釘選到儀表板，它會呼叫 **磚**。
 
-Your dashboards, including any new ones, appear in the Dashboards section on the left side of the Power BI service. Select a dashboard from the list to view it.
+儀表板，包括任何新的區段中顯示儀表板左邊 Power BI 服務。 從清單檢視中選取儀表板。
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_3.png)
 
-You can change the layout of visuals on a dashboard however you'd like. To resize a tile, drag its handles in or out. To move a tile, simply click and drag it to a different location on the dashboard. Hover over a tile and click the <bpt id="p1">**</bpt>pencil<ept id="p1">**</ept> icon to open the <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept>, where you can change the <bpt id="p3">**</bpt>Title<ept id="p3">**</ept> or <bpt id="p4">**</bpt>Subtitle<ept id="p4">**</ept>.
+不過，您想要您可以變更儀表板上的視覺效果的版面配置。 若要調整並排顯示，請拖曳其控點，或縮小。 若要移動的並排顯示，只要按一下，然後將它拖曳到不同的位置在儀表板。 將滑鼠停留在方塊中，按一下 [ **鉛筆** 圖示以開啟 **並排顯示詳細資料**, ，您可以在其中變更 **標題** 或 **副標題**。
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_4.png)
 
-Click on a dashboard tile to view the report from which it originated. This lets you quickly view the underlying data beneath a visual. You can also change that link by using the <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> field in <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept>.
+按一下儀表板] 磚來檢視的報表的來源。 這可讓您快速檢視下方視覺效果的基礎資料。 您也可以藉由變更該連結 **組自訂連結** 欄位 **並排顯示詳細資料**。
 
-You can pin tiles from one dashboard to another, for example if you have a collection of dashboards and want to create one summary board. The process is the same: hover over the tile and select the <bpt id="p1">**</bpt>pin icon<ept id="p1">**</ept>. Dashboards are easy to create, and to change. And you can customize them to make your one-page dashboard show exactly what it should.
+您可以釘選到另一個，例如，如果您有儀表板的集合，而且想要建立一個摘要面板的並排顯示一個儀表板。 處理方式相同︰ 停留在該方塊，然後選取 **釘選圖示**。 儀表板也可輕鬆建立，並將變更。 而且您可以自訂它們進行完全什麼它應該會顯示一個頁面儀表板。

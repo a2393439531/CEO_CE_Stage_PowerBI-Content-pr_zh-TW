@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Gauges and single-number cards"
-   description="Drive fast dashboard insights with gauges and numbers"
+   pageTitle="量測計和單一數字的卡片"
+   description="磁碟機快速的儀表板 insights 與量測計和數字"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Gauges and Single Number Cards
+# 如何使用量測計和單一數字的卡片
 
-Generally, visualizations are used to compare two or more different values. However, sometimes when building reports you may want to track a just single Key Performance Indicator (KPI) or metric over time. The way to do this in Power BI Desktop is with a <bpt id="p1">**</bpt>Gauge<ept id="p1">**</ept> or <bpt id="p2">**</bpt>single number<ept id="p2">**</ept> card visual. To create a blank chart of either type, select its icon from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+一般而言，視覺效果用來比較兩個或多個不同的值。 不過，某些情況下建立報表，您可能要追蹤一段時間是只是單一關鍵效能指標 (KPI) 或公制。 在 Power BI Desktop 執行此動作的方法是使用 **量測計** 或 **單一數字** 卡 visual。 若要建立這兩種類型的空白圖表，選取 [從] 圖示 **視覺效果** 窗格。
 
 ![](media/powerbi-learning-3-9-create-gauges-cards/3-9_1.png)
 
-Gauges are particularly useful when you are building dashboards and want to show progress towards a particular target. To create a gauge, select its icon from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, and drag the field you want to track into the <bpt id="p2">*</bpt>Value<ept id="p2">*</ept> bucket.
+當您要建置的儀表板，而且想要顯示特定目標的進度，量測計會特別有用。 若要建立量測計，選取 [從] 圖示 **視覺效果** ] 窗格中，然後拖曳您想要追蹤的欄位 *值* 值區。
 
 ![](media/powerbi-learning-3-9-create-gauges-cards/3-9_1a.png)
 
-Gauges appear by default at 50%, or double the <bpt id="p1">*</bpt>Value<ept id="p1">*</ept>, and there are two ways to adjust this setting. To dynamically set the values, drag fields to the <bpt id="p1">*</bpt>Minimum<ept id="p1">*</ept>, <bpt id="p2">*</bpt>Maximum<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>Target<ept id="p3">*</ept> Value buckets. Alternatively, use the visual formatting options to manually customize the range of your gauge.
+量測計會出現在 50%或雙預設 *值*, ，而且有兩種方式可以調整此設定。 若要以動態方式設定值，將欄位拖曳至 *最小值*, ，*最大*, ，和 *目標* 值的值區。 或者，使用 visual 的格式化選項，以手動方式自訂您的量測計的範圍。
 
 ![](media/powerbi-learning-3-9-create-gauges-cards/3-9_2.png)
 
-Card visualizations simply show a numeric representation of a field. By default card visuals use display units to keep the number short, for example displaying "$5bn" instead of "$5,000,000,000". Use the visual formatting options to change the unit being used, or disable it completely.
+卡片視覺效果只是要顯示欄位的數值表示法。 預設卡片視覺效果所使用的顯示單位越短，例如顯示 「 $5bn 」 而不是"$5,000,000,000 」。 使用 visual 的格式選項來變更所使用的單位，或完全停用。
 
 ![](media/powerbi-learning-3-9-create-gauges-cards/3-9_3.png)
 
-One interesting application of cards is to have them display a custom measure that you've concatenated with text. To use the earlier example, with a custom measure your card could include advanced DAX functions and display something like, "Total revenue this year: $5bn" or "Progress on unit sales this year:" and then add the number that represents the progress.
+一個有趣的應用程式的卡是將它們顯示您已與文字串連的自訂量值。 先前範例中，使用您的卡片可能包括進階的 DAX 函數和像是，顯示在自訂量值 」 本年度的總收益: $5bn 」 或 「 銷售單位今年的進度:"，然後加入代表進度的數字。
 
 ![](media/powerbi-learning-3-9-create-gauges-cards/3-9_4.png)

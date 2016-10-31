@@ -1,22 +1,22 @@
-## Update to the latest version 
+## 更新為最新版本 
  
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
+閘道器版本已過期時，可能出現很多問題。  它是一般最好先確定您是在最新版本。  一個月以上未更新閘道，您可能要考慮安裝最新版的閘道，並查看可以重現問題。
 
-## Common issues
+## 常見的問題
 
-Here are a few common issues and resolutions that have helped a number of customers in environments that restrict internet access.
+以下是幾個常見的問題與解決方案已協助限制網際網路存取的環境中的客戶數目。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-### Authentication to proxy server
+### Proxy 伺服器的驗證
 
-Your proxy may rquire authentication from a domain user account. By default, the gateway uses a Service SID for the windows service log on user. Changing the log on user to a domain user can help with this. For more information, see <bpt id="p1">[</bpt>Changing the gateway service account to a domain user<ept id="p1">](powerbi-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user)</ept>.
+您的 proxy 可能 rquire 驗證網域使用者帳戶。 根據預設，閘道會使用 windows 服務登入使用者的服務 SID。 變更到網域的使用者登入使用者能提供協助。 如需詳細資訊，請參閱 [的閘道服務帳戶變更為網域使用者](powerbi-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user)。
 
-### Your proxy only allows ports 80 and 443 traffic
+### 您的 proxy 只允許連接埠 80 和 443 的流量
 
-Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Service Bus will occur on ports other than 443. 
+某些 proxy 來限制流量只連接埠 80 和 443。 根據預設，Azure 服務匯流排通訊會發生連接埠 443 以外。 
 
-You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. Although, this will greatly reduce performance. You will need to modify the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config<ept id="p1">*</ept> file. Change the value from <ph id="ph1">`AutoDetect`</ph> to <ph id="ph2">`Https`</ph>. This file is located, by default, at <bpt id="p1">*</bpt>C:\Program Files\On-premises data gateway<ept id="p1">*</ept>.
+您可以強制閘道與 Azure 服務匯流排，而不直接 TCP 使用 HTTPS 通訊。 雖然這會大幅降低效能。 您必須修改 *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* 檔案。 將值從 `AutoDetect` 到 `Https`。 這個檔案位於，根據預設，在 *C:\Program Files\On 內部資料閘道*。
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -26,6 +26,6 @@ You can force the gateway to communicate with Azure Service Bus using HTTPS inst
 
 ## 安裝
 
-### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   )
+### 錯誤︰ 無法將使用者新增到群組。  （-2147463168 PBIEgwService 效能記錄使用者）
 
-You may receive this error if you are trying to install the gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the gateway on a machine that is not a domain controller.
+如果您嘗試在網域控制站上安裝閘道，您可能會收到這個錯誤。 不支援在網域控制站上部署。 您必須部署在不是網域控制站的電腦上的閘道。

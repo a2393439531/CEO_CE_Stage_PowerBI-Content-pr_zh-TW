@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Set data alerts in the Power BI service"
-   description="Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service."
+   pageTitle="在 Power BI 服務中設定資料警示"
+   description="了解如何設定警示通知您在儀表板中的資料變更時超出限制您在 Microsoft Power BI 服務中設定。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,97 +21,98 @@
    ms.date="10/04/2016"
    ms.author="mihart"/>
 
-# Data alerts in Power BI service
+# Power BI 服務中的資料警示
 
-Set alerts to notify you when data in your dashboards changes beyond limits you set.  Alerts work for numeric tiles featuring cards and gauges. Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts <bpt id="p1">[</bpt>in the Power BI mobile app for iPhone<ept id="p1">](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)</ept>, <bpt id="p2">[</bpt>Power BI mobile app for Windows<ept id="p2">](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)</ept> and in the Power BI service. They are not available for Power BI Desktop.
+設定警示通知您在儀表板中的資料變更時超出限制您的設定。  警示適用於數值卡以及量測計的磚。 只有您可以查看此設定時，會發出警示，即使您共用儀表板。 資料警示會完全同步處理跨平台。設定與檢視資料警示 [iPhone Power BI 行動應用程式中](powerbi-mobile-set-data-alerts-in-the-iphone-app.md), ，[適用於 Windows 的 Power BI 行動應用程式](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md) 和 Power BI 服務。 它們不適用於 Power BI Desktop。
 
 ![](media/powerbi-service-set-data-alerts/powerbi-alert-types-new.png)
 
-> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
+> [AZURE.WARNING] 資料驅動的警示通知提供您資料的相關資訊。 如果您的行動裝置上檢視 Power BI 資料，且該裝置被偷，我們建議您使用 Power BI 服務關閉所有資料驅動的警示規則。
 
-## Set data alerts in Power BI service
-Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
+## 在 Power BI 服務中設定資料警示
+觀看 Amanda 到她的儀表板上的磚加入某些警示。 然後遵循以下視訊，試試看您自己的逐步指示。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
-This example uses a card tile from the Retail Analysis sample dashboard.
+此範例使用卡片磚零售分析範例儀表板中。
 
-1.  Start on a dashboard. From a dashboard tile, select the ellipses.
+1.  啟動儀表板上。 從儀表板] 方塊中，選取省略符號。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-card.png)
 
-2.  Select the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png)</ph> to add one or more alerts for <bpt id="p1">**</bpt>Total stores<ept id="p1">**</ept>.
+2.  選取鈴鐺圖示 ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png) 新增一或多個警示 **存放區的總**。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-set-alert.png)
 
-3.  To start, ensure the slider is set to <bpt id="p1">**</bpt>On<ept id="p1">**</ept>, and give your alert a title. Titles help you easily recognize your alerts.
+3.  若要開始，請確定滑桿設定為 **上**, ，並提供您警示的標題。 標題幫助您輕鬆地辨識您的通知。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-title.png)
 
-4.  Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if the number of total stores goes above 100. Alerts will appear in our Notification center. And we'll have Power BI send us an email as well.
+4.  向下捲動，並輸入警示的詳細資料。  在此範例中，我們將建立的警示，如果總商店數目降至 100 以上，一天一次通知我們。 在我們的通知中心內，將會顯示通知。 而且我們必須傳送的電子郵件給我們的 Power BI。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-set-alert-details.png)
 
-5. Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.
+5. 選取 **儲存**。
 
 
-## Receiving alerts
-When the data being tracked reaches one of the thresholds you've set, several things will happen. First, Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent. As long as the data is past the threshold, you'll get an alert.
+## 接收警示
+當正在追蹤的資料達到其中一個已設定的閾值時，將會發生幾件事。 首先，Power BI 會檢查以查看是否已超過一小時或 24 小時以上 （取決於您選取的選項） 自上一次警示已傳送。 只要資料已超出臨界值，您會收到警示。
 
-Next, Power BI sends an alert to your notification center and, optionally, in email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.  
+接下來，Power BI 會傳送警示到您的通知中心，並選擇性地在電子郵件中。 每個警示包含直接連結到您的資料。 選取若要查看相關的磚探索、 共用，以及了解詳細的連結。  
 
-1.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
+1.  如果您已經設定傳送電子郵件警示，您會發現類似下面的收件匣中。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alerts-email.png)
 
-2.  Power BI adds a message to your <bpt id="p1">**</bpt>Notification center<ept id="p1">**</ept> and adds a new alert icon to the applicable tile.
+2.  Power BI 新增訊息至您 **通知中心** ，並將新的警示圖示加入至適用的磚。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-notifications.png)
 
-4. Open your Notification center to see the alert details.
+4. 開啟您的通知中心，請參閱警示詳細資料。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-notfication.png)
 
->[AZURE.NOTE] Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+>[AZURE.NOTE] 警示僅用於資料重新整理。 當資料重新整理時，Power BI 會查看警示會為該資料。 如果資料已達到警示的閾值，則會觸發警示。
 
 
 ## 管理警示
-There are three ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, and on an individual tile in the <bpt id="p1">[</bpt>Power BI mobile app on the iPhone<ept id="p1">](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)</ept> or in the <bpt id="p2">[</bpt>Power BI mobile app for Windows 10<ept id="p2">](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)</ept>.
+有三種方式來管理您的通知︰ 儀表板中並排顯示本身，從 Power BI 設定] 功能表，以及在個別的磚上 [iPhone 上的 Power BI 行動應用程式](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) 或 [Power BI for Windows 10 行動裝置應用程式](powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app.md)。
 
-###   From the tile itself
+###   從本身的並排顯示
 
-1. If you need to change or remove an alert for a tile, re-open the <bpt id="p1">**</bpt>Manage alerts<ept id="p1">**</ept> window by selecting the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png)</ph>. All the alerts that you've set for that tile are displayed.
+1. 如果您需要變更或移除磚的警示，請重新開啟 **管理警示** 選取鈴鐺圖示 ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/PBI_iPhoneBellIconUnselect.png)。 會顯示您所設定的並排顯示的所有警示。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-see-alerts.png)。
 
-2. To modify an alert, select the arrow to the left of the alert name.
+2. 若要修改警示，選取的警示名稱左側的箭號。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-see-alerts-arrow.png)。
 
-3. To delete an alert, select the trashcan to the right of the alert name.
+3. 若要刪除警示時，選取右邊的警示名稱垃圾桶。
 
       ![](media/powerbi-service-set-data-alerts/powerbi-see-alerts-delete.png)
 
-###   From the Power BI settings menu
-1. Select the gear icon from the Power BI menubar.
+###   從 Power BI 設定] 功能表
+1. 從 Power BI 功能表列中選取齒輪圖示。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-gear-icon.png)。
 
-2. Under <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> select <bpt id="p2">**</bpt>Alerts<ept id="p2">**</ept>.
+2. 在 **設定** 選取 **警示**。
 
     ![](media/powerbi-service-set-data-alerts/powerbi-alert-settings.png)
 
-3. From here you can turn alerts on and off, open the <bpt id="p1">**</bpt>Manage alerts<ept id="p1">**</ept> window to make changes, or delete the alert.
+3. 從這裡您可以開啟警示開啟及關閉開啟 **管理警示** ] 視窗中進行變更，或刪除警示。
 
 
-## Tips and troubleshooting
+## 秘訣與疑難排解
 
--  Alerts are currently not supported for Bing tiles, or card tiles with date/time measures.
+-  警示目前不支援 Bing 磚，或使用日期/時間量值的卡片磚。
 
--  Alerts only work with numeric data types.
+-  警示只適用於數值資料型別。
 
--  Alerts only work on data that is refreshed. They do not work on static data.
+-  警示僅用於資料重新整理。 它們無法在靜態資料運作。
 
 ### 請參閱
-- [Set data alerts on your iphone](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
-- <bpt id="p1">[</bpt>Get started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept> More questions? [Try the Power BI Community](http://community.powerbi.com/)
+- [在 iphone 上設定資料警示](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)
+- 
+            [開始使用 Power BI](powerbi-service-get-started.md) 更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

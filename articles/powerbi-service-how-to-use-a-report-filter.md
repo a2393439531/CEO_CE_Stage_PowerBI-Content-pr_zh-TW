@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Take a tour of the Filters pane"
-   description="How to use report filters"
+   pageTitle="[篩選] 窗格概觀"
+   description="如何使用報表篩選"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,119 +20,125 @@
    ms.date="10/24/2016"
    ms.author="mihart"/>
 
-# <a name="take-a-tour-of-the-report-filters-pane"></a>Take a tour of the report Filters pane
-This article takes a deep look at the report Filters pane. You'll see the pane in Editing View and in Reading View for Power BI reports.
+# <a name="take-a-tour-of-the-report-filters-pane"></a>導覽報表篩選] 窗格
+這篇文章將探討深層報表篩選] 窗格。 您會看到 Power BI 報表] 窗格和 [讀取檢視中編輯的檢視。
 
-There are many different ways to filter data in Power BI and we recommend first reading <bpt id="p1">[</bpt>About filters and highlighting<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports)</ept>.
+有許多不同的方式，在 Power BI 中篩選資料，因此建議第一次讀取 [需篩選和反白顯示](powerbi-service-about-filters-and-highlighting-in-reports)。
 
-## <a name="working-with-filters"></a>Working with filters  
-Reports can be opened in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> or <bpt id="p2">[</bpt>Reading View<ept id="p2">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>. In Editing View, report owners can <bpt id="p1">[</bpt>add filters to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report)</ept> and those filters are saved with the report. People viewing the report in Reading View can interact with the filters, but cannot save filter changes to the report.
+## <a name="working-with-filters"></a>使用篩選條件  
+可以在中開啟報表 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md) 或 [讀取檢視](powerbi-service-interact-with-a-report-in-reading-view.md)。 報表擁有者可以在 [編輯] 檢視 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report) 和這些篩選器會與報表一起儲存。 讓使用者的檢視讀取檢視中的報表可以使用篩選器，互動，但無法將篩選器變更儲存至報表。
 
-## <a name="filters-in-reading-view"></a>Filters in Reading View
+## <a name="filters-in-reading-view"></a>在讀取檢視裡的篩選器
 
-When a report is open in Reading View, the Filters pane displays along the right side of the report canvas.  
+在讀取檢視中開啟報表時，[篩選] 窗格會顯示報表畫布右邊。  
 
->[AZURE.NOTE] If you don't see the pane, select the arrow in the top-right corner to expand it.
+>[AZURE.NOTE] 如果您沒有看到 [] 窗格中，選取箭頭以展開右上角。
 
-In this example, we've selected a visual that has 6 filters. The report page also has filters, listed under the <bpt id="p1">**</bpt>Page level filters<ept id="p1">**</ept> heading. And the entire report has a filter too:  <bpt id="p1">**</bpt>FiscalYear<ept id="p1">**</ept> is 2013 or 2014.  
+在此範例中，我們已選擇視覺 6 的篩選器。 [報表] 頁面上也有篩選器，底下所列 **頁面層級篩選** 標題。 並在整個報表中有一個篩選太︰  **FiscalYear** 2013年或 2014年。  
 
 ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-filter-visual-level.png)
 
-Some of the filters have the word <bpt id="p1">**</bpt>All<ept id="p1">**</ept> next to them and this means that the entire field is being included as a filter.  For example, <bpt id="p1">**</bpt>Chain(All)<ept id="p1">**</ept> in the screenshot below tells us that this report page includes data about all the store chains.  On the other hand, the report level filter of <bpt id="p1">**</bpt>FiscalYear is 2013 or 2014<ept id="p1">**</ept> tells us that the report only includes data for the fiscal years of 2013 and 2014.
+有些篩選條件有 word **所有** 旁邊它們，這表示整個欄位作為篩選器。  例如， **Chain(All)** 以下螢幕擷取畫面中告訴我們此報表] 頁面包含所有存放區鏈結的相關資料。  相反地，報表層級篩選的 **FiscalYear 是 2013年或 2014年** 告訴我們報表，只包含 2013年和 2014年會計年度的資料。
 
-Anyone viewing this report can interact with these filters.
+檢視此報表的任何人都可以使用這些篩選器互動。
 
--    view the details of the filter by hovering and selecting the arrow next to the filter.
+-    暫留，然後選取篩選條件旁邊的箭號，檢視篩選器的詳細資料。
 
       ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-expan-filter.png)
 
--  change the filter, for example, change <bpt id="p1">**</bpt>Lindseys<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Fashions Direct<ept id="p2">**</ept>.
+-  變更篩選條件，例如，變更 **Lindseys** 到 **的方式直接**。
 
       ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-filter-chain.png)
 
--  delete the filter by selecting the <bpt id="p1">**</bpt>x<ept id="p1">**</ept> next to the filter name.
+-  刪除選取的篩選條件 **x** 篩選器名稱旁邊。
 
-   >[AZURE.NOTE]  Deleting a filter removes it from the list but does not delete the data from the report.  For example, if you delete the <bpt id="p1">**</bpt>FiscalYear is 2013 or 2014<ept id="p1">**</ept> filter, fiscal year data will still remain in the report but it will not longer be filtered to show only 2013 and 2014; it will show all fiscal years the data contains.  However, once you delete the filter, you won't be able to modify it again since it is removed from the list. A better option is to clear the filter by selecting the eraser icon <ph id="ph1">![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png)</ph>.
+   >[AZURE.NOTE]  刪除篩選器從清單中移除，但不會從報表刪除資料。  例如，如果您刪除 **FiscalYear 是 2013年或 2014年** 篩選條件，會計年度資料仍會留在報表中，但它將不會再篩選來顯示只有 2013年和 2014年; 它會顯示所有的會計年度的資料包含。  不過，一旦刪除篩選器時，您將無法再修改它，因為它從清單中移除。 較好的選擇是要清除篩選器，選取 [橡皮擦] 圖示 ![](media/powerbi-service-interact-with-a-report-in-reading-view/power-bi-eraser-icon.png)。
 
    ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-delete-filter.png)
 
-## <a name="filters-in-editing-view"></a>Filters in Editing View
+## <a name="filters-in-editing-view"></a>在 [編輯] 檢視的篩選器
 
-When a report is open in Editing View, the Filters pane displays along the right side of the report canvas in the bottom half of the <bpt id="p1">**</bpt>Visualization pane<ept id="p1">**</ept>.
+在 [編輯] 檢視中開啟報表時，沿著報表的篩選器窗格會顯示畫布右下的下半部 **視覺效果窗格**。
 
 
             ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterList.jpg)。  
 
->[AZURE.NOTE] If you don't see the pane, select the arrow in the top-right corner to expand it.
+>[AZURE.NOTE] 如果您沒有看到 [] 窗格中，選取箭頭以展開右上角。
 
 
-If no visual is selected in the canvas, then the Filters pane displays just the filters that apply to the entire report page and to the entire report (if any have been set). In the example below, no visual is selected and there are no page level filters but there is a report level filter.  
+如果沒有 visual 選取畫布上，[篩選] 窗格會顯示只套用至整個報表頁面和整個報表 （如果有任何已設定） 的篩選器。 在下列範例中，不選取任何視覺並沒有頁面層級的篩選器但還有報表層級篩選。  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListWithReportFilter.jpg)  
 
-If a visual is selected in the canvas, you will also see the filters that apply to just that visual:  
+如果畫布上選取視覺效果，則也會看到套用至剛視覺的篩選器︰  
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListWithReportAndVIsLevelFilters.jpg)
 
-To display options for a particular filter, select the down arrow next to the filter name.  In the example below, the report level filter is set to 2013 and 2014. And this is an example of <bpt id="p1">**</bpt>basic filtering<ept id="p1">**</ept>.  To display the advanced options, select <bpt id="p1">**</bpt>Advanced Filtering<ept id="p1">**</ept>.
+若要顯示的特定篩選條件選項，選取篩選器名稱旁邊的向下箭號。  下列範例中，在報表層級篩選設 2013年和 2014年。 這是範例 **基本篩選**。  若要顯示進階的選項，請選取 **進階的篩選**。
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_FilterListDropdown.jpg)
 
-## <a name="clear-a-filter"></a>Clear a filter  
- In either advanced or basic filtering mode, select the eraser icon  <ph id="ph1">![](media/powerbi-service-how-to-use-a-report-filter/PBI_eraserIcon.jpg)</ph> to reset the filter. 
+## <a name="clear-a-filter"></a>清除篩選  
+ 在基本或進階篩選模式中，選取 [橡皮擦] 圖示  ![](media/powerbi-service-how-to-use-a-report-filter/PBI_eraserIcon.jpg) 重設篩選器。 
 
-##   <a name="add-a-filter"></a>Add a filter
--  To add a filter to a page or report, select a field from the Fields pane and drag it below the <bpt id="p1">**</bpt>Report level filters<ept id="p1">**</ept>  or <bpt id="p2">**</bpt>Page level filters<ept id="p2">**</ept> heading, where you see the words <bpt id="p3">**</bpt>Drag data fields here<ept id="p3">**</ept>. Once a field has been added as a filter, fine-tune it using the Basic filtering and Advanced filtering controls (described below).
+##   <a name="add-a-filter"></a>新增篩選器
+-  若要新增篩選器的頁面或報表，請在選取欄位] 窗格中的欄位，並將它拖曳下方 **報告層級的篩選器**  或 **頁面層級篩選** 標題，讓您看到幾個字 **將資料欄位拖曳到這裡**。 當欄位加入做為篩選條件時，微調使用基本篩選和進階篩選控制項 （如下所述）。
 
--  One way to add a filter to a visual is by using the fields that are being used to create that visual. First, select a visual to make it active. The fields that are being used in the visual are listed in the Visualizations pane and in the Filters pane under the <bpt id="p1">**</bpt>Visual level filters<ept id="p1">**</ept> heading.
+-  將篩選加入至視覺效果的一種方法是使用要用來建立的視覺化的欄位。 首先，選取視覺效果，讓它成為作用。 視覺效果中使用的欄位列底下的 [篩選] 窗格和 [視覺效果] 窗格中 **Visual 層級篩選** 標題。
 
     ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-visual-filter.png)  
 
-    Fine-tune any of these fields using the Basic filtering and Advanced filtering controls (described below).
+    微調任何這些欄位使用基本篩選和進階篩選控制項 （如下所述）。
 
--  Another way to add a filter to a visual is to drag-and-drop a field into the <bpt id="p1">**</bpt>Visual level filters<ept id="p1">**</ept> bucket. Dragging a new field here does not add that field to the visual, but it does allow you to filter that visual with this new field. In the example below, <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> is added as a new filter to the visual. Notice that simply adding <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> as a filter does not alter the visual until you use the Basic or Advanced filtering controls.
+-  拖放欄位到另一種方法將篩選加入至視覺效果是 **Visual 層級篩選** 值區。 這裡拖曳新的欄位不會對該欄位視覺效果，但卻能讓您篩選到視覺與這個新的欄位。 在下列範例中， **鏈結** 做為新的篩選條件加入至視覺效果。 請注意，只要加入 **鏈結** 篩選不會更改視覺效果，除非您使用基本或進階篩選控制項。
 
     ![](media/powerbi-service-how-to-use-a-report-filter/power-bi-visual-filter.gif)
 
 
-## <a name="types-of-filters:-text-field-filters"></a>Types of filters: text field filters  
-### <a name="list-mode"></a>List mode  
-Ticking a checkbox either selects or deselects the value. The <bpt id="p1">**</bpt>All<ept id="p1">**</ept> checkbox can be used to toggle the state of all checkboxes on or off. The checkboxes represent all the available values for that field.  As you adjust the filter, the restatement updates to reflect your choices. 
+## <a name="types-of-filters:-text-field-filters"></a>篩選條件類型︰ 文字欄位篩選  
+### <a name="list-mode"></a>清單模式  
+計時核取方塊，請選取或取消選取值。  **所有** 核取方塊可用來開啟或關閉切換所有核取方塊的狀態。 核取方塊，表示該欄位的所有可用的值。  當您調整篩選器，結算更新以反映您的選擇。 
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_restatement.png)
 
-Note how the restatement now says "is Amarilla or Carretera"
+請注意，現在的結算方式說 「 是 Amarilla 或 Carretera 」
 
-### <a name="advanced-mode"></a>Advanced mode  
-Select <bpt id="p1">**</bpt>Advanced Filtering<ept id="p1">**</ept> to switch to advanced mode. Use the dropdown controls and text boxes to identify which fields to include. By choosing between <bpt id="p1">**</bpt>And<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Or<ept id="p2">**</ept>, you can build complex filter expressions. Click the <bpt id="p1">**</bpt>Apply Filter<ept id="p1">**</ept> button when you've set the values you want.  
+### <a name="advanced-mode"></a>進階的模式  
+選取 **進階的篩選** 切換到進階模式。 使用下拉式清單控制項和文字方塊來識別要包含的欄位。 選擇 **和** 和 **或者**, ，您可以建立複雜的篩選條件運算式。 按一下 [ **套用篩選** 按鈕時，您已經設定您想要的值。  
 
 ![](media/powerbi-service-how-to-use-a-report-filter/aboutFilters.png)
 
-## <a name="types-of-filters:-numeric-field-filters"></a>Types of filters: numeric field filters  
-### <a name="list-mode"></a>List mode  
-If the values are finite, selecting the field name displays a list.  See <bpt id="p1">**</bpt>Text field filters<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>List mode<ept id="p2">**</ept> above for help using checkboxes.   
+## <a name="types-of-filters:-numeric-field-filters"></a>篩選條件類型︰ 數值欄位篩選  
+### <a name="list-mode"></a>清單模式  
+如果是有限的值，選取欄位名稱會顯示清單。  請參閱 **文字欄位篩選** &gt; **清單模式** 上面說明使用核取方塊。   
 
-### <a name="advanced-mode"></a>Advanced mode  
-If the values are infinite or represent a range, selecting the field name opens the advanced filter mode. Use the dropdown and text boxes to specify a range of values that you want to see. 
+### <a name="advanced-mode"></a>進階的模式  
+如果值都是無限，或是代表的是範圍，選取欄位名稱會開啟進階的篩選模式。 使用下拉式清單和文字的方塊以指定您想要查看的值範圍。 
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_dropdown-and-text.png)
 
-By choosing between <bpt id="p1">**</bpt>And<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Or<ept id="p2">**</ept>, you can build complex filter expressions. Select the <bpt id="p1">**</bpt>Apply Filter<ept id="p1">**</ept> button when you've set the values you want.
+選擇 **和** 和 **或者**, ，您可以建立複雜的篩選條件運算式。 選取 **套用篩選** 按鈕時，您已經設定您想要的值。
 
-## <a name="types-of-filters:-date-and-time"></a>Types of filters: date and time  
-### <a name="list-mode"></a>List mode  
-If the values are finite, selecting the field name displays a list.  See <bpt id="p1">**</bpt>Text field filters<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>List mode<ept id="p2">**</ept> above for help using checkboxes.   
+## <a name="types-of-filters:-date-and-time"></a>篩選條件類型︰ 日期和時間  
+### <a name="list-mode"></a>清單模式  
+如果是有限的值，選取欄位名稱會顯示清單。  請參閱 **文字欄位篩選** &gt; **清單模式** 上面說明使用核取方塊。   
 
-### <a name="advanced-mode"></a>Advanced mode  
-If the field values represent date or time, you can specify a start/end time when using Date/Time filters.  
+### <a name="advanced-mode"></a>進階的模式  
+如果欄位值代表日期或時間，您可以指定當使用日期/時間篩選開始/結束時間。  
 
 ![](media/powerbi-service-how-to-use-a-report-filter/PBI_date-time-filters.png)
 
 ## <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Filters and highlighting in reports<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>  
-<bpt id="p1">[</bpt>Interact with filters and highlighting in report Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>  
-<bpt id="p1">[</bpt>Create filters in report Editing View<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>  
-<bpt id="p1">[</bpt>Change how report visuals cross-filter and cross-highlight each other<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
+            [篩選和反白顯示在報表中](powerbi-service-about-filters-and-highlighting-in-reports.md)  
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [篩選器和讀取檢視報表中反白顯示互動](powerbi-service-interact-with-a-report-in-reading-view.md)  
+
+            [編輯檢視的報表中建立篩選器](powerbi-service-add-a-filter-to-a-report.md)  
+
+            [變更報表的視覺效果交叉篩選及方式跨醒目提示的其他](powerbi-service-visual-interactions.md)
+
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)  
+
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

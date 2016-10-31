@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Groups in the iPad app"
-   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Power BI iOS mobile app for the iPad."
+   pageTitle="IPad 應用程式中的群組"
+   description="Power BI 群組都建置在 Office 365 群組。 閱讀有關檢視與互動群組儀表板中的 Power BI iOS 行動應用程式 iPad。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,38 +19,39 @@
    ms.workload="powerbi"
    ms.date="09/12/2016"
    ms.author="maggies"/>
-# Groups in the iPad app (Power BI for iOS)
+# IPad 應用程式 (適用於 iOS 的 Power BI) 中的群組
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about <bpt id="p1">[</bpt>groups in Office 365<ept id="p1">](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)</ept>. Groups are available with the Power BI Pro experience.
+Power BI 群組提供 Office 365 群組上建置的強大共同作業體驗。 深入了解 [Office 365 中的群組](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)。 群組是適用於 Power BI Pro 的經驗。
 
-You <bpt id="p1">[</bpt>create a group in the Power BI service<ept id="p1">](powerbi-service-create-a-group-in-power-bi.md)</ept>.
+您 [Power BI 服務中建立群組](powerbi-service-create-a-group-in-power-bi.md)。
 
-Then you see and interact with group dashboards and reports in the Microsoft <bpt id="p1">[</bpt>Power BI iOS app for the iPad<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept>. 
+然後，請參閱並群組儀表板和報表互動的 microsoft [Power BI 的 iPad 的 iOS 應用程式](powerbi-mobile-iphone-app-get-started.md)。 
 
 
-## Interact with Power BI groups
+## 與 Power BI 群組的互動
 
-1.  Open the Power BI for iOS app for the iPad. 
+1.  開啟 Power BI for iPad 的 iOS 應用程式。 
 
-    Need to <bpt id="p1">[</bpt>download and install the iOS app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> first?
+    需要 [下載並安裝 iOS 應用程式](http://go.microsoft.com/fwlink/?LinkId=522062) 第一次？
 
-2.  Tap the global navigation button <ph id="ph1">![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner.
+2.  點選全域瀏覽按鈕 ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) 左上角。
 
-3.  Select a group.
+3.  選取群組。
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-menu.png)
 
-4.  Your group page displays the dashboards and reports that have been published to the group workspace.
+4.  群組頁面會顯示儀表板和已經發佈到 [群組] 工作區的報表。
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-home.png)
 
-     -     Yellow stars <ph id="ph1">![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-mobile-yes-favorite-icon.png)</ph> show which dashboards are your favorites. 
+     -     黃色星星 ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) 顯示的儀表板是您的最愛。 
 
-     -     The notation below each dashboard name <ph id="ph1">![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-dashboard-medium-classification.png)</ph> shows how the data in each dashboard is classified. Read more about <bpt id="p1">[</bpt>data classification in Power BI<ept id="p1">](powerbi-service-data-classification.md)</ept>.
+     -     每個儀表板名稱之下的標記法 ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-dashboard-medium-classification.png) 顯示分類中每個儀表板資料的方式。 深入了解 [Power BI 中的資料分類](powerbi-service-data-classification.md)。
 
 
-5.  <bpt id="p1">[</bpt>Select a dashboard<ept id="p1">](powerbi-mobile-dashboards-on-the-ipad-app.md)</ept> or <bpt id="p2">[</bpt>select a report<ept id="p2">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> to open and view it.
+5.  
+            [選取儀表板](powerbi-mobile-dashboards-on-the-ipad-app.md) 或 [選取報表](powerbi-mobile-reports-on-the-ipad-app.md) ，開啟並檢視。
 
 ### 請參閱
-- [The Power BI mobile app for iOS on the iPad](powerbi-mobile-iphone-app-get-started.md)
-- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- [Power BI 行動應用程式適用於 ipad 的 iOS](powerbi-mobile-iphone-app-get-started.md)
+- [在 Power BI 中建立群組](powerbi-service-create-a-group-in-power-bi.md)

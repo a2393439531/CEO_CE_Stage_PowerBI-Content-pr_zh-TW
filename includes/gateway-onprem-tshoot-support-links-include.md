@@ -1,6 +1,7 @@
-> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: If you encounter an issue that is not listed below, you can ask for further assistance in the following locations.
+> 
+            **請注意**︰ 如果您遇到下列資訊沒有列出的問題，您可以要求以取得進一步協助在下列位置中。
 >
-> - For Power BI, you can use the <bpt id="p1">[</bpt>communities<ept id="p1">](http://community.powerbi.com/)</ept> site or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
-> - For PowerApps, you can use the <bpt id="p1">[</bpt>communities<ept id="p1">](https://aka.ms/powerapps-community)</ept> site or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerapps.microsoft.com/support/)</ept>.
-> - For Microsoft Flow, you can use the <bpt id="p1">[</bpt>communities<ept id="p1">](https://go.microsoft.com/fwlink/?LinkID=787467)</ept> site of you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://go.microsoft.com/fwlink/?LinkID=787479)</ept>.
-> - For Logic Apps, you can submit a support ticket through the Azure portal.
+> - 您可以使用 Power BI [社群](http://community.powerbi.com/) 站台，或者您可以建立 [支援票證](https://powerbi.microsoft.com/support/)。
+> - 您可以使用 PowerApps， [社群](https://aka.ms/powerapps-community) 站台，或者您可以建立 [支援票證](https://powerapps.microsoft.com/support/)。
+> - 您可以使用 Microsoft 流程 [社群](https://go.microsoft.com/fwlink/?LinkID=787467) 站台，您可以建立 [支援票證](https://go.microsoft.com/fwlink/?LinkID=787479)。
+> - 邏輯應用程式，您可以提交支援票證，透過 Azure 入口網站。

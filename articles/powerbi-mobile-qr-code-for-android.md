@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Scan a Power BI QR code from your Android phone"
-   description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
+   pageTitle="掃描您的 Android 電話 Power BI QR 代碼"
+   description="在 Power BI 中的 QR 代碼可以真實世界中的任何項目直接連接到 Power BI 行動應用程式中沒有所需的搜尋相關的商業情報資訊。"
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,40 +20,40 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Scan a Power BI QR code from your Android phone
+# 掃描您的 Android 電話 Power BI QR 代碼
 
-QR codes in Power BI can connect any item in the real world directly to related BI information &amp;#151; no navigation or search needed.
+在 Power BI 中的 QR 代碼可以真實世界中的任何項目直接連接到相關的商業情報資訊 & #151;沒有瀏覽或搜尋所需。
 
-Say a colleague has <bpt id="p1">[</bpt>created a QR code in the Power BI service<ept id="p1">](powerbi-service-qr-code-for-tile.md)</ept> for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &amp;#151; for example, in an email or on a specific item. 
+假設同事一直 [Power BI 服務中建立 QR 代碼](powerbi-service-qr-code-for-tile.md) 報表或並排顯示在儀表板，儀表板或報表與您共用，並放置在機碼的位置與 #151; 比方說，透過電子郵件或特定的項目上的 QR 代碼。 
 
-You can scan the QR code for immediate access to the relevant tile, right from your Android phone, using either the scanner in the Power BI app, or any other scanner installed on your Android phone.
+您可以掃描 QR 代碼，以立即存取相關方塊，從 Android 電話上，使用 Power BI 應用程式，掃描器或任何其他安裝在您的 Android 電話上的掃描。
 
-## Scan a Power BI QR code with the Power BI scanner
+## 使用 Power BI 掃描器掃描 Power BI QR 代碼
 
-1. In the Power BI mobile app open the global navigation button <ph id="ph1">![](media/powerbi-mobile-qr-code-for-android/power-bi-android-global-nav-icon.png)</ph> in the upper left. 
+1. Power BI 行動應用程式中開啟 [全域導覽按鈕 ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-global-nav-icon.png) 左上方。 
 
-2. Scroll down to <bpt id="p1">**</bpt>QR Scanner<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-qr-code-for-android/power-bi-android-scanner-icon.png)</ph> and select it. 
+2. 向下捲動至 **QR 掃描器** ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-scanner-icon.png) 並加以選取。 
 
-3. If your camera isn't enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
+3. 如果未啟用您的相機，您需要核准的 Power BI 應用程式以使用相機。 這是一次性的核准。 
 
-4. Point the scanner at the Power BI QR code. 
+4. 指向 Power BI QR 代碼掃描器。 
 
     ![](media/powerbi-mobile-qr-code-for-android/PBI_iPh_QRScan.png)
 
-5. The tile opens automatically in Power BI.
+5. 此磚會自動開啟 Power BI。
 
     ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-tile.png)
 
 
-## Scan a QR code from an external scanner on your Android phone
+## 掃描 QR 代碼，從外部掃描器 Android 電話
 
-1. From any scanner installed on your Android phone, point the scanner to the relevant Power BI QR code for immediate access to the tile. 
+1. 從您在 Android 電話上安裝任何掃描器，掃描器點相關的 Power BI QR 程式碼，以立即存取磚。 
 
-2. If you don’t have the Power BI app installed, you are redirected to <bpt id="p1">[</bpt>Google Play to download it<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept>. 
+2. 如果您沒有安裝 Power BI 應用程式，會重新導向至 [Google Play 下載](http://go.microsoft.com/fwlink/?LinkID=544867)。 
 
 ### 請參閱
 
-- [Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
-- [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
-- [Get started with the Power BI for Android app](powerbi-mobile-android-app-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [在 Power BI 中建立磚的 QR 代碼](powerbi-service-qr-code-for-tile.md)
+- [在 Power BI 儀表板] 磚](powerbi-service-dashboard-tiles.md)
+- [開始使用 Power BI for Android 應用程式](powerbi-mobile-android-app-get-started.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

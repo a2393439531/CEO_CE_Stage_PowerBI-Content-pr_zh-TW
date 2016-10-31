@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Forgot your password for Power BI?"
-   description="Forgot your password for Power BI?"
+   pageTitle="Power bi 忘記密碼？"
+   description="Power bi 忘記密碼？"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,18 +19,18 @@
    ms.workload="powerbi"
    ms.date="10/04/2016"
    ms.author="asaxton"/>
-# Forgot your password for Power BI?
+# Power bi 忘記密碼？
 
-If you've forgotten your password, you can use the following link to request a password reset.
+如果您忘記密碼，您可以使用下列連結來要求密碼重設。
 
 <https://passwordreset.microsoftonline.com>
 
-If you're told that your account is not enabled for password reset, you'll need to contact your Office 365 administrator. If you're using the free trial, the administrator is the first person in your organization who signed up.
+如果您要告訴您的帳戶未啟用密碼重設，您將需要連絡您的 Office 365 系統管理員。 如果您使用免費的試用版，系統管理員是第一個人在組織中的已註冊。
 
-If you are still having issues accessing your account you can try contacting the support team at:
+如果您仍然有問題，存取您的帳戶，您可以嘗試連絡的支援小組︰
 
 *1-800-642-7676*
 
-> [AZURE.NOTE] Please note, support is provided during the eastern standard time (EST) time zone. Support is provided during business hours and currently only supported in English.
+> [AZURE.NOTE] 請注意，提供支援在美加東部標準時間 (EST) 的時區。 支援是在上班時間提供，而且目前只支援英文。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

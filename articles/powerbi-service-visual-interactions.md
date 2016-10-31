@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Change how visuals interact in a report"
-   description="Documentation for how to set Visual interactions in a Microsoft Power BI report."
+   pageTitle="變更報表中的視覺效果互動方式"
+   description="如何設定 Visual 互動 Microsoft Power BI 報表中的文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,40 +21,40 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Visualization interactions in a Power BI report
+# Power BI 報表中的視覺效果互動
 
-By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page.
-For example, selecting a state on a map visualization highlights the column chart and filters the line chart to display only data that applies to that one state.
-See <bpt id="p1">[</bpt>About filtering and highlighting<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+根據預設，報表頁面上的視覺效果可用來交叉篩選和交叉反白顯示在頁面上的其他視覺效果。
+例如，選取地圖視覺效果的狀態會反白顯示直條圖，並篩選折線圖，顯示套用至該狀態的資料。
+請參閱 [大約篩選和反白顯示](powerbi-service-about-filters-and-highlighting-in-reports.md)。
 
-To change this default behavior, use the <bpt id="p1">**</bpt>Visuals Interaction<ept id="p1">**</ept> control.
+若要變更此預設行為，請使用 **視覺效果互動** 控制項。
 
->[AZURE.NOTE] The terms <bpt id="p1">*</bpt>cross-filter<ept id="p1">*</ept> and <bpt id="p2">*</bpt>cross-highlight<ept id="p2">*</ept> are used to distinguish the behavior described here from what happens when you use the <bpt id="p3">**</bpt>Filters<ept id="p3">**</ept> pane to filter and highlight visualizations.  
+>[AZURE.NOTE] 條款 *交叉篩選* 和 *跨反白顯示* 用來區別來自使用時，會發生什麼事這裡描述的行為 **篩選** 窗格來篩選和反白顯示視覺效果。  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N_xYsCbyHPw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1.  Select a visualization to make it active.  
+1.  選取視覺效果，讓它成為作用。  
 
-2. Turn on <bpt id="p1">**</bpt>Visual Interactions<ept id="p1">**</ept> by selecting it from the top menu bar. Notice the filter and highlight icons that appear above the other visualizations on the report page.
+2. 開啟 **Visual 互動** 從頂端功能表列中選取。 請注意篩選並反白顯示出現在 [報表] 頁面上的其他視覺效果上方的圖示。
 
     ![](media/powerbi-service-visual-interactions/pbi-visual-interaction-icon.png)
 
-2.  Determine what impact the selected visualization should have on the others.  
+2.  決定選取的視覺效果應該對其他產生的影響。  
 
-    -   If it should cross-filter the other visualization, select the <bpt id="p1">**</bpt>filter<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-visual-interactions/pbi-filter-icon-outlined.png)</ph>.
+    -   如果它應該交叉篩選其他視覺效果，請選取 **篩選** 圖示 ![](media/powerbi-service-visual-interactions/pbi-filter-icon-outlined.png)。
 
-    -   If it should cross-highlight that visualization, select the <bpt id="p1">**</bpt>highlight<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-visual-interactions/pbi-highlight-icon-outlined.png)</ph>.
+    -   如果它應該跨-反白顯示該視覺效果，請選取 **反白顯示** 圖示 ![](media/powerbi-service-visual-interactions/pbi-highlight-icon-outlined.png)。
 
-    -   If it should have no impact, select the <bpt id="p1">**</bpt>no impact<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-visual-interactions/pbi-noimpact-icon-outlined.png)</ph>.
+    -   如果它應該不會影響，請選取 **不會影響** 圖示 ![](media/powerbi-service-visual-interactions/pbi-noimpact-icon-outlined.png)。
 
-3.  Repeat for all other visualizations on the report page.
+3.  在 [報表] 頁面上的所有視覺效果的重複。
 
 ## 請參閱
 
- [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
+ [如何使用報表篩選](powerbi-service-how-to-use-a-report-filter.md)
 
-[Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+[篩選和反白顯示在報表中](powerbi-service-about-filters-and-highlighting-in-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

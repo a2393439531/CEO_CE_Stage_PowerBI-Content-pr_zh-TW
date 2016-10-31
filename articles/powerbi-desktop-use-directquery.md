@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use DirectQuery in Power BI Desktop"
-   description="Use DirectQuery in Power BI Desktop"
+   pageTitle="在 Power BI Desktop 中使用 DirectQuery"
+   description="在 Power BI Desktop 中使用 DirectQuery"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,97 +20,103 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Use DirectQuery in Power BI Desktop  
+# 在 Power BI Desktop 中使用 DirectQuery  
 
-With Power BI Desktop, when you connect to your data source, it is always possible to import a copy of the data into the Power BI Desktop. For some data sources, an alternative approach is available: connect directly to the data source using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>.
+使用 Power BI Desktop，當您連接到資料來源，可能經常會將一份資料匯入 Power BI Desktop。 對於某些資料來源，可用的替代方式是︰ 直接連接到資料來源使用 **DirectQuery**。
 
-## Supported Data Sources  
+## 支援的資料來源  
 目前支援下列資料來源：  
 
 -   SQL Server
 -   Azure SQL 資料庫
--   Azure SQL Data Warehouse
+-   Azure SQL 資料倉儲
 -   [SAP HANA](powerbi-desktop-sap-hana.md)
 -   [Oracle 資料庫](powerbi-desktop-directquery-for-oracle-teradata.md)
--   [Teradata Database](powerbi-desktop-directquery-for-oracle-teradata.md)
--   [Amazon Redshift (Preview)](powerbi-desktop-connect-redshift.md)
--   [Impala (Preview)](powerbi-desktop-connect-impala.md)
+-   [Teradata 資料庫](powerbi-desktop-directquery-for-oracle-teradata.md)
+-   [Amazon Redshift （預覽）](powerbi-desktop-connect-redshift.md)
+-   [Impala （預覽）](powerbi-desktop-connect-impala.md)
 
-## How to Connect using DirectQuery  
-When you use <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> to connect to a data source supported by <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept>, the connection window lets you select how you want to connect.  
+## 如何使用 DirectQuery 連接  
+當您使用 **取得資料** 連接到資料來源所支援 **DirectQuery**, ，[連線] 視窗可讓您選取您要連接的方式。  
 
 ![](media/powerbi-dekstop-use-directquery/DirectQuery_2a.png)
 
-The differences between selecting <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> and <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept> are the following:
-
-<bpt id="p1">**</bpt>Import<ept id="p1">**</ept> – the selected tables and columns are imported into Power BI Desktop. As you create or interact with a visualization, Power BI Desktop uses the imported data. You must refresh the data, which imports the full data set again, to see any changes that occurred to the underlying data since the initial import or the most recent refresh.
-
-<bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> – no data is imported or copied into Power BI Desktop. The selected tables and columns appear in your Power BI Desktop <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list. As you create or interact with a visualization, Power BI Desktop queries the underlying data source, which means you’re always viewing current data.
-
-Many data modeling and data transformations are available when using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>, though with some limitations. When creating or interacting with a visualization, the underlying source must be queried and the time necessary to refresh the visualization is dependent on the performance of the underlying data source. When the data necessary to service the request has recently been requested, Power BI Desktop uses recent data to reduce the time required to display the visualization. Selecting <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon will ensure all visualizations are refreshed with current data.
-
-See the following sections for more information about benefits, limitations, and important considerations when using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>.
-
-## Benefits of using DirectQuery  
-There are two primary benefits to using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>:
+選取的差異 **匯入** 和 **DirectQuery** 如下所示︰
 
 
--   <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> lets you build visualizations over very large datasets, where it otherwise would be unfeasible to first import all of the data
-
--   Underlying data changes can require a refresh of data, and for some reports, the need to display current data can require large data transfers, making re-importing data unfeasible. By contrast, <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> reports always use current data
+            **匯入** – 選取的資料表和資料行匯入至 Power BI Desktop。 當您建立或視覺效果與互動，Power BI Desktop 將會使用匯入的資料。 您必須重新整理資料，會匯入至完整的資料集，查看自初始匯入] 或 [最新的重新整理基礎資料發生的任何變更。
 
 
-## Limitations of DirectQuery
-There are currently a few limitations to using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>:
+            **DirectQuery** – 匯入或複製到 Power BI Desktop 任何資料。 選取的資料表和資料行出現在您的 Power BI Desktop **欄位** 清單。 當您建立或視覺效果與互動，Power BI Desktop 查詢基礎資料來源，這表示您永遠檢視目前的資料。
+
+許多的資料模型和資料轉換時，可以使用使用 **DirectQuery**, ，但有一些限制。 在建立或視覺效果與互動，來查詢基礎來源和重新整理視覺效果所需的時間會視基礎資料來源的效能。 最近已要求服務要求時所需的資料，當 Power BI Desktop 會使用新的資料來減少顯示的視覺效果所需的時間。 選取 **重新整理** 從 **首頁** 功能區可確保所有視覺效果會以目前的資料重新整理。
+
+使用時，請參閱下列各節，如需有關的優點、 限制和重要考量 **DirectQuery**。
+
+## 使用 DirectQuery 的優點  
+有兩個主要的好處，使用 **DirectQuery**:
 
 
--   All tables must come from a single database
+-   
+            **DirectQuery** 可讓您建立視覺效果的地方，否則會有可行，第一次匯入的非常大型資料集上的所有資料
 
--   If the <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> query is overly complex, an error will occur. To remedy the error you must either delete the problematic step in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, or <bpt id="p2">*</bpt>Import<ept id="p2">*</ept> the data instead of using <bpt id="p3">**</bpt>DirectQuery<ept id="p3">**</ept>
+-   基礎資料變更可能需要重新整理的資料，因此對於某些報表中，如果需要顯示目前的資料可能需要大型資料傳輸，進行重新匯入資料的緣故。 相較之下， **DirectQuery** 報表一律會使用目前的資料
 
--   Relationship filtering is limited to a single direction, rather than both directions
 
--   Time intelligence capabilities are not available in <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>. For example, special treatment of date columns (year, quarter, month, day, so on) are not supported in <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> mode.
+## DirectQuery 的限制
+目前有一些限制使用 **DirectQuery**:
 
--   By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph for more information
 
--   There is a 1 million row limit for returning data when using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>. This does not affect aggregations or calculations used to create the dataset returned using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>, Power BI returns an error.
+-   所有資料表都必須都來自單一資料庫
 
-To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting <bpt id="p1">**</bpt>File &gt; Options<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Settings &gt; Options &gt; DirectQuery<ept id="p2">**</ept>, then selecting the option <bpt id="p3">*</bpt>Allow unrestricted measures in DirectQuery mode<ept id="p3">*</ept>*. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
+-   如果 **查詢編輯器** 查詢是過於複雜，會發生錯誤。 若要修正的錯誤，您必須是刪除問題的步驟中 **查詢編輯器**, ，或 *匯入* 資料，而不要使用 **DirectQuery**
 
-## Important considerations when using DirectQuery
+-   關聯性篩選僅限於單一方向，而不是兩個方向
 
-The following three points should be taken into consideration when using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>:
+-   時間智慧功能不適用於 **DirectQuery**。 例如，日期資料行 （年、 季、 月、 日等等） 的特殊處理不支援在 **DirectQuery** 模式。
 
--   <bpt id="p1">**</bpt>Performance and load<ept id="p1">**</ept> - All <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept> requests are sent to the source database, so the time required to refresh a visual is dependent on how long that back-end source takes to respond with the results from the query (or queries). The recommended response time (with requested data being returned) for using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> for visuals is five seconds or less, with a maximum recommended results response time of 30 seconds. Any longer, and the experience of a user consuming the report becomes unacceptably poor. In addition, once a report is published to the Power BI service, any query that takes longer than a few minutes will timeout, and the user will receive an error.
+-   根據預設，限制會放在 DAX 運算式中的量值; 允許請參閱下列段落，如需詳細資訊
 
-    Load on the source database should also be considered, based on the number of Power BI users who will consume the published report. Using <bpt id="p1">*</bpt>Row Level Security<ept id="p1">*</ept> (RLS) can have a significant impact as well; a non-RLS dashboard tile shared by multiple users results in a single query to the database, but using RLS on a dashboard tile usually means the refresh of a tile requires one query <bpt id="p2">*</bpt>per user<ept id="p2">*</ept>, thus significantly increasing load on the source database and potentially impacting performance.
+-   傳回資料時使用 1 百萬個資料列限制 **DirectQuery**。 這不會影響彙總或計算用來建立使用傳回的資料集 **DirectQuery**, ，傳回的資料列。 比方說，您可以使用您在資料來源執行的查詢彙總 10 萬個資料列，並準確的結果傳回該彙總的 Power BI 使用 **DirectQuery** Power BI，只要傳回的資料為小於 1 百萬個資料列。 如果超過 1 百萬個資料列則會傳回從 **DirectQuery**, ，Power BI 會傳回錯誤。
 
-    Power BI creates queries that are as efficient as possible. Under certain situations however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query would retrieve an excessively large number of rows (more than 1 million) from the back-end data source, in which case the following error occurs:
+為了確保傳送至基礎資料來源的查詢都可接受的效能，限制所加諸於量值預設。 進階的使用者可以選擇略過這項限制，藉由選取 **檔案 > 選項** 然後 **設定 > 選項 > DirectQuery**, ，然後選取選項 *允許不受限制的量值在 DirectQuery 模式下**。 選取該選項時，可以使用適用於量值的任何 DAX 運算式。 不過，使用者必須知道，匯入資料時很好執行的某些運算式可能會導致緩慢的查詢在 DirectQuery 模式中的後端來源。
+
+## 使用 DirectQuery 時的重要考量
+
+下列三個點應該列入考量時使用 **DirectQuery**:
+
+-   
+            **效能和負載** - **DirectQuery** 要求傳送到來源資料庫，因此若要重新整理視覺效果所需的時間是取決於該後端來源的時間來回應查詢 （或） 查詢的結果。 建議的回應時間 （以傳回要求的資料） 使用 **DirectQuery** 的視覺效果為五秒或更少，最多建議結果回應時間為 30 秒。 並使用報表的使用者經驗變得實在不佳。 此外，一旦報表發行至 Power BI 服務時，任何查詢，會超過幾分鐘的時間會逾時，和使用者會收到錯誤。
+
+    來源資料庫上的負載也必須考量，會使用已發行的報表的 Power BI 使用者數目為基礎。 使用 *資料列層級安全性* (RLS) 可以有很顯著的影響; 非 RLS 儀表板] 磚中單一資料庫查詢的多個使用者結果共用但磚的重新整理需要使用一個查詢使用 RLS 的儀表板] 磚時，通常表示 *每位使用者*, ，因而大幅增加來源資料庫上的負載，可能會影響到效能。
+
+    Power BI 建立盡可能有效率的查詢。 在某些情況下不過，產生的查詢可能無法夠有效率，若要避免此重新整理將會失敗。 這種情況的其中一個範例時，產生的查詢會擷取極大量的資料列 （超過 1 百萬個） 資料來源的後端，下列的錯誤情況下會發生︰
 
         The resultset of a query to external data source has exceeded
         the maximum allowed size of '1000000' rows.
 
-    This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to <bpt id="p1">*</bpt>Don’t Summarize<ept id="p1">*</ept>. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
+    簡單的圖表，其中包含彙總選項設為非常高基數的資料行，可能會發生這種情況下 *不總結*。 視覺效果必須只能有 1 百萬下方基數的資料行，或必須具有適當的篩選器套用。
 
--   <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source.
+-   
+            **安全性** -所有使用者都使用已發行的報表都連接到後端資料來源使用 Power BI 服務發行集之後輸入的認證。 這是同樣的情況下，為已匯入資料︰ 所有使用者都看到相同的資料，無論任何後端來源中所定義的安全性規則。
 
--   <bpt id="p1">**</bpt>Supported features<ept id="p1">**</ept> - Not all features in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> are supported in <bpt id="p3">**</bpt>DirectQuery<ept id="p3">**</ept> mode, or have some limitations. In addition, there are some capabilities in the Power BI service (such as <bpt id="p1">*</bpt>Quick Insights<ept id="p1">*</ept>) that are not available for datasets using <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept>. As such, the limitation of such features when using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> should be taken into consideration when determining whether to use <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept>.   
+-   
+            **支援的功能** -中的並非所有功能 **Power BI Desktop** 支援 **DirectQuery** 模式中，或有一些限制。 此外，還有一些功能在 Power BI 服務 (例如 *快速 Insights*)，並不適用於資料集使用 **DirectQuery**。 這樣一來，當使用這類功能的限制 **DirectQuery** 決定是否要使用時應該納入考量 **DirectQuery**。   
 
 
-## Publish to the Power BI service
-Reports created using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> can be published to the Power BI Service.
+## 發行至 Power BI 服務
+建立的報表使用 **DirectQuery** 可以發行至 Power BI 服務。
 
-If the data source used is <bpt id="p1">**</bpt>Azure SQL Database<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Azure SQL Data Warehouse<ept id="p2">**</ept>, credentials must be provided before the published report will be displayed in the Power BI Service.
+如果使用的資料來源是 **Azure SQL Database** 或 **Azure SQL 資料倉儲**, ，必須提供認證，才能讓已發行的報表會顯示在 Power BI 服務。
 
-You can provide credentials by selecting the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> gear icon in Power BI, then select <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept>.
+您可以提供認證，藉由選取 **設定** 齒輪 Power BI 中的圖示，然後選取 [ **設定**。
 
 ![](media/powerbi-dekstop-use-directquery/DirectQuery_3.png)
 
-Power BI displays the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> window. From there, select the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> tab and choose the dataset that uses <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept>, and select <bpt id="p3">**</bpt>Edit credentials<ept id="p3">**</ept>.
+Power BI 顯示 **設定** 視窗。 從該處選取 **資料集** 索引標籤，然後選擇 [使用資料集 **DirectQuery**, ，然後選取 **編輯認證**。
 
 ![](media/powerbi-dekstop-use-directquery/DirectQuery_4.png)
 
-Until credentials are supplied, opening a published report or exploring a dataset created with a <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> connection to <bpt id="p2">**</bpt>Azure SQL Database<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Azure SQL Data Warehouse<ept id="p3">**</ept> results in an error.
+提供認證，直到開啟已發行的報表，或探索與建立資料集 **DirectQuery** 連線 **Azure SQL Database** 或 **Azure SQL 資料倉儲** 會產生錯誤。
 
-For data sources other than <bpt id="p1">**</bpt>Azure SQL Database<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Azure SQL Data Warehouse<ept id="p2">**</ept> that use DirectQuery, and Enterprise Gateway must be installed and the data source must be registered to establish a data connection. You can <bpt id="p1">[</bpt>learn more about Enterprise Gateway<ept id="p1">](http://go.microsoft.com/fwlink/p/?LinkID=627094)</ept>.
+資料來源以外的其他 **Azure SQL Database** 或 **Azure SQL 資料倉儲** 使用 DirectQuery，並必須安裝企業閘道，而且必須註冊資料來源建立資料連線。 您可以 [深入了解企業閘道](http://go.microsoft.com/fwlink/p/?LinkID=627094)。

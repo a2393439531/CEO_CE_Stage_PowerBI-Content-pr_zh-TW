@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI permissions"
-   description="Power BI permissions"
+   pageTitle="Power BI 權限"
+   description="Power BI 權限"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,28 +20,32 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Power BI permissions
+# Power BI 權限
 
 ## 權限範圍
-Power BI permissions give an application the ability to take certain actions on a user's behalf. All permissions must be approved by a user in order to be valid.
+Power BI 權限給應用程式代表使用者採取某些動作的能力。 所有的權限必須經由使用者核准，才會有效。
 
-|顯示名稱|描述|Scope Value|
+|顯示名稱|描述|範圍值|
 |---|---|---|
-|View all Datasets|The app can view all datasets for the signed in user and datasets that the user has access to.|Dataset.Read.All|
-|Read and Write all Datasets|The app can view and write to all datasets for the signed in user and datasets that the user has access to.|Dataset.ReadWrite.All|
-|View users Groups|The app can view all groups that the signed in user belongs to.|Group.Read.All|
-|View all Dashboards (preview)|The app can view all dashboards for the signed in user and dashboards that the user has access to.|Dashboard.Read.All|
-|View all Reports (preview)|The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure.|Report.Read.All|
+|檢視所有資料集|應用程式可以檢視已登入使用者的所有資料集和資料集的使用者具有存取權。|Dataset.Read.All|
+|讀取和寫入所有資料集|可以檢視應用程式，並將它寫入使用者具有存取權的登入的使用者和資料集的所有資料集。|Dataset.ReadWrite.All|
+|檢視使用者群組|應用程式可以檢視所有已登入使用者所屬的群組。|Group.Read.All|
+|檢視所有儀表板 （預覽）|應用程式可以檢視已登入使用者的所有儀表板和儀表板使用者具有存取權。|Dashboard.Read.All|
+|檢視所有報告 （預覽）|應用程式可以檢視已登入使用者的所有報表和報表以及使用者所擁有的存取權。 應用程式也可以查看報表，以及其結構內的資料。|Report.Read.All|
 
-An application can request permissions when it first attempts to log in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app which can be used on future API calls. The access can only be used by a specific application.
+第一次嘗試透過傳入要求的權限的範圍參數中呼叫的登入使用者的頁面時，應用程式可以要求權限。 如果授與權限，存取權杖會傳回可用來在後續的 API 呼叫的應用程式。 存取只用於特定應用程式。
 
-## Requesting Permissions
-While you can call the API to authenticate with a username and password, in order to take actions on behalf of another user, they will need to request permissions that the user then approves and then send the resulting access token on all future calls. For this process, we will follow the standard <bpt id="p1">[</bpt>OAuth 2.0<ept id="p1">](http://oauth.net/2/)</ept> protocol. While the actual implementation may vary, the OAuth flow for Power BI has the following elements:
+## 要求權限
+雖然您可以呼叫 API 來驗證使用者名稱和密碼，以便採取動作代表其他使用者，他們必須要求使用者再核准的權限，然後將產生的存取權杖傳送的所有後續的呼叫。 此程序，我們會遵循標準 [OAuth 2.0](http://oauth.net/2/) 通訊協定。 實際的實作可能有所不同，Power BI 的 OAuth 流程包含下列項目︰
 
-- <bpt id="p1">**</bpt>Login UI<ept id="p1">**</ept> - This is a UI that the developer can evoke to request permissions. It would require the user to log in if not already. The user would also need to approve the permissions that the application is requesting. The login window will post back either an access code or an error message to a redirect URL that is supplied.
-    - A standard redirect URL should be supplied by Power BI for use by native applications.
-- <bpt id="p1">**</bpt>Authorization Code<ept id="p1">**</ept> - Authorization Codes are returned to web applications after login via URL parameters in the redirect URL. Since they are in parameters there is some security risk. Web applications will have to exchange the authorization code for an Authorization Token
-- <bpt id="p1">**</bpt>Authorization Token<ept id="p1">**</ept> - Are used to authenticate API calls on another user's behalf. They will be scoped to a specific application. Tokens have a set lifespan and when they expire they will need to be refreshed.
-- <bpt id="p1">**</bpt>Refresh Token<ept id="p1">**</ept> - When tokens expire there will be a process of refreshing them.
+- 
+            **登入 UI** -這是開發人員可呼叫以要求權限的 UI。 這需要使用者在沒有已登。 使用者也必須核准應用程式所要求的權限。 登入視窗會回傳存取程式碼或錯誤訊息會提供重新導向 url。
+    - 標準的重新導向 URL 應該提供由 Power BI 使用原生應用程式。
+- 
+            **授權碼** -授權碼會傳回至 web 應用程式登入後透過 URL 重新導向 URL 中的參數。 因為它們都在參數會有些安全性風險。 Web 應用程式必須交換授權權杖的授權碼
+- 
+            **授權權杖** -用來驗證使用者代表的 API 呼叫。 它們將限於特定的應用程式。 權杖有設定期限和到期時就會需要重新整理。
+- 
+            **重新整理權杖** -權杖到期時將會有加以重新整理的程序。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

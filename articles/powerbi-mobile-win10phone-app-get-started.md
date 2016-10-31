@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Get started with the Power BI mobile app for Windows 10"
-   description="The Power BI mobile app for Windows 10 brings up-to-date, touch-enabled mobile access to your business information on your tablet or phone."
+   pageTitle="開始使用 Power BI 行動應用程式的 Windows 10"
+   description="Windows 10 的 Power BI 行動應用程式會將最新狀態、 觸控式行動裝置存取帶到您的商業資訊在您的平板電腦或電話。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,126 +20,135 @@
    ms.date="09/28/2016"
    ms.author="maggies"/>
 
-# Get started with the Power BI mobile app for Windows 10
+# 開始使用 Power BI 行動應用程式的 Windows 10
 
-The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone, with up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere &amp;#151; right on your <bpt id="p1">[</bpt>Windows Start screen<ept id="p1">](powerbi-mobile-pin-dashboard-from-win10phone-app.md)</ept>.
+Power BI 行動應用程式的 Windows 10 將 Power BI 帶到您的平板電腦或電話號碼，最新狀態、 觸控式行動存取商務資訊。 檢視並與其互動公司儀表板從任何地方 & #151;以滑鼠右鍵您 [Windows [開始] 畫面](powerbi-mobile-pin-dashboard-from-win10phone-app.md)。
 
 ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_livetile.gif)
 
-You <bpt id="p1">[</bpt>create dashboards and reports in the Power BI service<ept id="p1">](powerbi-service-get-started.md)</ept> with your data. 
+您 [Power BI 服務中建立儀表板和報表](powerbi-service-get-started.md) 您的資料。 
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the Power BI mobile app for Windows 10.
+然後與您的儀表板和報表互動、 瀏覽資料，從與共用，所有 Windows 10 的 Power BI 行動應用程式。
 
 ## 首要之務
 
--   <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Get the Power BI mobile app for Windows 10<ept id="p2">**</ept><ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=526478)</ept> from the Windows Store.
+-   
+            [
+            **取得 Power BI 行動應用程式的 Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) 從 Windows 市集。
 
-    ><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Your device needs to be running Windows 10. The app works best on devices with at least 2 GB RAM and 8 GB internal storage. It can run on devices with at least 1 GB RAM.
+    >
+            **注意︰** 您的裝置必須執行 Windows 10。 應用程式最適合使用至少 2 GB RAM 和 8 GB 的內部儲存裝置。 它至少 1 gb RAM 的裝置上執行。
 
--   Find out <bpt id="p1">[</bpt>what's new in the Power Bi mobile apps<ept id="p1">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+-   了解 [Power Bi 行動應用程式中新](powerbi-mobile-whats-new-in-the-mobile-apps.md)。
 
-## Sign up for the Power BI service on the web
+## 註冊 Power BI 服務，在網站上
 
-If you haven't signed up yet, go to the <bpt id="p1">[</bpt>Power BI service<ept id="p1">](http://powerbi.com/)</ept> to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
+如果您還沒有註冊尚未，請移至 [Power BI 服務](http://powerbi.com/) 註冊您自己的帳戶建立和儲存儀表板和報表，以及將您的資料結合在一起。 然後從登入 Power BI Windows 10 裝置若要查看您自己的儀表板，從任何地方。
 
-1.  In the Power BI service, tap <bpt id="p1">[</bpt>Sign up<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=513879)</ept> to create a Power BI account.
+1.  在 Power BI 服務，點選 [註冊](http://go.microsoft.com/fwlink/?LinkID=513879) 建立 Power BI 帳戶。
 
-2.    Start <bpt id="p1">[</bpt>creating your own dashboards and reports<ept id="p1">](powerbi-service-get-started.md)</ept>.
+2.    啟動 [建立您自己的儀表板和報告](powerbi-service-get-started.md)。
 
-## Get started with the Power BI app 
+## 開始使用 Power BI 應用程式 
 
-1.  On the Start screen of your Windows 10 device, open the Power BI app.
+1.  在 Windows 10 裝置的 [開始] 畫面開啟 Power BI 應用程式。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/PBI_Win10Ph_AppIconSm.png)
   
-2.  To view your Power BI dashboards and reports, tap <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept>. Sign in with the same credentials as your Power BI account on the web. 
+2.  若要檢視您的 Power BI 儀表板和報表，請點選 **Power BI**。 使用與您在網站上的 Power BI 帳戶相同的認證登入。 
 
-    To view your Reporting Services mobile reports and KPIs, tap <bpt id="p1">**</bpt>SQL Server 2016 Reporting Services<ept id="p1">**</ept>. Sign in with your SQL Server Reporting Services credentials.
+    若要檢視您的行動的 Reporting Services 報表和 Kpi，請點選 **SQL Server 2016 Reporting Services**。 使用 SQL Server Reporting Services 認證登入。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-connect.png)
 
-4.  Tap <bpt id="p1">**</bpt>Start exploring<ept id="p1">**</ept>  to view your own dashboards.
+4.  點選 **開始瀏覽**  若要檢視您自己的儀表板。
 
-## Try the Power BI and Reporting Services samples  
-Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
+## 試用 Power BI 和 Reporting Services 範例  
+即使未註冊，您可以試用 Power BI 和 Reporting Services 範例。 下載應用程式之後，您可以檢視範例，或開始使用。 回到範例視需要從儀表板首頁。
 
-### Power BI samples
+### Power BI 範例
 
-You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
+您可以檢視並與其互動的 Power BI 儀表板範例中，但有幾件事，您不能處理它們。 您無法開啟儀表板背後的報告、 範例與其他人分享，或讓 [我的最愛]。
 
-1.   Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png)</ph> in the upper-left corner.
+1.   點選全域瀏覽按鈕 ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) 左上角。
   
-2.   Tap <bpt id="p1">**</bpt>Power BI samples<ept id="p1">**</ept>, then pick a role and explore the sample dashboard for that role.  
+2.   點選 **Power BI 範例**, ，然後選擇角色，並瀏覽該角色的範例儀表板。  
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-power-bi-samples.png)
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    >
+            **請注意**︰ 並非所有功能都都可以在這些範例。 例如，您無法檢視範例報表為基礎的儀表板。 
 
-### Reporting Services mobile report samples
+### Reporting Services 行動報表範例
 
-1.   Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png)</ph> in the upper-left corner.
+1.   點選全域瀏覽按鈕 ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-navigation-icon.png) 左上角。
 
-2.  Tap <bpt id="p1">**</bpt>Reporting Services samples<ept id="p1">**</ept>, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
+2.  點選 **Reporting Services 範例**, ，然後開啟零售報告或銷售報表] 資料夾來瀏覽其 Kpi 和行動的報告。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-reporting-services-samples.png)
 
-## Search for dashboards, reports, and groups
+## 儀表板、 報表和群組搜尋
 
-Find your dashboards, reports, and groups quickly by typing in the search box, always at the top of the app.
+永遠在應用程式頂端的 [搜尋] 方塊中輸入迅速地找到您的儀表板、 報表和群組。
 
-1.  Tap the search icon in the upper-right corner.
+1.  點選右上角的 [搜尋] 圖示。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10ph_searchbarbrdr.png)
 
-    Power BI displays your most recent dashboards, reports, and groups.
+    Power BI 會顯示您最新的儀表板、 報表和群組。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_searchrecent.png)
 
-2.  As you start typing, Power BI displays all relevant results.
+2.  當您開始輸入時，Power BI 會顯示所有相關的結果。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/pbi_win10_search_m.png)
 
-## View your favorite dashboards, KPIs, and reports
+## 您最愛的儀表板、 Kpi 和報表檢視
 
-You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a <bpt id="p1">*</bpt>favorite<ept id="p1">*</ept> in the Power BI mobile app, you can access it from all of your devices, including the Power BI service. 
+您可以檢視所有您最愛 Power BI 儀表板，以及 Reporting Services Kpi 和行動的報告，在行動應用程式中的 [我的最愛] 頁面上。 當您對儀表板 *最愛* 在 Power BI 行動應用程式，您可以從存取所有裝置，包括 Power BI 服務。 
 
--  Tap <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept>.
+-  點選 **我的最愛**。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-ssrs-mobile-report-favorite-menu.png)
    
-    Your favorites from the web portal are all on this page.
+    您從入口網站的最愛都在此頁面。
 
     ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-ssrs-favorites.png)
 
-Read more about <bpt id="p1">[</bpt>favorites in the Power BI mobile apps<ept id="p1">](powerbi-mobile-favorites.md)</ept>.
+深入了解 [Power BI 行動應用程式中的最愛](powerbi-mobile-favorites.md)。
 
-## What more?
+## 何種多？
 
-See what more you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal
+了解更多您在 Power BI 應用程式適用於 Windows 10 裝置儀表板和 Power BI 中的報表和 Reporting Services 行動報表和 Reporting Services web 入口網站中的 Kpi
 
-### Power BI dashboards
+### Power BI 儀表板
 
--   View your <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-dashboards-in-the-win10phone-app.md)</ept>.
--   <bpt id="p1">[</bpt>Pin Power BI tiles and dashboards<ept id="p1">](powerbi-mobile-pin-dashboard-from-win10phone-app.md)</ept> to your device's Start screen as live tiles.
--   Explore the <bpt id="p1">[</bpt>tiles on your dashboards<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept>.
--   Explore your <bpt id="p1">[</bpt>reports<ept id="p1">](powerbi-mobile-reports-in-the-windows-app.md)</ept>.
--   <bpt id="p1">[</bpt>Share tiles<ept id="p1">](powerbi-mobile-share-a-tile-from-the-win10phone-app.md)</ept>.
--   Share <bpt id="p1">[</bpt>dashboards<ept id="p1">](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md)</ept>.
--   View your <bpt id="p1">[</bpt>groups' dashboards and reports<ept id="p1">](powerbi-mobile-groups-in-the-win10phone-app.md)</ept>.
--   View <bpt id="p1">[</bpt>notifications about updates to your Power BI account<ept id="p1">](powerbi-mobile-notification-center.md)</ept>, such as dashboards that colleagues share with you.
+-   檢視您 [儀表板](powerbi-mobile-dashboards-in-the-win10phone-app.md)。
+-   
+            [釘選 Power BI 磚和儀表板](powerbi-mobile-pin-dashboard-from-win10phone-app.md) 到即時顯示為您的裝置 [開始] 畫面。
+-   瀏覽 [儀表板上的磚](powerbi-mobile-tiles-in-the-win10phone-app.md)。
+-   瀏覽您 [報表](powerbi-mobile-reports-in-the-windows-app.md)。
+-   
+            [共用並排](powerbi-mobile-share-a-tile-from-the-win10phone-app.md)。
+-   共用 [儀表板](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md)。
+-   檢視您 [群組的儀表板和報表](powerbi-mobile-groups-in-the-win10phone-app.md)。
+-   檢視 [通知更新您的 Power BI 帳戶](powerbi-mobile-notification-center.md), ，例如同事分享您的儀表板。
 
      ![](media/powerbi-mobile-win10phone-app-get-started/power-bi-windows-10-notifications.png)
 
-### Reporting Services mobile reports and KPIs
+### Reporting Services 行動報表和 Kpi
 
-- <bpt id="p1">[</bpt>View Reporting Services mobile reports and KPIs<ept id="p1">](powerbi-mobile-win10-kpis-mobile-reports.md)</ept> in the Power BI app for Windows 10 devices.
-- Create <bpt id="p1">[</bpt>KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with the SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+- 
+            [檢視行動的 Reporting Services 報表和 Kpi](powerbi-mobile-win10-kpis-mobile-reports.md) 在 Power BI 應用程式適用於 Windows 10 裝置。
+- 建立 [Reporting Services web 入口網站上的 Kpi](https://msdn.microsoft.com/library/mt683632.aspx)。
+- 
+            [建立您自己行動的報告與 SQL Server Mobile 報表發行者](https://msdn.microsoft.com/library/mt652547.aspx), ，並將它們發行至 Reporting Services web 入口網站。
 
 
 ### 請參閱
 
-- <bpt id="p1">[</bpt>Download the Power BI app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=526478)</ept> from the Windows Store  
-- [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- 
+            [下載 Power BI 應用程式](http://go.microsoft.com/fwlink/?LinkID=526478) 從 Windows 市集  
+- [開始使用 Power BI](powerbi-service-get-started.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)
 

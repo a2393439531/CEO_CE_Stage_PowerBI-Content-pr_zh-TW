@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Edit tile details and add widgets"
-   description="Change the title and link behavior, and add widgets"
+   pageTitle="編輯方塊詳細資料和新增 widget"
+   description="變更標題和連結的行為，並新增 widget"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Edit Tile Details
+# 編輯方塊詳細資料
 
-Once you've built a dashboard, you can edit its *<bpt id="p1">*</bpt>Tiles<ept id="p1">*</ept> in the Power BI service to make a few formatting changes.
+一旦建置儀表板，您可以編輯其 **磚* 在 Power BI 服務，讓設定格式化的幾個變更。
 
-To make changes to a tile, hover over the tile and select the ellipses (three dots) to show a collection of icons that allow you to make changes to the tile.
+若要變更方塊，將滑鼠停留在該方塊並選擇省略符號 （三個點） 顯示的圖示，可讓您進行的變更集合磚。
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_1.png)
 
-Select the <bpt id="p1">**</bpt>pen<ept id="p1">**</ept> icon to open the <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept> pane. From here you can change the tile's <bpt id="p1">**</bpt>Title<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Subtitle<ept id="p2">**</ept>, include its last refresh time and date, and other details such as creating a custom link.
+選取 **畫筆** 圖示以開啟 **並排顯示詳細資料** 窗格。 從這裡您可以變更方塊的 **標題**, ，**副標題**, ，包括其上次重新整理時間和日期，以及其他詳細資料，例如建立自訂的連結。
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_2.png)
 
-By default, when you click on a dashboard tile you are taken to the report from which it originated. To change this behavior, use the <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept> pane. One popular use of this feature is to take users to the organization homepage when clicking on a logo image.
+根據預設，當您按一下儀表板] 磚上即會進入其產生的報表。 若要變更此行為，請使用 **組自訂連結** 欄位 **並排顯示詳細資料** 窗格。 按一下標誌影像時，才會組織首頁的使用者是一個受歡迎使用此功能。
 
-## Add Widgets to your dashboard
+## 將 Widget 加入儀表板
 
-You can also add Widgets to your dashboard. A <bpt id="p1">**</bpt>widget<ept id="p1">**</ept> is a special dashboard tile that, instead of containing a visualization, contains other items such as an image, an online video, a text box, or rich web content.
+您也可以將 Widget 加入儀表板中。 A **widget** 為特殊的儀表板並排顯示，而不是包含視覺化效果，其中包含其他項目例如影像、 線上影片、 文字方塊中或豐富的 web 內容。
 
-When you select the Add Widget link in the upper-right corner of a Dashboard, the <bpt id="p1">**</bpt>Add a widget<ept id="p1">**</ept> dialog appears.
+當您在右上角的 [儀表板中，選取新增 Widget 連結 **新增 widget** ] 對話方塊隨即出現。
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_3.png)
 
-When you add a text box, for example, a <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane appears on the right side, where you can edit details similar what is available when editing the details of any tile. But with widgets, there's also a section to define or modify the widget content, such as a rich text editor for a text box.
+當您新增的文字方塊，例如， **並排顯示詳細資料** 窗格會顯示在右側，您可以在此編輯詳細資料的類似功能時，使用編輯任一個磚的詳細資料。 但與 widget，還有定義或修改的 widget 內容，例如文字方塊 rich text editor 的區段。
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_4.png)
 
-With widgets and the ability to edit tile details, you can customize your dashboard and make it look just how you want it to be.
+Widget 和編輯方塊詳細資料的能力，您可以自訂儀表板，並讓它看起來只是您要如何為。

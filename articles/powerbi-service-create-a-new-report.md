@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a new Power BI report"
-   description="Create a new Power BI report"
+   pageTitle="建立新的 Power BI 報表"
+   description="建立新的 Power BI 報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,77 +19,79 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Create a new Power BI report
+# 建立新的 Power BI 報表
 
-There are many different ways to create a new report. This topic shows you two of them.
+有許多不同方式來建立新的報表。 本主題將說明其中兩個。
 
--   From a dataset
+-   從資料集
 
--   From an existing report
+-   從現有的報表
 
-## Create a new report from a dataset
+## 從資料集建立新的報表
 
-This method creates a new report from scratch. To follow along, <bpt id="p1">[</bpt>download the Retail Analysis sample<ept id="p1">](powerbi-sample-downloads.md)</ept>.
+這個方法會從頭建立新的報表。 如果要跟著做， [下載零售分析範例](powerbi-sample-downloads.md)。
 
-1.  Start in Power BI service and select a dataset to open it. Opening a dataset actually opens the report editor.  You'll see a blank canvas and the report editing tools.
+1.  啟動 Power BI 服務，並選取的資料集，以開啟它。 開啟資料集時，實際上會開啟報表編輯器。  您會看到空白畫布和報表編輯工具。
 
     ![](media/powerbi-service-create-a-new-report/powerbi-select-datasetnew.png)
 
-2.  Explore your data and <bpt id="p1">[</bpt>add visuals<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>. For this report, let's add a Gauge visual that tracks this year's sales.
+2.  瀏覽資料並 [加入視覺效果](powerbi-service-visualizations-for-reports.md)。 此報表，讓我們加入量測計視覺追蹤今年的銷售。
 
-   -  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>This Year Sales<ept id="p3">**</ept> &gt; Value.
+   -  在 **欄位** 窗格中，選取 **銷售** > **本年度銷售額** > 值。
 
         ![](media/powerbi-service-create-a-new-report/powerbi-report-step1.png)
 
-   -  Convert the visual to a Gauge by selecting the Gauge template <ph id="ph1">![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png)</ph> from the <bpt id="p1">**</bpt>VIsualizations<ept id="p1">**</ept> pane.
+   -  選取量測計的範本，將視覺效果轉換成量測計 ![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png) 從 **視覺效果** 窗格。
 
         ![](media/powerbi-service-create-a-new-report/powerbi-report-step2.png)
 
-   -  Drag <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>This Year Sales<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Goal<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>Target value<ept id="p4">**</ept> well.
+   -  拖放到 **銷售** > **本年度銷售額** > **目標** 至 **目標值** 良好。
 
         ![](media/powerbi-service-create-a-new-report/powerbi-report-step3.png)
 
-3.  Optionally, continue adding visuals, and then <bpt id="p1">[</bpt>save your report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+3.  （選擇性） 要繼續加入視覺效果，然後 [儲存報表](powerbi-service-save-a-report.md)。
 
     ![](media/powerbi-service-create-a-new-report/powerbi-save.png)
 
 
-## Create a new report from an existing report
-Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
+## 從現有的報表建立新的報表
+或許您有一份已連接到您的資料集，且您想要重複使用或修改某些視覺效果。  為什麼不只是複製該報表做為新報表的基礎？  若要這麼做︰
 
-1.  <bpt id="p1">[</bpt>Open a report<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept>.
+1.  
+            [開啟報表](powerbi-service-open-a-report-in-reading-view.md)。
 
-2.  From the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Save As<ept id="p2">**</ept>.
+2.  從 **檔案** 功能表上，選取 **另存新檔**。
 
     ![](media/powerbi-service-create-a-new-report/powerbi-save-as.png)
 
-3.  Type a name for the new report and select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.
+3.  輸入新的報表的名稱，然後選取 **儲存**。
 
     ![](media/powerbi-service-create-a-new-report/SaveReport.png)
 
-    A Success message lets you know that the new report was saved to Power BI.
+    成功的訊息可讓您知道新的報表已儲存至 Power BI。
 
     ![](media/powerbi-service-create-a-new-report/saveSuccess1.png)
 
-4.  Back in your Power BI navigation pane, select the new report to open it. Optionally, delete visuals you don't want to keep, modify other visuals, and add new ones.
+4.  回到您 Power BI 瀏覽窗格中，選取新的報表，以開啟它。 選擇性地刪除您不想要保留、 修改其他視覺效果，並加入新的視覺效果。
 
     ![](media/powerbi-service-create-a-new-report/newReportNavPane.png)
 
-5.  Have fun updating and editing your new report.
+5.  有有趣的更新和編輯新的報表。
 
 
-## Next Steps:
+## 後續步驟︰
 
-[Create new visualizations](powerbi-service-add-visualizations-to-a-report-ii.md)
+[建立新的視覺效果](powerbi-service-add-visualizations-to-a-report-ii.md)
 
-<bpt id="p1">[</bpt>Delete visualizations<ept id="p1">](powerbi-service-delete-a-visualization.md)</ept> you don't need
+
+            [刪除視覺效果](powerbi-service-delete-a-visualization.md) 您不需要
 
 ## 請參閱
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[開始使用 Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

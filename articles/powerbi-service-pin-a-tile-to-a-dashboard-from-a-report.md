@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin a tile to a Power BI dashboard from a report"
-   description="Pin a tile to a Power BI dashboard from a report."
+   pageTitle="從報表的 Power BI 儀表板磚的 pin 碼"
+   description="從報表，磚釘選到 Power BI 儀表板。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,59 +21,61 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Pin a tile to a Power BI dashboard from a report
-## Pinning tiles from a report
+# 從報表的 Power BI 儀表板磚的 pin 碼
+## 從報表的磚釘選
 
-﻿One way to add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept> is from within a <bpt id="p2">[</bpt>Power BI report<ept id="p2">](powerbi-service-reports.md)</ept>. In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
+﻿其中一種方式新增 [儀表板磚](powerbi-service-dashboard-tiles.md) 是從 [Power BI 報表](powerbi-service-reports.md)。 事實上，您可以從報表加入許多新的磚。  按一下時，這些磚都回到報表的連結。
 
-And entire report pages can be pinned to a dashboard.  This is also known as pinning a <bpt id="p1">*</bpt>live<ept id="p1">*</ept> tile.  <bpt id="p1">*</bpt>Live<ept id="p1">*</ept> because you can interact with the tile on the dashboard and because, unlike individual visualization tiles, changes made in the report are synced with the dashboard. Read more about this below.
+而且整個報表頁面可以固定至儀表板。  這也稱為固定 *live* 並排顯示。  
+            *Live* 因為您可以在儀表板上的磚與互動，而且，不同於個別視覺效果磚，在報表中所做的變更會同步處理與儀表板。 深入了解以下。
 
-<bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>:  You can't pin tiles from shared reports or from Power BI Desktop.
 
-## Pin a tile from a report
+            **請注意**︰ 您無法釘選磚從共用的報表，或從 Power BI Desktop。
 
-Watch Amanda create a dashboard by pinning visuals and images from a Power BI report.
+## 從報表的磚釘選
+
+觀看 Amanda 釘選視覺效果和從 Power BI 報表的映像來建立儀表板。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-Now create your own dashboard using one of the Power BI sample reports.
+現在建立您自己的儀表板使用 Power BI 範例報表的其中一個。
 
-1.  Hover over the visualization you want to pin, and select the pin <ph id="ph1">![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png)</ph> icon. Power BI opens the <bpt id="p1">**</bpt>Pin to dashboard<ept id="p1">**</ept> screen.
+1.  將滑鼠停留在您要釘選，視覺效果，然後選取 [pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) 圖示。 Power BI 會開啟 **釘選到儀表板** 畫面。
 
       ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_themes2.png)
 
-2. Decide whether to pin to an existing dashboard or new dashboard.
+2. 決定是否要釘選到現有儀表板或新的儀表板。
 
-  -   Existing dashboard: select the name of the dashboard from the dropdown. Dashboards that have been shared with you will not appear in the dropdown.
+  -   現有的儀表板︰ 從下拉式清單中選取的儀表板名稱。 已與您共用的儀表板不會出現在下拉式清單中。
 
-  -   New dashboard: type the name of the new dashboard.
+  -   新的儀表板︰ 輸入新的儀表板的名稱。
 
-3. In some cases, the item you are pinning may have a <bpt id="p1">*</bpt>theme<ept id="p1">*</ept> already applied.  For example, visuals pinned from an Excel workbook. If so, select which theme to apply to the tile.
+3. 在某些情況下，可能必須固定的項目 *佈景主題* 已經套用。  例如，從 Excel 活頁簿釘選視覺效果。 如果是的話，選取要套用到磚的主題。
 
-4.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+4.  選取 **Pin**。
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
+    成功的訊息 （靠近右上角） 可讓您知道已新增的視覺效果，做為您的儀表板] 的磚。
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/pinSuccess.png)
 
-4.  From the navigation pane, select the dashboard with the new tile. Select the tile to jump back into the report. Or, <bpt id="p1">[</bpt>edit the tile display and behavior<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>.
+4.  從 [瀏覽] 窗格中，選取 [儀表板與新的方塊。 選取要跳回到報表的磚。 或者， [編輯的並排顯示和行為](powerbi-service-edit-a-tile-in-a-dashboard.md)。
 
-## Pin an entire report page
+## Pin 整份報表頁面
 
-Another option is to pin an entire report page to a dashboard. This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are <bpt id="p1">*</bpt>live<ept id="p1">*</ept>; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
+另一個選項是釘選到儀表板整份報表頁面。 這是可以輕鬆地釘選一次多個視覺效果。  此外，當您插入整個頁面時，方塊是 *live*; 可以與它們直接出現在儀表板互動。 而且您對報表編輯器，如加入篩選條件，或變更圖表中使用的欄位中的上一步的視覺任何的效果變更會反映在 [儀表板] 磚。  
 
-For more information, see <bpt id="p1">[</bpt>Pin an entire report page<ept id="p1">](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)</ept>
+如需詳細資訊，請參閱 [釘選整份報表頁面](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)
 
 
 ## 請參閱
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[在 Power BI 儀表板] 磚](powerbi-service-dashboard-tiles.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Data refresh in Power BI](powerbi-refresh-data.md)
+[在 Power BI 中的資料重新整理](powerbi-refresh-data.md)
 
-[Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI 的基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

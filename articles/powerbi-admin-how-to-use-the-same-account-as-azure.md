@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="How to use the same account login for Power BI and Azure"
-   description="How to use the same account login for Power BI and Azure"
+   pageTitle="如何使用相同的帳戶登入 Power BI 與 Azure"
+   description="如何使用相同的帳戶登入 Power BI 與 Azure"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,26 +20,26 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# How to use the same account login for Power BI and Azure
+# 如何使用相同的帳戶登入 Power BI 與 Azure
 
-If you are a user of both Power BI and Azure, you may want to use the same login for both services so that you don't need to type in your password twice.
+如果您的 Power BI 與 Azure 的使用者，您可能想要使用相同的登入這兩項服務，好讓您不需要輸入密碼兩次。
 
-Power BI signs you in with your organizational account, associated with your work or school email address.  Azure signs you in with either a Microsoft Account or your organizational account.
+Power BI 」 將您登入您的組織帳戶，相關聯的工作或學校電子郵件地址。  Azure 可讓您登入 Microsoft 帳戶或組織帳戶。
 
-If you want to use the same login for both Azure and Power BI, be sure to sign in to Azure with your organizational account.
+如果您想要使用相同的登入 Azure 和 Power BI，請務必使用您的組織帳戶登入 Azure。
 
-**What if I already sign in to Azure with my Microsoft Account?**
+**如果我已經登入至 Azure 與我的 Microsoft 帳戶？**
 
-You can add your organizational account as a co-administrator in Azure.  以下說明做法：
+您可以為 Azure 中的共同管理員加入您的組織帳戶。  以下說明做法：
 
-1.  Sign in to the <bpt id="p1">[</bpt>Azure Management Portal<ept id="p1">](http://manage.windowsazure.com/)</ept>. If you are a user in multiple Azure directories, click <bpt id="p1">**</bpt>Subscriptions<ept id="p1">**</ept> and then filter to view only the directory and subscriptions you want to edit.
+1.  登入 [Azure 管理入口網站](http://manage.windowsazure.com/)。 如果您在多個 Azure 目錄中的使用者，請按一下 **訂閱** 然後篩選檢視的目錄和您想要編輯的訂閱。
 
-2.  In the navigation pane, click <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Administrators<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.
+2.  在導覽窗格中，按一下 **設定**, ，按一下 [ **管理員**, ，然後按一下 [ **新增**。
 
-3.  Enter the email address associated with your organizational account.
+3.  輸入您的組織帳戶相關聯的電子郵件地址。
 
-4.  Select the subscriptions you want to access with your organizational account and then click the check mark.
+4.  選取您想要使用您的組織帳戶存取，然後按一下 [核取記號的訂閱。
 
-Next time you sign in to the Azure Management Portal, use your organizational email address.
+下次您登入 Azure 管理入口網站中，使用您組織的電子郵件地址。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

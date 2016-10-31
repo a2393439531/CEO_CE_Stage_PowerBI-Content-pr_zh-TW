@@ -1,6 +1,6 @@
 <properties
-   pageTitle="More Advanced Data Sources and Transformation"
-   description="Connect and combine two data sources - it's easy"
+   pageTitle="更進階的資料來源和轉換"
+   description="-連接，並結合兩個資料來源可輕鬆"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,26 +22,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# More Advanced Data Sources and Transformation
+# 更進階的資料來源和轉換
 
-In this article, we investigate some advanced data import and cleaning techniques for <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>. Once you've shaped your data in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> and brought it into <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>, you can look at it in a few different ways. There are three views in Power BI Desktop: <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> view, and <bpt id="p3">**</bpt>Relationships<ept id="p3">**</ept> view. You see each view by selecting its icon in the upper left side of the canvas. In the following image, <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view is selected. The yellow bar beside the icon indicates which view is active.
+在本文中，我們介紹一些進階資料匯入以及清潔技術 **Power BI Desktop**。 一旦您已成形的 **查詢編輯器** 和帶到 **Power BI Desktop**, ，幾個不同的方式查看它。 Power BI Desktop 中有三種檢視︰ **報表** ] 檢視中， **資料** ] 檢視中，和 **關聯性** 檢視。 您可以看到每個檢視的畫布的左上角中選取它的圖示。 下圖中，在 **報表** 選取檢視。 圖示旁的黃色列表示作用中的檢視。
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_1.png)
 
-To change the view, just select either of other two icons. The yellow bar beside the icon indicates which view is active.
+若要變更檢視，只選取其中一個其他兩個圖示。 圖示旁的黃色列表示作用中的檢視。
 
-Power BI Desktop can combine data from multiple sources into a single report, at any time during the modelling process. To add additional sources to an existing report, select <bpt id="p1">**</bpt>Edit Queries<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon and then select <bpt id="p3">**</bpt>New Source<ept id="p3">**</ept> in <bpt id="p4">**</bpt>Query Editor<ept id="p4">**</ept>.
+Power BI Desktop 可以結合到單一報表中，從多個來源的資料模型化程序期間。 若要將其他來源新增到現有的報表中，選取 **編輯查詢** 中 **首頁** 功能區，然後選取 [ **新來源** 中 **查詢編輯器**。
 
-There are many different possible data sources you can use in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, including Folders. By connecting to a folder, you can import data from multiple files at once, such as a series of Excel files of CSV files. The files contained within your selected folder appear in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> as binary content, and clicking the double-arrow icon at the top of the <bpt id="p2">**</bpt>Content<ept id="p2">**</ept> column loads their values.
+有許多不同的可能資料來源中，您可以使用 **Power BI Desktop**, ，包括資料夾。 藉由連接到資料夾，您可以匯入多個檔案中的資料，例如一系列的 CSV 檔案的 Excel 檔案。 您選取的資料夾中包含的檔案會出現在 **查詢編輯器** 做為二進位內容，並按一下頂端的雙箭頭圖示 **內容** 資料行載入它們的值。
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_2.png)
 
-One of Power BI's most useful tools is its <bpt id="p1">*</bpt>Filters<ept id="p1">*</ept>. For example, selecting the drop-down arrow next to a column opens a checklist of text filters that you can use to remove values from your model.
+Power BI 最有用的工具之一是其 *篩選*。 例如，選取之資料行旁邊的下拉式箭號會開啟文字和篩選可讓您從模型移除值的檢查清單。
 
-You can also merge and append queries, and turn multiple tables (or data from various files, in folders) into a single table that contains just the data you want. You can use the <bpt id="p1">**</bpt>Append Queries<ept id="p1">**</ept> tool to add the data from a new table to an existing query. Power BI Desktop attempt to match up the columns in your queries, which you can then adjust as necessary in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>.
+您也可以合併和新增查詢，和將多個資料表 （或從資料夾中的各種檔案資料） 轉換成單一資料表，其中包含您要的資料。 您可以使用 **附加查詢** 工具將資料從新資料表新增至現有的查詢。 Power BI Desktop 嘗試比對中您的查詢，您可以依需要來調整中的資料行向上 **查詢編輯器**。
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_3.png)
 
-Finally, the <bpt id="p1">**</bpt>Add Custom Column<ept id="p1">**</ept> tool gives advanced users the option of writing query expressions from scratch using the powerful M language. You can add a custom column based on M query language statements, and get your data just the way you want it.
+最後， **加入自訂資料行** 工具可讓進階的使用者選擇使用功能強大的 M 語言從頭撰寫查詢運算式。 您可以加入自訂的資料行，根據 M 查詢語言陳述式，並想辦法取得您的資料。
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_4.png)

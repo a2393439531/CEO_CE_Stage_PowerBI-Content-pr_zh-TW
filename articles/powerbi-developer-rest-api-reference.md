@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI REST API Reference"
-   description="Power BI REST API Reference"
+   pageTitle="Power BI REST API 參考"
+   description="Power BI REST API 參考"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,17 +20,17 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Power BI REST API Reference
+# Power BI REST API 參考
 
-Power BI is a cloud-based service that you can use to build custom dashboard applications. The Power BI REST API is a REST-based API that provides programmatic access to <bpt id="p1">**</bpt>Dashboard<ept id="p1">**</ept> resources such as <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Tables<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Rows<ept id="p4">**</ept> in Power BI.
+Power BI 是雲端架構的服務，可用來建置自訂儀表板應用程式。 Power BI REST API 是以 REST 為基礎的 API，提供以程式設計方式存取 **儀表板** 資源，例如 **資料集**, ，**資料表**, ，和 **列** Power BI 中。
 
-The Power BI REST API has the following operations:
+Power BI REST API 包含下列作業︰
 
-- Dataset operations: Get and create Datasets.
-- Table operations: Get Tables and update Table schema.
-- Row operations: Add Rows and Delete Rows.
-- Group operations: Get Groups.
+- 資料集作業︰ 取得，並建立資料集。
+- 資料表作業︰ 取得資料表和更新資料表結構描述。
+- 資料列作業︰ 將資料列和刪除資料列。
+- 群組多個作業︰ 取得群組。
 
-To learn more about the Power BI REST API, see <bpt id="p1">[</bpt>Overview of Power BI REST API<ept id="p1">](https://msdn.microsoft.com/library/dn877544.aspx)</ept>.
+若要深入了解 Power BI REST API，請參閱 [概觀的 Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx)。
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

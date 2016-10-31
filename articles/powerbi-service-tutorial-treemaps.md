@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Treemaps in Power BI"
-   description="Tutorial: Treemaps in Power BI"
+   pageTitle="在 Power BI 中的教學課程︰ Treemaps"
+   description="在 Power BI 中的教學課程︰ Treemaps"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,78 +21,86 @@
    ms.date="10/14/2016"
    ms.author="mihart"/>
 
-# <a name="tutorial:-treemaps-in-power-bi"></a>Tutorial: treemaps in Power BI  
+# <a name="tutorial:-treemaps-in-power-bi"></a>在 Power BI 中的教學課程︰ treemaps  
 
-Treemaps display hierarchical data as a set of nested rectangles.  Each level of the hierarchy is represented by a colored rectangle (often called a "branch") containing other rectangles ("leaves").  The space inside each rectangle is allocated based on the quantitative value being measured, with the rectangles arranged in size from top left (largest) to bottom right (smallest).
+Treemaps 會顯示成一組巢狀矩形的階層式資料。  每個階層層級會以彩色矩形 （通常稱為 「 分支 」） 包含其他矩形 （「 分葉 」）。  每一個矩形內的空間配置要測量的量化值，以排列的由上往左 （最大） 大小的矩形以滑鼠右鍵 （小）。
 
 ![](media/powerbi-service-tutorial-treemaps/pbi-Nancy_viz_treemap.png)
 
-For example, if I'm analyzing my sales, I might have top-level rectangles (branches) for the clothing categories: <bpt id="p1">**</bpt>Urban<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Rural<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Youth<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Mix<ept id="p4">**</ept>.  My category rectangles would contain smaller rectangles (leaves) for the clothing manufacturers within that category, and these smaller rectangles would be sized and shaded based on the number sold.  In the <bpt id="p1">**</bpt>Urban<ept id="p1">**</ept> branch above, lots of Maximus clothing was sold, less Natura and Fama, and very little Leo.  So, the <bpt id="p1">**</bpt>Urban<ept id="p1">**</ept> branch of my Treemap would have the largest rectangle for Maximus (in the top left corner), slightly-smaller rectangles for Natura and Fama, lots of other rectangles representing all the other clothing sold, and a tiny rectangle for Leo.  And I could compare the number of items sold across the other clothing categories by comparing the size and shading of each leaf node; the larger the rectangle and the darker the shading, the higher the value.
+例如，如果我要分析我銷售，可能有最上層的矩形 （分支） 的服裝類別目錄︰ **都市**, ，**Rural**, ，**Hope**, ，和 **混合**。  我的類別矩形會包含較小的矩形 （分葉） 的銷售數字為基礎的衣服會調整大小，加上陰影的類別、 與這些較小的矩形內的製造商。  在 **都市** 分支上述、 大量 Maximus 服裝銷售、 較少 Natura 和 Fama 和極少 Leo。  因此， **都市** 我 Treemap 的分支會有最大矩形 for Maximus （在左上角），稍微較小的矩形 Natura 和許多其他矩形代表所有其他服裝銷售和一個小矩形，Fama Leo。  我無法比較的所有其他的服裝類別銷售的項目數比較大小及每個分葉節點; 網底愈大矩形陰影越深，表示，這個值越高。
 
-## <a name="when-to-use-a-treemap"></a>When to use a treemap  
-Treemaps are a great choice:
+## <a name="when-to-use-a-treemap"></a>使用 treemap 的時機  
+Treemaps 是相當好的選擇︰
 
--   to display large amounts of hierarchical data.
+-   若要顯示大量的階層式資料。
 
--   when a bar chart can't effectively handle the large number of values.
+-   當橫條圖無法有效地處理大量的值。
 
--   to show the proportions between each part and the whole.
+-   若要顯示每個部分與整體之間的比例。
 
--   to show the pattern of the distribution of the measure across each level of categories in the hierarchy.
+-   若要顯示的量值的分佈模式跨越類別目錄階層中的每個層級。
 
--   to show attributes using size and color coding.
+-   若要顯示屬性使用的大小和色彩編碼。
 
--   to spot patterns, outliers, most-important contributors, and exceptions.
+-   若要找出模式、 極端值、 最重要的參與者和例外狀況。
 
-## <a name="create-a-basic-treemap"></a>Create a basic treemap  
+## <a name="create-a-basic-treemap"></a>建立基本 treemap  
 
 
-Want to watch someone else create a treemap first?  Skip to 2:01 in this video to watch Will create a treemap using the Sales and Marketing sample.
+想要監看其他人，請先建立 treemap 嗎？  要監看，請跳至 2:01，在這段影片將會建立使用銷售和行銷範例 treemap。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rnMyiA6Nt6Y?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along,  <bpt id="p1">[</bpt>download the sample<ept id="p1">](powerbi-sample-downloads.md)</ept>, sign in to Power BI and select <bpt id="p2">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Excel Workbook <ph id="ph2">\&gt;</ph>  Connect <ph id="ph3">\&gt;</ph> Retail Analysis Sample<ept id="p2">**</ept>.<bpt id="p3">**</bpt>xlsx<ept id="p3">**</ept>.
+或者，建立您自己的樹狀。 這些指示使用零售分析範例。 如果要跟著做，  [下載範例](powerbi-sample-downloads.md), ，登入 Power BI，然後選取 **取得資料 \> Excel 活頁簿 \>  連接 \> 零售分析範例**。**xlsx**。
 
-1.  Start in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> and select the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Last Years Sales<ept id="p3">**</ept> measure.   
+1.  在啟動 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md) ，然後選取 **銷售** > **最後一年銷售** 量值。   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue_new.png)
 
-2.  Convert the chart to a treemap.  
+2.  將圖表轉換成 treemap。  
 ![](media/powerbi-service-tutorial-treemaps/treemapConvertTo_new.png)
 
-3.  Drag <bpt id="p1">**</bpt>Item<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Category<ept id="p2">**</ept> to the <bpt id="p3">**</bpt>Group<ept id="p3">**</ept> well. Power BI creates a treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The <bpt id="p1">**</bpt>Mens<ept id="p1">**</ept> category has the highest sales and the <bpt id="p2">**</bpt>Hosiery<ept id="p2">**</ept> category has the lowest.
+3.  拖放到 **項目** > **類別** 至 **群組** 良好。 Power BI 建立 treemap 矩形的大小會反映總銷售額而色彩代表類別目錄。  基本上，您已建立的階層，以視覺化方式依分類說明總銷售額的相對大小。   **Mens** 類別都有最高的銷售和 **Hosiery** 類別目錄具有最低。
   ![](media/powerbi-service-tutorial-treemaps/treemapComplete_new.png)
 
-4.  Drag <bpt id="p1">**</bpt>Store<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Chain<ept id="p2">**</ept> to the <bpt id="p3">**</bpt>Details<ept id="p3">**</ept> well to complete your treemap. You can now compare last year's sales by category and chain.   
+4.  拖放到 **存放區** > **鏈結** 至 **詳細資料** 也以完成您的樹狀。 您現在可以比較依類別和鏈結的去年銷售量。   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
 
-    >[AZURE.NOTE] Color Saturation and Details cannot be used at the same time.
+    >[AZURE.NOTE] 無法同時使用色彩飽和度和詳細資料。
 
-5. Hover over a <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> area to reveal the tooltip for that portion of the <bpt id="p2">**</bpt>Category<ept id="p2">**</ept>.  For example, hovering over <bpt id="p1">**</bpt>Lindseys<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>040-Juniors<ept id="p2">**</ept> rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
+5. 將滑鼠停留在 **鏈結** 以顯示該部分的工具提示的區域 **類別**。  例如，滑鼠游標停留於 **Lindseys** 中 **040 Juniors** 矩形會顯現 Juniors 類別 Lindsey 的部分的工具提示。  
 ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
 
-5.  <bpt id="p1">[</bpt>Add the treemap as a dashboard tile (pin the visual)<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+5.  
+            [做為儀表板] 的磚 (pin 視覺效果) 加入 treemap](powerbi-service-dashboard-tiles.md)。 
 
-6.  <bpt id="p1">[</bpt>Save the report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+6.  
+            [將報表儲存](powerbi-service-save-a-report.md)。
 
-## <a name="highlighting-and-cross-filtering"></a>Highlighting and cross-filtering  
-For information about using the Filters pane, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+## <a name="highlighting-and-cross-filtering"></a>反白顯示和交叉篩選  
+使用 [篩選] 窗格的相關資訊，請參閱 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report.md)。
 
-Highlighting a Category or Details in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
+反白顯示樹狀中的 [類別目錄或詳細資料跨反白顯示和交叉篩選 [報表] 頁面上的其他視覺效果]，反之亦然。 要跟著做，將一些視覺項目加入至相同的頁面或複製/貼上已有其他視覺效果的報表頁面樹狀。
 
-1.  On the treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting <bpt id="p1">**</bpt>050-Shoes<ept id="p1">**</ept>, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
+1.  在樹狀中，選取類別中的鏈結。  這個跨-反白顯示在頁面上的其他視覺效果。 選取 **050 鞋**, ，比方說，顯示我去年的銷售量鞋已 $3,640,471 $2,174,185，來自直接的方式使用。  
     ![](media/powerbi-service-tutorial-treemaps/treemapHiliting.png)
 
-2.  In the <bpt id="p1">**</bpt>Last Year Sales by Chain<ept id="p1">**</ept> pie chart, select the <bpt id="p2">**</bpt>Fashions Direct<ept id="p2">**</ept> slice.  
+2.  在 **鏈結的最後一個年度銷售額** 圓形圖中，選取 **的方式直接** 配量。  
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
 
-3. To manage how charts cross-highlight and cross-filter each other, see <bpt id="p1">[</bpt>Visualization interactions in a Power BI report<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
+3. 若要管理如何圖表跨反白顯示和交叉篩選彼此，請參閱 [Power BI 報表中的視覺效果互動](powerbi-service-visual-interactions.md)
 
 ## <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-<bpt id="p1">[</bpt>Add a visualization to a report<ept id="p1">](https://powerbi.uservoice.com/knowledgebase/articles/441777)</ept>  
-<bpt id="p1">[</bpt>Visualization types in Power BI<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt> Pin a visualization to a dashboard<ept id="p2">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>  
-<bpt id="p1">[</bpt>Try it out -- it's free!<ept id="p1">](https://powerbi.com/)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>  
+            [在 Power BI 中的報表](powerbi-service-reports.md)  
+
+            [報表中加入視覺效果](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
+
+            [在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[ 釘選視覺效果的儀表板](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)  
+
+            [試試看-它的免費 ！](https://powerbi.com/)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)  

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add rows to a table"
-   description="Walkthrough to push data - Add rows to a Power BI table"
+   pageTitle="將資料列加入資料表"
+   description="逐步解說來推送資料-將資料列加入 Power BI 資料表"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,30 +20,31 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 5: Add rows to a Power BI table
+# 步驟 5︰ 將資料列加入至 Power BI 資料表
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+逐步解說的這篇文章屬於 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)。
 
-In <bpt id="p1">**</bpt>step 4<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Get a dataset to add rows into a Power BI table<ept id="p2">](powerbi-developer-walkthrough-push-data-get-datasets.md)</ept>, you used the <bpt id="p3">[</bpt>Get Datasets<ept id="p3">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the <bpt id="p1">[</bpt>Add Rows<ept id="p1">](https://msdn.microsoft.com/library/mt203561.aspx)</ept> operation to add rows to a <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> dataset.
+在 **步驟 4** 的推播資料到儀表板， [到 Power BI 資料表加入資料列的資料集](powerbi-developer-walkthrough-push-data-get-datasets.md), ，您在使用 [取得資料集](https://msdn.microsoft.com/library/mt203567.aspx) 作業和 Newtonsoft.Json 來取得資料集識別碼。 在此步驟中，您可以使用資料集識別碼與 [加入資料列](https://msdn.microsoft.com/library/mt203561.aspx) 要加入的資料列作業 **Power BI** 資料集。
 
-When you call the <bpt id="p1">[</bpt>Add Rows<ept id="p1">](https://msdn.microsoft.com/library/mt203561.aspx)</ept> operation, you add rows to a dataset in your dashboard.
+當您呼叫 [加入資料列](https://msdn.microsoft.com/library/mt203561.aspx) 作業，您的儀表板中加入資料集資料列。
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-add-rows.png)
 
-Here's how to add rows to a dataset using the Power BI API.
+以下是如何將資料列加入至使用 Power BI API 資料集。
 
-## Add rows to a Power BI table
+## 將資料列加入至 Power BI 資料表
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **請注意**︰ 開始使用之前，請確定您已經依照先前的步驟中 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md) 逐步解說。
 
-1.  In the Console Application project you created in Step 2: Walkthrough to push data, <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, add the code below.
-2. Run the Console App, and login to your Power BI account. You should see <bpt id="p1">**</bpt>Rows Added<ept id="p1">**</ept> in the Console Window. You can also login to your Power BI dashboard to see the rows added to the dataset.
+1.  在主控台應用程式專案中建立在步驟 2︰ 發送資料的逐步解說 [取得驗證存取權杖](powerbi-developer-walkthrough-push-data-get-token.md), ，加入下列程式碼。
+2. 執行主控台應用程式，並登入您的 Power BI 帳戶。 您應該會看到 **資料列加入** 主控台視窗中。 您也可以登入 Power BI 儀表板以查看加入至資料集的資料列。
 
-**Sample push data into a dashboard**
+**範例資料發送到儀表板**
 
-Add this code into Program.cs.
+將此程式碼加入至 Program.cs。
 
-- In static void Main(string[] args):
+- 在靜態 void Main (string [] args):
 
   ```
    static void Main(string[] args)
@@ -63,7 +64,7 @@ Add this code into Program.cs.
    }     
   ```
 
-- Add an AddRows() method:
+- 新增 AddRows() 方法︰
 
 ```
     #region Add rows to a Power BI table
@@ -109,16 +110,16 @@ Add this code into Program.cs.
     #endregion
 ```
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+以下是 [完整程式碼清單](#code)。
 
 ## 請參閱
 - [加入資料列](https://msdn.microsoft.com/library/mt203561.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [將資料發送到 Power BI 儀表板](powerbi-developer-walkthrough-push-data.md)
+- [Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Power BI REST API 參考](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## 完整程式碼清單
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -319,4 +320,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

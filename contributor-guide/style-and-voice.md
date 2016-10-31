@@ -1,67 +1,76 @@
-<properties title="" pageTitle="Writing Power BI documentation - style and voice cheat sheet" description="Style and voice information to help you create technical content for the Power BI documentation center." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="required" />
+<properties title="" pageTitle="撰寫 Power BI 文件-設定樣式和語音小祕技" description="樣式和語音資訊可協助您建立的 Power BI 文件中心的技術內容。" metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="required" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
-#Writing Power BI documentation - style and voice cheat sheet
+#撰寫 Power BI 文件-設定樣式和語音小祕技
 
-Here's a cheat sheet that contains pointers about how to write technical articles for Power BI services and technologies. 無論您要建立新文件或更新現有文件，這些指導方針均適用。
+以下是小祕技，其中包含有關如何撰寫 Power BI 服務和技術的技術文件的指標。 無論您要建立新文件或更新現有文件，這些指導方針均適用。
 
-At a bare minimum, please:
+在最少，請︰
 
-- Spell check and grammar check your topics, even if you have to cut and paste into Word to do it.
+- 檢查拼字和文法檢查您的主題，即使您剪下並貼到 Word 執行它。
 - 使用非正式且親切的語音 - 像你和其他人一對一交談。
 - 使用簡單的句子。 它們更容易了解，而且讓翻譯者與機器轉換程式能夠更輕鬆地翻譯。
 
-The following sections contain more details:
+下列各節包含更多詳細資料︰
 
-+ [Use a customer-friendly voice]
-+ [Consider localization and machine translation]
-+ [Other style and voice issues to watch for]
++ [使用適合客戶的聲音]
++ [請考慮當地語系化和機器翻譯]
++ [監看的其他樣式和聲音問題]
 
 
-##Use a customer-friendly voice
+##使用適合客戶的聲音
 
-We aspire to follow these principles when we write technical content for Power BI. We may not always get there, but we need to keep trying!
+我們渴望遵循這些原則，當我們撰寫 Power bi 的技術內容。 我們可能不一定會得到，但我們必須再試試看 ！
 
-- <bpt id="p1">**</bpt>Use everyday words<ept id="p1">**</ept>: Try to use natural language, the words your customers use; be less formal but not less technical; provide examples that explain new concepts.
+- 
+            **使用常用字**︰ 嘗試使用自然語言，您的客戶使用較少的正式，但不小於技術; 提供範例，說明新的概念的單字。
 
-- <bpt id="p1">**</bpt>Write concisely<ept id="p1">**</ept>: Don't waste words and don't over explain. Be affirmative and don't use extra words or lots of qualifiers. Keep sentences short and concise. Keep your topic focused. If a task has a qualifier, put it at the beginning of the sentence or paragraph. Also, keep the number of notes to a minimum. Use a screenshot when it can save words.
+- 
+            **簡明扼要**︰ 不會浪費字並不超過說明。 是肯定，而不要使用多餘的字或大量的限定詞。 保持簡潔的句子。 保留您已取得焦點的主題。 如果工作具有辨識符號，請將它放在句子或段落的開頭。 此外，請在最小值的附註數。 它可以儲存文字時，請使用螢幕擷取畫面。
 
-- <bpt id="p1">**</bpt>Easy to scan<ept id="p1">**</ept>: Put the most important things first. Use sections to chunk long procedures into more manageable groups of steps (procedures with more than 12 steps are probably too long). Use a screenshot when it adds clarity.
+- 
+            **容易掃描**︰ 將最重要的項目放在前面。 使用各區塊長度的程序分成更容易管理群組 （超過 12 個步驟的程序可能是太長） 的步驟。 在新增清楚起見，請使用螢幕擷取畫面。
 
-- <bpt id="p1">**</bpt>Show empathy<ept id="p1">**</ept>: Use a supportive tone in the article, and keep disclaimers to a minimum. Honestly call out areas that will be frustrating to customers. Make sure the article focuses on what matters to the customer, don't just give a technical lecture.
+- 
+            **顯示對**︰ 在文章中，使用持音和免責聲明保持在最小值。 老實說宣布將造成妨礙客戶的區域。 請確定文件著重於所關切的客戶，不只是提供技術課程。
 
-##Consider localization and machine translation
-Our technical articles are translated into many other languages, and some are modified for particular markets. People might also be using machine translation on the web to read the technical articles. So, write with the following guidance in mind:
+##請考慮當地語系化和機器翻譯
+我們的技術文章會轉譯成許多其他語言，而有些修改特定的市場。 使用者可能也使用機器翻譯在網站上讀取技術文件。 因此，撰寫與記住下列指導方針︰
 
-- <bpt id="p1">**</bpt>Make sure the article contains no grammar, spelling, or punctuation errors<ept id="p1">**</ept>: This is something we should do in general. Markdown Pad 2.0 has a basic spell checker, but you should also paste the (rendered HTML) content from the article into Word, which has a more robust spell and grammar checker.
+- 
+            **請確定發行項不含任何文法、 拼字檢查] 或標點符號錯誤**︰ 這是我們應該在一般情況下執行。 Markdown 板 2.0 具有基本的拼字檢查程式，但也要貼上 (呈現的 HTML) 到具有更穩固的拼字和文法檢查的 Word 文件內容。
 
-- <bpt id="p1">**</bpt>Make your sentences as short as possible<ept id="p1">**</ept>: Compound sentences or chains of clauses  make translation difficult. Split up sentences if you can do it without being too redundant or sounding weird. We don't really want articles written in unnatural language either.
+- 
+            **請盡量縮短句子**︰ 複合句子或鏈結的子句進行轉譯困難。 如果您可以在執行而不會被太冗餘或發音怪，分割句子。 我們真的不想可能比較不自然語言撰寫的文章。
 
-- <bpt id="p1">**</bpt>Use simple and consistent sentence construction<ept id="p1">**</ept>: Consistency is better for translation. Avoid parentheticals and asides, and have the subject as near the beginning of the sentence as possible. Check out a few published topics - if the topic has a friendly, easy to read style, use it as a model.
+- 
+            **使用簡單且一致的句子結構**︰ 一致性是更適合用來轉譯。 請避免 parentheticals 和側邊欄並做為主旨為盡可能句子開頭附近。 如果主題有容易讀取樣式，做為模型的用途，，請參考已發行的幾個主題。
 
-- <bpt id="p1">**</bpt>Use consistent wording and capitalization<ept id="p1">**</ept>: Again, consistency is key. Power BI uses sentence casing for titles, so never capitalize a word if it isn't at the start of a sentence or a proper noun.
+- 
+            **使用一致的用語和大小寫**︰ 一致性同樣的是索引鍵。 Power BI 會使用標題句子大小寫，因此千萬不要大寫的字，如果不是開頭的句子或專有名詞。
 
-- <bpt id="p1">**</bpt>Include the "small words"<ept id="p1">**</ept>: Words that we consider small and unimportant in English because they are understood for context (such as "a", "the", "that", and "is") are crucial for machine translation - make sure you include them!
+- 
+            **「 小單字"**︰ 我們認為小並不重要的是英文因為內容了解的文字 (例如"a"、"the"，"，"和"is") 對機器翻譯-而言十分重要請確定您將它們包含 ！
 
-##Other style and voice issues to watch for
+##監看的其他樣式和聲音問題
 
 - 不要使用註解或旁白來分割步驟。
 
-- 針對包括程式碼片段的步驟，可將關於該步驟的其他資訊放入程式碼做為註解。 This reduces the amount of text people have to read through, and the key information gets copied into the code project to remind people of what the code is doing when they refer to it later.
+- 針對包括程式碼片段的步驟，可將關於該步驟的其他資訊放入程式碼做為註解。 這可以減少人閱讀，文字數量，而金鑰資訊複製至程式碼專案，以提醒使用者的程式碼動作，當他們日後參考。
 
-- The official product name is “Microsoft Power BI”, but we can almost always just say “Power BI”, as in "Power BI dashboard".
+- 官方的產品名稱是 「 Microsoft Power BI"，但我們幾乎都只需說 「 Power BI 」，如 「 Power BI 儀表板] 所示。
 
-- Don’t create acronyms that start with "MPBI" or "PBI."  通常盡量避免縮略字 - 它們只會讓人混淆。
+- 不要建立首字母縮略字開頭為"MPBI 」 或 「 PBI 」。  通常盡量避免縮略字 - 它們只會讓人混淆。
 
-- Power BI uses sentence casing for all titles.
+- Power BI 會使用所有標題句子大小寫。
 
-- Use "sign-in" and not "log-in."
+- 使用 「 登入 」，並不 」 登入。 」
 
 - 在每個位於清單或程式碼片段之前的句子中包含「下列」或「如下」等字詞。
 
 
-###Contributors' Guide Links
+###著作指南的連結
 
 - [概觀文章](./../README.md)
 - [指引文章的索引](./contributor-guide-index.md)
@@ -69,6 +78,6 @@ Our technical articles are translated into many other languages, and some are mo
 
 
 <!--Anchors-->
-[Use a customer-friendly voice]: #use-a-customer-friendly-voice
-[Consider localization and machine translation]: #consider-localization-and-machine-translation
-[other style and voice issues to watch for]: #other-style-and-voice-issues-to-watch-for
+[使用適合客戶的聲音]: #use-a-customer-friendly-voice
+[請考慮當地語系化和機器翻譯]: #consider-localization-and-machine-translation
+[監看的其他樣式和聲音問題]: #other-style-and-voice-issues-to-watch-for

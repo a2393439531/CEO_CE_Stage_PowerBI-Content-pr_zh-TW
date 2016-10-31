@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Review custom visuals for security and privacy"
-   description="Before you enable a custom visual, you should review that visual for security and privacy to make sure if will fit your organization's standards."
+   pageTitle="檢閱安全性與隱私權的自訂視覺效果"
+   description="啟用自訂視覺效果之前，您應該檢閱，安全性和隱私權進行視覺化確定如果符合組織的標準。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,105 +20,106 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Review custom visuals for security and privacy
+# 檢閱安全性與隱私權的自訂視覺效果
 
-Before you enable a custom visual, you should review that visual for security and privacy to make sure if will fit your organization's standards.
+啟用自訂視覺效果之前，您應該檢閱，安全性和隱私權進行視覺化確定如果符合組織的標準。
 
-## Enable a custom visual
+## 啟用自訂視覺效果
 
-<a name="enable"></a>A custom visual in the report is disabled until you choose <bpt id="p1">**</bpt>Enable custom visuals<ept id="p1">**</ept> as shown below.  
+<a name="enable"></a>在報表中的自訂視覺效果已停用，直到您選擇 **啟用自訂視覺效果** ，如下所示。  
 
 ![](media/powerbi-custom-visuals-review-for-security-and-privacy/EmptyVisual.png)
 
-## Considerations before you enable a custom visual  
+## 啟用自訂視覺效果之前的考量  
 <a name="considerations"></a>
 
-> [AZURE.WARNING] A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. Here are some considerations to decide whether to enable a custom visual:
+> [AZURE.WARNING] 自訂視覺效果可能包含程式碼與安全性或隱私權風險。因此，直到您選擇啟用自訂視覺效果已停用在報表中的自訂視覺效果。 以下是決定是否要啟用的自訂視覺效果的一些考量︰
 
-1. Ensure you trust the author and the source of the custom visuals used in the report
+1. 請確定您信任作者及來源的報表中使用自訂視覺效果
 
-2. If you are unsure what to do, you should reach out to your IT team to weigh in on whether you should enable custom visuals for reports you view.
+2. 如果您不確定如何因應，您應該連絡您的 IT 團隊權衡上是否應該啟用您檢視的報表的自訂視覺效果。
 
-3. If someone shares a report with you that contains a custom visual, even if they're a close co-worker, do not feel obligated to enable the custom visual. It's okay to step back and consider whether it is essential to the task at hand. It's always okay to ask someone to provide you a report without custom visuals if you don't feel confident about the custom visual.
+3. 如果其他人與您共用報表，其中包含自訂視覺效果，即使它們是關閉的同事，覺得無法義務啟用自訂視覺效果。 它也沒關係回過頭來考慮是否很重要的工作。 您總是可以查詢其他人的報表，而不需要自訂視覺效果時提供您不想把握自訂視覺效果。
 
-## Security best practices for IT Professionals to enable a custom visual  
+## 若要啟用的自訂視覺效果的 IT 專業人員的安全性最佳作法  
 <a name="security"></a>
 
-> [AZURE.WARNING] A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. There are several best practices you can follow to evaluate a custom visual for security and privacy.
+> [AZURE.WARNING] 自訂視覺效果可能包含程式碼與安全性或隱私權風險。因此，直到您選擇啟用自訂視覺效果已停用在報表中的自訂視覺效果。 有數個要評估的安全性與隱私權的自訂視覺效果，您可以遵循的最佳作法。
 
-1.  Implement a vetting process for custom visuals within the organization. Vetted custom visuals would be shared with internal users through an internal website, such as a SharePoint document library or OneNote document.
-2.  Provide guidance for business users on appropriate use of custom visuals and an email group for business users to send security and privacy questions to.
-3.  Evaluate the JavaScript code in the custom visual pbiviz file.
+1.  實作在組織內的自訂視覺效果的 vetting 程序。 驗證自訂視覺效果會與透過內部網站，例如 SharePoint 文件庫或 OneNote 文件的內部使用者共用。
+2.  提供商務上的使用者自訂視覺效果的適當用法的指引和商務使用者之安全性和隱私權問題來傳送電子郵件群組。
+3.  評估自訂視覺化 pbiviz 檔案中的 JavaScript 程式碼。
 
-**To evaluate the JavaScript code in a custom visual**
+**若要評估 JavaScript 程式碼中的自訂視覺效果**
 
-A custom visual uses JavaScript and can therefore contain security or privacy risks. If you receive a custom visual or a pbix file with a custom visual from an unknown source, you may want to look at the JavaScript to see if it is safe.
+自訂視覺效果使用 JavaScript，因此可以包含安全性或隱私權風險。 如果您從不明來源收到的自訂視覺效果或 pbix 檔案的自訂視覺效果，您可以看看安全 JavaScript。
 
-To evaluate the JavaScript code in a custom visual, extract the custom visual code. Here’s how to extract the code:  
+若要評估的自訂視覺效果中的 JavaScript 程式碼，擷取自訂的視覺化程式碼。 以下是如何解壓縮程式碼︰  
 
-1. Save the .pbiviz file to a folder.
+1. 將.pbiviz 檔案儲存到資料夾。
 
-2. Rename the file to a .zip file.
+2. 將檔案重新命名為.zip 檔案。
 
-3. Extract the zip file to a local folder.
+3. 將 zip 檔案解壓縮至本機資料夾。
 
-## Custom visual file contents
+## 自訂視覺化檔案內容
 
-The following are the contents of a pbiviz file:
+Pbiviz 檔案的內容如下︰
 
 | **檔案**                     | **說明**                                                                                                                                                           |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ./package.json               | A manifest file that indicates which files to load for the custom visual.                                                                                                 |
-| ./resources                  | Contains the CSS, TypeScript, and JavaScript used by the custom visual.                                                                                                   |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name&gt;     | &lt;name<ph id="ph1">&amp;gt;</ph> is the name of the custom visual.                                                                                                                            |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.css | The css resource file for the custom visual.                                                                                                                              |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.js  | The code that executes when a user clicks Enable custom visuals or after a user Imports a custom visual. Warning JavaScript code could contain security or privacy risks. |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.ts  | The JavaScript source code for the visual in TypeScript format. Warning JavaScript or TypeScript code could contain security or privacy risks.                            |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.png | The icon shown to the user for the visual.                                                                                                                                |
+| ./package.json               | 資訊清單檔，指出要載入的自訂視覺效果的檔案。                                                                                                 |
+| 。 / 資源                  | 包含 CSS、 TypeScript 和 JavaScript 使用的自訂視覺效果。                                                                                                   |
+| ./resources/&lt;名稱&gt;     | &lt;名稱&gt; 自訂視覺效果的名稱。                                                                                                                            |
+| ./resources/&lt;名稱&gt;.css | 自訂視覺效果 css 資源檔。                                                                                                                              |
+| ./resources/&lt;名稱&gt;.js  | 當使用者按一下 [啟用自訂視覺效果，或在使用者匯入自訂視覺效果之後執行的程式碼。 警告的 JavaScript 程式碼可能包含安全性或隱私權風險。 |
+| ./resources/&lt;名稱&gt;.ts  | TypeScript 格式 visual JavaScript 原始程式碼。 警告 JavaScript 或 TypeScript 程式碼可能包含安全性或隱私權風險。                            |
+| ./resources/&lt;名稱&gt;.png | 視覺效果對使用者顯示的圖示。                                                                                                                                |
 
-After you extract the pbiviz file, you can evaluate the code. Here are some best practices and threats to look for.
+Pbiviz 檔案解壓縮之後，您可以評估程式碼。 以下是一些最佳作法和要尋找的威脅。
 
-## Best practices to evaluate the JavaScript or TypeScript code
+## 若要評估的 JavaScript 或 TypeScript 程式碼的最佳作法
 
-<bpt id="p1">**</bpt>JavaScript<ept id="p1">**</ept> or <bpt id="p2">**</bpt>TypeScript<ept id="p2">**</ept> code could contain security or privacy risks. Here are some best practices and threats to look for.
 
-### Best practices to evaluate JavaScript code
+            **JavaScript** 或 **TypeScript** 程式碼可能包含安全性或隱私權風險。 以下是一些最佳作法和要尋找的威脅。
 
--  Always evaluate the .js file contents. This is the code that actually runs. It could be that the contents of the .ts file don't compile to the .js file included in the custom visual.
+### 若要評估 JavaScript 程式碼的最佳作法
 
--  Always evaluate the .ts file contents. You can load the .ts file into the <bpt id="p1">**</bpt>Developer Tools<ept id="p1">**</ept>, export the visual and compare the resulting .js file in the newly create .pbiviz file to the original .js file contained in the visual
+-  務必要評估的.js 檔案內容。 這是實際執行的程式碼。 這可能是.ts 檔案的內容不編譯成自訂視覺效果中包含的.js 檔案。
 
--  Check that the icon for the custom visual does not resemble too closely other visuals the user is familiar with.
+-  務必要評估.ts 檔案內容。 您可以將.ts 檔案載入 **開發人員工具**, 、 匯出視覺效果，以及比較產生的.js 檔案中新建立的.pbiviz 視覺效果中所包含的原始.js 檔的檔案
 
--  Always evaluate the visual in a test account that has minimal privileges and does not have access to any sensitive data. Ideally the test account would be a local account with no sign-in information to services other than Power BI.
+-  請檢查自訂視覺效果的圖示不類似於使用者是熟悉太接近其他視覺效果。
 
-### Threats to look for in JavaScript code
+-  務必要評估的視覺物件中的測試帳戶具有最低權限，且沒有任何機密資料的存取權。 在理想情況下測試帳戶是本機帳戶，而非 Power BI 服務沒有登入的資訊。
 
--  Check network activity when the visual is being used in both edit and view mode. Ensure you're satisfied with the requests that are being made. You should not see requests to resources outside the Power BI domain unless the visual author has communicated this ahead of time.
+### 在 JavaScript 程式碼中尋找的威脅
 
--  Any data you see leaving the Power BI domain should match your expectations for what 'normal' use would be. For example - if the visual implements a video player that uses an iFrame to view a video from another site, some information should travel in the IFrame requests to render the video correctly. However, if you see the entire data set being sent across the wire, you might investigate further if this is required and desired.
+-  在編輯和檢視模式中使用視覺效果時，請檢查網路活動。 請確定您滿意所進行的要求。 您不會看到 Power BI 網域之外的資源要求除非 visual 作者已事先傳達這。
 
--  Check if personally identifiable data is being sent or stored by the custom visual.
+-  您會看到留下的 Power BI 網域的任何資料應該符合預期的是何種 'normal' 使用。 例如如果視覺效果實作視訊播放器來檢視視訊從其他站台使用 iFrame，正確呈現視訊的 IFrame 要求應該傳送一些資訊。 不過，如果您看到正在透過網路傳送整個資料集，您可能會進一步調查如果這是所需和所需。
 
--  Check if the custom visual is trying to access local machine resources such as writing files to disk or accessing cookies.
+-  檢查是否個人識別資料正在傳送或儲存的自訂視覺效果。
 
--  Check if the custom visual has what appears to be obfuscated code or code without a clear purpose.
+-  請檢查正在嘗試自訂視覺效果存取本機資源，例如檔案寫入磁碟，或存取 cookie。
 
--  Save copies of each visual you reviewed in the past.
+-  檢查是否有看似混亂的程式碼或不清楚的目的碼的自訂視覺效果。
 
--  If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review
+-  儲存您在過去檢閱每個 visual 副本。
 
--  If you find something suspicious or unclear, please reach out to us we're here to help.
+-  如果您要檢閱您先前檢閱視覺效果的更新，請務必檢查是否有變更。 一律套用到更新相等時的嚴謹，如同第一次收到供檢閱視覺效果
+
+-  如果您尋找可疑或不清楚，請連線到出我們在這裡提供協助。
 
 ## 請參閱
 
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
-[Add a custom visualizations to a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
-[Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
-[Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
-[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)  
-[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
-[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[在 Power BI 中的視覺效果](powerbi-service-visualizations-for-reports.md)  
+[在 Power BI 自訂視覺效果](powerbi-custom-visuals.md)  
+[Power BI 自訂視覺效果的組件庫](https://app.powerbi.com/visuals)  
+[報表中加入自訂視覺效果 (Power BI Desktop)](powerbi-custom-visuals-use.md)  
+[報表中加入自訂視覺效果 （Power BI 服務）](powerbi-custom-visuals-add-to-report.md)  
+[從組件庫下載自訂視覺效果](powerbi-custom-visuals-download-from-the-gallery.md)  
+[建立並提交到資源庫的視覺效果](powerbi-custom-visuals-create-for-the-gallery.md)  
+[開始使用自訂視覺效果的開發人員工具 （預覽）](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
+[視訊︰ 與 Sachin Patney Nico Cristache 建立 Power bi 自訂視覺效果](https://www.youtube.com/watch?v=kULc2VbwjCc)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

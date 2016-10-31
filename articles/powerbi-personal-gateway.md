@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Power BI Gateway - Personal"
-   description="Power BI Gateway - Personal"
+   pageTitle="Power BI 閘道個人"
+   description="Power BI 閘道個人"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,172 +20,179 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Power BI Gateway - Personal
+# Power BI 閘道個人
 
-Power BI Gatway - Personal acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support <bpt id="p1">[</bpt>refresh<ept id="p1">](powerbi-refresh-data.md)</ept>. This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this <bpt id="p1">[</bpt>helpful video<ept id="p1">](https://www.youtube.com/watch?v=de58vROLqZI)</ept> about the personal gateway. 
+Power BI 閘道-個人扮演著橋接器，提供快速且安全的資料傳輸，Power BI 服務和內部部署資料來源之間支援 [重新整理](powerbi-refresh-data.md)。 本文旨在提供您的閘道器的運作方式，以及閘道需要深入了解。 我們也匯集了這 [很有幫助視訊](https://www.youtube.com/watch?v=de58vROLqZI) 有關個人閘道。 
 
-The personal gateway is only available with <bpt id="p1">[</bpt>Power BI Pro<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>. It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
+僅適用於個人閘道 [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md)。 它會安裝，並在您的電腦上以服務方式執行。 做為服務，它會執行使用您在組態期間指定的 Windows 帳戶。 在某些情況下，閘道會執行應用程式。 我們將討論更詳盡的資訊更新版本。
 
-When Power BI refreshes data from an on-premises data source, the gateway assures your Power BI account has the right permissions to connect to and query data from the source.
+當 Power BI 重新整理資料從內部部署資料來源時，可確保閘道，Power BI 帳戶已經正確連接及查詢資料來源的權限。
 
-Data transfer between Power BI and the gateway is secured through <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](http://azure.microsoft.com/documentation/services/service-bus/)</ept>. The Service Bus creates a secure channel between the Power BI service and your computer. Because the gateway provides this secure connection, there’s usually no need to open a port in your firewall.
+Power BI 和閘道間的資料傳輸透過安全 [Azure 服務匯流排](http://azure.microsoft.com/documentation/services/service-bus/)。 服務匯流排建立 Power BI 服務與電腦之間的安全通道。 因為閘道會提供這個安全連線，通常會有不需要在防火牆中開啟一個連接埠。
 
-Before we go into details about the gateway, let’s look at some terms used in Power BI:
+我們將詳細說明有關閘道之前，讓我們看看 Power BI 中使用的部份術語︰
 
-A <bpt id="p1">*</bpt>dataset<ept id="p1">*</ept> is data uploaded into the Power BI service from an online or on-premises data source. You create a dataset when you use Get Data to connect to and upload data. Datasets appear in the My Workspace pane of your Power BI Workspace in your browser. When you create reports and pin tiles to your dashboards, you’re looking at data from your datasets.
+A *資料集* 資料上傳到 Power BI 服務，從線上或內部資料來源。 當您連接到並將資料上傳使用取得資料時，您可以建立資料集。 資料集出現在 Power BI] 工作區，在瀏覽器中的 [我的工作區] 窗格中。 當您建立報表和 pin 磚儀表板時，您看到的資料從您的資料集。
 
-A <bpt id="p1">*</bpt>data source<ept id="p1">*</ept> is where the data you upload into a dataset really comes from. It can be just about anything; a database,  Excel worksheet, Web service, etc. With Excel workbooks, you can create a simple worksheet with rows of data, and that is considered a data source. You can also use Power Query or Power Pivot in Excel to connect to and query data from both online and on-premises data sources, all in the same workbook. With Power BI Desktop, you use Get Data to connect to and query data from both online and on-premises data sources.
+A *資料來源* 是您上傳至資料集的資料確實來自何處。 它可以是幾乎任何項目。資料庫、 Excel 工作表、 Web 服務等。使用 Excel 活頁簿，您可以使用的資料列，建立簡單的工作表，可視為資料來源。 您也可以連接到並查詢線上同時從資料和內部部署資料來源，全都放在相同的活頁簿在 Excel 中使用 Power Query 或 Power Pivot。 Power BI Desktop，您可以使用取得的資料連接及查詢同時從資料線上和內部部署資料來源。
 
-The personal gateway is installed through the On-Premises Data Gateay. You can download it on the <bpt id="p1">[</bpt>Power BI Gateway page<ept id="p1">](https://powerbi.microsoft.com/gateway/)</ept>.
+透過內部部署資料 Gateay 安裝個人閘道。 您可以下載上 [Power BI 閘道頁面](https://powerbi.microsoft.com/gateway/)。
 
-## Do I need a gateway?
+## 我需要閘道嗎？
 
-Before you install a gateway, it's important to know whether or not you really need one. It really depends on your data sources:
+在安裝閘道之前，務必知道真的需要。 它其實取決於您的資料來源︰
 
-### On-premises data sources
+### 內部資料來源
 
-A personal gateway <bpt id="p1">*</bpt>is required<ept id="p1">*</ept> in order to refresh datasets that get data from a supported on-premises data source in your organization.
+個人閘道 *需要* 才能重新整理資料來源的支援內部部署組織中取得資料的資料集。
 
-With a gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uploaded from:
+使用閘道，現在重新整理排程重新整理支援和從上傳的資料集︰
 
--   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get External Data in Power Query or Power Pivot support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
+-   Microsoft Excel 2013 （或更新版本） 的活頁簿其中 Power Query 或 Power Pivot 會用來連接和查詢支援內部部署資料來源的資料。 所有內部部署資料來源取得外部資料] 中除了 Hadoop 檔案 (HDFS) 和 Microsoft Exchange 的 Power Query 或 Power Pivot 支援重新整理所示。
 
--   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get Data support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
+-   Microsoft Power BI Desktop 檔案取得資料用於連接到並查詢資料從內部支援的資料來源。 所有內部部署上的資料來源取得資料支援重新整理，除了 Hadoop 檔案 (HDFS) 和 Microsoft Exchange 所示。
 
-### Online data sources
+### 線上資料來源
 
-A personal gateway <bpt id="p1">*</bpt>is not required<ept id="p1">*</ept> in order to refresh datasets that get data only from an online data source.
+個人閘道 *就不需要* 才能重新整理只能從線上資料來源取得資料的資料集。
 
-REFRESH NOW and SCHEDULE REFRESH are supported without a gateway for datasets uploaded from:
+閘道已上傳的資料集不支援重新整理現在和排程重新整理︰
 
--   Content packs from online data sources (content packs<ph id="ph1">\\</ph>services). By default, datasets from content packs are automatically updated once a day, but you can also refresh manually or setup a refresh schedule.
+-   從線上資料來源的組件的內容 (內容組件\\服務)。 根據預設，資料集內容的組件會自動更新後一天之內，但您也可以手動重新整理或重新整理排程。
 
--   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from an online data source.
+-   Microsoft Excel 2013 （或更新版本） 的活頁簿其中 Power Query 或 Power Pivot 會用來連接及查詢從線上資料來源的資料。
 
--   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from an online data source.
+-   Microsoft Power BI Desktop 檔案取得資料用於連接到並查詢資料從線上資料來源。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if my Excel workbook or Power BI Desktop file gets data from both online and on-premises data sources?
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> A gateway <bpt id="p2">*</bpt>is<ept id="p2">*</ept> required. You will need to install and configure a gateway in order to refresh data from  your on-premises data sources.
+            **問題︰** 要是我的 Excel 活頁簿或 Power BI Desktop 檔案取得資料同時從線上，並在內部部署資料來源？
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if my Excel workbook just has rows of data I typed in?**
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> A gateway <bpt id="p2">*</bpt>is not<ept id="p2">*</ept> required. You only need to install and configure a gateway if your workbook uses Power Query or Power Pivot to query and load data to the data model from a supported on-premises data source
+            **答案是︰** 閘道 *是* 必要。 您必須安裝並設定閘道，才能重新整理內部部署資料來源的資料。
 
-## Setting up a gateway for the first time
 
-Setting up a gateway for the first time is a three step process:
+            **問題︰** 要是我的 Excel 活頁簿只包含輸入的資料列？ * *
 
-1.  Download and install a gateway
+
+            **答案是︰** 閘道 *不* 必要。 您只需要安裝和設定閘道，如果您的活頁簿使用 Power Query 或 Power Pivot 來查詢，並將資料載入支援內部部署資料來源的資料模型
+
+## 第一次設定閘道
+
+第一次設定閘道為三個步驟的程序︰
+
+1.  下載並安裝閘道
 
 2.  設定閘道
 
-3.  Sign in to data sources in Power BI
+3.  登入 Power BI 中的資料來源
 
-Let’s take a closer look at each step.
+讓我們仔細看看每個步驟。
 
-### Download and install a gateway
+### 下載並安裝閘道
 
-You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, to download the gateway, select <bpt id="p1">**</bpt>Data Gateway<ept id="p1">**</ept> under the Downloads menu. Download the <bpt id="p1">[</bpt>On-premises data gateway<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=820925)</ept>.
+將提示您安裝閘道，當您按一下 [立即重新整理或重新整理排程上支援的資料集的第一次。 若要下載的閘道，請選取 **資料閘道** 下載項目] 功能表底下。 下載 [內部資料閘道](http://go.microsoft.com/fwlink/?LinkID=820925)。
 
-You will want to select <bpt id="p1">**</bpt>Personal Gateway<ept id="p1">**</ept> instead of <bpt id="p2">**</bpt>On-premises data gateway<ept id="p2">**</ept> to have a gateway that is for yourself.
+您會想要選擇 **個人閘道** 而不是 **內部資料閘道** 能夠為您自己的閘道。
 
-There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
+其實不太多安裝閘道。 您將選取要安裝，並閱讀並接受授權合約，就像任何其他應用程式的位置。 有一些重要的不過應該知道的事項。 特別的是，電腦的類型您安裝上的閘道和登入到 Windows 與該電腦的帳戶類型。
 
-> [AZURE.NOTE] The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept> on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
+> [AZURE.NOTE] 閘道必須能夠存取資料來源。 如果您的個人電腦無法連線到資料來源，您可能要考慮安裝 [內部資料閘道](powerbi-gateway-onprem.md) 沒有存取資料來源的電腦上。 這個範例是裝載於 Azure 的虛擬機器 (VM) 上安裝 SQL Server。 您個人電腦可能沒有存取的 vm。 您無法在 VM 上安裝內部部署資料閘道，並設定 Power BI 服務中的資料來源。
 
 ### 電腦類型
 
-The type of computer you install the gateway on is important.
+電腦安裝閘道器的類型是很重要。
 
-> [AZURE.NOTE] The personal gateway is supported only on 64-bit Windows operating systems.
+> [AZURE.NOTE] 只能在 64 位元 Windows 作業系統上支援個人閘道。
 
-On a laptop computer - In order for a scheduled refresh to occur, the gateway needs to be up and running. Laptop computers are usually shut down or asleep more than they’re running. If you install your gateway on a laptop, be sure to set your scheduled refresh times for when the laptop will be running. If it isn’t, the refresh will not be attempted again until the next scheduled refresh time.
+膝上型電腦，而排程的重新整理，才會發生的順序則閘道必須啟動且正在執行。 膝上型電腦通常打烊關機或進入睡眠狀態之外，它們正在執行。 如果您在膝上型電腦上安裝您的閘道，請務必設定的膝上型電腦執行的時您排定的重新整理的時間。 如果沒有，重新整理不會嘗試一次排定的下次重新整理時間之前。
 
-On a desktop computer – Not many issues here. Just make sure the computer and the gateway is running at your scheduled refresh times. Many desktop computers go to sleep, scheduled refresh cannot occur if it’s asleep.
+在桌上型電腦上 – 不多的問題。 請確定電腦，且閘道正在執行在排定的重新整理的時間。 許多桌面的電腦進入睡眠狀態，無法進行排定的重新整理，它是否處於睡眠模式。
 
-Once you install a gateway, you won’t have to install another. One gateway will work for any number of supported datasets. You also don’t have to install the gateway on the same computer you upload your workbook and Power BI Desktop files from. Here’s an example: Let’s say you have an Excel workbook that connects to a SQL Server data source in your organization. You used Get Data in Power BI to upload the workbook from your laptop computer. You also have a desktop computer you leave running all the time, and you’ve installed and configured a gateway on that computer. In Power BI, you’ve signed in to your data sources, and you’ve setup a refresh schedule for the dataset.  When a scheduled refresh time comes, Power BI makes a secure connection to the gateway installed on your desktop computer. It then securely connects to the data sources to get updates. For refresh, there’s no communication with the original workbook you uploaded from your laptop computer.
+一旦您安裝閘道，您不必安裝另一個。 一個閘道器適用於任何支援的資料集的數目。 您也不需要您上傳您的活頁簿和 Power BI Desktop 檔案從同一部電腦上安裝閘道。 以下是範例︰ 假設您有連接到您的組織中的 SQL Server 資料來源的 Excel 活頁簿。 若要從您的筆記型電腦上傳活頁簿取得資料用於 Power BI 中。 您也可以在桌上型電腦您將執行時間，而且您已安裝並設定閘道，該電腦上。 在 Power BI，您已登入您的資料來源，您所安裝的資料集的重新整理排程。  排定的重新整理時間時，Power BI 可讓您桌面的電腦上安裝閘道的安全連線。 它接著安全地連接到資料來源以取得更新。 重新整理時，會有與原始的活頁簿，您已上傳您的膝上型電腦進行通訊。
 
-> [AZURE.NOTE] You can install the personal and enterprise gateways on the same computer.
+> [AZURE.NOTE] 您可以在同一部電腦上安裝個人和企業閘道。
 
-### Windows account
+### Windows 帳戶
 
-When you install the gateway, you’ll be logged in to your computer using your Windows account. The type of permissions your Windows account has will have an effect on how the gateway is installed and how it is run in Windows.
+當您安裝閘道時，您將登入到您的電腦使用您的 Windows 帳戶。 您的 Windows 帳戶具有的權限的類型將會影響閘道的安裝方式，以及如何在 Windows 中執行它。
 
-When you’re logged into Windows:
+當您登入 Windows:
 
-||With Administrator permissions|Without Administrator permissions|
+||以系統管理員權限|不具系統管理員權限|
 |---|---|---|
-|**Power BI Gateway - Personal runs as a**|Service|應用程式|
-|**Scheduled Refresh**|As long as your computer and the gateway service is running, you do not have to be logged in at the scheduled refresh time.|You must be logged in to your computer at the scheduled refresh time.|
-|**Change Windows account password**|You must change your Password in the gateway service. If the account password used by the gateway is no longer valid, refresh will fail.|The gateway will always run using the account and password you are currently logged in with. If you aren’t logged in to Windows, the gateway will not be running and refresh will fail.|
+|**Power BI 閘道-個人執行**|Service|應用程式|
+|**排定的重新整理**|您的電腦與閘道服務正在執行，因為您沒有登入，在排定的重新整理的時間。|您必須登入到您的電腦在排定的重新整理的時間。|
+|**變更 Windows 帳戶密碼**|您必須變更您的閘道服務的密碼。 如果閘道所使用的帳戶密碼不再有效，重新整理將會失敗。|閘道器一定會執行使用的帳戶和您目前登入的密碼。 如果您未登入 Windows，閘道器不在執行，並重新整理將會失敗。|
 
 ### 設定閘道
 
-When the Installation Wizard finishes, you’ll be prompted to launch the Configuration Wizard. There’s really not much to configuring a gateway. You’ll need to sign in to Power BI from the Wizard. This is necessary for the Wizard to establish a connection with your Power BI account in the Power BI service.
+安裝精靈完成時，系統會提示您啟動設定精靈。 其實要設定閘道。 您必須登入 Power BI 的精靈。 這是必要的 Power BI 服務中建立與您的 Power BI 帳戶連線精靈。
 
-If you’re logged in to Windows with an account with Administrator permissions, you’ll be asked to enter your Windows account credentials. You can specify a different Windows account, but remember the permissions determine how the gateway is run. The gateway service will run using this account.
+如果您系統管理員權限的帳戶與 windows 登入，系統會要求您輸入您的 Windows 帳戶認證。 您可以指定不同的 Windows 帳戶，但請記住，權限會決定閘道的執行方式。 閘道服務將使用此帳戶來執行。
 
-### Sign in to data sources
+### 登入的資料來源
 
-Once the Configuration Wizard finishes and your gateway is up and running, you’ll have to specify an Authentication type and sign in to each of your dataset’s data sources. You'll complete this step in Power BI.
+當組態精靈完成，而且您的閘道已啟動且正在執行時，您必須指定驗證類型，然後登入每個資料集的資料來源。 您將完成此步驟，在 Power BI 中。
 
 ![](media/powerbi-personal-gateway/PG_Dataset_Settings_SignIn.png)
 
-You only need to specify an authentication type and sign in to a data source once. You sign in from the <bpt id="p1">**</bpt>Manage Data Sources<ept id="p1">**</ept> section in a dataset’s Settings screen. If you have multiple data sources, you’ll have to sign in to each one. The gateway determines a default Authentication type depending on the data source. In most cases, it’s Windows authentication; however, in some cases, your data source might require a different authentication type. If you’re unsure, check with your data source administrator.
+您只需要指定驗證類型，並一次登入的資料來源。 從登入 **管理資料來源** 一節中的資料集設定] 畫面。 如果您有多個資料來源，您必須為每個登入。 閘道會決定預設的驗證類型視資料來源。 在大部分情況下，它是 Windows 驗證。不過，在某些情況下，您的資料來源可能需要不同的驗證類型。 如果您不確定，請洽詢您的資料來源管理員。
 
-## Up and running!
+## 啟動並執行 ！
 
-When your gateway is up and running, you can click SCHEDULE REFRESH for a dataset where you’ll see your dataset’s Settings page.
+當您的閘道已啟動且正在執行時，您可以按一下 [排程重新整理資料集，您會看到您的資料集設定] 頁面上的位置。
 
 ![](media/powerbi-personal-gateway/PG_AWIntSales_Settings.png)
 
-This page shows:
+此頁面會顯示︰
 
-1. Refresh status – Shows refresh success and next scheduled refresh time.
+1. 重新整理狀態 – 顯示重新整理成功和下次排定的重新整理。
 
-2. <bpt id="p1">**</bpt>Gateway<ept id="p1">**</ept> - Shows whether or not a gateway is installed and online. If a gateway is installed but not online, Manage Data Sources and Schedule Refresh settings are disabled.
+2. 
+            **閘道** -顯示閘道是否已安裝且在線上。 如果閘道已安裝但不是在線上，則會停用管理資料來源和排程重新整理設定。
 
-3. <bpt id="p1">**</bpt>Manage Data Sources<ept id="p1">**</ept> - Shows data sources the dataset connects to. You can Sign in or change the authentication type. You’ll only need to Sign in to each data source once.
+3. 
+            **管理資料來源** -顯示資料來源連接到的資料集。 您可以登入或變更驗證類型。 您將只需要登入每個資料來源一次。
 
-4. <bpt id="p1">**</bpt>Schedule Refresh<ept id="p1">**</ept> – You can configure a refresh schedule settings here. If the gateway isn’t online, these settings will be disabled.
+4. 
+            **排程重新整理** – 您可以設定的重新整理排程設定值。 如果閘道不是線上，就會停用這些設定。
 
-5. Refresh failure notifications – This option, selected by default, will send an e-mail to you if a scheduled refresh fails.
+5. 重新整理失敗通知 – 此選項，依預設選取，會傳送電子郵件給您，如果排定的重新整理失敗。
 
-## Updating your Windows account password
+## 更新您的 Windows 帳戶密碼
 
-If you were logged into your computer with a Windows account with administrator privileges when you installed your gateway, it runs as a service using the Windows account you specified in the Configuration Wizard. Most often, this will be the same Windows account you log in to your computer with. When you change your Windows account password, you’ll also need to change it in the gateway, otherwise the service might not be running and refresh will fail. To change your Windows account password for the gateway, select the personal gateway icon on your Windows Desktop Taskbar, or in Apps.
+如果您已登入電腦的系統管理員權限的 Windows 帳戶，安裝您的閘道器時，它會以使用您在 「 組態精靈 」 中指定的 Windows 帳戶的服務執行。 大多數情況下，這會是相同的 Windows 帳戶登入您的電腦。 當您變更您的 Windows 帳戶密碼時，您也需要在閘道中進行變更，否則服務可能未執行並重新整理將會失敗。 若要變更您的 Windows 帳戶密碼，閘道，選取 [在 Windows 桌面工作列上，或在應用程式中的個人閘道圖示。
 
 ![](media/powerbi-personal-gateway/PG_ProgramIcon.png)
 
-From here, you can update your password and check your gateway's connection status.
+從這裡開始，您可以更新您的密碼，並檢查您的閘道連接狀態。
 
 ![](media/powerbi-personal-gateway/PG_Credentials.png)
 
 ## 連接埠
 
-The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports.
+閘道輸出連接埠進行通訊︰ TCP 443 （預設）、 5671，5672，9350 到 9354。  閘道不需要輸入連接埠。
 
-|網域名稱|Outbound ports|說明|
+|網域名稱|輸出連接埠|說明|
 |---|---|---|
-|*.powerbi.com|443|HTTPS|
-|*.analysis.windows.net|443|HTTPS|
-|*.login.windows.net|443|HTTPS|
-|*.servicebus.windows.net|5671-5672|Advanced Message Queuing Protocol (AMQP)|
-|*.servicebus.windows.net|443, 9350-9354|Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition)|
-|*.frontend.clouddatahub.net|443|HTTPS|
-|*.core.windows.net|443|HTTPS|
+|*。 powerbi.com|443|HTTPS|
+|*。 analysis.windows.net|443|HTTPS|
+|*。 login.windows.net|443|HTTPS|
+|*.servicebus.windows.net|5671-5672|進階的訊息佇列通訊協定 (AMQP)|
+|*.servicebus.windows.net|443, 9350-9354|透過 TCP （需要存取控制權杖取得 443） 的服務匯流排轉送的接聽程式|
+|*。 frontend.clouddatahub.net|443|HTTPS|
+|*。 core.windows.net|443|HTTPS|
 |login.microsoftonline.com|443|HTTPS|
 |login.windows.net|443|HTTPS|
 
-If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [下載](https://www.microsoft.com/download/details.aspx?id=41653)
+如果您需要而不是網域的白名單 IP 位址，您可以下載並使用 Microsoft Azure 資料中心 IP 範圍清單。 [下載](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## 疑難排解
 
-If you're having trouble when installing and configuring a personal gateway, be sure to see <bpt id="p1">[</bpt>Troubleshooting Power BI Gateway - Personal<ept id="p1">](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)</ept>.
+如果您無法順利安裝及設定個人閘道時，務必參閱 [疑難排解 Power BI 閘道-個人](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)。
 
 ## 請參閱
 
-[Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[疑難排解 Power BI 閘道-個人](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Power BI 閘道設定 proxy 設定](powerbi-gateway-proxy.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

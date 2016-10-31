@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introduction to the Power BI Service"
-   description="Explore data and collaborate with the Power BI service"
+   pageTitle="Power BI 服務簡介"
+   description="瀏覽資料並與 Power BI 服務的共同作業"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,21 +23,21 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Exploring Data
+# 瀏覽資料
 
-Welcome to the <bpt id="p1">**</bpt>Exploring Data<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI. Now that you know about Power BI Desktop, and how to get and visualize data, you're ready to explore data in the Power BI service.
+歡迎使用 **瀏覽資料** 區段 **引導式學習** Power BI 的課程。 既然您了解 Power BI Desktop，以及如何取得和視覺化資料，就可以準備好來探索 Power BI 服務中的資料。
 
 ![](media/powerbi-learning-4-0-intro-power-bi-service/4-0_2.png)
 
-There are all sorts of things to learn in this section, and the compelling  interactivity and sharing of Power BI really shines here. So get ready for an engaging and interesting section.
+有各種用途，在這一節，了解和令人讚嘆的互動和分享 Power BI 搭配這裡。 因此做好更吸引人且有趣的區段。
 
 
-## Introduction to the Power BI Service
+## Power BI 服務簡介
 
-*See what the Power BI service can do for your organization*
+*了解 Power BI 服務為您的組織*
 
-The Power BI service is the natural extension of <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, and its features include uploading reports, creating dashboards, and asking questions of your data using natural language. You can use the service to set data refresh times, share data with your organization, and create customized service packs.
+Power BI 服務是自然延伸 **Power BI Desktop**, ，和其功能包括上傳報表、 建立儀表板，並詢問您的資料使用自然語言問題。 您可以使用服務來設定資料重新整理時間、 共用資料，您的組織，以及建立自訂的 service pack。
 
-In the following topics, we'll explore the Power BI service, and show you how it can turn your business intelligence data into data insights and a collaborative decision-driving envrionment.
+在下列主題中，我們將探索 Power BI 服務，並顯示它如何開啟您的商務智慧資料到資料見解和決策驅動的共同作業環境。
 
 ![](media/powerbi-learning-4-0-intro-power-bi-service/4-0_1.png)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a custom visual with the custom visual developer tools"
-   description="Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools."
+   pageTitle="使用自訂的視覺化開發人員工具建立的自訂視覺效果"
+   description="自訂視覺效果可讓您以符合使用者的需求，並符合您的應用程式的設計。 了解如何建立使用開發人員工具的 Power bi 自訂視覺效果。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,31 +20,31 @@
    ms.date="09/23/2016"
    ms.author="asaxton"/>
 
-# Create a custom visual with the custom visual developer tools
+# 使用自訂的視覺化開發人員工具建立的自訂視覺效果
 
-Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
+自訂視覺效果可讓您以符合使用者的需求，並符合您的應用程式的設計。 了解如何建立使用開發人員工具的 Power bi 自訂視覺效果。
 
-> [AZURE.NOTE] You can use this document to get up and running. For more in-depth information, see the reference information within the <bpt id="p1">[</bpt>Power BI Visuals git repo<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals)</ept>.
+> [AZURE.NOTE] 您可以使用這份文件以取得啟動並執行。 如需深入的資訊，請參閱中的參考資訊 [Power BI 視覺效果 git 儲存機制](https://github.com/Microsoft/PowerBI-visuals)。
 
 ## 需求
 
-- NodeJS 4.0+ Required (5.0 or later recommended) <bpt id="p1">[</bpt>Download NodeJS<ept id="p1">](https://nodejs.org)</ept>
+- NodeJS 4.0 以上的版本 （5.0 或更新建議） [下載 NodeJS](https://nodejs.org)
 
-## Install NodeJS and the Power BI tools
+## 安裝 NodeJS 和 Power BI 工具
 
-In order to create a custom visual, you will need to install NodeJS. NodeJS is required to run the command line tools.
+若要建立的自訂視覺效果，您必須安裝 NodeJS。 NodeJS，才能執行命令列工具。
 
-1. Download and install <bpt id="p1">[</bpt>NodeJS<ept id="p1">](https://nodejs.org)</ept>. Version 4.0 or later is required but it is recommended to have 5.0 or later.
+1. 下載並安裝 [NodeJS](https://nodejs.org)。 4.0 或更新版本，但是它建議有 5.0 或更新版本。
 
-2. Install the command line tools. Run the following command from a command prompt.
+2. 安裝程式命令列工具。 從命令提示字元執行下列命令。
 
         npm install -g powerbi-visuals-tools
 
-3. You can confirm that the tools are installed by running the following command without any parameters.
+3. 您可以確認安裝工具則藉由執行下列命令，不含任何參數。
 
         pbiviz
 
-    You should see the help output.
+    您應該會看到的是說明輸出。
 
     <pre><code>
          +syyso+/
@@ -68,123 +68,123 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 
        PowerBI Custom Visual Tool
 
-    Usage: pbiviz [options] [command]
+    使用方式︰ pbiviz [選項] [命令]
 
-    Commands:
+    命令︰
 
-    new [name]        Create a new visual info              Display info about the current visual start             Start the current visual package           Package the current visual into a pbiviz file update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified help [cmd]        display help for [cmd]
+    新的 [名稱] 按一下 [建立新的視覺資訊有關目前 visual 起始開始目前 visual 套件封裝目前 visual pbiviz 檔案更新 [版本] 顯示資訊更新 api 定義和目前的視覺效果中的結構描述。 如果指定的說明 [cmd] 顯示的 [cmd] 會變更版本
 
     選項：
 
-    -h, --help      output usage information -V, --version   output the version number --install-cert  Install localhost certificate
+    -h，--說明輸出使用量資訊-V，--版本輸出的版本號碼-安裝憑證安裝 localhost 憑證
     </code></pre>
 
-&lt;a name"ssl-setup"&gt;</a>
-### Server Certificate setup
+< 名稱"ssl-setup"></a>
+### 伺服器憑證安裝
 
-To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
+若要啟用 visual studio 的即時預覽，則需要信任的 https 伺服器。 您可以開始之前，您必須安裝 SSL 憑證，這將允許在網頁瀏覽器中載入的視覺資產。 
 
-> [AZURE.NOTE] This is a one-time setup for your developer workstation.
+> [AZURE.NOTE] 這是用於開發人員工作站的一次性設定。
 
-To <bpt id="p1">*</bpt>add<ept id="p1">*</ept> a certificate, run the following command.
+若要 *新增* 憑證時，執行下列命令。
 
     pbiviz --install-cert
 
-**Windows OS**
+**Windows 作業系統**
 
-1. Select <bpt id="p1">**</bpt>Install Certificate...<ept id="p1">**</ept>*.
+1. 選取 **安裝憑證...***.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 
-2. Select <bpt id="p1">**</bpt>Current User<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.
+2. 選取 **目前使用者** ]，然後選取 **下一步**。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 
-3. Select <bpt id="p1">**</bpt>Place all certificate in the following store<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Browse...<ept id="p2">**</ept>.
+3. 選取 **以下的存放區中所有憑證的位置** ，然後選取 **瀏覽**。
 
-4. Select <bpt id="p1">**</bpt>Trusted Root Certification Authorities<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+4. 選取 **受信任的根憑證授權單位** ，然後選取 **確定**。 選取 **下一步**。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 
-5. Select <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.
+5. 選取 **完成**。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 
-6. Select <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> on the security warning dialog.
+6. 選取 **是** 在安全性警告對話方塊。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 
-7. Close any browsers that you have open.
+7. 關閉任何已開啟的瀏覽器。
 
-> [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
+> [AZURE.NOTE] 如果無法辨識的憑證，您可能需要重新啟動電腦。
 
 **OSX**
 
-1. If the lock in the upper left is locked, select it to unlock. Search for <bpt id="p1">*</bpt>localhost<ept id="p1">*</ept> and double click on the certificate.
+1. 如果在左上方鎖定已鎖定，選取以解除鎖定。 搜尋 *localhost* 並連按兩下憑證。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 
 
-2. Select <bpt id="p1">**</bpt>Always Trust<ept id="p1">**</ept> and close the window.
+2. 選取 **永遠信任** ，然後關閉視窗。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 
-3. 輸入您的使用者名稱和密碼。 Select <bpt id="p1">**</bpt>Update Settings<ept id="p1">**</ept>.
+3. 輸入您的使用者名稱和密碼。 選取 **更新設定**。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 
-4. Close any browsers that you have open.
+4. 關閉任何已開啟的瀏覽器。
 
-> [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
+> [AZURE.NOTE] 如果無法辨識的憑證，您可能需要重新啟動電腦。
 
-## Enable live preview of developer visual
+## 啟用 visual 開發人員的即時預覽
 
-To enable a live preview of your custom visual, follow these steps. This allows the visual to be used within the Power BI service when editing reports.
+若要啟用即時預覽您的自訂視覺效果，請遵循下列步驟。 這可讓視覺效果，編輯報告時，可用於 Power BI 服務。
 
-1. Browse and sign into <bpt id="p1">[</bpt>app.powerbi.com<ept id="p1">](https://app.powerbi.com)</ept>.
+1. 瀏覽並登入 [app.powerbi.com](https://app.powerbi.com)。
 
-2. Select the <bpt id="p1">**</bpt>gear icon<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept>.
+2. 選取 **齒輪圖示** ，然後選取 **設定**。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 
-3. Select <bpt id="p1">**</bpt>Developer<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>Enable developer visual for testing<ept id="p2">**</ept>.
+3. 選取 **開發人員** ，然後選取 **啟用開發人員測試 visual**。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 
-4. Select the <bpt id="p1">**</bpt>Developer Visual<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Visualization<ept id="p2">**</ept> pane.
+4. 選取 **Visual 開發人員** 中 **視覺化** 窗格。
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-    > [AZURE.NOTE] This requires that you have run <ph id="ph1">`pbiviz start`</ph> from the visual folder on your development machine. For more information on creating your visual, see <bpt id="p1">[</bpt>Placeholder<ept id="p1">](#placeholder)</ept> in this article.
+    > [AZURE.NOTE] 這需要您已執行 `pbiviz start` 從開發電腦上視覺化的資料夾。 如需有關建立視覺效果的詳細資訊，請參閱 [預留位置](#placeholder) 在這篇文章。
 
-5. Select the visual in the report canvas. You can bind data in the same way you do other visuals.
+5. 在報表畫布中選取視覺效果。 您可以將資料繫結進行其他視覺效果的方式相同。
 
-You can now begin developing your visual.
+您現在可以開始開發 visual studio。
 
-## Create a new visual
+## 建立新的視覺效果
 
-You can create a new visual project by running the following command.
+您可以執行下列命令來建立新的 visual 專案。
 
 ```
 pbiviz new My Visual name
 ```
 
-You can replace <bpt id="p1">*</bpt>My Visual Name<ept id="p1">*</ept> with the name you want to give the visual. This can be changed later by modifying the <ph id="ph1">`name`</ph> and <ph id="ph2">`displayName`</ph> fields within the generated <ph id="ph3">`pbiviz.json`</ph> file.
+您可以取代 *My Visual Name* 想要提供視覺效果的名稱。 這之後可以變更藉由修改 `name` 和 `displayName` 欄位內所產生 `pbiviz.json` 檔案。
 
-This command will create a new folder in the direct where the command was run. It will generate a basic starter template for your visual. Once the command completes, you can open the directory and use your favorite editor to start working on your new visual.
+此命令會建立新的資料夾中的直接執行命令。 它會產生 visual studio 的基本入門範本。 當命令完成時，您可以開啟的目錄，然後使用您喜好的編輯器来開始使用新的 visual studio。
 
-## Testing your visual in Power BI
+## 在 Power BI 中測試 visual studio
 
-You can test your visual within the Power BI service within reports and dashboards.
+您可以測試 visual studio 中報表和儀表板中的 Power BI 服務。
 
 <a name="running-your-visual"></a>
-### Running your visual
+### 執行 visual studio
 
-You can run your visual by doing the following.
+您可以透過下列方式來執行 visual studio。
 
-1. Open a prompt.
+1. 開啟提示。
 
-2. Change your directory to be your visual folder. This is the folder that contains the <ph id="ph1">`pbiviz.json`</ph> file.
+2. 變更您的目錄，以視覺化的資料夾。 這是包含的資料夾 `pbiviz.json` 檔案。
 
 3. 執行下列命令。
 
@@ -194,7 +194,7 @@ You can run your visual by doing the following.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
-If you are in the wrong location, you will see an error similar to the following.
+如果您是在錯誤的位置，您會看到類似下列的錯誤。
 
 ```
     error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
@@ -210,35 +210,35 @@ If you are in the wrong location, you will see an error similar to the following
         at run (bootstrap_node.js:394:7)
 ```
 
-### Viewing your visual in Power BI
+### 在 Power BI 中檢視 visual studio
 
-To view your visual in a report, go to that report and select the visual within the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+若要在報表中檢視 visual studio，請移至該報表，然後選取 [視覺效果中的 **視覺效果** 窗格。
 
-> [AZURE.NOTE] You must run the <ph id="ph1">`pbiviz start`</ph> command before doing this as discribed in the <bpt id="p1">[</bpt>Running your visual<ept id="p1">](#running-your-visual)</ept> section.
+> [AZURE.NOTE] 您必須執行 `pbiviz start` 命令之前，先執行此動作為 discribed 中 [執行 visual studio](#running-your-visual) 一節。
 
 ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-You will then see the starter template for the visual.
+然後，您會看到視覺效果的入門範本。
 
 ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-visual.png)
 
-|Toolbar item|說明|
+|工具列項目|說明|
 |---|---|
-|Refresh visual|Manually refresh the visual if auto reload is disabled.|
-|Toggle auto reload|When turned on, the visual will automatically update every time you save your visual file.|
-|Show dataview|Shows the visual's underlying data view for debugging|
-|取得說明|Documentation within GitHub|
-|Send feedback|Let us know if there is anyway we can improve the experience! (Requires GitHub account)|
+|重新整理 visual|手動重新整理視覺效果，如果已停用自動重新載入。|
+|切換自動重新載入|開啟時，視覺效果會在每次您儲存 visual 檔案時自動更新。|
+|顯示 dataview|顯示偵錯視覺項目的基礎資料檢視|
+|取得說明|在 GitHub 中的文件|
+|傳送意見反應|讓我們知道是否有反正我們改善使用經驗 ！ （需要 GitHub 帳戶）|
 
-## Package your visual for use in Power BI Desktop and distribution
+## 封裝用於 Power BI Desktop 和發佈 visual studio
 
-Before you can load your visual into <bpt id="p1">[</bpt>Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop/)</ept>, or share it with the community in the <bpt id="p2">[</bpt>Power BI Visual gallery<ept id="p2">](https://visuals.powerbi.com)</ept>, you'll need to generate a <ph id="ph1">`pbiviz`</ph> file.
+您可以載入到 visual studio 之前 [Power BI Desktop](https://powerbi.microsoft.com/desktop/), ，或與社群分享 [Power BI 視覺化的組件庫](https://visuals.powerbi.com), ，您必須產生 `pbiviz` 檔案。
 
-You can package your visual by doing the following.
+您可以透過下列方式來封裝 visual studio。
 
-1. Open a prompt.
+1. 開啟提示。
 
-2. Change your directory to be your visual folder. This is the folder that contains the <ph id="ph1">`pbiviz.json`</ph> file.
+2. 變更您的目錄，以視覺化的資料夾。 這是包含的資料夾 `pbiviz.json` 檔案。
 
 3. 執行下列命令。
 
@@ -246,15 +246,15 @@ You can package your visual by doing the following.
     pbiviz package
     ```
 
-This command will create a <ph id="ph1">`pbiviz`</ph> in the <ph id="ph2">`dist/`</ph> directory of your visual project. If there is already a <ph id="ph1">`pbiviz`</ph> file present, it will be overwritten.
+此命令會建立 `pbiviz` 中 `dist/` 視覺化專案的目錄。 如果已經有 `pbiviz` 檔案存在，將會覆寫。
 
-## Updating the visuals API version
+## 更新視覺效果 API 版本
 
-When you create a visual using <ph id="ph1">`pbiviz new`</ph>, a copy of the appropriate API type definitions and json schemas are copied into your visual's directory. You can use the <ph id="ph1">`pbiviz update`</ph> command to update these files if needed. This can be useful if we release a fix for a past API version or if you want to update to the latest API version.
+當您建立 visual 使用 `pbiviz new`, ，適當的 API 型別定義和 json 結構描述的副本都會複製到 visual studio 的目錄。 您可以使用 `pbiviz update` 命令，視需要更新這些檔案。 這可以是很有用，如果我們發行的修正程式過去的 API 版本，或您想要更新至最新的 API 版本。
 
-### Updating your existing API version
+### 更新現有的 API 版本
 
-If we release an update to an existing API, you can get the latest version by doing the following.
+如果我們發行的更新現有的 API，您可以透過下列方式取得最新版本。
 
 ```
 #Update your version of pbiviz
@@ -264,11 +264,11 @@ npm install -g powerbi-visuals-tools
 pbiviz update
 ```
 
-This will download the latest tools from npm which include the updated type definitions and schemas. Using <ph id="ph1">`pbiviz update`</ph> will overwrite the <ph id="ph2">`apiVersion`</ph> property in your <bpt id="p1">*</bpt>pbiviz.json<ept id="p1">*</ept> fiel with the latest version.
+這會下載最新的工具，從 npm 包括已更新的類型定義與結構描述。 使用 `pbiviz update` 將會覆寫 `apiVersion` 屬性，在您 *pbiviz.json* fiel 的最新版本。
 
-### Upgrading to a different API version
+### 升級至不同的 API 版本
 
-You can update to a different API version by using the same steps as mentioned above. You can explicitly specify the API version you want to use.
+您可以使用相同的步驟，如先前所述，更新為不同的 API 版本。 您可以明確指定您想要使用的 API 版本。
 
 ```
 #Update your version of pbiviz
@@ -278,31 +278,31 @@ npm install -g powerbi-visuals-tools
 pbiviz update 1.2.0
 ```
 
-This would update yoru visual to API version 1.2.0. You can replace <ph id="ph1">`1.2.0`</ph> with whatever version your wanting to use.
+這會更新 yoru visual api 1.2.0 版。 您可以取代 `1.2.0` 不論版本與您想要使用。
 
-> [AZURE.WARNING] The default API version used by the tools will always be the stable version of the API. Any versions later than the default API version are unstable and subject to change. They may have unexpected behaviors and behave differently between the Power BI service and Power BI Desktop. For the current stable API version, see the <bpt id="p1">[</bpt>change log<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md)</ept>. For more information about pre-release versions, see the <bpt id="p1">[</bpt>roadmap<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md)</ept>.
+> [AZURE.WARNING] 工具所使用的預設 API 版本一律為穩定版本的 API。 任何版本晚於預設的 API 版本是不穩定和受變更。 他們可能會遇到非預期的行為和 Power BI 服務與 Power BI Desktop 之間有不同的行為。 目前的穩定 API 版本，請參閱 [變更記錄檔，](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md)。 如需有關發行前版本的詳細資訊，請參閱 [藍圖](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md)。
 
-## Inside the visual project
+## 在 visual 專案
 
-Your visual project is the folder that gets created when you run the <ph id="ph1">`pbiviz new`</ph> command. 
+Visual 專案是在執行時建立的資料夾 `pbiviz new` 命令。 
 
 ### 檔案結構
 
 |項目|說明|
 |---|---|
-|assets/|Used to store visual assets (icon, screenshots, etc).|
-|dist/|When you run <ph id="ph1">`pbiviz package`</ph>, the pbiviz file will be generated here.|
-|src/|Typescript code for your visual.|
-|style/|Less styles for your visual.|
-|.gitignore|Tells git to ignore files that shouldn't be tracked in the repository.|
-|capabilities.json|Used to define the <bpt id="p1">[</bpt>capabilities<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/Capabilities.md)</ept> of your visual.|
-|package.json|Used by <bpt id="p1">[</bpt>npm<ept id="p1">](https://www.npmjs.com/)</ept> to manage modules.|
-|pbiviz.json|Main configuration file.|
-|tsconfig.json|Typescript compiler settings. Learn more about <bpt id="p1">[</bpt>tsconfig.json<ept id="p1">](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)</ept>.|
+|資產 /|用來儲存視覺化資產 （圖示、 螢幕擷取畫面等）。|
+|dist /|當您執行 `pbiviz package`, ，pbiviz 檔案將會產生以下。|
+|src /|Visual studio 的 typescript 程式碼。|
+|樣式 /|Visual studio 較少的樣式。|
+|.gitignore|會告知 git 忽略檔案不應儲存機制中的追蹤。|
+|capabilities.json|用來定義 [功能](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/Capabilities.md) 的視覺效果。|
+|package.json|使用 [npm](https://www.npmjs.com/) 管理模組。|
+|pbiviz.json|主要設定檔。|
+|tsconfig.json|Typescript 編譯器設定。 深入了解 [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)。|
 
 ### pbiviz.json
 
-This file is the main configuration file for your visual. It contains metadata, as well as information about your files, needed to build your visual.
+這個檔案是 visual studio 的主要組態檔。 它包含中繼資料，以及您建置 visual studio 所需的檔案的相關資訊。
 
 ```
 {
@@ -329,66 +329,66 @@ This file is the main configuration file for your visual. It contains metadata, 
 }
 ```
 
-### Visual source (TypeScript)
+### 視覺化來源 (TypeScript)
 
-Visual code should be written in TypeScript, which is a superset of JavaScript that support more advanced features and early access to ES6/ES7 functionality.
+視覺化程式碼應該以 TypeScript 支援更進階的功能和早期存取 ES6/ES7 功能的 JavaScript 的超集。
 
-All TypeScript files should be stored in the <ph id="ph1">`src/`</ph> directory and added to the <ph id="ph2">`files`</ph> array in <ph id="ph3">`tsconfig.json`</ph>. This allows the TypeScript compiler to load them and in what order.
+所有的 TypeScript 檔案應該儲存在 `src/` 目錄並將它們加入至 `files` 陣列中 `tsconfig.json`。 這可讓載入 TypeScript 編譯器，以及以何種順序。
 
-When your visual is built, all of the TypeScript will be compiled into a single JavaScript file. This allows you to reference exported elements from other files without needing to manually <ph id="ph1">`require`</ph> them as long as both files are listed in the tsconfig.
+Visual studio 建置完成後，所有的 TypeScript 就會編譯成單一的 JavaScript 檔案。 這可讓您從其他檔案參考匯出的項目，而不需要手動 `require` 它們只要 tsconfig 中所列的兩個檔案。
 
-You can create as many files and classes as you need to create your visual.
+您可以建立多檔案，並為您的類別必須建立 visual studio。
 
-Learn more about <bpt id="p1">[</bpt>TypeScript<ept id="p1">](http://www.typescriptlang.org/)</ept>.
+深入了解 [TypeScript](http://www.typescriptlang.org/)。
 
-### Visual style (Less)
+### 視覺化樣式 （小於）
 
-Visual styling is handled using cascading style sheets (CSS). For your convience, we use the Less pre-compiler which supports some advanced features such as nesting, variables, mixins, conditions, loops, etc. If you don't want to use any of these features, you can just write plain CSS in the Less file.
+視覺化樣式會使用階層式樣式表 (CSS) 來處理。 您 convience，我們會使用較少預先編譯器可支援一些進階的功能，例如巢狀結構、 變數、 mixins、 條件、 迴圈等等。如果您不想使用上述任何功能，您可以撰寫一般 CSS 較少的檔案中。
 
-All Less files should be stored in the <ph id="ph1">`style/`</ph> directory. The file specified under the <ph id="ph1">`style`</ph> field within your <ph id="ph2">`pbiviz.json`</ph> file will be loaded. Any additional files should be loaded using <ph id="ph1">`@import`</ph>.
+所有較少檔案應該儲存在 `style/` 目錄。 在指定的檔案 `style` 欄位內您 `pbiviz.json` 載入檔案。 應該使用載入任何其他檔案 `@import`。
 
-Learn more about <bpt id="p1">[</bpt>Less<ept id="p1">](http://lesscss.org/)</ept>.
+深入了解 [小於](http://lesscss.org/)。
 
 ## 偵錯
 
-For tips about debugging your custom visual, see the <bpt id="p1">[</bpt>debugging guide<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md)</ept>.
+如需偵錯您的自訂視覺效果的祕訣，請參閱 [偵錯指南](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md)。
 
-## Submit your visual to the Power BI custom visual gallery
+## 送出至 Power BI 自訂視覺圖庫 visual studio
 
-You can <bpt id="p1">[</bpt>submit your visual<ept id="p1">](https://app.powerbi.com/visuals/info#submit)</ept> to be included in the Power BI visuals gallery. This involves sending an email with your pbiviz file attached.
+您可以 [提交 visual studio](https://app.powerbi.com/visuals/info#submit) 要包含在 Power BI 視覺效果的組件庫中。 這牽涉到傳送電子郵件與附加程式 pbiviz 檔案。
 
 ## 疑難排解
 
-**Pbiviz command not found (or similar errors)**
+**找不到 Pbiviz 命令 （或類似的錯誤）**
 
-If you run <ph id="ph1">`pbiviz`</ph> in your terminal / command line, you should see the help screen. If not, it is not installed correctly. Make sure you have at least the 4.0 version of NodeJS installed.
+如果您執行 `pbiviz` 在終端機 / 命令列中，您應該會看到說明畫面。 如果沒有，未正確安裝。 請確定您已至少安裝 NodeJS 4.0 版。
 
-For more information, see <bpt id="p1">[</bpt>Install NodeJS and the Power BI tools<ept id="p1">](#install-nodejs-and-the-power-bi-tools)</ept>...
+如需詳細資訊，請參閱 [安裝 NodeJS 和 Power BI 工具](#install-nodejs-and-the-power-bi-tools)...
 
-**Cannot find the debug visual in the Visualizations tab**
+**找不到偵錯 visual 在視覺效果] 索引標籤**
 
-The debug visual looks like a prompt icon within the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> tab.
+Visual 偵錯中的提示圖示看起來 **視覺效果** ] 索引標籤。
 
 ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have enabled it within the Power BI settings. 
+如果您沒有看到它，請確定您已經啟用了 Power BI 設定內。 
 
-> [AZURE.NOTE] The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
+> [AZURE.NOTE] Visual 偵錯目前僅提供的 Power BI 服務中，而不是在 Power BI Desktop 或行動裝置應用程式。 封裝的視覺效果仍然可以使用每個地方。
 
-For more information, see <bpt id="p1">[</bpt>Enable live preview of developer visual<ept id="p1">](#enable-live-preview-of-developer-visual)</ept>...
+如需詳細資訊，請參閱 [啟用即時預覽視覺化的開發人員的](#enable-live-preview-of-developer-visual)...
 
-**Can't contact visual server**
+**無法連絡 visual 伺服器**
 
-Run the visual server with the command <ph id="ph1">`pbiviz start`</ph> in your terminal / command line from the root of your visual project. If the server is running, it is likely that your SSL vertificates weren't installed correctly.
+命令執行 visual 伺服器 `pbiviz start` 您終端機 / 命令列從視覺化專案的根目錄中。 如果伺服器正在執行，很可能未正確安裝 SSL vertificates。
 
-For more information, see <bpt id="p1">[</bpt>Running your visual<ept id="p1">](#running-your-visual)</ept> or <bpt id="p2">[</bpt>Server certificate setup<ept id="p2">](#ssl-setup)</ept>.
+如需詳細資訊，請參閱 [執行 visual studio](#running-your-visual) 或 [伺服器憑證安裝](#ssl-setup)。
 
 
 ## 請參閱
 
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+[在 Power BI 中的視覺效果](powerbi-service-visualizations-for-reports.md)  
+[在 Power BI 自訂視覺效果](powerbi-custom-visuals.md)  
+[Power BI 自訂視覺效果的組件庫](https://app.powerbi.com/visuals)  
 [TypeScript](http://www.typescriptlang.org/)  
-[Less CSS](http://lesscss.org/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[較少的 CSS](http://lesscss.org/)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

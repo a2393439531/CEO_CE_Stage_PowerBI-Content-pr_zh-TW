@@ -1,32 +1,32 @@
 <properties
-   pageTitle="Create links in markdown articles" description="Explains how to code crosslinks in markdown." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+   pageTitle="Markdown 文件中建立連結" description="說明如何撰寫程式碼 markdown 的交互連結。" metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
-# Linking guidance for Power BI technical content
-## Guidelines for technical articles on powerbi.microsoft.com
+# Power BI 技術內容的連結指引
+## 技術文件上 powerbi.microsoft.com 指導方針
 
 | 連結案例 | 指導方針  |
 |---------------|-----------|
-|Linking from a Power BI article to another Power BI article|使用相對連結。 Do not include the en-us language locale in your relative links.|
-|Linking to an MSDN library topic, a TechNet library topic, or KB article|Use the actual link to the article or topic, but remove the en-us language locale from the link.|
-|Linking from a Power BI article to any other web page|使用直接連結|
+|正在從 Power BI 文件連結到另一個 Power BI 文件|使用相對連結。 不包含 en-us-我們在相對的連結中的語言地區設定。|
+|連結至 MSDN library 主題、 TechNet library 主題或知識庫文件|使用實際連結移至文件或主題，但移除 en-us-我們從連結的語言地區設定。|
+|從 Power BI 文件連結至其他網頁|使用直接連結|
 
-### Markdown syntax for Power BI relative links
+### Power BI 相對連結的 markdown 語法
 
-To create an inline link from a Power BI technical article to another Power BI technical article, use this link format.
+若要從 Power BI 技術文件中建立內嵌連結至另一個 Power BI 技術文件中，使用此連結的格式。
 
-> [AZURE.NOTE] Some aspects of linking are still TBD b/c we need to settle on a final structure for the github repo.
+> [AZURE.NOTE] 連結的某些方面仍 TBD b/c 我們需要 github 儲存機制的最終結構。
 
 從子目錄到根目錄中文章的文件連結︰
 
     [link text](../article-name.md)
 
-Article in the root directory links to an article in a subdirectory: 
+Root directory 連結子目錄中的文章中的文件︰ 
 
     [link text](section-folder/article-name.md)
 
-Article in a section subdirectory links to an article that is in another section subdirectory:
+小節子目錄會連結至另一個區段子目錄中的文件中的文件︰
 
     [link text](../section-folder/article-name.md)
  
@@ -35,7 +35,7 @@ Article in a section subdirectory links to an article that is in another section
     [link text](article-name.md)
 
 
-You do not have to create anchors - they are automatically generated at publishing time for all H2 headings. 您唯一必須做的是建立 H2 區段的連結︰
+您不需要建立錨點-在發佈的所有 H2 標題會自動產生。 您唯一必須做的是建立 H2 區段的連結︰
 
     [link](#the-text-of-the-H2-section-separated-by-hyphens)
     [Create cache](#create-cache)
@@ -57,22 +57,22 @@ You do not have to create anchors - they are automatically generated at publishi
 
     [link text](../articles/section-folder/article-name.md)
     
-Learn more about how to use an includes file in the <bpt id="p1">[</bpt>Custom markdown extensions guidelines<ept id="p1">](custom-markdown-extensions.md#includes)</ept>.
+深入了解如何使用包含在檔案 [自訂 markdown 擴充功能的指導方針](custom-markdown-extensions.md#includes)。
 
 如果您在包含檔案中內嵌選取器，就能使用這類連結︰ 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )] <ph id="ph1">    - </ph><bpt id="p1">[</bpt>(Text1 | Example1 )<ept id="p1">](../articles/section-folder/article-name1.md)</ept><ph id="ph2">
-    - </ph><bpt id="p2">[</bpt>(Text1 | Example2 )<ept id="p2">](../articles/section-folder/article-name2.md)</ept><ph id="ph3">
-    - </ph><bpt id="p3">[</bpt>(Text2 | Example3 )<ept id="p3">](../articles/section-folder/article-name3.md)</ept><ph id="ph4">
-    - </ph><bpt id="p4">[</bpt>(Text2 | Example4 )<ept id="p4">](../articles/section-folder/article-name4.md)</ept>
+    > [AZURE。選取器清單 (Dropdown1 |Dropdown2)]     - [(Text1 |範例 1)](../articles/section-folder/article-name1.md)
+    - [(Text1 |範例 2)](../articles/section-folder/article-name2.md)
+    - [(Text2 |範例 3)](../articles/section-folder/article-name3.md)
+    - [(Text2 |範例 4)](../articles/section-folder/article-name4.md)
 
-To link to a page on Power BI (such as a pricing page, SLA page or anything else that is not a documentation article), use an absolute URL, but omit the locale. 此處的目標是讓連結可在 GitHub 中和轉譯的網站上運作︰
+若要連結至 Power bi 頁面 （例如 [定價] 頁面上，或不是文件的發行項的任何其他的 SLA 頁面），使用絕對 URL，但省略的地區設定。 此處的目標是讓連結可在 GitHub 中和轉譯的網站上運作︰
 
     [link text](http://powerbi.microsoft.com/pricing/)
 
-To test your links, push your page to your fork and view it in the rendered view and publish to staging. The cross links on the GitHub version of the page should work as long as the targets of the URLs are present in your fork.
+若要測試您的連結，將您的頁面推送至您的 「 分叉 」 檢視中呈現的檢視和發佈至預備環境。 GitHub 版本的頁面上的交互連結應該正常運作，只要 Url 中的目標會出現在您的 「 分叉 」。
 
-Our <bpt id="p1">[</bpt>markdown template for technical articles<ept id="p1">](../markdown templates/markdown-template-for-new-articles.md/)</ept> shows an alternate way to create crosslinks in markdown so all the crosslinks are coded together at the end of the article, even while they display inline.
+我們 [技術文件的 markdown 範本](../markdown templates/markdown-template-for-new-articles.md/) 顯示 markdown 中建立的交互連結，讓所有交互連結會自動程式碼一起結尾的發行項，即使它們顯示內嵌的替代方式。
 
 ## 參考樣式連結
 
@@ -91,15 +91,15 @@ Our <bpt id="p1">[</bpt>markdown template for technical articles<ept id="p1">](.
 
 ## FWLinks
 
-Avoid FWLinks (our redirection system) in powerbi.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For Power BI, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
+避免 FWLinks （我們重新導向的系統） powerbi.microsoft.com 內容中。 它們應只作為最後的方法時，您必須建立的連結，您還不知道其 URL 的頁面。 在幾乎不會實際需要。 Power BI，您定義的檔案名稱，讓您知道它將會是事先。 文件庫主題尚未發佈，您可以建立使用主題 GUID，所以您不必使用 FWLink 的連結。
 
-If you must use an FWLink on a web page, include the P parameter to make it a permanent redirect:
+如果您必須在網頁上使用 FWLink，包括 P 參數，讓它永久重新導向︰
 
     http://go.microsoft.com/fwlink/p/?LinkId=389595
 
-When you paste the target URL into the FWLink tool, remember to remove the locale if your target link is Power BI, or the MSDN or TechNet library.
+當您將目標 URL 貼到 FWLink 工具時，請記得如果目標連結是 Power BI 或 MSDN 或 TechNet 程式庫移除地區設定。
 
-### Contributors' Guide Links
+### 著作指南的連結
 
 - [概觀文章](./../README.md)
 - [指引文章的索引](./contributor-guide-index.md)

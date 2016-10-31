@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Data refresh in Power BI"
-   description="Data refresh in Power BI"
+   pageTitle="在 Power BI 中的資料重新整理"
+   description="在 Power BI 中的資料重新整理"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,257 +20,262 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Data refresh in Power BI  
+# 在 Power BI 中的資料重新整理  
 
-Making sure you’re always getting the latest data is often critical in making the right decisions. You’ve probably already used Get Data in Power BI to connect to and upload some data, created some reports and a dashboard. Now, you want to make sure your data really is the latest and greatest.
+確保您永遠都會取得最新的資料通常會在做出正確決策的關鍵。 您可能已經連接到並上傳一些資料，有些報表和儀表板建立 Power BI 中使用取得資料。 現在，您要確定您的資料其實是最新和最大。
 
-In many cases, you don’t need to do anything at all. Some data, like from a Salesforce or Marketo content pack is automatically refreshed for you. If your connection makes use of a live connection or DirectQuery, the data will be update to date. But, in other cases, like with an Excel workbook or Power BI Desktop file that connects to an external online or on-premises data source, you’ll need to refresh manually or setup a refresh schedule so Power BI can refresh the data in your reports and dashboards for you.
+在許多情況下，您不需要在執行任何動作。 某些資料，例如從 Salesforce 或 Marketo 內容套件會為您自動重新整理。 如果您的連接會使用即時連接或 DirectQuery，資料將會更新的日期。 但是，在其他情況下，像使用 Excel 活頁簿或 Power BI Desktop 檔案，以連接到外部線上或內部部署資料來源，您將需要手動重新整理或設定重新整理排程，讓 Power BI 可以讓您更新您的報表和儀表板中的資料。
 
-This article, along with a few others, are meant to help you understand how data refresh in Power BI really works, whether or not you need to setup a refresh schedule, and what needs to be in-place to refresh your data successfully.
+這篇文章，以及一些其他的用意在於幫助您了解如何在 Power BI 中的資料重新整理實際運作方式、 要重新整理排程，以及哪些項目需要就地升級已成功重新整理您的資料。
 
-## Data refresh by subscription type 
+## 依訂閱類型的資料重新整理 
  
-Before we go any further, it’s important to know how data refresh works depending on your Power BI subscription type. There are two different types of user subscriptions, Power BI (free) and Power BI Pro. Power BI Pro provides additional refresh frequency and capacity.
+我們繼續討論之前，務必了解資料重新整理如何運作視您的 Power BI 訂用帳戶類型而定。 有兩種不同的使用者訂用帳戶，Power BI （免費） 和 Power BI Pro。 Power BI Pro 提供額外的重新整理頻率和容量。
 
-|**Data Refresh**|**Power BI (free)**|**Power BI Pro**|
+|**資料重新整理**|**Power BI （免費）**|**Power BI Pro**|
 |---|---|---|
-|Datasets scheduled to refresh|每日|Hourly*|
-|Streaming data in your dashboards and reports using Microsoft Power BI REST API or Microsoft Stream Analytics.|10k rows/hour|1M rows/hour|
-|Live/DirectQuery on-premises data sources with full interactivity via the On-premises Data Gateway| | ![](media/powerbi-refresh-data/checkmark.png)|
-|Live cloud data sources with full interactivity (Azure SQL Database, Azure SQL Data Warehouse, Spark on HDInsight)| | ![](media/powerbi-refresh-data/checkmark.png)|
-|On-premises data sources requiring a Power BI Gateway - Personal and/or the On-premises Data Gateway.| | ![](media/powerbi-refresh-data/checkmark.png)|
+|若要重新整理排程的資料集|每日|每小時 *|
+|您的儀表板和報表使用 Microsoft Power BI REST API 或 Microsoft 串流分析中的資料流。|10 萬列/小時|1m 資料列/小時|
+|DirectQuery 即時內部資料來源提供完整的互動功能，透過內部部署資料閘道| | ![](media/powerbi-refresh-data/checkmark.png)|
+|即時雲端資料來源提供完整的互動功能 (HDInsight 上的 Azure SQL Database，Azure SQL 資料倉儲，Spark)| | ![](media/powerbi-refresh-data/checkmark.png)|
+|內部部署資料來源需要 Power BI 閘道-個人及/或內部部署資料閘道。| | ![](media/powerbi-refresh-data/checkmark.png)|
 
-\* Up to eight times (hours) per day.
+\* 最多八個時間 （小時） 每日。
 
-## Understanding data refresh  
-Before setting up refresh, it’s important to understand what it is you’re refreshing and where you’re getting your data.
+## 了解資料重新整理  
+之前設定重新整理時，請務必了解它，您要重新整理，以及您要從何處取得資料。
 
-A <bpt id="p1">*</bpt>data source<ept id="p1">*</ept> is where the data you explore in your reports and dashboards really comes from; for example, an online service like Google Analytics or QuickBooks, a database in the cloud like Azure SQL Database, or a database or file on a local computer or server in your own organization. These are all data sources. The type of data source determines how data from it is refreshed. We’ll go into refresh for each type of data source a little later in the <bpt id="p1">[</bpt>What can be refreshed?<ept id="p1">](#what-can-be-refreshed)</ept> section.
+A *資料來源* 是其中探索您在報表中的資料和儀表板其實就是從; 比方說，例如 Google 分析或 QuickBooks 的線上服務，雲端中的資料庫喜歡 Azure SQL Database，或資料庫或在本機電腦或您組織中的伺服器上的檔案。 這些是所有資料來源。 資料來源類型會決定從它的資料重新整理的方式。 我們會為每種類型的資料來源重新整理有點稍後 [什麼可以重新整理？](#what-can-be-refreshed) 一節。
 
-A <bpt id="p1">*</bpt>dataset<ept id="p1">*</ept> is automatically created in Power BI when you use Get Data to connect to and upload data from a content pack, file, or you connect to a live data source. In Power BI Desktop and Excel 2016, you can also publish your file right to the Power BI service, which is just like using Get Data.
+A *資料集* 時自動建立 Power BI 中連接到的情況下，您在使用取得資料，並將資料上傳內容的組件、 檔案，或是您從連接到即時資料來源。 在 Power BI Desktop 和 Excel 2016 中，您也可以發行 Power BI 服務，這就像是使用以取得資料是您的檔案權限。
 
-In each case, a dataset is created and appears in the My Workspace, or Group, containers in the Power BI service. When you select the <bpt id="p1">**</bpt>ellipse (...)<ept id="p1">**</ept> for a dataset, you can explore the data in a report, edit settings, and setup refresh.
+在每個案例中，資料集建立，並出現我的工作區或群組，在 Power BI 服務容器中。 當您選取 **省略號 （...）** 資料集，瀏覽報表中的資料、 編輯設定，並設定重新整理。
   
 ![](media/powerbi-refresh-data/dataset-menu.png)
 
-A dataset can get data from one or more data sources. For example, you can use Power BI Desktop to get data from a SQL Database in your organization, and get other data from an OData feed online. Then, when you publish the file to Power BI, a single dataset is created, but it will have data sources for both the SQL Database and the OData feed.
+資料集可以從一個或多個資料來源取得資料。 例如，您可以使用 Power BI Desktop 從您的組織中的 SQL 資料庫取得資料，並從 OData 摘要線上取得其他資料。 然後，當您發行檔案至 Power BI，建立單一資料集，但它將有資料來源的 SQL 資料庫與 OData 摘要。
 
-A dataset contains information about the data sources, data source credentials, and in most cases, a sub-set of data copied from the data source. When you create visualizations in reports and dashboards, you’re looking at data in the dataset, or in the case of a live connection like Azure SQL Database, the dataset defines the data you see right from the data source. For a live connection to Analysis Services, the dataset definition comes from Analysis Services directly.
+資料集包含相關資訊的資料來源、 資料來源認證，並在大部分情況下，資料的子集複製資料來源。 當您建立報表和儀表板中的視覺效果、 您正在查看資料集，或在 Azure SQL Database 之類的即時連接，資料集定義的資料會看見從資料來源的權限。 對即時連接至 Analysis Services，資料集定義是從 Analysis Services 直接。
 
-> *When you refresh data, you are updating the data in the dataset that is stored in Power BI from your data source. This refresh is a full refresh and not incremental.* 
+> *當您重新整理資料時，您要更新資料集中儲存在資料來源的 Power BI。 這項重新整理是完整的重新整理與不增量。* 
 
-Whenever you refresh data in a dataset, whether by using Refresh Now or by setting up a refresh schedule, Power BI uses information in the dataset to connect to the data sources defined for it, query for updated data, and then loads the updated data into the dataset. Any visualizations in your reports or dashboards based on the data are updated automatically.
+每當您重新整理資料集是否使用立即重新整理或重新整理排程的設定，Power BI 連接到資料來源，為其定義查詢更新的資料，使用資料集中的資訊，然後將更新的資料載入資料集。 會自動更新您的報表或資料為基礎的儀表板中的任何視覺效果。
 
-Before we go any further, there’s something else that's very important to understand: 
+我們繼續討論之前，還有其他項目，一定要了解︰ 
 
-> *Regardless of how often you refresh the dataset, or how often you look at live data, it is the data at the data source that must be up-to-date first.*
+> *頻率重新整理資料集，或查看即時資料的頻率，不論是在資料來源，您必須先最新的資料。*
 
-Most organizations process their data once a day, usually in the evening. If you schedule refresh for a dataset created from a Power BI Desktop file that connects to an on-premises database, and your IT department runs processing on that SQL database once in the evening, then you only need to setup scheduled refresh to run once-a-day. For example, after processing on the database happens, but before you come into work. Of course, this isn’t always the case. Power BI provides many ways to connect to data sources that are updated frequently or even real-time.
+大部分的組織在一天一次，通常在晚上處理他們的資料。 如果您排程重新整理資料集從 Power BI Desktop 檔案，以連接至內部部署資料庫，建立您的 IT 部門會處理該 SQL 資料庫上執行一次在晚上，則您只需要設定排定的重新整理一次一天執行。 例如，在資料庫上的處理都發生之後，但您進入工作之前。 當然，這不一定如此。 Power BI 提供許多方式來連接到經常更新或甚至是即時的資料來源。
 
-## Types of refresh
+## 重新整理的型別
 
-There are four main types of refresh that happen within Power BI. Package refresh, model/data refresh, tile refresh and visual container refresh.
+有四種主要類型的重新整理 Power BI 內發生。 套件重新整理，模型/資料重新整理，並排顯示重新整理和視覺容器重新整理。
 
-### Package refresh
+### 套件重新整理
 
-This synchronizes your Power BI Desktop, or Excel, file between the Power BI service and OneDrive, or SharePoint Online. This does not pull data from the original data source. The dataset in Power BI will only be updated with what is in the file within OneDrive, or SharePoint Online.
+這會同步處理您的 Power BI Desktop 或 Excel 檔案之間的 Power BI 服務和 OneDrive，或 SharePoint Online。 這不會從原始資料來源提取資料。 Power BI 中的資料集將只會更新與 OneDrive 或 SharePoint Online 中的檔案中。
 
 ![](media/powerbi-refresh-data/package-refresh.png)
 
-### Model/data refresh
+### 模型/資料重新整理
 
-This is referring to refreshing the dataset, within the Power BI service, with data from the original data source. This is done by either using scheduled refresh, or refresh now. This requires a gateway for on-premises data sources.
+這指重新整理資料集，在 Power BI 服務中，原始資料來源的資料。 這由使用排程重新整理，或立即重新整理。 這會需要內部部署資料來源的閘道。
 
-### Tile refresh
+### 並排顯示重新整理
 
-Tile refresh updates the cache for tile visuals, on the dashboard, once data changes. This happens about every fifteen minutes. You can also force a tile refresh by selecting the <bpt id="p1">**</bpt>ellipse (...)<ept id="p1">**</ept> in the upper right of a dashboard and selecting <bpt id="p2">**</bpt>Refresh dashboard tiles<ept id="p2">**</ept>.
+並排顯示重新整理更新磚視覺效果，在儀表板，一次資料變更的快取。 這是關於每隔 15 分鐘。 您也可以選取 [強制] 磚重新整理 **省略號 （...）** 左上角的 [儀表板和選取 **重新整理儀表板磚**。
 
 ![](media/powerbi-refresh-data/dashboard-tile-refresh.png)
 
-For details around common tile refresh errors, see <bpt id="p1">[</bpt>Troubleshooting tile errors<ept id="p1">](powerbi-refresh-troubleshooting-tile-errors.md)</ept>.
+如需常見的並排顯示重新整理錯誤的詳細資訊，請參閱 [疑難排解磚錯誤](powerbi-refresh-troubleshooting-tile-errors.md)。
 
-### Visual container refresh
+### 視覺容器重新整理
 
-Refreshing the visual container updates the cached report visuals, within a report, once the data changes.
+重新整理的視覺容器更新快取的報表視覺效果，在報表中，一次的資料變更。
 
-## What can be refreshed?
+## 可重新整理什麼？
 
-In Power BI, you’ll typically use Get Data to import data from a file on a local drive, OneDrive or SharePoint Online, publish a report from Power BI Desktop, or connect directly to a database in the cloud in your own organization. Just about any data in Power BI can be refreshed, but whether or not you need to depends on how your dataset was created from and the data sources it connects to. Let’s look at how each of these refresh data.
+在 Power BI 中，您將從本機磁碟機、 OneDrive 或 SharePoint Online 上的檔案匯入資料、 發行報表從 Power BI Desktop，或直接連接至資料庫的定域機組中您組織中通常使用取得資料。 可重新整理 Power BI 中的任何資料，但您需要取決於您的資料集的建立方式以及它會連接至資料來源。 讓我們看看每一種重新整理資料的方式。
 
-Before we go further, here are some important definitions to understand:
+我們繼續執行其他步驟之前，以下是一些重要的定義，以了解︰
 
-<bpt id="p1">**</bpt>Automatic refresh<ept id="p1">**</ept>  - This means no user configuration is necessary in order for the dataset to be refreshed on a regular basis. Data refresh settings are configured for you by Power BI. For online service providers, refresh usually occurs once-a-day. For files loaded from OneDrive, automatic refresh occurs about every hour for data that does not come from an external data source. While you can configure different schedule refresh settings and manually refresh, you probably don’t need to.
 
-<bpt id="p1">**</bpt>User configured manual or scheduled refresh<ept id="p1">**</ept> – This means you can manually refresh a dataset by using Refresh Now or setup a refresh schedule by using Schedule Refresh in a dataset’s settings. This type of refresh is required for Power BI Desktop files and Excel workbooks that connect to external online and on-premises data sources.
+            **自動重新整理**  -這表示沒有使用者設定定期重新整理是必要的資料集。 Power BI 會為您設定資料重新整理設定。 對於線上服務提供者，重新整理通常會發生一次一天。 自動重新整理載入從 OneDrive 的檔案，不是來自外部資料來源的資料每小時發生。 雖然您可以設定不同的排程重新整理設定，且手動重新整理，您可能不需要。
 
-> [AZURE.NOTE] When you configure a time for scheduled refresh, there can be a delay of up to one hour before it begins.
 
-<bpt id="p1">**</bpt>Live/DirectQuery<ept id="p1">**</ept> – This means there is a live connection between Power BI and the data source. For on-premises data sources, Admins will need to have a data source configured within an enteprise gateway, but user interaction may not be needed.
+            **設定使用者手冊或排定的重新整理** – 這表示您可以手動重新整理資料集使用立即重新整理或使用排程重新整理資料集的設定中設定的重新整理排程。 Power BI Desktop 檔案和線上外部和內部部署資料來源連接的 Excel 活頁簿需要這種類型的重新整理。
 
-## Local files and files on OneDrive or SharePoint Online
+> [AZURE.NOTE] 當您設定排定的重新整理的時間時，可能會達一小時開始之前的延遲。
 
-Data refresh is supported for Power BI Desktop files and Excel workbooks that connect to external online or on-premises data sources. This will only refresh the data for the dataset within the Power BI service. It will not update your local file.
 
-Keeping your files on OneDrive, or SharePoint Online, and connecting to them from Power BI, provides a great amount of flexibility. But with all that flexibility, it also makes it one of the most challenging to understand. Scheduled refresh for files stored in OneDrive, or SharePoint Online, are different from package refresh. You can learn more in the <bpt id="p1">[</bpt>Types of refresh<ept id="p1">](#types-of-refresh)</ept> section.
+            **Live DirectQuery** – 這表示沒有 Power BI 和資料來源之間的即時連接。 對於內部部署資料來源，系統管理員必須擁有 enterprise 閘道器中設定資料來源，但可能不需要使用者互動。
 
-### Power BI Desktop file
+## 本機檔案和 OneDrive 或 SharePoint Online 上的檔案
 
-|**資料來源**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
+支援資料重新整理 Power BI Desktop 檔案和連接到線上的外部或內部部署資料來源的 Excel 活頁簿。 這只會重新整理 Power BI 服務中的資料集的資料。 它不會更新您的本機檔案。
+
+保留 OneDrive 或 SharePoint Online 上的檔案，以及從 Power BI 連接到提供絕佳的大的彈性。 但是，與所有這樣的彈性，您也可以最具挑戰性瞭解其中一項。 排定的重新整理檔案儲存在 OneDrive 或 SharePoint Online 互異套件重新整理。 您可以深入了解 [類型的重新整理](#types-of-refresh) 一節。
+
+### Power BI Desktop 檔案
+
+|**資料來源**|**自動重新整理**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
-|Get Data (on the ribbon) is used to connect to and query data from any listed online data source.|否|是|否|
-|Get Data is used to connect to and explore a live Analysis Services database.|是|否|是|
-|Get Data is used to connect to and explore a supported on-premises DirectQuery data source.|是|否|是|
-|Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark.|Yes (hourly)|是|否|
-|Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange.|否|是|是|
+|取得資料 （在功能區） 用來連接及查詢任何列出的線上資料來源的資料。|否|是|否|
+|取得資料用來連接到並瀏覽線上的 Analysis Services 資料庫。|是|否|是|
+|取得資料用來連接到並瀏覽內部支援的 DirectQuery 資料來源。|是|否|是|
+|取得資料用來連接到並查詢 Azure SQL Database，Azure SQL 資料倉儲，Azure HDInsight Spark 中的資料。|是 （小時）|是|否|
+|取得資料用來連接及查詢從 Hadoop 檔案 (HDFS) 和 Microsoft Exchange 任何列出的內部資料來源的資料。|否|是|是|
 
-For details, see <bpt id="p1">[</bpt>Refresh a dataset created from a Power BI Desktop file on OneDrive<ept id="p1">](powerbi-refresh-desktop-file-onedrive.md)</ept>.
+如需詳細資訊，請參閱 [重新整理資料集從 OneDrive 上的 Power BI Desktop 檔案建立](powerbi-refresh-desktop-file-onedrive.md)。
 
-### Excel workbook
+### Excel 活頁簿
 
-|**資料來源**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
+|**資料來源**|**自動重新整理**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
-|Tables of data in a worksheet not loaded into the Excel data model.|Yes, hourly <bpt id="p1">*</bpt>(OneDrive/SharePoint Online only)<ept id="p1">*</ept>|Manual only <bpt id="p1">*</bpt>(OneDrive/SharePoint Online only)<ept id="p1">*</ept>|否|
-|Tables of data in a worksheet linked to a table in the Excel data model (linked tables).|Yes, hourly <bpt id="p1">*</bpt>(OneDrive/SharePoint Online only)<ept id="p1">*</ept>|Manual only <bpt id="p1">*</bpt>(OneDrive/SharePoint Online only)<ept id="p1">*</ept>|否|
-|Power Query* is used to connect to and query data from any listed online data source and load data into the Excel data model.|否|是|否|
-|Power Query* is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange and load data into the Excel data model.|否|是|是|
-|Power Pivot is used to connect to and query data from any listed online data source and load data into the Excel data model.|否|是|否|
-|Power Pivot is used to connect to and query data from any listed on-premises data source and load data into the Excel data model.|否|是|是|
+|不會載入 Excel 資料模型的工作表中的資料表。|[是]，每小時 *(僅限 OneDrive/SharePoint Online)*|只有手動 *(OneDrive/SharePoint 僅線上)*|否|
+|資料工作表中的資料表連結至 Excel 資料模型 （連結資料表） 中的資料表。|[是]，每小時 *(僅限 OneDrive/SharePoint Online)*|只有手動 *(OneDrive/SharePoint 僅線上)*|否|
+|電源查詢 * 用來連接和查詢中任何列出的線上資料來源的資料，並將資料載入 Excel 資料模型。|否|是|否|
+|電源查詢 * 用來連接及查詢從 Hadoop 檔案 (HDFS) 除外的任何內部列出的資料來源的資料和 Microsoft Exchange 和載入資料至 Excel 資料模型。|否|是|是|
+|Power Pivot 用來連接和查詢中任何列出的線上資料來源的資料，並將資料載入 Excel 資料模型。|否|是|否|
+|Power Pivot 用來連接及查詢資料，從任何內部列出的資料來源資料並載入到 Excel 資料模型。|否|是|是|
 
-*\* Power Query is known as Get &amp; Transform Data in Excel 2016.*
+*\* Power Query 稱為 Get 和轉換資料在 Excel 2016 中。*
 
-For more detailed information, see <bpt id="p1">[</bpt>Refresh a dataset created from an Excel workbook on OneDrive<ept id="p1">](powerbi-refresh-excel-file-onedrive.md)</ept>.
+如需詳細資訊，請參閱 [重新整理資料集從 OneDrive 上的 Excel 活頁簿建立](powerbi-refresh-excel-file-onedrive.md)。
 
-### Comma separated value (.csv) file on OneDrive or SharePoint Online
+### OneDrive 或 SharePoint Online 上的逗號分隔值 (.csv) 檔案
 
-|**資料來源**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
+|**資料來源**|**自動重新整理**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
-|Simple comma separated value|Yes, hourly|Manual only|否|
+|簡單的逗號分隔值|[是]，每小時|只有手冊|否|
 
-For more detailed information, see <bpt id="p1">[</bpt>Refresh a dataset created from a comma separated value (.csv) file on OneDrive<ept id="p1">](powerbi-refresh-csv-file-onedrive.md)</ept>.
+如需詳細資訊，請參閱 [重新整理從逗號分隔的值 (.csv) 檔案放在 OneDrive 上建立的資料集](powerbi-refresh-csv-file-onedrive.md)。
 
-## Content packs  
-There are two types of content packs in Power BI:
+## 內容組件  
+有兩種類型的內容在 Power BI 中的組件︰
 
-<bpt id="p1">**</bpt>Content packs from online services<ept id="p1">**</ept>: like Adobe Analytics, SalesForce, and Dynamics CRM Online. Datasets created from online services are refreshed automatically once a day. While it’s probably not necessary, you can manually refresh or setup a refresh schedule. Because online services are in the cloud, a gateway is not required.
 
-<bpt id="p1">**</bpt>Organizational content packs<ept id="p1">**</ept>: created and shared by users in your own organization. Content pack consumers cannot setup a refresh schedule or manually refresh. Only the content pack creator can setup refresh for the datasets in the content pack. Refresh settings are inherited with the dataset.
+            **內容中的線上服務的組件**: Adobe 分析、 SalesForce 和 Dynamics CRM Online 等。 從線上服務建立資料集是會自動重新整理一天一次。 雖然不可能有必要，您可以手動重新整理或重新整理排程。 線上服務都位於定域機組，因為不需要閘道。
 
-### Content packs from online services
 
-|**資料來源**|**Automatic refresh**|**User configured manual or scheduled refresh**|**Gateway required**|
+            **組織內容套件**︰ 建立和您自己的組織中的使用者共用。 內容套件取用者無法重新整理排程或手動重新整理。 只有內容套件建立者可以設定此內容套件中的資料集的重新整理。 重新整理與資料集，會繼承設定。
+
+### 從線上服務的內容組件
+
+|**資料來源**|**自動重新整理**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
-|Online services in Get Data <ph id="ph1">&amp;gt;</ph> Services|是|是|否|
+|在 [取得資料的線上服務 &gt; 服務|是|是|否|
 
-### Organizational content packs
+### 組織內容套件
 
-Refresh capabilities for a dataset included within an organization content pack depends on the dataset. See information above in relation to local files, OneDrive or SharePoint Online.
+重新整理資料集組織內容組件相依於資料集內包含的功能。 請參閱上面的資訊相對於 OneDrive 或 SharePoint Online 的本機檔案。
 
-To learn more, see <bpt id="p1">[</bpt>Introduction to organizational content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>.
+若要深入了解，請參閱 [組織內容套件簡介](powerbi-service-organizational-content-packs-introduction.md)。
 
-## Live connections and DirectQuery to on-premises data sources 
-With the On-premises Data Gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh. 
+## 即時連接與內部部署資料來源的 DirectQuery 
+與內部部署資料閘道，您可以從 Power BI 發出查詢至您的內部部署資料來源。 當您與視覺效果互動時，查詢會從 Power BI 直接送到資料庫。 然後會傳回更新的資料，並且更新視覺效果。 有了 Power BI 與資料庫之間的直接連線，因為沒有必要排程重新整理。 
 
-When you configure a data source with the On-premises Data Gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
+當您使用內部部署資料閘道設定資料來源時，您可以使用該資料來源做為排定的重新整理選項。 這會是而不要使用個人閘道。
 
-> [AZURE.NOTE] If your dataset is configured for a live or DirectQuery connection, you will not have the option to use scheduled refresh. Scheduled refresh is only available for imported datasets.
+> [AZURE.NOTE] 如果您的資料集設定為即時或 DirectQuery 連接，您不會使用排定的重新整理的選項。 排定的重新整理僅適用於匯入資料集。
 
-|**資料來源**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|**Gateway required**|
+|**資料來源**|**Live DirectQuery**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
 |Analysis Services 表格式|是|是|是|
-|Analysis Services Multidimensional|是|是|是|
+|Analysis Services 多維度|是|是|是|
 |SQL Server|是|是|是|
 |SAP HANA|是|是|是|
 |Oracle|是|是|是|
 |Teradata|是|是|是|
 
-To learn more, see <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept>
+若要深入了解，請參閱 [內部資料閘道](powerbi-gateway-onprem.md)
 
-## Databases in the cloud  
+## 在雲端中的資料庫  
 
-With DirectQuery, there is a direct connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. If there is no user interaction in a visualization, like in a dashboard, data is refreshed automatically about every fifteen minutes. Because there is a direct connection between Power BI and the database, there is no need to manually refresh or setup a refresh schedule for the dataset. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
+DirectQuery，沒有 Power BI 和雲端中的資料庫之間的直接連線。 當您與視覺效果互動時，查詢會從 Power BI 直接送到資料庫。 然後會傳回更新的資料，並且更新視覺效果。 如果沒有在視覺效果不需要使用者互動，像儀表板中的資料會自動重新整理有關每隔十五分鐘。 有了 Power BI 與資料庫之間的直接連線，因為沒有需要手動重新整理或重新整理排程的資料集。 而且因為 Power BI 服務和資料來源位於定域機組，就不需要個人閘道。
 
-|**資料來源**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|**Gateway required**|
+|**資料來源**|**Live DirectQuery**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
-|SQL Azure Data Warehouse|是|否|否|
-|Spark on HDInsight|是|否|否|
+|SQL Azure 資料倉儲|是|否|否|
+|HDInsight 上的 Spark|是|否|否|
 
-To learn more, see <bpt id="p1">[</bpt>Azure and Power BI<ept id="p1">](powerbi-azure-and-power-bi.md)</ept>.
+若要深入了解，請參閱 [Azure 與 Power BI](powerbi-azure-and-power-bi.md)。
 
-## Real-time dashboards  
+## 即時儀表板  
 
-Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream Analytics, to make sure the data is up-to-date. Since real time dashboards do not require users to configure refresh, they are outside the scope of this article.
+即時儀表板會使用 Microsoft Power BI REST API 或 Microsoft 串流分析，以確保資料保持最新狀態。 即時儀表板，而不需要使用者設定重新整理，因為它們不屬於本文範圍。
 
-|**資料來源**|**自動**|**User configured manual or scheduled refresh**|**Gateway required**|
+|**資料來源**|**自動**|**設定使用者手冊或排定的重新整理**|**所需的閘道**|
 |---|---|---|---|
-|Custom apps developed with the Power BI Rest API or Microsoft Stream Analytics|Yes, live streaming|否|否|
+|使用 Power BI Rest API 或 Microsoft 串流分析開發自訂應用程式|是，即時串流|否|否|
 
-To learn more, see <bpt id="p1">[</bpt>Create a real-time dashboard in Power BI<ept id="p1">](https://msdn.microsoft.com/library/mt267603.aspx)</ept>.
+若要深入了解，請參閱 [Power BI 中建立即時儀表板](https://msdn.microsoft.com/library/mt267603.aspx)。
 
-## Configure scheduled refresh
+## 設定排定的重新整理
 
-To learn how to configure scheduled refresh, see <bpt id="p1">[</bpt>Configure scheduled refresh<ept id="p1">](powerbi-refresh-scheduled-refresh.md)</ept>
+若要了解如何設定排定的重新整理，請參閱 [設定排定的重新整理](powerbi-refresh-scheduled-refresh.md)
 
-## Common data refresh scenarios  
+## 常見的資料重新整理案例  
 
-Sometimes the best way to learn about data refresh in Power BI to look at examples. Here are some of the more common data refresh scenarios:
+有時候，最好了解 Power BI 來看一下範例中的資料重新整理。 以下是一些較常見的資料重新整理案例︰
 
-### Excel workbook with tables of data  
+### Excel 活頁簿之資料的資料表  
 
-You have an Excel workbook with several tables of data, but none of them are loaded into the Excel data model. You use Get Data to upload the workbook file from your local drive into Power BI, and create a dashboard. But, now you’ve made some changes to a couple of the workbook’s tables on your local drive, and you want to update your dashboard in Power BI with the new data.
+您可以使用數個資料表的資料，Excel 活頁簿，但都不會載入到 Excel 資料模型。 用於取得資料上傳到 Power BI，本機磁碟機的活頁簿檔案，並建立儀表板。 但是，現在您做了些許變更幾個活頁簿的資料表上的本機磁碟機，而且您想要的新資料更新 Power BI 儀表板。
 
-Unfortunately, refresh is not supported in this scenario. In order to refresh the dataset for your dashboard, you will have to re-upload the workbook. However, there’s a really great solution: Put your workbook file on OneDrive, or SharePoint Online!
+不幸的是，在此案例中不支援重新整理。 要重新整理儀表板資料集，您必須重新上傳活頁簿。 不過，還有很棒的解決方案︰ 將活頁簿檔案的 OneDrive 或 SharePoint Online ！
 
-When you connect to a file on OneDrive, or SharePoint Online, your reports and dashboards will show data as it is in the file. In this case, your Excel workbook. Power BI automatically checks the file, about every hour, for updates. If you make changes to the workbook (stored in OneDrive or SharePoint Online), those changes are reflected in your dashboard and reports within an hour. You don’t need to setup refresh at all. However, if you need to see your updates in Power BI immediately, you can manually refresh the dataset by using Refresh Now.
+當您連線到 OneDrive，或 SharePoint Online 上的檔案時，您的報表和儀表板會顯示資料在檔案中。 在此情況下，您的 Excel 活頁簿。 Power BI 會自動檢查該檔案，每小時更新有關。 如果您變更活頁簿 （儲存在 OneDrive 或 SharePoint Online），這些變更會反映在您的儀表板和報表以一小時內。 您不需要完全設定重新整理。 不過，如果您需要立即看到您在 Power BI 中的更新，您可以手動重新整理資料集使用立即重新整理。
 
-To learn more, see <bpt id="p1">[</bpt>Excel data in Power BI<ept id="p1">](powerbi-service-excel-data.md)</ept>,<bpt id="p2">[</bpt>Replace an Excel, Power BI Desktop, or CSV file in Power BI<ept id="p2">](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md)</ept>, <bpt id="p3">[</bpt>Refresh a dataset created from an Excel workbook on OneDrive<ept id="p3">](powerbi-refresh-excel-file-onedrive.md)</ept>.
+若要深入了解，請參閱 [Power BI 中的資料的 Excel](powerbi-service-excel-data.md),，[取代 Power BI 中的 Excel、 Power BI Desktop 或 CSV 檔案](powerbi-replace-an-excel-power-bi-desktop-or-csv-file.md), ，[重新整理資料集從 OneDrive 上的 Excel 活頁簿建立](powerbi-refresh-excel-file-onedrive.md)。
 
-### Excel workbook connects to a SQL database in your company  
+### Excel 活頁簿連接到您的公司中的 SQL 資料庫  
 
-Let’s say you have an Excel workbook named SalesReport.xlsx on your local computer. Power Query in Excel was used to connect to a SQL database on a server in your company and query for sales data that is loaded into the data model. Each morning, you open the workbook and hit Refresh to update your PivotTables.
+例如，假設您有本機電腦上名為 SalesReport.xlsx 的 Excel 活頁簿。 在 Excel 中的 power Query 來連接到您的公司和載入資料模型的銷售資料的查詢中的伺服器上的 SQL 資料庫。 每個早上，您開啟活頁簿，然後按一下重新整理，以更新您的樞紐分析表。
 
-Now you want to explore your sales data in Power BI, so you use Get Data to connect to and upload the SalesReport.xlsx workbook from your local drive.
+現在您想要瀏覽 Power BI 中的銷售資料，因此您可以使用取得資料連接到並從本機磁碟機上傳 SalesReport.xlsx 活頁簿。
 
-In this case, you can manually refresh the data in the SalesReport.xlsx dataset or setup a refresh schedule. Because the data really comes from the SQL database in your company, you’ll need to download and install a gateway. Once you’ve installed and configured the gateway, you’ll need to go into the SalesReport dataset’s settings and sign in to the data source; but you’ll only have to do this once. You can then setup a refresh schedule so Power BI automatically connects to the SQL database and gets updated data. Your reports and dashboards will also be updated automatically.
+在此情況下，您可以手動重新整理 SalesReport.xlsx 資料集中的資料，或重新整理排程。 因為資料其實就是從您的公司中的 SQL 資料庫，您將需要下載並安裝閘道。 一旦安裝並設定閘道，您將需要進入 SalesReport 資料集的設定，而登入的資料來源;但是，您僅需進行一次。 您可以接著安裝程式重新整理排程，讓 Power BI 自動連線到 SQL 資料庫，並取得更新的資料。 您的報表和儀表板也會自動更新。
 
-> [AZURE.NOTE] This will only update the data within the dataset in the Power BI service. Your local file will not be updated as part of the refresh.
+> [AZURE.NOTE] 這只會更新 Power BI 服務中的資料集內的資料。 重新整理的一部分，不會更新您的本機檔案。
 
-To learn more, see  <bpt id="p1">[</bpt>Excel data in Power BI<ept id="p1">](powerbi-service-excel-data.md)</ept>, <bpt id="p2">[</bpt>Power BI Gateway - Personal<ept id="p2">](powerbi-personal-gateway.md)</ept>, <bpt id="p3">[</bpt>On-premises Data Gateway<ept id="p3">](powerbi-gateway-onprem.md)</ept>, <bpt id="p4">[</bpt>Refresh a dataset created from an Excel workbook on a local drive<ept id="p4">](powerbi-refresh-excel-file-local-drive.md)</ept>.
+若要深入了解，請參閱  [Power BI 中的資料的 Excel](powerbi-service-excel-data.md), ，[Power BI 閘道個人](powerbi-personal-gateway.md), ，[內部資料閘道](powerbi-gateway-onprem.md), ，[重新整理資料集從本機磁碟機上的 Excel 活頁簿建立](powerbi-refresh-excel-file-local-drive.md)。
 
-### Power BI Desktop file with data from an OData feed  
-In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.
+### Power BI Desktop 檔案從 OData 摘要的資料  
+在此情況下，您取得資料用於 Power BI Desktop 來連接，並從 OData 摘要匯入人口普查資料。  Power BI Desktop 中建立多個報表，然後 WACensus 的檔案名稱和公司中將它儲存在共用上。 然後將檔案發行至 Power BI 服務。
 
-In this case, you can manually refresh the data in the WACensus dataset or setup a refresh schedule. Because the data in the data source comes from an OData feed online, you do not need to install a gateway, but you will need to go into the WACensus dataset’s settings and sign in to the OData data source. You can then setup a refresh schedule so Power BI automatically connects to the OData feed and gets updated data. Your reports and dashboards will also be updated automatically.
+在此情況下，您可以手動重新整理 WACensus 資料集中的資料，或重新整理排程。 資料來源中的資料來自於 OData 摘要上線，因為您不需要安裝一個閘道，但必須進入 WACensus 資料集的設定，而登入 OData 資料來源。 您可以接著安裝程式重新整理排程，讓 Power BI 自動連接到 OData 摘要，並取得更新的資料。 您的報表和儀表板也會自動更新。
 
-To learn more, see <bpt id="p1">[</bpt>Publish from Power BI Desktop<ept id="p1">](powerbi-desktop-upload-desktop-files.md)</ept>, <bpt id="p2">[</bpt>Refresh a dataset created from a Power BI Desktop file on a local drive<ept id="p2">](powerbi-refresh-desktop-file-local-drive.md)</ept>, <bpt id="p3">[</bpt>Refresh a dataset created from a Power BI Desktop file on OneDrive<ept id="p3">](powerbi-refresh-desktop-file-onedrive.md)</ept>.
+若要深入了解，請參閱 [從 Power BI Desktop 發行](powerbi-desktop-upload-desktop-files.md), ，[重新整理資料集從本機磁碟機上的 Power BI Desktop 檔案建立](powerbi-refresh-desktop-file-local-drive.md), ，[重新整理資料集從 OneDrive 上的 Power BI Desktop 檔案建立](powerbi-refresh-desktop-file-onedrive.md)。
 
-### Shared content pack from another user in your organization  
+### 共用內容的組件無法在組織中的另一位使用者  
 
-You’ve connected to an organizational content pack. It includes a dashboard, several reports, and a dataset.
+您已連線到組織的內容套件。 它包含一個儀表板、 數個報表，與資料集。
 
-In this scenario, you cannot setup refresh for the dataset. The data analyst who created the content pack is responsible for making sure the dataset is refreshed, depending on the data sources used.
+在此案例中，您無法設定重新整理資料集。 資料分析師內容套件的建立者會負責確保重新整理資料集時，根據所使用的資料來源。
 
-If your dashboards and reports from the content pack aren’t updating, you’ll want to talk to the data analyst who created the content pack.
+如果不更新您的儀表板和報告的內容套件，您會想要與資料分析師建立內容組件。
 
-To learn more, see <bpt id="p1">[</bpt>Introduction to organizational content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>, <bpt id="p2">[</bpt>Work with organizational content packs<ept id="p2">](powerbi-service-organizational-content-packs-use-and-work-with.md)</ept>.
+若要深入了解，請參閱 [組織內容套件簡介](powerbi-service-organizational-content-packs-introduction.md), ，[使用組織內容套件](powerbi-service-organizational-content-packs-use-and-work-with.md)。
 
-### Content pack from an online service provider like Salesforce  
+### 從線上服務提供者，例如 Salesforce 的內容組件  
 
-In Power BI you used Get Data to connect to and import your data from an online service provider like Salesforce. Well, not much to do here. Your Salesforce data set is automatically scheduled to refresh once a day. 
+在 Power BI 中，您可以使用取得資料連接到並匯入資料，例如 Salesforce 線上服務提供者。 其實沒有太多所做的動作。 您的 Salesforce 資料集自動排定重新整理一天一次。 
 
-Like most online service providers, Salesforce updates data once a day, usually at night. You can manually refresh your Salesforce dataset, or setup a refresh schedule, but it’s not necessary because Power BI will automatically refresh the dataset and your reports and dashboards will be updated too.
+大部分的線上服務提供者，像是 Salesforce 更新資料一天一次，通常是在晚上。 您可以手動重新整理您的 Salesforce 資料集，或重新整理排程，但它不需要因為 Power BI 會自動重新整理資料集，而且您的報表和儀表板會更新過。
 
-To learn more, see <bpt id="p1">[</bpt>Salesforce content pack for Power BI<ept id="p1">](powerbi-content-pack-salesforce.md)</ept>.
+若要深入了解，請參閱 [Salesforce Power BI 內容套件](powerbi-content-pack-salesforce.md)。
 
 ## 疑難排解  
 
-When things go wrong, it’s usually because Power BI can’t sign into data sources, or the dataset connects to an on-premises data source and the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+發生錯誤時，通常是因為 Power BI 無法登入資料來源或資料集連接到內部部署資料來源，閘道已離線。 請確定 Power BI 可登入的資料來源。 如果您用來登入的資料來源的密碼變更，或從資料來源取得登出 Power BI，請務必嘗試登入您的資料來源中資料來源認證一次。
 
-For more information about troubleshooting, see <bpt id="p1">[</bpt>Tools for troubleshooting refresh issues<ept id="p1">](powerbi-refresh-tools-for-troubleshooting-issues.md)</ept> and <bpt id="p2">[</bpt>Troubleshooting refresh scenarios<ept id="p2">](powerbi-refresh-troubleshooting-refresh-scenarios.md)</ept>.
+如需有關疑難排解的詳細資訊，請參閱 [疑難排解的工具，重新整理問題](powerbi-refresh-tools-for-troubleshooting-issues.md) 和 [疑難排解重新整理案例](powerbi-refresh-troubleshooting-refresh-scenarios.md)。
 
 ## 請參閱
 
-[Tools for troubleshooting refresh issues](powerbi-refresh-tools-for-troubleshooting-issues.md)  
-[Troubleshooting refresh scenarios](powerbi-refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[重新整理問題的疑難排解工具](powerbi-refresh-tools-for-troubleshooting-issues.md)  
+[重新整理的疑難排解案例](powerbi-refresh-troubleshooting-refresh-scenarios.md)  
+[Power BI 閘道個人](powerbi-personal-gateway.md)  
+[內部資料閘道](powerbi-gateway-onprem.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

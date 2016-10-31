@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Quick Insights in Power BI"
-   description="Learn how to get Quick Insights and visuals in a few clicks"
+   pageTitle="在 Power BI 中的即時掌握所有資訊"
+   description="了解如何取得快速與視覺效果中按幾下"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Use Quick Insights in the Power BI service
+# 使用 Power BI 服務中的即時掌握所有資訊
 
-When you're working with a dashboard, report, or dataset in the Power BI service, you can have Power BI look for quick insights into the data. In Power BI, from the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> section in the left pane, select the <bpt id="p2">*</bpt>ellipses<ept id="p2">*</ept> (the three dots) beside the dataset you're interested in. A menu of options appears, and on the far right you'll see an option called <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept>.
+當您正在使用儀表板、 報表或 Power BI 服務中的資料集時，您可以尋找快速了解資料的 Power BI。 在 Power BI 中從 **資料集** 一節中的左窗格中選取 *橢圓形* （三個點） 旁邊您感興趣的資料集。 選項的功能表隨即出現，並在最右邊，您會看到一個名為選項 **即時掌握所有資訊**。
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_1.png)
 
-When you select Quick Insights, Power BI performs some machine learning and searches the data, analyzing it to find quick insights. You'll see a notification in the upper-right side of the service that indicated Power BI is working on finding insights.
+當您選取即時掌握所有資訊時，Power BI 會執行某些機器學習和搜尋資料，分析該查詢以尋找即時掌握所有資訊。 您會看到右上角中的通知，指出 Power BI 服務的努力尋找見解。
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_2.png)
 
-After fifteen seconds or so, the notification changes to let you know that Power BI found some insights.
+15 秒約後，請通知變更讓您了解 Power BI 找到一些見解。
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_3.png)
 
-When you select the <bpt id="p1">**</bpt>View insights<ept id="p1">**</ept> button on the notification, you're presented with a page of visuals that show the insights that Power BI found, similar to what you see in the following image. There are a bunch of insights, which you can scroll down through the page to view and consider.
+當您選取 **檢視 insights** 按鈕會顯示一頁顯示 insights 發現，類似您在下圖中看到該 Power BI 的視覺效果，通知。 有一大堆見解，您可以向下捲動頁面，即可檢視和考量。
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_4.png)
 
-Like any other visual, you can interact with the visuals in the Quick Insights page, and you can also pin any of them to a dashboard that you might have, or further filter one or more of them (or as many as you like), to search for additional insights that might be waiting on your curiosity to uncover.
+您可以像任何其他 visual 互動視覺效果中即時掌握所有資訊] 頁面上，並且您也可以釘選儀表板可能遇到的其中任何或進一步篩選一或多個這些 （或是您越多），來搜尋可能會等候您的好奇心，以發現的其他見解。
 
-With <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept>, you can let Power BI do the work to spot outliers and trends in your data, then use those findings in your dashboards, or further refine and filter them to get to the insights that are most important to you.
+使用 **快速 Insights**, ，您可以讓 Power BI 執行工作，在您的資料中找出極端值和趨勢，然後在您的儀表板中，使用這些結果，或進一步改善並加以篩選來取得對您而言最重要的深入資訊。

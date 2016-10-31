@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Getting started with Power BI Desktop"
-   description="Getting started with Power BI Desktop"
+   pageTitle="開始使用 Power BI Desktop"
+   description="開始使用 Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,347 +19,358 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Getting started with Power BI Desktop
+# 開始使用 Power BI Desktop
 
 
-Welcome to the <bpt id="p1">**</bpt>Power BI Desktop Getting Started Guide<ept id="p1">**</ept>. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts. 
+歡迎使用 **取得 Power BI Desktop 入門指南**。 這個簡短的教學課程的 Power BI Desktop 取得您了解其運作方式，示範，以及加速您建置穩固的資料模型的能力，以及令人讚嘆的報告 —，增強您的商務智慧工作。 
 
-Prefer to watch instead of read? Feel free to <bpt id="p1">[</bpt>take a look at our getting started video<ept id="p1">](powerbi-desktop-videos.md)</ept>. And if you want to follow along with the video with matching sample data, you can <bpt id="p1">[</bpt>download this sample Excel workbook<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=521962)</ept>.
+想要觀賞而不是讀取？ 可自由 [看看我們開始使用影片](powerbi-desktop-videos.md)。 如果您想要依照符合範例資料的視訊，您可以和 [下載這個範例 Excel 活頁簿](http://go.microsoft.com/fwlink/?LinkID=521962)。
 
 ![](media/powerbi-desktop-getting-started/PBI_GettingStartedSplash_resized.png)
 
-Power BI Desktop lets you create a collection of queries, data connections, and reports that can easily be shared with others. Power BI Desktop integrates proven Microsoft technologies – the powerful Query engine, data modeling, and visualizations – and works seamlessly with the online <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept><ept id="p1">](https://app.powerbi.com/)</ept>.
+Power BI Desktop 可讓您建立查詢、 資料連接和輕鬆地與其他人共用報表的集合。 Power BI Desktop 整合 – 強大查詢引擎、 資料模型和視覺效果 – 經過實證的 Microsoft 技術，並與線上密切 [**Power BI 服務**](https://app.powerbi.com/)。
 
-With the combination of <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> (where analysts and others can create powerful data connections, models and reports) and the <bpt id="p2">[</bpt><bpt id="p3">**</bpt>Power BI service<ept id="p3">**</ept><ept id="p2">](https://preview.powerbi.com/)</ept> (where Power BI Desktop reports can be shared so users can view and interact with them), new insights from the world of data are easier to model, build, share, and extend.
+結合運用 **Power BI Desktop** （其中分析師和其他人可以建立功能強大的資料連接、 模型和報表） 和 [**Power BI 服務**](https://preview.powerbi.com/) （其中報告 Power BI Desktop 可以共用讓使用者可以檢視並與其互動），新深入了解資料的世界可以輕易地建立模型、 建置、 共用，及延伸。
 
-Data analysts will find Power BI Desktop a powerful, flexible, and a highly accessible tool to connect with and shape the world of data, build robust models, and craft well-structured reports.
+資料分析師將會發現 Power BI Desktop 是功能強大、 有彈性和高度可存取的工具，以使用連線和圖形世界的資料、 建置穩固的模型，製作結構良好的報表。
 
-## How to Use This Guide
+## 如何使用本指南
 
-You can use this guide in a couple of ways – scan it for a quick overview, or read through each section for a strong understanding of how Power BI Desktop works.
+您可以使用幾種方式在本指南 – 快速的概觀，以掃描或閱讀每個區段的強式的了解 Power BI Desktop 的運作方式。
 
-If you’re in a hurry you can do a visual sweep of this guide in just a couple minutes, and come away with a good sense of how Power BI Desktop operates, and how to use it. Most of this guide consists of screens that visually show how Power BI Desktop works.
+如果您是急著您可以執行本指南的視覺化掃掠的幾分鐘，並會清楚 Power BI Desktop 的運作方式，以及如何使用它。 本指南的大部分組成視覺化顯示 Power BI Desktop 的運作方式的畫面。
 
-For a more thorough understanding you can read through each section, perform the steps, and walk away with your own Power BI Desktop file that’s ready to post onto the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service, and share with others.
+更徹底的了解，您也可以閱讀每個區段，執行步驟，並已準備好張貼到您的 Power BI Desktop 檔案帶回家 **Power BI** 服務，並與其他人共用。
 
-## How Power BI Desktop Works
+## Power BI Desktop 的運作方式
 
-With Power BI Desktop, you <bpt id="p1">*</bpt>connect to data<ept id="p1">*</ept> (usually multiple data sources), <bpt id="p2">*</bpt>shape that data<ept id="p2">*</ept> (with queries that build insightful, compelling data models), and use that model to <bpt id="p3">*</bpt>create reports<ept id="p3">*</ept> (which others can leverage, build upon, and share).
+使用 Power BI Desktop，您 *連接到資料* （通常是多個資料來源）、 *圖形資料* （使用查詢來建立具洞察力、 吸引人的資料模型），並使用該模型 *建立報表* （如此其他人可以運用，為基礎，並共用）。
 
-When the steps are completed to your satisfaction – connect, shape, and report – you can save that work in Power BI Desktop file format, which is the .pbix extension. Power BI Desktop files can be shared like any other file, but the most compelling way to share Power BI Desktop files is to upload them (share them) on the <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept><ept id="p1">](https://preview.powerbi.com/)</ept>. 
+若要完成上述步驟時滿意 – 連接、 圖形，並報告 – 您可以將該工作儲存在 Power BI Desktop 檔案格式，也就是副檔名為.pbix。 Power BI Desktop 檔案可以共用和其他檔案一樣，但若要將相片上傳 （共用） 共用 Power BI Desktop 檔案最吸引人的方式會 [**Power BI 服務**](https://preview.powerbi.com/)。 
 
-Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
+Power BI Desktop 可以集中、 可簡化，並且簡化哪些否則可以散佈、 中斷連線，和棘手程序的設計和建立商業智慧存放庫和報告。
 
-Ready to give it a try? 讓我們開始這次的教學。
+不妨試試準備了嗎？ 讓我們開始這次的教學。
 
-## Install and Run Power BI Desktop
+## 安裝並執行 Power BI Desktop
 
-You can download Power BI Desktop from the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service, by selecting the <bpt id="p2">**</bpt>gear<ept id="p2">**</ept> icon, then select <bpt id="p3">**</bpt>Power BI Desktop<ept id="p3">**</ept>.
+您可以下載從 Power BI Desktop **Power BI** 服務，藉由選取 **齒輪** 圖示，然後選取 **Power BI Desktop**。
 
 ![](media/powerbi-desktop-getting-started/GSG_Download.png)
 
-Power BI Desktop is installed as an application, and runs on your desktop.
+Power BI Desktop 安裝為應用程式，並執行您的桌面上。
 
 ![](media/powerbi-desktop-getting-started/Designer_GSG_Install.png)
 
-When you run Power BI Desktop, a <bpt id="p1">*</bpt>Welcome<ept id="p1">*</ept> screen is displayed.
+當您執行 Power BI Desktop *歡迎* 顯示畫面。
 
 ![](media/powerbi-desktop-getting-started/Designer_GSG_StartSplashScreen.png)
 
-You can <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>, see <bpt id="p2">**</bpt>Recent Sources<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Open Other<ept id="p3">**</ept> <bpt id="p4">**</bpt>Reports<ept id="p4">**</ept> directly from the <bpt id="p5">*</bpt>Welcome<ept id="p5">*</ept> screen (from the links in the left pane). If you close the screen (select the <bpt id="p1">**</bpt>x<ept id="p1">**</ept> in the top right corner), the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view of Power BI Desktop is displayed.
+您可以 **取得資料**, ，請參閱 **最近使用的來源**, ，或 **開啟其他** **報表** 直接從 *歡迎* 螢幕 （從左窗格中的連結）。 如果您關閉螢幕 (選取 **x** 在右上角)，則 **報表** Power BI Desktop 的檢視會顯示。
 
 ![](media/powerbi-desktop-getting-started/Designer_GSG_BlankReport.png)
 
-There are three views in Power BI Desktop: <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> view, and <bpt id="p3">**</bpt>Relationships<ept id="p3">**</ept> view. Power BI Desktop also includes <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, which opens in a separate window. In <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, you can build queries and transform data, then load that refined data model into Power BI Desktop, and create reports.
+Power BI Desktop 中有三種檢視︰ **報表** ] 檢視中， **資料** ] 檢視中，和 **關聯性** 檢視。 Power BI Desktop 也包含 **查詢編輯器**, ，如此即會開啟另一個視窗。 在 **查詢編輯器**, ，您可以建立查詢並轉換資料，然後載入模型到 Power BI Desktop，調整過的資料，以及建立報表。
 
-The following screen shows the three view icons along the left of Power BI Desktop: <bpt id="p1">**</bpt>Report<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Data<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Relationships<ept id="p3">**</ept>, from top to bottom. The currently displayed view is indicated by the yellow bar along the left. In this case, <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view is currently displayed. You can change views by selecting any of those three icons.
+下列畫面顯示三個檢視位於圖示左邊的 Power BI Desktop: **報表**, ，**資料**, ，和 **關聯性**, ，從上到下。 左側的黃色列會以目前顯示的檢視。 在此情況下， **報表** 目前顯示檢視。 您可以選取任何這些三個圖示來變更檢視。
 
 ![](media/powerbi-desktop-getting-started/Designer_GSG_ViewTypes.png)
 
-With Power BI Desktop installed you’re ready to connect to data, shape data, and build reports (usually in that order). In the next few sections, we take a tour through each in turn.
+安裝 Power BI Desktop 就可以連接至圖形資料的資料，並建立報表 （通常會依該順序）。 在接下來的章節，我們介紹每個依序。
 
-## Connect to Data
+## 連接到資料
 
-With Power BI Desktop installed, you’re ready to connect to the ever expanding world of data. There are <bpt id="p1">*</bpt>all sorts<ept id="p1">*</ept> of data sources available in the Query window. The following image shows how to connect to data, by selecting the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon, then <bpt id="p2">**</bpt>Get Data <ph id="ph1">\&gt;</ph> More<ept id="p2">**</ept>.
+安裝 Power BI Desktop，您就可以連接到的資料不斷擴充的世界。 有 *各種* 的查詢視窗中可用的資料來源。 下圖顯示如何連接到資料、 選取 **首頁** 功能區，然後 **取得資料 \> 詳細**。
 
  ![](media/powerbi-desktop-getting-started/getdatavidsmall.gif)
 
-For this quick tour, we'll connect to a couple different <bpt id="p1">**</bpt>Web<ept id="p1">**</ept> data sources.
+這個快速導覽，我們將會連接到幾種不同 **Web** 資料來源。
 
-Imagine you’re retiring – you want to live where there’s lots of sunshine, preferable taxes, and good health care – or perhaps you’re a data analyst, and you want that information to help your customers. For example, perhaps you want to help your sunglasses retailer target sales where the sun shines most frequently.
+假設您正在淘汰 – 您想要即時有很多的陽光，比較理想的稅金和良好健康照護 – 或也許您既是資料分析師，因為您想該資訊可協助您的客戶。 例如，或許您會想要協助太陽其中最常搭配太陽眼鏡零售商目標銷售量。
 
-Either way, the following Web resource has interesting data about those topics, and more:
+無論如何，下列 Web 資源已有意義的資料，這些主題，以及其他有關︰
 
 [*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
-Select <bpt id="p1">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Web<ept id="p1">**</ept> and paste the address.
+選取 **取得資料 \> Web** 和貼上的位址。
 
  ![](media/powerbi-desktop-getting-started/GettingStarted_8.png)
 
-When you select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>, the <bpt id="p2">**</bpt>Query<ept id="p2">**</ept> functionality of Power BI Desktop goes to work. Query contacts the Web resource, and the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window returns what it found on that Web page. In this case, it found a table (<bpt id="p1">*</bpt>Table 0<ept id="p1">*</ept>) and the overall Web Document. We’re interested in the table, so we select it from the list. The <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window displays a preview.
+當您選取 **確定**, 、 **查詢** Power BI Desktop 的功能就會開始運作。 查詢連絡人的網頁資源，而 **導覽** 視窗傳回它在網頁上所找到。 在此情況下，它所找到的資料表 (*Table 0*) 和整體的 Web 文件。 我們想要在資料表中，讓我們從清單中選取它。  **導覽** ] 視窗會顯示預覽。
 
  ![](media/powerbi-desktop-getting-started/DataSources_FromNavigatorDialog.png)
 
-At this point we can edit the query before loading the table, by selecting <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> from the bottom of the window, or we can load the table.
+此時我們可以編輯的查詢，然後再載入資料表中，選取 [ **編輯** 底部的視窗中，我們可以載入資料表或。
 
-When we select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, Query Editor launches and a representative view of the table is presented. The <bpt id="p1">**</bpt>Query Settings<ept id="p1">**</ept> pane is displayed (if it’s not, you can select <bpt id="p2">**</bpt>View<ept id="p2">**</ept> from the ribbon, then <bpt id="p3">**</bpt>Show <ph id="ph1">\&gt;</ph> Query Settings<ept id="p3">**</ept> to display the <bpt id="p4">**</bpt>Query Settings<ept id="p4">**</ept> pane). Here’s what that looks like.
+當我們選取 **編輯**, 、 查詢編輯器啟動並顯示代表資料表的檢視表。  **查詢設定** ] 窗格隨即顯示 (如果不是，您可以選取 **檢視** 從功能區，然後 **顯示 \> 查詢設定** 顯示 **查詢設定** 窗格)。 下面就是如所示。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_EditQuery.png)
 
-For more information about connecting to data, see <bpt id="p1">[</bpt>Connect to Data in Power BI Desktop<ept id="p1">](powerbi-desktop-connect-to-data.md)</ept>.
+如需有關連接到資料的詳細資訊，請參閱 [連接至 Power BI Desktop 中的資料](powerbi-desktop-connect-to-data.md)。
 
-In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called <bpt id="p1">*</bpt>shaping<ept id="p1">*</ept> data.
+在下一個區段中，我們會調整的資料，使其符合我們的需求。 調整連接資料的程序稱為 *塑造* 資料。
 
-## Shape and Combine Data
+## 圖形及合併資料
 
-Now that we’ve connected to a data source, we need to adjust the data to meet our needs. Sometimes adjusting means <bpt id="p1">*</bpt>transforming<ept id="p1">*</ept> the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on.
+既然我們已經連接到資料來源，我們需要調整資料必須符合我們的需求。 有時候調整方式 *轉換* 資料 – 例如重新命名資料行或資料表、 變更數字的文字，移除資料列、 將第一個資料列設定為標頭，依此類推。
 
-The Query editor in Power BI Desktop makes ample use of right-click menus, in addition to having tasks available on the ribbon. Most of what you can select in the <bpt id="p1">**</bpt>Transform<ept id="p1">**</ept> ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
+Power BI Desktop 中的查詢編輯器會大量使用按右鍵功能表，除了在功能區上擁有可用的工作。 您可以在選取的大部分 **轉換** 功能區，您也可以使用滑鼠右鍵按一下項目 （例如資料行），然後從出現的功能表中選擇。
 
-## Shape Data
+## 圖形資料
 
-When you shape data in the <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, you’re providing step-by-step instructions (that <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept> carries out for you) to adjust the data as <bpt id="p3">**</bpt>Query Editor<ept id="p3">**</ept> loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or <bpt id="p1">*</bpt>shaped<ept id="p1">*</ept>.
+您在圖形中的資料時 **查詢編輯器**, ，提供逐步指示 (， **查詢編輯器** 為您執行) 來調整資料做為 **查詢編輯器** 載入並顯示它。 原始資料來源不受影響。會調整此特定檢視的資料，或 *形狀*。
 
-The steps you specify (such as rename a table, transform a data type, or delete columns) are recorded by <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, and each time this query connects to the data source those steps are carried out so that the data is always shaped the way you specify. This process occurs whenever you use the query in Power BI Desktop, or for anyone who uses your shared query, such as in the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service. Those steps are captured, sequentially, in the <bpt id="p1">**</bpt>Query Settings<ept id="p1">**</ept> pane under <bpt id="p2">**</bpt>Applied Steps<ept id="p2">**</ept>.
+您指定 （例如重新命名資料表，或轉換資料類型，刪除資料行） 的步驟所記錄的 **查詢編輯器**, ，以及每次連接到資料來源執行這些步驟的這項查詢執行，讓資料永遠形狀您指定的方式。 每當您在 Power BI Desktop，或任何人都可以使用共用的查詢，例如，在使用查詢，就會發生此程序 **Power BI** 服務。 捕捉到這些步驟時，依序在 **查詢設定** 下的窗格 **套用步驟**。
 
-The following image shows the <bpt id="p1">**</bpt>Query Settings<ept id="p1">**</ept> pane for a query that has been shaped – we’ll go through each of those steps in the next few paragraphs.
+下圖顯示 **查詢設定** 我們會逐步執行每個步驟，在下一步的幾個段落的形狀已有 – 查詢窗格。
 
  ![](media/powerbi-desktop-getting-started/ShapeCombine_QuerySettingsFinished.png)
 
-Let’s get back to our retirement data, which we found by connecting to a Web data source, and shape that data to fit our needs.
+讓我們回到我們停用資料，我們發現藉由連接到 Web 資料來源，然後圖形資料以符合我們的需求。
 
-For starters, most ratings were brought into <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> as whole numbers, but not all of them (one column contained text and numbers, so it wasn't automatically converted). We need the data to be numbers. No problem – just right-click the column header, and select <bpt id="p1">**</bpt>Change Type <ph id="ph1">\&gt;</ph> Whole Number<ept id="p1">**</ept> to change the data type. If we needed to choose more than one column, we could first select a column then hold down <bpt id="p1">**</bpt>SHIFT<ept id="p1">**</ept>, select additional adjacent columns, and then right-click a column header to change all selected columns. You can also use <bpt id="p1">**</bpt>CTRL<ept id="p1">**</ept> to select non-adjacent columns.
+大部分的評等所引進簡單來說， **查詢編輯器** 做為整數，但並非全部都 （一個資料行包含文字和數字，因此它不自動轉換）。 我們必須為數字的資料。 沒問題 – 只要以滑鼠右鍵按一下資料行標頭，然後選取 **變更類型 \> 整數** 變更資料類型。 如果我們需要選擇多個資料行，我們第一次可以選取資料行然後按住 **SHIFT**, 選取其他相鄰的資料行，然後以滑鼠右鍵按一下資料行標頭，變更所有選取的資料行。 您也可以使用 **CTRL** 選取非相鄰的資料行。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_ChangeDataType.png)
 
-You can also change, or <bpt id="p1">*</bpt>transform,<ept id="p1">*</ept> those columns from text to header by using the <bpt id="p2">**</bpt>Transform<ept id="p2">**</ept> ribbon. Here’s the <bpt id="p1">**</bpt>Transform<ept id="p1">**</ept> ribbon, with an arrow pointing toward the <bpt id="p2">**</bpt>Data Type<ept id="p2">**</ept> button, which lets you transform the current data type to another.
+您也可以變更，或 *轉換* 從文字標頭，使用這些資料行 **轉換** 功能區。 以下是 **轉換** 功能區中的，使用箭號指向 **資料型別** ] 按鈕，可讓您轉換到另一個目前的資料類型。
 
  ![](media/powerbi-desktop-getting-started/ShapeCombine_ChangeType.png)
 
-Note that in <bpt id="p1">**</bpt>Query Settings<ept id="p1">**</ept>, the <bpt id="p2">**</bpt>Applied Steps<ept id="p2">**</ept> reflect the changes that were made. If I want to remove any step from the shaping process, I simply select that step, and then select the <bpt id="p1">**</bpt>X<ept id="p1">**</ept> to the left of the step.
+請注意，在 **查詢設定**, 、 **套用步驟** 反映所做的變更。 如果我想從成形的程序移除任何步驟，我只需選取該步驟，接著再選取 **X** 左邊的步驟。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_AppliedSteps_ChangedType.png)
 
-We need to make a few more changes to get the query where we want it:
+我們需要進行一些詳細的變更，以取得查詢我們想要的位置︰
 
--   <bpt id="p1">*</bpt>Remove the first column<ept id="p1">*</ept> – we don’t need it, it just includes redundant rows that say “Check out how your state ranks for retirement” which is an artifact of this being a Web based table
-
-<!-- -->
-
--   <bpt id="p1">*</bpt>Fix a few Errors<ept id="p1">*</ept> – on the Web page, one column had text mixed in with the numbers (some states tied in one category). That works well in the website, but not for our data analysis. It's easy (in this case) to fix, and shows some cool features and capabilities of <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> and its <bpt id="p2">**</bpt>Applied Steps<ept id="p2">**</ept>
+-   
+            *移除第一個資料行* – 我們不需要它只會包含重複說出 「 取出您的狀態會排列次序淘汰 」 的資料列即成品的這個 Web 型資料表
 
 <!-- -->
 
--   <bpt id="p1">*</bpt>Change the Table Name<ept id="p1">*</ept> – that <bpt id="p2">**</bpt>Table 0<ept id="p2">**</ept> is not a useful descriptor, but changing it simple
+-   
+            *修正一些錯誤* – 在網頁上，一個資料行有混合數字 （一個類別中的繫結某些州） 的文字。 運作方式以及在網站中，但不適用於我們的資料分析。 很容易 （在此情況下） 修正程式，並示範一些很棒的功能和特性的 **查詢編輯器** 及其 **套用的步驟**
 
-Each of these steps is demonstrated in <bpt id="p1">**</bpt><bpt id="p2">[</bpt>Shape and Combine Data in Power BI Desktop<ept id="p2">](powerbi-desktop-shape-and-combine-data.md)</ept><ept id="p1">**</ept>. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
+<!-- -->
 
-## Combine Data
+-   
+            *變更資料表名稱* – 該 **Table 0** 不是很有用的描述元，而將它變更簡單
 
-That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
+每個步驟中示範 **[圖形並結合資料儲存在 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)**。 請放心地查看該頁面上，或在這份文件，了解您可以接著繼續執行。 下一節會套用上述變更之後。
 
-We’re in luck: there’s another public data source that does just that, but it needs a fair amount of shaping before we can connect it to our retirement table. Here’s the Web resource for state abbreviations:
+## 合併資料
+
+有關各種狀態的詳細資料很有趣，而且會適用於建置其他分析工作和查詢。 但是有一個問題︰ 有大部分的資料會使用兩個字母縮寫狀態碼，不狀態的完整名稱。 我們需要想辦法狀態名稱關聯的縮寫。
+
+我們很幸運︰ 沒有其他公用資料來源是這樣寫的但您還需要相當多的成形之前我們可以將它連接到我們停用的資料表。 以下是 Web 資源的州/省代碼︰
 
 <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
-From the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon in <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, we select <bpt id="p3">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Web<ept id="p3">**</ept> and type the address, select <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>, and the <bpt id="p5">**</bpt>Navigator<ept id="p5">**</ept> window shows what it found on that Web page.
+從 **首頁** 在功能區 **查詢編輯器**, ，我們選取 **取得資料 \> Web** 和輸入位址，然後選取 **確定**, ，和 **導覽** ] 視窗會顯示它找到該網頁上。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_USStateAbbreviationsNavigator.png)
 
-We select <bpt id="p1">**</bpt>Table[edit]<ept id="p1">**</ept> because it includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down. Each of these steps is also demonstrated in <bpt id="p1">**</bpt><bpt id="p2">[</bpt>Shape and Combine Data in Power BI Desktop<ept id="p2">](powerbi-desktop-shape-and-combine-data.md)</ept><ept id="p1">**</ept>. To summarize those steps, here's what we do:
+我們選取 **資料表 [編輯]** 因為它包含資料我們，但它要花相當多的成形削減與該資料表的資料。 每個步驟也會示範 **[圖形並結合資料儲存在 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)**。 為了摘要說明這些步驟，以下是我們要做什麼︰
 
-We select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, then:
+我們選取 **編輯**, ，然後︰
 
--   <bpt id="p1">*</bpt>Remove the top two rows<ept id="p1">*</ept> – they’re a result of the way that Web page’s table was created, and we don’t need them.
-
-<!-- -->
-
--   <bpt id="p1">*</bpt>Remove the bottom 26 rows<ept id="p1">*</ept> – they’re all the territories, which we don’t need to include.
-
-<!-- -->
--   <bpt id="p1">*</bpt>Filter out Washington DC<ept id="p1">*</ept> – the retirement stats table doesn't include DC, so we'll exclude it from our list.
+-   
+            *移除前兩個資料列* – 它們的方式建立網頁的資料表，以及我們不需要它們的結果。
 
 <!-- -->
 
--   <bpt id="p1">*</bpt>Remove a few unneeded columns<ept id="p1">*</ept> – we only need the mapping of state to its official two-letter abbreviation, so we can remove the other columns.
+-   
+            *移除下 26 列* – 所有領域，而我們不需要包含它們。
+
+<!-- -->
+-   
+            *篩選出華盛頓特區* – 淘汰統計資料的資料表不包含 DC，因此我們將其排除清單。
 
 <!-- -->
 
--   <bpt id="p1">*</bpt>Use the first row as headers<ept id="p1">*</ept> – since we removed the top three rows, the current top row is the header we want.
+-   
+            *移除一些不必要的資料行* – 我們只需要為其正式的兩個字母縮寫，狀態對應，所以我們可以移除其他資料行。
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is a good time to point out that the <bpt id="p2">*</bpt>sequence<ept id="p2">*</ept> of applied steps in <bpt id="p3">**</bpt>Query Editor<ept id="p3">**</ept> is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the <bpt id="p1">**</bpt>Applied Steps<ept id="p1">**</ept>, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
+<!-- -->
 
--   <bpt id="p1">*</bpt>Rename the columns, and the table itself<ept id="p1">*</ept> – as usual, there are a couple ways to rename a column, you can choose whichever you prefer.
+-   
+            *第一個資料列做為標頭* – 我們移除前三個資料列，因為目前的上方資料列是我們想要的標頭。
+
+
+            **注意︰** 這是第註明的好時機 *順序* 套用中的步驟 **查詢編輯器** 很重要，而且可能會影響資料形狀的方式。 也很重要，請考慮如何一個步驟，可能會影響另一個後續的步驟。如果您移除步驟，從 **套用步驟**, ，後續的步驟可能無法運作，最初只因為影響查詢的一連串步驟。
+
+-   
+            *重新命名資料行和資料表本身* – 像往常一樣，有幾種方式可以重新命名資料行，您可以選擇您較偏好。
 
  
 
-With the <bpt id="p1">*</bpt>StateCodes<ept id="p1">*</ept> table shaped, we can combine these two tables, or queries, into one; since the tables we now have are a result of the queries we applied to the data, they’re often referred to as <bpt id="p2">*</bpt>queries<ept id="p2">*</ept>.
+使用 *StateCodes* 資料表形狀，我們可以結合這些兩個資料表或查詢，其中一個，現在我們已有的資料表是我們套用至資料的查詢的結果，因為它們通常稱為 *查詢*。
 
-There are two primary ways of combining queries – <bpt id="p1">*</bpt>merging<ept id="p1">*</ept> and <bpt id="p2">*</bpt>appending<ept id="p2">*</ept>.
+有兩種主要合併查詢 – *合併* 和 *附加*。
 
-When you have one or more columns that you’d like to add to another query, you <bpt id="p1">**</bpt>merge<ept id="p1">**</ept> the queries. When you have additional rows of data that you’d like to add to an existing query, you <bpt id="p1">**</bpt>append<ept id="p1">**</ept> the query.
+當您有一或多個資料行，您想要新增到另一個查詢，您 **合併** 查詢。 當您有額外的資料列的資料，您想要新增到現有的查詢，您 **附加** 查詢。
 
-In this case we want to merge queries. To get started, we select the query <bpt id="p1">*</bpt>into which<ept id="p1">*</ept> we want the other query to merge, then select <bpt id="p2">**</bpt>Merge Queries<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> tab on the ribbon.
+在此情況下，我們想要合併的查詢。 若要開始，我們選取的查詢 *到* 我們想讓其他查詢合併，然後選取 **合併查詢** 從 **首頁** 功能區上的索引標籤。
 
  ![](media/powerbi-desktop-getting-started/ShapeCombine_MergeQueries.png)
 
-The <bpt id="p1">**</bpt>Merge<ept id="p1">**</ept> window appears, prompting us to select which table we’d like merged into the selected table, and then, the matching columns to use for the merge. Select <bpt id="p1">*</bpt>State<ept id="p1">*</ept> from the <bpt id="p2">*</bpt>RetirementStats<ept id="p2">*</ept> table (query), then select the <bpt id="p3">*</bpt>StateCodes<ept id="p3">*</ept> query (easy in this case, since there’s only one other query – when you connect to many data sources, there are many queries to choose from). When we select the correct matching columns – <bpt id="p1">*</bpt>State<ept id="p1">*</ept> from <bpt id="p2">*</bpt>RetirementStats<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>State Name<ept id="p3">*</ept> from <bpt id="p4">*</bpt>StateCodes<ept id="p4">*</ept> – the <bpt id="p5">**</bpt>Merge<ept id="p5">**</ept> window looks like the following, and the <bpt id="p6">**</bpt>OK<ept id="p6">**</ept> button is enabled.
+ **合併** ] 視窗隨即出現，提示我們選擇哪一個資料表，我們想要合併到選取的資料表，然後為合併使用相符的資料行。 選取 *狀態* 從 *RetirementStats* 資料表 （查詢），然後選取 *StateCodes* （容易在此情況下，因為只有一個其他的查詢︰ 當您連接至各種資料來源時，有許多查詢可從中選擇） 的查詢。 當我們選取正確的相符資料行 – *狀態* 從 *RetirementStats*, ，和 *州名* 從 *StateCodes* – **合併** 視窗看起來如下所示，和 **確定** 按鈕啟用。
 
  ![](media/powerbi-desktop-getting-started/ShapeCombine_Merge.png)
 
-A <bpt id="p1">**</bpt>NewColumn<ept id="p1">**</ept> is created at the end of the query, which is the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the <bpt id="p1">**</bpt>NewColumn<ept id="p1">**</ept>, but you can select to <bpt id="p2">**</bpt>Expand<ept id="p2">**</ept> the table, and include whichever columns you want. To expand the merged table, and select which columns to include, select the expand icon (<ph id="ph1">![](media/powerbi-desktop-getting-started/GettingStarted_29_ExpandIcon.png)</ph>). The <bpt id="p1">**</bpt>Expand<ept id="p1">**</ept> window appears.
+A **NewColumn** 建立查詢，因為它是已合併的現有查詢的資料表 （查詢） 的內容的結尾。 合併的查詢中的所有資料行都壓縮成 **NewColumn**, ，但您可以選擇 **展開** 資料表，並包含您想要的任何資料行。 若要展開合併的資料表，並選取要包含哪些資料行，選取 [展開] 圖示 (![](media/powerbi-desktop-getting-started/GettingStarted_29_ExpandIcon.png))。  **展開** ] 視窗隨即出現。
 
  ![](media/powerbi-desktop-getting-started/ShapeCombine_MergeExpand.png)
 
-In this case, we only want the <bpt id="p1">*</bpt>State Code<ept id="p1">*</ept> column, so we select only that column and then select <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>. We clear the checkbox from <bpt id="p1">**</bpt>Use original column name as prefix<ept id="p1">**</ept> because we don’t need or want that; if we leave that selected, the merged column would be named <bpt id="p2">*</bpt>NewColumn.State Code<ept id="p2">*</ept> (the original column name, or <bpt id="p3">*</bpt>NewColumn<ept id="p3">*</ept>, then a dot, then the name of the column being brought into the query).
+在此情況下，我們只想 *狀態碼* 資料行，讓我們選取該資料行，然後選取 **確定**。 清除此核取方塊，從 **使用原始資料行名稱做為前置** 合併的資料行，因為我們不需要或想要這樣; 如果不選取，就會名為 *NewColumn.State 程式碼* (原始的資料行名稱，或 *NewColumn*, ，再點，然後回到到查詢的資料行名稱)。
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Want to play around with how to bring in that <bpt id="p2">*</bpt>NewColumn<ept id="p2">*</ept> table? You can experiment a bit, and if you don’t like the results, just delete that step from the <bpt id="p1">**</bpt>Applied Steps<ept id="p1">**</ept> list in the <bpt id="p2">**</bpt>Query Settings<ept id="p2">**</ept> pane; your query returns to the state prior to applying that <bpt id="p3">**</bpt>Expand<ept id="p3">**</ept> step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
 
-We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
+            **注意︰** 想玩一下如何納入， *NewColumn* 資料表嗎？ 您可以實驗，以及如果您不喜歡結果，只會刪除該步驟，從 **套用步驟** 清單中 **查詢設定** ] 窗格; 您查詢所傳回的狀態之前將它套用 **展開** 步驟。 具有要免費重做的機會，可以執行這項作業，直到展開程序會尋找您想要的方式，您要的次數。
 
-For a more complete description of each of these shape and combine data steps, see <bpt id="p1">[</bpt>Shape and Combine Data in Power BI Desktop<ept id="p1">](powerbi-desktop-shape-and-combine-data.md)</ept>.
+我們現在有單一查詢 （資料表），結合兩個資料來源，其中每個已形狀來滿足我們的需求。 此查詢可以做為基礎的眾多其他，有趣的資料連接 – 例如外罩成本統計資料、 人口統計資料或在任何狀態的工作機會。
 
-For now, we have enough data to create a few interesting reports, all within Power BI Desktop. Since this is a milestone let’s save this Power BI Desktop file – we’ll call it <bpt id="p1">**</bpt>Getting Started with Power BI Desktop<ept id="p1">**</ept>. To apply the changes in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> and load them into Power BI Desktop, select <bpt id="p2">**</bpt>Close &amp; Apply<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> ribbon.
+如需更完整說明每一種圖形，並結合資料的步驟，請參閱 [圖形並結合資料儲存在 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)。
+
+現在，我們有足夠的資料來建立一些有趣的報表，全部都在 Power BI Desktop 內。 由於這是里程碑我們要儲存此 Power BI Desktop 檔案 – 我們稱它為 **開始使用 Power BI Desktop**。 若要套用的變更 **查詢編輯器** 並載入 Power BI Desktop 選取 **關閉及套用** 從 **首頁** 功能區。
 
 ![](media/powerbi-desktop-getting-started/ShapeCombine_CloseAndApply.png)
 
-## Build Reports
+## 建立報表
 
-Additional changes can be made after the table is loaded, and you can reload a model to apply any changes you make. But for now this will do. In Power BI Desktop <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, you can begin to build reports.
+載入資料表時，您可以重新載入模型，以套用所做的變更之後，就可以進行其他變更。 但現在這會執行。 在 Power BI Desktop **報表** ] 檢視中，您可以開始建立報表。
 
-The <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view has five main areas:
+ **報表** 檢視有五個主要區域︰
 
-1.  The ribbon, which displays common tasks associated with reports and visualizations
+1.  功能區中，可顯示報表和視覺效果與相關聯的一般工作
 
-2.  The <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, or canvas, where visualizations are created and arranged
+2.   **報表** 檢視或畫布上，建立並排列視覺效果，
 
-3.  The <bpt id="p1">**</bpt>Pages<ept id="p1">**</ept> tab area along the bottom, which lets you select or add a report page
+3.   **頁面** 索引標籤區域底部，可讓您選取或新增報表] 頁面
 
-4.  The <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, where you can change visualizations, customize colors or axes, apply filters, drag fields, and more
+4.   **視覺效果** ] 窗格中，您可以在其中變更視覺效果，自訂色彩或軸、 套用篩選器、 拖曳欄位，
 
-5.  The <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, where query elements and filters can be dragged onto the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view, or dragged to the <bpt id="p3">**</bpt>Filters<ept id="p3">**</ept> area of the <bpt id="p4">**</bpt>Visualizations<ept id="p4">**</ept> pane
+5.   **欄位** ] 窗格中，其中查詢項目和篩選器可以將它們拖曳至 **報表** 檢視，或拖曳至 **篩選** 區域 **視覺效果** 窗格
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_ReportView.png)
 
-The <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane can be collapsed by selecting the small arrow along the edge, providing more space in the <bpt id="p3">**</bpt>Report<ept id="p3">**</ept> view to build cool visualizations. When modifying visualizations, you'll also see these arrows pointing up or down, which means you can expand or collapse that section, accordingly.
+ **視覺效果** 和 **欄位** 窗格可摺疊選取邊緣，提供更多的空間中的小箭頭 **報表** 檢視，以建立酷炫的視覺效果。 修改時視覺效果，您也會看到這些箭號指向向上或向下，這表示您可以展開或摺疊該區段中，依此。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_CollapsePanes.png)
 
-To create a visualization, just drag a field from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list onto the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view. In this case, let’s drag the <bpt id="p1">*</bpt>State<ept id="p1">*</ept> field from <bpt id="p2">*</bpt>RetirementStats<ept id="p2">*</ept>, and see what happens.
+若要建立視覺效果，只需要將欄位從 **欄位** 清單拖曳至 **報表** 檢視。 在此情況下，我們將 *狀態* 欄位從 *RetirementStats*, ，並看看結果如何。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_ReportFirstDrag.png)
 
-Look at that... Power BI Desktop automatically created a map-based visualization, because it recognized that the <bpt id="p1">*</bpt>State<ept id="p1">*</ept> field contained geolocation data.
+看看 …Power BI Desktop 自動建立地圖視覺效果，因為它會辨識 *狀態* 欄位包含地理位置資料。
 
-Notice that in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, I can select different types of visualizations, and in the area below those icons, I can drag fields to different areas to apply a Legend, or otherwise modify the visualization.
+請注意，在 **視覺效果** ] 窗格中，我可以選取不同類型的視覺效果，並在這些圖示下方區域中，我可以將欄位拖曳到不同的區域，以適用於圖例，或修改的視覺效果。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_VisualizationTypes.png)
 
-Let’s fast-forward a bit, and see what the <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view looks like after a handful of visualizations have been added, as well as a few new Report pages. For more information about reports, see <bpt id="p1">[</bpt>Report View in Power BI Desktop<ept id="p1">](powerbi-desktop-report-view.md)</ept>.
+讓我們向前快轉速度，以及查看 **報表** 檢視看起來像後少數幾個視覺效果，以及為幾個新報表頁面。 如需報表的詳細資訊，請參閱 [Power BI Desktop 中的報表檢視](powerbi-desktop-report-view.md)。
 
-The first Report page provides a perspective of the data based on <bpt id="p1">*</bpt>Overall rank<ept id="p1">*</ept>. When we select one of the visualizations, the <bpt id="p1">**</bpt>Fields and Filters<ept id="p1">**</ept> pane shows which fields are selected, and the structure of the visualization (which fields are applied to the <bpt id="p2">**</bpt>Shared Axis<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Column Values<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Line Values<ept id="p4">**</ept>).
+第一個報表頁面提供的檢視方塊的資料是根據 *整體排名*。 當我們選取其中一個視覺效果， **欄位及篩選** 窗格顯示選取的欄位和結構的視覺效果 (欄位分別用於 **共用軸**, ，**資料行值**, ，和 **列值**)。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_Report1.png)
 
-There are six <bpt id="p1">**</bpt>Pages<ept id="p1">**</ept> in this Report, each visualizing certain elements of our data.
+有六個 **頁面** 此報表中，每個視覺化資料的特定項目。
 
-1.  The first page, shown above, shows all states based on <bpt id="p1">*</bpt>Overall rank<ept id="p1">*</ept>.
+1.  第一頁，如上所示，顯示為基礎的所有狀態 *整體排名*。
 
-2.  The second page focuses on the top ten states based on <bpt id="p1">*</bpt>Overall rank<ept id="p1">*</ept>.
+2.  第二頁著重於根據前十個狀態 *整體排名*。
 
-3.   For the third page, the best 10 states for cost of living (and associated data) are visualized.
+3.   第三個頁面的視覺效果最佳的 10 個狀態成本的持續更新 （以及相關聯的資料）。
 
-4.   Weather is the focus of the fourth page, filtered to the 15 sunniest states.
+4.   天氣是第四個頁面上，以 15 個 sunniest 狀態篩選的焦點。
 
-5.   On the fifth page, Community well-being is charted and visualized for the top 15 states.
+5.   在第五個頁面上，隨之而來的社群繪製並以視覺化方式檢視的前 15 個狀態。
 
-6.   Lastly, crime statistics are visualized, showing the best (and well, the last) ten states.
+6.   最後，犯罪統計資料的視覺效果，顯示最佳 （和） 其實最後十個狀態。
 
-Here’s what the cost of living-focused Report page looks like.
+以下是成本的生活為主的報表頁面的外觀。
 
  ![](media/powerbi-desktop-getting-started/Designer_GSG_Report2CostOfLiving.png)
 
-There are all sorts of interesting reports and visualizations you can create.
+有各種有趣的報表和視覺效果，您可以建立。
 
-## Share Your Work
+## 共用您的工作
 
-Now that we have a Power BI Desktop report that’s reasonably complete, we can share it with others on the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service. There are a few ways to share your work in Power BI Desktop. You can publish to the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service, you can upload the .pbix file directly from the Power BI service, or you can save the .pbix file and send it like any other file.
+既然我們已經有相當完整的 Power BI Desktop 報告，我們可以與他人分享上 **Power BI** 服務。 有數種方式來共用您的工作，在 Power BI Desktop。 您可以發行至 **Power BI** 服務，您可以上傳的.pbix 檔案，直接從 Power BI 服務，或您可以儲存.pbix 檔案，並將它傳送就像任何其他檔案一樣。
 
-First, let's look at publishing to the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service directly from Power BI Desktop. On the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon, select <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept>.
+首先，讓我們看看發行至 **Power BI** 服務直接從 Power BI Desktop。 在 **首頁** 功能區中，選取 **發行**。
 
 ![](media/powerbi-desktop-getting-started/GSG_SYW_1.png)
 
-You may be prompted to sign in to Power BI.
+可能提示您登入 Power BI。
 
 ![](media/powerbi-desktop-getting-started/GSG_SYW_2.png)
 
-When you've signed in and the publish process is complete, you see the following dialog.
+當您已登入並發佈程序已完成時，您會看到下列對話方塊。
 
 ![](media/powerbi-desktop-getting-started/GSG_SYW_3.png)
 
-When you sign in to Power BI, you'll see Power BI Desktop file you just loaded in the <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Reports<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Datasets<ept id="p3">**</ept> sections of the service.
+當您登入 Power BI 時，您會看到 Power BI Desktop 檔案中載入 **儀表板**, ，**報表**, ，和 **資料集** 服務的區段。
 
-Another way to share your work is to load it from within the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service. The following link brings up the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service in a browser:
+另一種方式來共用您的工作是載入於 **Power BI** 服務。 下列連結會顯示 **Power BI** 服務瀏覽器中︰
 
 `https://app.powerbi.com`
 
-Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> to start the process of loading your Power BI Desktop report.
+選取 **取得資料** 啟動載入 Power BI Desktop 報表的程序。
 
  ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData1.png)
 
-The <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> page appears, from which you can select where to get your data from. In this case, we select <bpt id="p1">**</bpt>Get<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Files<ept id="p2">**</ept> box.
+ **取得資料** 頁面出現時，您可以從中選取何處取得資料。 在此案例中，我們選取 **取得** 從 **檔案** 方塊。
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData2.png)
 
-The <bpt id="p1">**</bpt>Files<ept id="p1">**</ept> view appears. In this case, we select <bpt id="p1">**</bpt>Local File<ept id="p1">**</ept>.
+ **檔案** 檢視隨即出現。 在此案例中，我們選取 **本機檔案**。
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData3.png)
 
-When you select the file, Power BI uploads the file.
+當您選取的檔案時，將檔案上傳 Power BI。
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData3a.png)
 
-Once the file is uploaded, you can select the file from the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> in the left pane of the Power BI service.
+一旦上傳檔案時，您可以選取 [從檔案 **報表** Power BI 服務的左窗格中。
 
 ![](media/powerbi-desktop-getting-started/PBI_GSG_GetData4.png)
 
 
-The <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service displays the first page of the report. Along the bottom of the page, you can select any tab to display that page of the report.
+ **Power BI** 服務會顯示報表的第一頁。 頁面的底部，您可以選取任何索引標籤，顯示該報表的頁面。
 
  ![](media/powerbi-desktop-getting-started/GSG_Share4.png)
 
-You can make changes to a report in the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service by selecting <bpt id="p2">**</bpt>Edit Report<ept id="p2">**</ept> from the top of the report canvas.
+您可以在報表中進行變更 **Power BI** 服務，方法是選取 **編輯報表** 頂端的報表畫布。
 
-To save your report, select <bpt id="p1">**</bpt>File <ph id="ph1">\&gt;</ph> Save As<ept id="p1">**</ept> from the service. There are all sorts of interesting visuals you can create in the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service from your report, which you can pin to a <bpt id="p2">*</bpt>dashboard<ept id="p2">*</ept>. To learn about dashboards in the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> service<bpt id="p2">**</bpt><bpt id="p3">[</bpt>, see Tips for designing a great dashboard<ept id="p3">](powerbi-service-tips-for-designing-a-great-dashboard.md)</ept><ept id="p2">**</ept>.
+若要儲存報表時，選取 **檔案 \> 另存新檔** 從服務。 有各種有趣的視覺效果中，您可以建立 **Power BI** 服務從您的報表，您可以釘選到 *儀表板*。 若要了解儀表板中 **Power BI** 服務**[, ，請參閱設計絕佳的儀表板的秘訣](powerbi-service-tips-for-designing-a-great-dashboard.md)**。
 
  ![](media/powerbi-desktop-getting-started/GSG_Share5.png)
 
-Once saved, select the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> icon on the main page.
+儲存之後，選取 **共用** 主頁面上的圖示。
 
  ![](media/powerbi-desktop-getting-started/GSG_Share6.png)
 
-From here, you can send an email to colleagues with whom you’d like to share the dashboard.
+從這裡開始，您可以傳送一封電子郵件給同事與您想要共用的儀表板。
 
  ![](media/powerbi-desktop-getting-started/GSG_Share7.png)
 
-For more information about creating, sharing, and modifying dashboards, see <bpt id="p1">[</bpt>Share a dashboard<ept id="p1">](powerbi-service-share-unshare-dashboard.md)</ept>.
+如需有關如何建立的詳細資訊，請共用及修改儀表板，請參閱 [共用儀表板](powerbi-service-share-unshare-dashboard.md)。
 
-There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
+有各種引人注目相關資料結合和視覺效果，您可以使用 Power BI Desktop 與 Power BI 服務。 請參閱下一節，如需詳細資訊。
 
 ## 詳細資訊
 
-There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+有各種用途，您可以使用 Power BI Desktop。 如需有關其功能的詳細資訊，請參閱下列資源︰
 
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
+-   [使用 Power BI Desktop 查詢概觀](powerbi-desktop-query-overview.md)
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Power BI Desktop 中的資料來源](powerbi-desktop-data-sources.md)
 
--   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
+-   [連接至 Power BI Desktop 中的資料](powerbi-desktop-connect-to-data.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [圖形，並結合資料與 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+-   [在 Power BI Desktop 常見查詢工作](powerbi-desktop-common-query-tasks.md)   
 
-Want to give us feedback? Great – use the <bpt id="p1">**</bpt>Send Feedback<ept id="p1">**</ept> menu item in Power BI Desktop. We look forward to hearing from you!
+想要提供意見反應嗎？ 使用大 – **傳送回函** Power BI Desktop 中的功能表項目。 我們期待聽到您 ！
 
 ![](media/powerbi-desktop-getting-started/SendFeedback.png)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introducing Power BI Mobile"
-   description="Power BI mobile apps show insights on nearly any device"
+   pageTitle="介紹 Power BI 行動"
+   description="Power BI 行動應用程式幾乎任何裝置上顯示 insights"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Introducing Power BI Mobile
+# 介紹 Power BI 行動
 
-If you want to keep track of your data while you're on the move, you can use one of Power BI's mobile applications for iOS, Android, and Windows devices.
+如果您想要追蹤的資料移動時，您可以使用 Power BI 行動應用程式的其中一個用於 iOS、 Android 和 Windows 裝置。
 
-When using the Power BI app, first log in to your account using your Power BI service account information. On a Windows mobile device (in this case a tablet), the sign in looks like the following.
+當使用 Power BI 應用程式，第一次登入您的帳戶使用您的 Power BI 服務帳戶資訊。 在 Windows 行動裝置上 （在此情況下平板電腦），登入所示，下例所示。
 
 ![](media/powerbi-learning-4-4a-power-bi-mobile/4-4a_1.png)
 
-The first screen that you'll see displays all of the content to which you have access, including reports, dashboards, and groups. There are also sample dashboards you can use to get inspired, or just to see Power BI's capabilities. The app is designed to be touch-friendly: tap on a dashboard or report to view it full-screen and scroll through them using your finger.
+您會看到的第一個畫面會顯示所有您具有存取權，包括報表、 儀表板，以及群組的內容。 也有一些您可用來激發靈感，或只想查看 Power BI 功能的範例儀表板。 應用程式設計為易於︰ 點選儀表板上或全螢幕，並使用您的手指捲動檢視報表。
 
 ![](media/powerbi-learning-4-4a-power-bi-mobile/4-4a_1a.png)
 
-You can open any of the dashboards by tapping on them. Within a dashboard, you can tap on a dashboard tile to focus on it in a larger view.
+您可以開啟任何儀表板上點選。 在儀表板中，您可以將重點放在它以大圖示檢視儀表板] 磚上點選。
 
 ![](media/powerbi-learning-4-4a-power-bi-mobile/4-4a_2.png)
 
-You can also annotate any insights that you discover by tapping the <bpt id="p1">**</bpt>Annotate<ept id="p1">**</ept> button in the top right corner. This allows you to draw on a focused tile to highlight particular areas of interest. The annotation tools are found along the bottom of the screen.
+您也可以加上註解依序點選您發現任何深入解析 **註解** 在右上角的按鈕。 這可讓您在具有焦點的方塊，使其反白顯示感興趣的特定區域上繪製。 標註工具位於螢幕底部。
 
 ![](media/powerbi-learning-4-4a-power-bi-mobile/4-4a_3.png)
 
-Share your annotated tile by tapping the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> link in the top right-hand corner.
+依序點選共用您的註解的方塊 **共用** 右上角中的連結。
 
-Tap the <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> link in the top right-hand corner to view the underlying report for a tile. This will display the exact same visualizations that you would see in a web browser or in Power BI Desktop, and also include the ability to interact with the report by tapping on bars, drilling down, or using slicers.
+點選 **報表** 檢視基礎報表中的方塊右上角中的連結。 這會顯示完全相同的視覺效果，您會看到，在網頁瀏覽器或 Power BI Desktop，而且也包含由點選列上，向下切入，或使用交叉分析篩選器與報表互動的能力。

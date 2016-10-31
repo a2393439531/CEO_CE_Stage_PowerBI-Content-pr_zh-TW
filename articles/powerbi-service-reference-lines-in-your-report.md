@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Reference lines in your report"
-   description="Reference lines in your report"
+   pageTitle="在報表中的程式碼行參考"
+   description="在報表中的程式碼行參考"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,68 +21,69 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# Reference lines in your report
-##  Two methods to create reference lines
+# 在報表中的程式碼行參考
+##  兩種方法可以建立參考程式碼行
 
-Many charts are tracking performance against some goal or target, not just a comparison across categories. In these cases, plotting one or more lines that represents targets or goals is useful. These are <bpt id="p1">*</bpt>reference lines<ept id="p1">*</ept>.
+許多圖表會追蹤對某些目標或目標，不只是比較不同類別之間的效能。 在這些情況下，繪製代表目標的一或多行很有用。 這些是 *參考線*。
 
-Reference lines can be added to Line, Column, Bar, Area, Waterfall, and Scatter charts.
+參考程式碼行可以加入行，資料行，橫條圖、 區域、 瀑布和散佈圖。
 
-There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.
+有 2 種方式可以建立參考程式碼行。其中一個是因為您需要它們，另一個是使用 Power BI Desktop 建立可重複使用的欄位在資料集中加入參考線。
 
-Scroll to the end to see Will create a reference line in Power BI service.
+捲動到結尾，請參閱將 Power BI 服務中建立參考線。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zcAFP9U3d30?#t-2m30s" frameborder="0" allowfullscreen></iframe>
 
-## Reference lines as you need them
+## 您需要的時候，參考線
 
-This example uses the Retail Analysis Sample.
+此範例使用零售分析範例。
 
- 1. With your chart selected, select the paintbrush icon to open the Formatting pane.
+ 1. 使用您選取的圖表中選取 [小畫家圖示，以開啟 [格式] 窗格。
 
     ![](media/powerbi-service-reference-lines-in-your-report/formatting-pane.png)
 
- 2. Expand the <bpt id="p1">**</bpt>Reference lines<ept id="p1">**</ept> area and move the slider to <bpt id="p2">**</bpt>On<ept id="p2">**</ept>.
+ 2. 展開 **參考線** 區域和移動滑桿 **上**。
 
- 3. Add a reference line at -$75K by entering  <bpt id="p1">**</bpt>-75000<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Value<ept id="p2">**</ept> field.
+ 3. 新增輸入參考線一下-$75 K  **-75000** 中 **值** 欄位。
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines.png)  
 
 
-## Reusable reference lines in a dataset
+## 可重複使用參考資料集內的行
 
-Use Power BI Desktop to create a new field (column) in your dataset. Then use that field over and over again in visuals based on that dataset.
+使用 Power BI Desktop 資料集中建立新的欄位 （資料行）。 然後使用該資料集為基礎的視覺效果一再重複該欄位。
 
- In this example you'll add a new field to the <bpt id="p1">[</bpt>Financial Sample<ept id="p1">](powerbi-sample-download-the-financial-sample-workbook.md)</ept>.
+ 在此範例中，您將新增欄位，以便 [財務範例](powerbi-sample-download-the-financial-sample-workbook.md)。
 
-1. Open the <bpt id="p1">**</bpt>financials<ept id="p1">**</ept> table.  This is where you'll create the new field (column).
+1. 開啟 **financials** 資料表。  這是您要在其中建立新的欄位 （欄）。
 
-2.  Select which column to use as the basis for the reference line.  In this example we'll use the reference line to show <bpt id="p1">**</bpt>Units Sold<ept id="p1">**</ept> above 200,000.
+2.  選取要用於參考線為基礎的資料行。  在此範例中我們將使用參考線顯示 **Units Sold** 200000 以上。
 
-2. From the ribbon, select <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New Column<ept id="p2">**</ept>.
+2. 從功能區中，選取 **模型** > **新的資料行**。
 
     ![](media/powerbi-service-reference-lines-in-your-report/PBI_reference_line_new-column-new.png)
 
-3. In the formula bar, type the following:
+3. 在公式列中，輸入下列命令︰
 
-    **Unit Sales target = 2000**
+    **單位銷售目標 = 2000年**
 
     ![](media/powerbi-service-reference-lines-in-your-report/PBI_reference_line_field_list_new2.png)
 
-    This calculated column will return the value 2000 regardless of where it is used.  <bpt id="p1">**</bpt>Unit Sales target<ept id="p1">**</ept> will show up in your Field list along with all the other fields from this dataset, and can be added to any visual that supports reference lines. 
+    此導出資料行將傳回值 2000年無論使用的位置。  
+            **單位銷售目標** 將顯示在欄位清單中，以及此資料集中，所有其他欄位，而且可以加入任何 visual 支援參考程式碼行。 
 
-4. Add the Unit Sales target to a line chart to show how any series relates to that specific reference line.    
+4. 銷售單位將目標加入至要顯示的任何數列與發生關聯到特定參考的線條的折線圖。    
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines-show.png)
 
-    >[AZURE.NOTE] Make sure <bpt id="p1">**</bpt>Unit Sales target<ept id="p1">**</ept> isn't being aggregated, for example, summed or counted. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, right-click <bpt id="p2">**</bpt>Unit Sales target<ept id="p2">**</ept> and select <bpt id="p3">**</bpt>Average<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Minimum<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Maximum<ept id="p5">**</ept>, or <bpt id="p6">**</bpt>Median<ept id="p6">**</ept>.
+    >[AZURE.NOTE] 請確定 **銷售單位目標** 不是，例如在彙總加總，或可計算。 在 **視覺效果** ] 窗格中，以滑鼠右鍵按一下 **銷售單位目標** ，然後選取 **平均**, ，**最小值**, ，**最大**, ，或 **適中**。
 
     ![](media/powerbi-service-reference-lines-in-your-report/power-bi-reference-lines.png)
 
 ##  疑難排解
 
-If you're using a field value as a reference line, and it's not displaying correctly, make sure it isn't being aggregated.  Power BI automatically aggregates values, making its best guess of how you want to use the value. For example, if Power BI sums the value, you'll get a sloping line.  See step 4 above for instructions for setting the proper aggregation for your reference line.
+如果您使用的欄位值作為參考線條，而且未正確顯示，請確定它不彙總。  Power BI 會自動彙總的值，使其適合的方式在您要使用的值。 比方說，如果 Power BI 加總的值，您將得到 sloping 列。  請參閱前述步驟 4 的指示，說明如何設定適當的彙總的參考線。
 
 ##  請參閱
-[Learn more about calculated columns](powerbi-desktop-calculated-columns.md)
+[深入了解導出資料行](powerbi-desktop-calculated-columns.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

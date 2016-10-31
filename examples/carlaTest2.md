@@ -1,29 +1,29 @@
 <properties 
-        pageTitle="Test Markdown 2 (carlasab)" 
-        description="test page" 
+        pageTitle="測試 Markdown 2 (carlasab)" 
+        description="測試頁" 
         services="powerbi" 
         documentationCenter="" 
         authors="sabotta" />
 
 # 簡介
 
-This is a test markdown article, and it's the first markdown article that I've created using MarkdownPad2. The UI seems <bpt id="p1">*</bpt>user friendly<ept id="p1">*</ept>.
+這是測試的 markdown 文章，而且我建立了使用 MarkdownPad2 的第一個 markdown 文件。 UI 似乎 *使用者易記*。
 
 ## 資料表
-The following is a table.
+以下是資料表。
 
-|First Header   |Second Header    |
+|第一個標頭   |第二個標頭    |
 |------------:  |-------------:   |
-|Content Cell|Content Cell|
-|Content Cell|Content Cell|
+|內容的資料格|內容的資料格|
+|內容的資料格|內容的資料格|
 
 
 ## 清單
-1. First step includes adding `code`
-2. Second step.
-3. Third step.
+1. 第一個步驟包括新增 `code`
+2. 第二個步驟。
+3. 第三個步驟。
 
-Here is a list
+以下是清單
 
 - 項目 
 - 項目
@@ -31,4 +31,4 @@ Here is a list
 
 ### Links
 
-[Markdownpad Site] (http://markdownpad.com/compare.html)
+[Markdownpad 網站](http://markdownpad.com/compare.html)

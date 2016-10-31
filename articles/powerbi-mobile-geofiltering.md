@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Filter a report by location in the Power BI mobile apps for iOS"
-   description="Learn how you can filter a report by your location in the Microsoft Power BI  mobile apps for iOS, if the report owner set geographic tags."
+   pageTitle="若要篩選報表 iOS Power BI 行動應用程式裡的位置"
+   description="如果報表擁有者設定地理標記，了解如何篩選報表，根據您 ios 的 Microsoft Power BI 行動應用程式中的位置。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,26 +19,29 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# <a name="filter-a-report-by-location-in-the-power-bi-mobile-apps-for-ios"></a>Filter a report by location in the Power BI mobile apps for iOS
+# <a name="filter-a-report-by-location-in-the-power-bi-mobile-apps-for-ios"></a>若要篩選報表 iOS Power BI 行動應用程式裡的位置
 
-When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
+當您查看您的 iPad、 iPhone 或 iPod Touch，不要在 Power BI 報表您會看到右上角的小圖釘圖示嗎？ 如果是的話，您可以篩選您的地理位置為基礎的報表。
 
-> [AZURE.NOTE] You can only filter by location if the geographic names in the report are in English&amp;#150;for example, "New York City" or "Germany".
+> [AZURE.NOTE] 您可以只篩選器的位置，如果在報表中的地理名稱將以英文 & #150; 比方說，「 紐約市"或"Germany"。
 
-## <a name="filter-your-report-by-your-location"></a>Filter your report by your location
+## <a name="filter-your-report-by-your-location"></a>篩選您的部署位置的報表
 
-1. Open a report in the Power BI mobile app on your iOS device.
+1. 在您的 iOS 裝置上的 Power BI 行動應用程式中開啟報表。
 
-3. Tap the push pin <ph id="ph1">![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-icon.png)</ph> in the upper-right corner. You can filter on either city, state/province, or country/region, depending on how the report creator set up the report. The filter only lists options that match your current location.
+3. 點選圖釘 ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-icon.png) 右上角。 您可以篩選城市、 縣/市或國家/地區，根據報表建立者設定報表的方式。 篩選器只會列出符合您目前所在位置的選項。
 
     ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-## <a name="why-do-only-some-reports-have-location-tags?"></a>Why do only some reports have location tags?
-When you or your colleagues create reports in Power BI Desktop, you can categorize geographical data for a column. Then, when you view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are.
+## <a name="why-do-only-some-reports-have-location-tags?"></a>為什麼只有一些報表有位置標籤？
+當您或您的同事在 Power BI Desktop 中建立報表時，您可以將分類地理資料行的資料。 然後，當您 iOS Power BI 行動應用程式中檢視該報表，Power BI 會自動提供符合您所在的地理篩選器。
 
-Read more about <bpt id="p1">[</bpt>setting up geographic filtering<ept id="p1">](powerbi-desktop-mobile-geofiltering.md)</ept> in Power BI Desktop.
+深入了解 [設定地理篩選](powerbi-desktop-mobile-geofiltering.md) Power BI Desktop 中。
 
 ### <a name="see-also"></a>請參閱  
-- <bpt id="p1">[</bpt>Connect to Power BI data from the real world<ept id="p1">](powerbi-mobile-data-in-real-world-context.md)</ept> with the mobile apps
-- <bpt id="p1">[</bpt>Data categorization in Power BI Desktop<ept id="p1">](powerbi-desktop-data-categorization.md)</ept> 
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [在現實世界中連接至 Power BI 資料](powerbi-mobile-data-in-real-world-context.md) 使用行動應用程式
+- 
+            [在 Power BI Desktop 中的資料分類](powerbi-desktop-data-categorization.md) 
+- 問題了嗎？ 
+            [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

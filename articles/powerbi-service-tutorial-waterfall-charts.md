@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Waterfall charts in Power BI"
-   description="Tutorial: Waterfall charts in Power BI"
+   pageTitle="在 Power BI 中的教學課程︰ 瀑布圖"
+   description="在 Power BI 中的教學課程︰ 瀑布圖"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,66 +20,67 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Tutorial: waterfall charts in Power BI
+# 在 Power BI 中的教學課程︰ 瀑布圖
 
-A waterfall chart shows a running total as values are added or subtracted. It's useful for understanding how an initial value (for example, net income) is affected by a series of positive and negative changes.
+瀑布圖顯示執行總數加入或減去的值時。 它可用於了解如何起始值 （例如，淨收入） 會受到一系列的正數和負數的變更。
 
-The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often <bpt id="p1">[</bpt>start on the horizontal axis<ept id="p1">]</ept><bpt id="p2">(https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "</bpt>start on the horizontal axis<ept id="p2">")</ept>, while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
+資料行是色彩編碼，好讓您快速地告訴增加或減少。 初始和最終值資料行通常 [水平軸上啟動](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "水平軸上啟動"), ，而中繼值浮點數資料行。 此 「 查詢 」，因為瀑布圖也稱為橋接器圖表。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## When to use a waterfall chart
+## 何時使用瀑布圖
 
-Waterfall charts are a great choice:
+瀑布圖是相當好的選擇︰
 
--   when you have changes for the measure across time series or different categories
+-   當您有變更量值在時間序列或不同類別
 
--   to audit the major changes contributing to the total value
+-   若要稽核的總計值造成重大的變更
 
--   to plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
+-   若要繪製貴公司的年度收益顯示各種來源的營收，並到達總收益 （或遺失）。
 
--   to illustrate the beginning and the ending headcount for your company in a year
+-   一年中說明的開始和結束的人數為您的公司
 
--   to visualize how much money you make and spend each month, and the running balance for your account. 
+-   以視覺化方式檢視多少錢您使花費和每個月和日常餘額為您的帳戶。 
 
-## Create a waterfall chart
+## 建立瀑布圖
 
-To follow along, sign in to Power BI and select <bpt id="p1">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Samples <ph id="ph2">\&gt;</ph> Retail Analysis Sample<ept id="p1">**</ept>. 
+要跟著做，請登入 Power BI，然後選取 **取得資料 \> 範例 \> 零售分析範例**。 
 
-1. From the "Retail Analysis Sample" dashboard, select the <bpt id="p1">**</bpt>Total Stores<ept id="p1">**</ept> tile to open the "Retail Analysis Sample" report.
+1. 「 零售分析範例 」 儀表板中，選取 **總商店** 磚以開啟 「 零售分析範例 」 報告。
 
-2. Select <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept> to open the report in Editing View.
+2. 選取 **編輯報表** 編輯檢視中開啟報表。
 
-3. <bpt id="p1">[</bpt>Add a new report page<ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+3. 
+            [加入新的報表頁面](powerbi-service-add-a-page-to-a-report.md)。
 
-4. Create a waterfall chart that displays this year's sales and sales goal by month.
+4. 建立依月份顯示本年度的銷售額與銷售目標瀑布圖。
 
-  - From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Sales <ph id="ph1">\&gt;</ph> Total Sales Variance<ept id="p2">**</ept>.
+  - 從 **欄位** 窗格中，選取 **銷售 \> 總銷售變異數**。
 
-    - Convert the chart to a <bpt id="p1">**</bpt>Waterfall<ept id="p1">**</ept>. 
+    - 轉換圖表以 **瀑布**。 
 
         ![](media/powerbi-service-tutorial-waterfall-charts/convertWaterfall.png)
 
-    - If <bpt id="p1">**</bpt>Total Sales Variance<ept id="p1">**</ept> isn't in the <bpt id="p2">**</bpt>Y Axis<ept id="p2">**</ept> area, drag it there.
+    - 如果 **總銷售變異數** 不在 **Y 軸** 區域中，將它拖曳到那里。
 
-    - Select <bpt id="p1">**</bpt>Time<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>FiscalMonth<ept id="p2">**</ept> to add it to the <bpt id="p3">**</bpt>Category<ept id="p3">**</ept> well. 
+    - 選取 **時間** \> **FiscalMonth** 將它加入至 **類別** 良好。 
 
     ![](media/powerbi-service-tutorial-waterfall-charts/first_new.png)
 
-## Highlighting and cross-filtering
+## 反白顯示和交叉篩選
 
-For information about using the Filters pane, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+使用 [篩選] 窗格的相關資訊，請參閱 [將篩選加入至報表](powerbi-service-add-a-filter-to-a-report.md)。
 
-Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page... and vice versa. However, the Total column does not trigger highlighting or respond to cross-filtering.
+反白顯示瀑布圖中的資料行交叉篩選...在報表頁面上的其他視覺效果，反之亦然。 不過，總計的資料行不會觸發反白顯示或回應交叉篩選。
 
 ## 請參閱
 
-[Reports in Power BI](powerbi-service-reports.md)
+[在 Power BI 中的報表](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[在 Power BI 中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

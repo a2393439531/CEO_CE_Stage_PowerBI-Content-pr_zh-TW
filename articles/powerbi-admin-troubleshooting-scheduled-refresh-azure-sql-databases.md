@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Troubleshooting scheduled refresh for Azure SQL Databases"
-   description="Troubleshooting scheduled refresh for Azure SQL Databases in Power BI"
+   pageTitle="疑難排解 Azure SQL 資料庫的排程重新整理"
+   description="疑難排解排定的重新整理 Power BI 中的 Azure SQL 資料庫"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,18 +20,18 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Troubleshooting scheduled refresh for Azure SQL Databases in Power BI  
+# 疑難排解排定的重新整理 Power BI 中的 Azure SQL 資料庫  
 
-For detailed steps on setting up scheduled refresh, be sure to see <bpt id="p1">[</bpt>Refresh data in Power BI<ept id="p1">](powerbi-refresh-data.md)</ept>.
+如需設定排定的重新整理的詳細步驟，務必參閱 [Power BI 中的資料重新整理](powerbi-refresh-data.md)。
 
-While setting up scheduled refresh for Azure SQL Database, if you get an error with error code 400 during editing the credentials, try the following to set up the appropriate firewall rule:
+而設定排定重新整理 Azure SQL 資料庫，如果您收到錯誤，錯誤碼為 400 期間編輯的認證，請嘗試下列動作以設定適當的防火牆規則︰
 
-1.  Log into your Azure management portal
+1.  登入 Azure 管理入口網站
 
-2.  Go to the Azure SQL server you are configuring refresh for
+2.  請移至您要設定的重新整理的 Azure SQL 伺服器
 
-3.  Turn on 'Windows Azure Services' in the allowed services section
+3.  開啟 [允許的服務區段中的 [Windows Azure 服務]
 
 ![](media/powerbi-admin-troubleshooting-scheduled-refresh-azure-sql-databases/Azurerefresh.png)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

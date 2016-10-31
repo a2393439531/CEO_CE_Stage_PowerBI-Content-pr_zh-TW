@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards in the Power BI mobile app for Windows 10"
-   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI mobile app for Windows 10"
+   pageTitle="在 Windows 10 的 Power BI 行動應用程式中的儀表板"
+   description="儀表板是您公司的生命週期的入口網站。 了解如何檢視、 瀏覽，以及共用儀表板 Power BI 行動應用程式中的 Windows 10"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,53 +20,56 @@
    ms.date="09/28/2016"
    ms.author="maggies"/>
 
-# View, explore, and share dashboards in the Power BI mobile app for Windows 10  
+# 檢視、 探索和共用的 Windows 10 的 Power BI 行動應用程式中的儀表板  
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
+儀表板是貴公司的生命週期和處理程序的入口網站。 儀表板是概觀，從單一位置監視業務的目前狀態。 
 
-You don't create dashboards in Power BI on your Windows 10 mobile device. You <bpt id="p1">[</bpt>create dashboards<ept id="p1">](powerbi-service-dashboards.md)</ept> or <bpt id="p2">[</bpt>connect to built-in dashboards for services<ept id="p2">](powerbi-content-packs-services.md)</ept> such as Salesforce in the Power BI service (<bpt id="p3">[</bpt>https://www.powerbi.com<ept id="p3">](https://www.powerbi.com)</ept>) on your computer.
+Windows 10 行動裝置上，您不在 Power BI 建立儀表板。 您 [建立儀表板](powerbi-service-dashboards.md) 或 [連接到服務的內建儀表板](powerbi-content-packs-services.md) 例如 Salesforce Power BI 服務中 ([https://www.powerbi.com](https://www.powerbi.com)) 電腦上。
 
-Then in the <bpt id="p1">[</bpt>Power BI mobile app for Windows 10<ept id="p1">](powerbi-mobile-win10phone-app-get-started.md)</ept>, you can explore these same dashboards.
+接著在 [Power BI for Windows 10 行動裝置應用程式](powerbi-mobile-win10phone-app-get-started.md), ，您可以瀏覽這些相同的儀表板。
 
-## View dashboards on your Windows 10 device  
-1.  Open the Power BI app on your Windows 10 device and sign in.
+## Windows 10 裝置上檢視儀表板  
+1.  開啟 Windows 10 裝置上的 Power BI 應用程式，然後登入。
 
-    Need to <bpt id="p1">[</bpt>download the app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=526478)</ept> first?
+    需要 [下載應用程式](http://go.microsoft.com/fwlink/?LinkID=526478) 第一次？
 
-2.  Tap a dashboard to open it.   
+2.  點選以開啟儀表板。   
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-device-dashboard-home.png)
 
-    Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
+    Power BI 儀表板尋找 Windows 10 手機上稍有不同。 所有圖格出現相同的寬度，而且其排列方式逐一從上到下。
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard-0928.png)
 
-     You can also turn your phone sideways to <bpt id="p1">[</bpt>view dashboards in landscape mode<ept id="p1">](#view-dashboards-in-landscape-mode)</ept> on your phone.
+     您也可以開啟您的電話側邊 [橫向模式中檢視儀表板](#view-dashboards-in-landscape-mode) 在電話上。
 
-    ><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: If you're the dashboard owner, in the Power BI service you can <bpt id="p2">[</bpt>create a view of the dashboard specifically for phones<ept id="p2">](powerbi-service-create-dashboard-phone-view.md)</ept> in portrait mode. 
+    >
+            **秘訣**︰ 如果您的儀表板擁有者，在 Power BI 服務，您可以 [建立專為手機儀表板檢視](powerbi-service-create-dashboard-phone-view.md) 直向模式。 
 
-5.  In the dashboard, you can:
+5.  在 [儀表板，您可以︰
 
-    -   <bpt id="p1">[</bpt>Tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept> to open and interact with it.
-    -   Tap the <bpt id="p1">**</bpt>Full Screen<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-full-screen-icon.png)</ph> to present your Power BI dashboard without borders or menus, like <bpt id="p2">**</bpt>Slide Show<ept id="p2">**</ept> view in PowerPoint.
-    -   Tap the <bpt id="p1">**</bpt>Invite<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png)</ph> to <bpt id="p2">[</bpt>share your dashboard<ept id="p2">](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md)</ept> with a colleague.
-    -   Tap the star <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-mobile-not-favorite-icon.png)</ph> to <bpt id="p1">[</bpt>make the dashboard a favorite<ept id="p1">](powerbi-mobile-favorites.md)</ept>.
-    -   Tap the <bpt id="p1">**</bpt>Pin to Start<ept id="p1">**</ept> icon to <bpt id="p2">[</bpt>pin the dashboard to your Windows Start screen<ept id="p2">](powerbi-mobile-pin-dashboard-from-win10phone-app.md)</ept>. 
+    -   
+            [點選磚](powerbi-mobile-tiles-in-the-win10phone-app.md) 開啟，並與其互動。
+    -   點選 **全螢幕** 圖示 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-full-screen-icon.png) 呈現沒有框線或功能表 Power BI 儀表板，像是 **投影片放映** 在 PowerPoint 中的檢視。
+    -   點選 **邀請** 圖示 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png) 至 [共用您的儀表板](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) 與同事。
+    -   點選星形 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-mobile-not-favorite-icon.png) 至 [使儀表板我的最愛](powerbi-mobile-favorites.md)。
+    -   點選 **釘選到開始** 圖示 [釘選到您 Windows [開始] 畫面的儀表板](powerbi-mobile-pin-dashboard-from-win10phone-app.md)。 
     
 
-6.  To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>:
+6.  若要返回儀表板首頁上，點選 [儀表板名稱以開啟追蹤，然後點選 **我的工作區**:
    
      ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard-breadcrumb.png)
 
-## View dashboards in landscape mode
-You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &amp;#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
+## 檢視儀表板以橫向模式
+您也可以在橫向模式中，檢視儀表板，只要開啟您的電話。 儀表板版面配置變更由一系列並排顯示檢視的整個儀表板 & #151;您會看到所有 Power BI 服務中配置的儀表板的磚。
 
 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_iPh_Landscape.png)
 
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still <bpt id="p1">[</bpt>tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept> to open the tile in focus mode and interact with your data.
+若要放大和縮小您的儀表板的不同區域，來巡覽取景位置調整，您可以使用 「 縮小 」 筆勢。 您仍然可以和 [點選磚](powerbi-mobile-tiles-in-the-win10phone-app.md) 焦點模式開啟磚，並與您的資料互動。
 
 ### 請參閱  
-- <bpt id="p1">[</bpt>Download the Power BI mobile app for Windows 10<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=526478)</ept> from the Windows Store  
-- [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- 
+            [Power BI 行動應用程式下載 Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) 從 Windows 市集  
+- [開始使用 Power BI 行動應用程式的 Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
+- [在 Power BI 建立儀表板電話檢視](powerbi-service-create-dashboard-phone-view.md)
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

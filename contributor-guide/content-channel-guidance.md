@@ -1,17 +1,23 @@
-<properties title="" pageTitle="Power BI technical content channel guidance" description="Describes the Microsoft content channels that employees, partners, and community contributors should use for publishing Power BI technical content." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+<properties title="" pageTitle="Power BI 技術內容通道指引" description="說明 Microsoft 的內容通道員工、 合作夥伴和社群貢獻者應該使用 Power BI 技術內容發佈。" metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/01/2015" ms.author="mblythe" />
 
-#Power BI technical content channel guidance
+#Power BI 技術內容通道指引
 
 ##另請了解：配置方式
-Generally speaking, core technical content for Microsoft Power BI belongs in the <bpt id="p1">[</bpt>Power BI Documentation Center<ept id="p1">](https://powerbi.microsoft.com/documentation)</ept>. Members of the content and product teams also publish developer content to <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/en-us/library/dn877544.aspx)</ept>, and we publish to the <bpt id="p2">[</bpt>Power BI blog<ept id="p2">](http://blogs.msdn.com/b/powerbi/)</ept>. 
+一般而言，Microsoft Power BI 的核心技術內容屬於 [Power BI 文件中心](https://powerbi.microsoft.com/documentation)。 內容和產品小組的成員也發行內容，開發人員 [MSDN](https://msdn.microsoft.com/en-us/library/dn877544.aspx), ，而且我們將發佈到 [Power BI 部落格](http://blogs.msdn.com/b/powerbi/)。 
 
-The following channels are not part of the standard Power BI technical content experience:
+下列的頻道不屬於標準的 Power BI 技術內容經驗︰
 
-- <bpt id="p1">**</bpt>TechNet Library<ept id="p1">**</ept>: TechNet does not offer a Power BI branded experience. All content for all audiences goes in the branded, scoped Power BI library hosted on MSDN.
-- <bpt id="p1">**</bpt>TechNet Wiki<ept id="p1">**</ept>: The wiki does not offer a Power BI branded experience. The community and internal partners can contribute to Power BI technical content through the Discus comment stream and by contributing to articles through GitHub.
-- <bpt id="p1">**</bpt>Standard MSDN library view<ept id="p1">**</ept>: Standard view does not offer a Power BI branded experience.
-- <bpt id="p1">**</bpt>TechNet TechCenters<ept id="p1">**</ept>: Our center is published to https://powerbi.microsoft.com/developers.
-- <bpt id="p1">**</bpt>MSDN DevCenters<ept id="p1">**</ept>: Our center is published to https://powerbi.microsoft.com/developers.
-- <bpt id="p1">**</bpt>E-book, CSI e-book gallery<ept id="p1">**</ept>: Due to static nature of content, do not deliver content in e-book form. The vast majority of content should be published through powerbi.microsoft.com or to the Power BI scoped library.
+- 
+            **TechNet Library**: TechNet 不提供 Power BI 品牌體驗。 所有對象的所有內容都會加上品牌，已設定領域 Power BI 文件庫中裝載於 MSDN 上。
+- 
+            **TechNet Wiki**: wiki 不提供 Power BI 品牌體驗。 社群和內部夥伴可以構成 Power BI 技術內容透過繼續討論註解資料流並藉由參與 GitHub 透過文件。
+- 
+            **標準的 MSDN 文件庫檢視**︰ 標準檢視不會提供品牌體驗 Power BI。
+- 
+            **TechNet 技術中心**︰ 我們的中心會發佈到 https://powerbi.microsoft.com/developers。
+- 
+            **MSDN DevCenters**︰ 我們的中心會發佈到 https://powerbi.microsoft.com/developers。
+- 
+            **電子書 CSI 電子書庫**︰ 由於靜態內容，執行不傳遞內容的電子書形式。 大部分的內容應該透過 powerbi.microsoft.com 發佈或 Power bi 範圍文件庫。

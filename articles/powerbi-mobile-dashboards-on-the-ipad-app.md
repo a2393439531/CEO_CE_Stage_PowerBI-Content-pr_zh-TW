@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards on the iPad app"
-   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI app for iOS on your iPad."
+   pageTitle="儀表板上 iPad 應用程式"
+   description="儀表板是您公司的生命週期的入口網站。 了解如何檢視、 探索以及儀表板 iOS Power BI 應用程式中共用您的 iPad 上。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,51 +19,56 @@
    ms.workload="powerbi"
    ms.date="10/11/2016"
    ms.author="maggies"/>
-# Dashboards on the iPad app (Power BI for iOS)
+# 在 iPad 應用程式 (適用於 iOS 的 Power BI) 儀表板
 
-Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI app for iOS on your iPad.
+儀表板是您公司的生命週期的入口網站。 了解如何檢視、 探索以及儀表板 iOS Power BI 應用程式中共用您的 iPad 上。
 
 ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-sample-dashboard.png)
 
-You don't create dashboards on your iPad. In the Power BI service (<bpt id="p1">[</bpt>https://www.powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>) on your computer, you <bpt id="p2">[</bpt>create dashboards<ept id="p2">](powerbi-service-dashboards.md)</ept> or <bpt id="p3">[</bpt>connect to built-in dashboards for services<ept id="p3">](powerbi-content-packs-services.md)</ept> such as Salesforce.
+您不在您的 iPad 上建立儀表板。 在 Power BI 服務 ([https://www.powerbi.com](https://www.powerbi.com)) 電腦上，您 [建立儀表板](powerbi-service-dashboards.md) 或 [連接到服務的內建儀表板](powerbi-content-packs-services.md) 例如 Salesforce。
 
-Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, along with dashboards your colleagues share with you.
+您看到 Microsoft Power bi 的 iPad 應用程式中的這些相同儀表板 ios 平台，以及您的同事分享您的儀表板。
 
-## View dashboards on your iPad
+## 在您的 iPad 上檢視儀表板
 
-1.  Open the Power BI app.
+1.  開啟 Power BI 應用程式。
 
-    Need to <bpt id="p1">[</bpt>download the iPad app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> from the Apple App Store first?
+    需要 [iPad 應用程式下載](http://go.microsoft.com/fwlink/?LinkId=522062) 從 Apple 應用程式存放區第一次？
 
-2.  Tap <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> at the top of the app.  
+2.  點選 **儀表板** 頂端的 [應用程式。  
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-dashboard-home.png)
 
-     -     The yellow stars <ph id="ph1">![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-mobile-yes-favorite-icon.png)</ph> show which dashboards are favorites. 
+     -     黃色星形 ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) 顯示的儀表板的 [我的最愛]。 
 
-     -     The notation below each dashboard name <ph id="ph1">![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-medium-classification.png)</ph> shows how the data in each dashboard is classified. Read more about <bpt id="p1">[</bpt>data classification in Power BI<ept id="p1">](powerbi-service-data-classification.md)</ept>.
+     -     每個儀表板名稱之下的標記法 ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-medium-classification.png) 顯示分類中每個儀表板資料的方式。 深入了解 [Power BI 中的資料分類](powerbi-service-data-classification.md)。
 
-3.  You can share a dashboard from your workspace. Tap the ellipsis (...) in the lower-right corner of the dashboard tile, and tap <bpt id="p1">**</bpt>Invite Others<ept id="p1">**</ept>.
+3.  您可以從工作區中共用儀表板。 點選右下角的 [儀表板] 磚中，省略符號 （...），然後點選 **邀請其他人**。
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-tile-invite-others.png)
 
-4.  You can also tap a dashboard to open it and see the tiles in that dashboard. While on the dashboard you can interact with it:
+4.  您也可以點選以開啟它，並查看該儀表板中的並排顯示的儀表板。 在儀表板，您可以與它互動的時間︰
 
-    - <bpt id="p1">[</bpt>Tap a tile to interact<ept id="p1">](powerbi-mobile-tiles-in-the-ipad-app.md)</ept> with the tile.
+    - 
+            [點選磚互動](powerbi-mobile-tiles-in-the-ipad-app.md) 與方塊。
 
-    - <bpt id="p1">[</bpt>Open the reports<ept id="p1">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> behind the tiles.
+    - 
+            [開啟報表](powerbi-mobile-reports-on-the-ipad-app.md) 背後並排顯示。
 
-    - <bpt id="p1">[</bpt>Invite others to view the dashboard<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md)</ept>.
+    - 
+            [邀請其他人檢視儀表板](powerbi-mobile-share-dashboards-from-the-ipad-app.md)。
 
-    - <bpt id="p1">[</bpt>Annotate and share a snapshot<ept id="p1">](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)</ept> of a tile.
+    - 
+            [加上註解，並共用快照](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) 並排顯示。
 
-4.  To go back to My Workspace, tap the name of the dashboard in the upper-left corner, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+4.  若要返回以我的工作區中，點選 [左上角的儀表板的名稱，然後點選 **我的工作區**。
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-breadcrumb.png)
 
 ### 請參閱
 
--   <bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI.
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-   
+            [開始使用 iPad 應用程式](powerbi-mobile-iphone-app-get-started.md) Power bi。
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)
 
 

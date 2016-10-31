@@ -1,48 +1,76 @@
 ## 一般
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What is the actual Windows service called?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> The gateway is called On-premises data gateway service in Services
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What are the requirements for the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Take a look at the requirements section of the main <bpt id="p2">[</bpt>gateway article<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+            **問題︰** 實際的 Windows 服務呼叫的動作？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What data sources are supported with the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> See the data sources table in the main <bpt id="p2">[</bpt>gateway article<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+            **答案是︰** 閘道會在服務中呼叫內部部署資料閘道器服務
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Do I need a gateway for cloud data sources like Azure SQL Database?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No! The service will be able to connect to that data source without a gateway.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Are there any inbound connections to the gateway from the cloud?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The gateway uses outbound connections to Azure Service Bus.
+            **問題︰** 閘道的需求為何？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if I block outbound connections? What do I need to open?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> See the <bpt id="p2">[</bpt>list of ports<ept id="p2">](powerbi-gateway-onprem.md#ports)</ept> and hosts that the gateway uses.
+            **答案是︰** 看看主要的需求一節 [閘道文章](powerbi-gateway-onprem.md)。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Does the gateway have to be installed on the same machine as the data source?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What is the latency for running queries to a data source from the gateway? What is the best architecture?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It is recommended to have the gateway as close to the data source as possible to avoid network latency. If you can install the gateway on the actual data source, it will minimize the latency introduced. Consider the data centers as well. For example, if your service is making use of the West US data center, and you have SQL Server hosted in an Azure VM, you will want to have the Azure VM in West US as well. This will minimize latency and avoid egress charges on the Azure VM.
+            **問題︰** 何種資料來源所支援的閘道？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Are there any requirements for network bandwidth?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It is recommended to have good throughput for your network connection. Every environment is different and this is also dependent on the amount of data being sent. Using ExpressRoute could help to guarantee a level of throughput between on-premises and the Azure data centers.
+            **答案是︰** 請參閱資料來源資料表中主 [閘道文章](powerbi-gateway-onprem.md)。
 
-You can use the 3rd party <bpt id="p1">[</bpt>Azure Speed Test app<ept id="p1">](http://azurespeedtest.azurewebsites.net/)</ept> to help gauge what your throughput is. 
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can the gateway Windows service run with an Azure Active Directory account?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID, <bpt id="p1">*</bpt>NT SERVICE\PBIEgwService<ept id="p1">*</ept>.
+            **問題︰** 並需要閘道的定域機組的資料來源，例如 Azure SQL Database？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How are results sent back to the cloud?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> This is done by way of the Azure Service Bus. For more information, see <bpt id="p1">[</bpt>how it works<ept id="p1">](powerbi-gateway-onprem.md#how-the-gateway-works)</ept>.
+            **答案是︰** 否 ！ 服務將無法連線到該資料來源，且不含閘道。
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Where are my credentials stored?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> The credentials you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I place the gateway in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet)?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> The gateway requires connectivity to the data source. If the data source is not accessable in your perimeter network, the gateway may not be able to connect to it. For example, your SQL Server may not be in your perimeter network. And, you cannot connect to your SQL Server from the perimeter network. If you placed the gateway in your perimeter network, it would not be able to reach the SQL Server.
+            **問題︰** 是否有任何輸入的連線至閘道從雲端？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Is it possible to force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. Although, this will greatly reduce performance. You will want to modify the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config<ept id="p1">*</ept> file. You will want to change the value from <ph id="ph1">`AutoDetect`</ph> to <ph id="ph2">`Https`</ph>. This file is located, by default, at <bpt id="p1">*</bpt>C:\Program Files\On-premises data gateway<ept id="p1">*</ept>.
+            **答案是︰** [否]。 閘道會使用 Azure 服務匯流排的輸出連線。
+
+
+            **問題︰** 要是我封鎖輸出連線嗎？ 我要開啟？  
+
+            **答案是︰** 看到 [的連接埠清單](powerbi-gateway-onprem.md#ports) 和閘道使用的主機。
+
+
+            **問題︰** 閘道必須安裝在同一部電腦做為資料來源？  
+
+            **答案是︰** [否]。 在閘道將要連線至資料來源使用所提供的連接資訊。 閘道器視為這方面的用戶端應用程式。 它只需要能夠連線到所提供的伺服器名稱。
+
+
+            **問題︰** 到資料來源執行查詢，來自閘道的延遲時間是什麼？ 什麼是最佳的架構？  
+
+            **答案是︰** 建議閘道器已接近資料來源，以避免網路延遲。 如果您可以在實際的資料來源上安裝閘道，它會帶來的延遲降到最低。 請考慮在資料中心。 例如，如果您的服務正在使用的西部我們資料中心，而您必須裝載於 Azure VM 的 SQL Server，您會想要有 Azure VM，在美國西部。 將延遲降至最低，並避免在 Azure VM 上的出口流量費用。
+
+
+            **問題︰** 是否有任何的網路頻寬的需求？  
+
+            **答案是︰** 建議有網路連線良好的輸送量。 每個環境都不同，而且這也是所傳送的資料量而定。 使用 ExpressRoute 可以協助您確保內部部署與 Azure 資料中心之間的輸送量層級。
+
+您可以使用第 3 方 [Azure 速度測試應用程式](http://azurespeedtest.azurewebsites.net/) 協助評估您的輸送量是什麼。 
+
+
+            **問題︰** 可以使用 Azure Active Directory 帳戶執行閘道 Windows 服務嗎？  
+
+            **答案是︰** [否]。 Windows 服務必須有有效的 Windows 帳戶。 根據預設，它會執行的服務 sid， *NT SERVICE\PBIEgwService*。
+
+
+            **問題︰** 如何結果傳送至雲端？  
+
+            **答案是︰** 這是透過 Azure 服務匯流排。 如需詳細資訊，請參閱 [它的運作方式](powerbi-gateway-onprem.md#how-the-gateway-works)。
+
+
+            **問題︰** 我的認證儲存？  
+
+            **答案是︰** 輸入資料來源的認證會加密方式儲存在閘道器雲端服務。 認證會在閘道內部進行解密。
+
+
+            **問題︰** 可以放置閘道在周邊網路 （也稱為 DMZ、 非軍事區域及屏蔽子網路）？  
+
+            **答案是︰** 閘道需要連線到資料來源。 如果不在周邊網路中存取資料來源，閘道可能無法連接到它。 例如，您的 SQL Server 可能無法在周邊網路中。 而且您無法從周邊網路連線到 SQL Server。 如果閘道置於周邊網路上時，它就無法連線到 SQL Server。
+
+
+            **問題︰** 可強制使用 HTTPS 流量使用 Azure 服務匯流排，而不是 TCP 閘道嗎？  
+
+            **答案是︰** [是]。 雖然這會大幅降低效能。 您會想要修改 *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* 檔案。 您會想要將值從 `AutoDetect` 到 `Https`。 這個檔案位於，根據預設，在 *C:\Program Files\On 內部資料閘道*。
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -50,23 +78,33 @@ You can use the 3rd party <bpt id="p1">[</bpt>Azure Speed Test app<ept id="p1">]
 </setting>
 ```
 
-## High Availability/Disaster Recovery
+## 高可用性/嚴重損壞修復
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Are there any plans for enabling high availability scenarios with the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. This is on the roadmap, but we don’t have a timeline yet.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What options are available for disaster recovery?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You can use the recovery key to restore or move a gateway. When you install the gateway, supply the recovery key.
+            **問題︰** 啟用高可用性案例的閘道器的計劃？  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What is the benefit of the recovery key?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It provides a way to migrate or recover your gateway settings. This is also used for disaster recovery.
+            **答案是︰** [是]。 這在藍圖，但我們尚無時間軸。
+
+
+            **問題︰** 災害復原有哪些選項？  
+
+            **答案是︰** 您可以使用修復金鑰，以還原或移動的閘道。 當您安裝閘道時，提供修復金鑰。
+
+
+            **問題︰** 修復金鑰的好處是什麼？  
+
+            **答案是︰** 它可用來移轉或修復您的閘道設定。 這也用於嚴重損壞修復。
 
 ## 疑難排解
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Where are the gateway logs located?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> See the tools section of the <bpt id="p2">[</bpt>troubleshooting article<ept id="p2">](powerbi-gateway-onprem-tshoot.md#tools)</ept>.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How can I see what queries are being sent to the on-premises data source?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You can enable query tracing.  This will include the queries being sent. Remember to change it back to the original value when done troubleshooting. Having query tracing enabled will cause the logs to be larger.
+            **問題︰** 所在的閘道器記錄檔？  
 
-You can also look at tools your data source has for tracing queries. For example, for SQL Server and Analysis Services you can use Extended Events or SQL Profiler.
+            **答案是︰** 請參閱 < 工具 > 一節的 [疑難排解文件](powerbi-gateway-onprem-tshoot.md#tools)。
+
+
+            **問題︰** 如何查看查詢所要傳送至內部部署資料來源？  
+
+            **答案是︰** 您可以啟用查詢追蹤。  這包括正在傳送的查詢。 請務必將它變更完成疑難排解時的原始值。 啟用追蹤的查詢將會導致似乎較大的記錄檔。
+
+您也可以查看您的資料來源有追蹤查詢的工具。 例如，SQL Server 和 Analysis Services，您可以使用擴充的事件或 SQL Profiler。

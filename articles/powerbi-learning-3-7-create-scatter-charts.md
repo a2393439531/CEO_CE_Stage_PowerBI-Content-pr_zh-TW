@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Scatter Charts"
-   description="Long live bubbles - see scatter charts in action"
+   pageTitle="散佈圖"
+   description="長時間 live 泡泡-作用中的散佈圖，請參閱"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Scatter Charts
+# 如何使用散佈圖
 
-If you want to compare two different measures, such as unit sales verses revenue, a common visualization to use is a scatter chart.
+如果您想要比較兩個不同的量值，例如單位銷售與營收，若要使用一般的視覺效果就是散佈圖。
 
 ![](media/powerbi-learning-3-7-create-scatter-charts/3-7_1.png)
 
-To create a blank chart, select <bpt id="p1">**</bpt>Scatter chart<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane. Drag and drop the two fields you want to compare from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane to the <bpt id="p2">*</bpt>X Axis<ept id="p2">*</ept> and <bpt id="p3">*</bpt>Y Axis<ept id="p3">*</ept> options buckets. At this point, your scatter chart probably just has a small bubble in the center of the visual - you need to add a measure to the <bpt id="p1">*</bpt>Details<ept id="p1">*</ept> bucket to indicate how you would like to segment your data. For example, if are comparing item sales and revenue, perhaps you want to split the data by category, or manufacturer, or month of sale.
+若要建立空白的圖表，請選取 **散佈圖** 從 **視覺效果** 窗格。 您想要比較的兩個欄位拖放 **欄位** 窗格 *X 軸* 和 *Y 軸* 選項值區。 此時，散佈圖可能有小泡泡視覺效果的中心-您需要的量值加入至 *詳細資料* 值區，以指出您想要分割您的資料的方式。 比方說，如果要比較的項目業績和營收，或許您想要依類別或製造商或每月的銷售資料分割。
 
-Adding an additional field to the <bpt id="p1">*</bpt>Legend<ept id="p1">*</ept> bucket color-codes your bubbles according to the field's value. You can also add a field to the <bpt id="p1">*</bpt>Size<ept id="p1">*</ept> bucket to alter the bubble size according to that value.
+加入額外的欄位，來 *圖例* bucket color-codes 您泡泡根據欄位的值。 您也可以加入欄位以 *大小* 更改泡泡大小根據該值的值區。
 
 ![](media/powerbi-learning-3-7-create-scatter-charts/3-7_2.png)
 
-Scatter charts have many visual formatting options as well, such as turning on an outline for each colored bubble and toggling individual labels. You can change the data colors for other chart types, as well.
+散佈圖有許多視覺格式設定選項，例如開啟每個泡泡，彩色的外框和切換個別的標籤。 您可以變更其他圖表類型，以及為資料的色彩。
 
 ![](media/powerbi-learning-3-7-create-scatter-charts/3-7_3.png)
 
-You can create an animation of your bubble chart's changes over time by adding a time-based field to the <bpt id="p1">*</bpt>Play Axis<ept id="p1">*</ept> bucket. Click on a bubble during an animation to see a trace of its path.
+您可以建立您的泡泡圖的動畫變更圖表的一段時間加入以時間為基礎的欄位來 *播放軸* 值區。 若要查看追蹤，其路徑動畫期間按一下泡泡。
 
 ![](media/powerbi-learning-3-7-create-scatter-charts/3-7_4.png)
 
->Note: Remember, if you only see one bubble in your scatter chart, it's because Power BI is aggregating your data, which is the default behavior. Add a category to the <bpt id="p1">*</bpt>Details<ept id="p1">*</ept> bucket, in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane, to get more bubbles.
+>注意︰ 請記住，是否您只會看到一個泡泡散佈圖中，這是因為 Power BI 彙總資料，這是預設行為。 新增類別 *詳細資料* 貯體，在 **視覺效果** ] 窗格中，以取得更多的泡泡。

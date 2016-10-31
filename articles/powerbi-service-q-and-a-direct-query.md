@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Using Q&amp;A with Power BI Gateway - Enterprise data (Preview)"
-   description="Documentation for using Power BI Q&amp;A natural language queries with Direct Query data and Enterprise Gateway data."
+   pageTitle="使用 Power BI 閘道企業資料 （預覽） 中的問與答"
+   description="使用直接查詢資料與企業閘道 」 資料的 Power BI 問與答自然語言查詢文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,68 +21,68 @@
    ms.author="mihart"/>
 
 
-# Enable Q&amp;A for Direct Query (Preview)
+# 啟用直接查詢 （預覽） 的問與答
 
-##  What is On-premises Data Gateway?  What is DirectQuery?
+##  什麼是內部部署資料閘道？  DirectQuery 是什麼？
 
-Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on-premises". The live connections are managed using a <bpt id="p1">[</bpt>gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept> and data and inquiries are sent back and forth using DirectQuery.
+Power BI 中的資料集可以匯入 Power BI，或者您可以建立連線至它們。 即時的連接的資料集通常稱為 「 內部 」。 使用管理即時連接 [閘道](powerbi-gateway-onprem.md) 和資料，以及查詢會傳送前或往後使用 DirectQuery。
 
-##  Q&amp;A for On-premises Data Gateway datasets
+##  問與答的內部部署資料閘道器的資料集
 
-If you'd like to use Q&amp;A with datasets you access through a gateway, you'll need to enable them first.
+如果您想要使用問與答，您可以透過閘道存取的資料集，您必須先啟用它們。
 
-Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. It may take several minutes to create the initial index and Power BI maintains and updates the index automatically as your data changes. Using Q&amp;A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&amp;A experience is supported in both cases, including using the data source with Cortana.
+啟用之後，Power BI 會建立資料來源的索引，並將該資料的子集上傳到 Power BI，以啟用詢問的問題。 可能需要幾分鐘的時間來建立初始的索引，Power BI 會維護並隨著資料變更會自動更新索引。 使用這些資料集的問答集與發行至 Power BI 資料行為相同。 在這兩種情況下，包括使用 Cortana 與使用資料來源支援完整的問與答經驗中可用的功能集。
 
-As you ask questions in Power BI, Q&amp;A determines the best visual to construct or report sheet to use to answer your question using an index of your dataset. After determining the best potential answer, Q&amp;A uses DirectQuery to fetch live data from the data source via the Enterprise Gateway to populate charts and graphs. This ensures Power BI Q&amp;A results always show the most up-to-date data directly from the underlying data source.
+您發問 Power BI 中，問與答決定最佳的視覺效果，建構或報表要用來使用您的資料集的索引問題答案的工作表。 在決定最佳的可能回應之後, 問與答 A 會使用 DirectQuery 資料來源擷取即時資料，透過 「 企業閘道 」 來填入圖表和圖形。 這可確保 Power BI 問與結果永遠會顯示最新的資料直接從基礎資料來源。
 
-Since Power BI Q&amp;A uses the text and schema values from your data source to determine how to query the underlying model for answers, searches for specific new or deleted text values (such as asking for a customer name related to a newly added text record) rely on the index being up-to-date with the latest values. Power BI automatically keeps the text and schema index up to date within a 60 minute window of changes.
+因為 Power BI 問答 A 會使用您的資料來源的文字和結構描述值來判斷如何查詢的基礎模型的解答，搜尋特定的新增或刪除文字值 （例如，要求與新加入的文字記錄相關的客戶名稱） 依賴索引掌握最新的值。 Power BI 會自動將文字和結構描述索引最新狀態的變更在 60 分鐘期間內。
 
 
 如需詳細資訊，請參閱：
 
-- What is the <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept>?
+- 什麼是 [內部資料閘道](powerbi-gateway-onprem.md)？
 
-- [Introduction to Power BI Q&amp;A](powerbi-service-q-and-a.md)
+- [介紹 Power BI 問與答](powerbi-service-q-and-a.md)
 
 
-##  Enable Q&amp;A
-Once you have the enterprise gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
+##  啟用問與答
+設定 「 企業閘道之後，請從 Power BI 連接到您的資料。  建立使用您的內部資料的儀表板，或上傳使用內部部署資料的.pbix 檔案。  您可能也已經在儀表板、 報表和已與您共用的資料集的內部資料。
 
-1.  In the upper-right corner of Power BI, select the cog icon <ph id="ph1">![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png)</ph> and choose <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+1.  在 Power BI 的右上角，選擇齒輪圖示 ![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png) 選擇 **設定**。
 
     ![](media/powerbi-service-q-and-a-direct-query/powerbi-settings.png)
 
-2.  Select <bpt id="p1">**</bpt>datasets<ept id="p1">**</ept> and choose the dataset to enable for Q&amp;A.
+2.  選取 **資料集** 選擇資料集，以啟用的問與答。
 
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 
-3. Expand <bpt id="p1">**</bpt>Q&amp;A and Cortana<ept id="p1">**</ept>, select the checkbox for <bpt id="p2">**</bpt>Turn on Q&amp;A for this dataset<ept id="p2">**</ept> and choose <bpt id="p3">**</bpt>Apply<ept id="p3">**</ept>.
+3. 展開 **問與答與 Cortana**, ，選取核取方塊， **開啟此資料集的問與答** 選擇 **套用**。
 
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 
 
-##  What data is cached and how is privacy protected?
+##  哪些資料會快取，以及如何保護隱私權？
 
-When you enable Q&amp;A for your on-premises data, a subset of your data is cached in the service. This is done to ensure that Q&amp;A works with a reasonable performance. We exclude values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&amp;A by unchecking <bpt id="p1">**</bpt>Turn on Q&amp;A for this dataset<ept id="p1">**</ept>, or when you delete your dataset.
+當您啟用問答集內部的資料時，您的資料子集會快取服務中。 這是為了要確保該問與答搭配合理的效能。 我們從快取中排除值超過 24 個字元。 當您停用問與答取消核取的幾個小時內刪除快取 **開啟此資料集的問與答**, ，或當您刪除您的資料集。
 
-##  Limitations during Public Preview
-During the Preview phase of this feature, there are several limitations:
+##  公用預覽期間的限制
+這項功能的預覽階段，有幾項限制︰
 
-- Initially the feature is only available for SQL Server 2016 Analysis Services data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&amp;A experience is not yet supported for this dataset type. Additional data sources supported by the enterprise gateway will be rolled out during the public preview.
+- 一開始此功能只適用於 SQL Server 2016 Analysis Services 資料來源。 此功能已最佳化，使用表格式資料。 某些功能適用於多維度資料來源，但完整的問與答經驗尚未支援此資料集類型。 支援企業閘道的其他資料來源會在公用預覽期間推出。
 
-- Full support for row level security defined in the SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&amp;A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
+- 無法一開始在公開預覽版本中使用 SQL Server Analysis Services 中定義的資料列層級安全性的完整支援。 在詢問問題的問答集，「 自動完成 」 的問題時輸入可以顯示字串值的使用者沒有存取權。 不過，將模型中定義的 RLS 遵守的報表和圖表的視覺效果，因此可以不公開任何基礎的數值資料。 選項來控制這個行為會在未來的更新中發行。
 
-- Q&amp;A does not work with Power BI Gateway-Personal data sources.
+- 問答集不適用於 Power BI 閘道個人資料來源。
 
 ## 請參閱
 
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI 快速了解](powerbi-service-auto-insights.md)
 
-[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
+[最佳化 Power BI 快速了解您的資料](powerbi-service-auto-insights-optimize.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

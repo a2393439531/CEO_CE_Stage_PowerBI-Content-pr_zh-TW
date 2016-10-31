@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Open a Power BI report in Reading View"
-   description="Open a Power BI report in Reading View"
+   pageTitle="在讀取檢視中開啟 Power BI 報表"
+   description="在讀取檢視中開啟 Power BI 報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,28 +20,29 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Open a Power BI report in Reading View  
-##   Reading View
-Reading View is a great way to explore the data in a Power BI report, without worrying that you'll break something.  You can browse the report, interact with the visualizations, and pin any of the visualizations to your dashboard. 
+# 在讀取檢視中開啟 Power BI 報表  
+##   讀取檢視
+讀取檢視是探索 Power BI 報表中的資料，而不必擔心，您將會中斷東西的絕佳方式。  您可以瀏覽報表、 互動視覺效果，以及任何視覺效果釘選儀表板。 
 
->[AZURE.NOTE] To edit the report and save your changes, <bpt id="p1">[</bpt>open it in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+>[AZURE.NOTE] 若要編輯的報表，然後儲存變更， [編輯檢視中開啟它](powerbi-service-go-from-reading-view-to-editing-view.md)。
 
-1.  <bpt id="p1">[</bpt>Create a report<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> and open it in Reading View.
+1.  
+            [建立報表](powerbi-service-create-a-new-report.md) 和閱讀檢視中開啟它。
 
-    -   From the left navigation pane, select the name of the report, or
+    -   從左側的導覽窗格中，選取報告的名稱，或
 
-    -   From a dashboard, select a tile, that was created from a report, to open the report.
+    -   從儀表板中，選取一張牌，所建立的報表，請開啟報表。
 
-2.  The report opens in Reading View.  
+2.  讀取檢視中開啟報表。  
 ![](media/powerbi-service-open-a-report-in-reading-view/readingView.png)
 
-3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start <bpt id="p1">[</bpt>interacting with your report<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>
+3.  有很多，您可以在 [讀取] 檢視中。  藉由按一下畫面底部的箭號，瀏覽報表開始。  這個範例報表有多個頁面。 現在開始 [與報表互動](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 ## 請參閱  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[開始使用 Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts ](powerbi-service-basic-concepts.md)
+[Power BI-基本概念 ](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)  

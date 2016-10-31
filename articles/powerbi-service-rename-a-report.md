@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Rename a report in Power BI"
-   description="Rename a report in Power BI"
+   pageTitle="在 Power BI 中的報表重新命名"
+   description="在 Power BI 中的報表重新命名"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,25 +19,25 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Rename a report in Power BI
+# 在 Power BI 中的報表重新命名
 
-##  What happens when I rename a report?
+##  當我重新命名報表時，會發生什麼事？
 
-Don't like the default name of a report in Power BI?  A new name is just a click away.  And renaming a report does not rename the associated dataset or <bpt id="p1">[</bpt>rename the associated dashboard<ept id="p1">](powerbi-service-rename-a-dashboard.md)</ept>.
+不喜歡在 Power BI 報表的預設名稱嗎？  您只要按一下新的名稱。  重新命名報表並不會重新命名相關聯的資料集，或 [重新命名相關聯的儀表板](powerbi-service-rename-a-dashboard.md)。
 
-## Rename a report
+## 重新命名報表
 
-1.  In the left navigation pane, locate the report, right-click it, and select <bpt id="p1">**</bpt>Rename<ept id="p1">**</ept>.
+1.  在左方瀏覽窗格中，找出的報表，按一下滑鼠右鍵，然後選取 **重新命名**。
 
     ![](media/powerbi-service-rename-a-report/Rename-a-report2.png)
 
-2.  Type the new name.
+2.  輸入新名稱。
 
 
 ##  請參閱
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+[Power BI-基本概念](powerbi-service-basic-concepts.md)*
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

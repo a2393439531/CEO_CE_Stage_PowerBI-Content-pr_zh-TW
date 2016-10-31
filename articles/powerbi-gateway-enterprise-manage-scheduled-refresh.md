@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your data source - Import/Scheduled Refresh"
-description="How to manage the on-premises data gateway gateway and data sources that belong to that gateway. This article is specific to data sources that can be used with import/scheduled refresh."
+pageTitle="管理您的資料來源-匯入/排程重新整理"
+description="如何管理內部部署資料閘道閘道和資料來源屬於該閘道。 本文旨在說明可用來排程匯入/重新整理資料來源。"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,49 +19,50 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/01/2016"
 ms.author="asaxton"/>
-# Manage your data source - Import/Scheduled Refresh
+# 管理您的資料來源-匯入/排程重新整理
 
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
+當您安裝內部部署資料閘道之後時，您必須加入可以搭配閘道使用的資料來源。 這篇文章將探討如何使用閘道器和用於排定的重新整理，相對於 DirectQuery 或即時連接的資料來源。
 
-## Download and install the gateway
+## 下載並安裝閘道
 
-You can download the gateway from the Power BI service. Select <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Data Gateway<ept id="p2">**</ept>, or by going to the <bpt id="p3">[</bpt>gateway download page<ept id="p3">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept>.
+您可以從 Power BI 服務的閘道。 選取 **下載** > **資料閘道**, ，或移至 [閘道下載頁面](https://go.microsoft.com/fwlink/?LinkId=698861)。
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
-## Add a gateway
+## 新增閘道
 
-To add a gateway, simply <bpt id="p1">[</bpt>download<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=698863)</ept> and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+若要新增閘道，只要 [下載](https://go.microsoft.com/fwlink/?LinkId=698863) 和您的環境中的伺服器上安裝 「 企業閘道 」。 安裝閘道之後，它會顯示在清單中下閘道 **管理閘道**。
 
-> [AZURE.NOTE] <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept> will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] 
+            **管理閘道** 直到至少一個閘道的系統管理員，就不會顯示。 這種情形是藉由新增為系統管理員，或您安裝和設定閘道。
 
-## Remove a gateway
+## 移除閘道
 
-Removing a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
+移除閘道也會刪除該閘道] 下的任何資料來源。  這也會中斷任何儀表板和依賴這些資料來源的報表。
 
-1.  Select the gear icon <ph id="ph1">![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png)</ph> in the upper-right corner &gt; <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+1.  選擇齒輪圖示 ![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png) 右上角 > **管理閘道**。
 
-2.  Gateway &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>
+2.  閘道 > **移除**
 
     ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
 
-## Add a data source
+## 加入資料來源
 
-You can add a data source by either selecting a gateway and click <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept>, or go to Gateway &gt; <bpt id="p2">**</bpt>Add data source<ept id="p2">**</ept>.
+您可以加入資料來源選取閘道器和按一下 **新增資料來源**, ，或移至閘道 > **新增資料來源**。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
 
-You can then select the <bpt id="p1">**</bpt>Data Source Type<ept id="p1">**</ept> from the list. All of the data sources listed can be used for scheduled refresh with the enterprise gateway. Analysis Services, SQL Server and SAP HANA can be used for either scheduled refresh, or DirectQuery/live connections.
+然後您可以選取 **資料來源類型** 從清單中。 所有列出的資料來源可用來與 「 企業閘道 」 排定的重新整理。 Analysis Services、 SQL Server 和 SAP HANA 可以用於排定的重新整理或 DirectQuery/即時連線。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2.png)
 
-You will then want to fill in the information for the data source which includes the source information and credentials used to access the data source.
+然後要填滿包含來源資訊和認證來存取資料來源的資料來源的資訊。
 
-> [AZURE.NOTE] All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how <bpt id="p1">[</bpt>credentials<ept id="p1">](powerbi-gateway-onprem.md#credentials)</ept> are stored.
+> [AZURE.NOTE] 資料來源的所有查詢會使用這些認證來都執行。 如需詳細資訊，請參閱主要內部部署資料閘道文件，以深入了解如何 [認證](powerbi-gateway-onprem.md#credentials) 儲存。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-oracle.png)
 
-You can click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> after you have everything filled in.  You can now use this data source for scheduled refresh with your on-premises data. You will see <bpt id="p1">*</bpt>Connection Successful<ept id="p1">*</ept> if it succeeded.
+您可以按一下 **新增** 填入的所有項目之後。  您現在可以使用此資料來源為排定的重新整理您的內部資料。 您會看到 *連線成功* 如果成功。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
@@ -70,53 +71,53 @@ You can click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> after you have every
 
 ### 進階設定
 
-You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. [進一步了解](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+您可以設定您的資料來源的私密性等級。 這會控制如何 mashed 資料，設定。 這只用於排定的重新整理。 [進一步了解](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
-## Remove a data source
+## 移除資料來源
 
-Removing a data source will break any dashboards or reports that rely on the given data source.  
+移除資料來源會中斷任何儀表板或仰賴特定的資料來源的報表。  
 
-To remove a Data Source, go to the Data Source &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+若要移除資料來源，請移至資料來源 > **移除**。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
-## Manage administrators
+## 管理系統管理員
 
-On the Administrators tab, for the gateway, you can add, and remove, users that can administer the gateway. You can only add users at this time. Security groups cannot be added.
+在系統管理員] 索引標籤的 [閘道，您可以加上移除，使用者可以管理閘道。 您只可以在此階段中新增使用者。 無法新增安全性群組。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
 
 ## 管理使用者
 
-On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
+[使用者] 索引標籤的資料來源，您可以加入，並移除使用者或安全性群組，可以使用此資料來源。
 
-> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
+> [AZURE.NOTE] 使用者清單只可以發行報表的控制項。 報表擁有者可以建立儀表板或內容的組件，並與其他使用者所共用。
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
-## Using the data source for scheduled refresh
+## 使用排定的重新整理資料來源
 
-After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
+建立資料來源之後，它可使用其中一個 DirectQuery 的連線，或透過排定的重新整理。 
 
-> [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> [AZURE.NOTE] 伺服器和資料庫名稱必須符合 Power BI Desktop 與內部部署資料閘道器內的資料來源之間 ！
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use <bpt id="p1">*</bpt>SERVER\INSTANCE<ept id="p1">*</ept>, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
+您的資料集與在閘道中的資料來源之間的連結根據您的伺服器名稱和資料庫名稱。 這些都必須相符。 比方說，如果您提供之 IP 位址的伺服器名稱，在 Power BI Desktop，您必須為資料來源的閘道設定中使用的 IP 位址。 如果您使用 *伺服器 \ 執行個體*, ，在 Power BI Desktop，您必須使用相同資料來源的閘道設定中。
 
-If you are listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
+如果您列出 **的使用者** ] 索引標籤設定閘道，以及伺服器和資料庫名稱比對中的資料來源，您會看到閘道使用排定的重新整理選項。
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
-> [AZURE.WARNING] If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources are not added to the gateway, you will not see the gateway as available for scheduled refresh.
+> [AZURE.WARNING] 如果您的資料集包含多個資料來源，必須在閘道中加入每個資料來源。 如果一或多個資料來源不會加入至閘道，您看不閘道為可進行排定的重新整理。
 
 ## 限制
 
-- OAuth is not a supported authentication scheme with the On-Premises Data Gateway. You cannot add data sources that require OAuth. If your dataset has a data source requiring OAuth, you will not be able to use the gateway for scheduled refresh.
+- OAuth 是不支援的驗證配置與內部部署資料閘道。 您無法新增資料來源需要 OAuth。 如果您的資料集需要 OAuth 的資料來源，您將無法使用閘道進行排定的重新整理。
 
 ## 另請參閱
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[內部資料閘道](powerbi-gateway-onprem.md)  
+[內部資料閘道-深入](powerbi-gateway-onprem-indepth.md)  
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

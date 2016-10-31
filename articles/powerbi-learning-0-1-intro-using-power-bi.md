@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Using Power BI"
-   description="Learn the common flow of work in Power BI"
+   pageTitle="使用 Power BI"
+   description="了解常見的 Power BI 中的工作流程"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,19 +22,19 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Using Power BI
+# 使用 Power BI
 
-Now that you know the basics of Power BI, let’s jump into some hands-on experiences and a guided tour. Your video tour guide is <bpt id="p1">**</bpt>Will Thompson<ept id="p1">**</ept>, a Program Manager on the Power BI team at Microsoft. There are a few guest guides too, a little later on in the course.
+您現在知道 Power BI 的基本概念，讓我們跳到一些實際操作的經驗和導覽。 視訊教學課程指南 **將 Thompson**, ，Microsoft Power BI 小組經理。 有幾個客體指南太，稍後在本課程。
 
-As Will explains the many things you can do with Power BI, keep in mind that all of these activities, and all the analysis you can do with Power BI, generally follow a common flow. The <bpt id="p1">**</bpt>common flow<ept id="p1">**</ept> of activity in Power BI is the following:
+將說明您可以使用 Power BI 做許多項目，請記住所有這些活動，以及如何使用 Power BI 的所有分析通常依照一般流程。  **一般流程** 的 Power BI 中的活動，如下所示︰
 
--   Bring data into Power BI Desktop, and create a report.
--   Publish to the Power BI service, where you create new visualizations or build dashboards
--   Share your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in Power BI Mobile apps
+-   將資料送回 Power BI Desktop，並建立報表。
+-   發行至 Power BI 服務，您建立新的視覺效果或組建儀表板
+-   與其他人，特別是出門的人共用儀表板
+-   檢視並與共用的儀表板和報表互動 Power BI 行動應用程式中
 
 ![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
-As mentioned earlier, you might spend all your time in the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept>, getting data and creating dashboards – that’s just fine. Someone else on your team might spend all of her time in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, which is fine too. In order to help you understand the full continuum of Power BI and what it can do, we’ll show you all of it… then you can decide how to use it to your best advantage.
+如先前所述，您可能需要花費在所有時間 **Power BI 服務**, 、 取得資料，以及建立儀表板 – 這沒有問題。 其他小組成員可能需要花費的時間中的所有 **Power BI Desktop**, ，這是沒問題。 為了協助您了解 Power BI，它可以做什麼的完整連續體中，我們將告訴您它的全部... 然後您可以決定如何使用功能。
 
-So let’s jump in, and let Will guide us through the experience. The first order of business is to understand the basic building blocks of Power BI, which will provide a solid basis for learning how Power BI turns data into cool reports and visuals.
+因此，我們跳入，並讓將會引導我們的經驗。 第一件事是了解 Power BI，以了解 Power BI 將資料轉成酷炫的報表和視覺效果的方式提供穩固的基礎基本建置組塊。

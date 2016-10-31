@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports on the iPad app"
-   description="Learn about viewing reports in the Power BI mobile app for iOS on the iPad. You create reports in the Power BI service, then interact with them in the mobile apps."
+   pageTitle="IPad 應用程式上的報表"
+   description="深入了解適用於 ipad 的 iOS Power BI 行動應用程式中檢視報表。 Power BI 服務，來建立報表，然後在行動應用程式互動。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,99 +19,101 @@
    ms.workload="powerbi"
    ms.date="10/10/2016"
    ms.author="maggies"/>
-# <a name="reports-on-the-ipad-app-(power-bi-for-ios)"></a>Reports on the iPad app (Power BI for iOS)
+# <a name="reports-on-the-ipad-app-(power-bi-for-ios)"></a>IPad 應用程式 (適用於 iOS 的 Power BI) 報表
 
-A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You <bpt id="p1">[</bpt>create and customize reports<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> in the Power BI service <bpt id="p2">[</bpt>(https://powerbi.com)<ept id="p2">](https://powerbi.com)</ept>.
+報表是您的資料，以代表不同的結果和深入觀點，從該資料的視覺效果的互動式檢視。 您 [建立和自訂報表](powerbi-service-create-a-new-report.md) 在 Power BI 服務 [(https://powerbi.com)](https://powerbi.com)。
 
-Then you view and interact with reports on the <bpt id="p1">[</bpt>iPad app for Microsoft Power BI<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> for iOS.
+然後您檢視與報表互動上 [Microsoft Power BI 的 iPad 應用程式](http://go.microsoft.com/fwlink/?LinkId=522062) ios。
 
-## <a name="open-reports"></a>Open reports
+## <a name="open-reports"></a>開啟 [報表]
 
--   Tap <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> at the top of <bpt id="p2">**</bpt>My Workspace<ept id="p2">**</ept>.
+-   點選 **報表** 頂端 **我的工作區**。
 
--   Or tap a tile on a dashboard, and tap the report icon <ph id="ph1">![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-open-report-icon.png)</ph>.
+-   或點選儀表板上的磚，然後點選報表圖示 ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-open-report-icon.png)。
 
-    > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles created by asking questions with Q&amp;A don't open reports.
+    > [AZURE.NOTE]  並非所有的牌可以開啟報表。 例如，透過問與答提出問題所建立的磚不開啟報表。
 
--   Or tap the search icon <ph id="ph1">![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-search-icon.png)</ph> in the upper-right corner to search for it by name, or see the list of reports you've visited recently.
+-   點選 [搜尋] 圖示或者 ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-search-icon.png) 右上角，依名稱搜尋它，或參閱您最近造訪過的報表清單中。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-search.png)
 
-## <a name="see-other-pages-in-the-report"></a>See other pages in the report
+## <a name="see-other-pages-in-the-report"></a>請參閱報表中的其他頁面
 
--   Tap the tabs at the bottom of the app.
+-   點選 [] 索引標籤底部的 [應用程式。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-tabs.png)
 
 
-## <a name="cross-filter-a-report-page"></a>Cross-filter a report page
+## <a name="cross-filter-a-report-page"></a>交叉篩選報表頁面
 
--   Tap a bar or column in a chart.
+-   點選列或資料行在圖表中。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Xflter.png)
 
-    Tapping the <bpt id="p1">**</bpt>Raw Materials<ept id="p1">**</ept> column in the lower chart highlights related values in the upper chart.
+    點選 **原料** 較低的圖表中的資料行反白顯示在上方圖表相關的值。
 
-## <a name="sort-a-chart"></a>Sort a chart
+## <a name="sort-a-chart"></a>排序圖表
 
--  Tap the chart, tap the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and tap the field name.
+-  點選圖表中，點選 [省略符號 (**...**) 點選欄位名稱。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-sort-order.png)
 
--   To reverse the sort order, tap the <bpt id="p1">**</bpt>Sort by<ept id="p1">**</ept> arrow, then tap the same field name again.
+-   若要反轉排序次序，請點選 **排序** 箭號，然後點選一次名稱相同的欄位。
 
-## <a name="drill-down-and-up-in-a-chart"></a>Drill down and up in a chart
+## <a name="drill-down-and-up-in-a-chart"></a>向下切入圖表中的 [向下和向上
 
-Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only <bpt id="p1">[</bpt>add drill down to a visualization<ept id="p1">](powerbi-service-drill-down-in-a-visualization.md)</ept> in a report in Power BI. 
+有時候您可以向下切入圖表以查看圖表的一個部分所組成的值中。 您可以向上或向下切入 iPad 應用程式，但您無法將它新增至視覺效果。 您只能 [新增到視覺效果](powerbi-service-drill-down-in-a-visualization.md) Power BI 中的報表中。 
 
-> [AZURE.NOTE]  Currently, drill-down doesn't work on maps in the iPad.
+> [AZURE.NOTE]  目前，向下鑽研不適用於 iPad 中的對應。
 
--   Tap a visual. If it has a down arrow in the upper-right corner, then you can drill down. Tap the arrow, then tap a value in the visual &amp;#151; in this case, the <bpt id="p1">**</bpt>Oct<ept id="p1">**</ept> column.
+-   點選 [視覺效果。 如果在右上角有向下箭號，然後您可以向下鑽研。 點選箭號，然後點選 [視覺效果 & #151; 中的值在此情況下， **年 10 月** 資料行。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillDownNew.png)
 
--   To drill back up, tap the up arrow in the upper-left corner.
+-   若要備份的向下鑽研，點選左上角中的向上箭號。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillUpNew.png)
 
-## <a name="filter-a-power-bi-report"></a>Filter a Power BI report
+## <a name="filter-a-power-bi-report"></a>若要篩選 Power BI 報表
 
-You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has <bpt id="p1">[</bpt>added filters to the page<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept> in the Power BI service (<bpt id="p2">[</bpt>https://powerbi.com<ept id="p2">](http://powerbi.com/)</ept>). In the Power BI service, you can also add other fields as filters for a specific visual. 
+您永遠可以使用本身的視覺效果中的欄位做為篩選，以篩選 Power BI 報表中的個別視覺效果。 您也可以篩選在報表中，整個頁面，如果您或報表建立者擁有 [篩選器新增至頁面](powerbi-service-add-a-filter-to-a-report.md) Power BI 服務中 ([https://powerbi.com](http://powerbi.com/))。 在 Power BI 服務中，您也可以加入其他欄位做為特定的視覺效果的篩選。 
 
-> [AZURE.NOTE]  If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
+> [AZURE.NOTE]  如果您沒有編輯報表的權限，您可以變更篩選條件，但您無法儲存這些變更。 
 
-1. In a report, expand the Filters pane.
+1. 在報表中，展開 [篩選] 窗格。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_WinAppCollapsFilter.png)
 
-    If the report creator has set page-level filters, when you select a visual you see <bpt id="p1">*</bpt>visual-level filters<ept id="p1">*</ept> for that visual, and <bpt id="p2">*</bpt>page-level filters<ept id="p2">*</ept> for the whole page.
+    如果當您選取視覺效果時，報表建立者已設定頁面層級篩選，您會看到 *visual 層級篩選* 該視覺，和 *頁面層級篩選* 整個頁面。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-filter-pane-basic-visual.png)
 
-2. Select check boxes for the values you want.
+2. 選取您想要的值的核取方塊。
 
-3. Or you can switch the filtering mode. Tap <bpt id="p1">**</bpt>Basic filtering<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Advanced filtering<ept id="p2">**</ept> to select values using expressions instead.
+3. 或者，您可以切換的篩選模式。 點選 **基本篩選** ，然後選取 **進階篩選** 選取改為使用運算式的值。
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-filter-type.png)
 
-     Number fields offer expressions such as <bpt id="p1">**</bpt>is less than<ept id="p1">**</ept>, <bpt id="p2">**</bpt>is greater than<ept id="p2">**</ept>, <bpt id="p3">**</bpt>is not<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>is blank<ept id="p4">**</ept>.
+     數字欄位會提供這類運算式 **是小於**, ，**大於**, ，**不**, ，和 **是空白的**。
 
-     Text fields offer expressions such as <bpt id="p1">**</bpt>contains<ept id="p1">**</ept>, <bpt id="p2">**</bpt>doesn't start with<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>is not<ept id="p3">**</ept>.
+     文字欄位會提供這類運算式 **包含**, ，**開頭不**, ，和 **不**。
 
        ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-filter-pane-advanced.png)
 
-4.  To add other fields to the Filters pane, go to the Power BI service (<bpt id="p1">[</bpt>https://powerbi.com<ept id="p1">](http://powerbi.com/)</ept>), <bpt id="p2">[</bpt>add filters to the page<ept id="p2">](powerbi-service-add-a-filter-to-a-report.md)</ept>, and save the report.
+4.  若要將其他欄位加入至 [篩選] 窗格中，移至 Power BI 服務 ([https://powerbi.com](http://powerbi.com/))， [將篩選加入至頁面](powerbi-service-add-a-filter-to-a-report.md), ，並儲存報表。
 
-## <a name="go-back-to-my-workspace"></a>Go back to My Workspace
+## <a name="go-back-to-my-workspace"></a>回到我的工作區
 
--  Tap the back arrow, or tap the report name &gt; <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+-  點選 [上一頁] 箭頭，或點選報表名稱 > **我的工作區**。
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-breadcrumb.png)
 
 
 ### <a name="see-also"></a>請參閱 
 
--  <bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI.
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-  
+            [開始使用 iPad 應用程式](powerbi-mobile-iphone-app-get-started.md) Power bi。
+- 問題了嗎？ 
+            [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)
 
 

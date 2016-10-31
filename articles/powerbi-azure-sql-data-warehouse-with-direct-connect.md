@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Azure SQL Data Warehouse with DirectQuery"
-   description="Azure SQL Data Warehouse with DirectQuery"
+   pageTitle="Azure SQL 資料倉儲和 DirectQuery"
+   description="Azure SQL 資料倉儲和 DirectQuery"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,57 +20,57 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Azure SQL Data Warehouse with DirectQuery
+# Azure SQL 資料倉儲和 DirectQuery
 
-Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metrics you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the <bpt id="p1">**</bpt>Open in Power BI<ept id="p1">**</ept> button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
+Azure SQL 資料倉儲和 DirectQuery 可讓您建立動態報告根據資料與度量您已經有 Azure SQL 資料倉儲中。 使用 DirectQuery，查詢會傳送回到您的 Azure SQL 資料倉儲，即時，當您瀏覽資料。 加上的小數位數 SQL 資料倉儲可讓使用者在數分鐘內針對數 tb 的資料建立動態報告。 此外，導入 **Power BI 中開啟** ] 按鈕可讓使用者不必手動指定資訊直接連線至其 SQL 資料倉儲的 Power BI。
 
-NOTES: When using the SQL Data Warehouse connector:
+附註︰ 當使用 SQL 資料倉儲連接器︰
 
--   Specify the fully qualified server name when connecting (see below for details)
+-   連接 （細節請見下文） 時，請指定完整的伺服器名稱
 
--   Ensure firewall rules for the server are configured to "Allow access to Azure services"
+-   請確定伺服器防火牆規則設定為 [允許存取 Azure 服務]
 
--   Every action such as selecting a column or adding a filter will directly query the data warehouse
+-   每個動作，例如選取資料行或新增篩選條件會直接查詢資料倉儲
 
--   Tiles are set to refresh approximately every 15 minutes and refresh does not need to be scheduled.  This can be adjusted in the Advanced settings when you connect.
+-   磚會設定為大約每隔 15 分鐘重新整理，而不需要重新整理排程。  這可以調整進階設定中，當您連接。
 
--   Q&amp;A is not available for DirectQuery datasets
+-   問答集不適用於 DirectQuery 資料集
 
--   schema changes are not picked up automatically
+-   不會自動挑選結構描述變更
 
-These restrictions and notes may change as we continue to improve the experiences. The step to connect are detailed below.
+隨著我們持續改善使用體驗，可能會變更這些限制和備註。 若要連接的步驟如下所述。
 
-## Using the 'Open in Power BI' button
+## 使用 '在 Power BI 中開啟] 按鈕
 
-The easiest way to move between your SQL Data Warehouse and Power BI is with the <bpt id="p1">**</bpt>Open in Power BI<ept id="p1">**</ept> button within the Azure Preview Portal. This button allows you to seamlessly begin creating new dashboards in Power BI.
+SQL 資料倉儲與 Power BI 之間移動的最簡單方式是使用 **Power BI 中開啟** Azure 預覽入口網站中的按鈕。 此按鈕可讓您順暢地開始在 Power BI 中建立新的儀表板。
 
-1. To get started, navigate to your SQL Data Warehouse instance in the Azure Preview Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
+1. 若要開始，瀏覽至您在 Azure 預覽入口網站中的 SQL 資料倉儲執行個體。 請注意，SQL 資料倉儲中只能有出現在 Azure 預覽入口網站這一次。
 
-2. Click the <bpt id="p1">**</bpt>Open in Power BI<ept id="p1">**</ept> button
+2. 按一下 [ **Power BI 中開啟** 按鈕
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/openinpowerbi.png)
 
-3. If we are not able to sign you in directly or if you do not have a Power BI account, you will need to sign in.
+3. 如果我們無法將您直接登入，或您沒有 Power BI 帳戶，您必須登入。
 
-4. You will be directed to the SQL Data Warehouse connection page, with the information from your SQL Data Warehouse pre-populated. Enter your credentials and hit connect to create a connection.
+4. 您會被導向至 SQL 資料倉儲連線頁面中，從預先填入您 SQL 資料倉儲的資訊。 輸入您的認證，並叫用連接以建立連接。
 
-## Connecting through Power BI
+## 透過 Power BI 連接
 
-SQL Data Warehouse is also listed on the Power BI Get Data page. 
+SQL 資料倉儲也會列在 Power BI 取得資料] 頁面上。 
 
-1. Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> at the bottom of the left navigation pane.  
+1. 選取 **取得資料** 左的導覽窗格的底部。  
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/GetDatabutton.png)
 
-2. Within <bpt id="p1">**</bpt>Databases<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Get<ept id="p2">**</ept>.
+2. 內 **資料庫**, ，請選取 **取得**。
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/databases.png)
 
-3. Select <bpt id="p1">**</bpt>SQL Data Warehouse<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.
+3. 選取 **SQL 資料倉儲** \> **連接**。
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/azuresqldatawarehouseconnect.png)
 
-4. Enter the necessary information to connect. The <bpt id="p1">**</bpt>Finding Parameters<ept id="p1">**</ept> section below shows where this data can be located in your Azure Portal.
+4. 輸入連接所需的資訊。  **尋找參數** 下一節將示範這項資料位置位於您的 Azure 入口網站。
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/servername.png)
    
@@ -78,25 +78,26 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
    
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/username.png)
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The username will be a user that is defined in your Azure SQL Data Warehouse instance.
+    > 
+            **請注意**︰ 使用者名稱會在您的 Azure SQL 資料倉儲執行個體中定義的使用者。
 
-5. Drill into the dataset by selecting the new tile or the newly created dataset, indicated by the asterisk. This dataset will have the same name as your database.
+5. 藉由選取新的磚或新建立的資料集，以星號表示鑽研資料集。 此資料集必須與您的資料庫相同的名稱。
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/dataset2.png)
 
-6. You can explore all of the tables and columns. Selecting a column will send a query back to the source, dynamically creating your visual. Filters will also be translated into queries back to your data warehouse. These visuals can be saved in a new report and pinned back to your dashboard.
+6. 您可以瀏覽的所有資料表和資料行。 選取資料行，將查詢傳送回來源，以動態方式建立視覺效果。 篩選器也會轉譯成回到您的資料倉儲的查詢。 這些視覺效果可以儲存在新的報表，並釘選回到您的儀表板。
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/explore3.png)
 
-## Finding Parameter Values
+## 尋找參數值
 
-Your fully qualified server name and database name can be found in the Azure Preview Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
+Azure Preview 入口網站中可以找到您完整的伺服器名稱和資料庫名稱。 請注意，SQL 資料倉儲中只能有出現在 Azure 預覽入口網站這一次。
 
 ![](media/powerbi-azure-sql-data-warehouse-with-directquery/azureportal.png)
 
 ## 請參閱
 
-[Get started with Power BI](powerbi-service-get-started.md)  
-[Get Data for Power BI](powerbi-service-get-data.md)  
-[Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[開始使用 Power BI](powerbi-service-get-started.md)  
+[取得 Power BI 中的資料](powerbi-service-get-data.md)  
+[Azure SQL 資料倉儲](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

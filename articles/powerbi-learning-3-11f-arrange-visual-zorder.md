@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Z-order"
-   description="Control how your report elements overlap with each other"
+   pageTitle="疊置順序"
+   description="控制您的報表項目彼此重疊的方式"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,16 +22,16 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Arrange the Z-order of Report Elements
+# 排列報表項目的 Z 順序
 
-When you have lots of elements on a report, Power BI lets you manage how they overlap with each other. How items are layered, or arranged on top of one another, is often referred to as the z-order.
+當您在報表上有許多項目時，Power BI 可讓您管理如何彼此重疊。 項目層級，或在彼此之上排列通常稱為疊置順序。
 
-To manage the z-order of elements in a report, select an element, and use the <bpt id="p1">**</bpt>Arrange<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab of the ribbon to change its z-order.
+若要管理報表中的項目疊置順序，選取一個項目，並使用 **排列** 按鈕 **首頁** 來變更它的疊置順序的功能區] 索引標籤。
 
 ![](media/powerbi-learning-3-11f-arrange-visual-zorder/3-11f_1.png)
 
-By using the options in the <bpt id="p1">**</bpt>Arrange<ept id="p1">**</ept> button menu, you can get the ordering of elements on you report just the way you want it. You can move a visual one layer forward or backward, or send it all the way to the front of the back of the order.
+使用中的選項 **排列** 按鈕功能表上，您可以取得您想要的方式排序您的報表上的項目。 您可以移動 visual 一層，向前或向後，或將它傳送到前面的順序的後面。
 
-Using the Arrange button is particularly useful when using shapes as decorative backgrounds or borders, or to highlight particular sections of an individual chart or graph. You can also use them to create a background, such as the following light-blue rectangle being used for a report title background.
+使用圖形為裝飾的背景或框線，或反白顯示個別的圖表或圖形的特定區段時，使用 [排列] 按鈕會特別有用。 您也可以使用它們來建立的背景，例如用於報表標題背景下列 light 藍色矩形。
 
 ![](media/powerbi-learning-3-11f-arrange-visual-zorder/3-11f_2.png)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Reorder pages in a report in Power BI"
-   description="Reorder pages in a report in Power BI"
+   pageTitle="重新排列在 Power BI 報表中的頁面"
+   description="重新排列在 Power BI 報表中的頁面"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,12 +20,12 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Reorder pages in a report in Power BI  
+# 重新排列在 Power BI 報表中的頁面  
 
-In Power BI, drag the tab where you want it in the report and let go.  
+在 Power BI 中拖曳您想要讓報表並放開] 索引標籤。  
 ![](media/powerbi-service-reorder-pages-in-a-report/reorder.gif)
 
 ## 另請參閱  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,39 +1,39 @@
-## Define roles and rules within Power BI Desktop
+## 定義角色和 Power BI Desktop 中的規則
 
-You can define roles and rules within Power BI Desktop. When you publish to Power BI, it will also publish the role definitions.
+您可以定義角色和 Power BI Desktop 中的規則。 當您發行至 Power BI 時，它也會發行角色定義。
 
-If you want to take advantage of dynamic security, you will need to enable the preview switch Enable cross filtering in both directions for DirectQuery. This will allow the ability to cross filter and apply the security filter in both directions.
+如果您想要利用動態安全性，您必須啟用預覽參數，以啟用跨 directquery 篩選兩個方向。 這可讓交叉篩選和套用安全性篩選兩個方向的能力。
 
 ![](./media/rls-desktop-define-roles/powerbi-desktop-preview-bi-directional-directquery.png)
 
-To define security roles, you can do the following.
+若要定義安全性角色，您可以執行下列程式碼。
 
-1.  Import data into your Power BI Desktop report, or configure a DirectQuery connection.
+1.  Power BI Desktop 報表時，將資料匯入或 DirectQuery 連線的設定。
 
-    > [AZURE.NOTE] You cannot define roles within Power BI Desktop for Analysis Services live connections. You will need to do that within the Analysis Services model.
+    > [AZURE.NOTE] 您無法定義 Analysis Services 即時連接 Power BI Desktop 中的角色。 您必須執行的 Analysis Services 模型中。
 
-2.  Select the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab.
+2.  選取 **模型** ] 索引標籤。
 
-3.  Select <bpt id="p1">**</bpt>Manage Roles<ept id="p1">**</ept>.
+3.  選取 **管理角色**。
 
     ![](./media/rls-desktop-define-roles/powerbi-desktop-security.png)
 
-4.  Select <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.
+4.  選取 **建立**。
 
     ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
 
 5.  提供角色的名稱。 
-6.  Select the table that you want to apply a DAX rule.
-7.  Enter the DAX expressions. This expression should return a true or false. For example: [Entity ID] = “Value”.
+6.  選取您想要將 DAX 規則套用的資料表。
+7.  輸入 DAX 運算式。 此運算式應該會傳回 true 或 false。 例如: [實體識別碼] ="Value"。
 
-    > [AZURE.NOTE] You can use <bpt id="p1">*</bpt>username()<ept id="p1">*</ept> within this expression. Be aware that <bpt id="p1">*</bpt>username()<ept id="p1">*</ept> will have the format of <bpt id="p2">*</bpt>DOMAIN\username<ept id="p2">*</ept> within Power BI Desktop. Within the Power BI service, it will be in the format of the user's UPN.
+    > [AZURE.NOTE] 您可以使用 *username （)* 這個運算式中。 請注意， *username （)* 會有以下格式的 *網域 \ 使用者名稱* Power BI Desktop 中。 在 Power BI 服務中，它會在使用者的 UPN 的格式。
 
     ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 
-8.  After you have created the DAX expression, you can select the check above the expression box to validate the expression.
+8.  您已經建立 DAX 運算式之後，您可以選取驗證運算式的運算式方塊上方的核取。
 
     ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
 
-9.  Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.
+9.  選取 **儲存**。
 
-You cannot assign users to a role within Power BI Desktop. This is done within the Power BI service. You can enable dynamic security within Power BI Desktop by making use of the <bpt id="p1">*</bpt>username()<ept id="p1">*</ept> DAX functions and having the proper relationships configured.
+您無法將使用者指派至 Power BI Desktop 內的角色。 這是 Power BI 服務中。 您可以啟用 Power BI Desktop 的動態安全性，藉由使用 *username （)* DAX 函數並設定適當的關聯性。

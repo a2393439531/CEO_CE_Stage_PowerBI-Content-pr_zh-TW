@@ -1,10 +1,10 @@
-<properties pageTitle="Documentation Example - Tables in Markdown" description="This is an example document" title="Documentation Example - Tables in Markdown" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-Markdown 中的資料表" description="這是範例文件" title="Documentation Example - Tables in Markdown" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
 
 
-# Example - Markdown Tables #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# 範例-Markdown 資料表 #
+這是用來測試及驗證 azure.microsoft.com 的發佈系統的範例文件文件。  
 
-The content between the lines below demonstrates the use of the Markdown extension that is used in GitHub Flavored Markdown to render tables. 
+下列程式行之間的內容中，示範如何使用 GitHub 特定 Markdown 中用來呈現資料表的 Markdown 延伸模組。 
 
 ---
 
@@ -15,13 +15,13 @@ The content between the lines below demonstrates the use of the Markdown extensi
 | Apache Pig       | 0.11       |
 | Apache Sqoop       | 1.4.3       |
 | Apache Oozie       | 3.2.2       |
-| Apache HCatalog       | Merged with Hive       |
-| Apache Templeton       | Merged with Hive       |
-| Ambari       | API v1.0       |
+| Apache HCatalog       | 與 Hive 合併       |
+| Apache Templeton       | 與 Hive 合併       |
+| Ambari       | API 1.0 版       |
 
 ---
 
-The content between the lines below demonstrates the same table rendered using HTML.  Note in this case we are specifying a table border in the HTML:
+下列程式行之間的內容將示範使用 HTML 來呈現相同的資料表。  請注意，在此情況下我們在 HTML 中指定表格框線︰
 
 ---
 
@@ -34,7 +34,7 @@ The content between the lines below demonstrates the same table rendered using H
 <tr><td>Apache Oozie</td><td>3.2.0</td></tr>
 <tr><td>Apache HCatalog</td><td>0.4.1</td></tr>
 <tr><td>Apache Templeton</td><td>0.1.4</td></tr>
-<tr><td>SQL Server JDBC Driver</td><td>3.0</td></tr>
+<tr><td>SQL Server JDBC 驅動程式</td><td>3.0</td></tr>
 </table><br/>
 
 ---

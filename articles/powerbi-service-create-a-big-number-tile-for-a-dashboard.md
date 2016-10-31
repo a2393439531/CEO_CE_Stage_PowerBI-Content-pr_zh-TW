@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a big number tile for a Power BI dashboard by asking a question"
-   description="Create a big number tile for a Power BI dashboard by asking a question"
+   pageTitle="提出問題，以建立大的數字磚 Power BI 儀表板"
+   description="提出問題，以建立大的數字磚 Power BI 儀表板"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,64 +20,68 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# <a name="create-a-big-number-tile-for-a-power-bi-dashboard-by-asking-a-question"></a>Create a big number tile for a Power BI dashboard by asking a question  
+# <a name="create-a-big-number-tile-for-a-power-bi-dashboard-by-asking-a-question"></a>提出問題，以建立大的數字磚 Power BI 儀表板  
 
-Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can <bpt id="p1">[</bpt>create a big number tile in a Power BI report<ept id="p1">](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)</ept> or by asking a question in the Q&amp;A box. This article explains how to create one in Q&amp;A.
+有時單一數字是最重要的是您想要追蹤 Power BI 儀表板，例如總銷售額、 市場共用年年份或總計的機會。 您可以 [Power BI 報表中建立大的數字磚](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md) 或問與答中提問。 這篇文章說明如何建立一個在問與答。
 
 ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_OpptuntiesCard.png)
 
-The question box is the easiest way to make a number tile like this.
+[問題] 方塊會是數字的並排顯示，就像這樣簡單的方法。
 
-1.    Create a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> and <bpt id="p2">[</bpt>get data<ept id="p2">](powerbi-service-get-data.md)</ept>.
+1.    建立 [儀表板](powerbi-service-dashboards.md) 和 [取得資料](powerbi-service-get-data.md)。
 
-2.    At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
+2.    在您的儀表板的頂端，開始輸入想要了解 [問題] 方塊中的資料。 此範例使用機會分析範例。
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-box.png)
 
-3.    For example, type "number of opportunities" in the question box.
+3.    例如，[問題] 方塊中輸入 「 數字的機會 」。
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-ask.png)
 
-    The question box suggests, restates as <bpt id="p1">**</bpt>Showing opportunity count<ept id="p1">**</ept>, and displays the total number.  
+    [問題] 方塊所示，做為 restates **顯示商機計數**, ，並顯示的總數。  
 
-4.  Select the pin icon <ph id="ph1">![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png)</ph> in the upper-right corner to add the number tile to the dashboard. 
+4.  選取 [釘選圖示 ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png) 將數字的磚加入儀表板右上角。 
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-pin.png)
 
-5.  Pin the tile to an existing dashboard or to a new dashboard. 
+5.  釘選磚至現有的儀表板或新的儀表板。 
 
-    -   Existing dashboard: select the name of the dashboard from the dropdown.
+    -   現有的儀表板︰ 從下拉式清單中選取的儀表板名稱。
 
-    -   New dashboard: type the name of the new dashboard.
+    -   新的儀表板︰ 輸入新的儀表板的名稱。
 
-6.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+6.  選取 **Pin**。
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
+    成功的訊息 （靠近右上角） 可讓您知道已新增的視覺效果，做為您的儀表板] 的磚。  
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can <bpt id="p1">[</bpt>rename, resize, link, and move<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> the pinned visualization.  
+7.  從 [瀏覽] 窗格中，選取 [儀表板與新的方塊。 您可以在這裡， [重新命名、 調整大小、 連結和移動](powerbi-service-edit-a-tile-in-a-dashboard.md) 釘選視覺效果。  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_DashTileTitle.png)
 
 ## <a name="troubleshooting"></a>疑難排解
-If you do not see a question box at all, it may be that you have not enabled Q&amp;A for this dataset.  
+如果您不完全看到問題] 方塊，它可能您有問與答啟用此資料集。  
 
-##  <a name="enable-q&a"></a>Enable Q&amp;A
+##  <a name="enable-q&a"></a>啟用問與答
 
-1.  In the upper-right corner of Power BI, select the cog icon <ph id="ph1">![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-cog.png)</ph> and choose <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+1.  在 Power BI 的右上角，選擇齒輪圖示 ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-cog.png) 選擇 **設定**。
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/powerbi-settings.png)
 
-2.  Select <bpt id="p1">**</bpt>datasets<ept id="p1">**</ept> and choose the dataset to enable for Q&amp;A.
+2.  選取 **資料集** 選擇資料集，以啟用的問與答。
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-settings.png)
 
-3. Expand <bpt id="p1">**</bpt>Q&amp;A and Cortana<ept id="p1">**</ept>, select the checkbox for <bpt id="p2">**</bpt>Turn on Q&amp;A for this dataset<ept id="p2">**</ept> and choose <bpt id="p3">**</bpt>Apply<ept id="p3">**</ept>.
+3. 展開 **問與答與 Cortana**, ，選取核取方塊， **開啟此資料集的問與答** 選擇 **套用**。
 
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Dashboard tiles in Power BI<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>  
-<bpt id="p1">[</bpt>Dashboards in Power BI<ept id="p1">](powerbi-service-dashboards.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [在 Power BI 儀表板] 磚](powerbi-service-dashboard-tiles.md)  
+
+            [在 Power BI 儀表板](powerbi-service-dashboards.md)  
+
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

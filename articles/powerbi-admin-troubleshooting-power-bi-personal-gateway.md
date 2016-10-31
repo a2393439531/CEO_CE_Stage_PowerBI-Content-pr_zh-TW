@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Troubleshooting Power BI Gateway - Personal"
-   description="Troubleshooting Power BI Gateway - Personal"
+   pageTitle="疑難排解 Power BI 閘道-個人"
+   description="疑難排解 Power BI 閘道-個人"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,135 +19,154 @@
    ms.workload="powerbi"
    ms.date="09/06/2016"
    ms.author="asaxton"/>
-# Troubleshooting Power BI Gateway - Personal
+# 疑難排解 Power BI 閘道-個人
 
-The following goes through some common issues you may encounter when using the Power BI Gateway - Personal. 
+以下會透過使用 Power BI 閘道-個人時，可能會遇到一些常見的問題。 
 
-> [AZURE.NOTE] If you encounter an issue that is not listed below, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> [AZURE.NOTE] 如果您遇到下列資訊沒有列出的問題，您可以在要求以取得進一步協助 [社群網站](http://community.powerbi.com/), ，或者您可以建立 [支援票證](https://powerbi.microsoft.com/support/)。
 
-## Update to the latest version 
+## 更新為最新版本 
  
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
+閘道器版本已過期時，可能出現很多問題。  它是一般最好先確定您是在最新版本。  一個月以上未更新閘道，您可能要考慮安裝最新版的閘道，並查看可以重現問題。
 
 ## 安裝
 
-<bpt id="p1">**</bpt>Personal gateway is 64bit<ept id="p1">**</ept> - If your machine is 32bit, you will not be able to install the personal gateway. Your operating system needs to be 64bit. You will need to install a 64bit version of Windows, or install the personal gateway on a 64bit machine.
 
-<bpt id="p1">**</bpt>Personal gateway fails to install as a service even though you are a local administrator for the computer<ept id="p1">**</ept> - Installation can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. [進一步了解](https://technet.microsoft.com/library/cc739424.aspx)
+            **個人閘道是 64 位元** -如果您的電腦是 32 位元，您將無法安裝個人閘道。 您的作業系統必須是 64 位元。 您必須安裝 64 位元版本的 Windows，或在 64 位元電腦上安裝個人閘道。
 
-<bpt id="p1">**</bpt>Operation timed out<ept id="p1">**</ept> - This is common if the computer (physical machine or VM) on which you’re installing the personal gateway has a single core processor. Close any applications and turn off any non-essential processes and try installing again.
 
-<bpt id="p1">**</bpt>Data Management Gateway or Analysis Services Connector cannot be installed on the same computer as personal gateway<ept id="p1">**</ept> - If you already have an Analysis Services Connector or Data Management Gateway installed, you must first uninstall the Connector or the gateway and then try installing the personal gateway.
+            **個人閘道無法安裝為服務，即使您電腦的本機系統管理員** -如果使用者是在本機系統管理員群組的電腦，但群組原則不允許該使用者名稱登入為服務，安裝可能會失敗。  目前，請確定群組原則可讓使用者登入為服務。 我們正努力解決此問題。 [進一步了解](https://technet.microsoft.com/library/cc739424.aspx)
 
- > [AZURE.NOTE] If you encounter an issue during installation, the setup logs could provide information to help you resolve the issue. See <bpt id="p1">[</bpt>Setup Logs<ept id="p1">](#SetupLogs)</ept> for more information.
+
+            **操作已逾時** -這是常見，如果您正在安裝個人閘道的電腦 （實體機器或 VM） 具有單一核心處理器。 關閉任何應用程式和關閉任何非必要的處理序，請再次嘗試安裝。
+
+
+            **資料管理閘道器或 Analysis Services 連接器無法安裝在同一部電腦當做個人閘道** -如果您已經有 Analysis Services 連接器或資料管理閘道器安裝，您必須先解除安裝該連接器或閘道，然後再嘗試安裝個人閘道。
+
+ > [AZURE.NOTE] 如果您在安裝期間遇到的問題，安裝程式記錄檔可以提供可協助您解決問題的資訊。 請參閱 [安裝程式記錄檔](#SetupLogs) 如需詳細資訊。
  
- <bpt id="p1">**</bpt>Proxy configuration<ept id="p1">**</ept><ph id="ph1">
-</ph> You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see <bpt id="p1">[</bpt>Configuring proxy settings for the Power BI Gateways<ept id="p1">](powerbi-gateway-proxy.md)</ept>
+ 
+            **Proxy 設定**
+ 您可能會遇到問題，如果您的環境需要使用 proxy 設定個人閘道。 若要深入了解如何設定 proxy 資訊，請參閱 [Power BI 閘道的 proxy 設定](powerbi-gateway-proxy.md)
 
-## Schedule Refresh
+## 排程重新整理
 
-**Error: The credential stored in the cloud is missing.**
+**錯誤︰ 雲端中儲存的認證已遺失。**
 
-You could get this error in Settings for <ph id="ph1">\&lt;</ph>dataset<ph id="ph2">\&gt;</ph> if you have a scheduled refresh and then uninstalled and re-installed the personal gateway. When you uninstall a personal gateway, data source credentials for a dataset that has been configured for refresh are removed from the Power BI service.
+您可以設定中取得此錯誤 \<資料集\> 如果已排定的重新整理，然後解除安裝再重新安裝個人閘道。 當您解除安裝個人閘道時，已設定為重新整理資料集的資料來源認證會移除從 Power BI 服務。
 
-<bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> In Power BI, go to the refresh settings for a dataset. In Manage Data Sources, for any data source with an error, click Edit credentials and sign in to the data source again.
 
-**Error: The credentials provided for the dataset are invalid. Please update the credentials through a refresh or in the Data Source Settings dialog to continue.**
+            **解決方案︰** 在 Power BI，移至資料集的重新整理設定。 管理資料來源，並顯示錯誤，任何資料來源中按一下 [編輯認證並再次登入的資料來源。
 
-<bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: If you get a credentials message, it could mean:
+**錯誤︰ 資料集所提供的認證不正確。 請更新認證，透過重新整理或在資料來源設定] 對話方塊中，以繼續。**
 
--   Make sure usernames and passwords used to sign into data sources are up to date. In Power BI, go to refresh settings for the dataset. In Manage Data Sources, click Edit credentials to update the credentials for the data source.
 
--   Mashups between a cloud source and an on-premises source, in a single query, will fail to refresh in the personal gateway if one of the sources is using OAuth for authentication. An example of this is a mashup between CRM Online and a local SQL Server. This will fail because CRM Online requires OAuth.
+            **方案**︰ 如果您收到的認證，這可能表示︰
 
-    This is a known issue, and being looked at. To work around the problem, have a separate query for the cloud source and the on-premises source and use a merge or append query to combine them.
+-   請確定使用者名稱和密碼，用來登入的資料來源是最新狀態。 在 Power BI，移至重新整理資料集的設定。 在管理資料來源，按一下 [編輯認證，來更新資料來源的認證。
 
-**Error: Unsupported data source.**
+-   混搭程式定域機組來源之間的內部部署來源，在單一查詢中，將無法重新整理在個人閘道，如果其中一個來源會使用 OAuth 進行驗證。 這個範例是 CRM Online 和本機 SQL Server 之間交互式。 這將會失敗，因為 CRM Online 需要 OAuth。
 
-<bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> If you get an unsupported data source message in Schedule Refresh settings, it could mean: 
+    這是已知的問題，並查看。 若要解決此問題，有另一個定域機組來源和內部部署來源查詢並使用合併列印或附加查詢，以將它們結合。
 
--   The data source is not currently supported for refresh in Power BI. 
+**錯誤︰ 不支援的資料來源。**
 
--   The Excel workbook does not contain a data model, only worksheet data. Power BI currently only supports refresh if the uploaded Excel workbook contains a data model. When you import data using Power Query in Excel, be sure to choose the option to Load data to data model. This ensures data is imported into a data model. 
 
-**Error: [Unable to combine data] <ph id="ph1">&amp;lt;</ph>query part<ph id="ph2">&amp;gt;/&amp;lt;</ph>…<ph id="ph3">&amp;gt;/&amp;lt;</ph>…&gt; is accessing data sources that have privacy levels which cannot be used together. Please rebuild this data combination.**
+            **解決方案︰** 如果您收到不支援的資料來源中重新整理排程設定，這可能表示︰ 
 
-<bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: This error is due to the privacy level restrictions and the types of data sources you are using. [進一步了解](powerbi-refresh-enable-fast-combine.md)
+-   資料來源目前不支援在 Power BI 中的重新整理。 
 
-**Error: Data source error: We cannot convert the value "<ph id="ph1">\[</ph>Table<ph id="ph2">\]</ph>" to type Table.**
+-   Excel 活頁簿不包含資料模型中，只有工作表資料。 Power BI 目前只支援重新整理如果上傳的 Excel 活頁簿包含資料模型。 當您匯入 Excel 中使用 Power Query 資料時，請務必選擇要載入至資料模型的選項。 這可確保資料匯入資料模型。 
 
-<bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: This error is due to the privacy level restrictions and the types of data sources you are using. [進一步了解](powerbi-refresh-enable-fast-combine.md)
+**錯誤: [無法結合資料] &lt;查詢部分&gt;/&lt;...&gt;/&lt;…&gt; 存取的資料來源的隱私權等級無法一起使用。 請重建這個資料組合。**
 
-**Error: There is not enough space for this row.**
 
-This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
+            **方案**︰ 此錯誤是因為隱私權層級的限制以及您使用的資料來源的類型。 [進一步了解](powerbi-refresh-enable-fast-combine.md)
+
+**錯誤︰ 資料來源錯誤︰ 無法將值轉換 「\[資料表\]」 輸入資料表。**
+
+
+            **方案**︰ 此錯誤是因為隱私權層級的限制以及您使用的資料來源的類型。 [進一步了解](powerbi-refresh-enable-fast-combine.md)
+
+**錯誤︰ 沒有足夠的空間，這個資料列。**
+
+如果您有單一資料列大於 4 MB 的大小，會發生這項目。 您必須判斷資料列已從資料來源，並嘗試篩選出或減少該資料列的大小。
 
 ## 資料來源
 
-<bpt id="p1">**</bpt>Missing data provider<ept id="p1">**</ept> – The personal gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the personal gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the personal gateway.  <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> if you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
 
-<bpt id="p1">**</bpt>Windows authentication is not supported for Access database<ept id="p1">**</ept> - Power BI currently only supports anonymous for Access database. We are working on enabling Windows authentication for Access database.
+            **遺失的資料提供者** – 個人閘道只有 64 位元。 它需要 64 位元版本的安裝個人閘道安裝所在的同一部電腦上的資料提供者。 比方說，如果 Microsoft Access 中的資料集的資料來源，您必須安裝 64 位元的 ACE 提供者的個人閘道安裝在相同電腦上。  
+            **注意︰** 有 32 位元 Excel，您就無法在同一部電腦上安裝 64 位元的 ACE 提供者。
 
-<bpt id="p1">**</bpt>Sign in error when entering credentials for a datasource<ept id="p1">**</ept> - If you get an error similar to this when entering Windows credentials for a data source, you might still be on an older version of the personal gateway. <bpt id="p1">[</bpt>Install the latest version of Power BI Gateway - Personal<ept id="p1">](https://powerbi.microsoft.com/gateway/)</ept>.
+
+            **Access 資料庫不支援 Windows 驗證** -Power BI 目前只支援匿名存取資料庫。 我們正在努力啟用 Windows 驗證存取資料庫。
+
+
+            **當輸入資料來源的認證登入錯誤** -如果您在輸入資料來源的 Windows 認證時，收到錯誤，如下所示可能還是可以在舊版的個人閘道。 
+            [安裝最新版本的 Power BI 閘道個人](https://powerbi.microsoft.com/gateway/)。
 
   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/PBI_PG_CredentialsError.jpg.png)
 
-<bpt id="p1">**</bpt>Error: Sign in error when selecting Windows authentication for a data source using ACE OLEDB<ept id="p1">**</ept> - If you get the following error when entering data source credentials for a data source using ACE OLEDB provider:
+
+            **錯誤︰ 選取 Windows 驗證使用 ACE OLEDB 資料來源時登入錯誤** -如果輸入資料來源認證使用 ACE OLEDB 提供者的資料來源時，收到下列錯誤︰
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/ACEOLEDBerror.png)
 
-Power BI does not currently support Windows authentication for a data source using ACE OLEDB provider.
+Power BI 目前不支援 Windows 驗證使用 ACE OLEDB 提供者的資料來源。
 
-<bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> To workaround this error, you can select Anonymous authentication. For legacy ACE OLEDB provider, Anonymous credentials are equivalent to Windows credentials.
 
-## Tile refresh
+            **解決方案︰** 若要解決這個錯誤，您可以選取匿名驗證。 對於舊版的 ACE OLEDB 提供者，匿名認證相當於 Windows 認證。
 
-If you are receiving an error with dashboard tiles refreshing, please refer to the following article.
+## 並排顯示重新整理
 
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
+如果您收到的錯誤進行重新整理儀表板] 磚，請參閱下列文件。
+
+[並排顯示錯誤的疑難排解](powerbi-refresh-troubleshooting-tile-errors.md)
 
 ## 疑難排解的工具
 
-### Refresh History  
-<bpt id="p1">**</bpt>Refresh History<ept id="p1">**</ept> can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the <bpt id="p1">**</bpt>Refresh History<ept id="p1">**</ept>.
+### 重新整理記錄  
 
-1.  In the Power BI navigation pane, in <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept>, select a dataset <ph id="ph1">&amp;gt;</ph> Open Menu <ph id="ph2">&amp;gt;</ph> <bpt id="p2">**</bpt>Schedule Refresh<ept id="p2">**</ept>.
+            **重新整理記錄** 可以協助您了解哪些發生錯誤，以及提供有用的資料，如果您需要建立支援要求。 您可以檢視同時排程，以及在需要時重新整理。 以下是如何可以獲得 **重新整理記錄**。
+
+1.  在 Power BI 瀏覽窗格中，在 **資料集**, ，選取的資料集 &gt; 開啟的功能表 &gt; **排程重新整理**。
     ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh.png)
 
-2.  In <bpt id="p1">**</bpt>Settings for...<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Schedule Refresh<ept id="p2">**</ept>, select <bpt id="p3">**</bpt>Refresh History<ept id="p3">**</ept>.  
+2.  在 **設定...**&gt; **排程重新整理**, ，請選取 **重新整理記錄**。  
     ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh-2.png)
   
     ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Refresh-History.png)
 
 ### 事件記錄檔  
-There are several event logs that can provide information. The first two, <bpt id="p1">**</bpt>Data Management Gateway<ept id="p1">**</ept> and <bpt id="p2">**</bpt>PowerBIGateway<ept id="p2">**</ept>, are present if you are an admin on the machine.  If you are not an admin, and you are using the Personal Gateway, you will see the log entries within the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> log.
+有數個可以提供資訊的事件記錄檔。 前兩個， **資料管理閘道器** 和 **PowerBIGateway**, ，如果您是系統管理員在電腦上的存在。  如果您不是系統管理員，而且您使用的個人閘道，您會看到內的記錄項目 **應用程式** 記錄檔。
 
-The <bpt id="p1">**</bpt>Data Management Gateway<ept id="p1">**</ept> and <bpt id="p2">**</bpt>PowerBIGateway<ept id="p2">**</ept> logs are present under <bpt id="p3">**</bpt>Application and Services Logs<ept id="p3">**</ept>.
+ **資料管理閘道器** 和 **PowerBIGateway** 記錄檔存在於 **應用程式及服務記錄檔**。
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Event-Logs.png)
 
-### Fiddler Trace  
-<bpt id="p1">[</bpt>Fiddler<ept id="p1">](http://www.telerik.com/fiddler)</ept> is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
+### Fiddler 追蹤  
+
+            [Fiddler](http://www.telerik.com/fiddler) 是透過監視 HTTP 流量的 Telerik 免費的工具。  您可以請參閱上一步]，並提出的 Power bi 服務從用戶端電腦。 這可能會顯示錯誤和其他相關的資訊。
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Fiddler.png)
 
 <a name="SetupLogs">
-### Setup Logs
-If the <bpt id="p1">**</bpt>Personal Gateway<ept id="p1">**</ept>, fails to install, you will see a link to show the setup log. This could show you details about the failure. These are Windows Install logs, or also knows as MSI logs. They can be fairly complex and hard to read. Typically the resulting error will be at the bottom, but determining the cause of the error is not trivial. It could be a result of errors in a different log, or be a result of an error higher up in the log. 
+### 安裝程式記錄檔
+如果 **個人閘道**, ，無法安裝，您會看到顯示安裝程式記錄檔的連結。 這可以顯示有關失敗詳細資料。 這些是 Windows 安裝記錄檔，或也稱為 MSI 記錄檔。 它們可以是相當複雜且難以閱讀。 通常在底部，會產生錯誤，但判斷錯誤的原因並非易事。 它可能是不同的記錄檔中錯誤的結果或高的層級記錄檔中的錯誤是因。 
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Log.png)
 
-Alternatively, you can go to your <bpt id="p1">**</bpt>Temp folder<ept id="p1">**</ept> (%temp%) and look for files that start with <bpt id="p2">**</bpt>Power<ph id="ph1">\_</ph>BI<ph id="ph2">\_</ph><ept id="p2">**</ept>.
+或者，您可以移至您 **Temp 資料夾** （%temp%)，搜尋的檔案開頭的 **電源\_BI\_**。
 
-> [AZURE.NOTE] Going to %temp% may take you to a subfolder of temp.  The <bpt id="p1">**</bpt>Power<ph id="ph1">\_</ph>BI<ph id="ph2">\_</ph><ept id="p1">**</ept> files will be in the root of the temp directory.  You may need to go up a level or two.
+> [AZURE.NOTE] %Temp%到可能需要暫時的子資料夾。   **電源\_BI\_** 檔案會出現在暫存目錄的根目錄。  您可能需要向上一個層級或兩個。
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Logs2.png)
 
 ## 另請參閱
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-[Data Refresh](powerbi-refresh-data.md)  
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI 閘道設定 proxy 設定](powerbi-gateway-proxy.md)  
+[資料重新整理](powerbi-refresh-data.md)  
+[Power BI 閘道個人](powerbi-personal-gateway.md)  
+[並排顯示錯誤的疑難排解](powerbi-refresh-troubleshooting-tile-errors.md)  
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

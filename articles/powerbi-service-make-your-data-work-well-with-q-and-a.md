@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Make your data work well with Q&amp;A in Power BI"
-   description="Make your data work well with Q&amp;A in Power BI"
+   pageTitle="讓您有效搭配問與答 Power BI 中的資料"
+   description="讓您有效搭配問與答 Power BI 中的資料"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,36 +20,36 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Make your data work well with Q&amp;A in Power BI  
+# 讓您有效搭配問與答 Power BI 中的資料  
 
-If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...
+如果您是建立資料模型，或建置用於 Power BI 的 Excel 活頁簿的人員，閱讀...
 
-In Power BI, Q&amp;A can search structured data and choose the right visualization for your question -- that's what makes it a compelling tool to use.   
+在 Power BI 問答集可以搜尋結構化的資料，然後選擇 [您的問題-，就是讓它強大的工具使用的正確視覺效果。   
 
-Q&amp;A can work on any uploaded Excel file that has tables, ranges, or contains a PowerPivot model, but the more optimizations and data cleaning you do, the more robust Q&amp;A performance is. 
+問答集可以處理任何已上傳 Excel 檔案範圍的資料表，或包含 PowerPivot 模型，但更高的最佳化和資料清除，更穩固的問與答效能。 
 
-## How Q&amp;A works  
-Q&amp;A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. Second, it has built-in knowledge for how to filter, sort, aggregate, group, and display data. 
+## 問與答的運作方式  
+問答集都有一組核心自然語言了解各類適用於所有資料。 它具有 Excel 資料表、 資料行和導出的欄位名稱的內容相關的關鍵字搜尋。 第二，它有內建知識的方式篩選、 排序、 彙總、 群組及顯示資料。 
 
-For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the <bpt id="p1">[</bpt>kinds of questions you can ask<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx)</ept>, and <bpt id="p2">[</bpt>asking questions using a question template<ept id="p2">](powerbi-service-q-and-a.md)</ept> and <bpt id="p3">[</bpt>visualization types you can specify in a Q&amp;A query<ept id="p3">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept>.
+例如，名為 「 業務 」、 「 產品 」、 「 月 」、 「 銷售單位 」、 「 銷售毛額 」 和"Profit"，資料行的 Excel 資料表中無法詢問問題有關任何這些實體。  您可以要求顯示銷售、 月份、 銷售的單位來排序產品和許多其他的總收益。 深入了解 [類型的問題，您可以要求](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx), ，和 [詢問問題使用問題範本](powerbi-service-q-and-a.md) 和 [您可以指定在問與答查詢中的視覺效果類型](powerbi-service-visualization-types-for-reports-and-q-and-a.md)。
 
-## Prepare a workbook for Q&amp;A  
-Q&amp;A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!
+## 準備活頁簿的問與答  
+問答集是資料表，資料行的名稱，而回應特定資料的問題，這表示您所謂實體活頁簿中的導出的欄位是很重要 ！
 
-Here are some tips for making the most of Q&amp;A in your workbook.
+以下是您的活頁簿中善加利用問與答的一些秘訣。
 
--   Make sure your data is in an Excel table. Here's <bpt id="p1">[</bpt>how to create an Excel table<ept id="p1">](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&amp;rs=en-US&amp;ad=US)</ept>.
+-   請確定您的資料是 Excel 資料表中。 以下是 [如何建立 Excel 資料表](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US)。
 
--   Make sure the names of your tables, columns, and calculated field make sense in English.
+-   請確定您的資料表、 資料行和導出的欄位的名稱在合理的英文版。
 
-    For example, if you have a table with sales data, call the table “Sales”. Column names like “Year”, “Product”, “Sales Rep”, and “Amount” will work well with Q&amp;A.
+    例如，如果您有包含銷售資料的資料表時，呼叫資料表 「 銷售 」。 資料行的名稱，例如 「 年 」、 「 產品 」、 「 銷售報表 」 和 「 金額 」 即可順利運作問與答。
 
->[AZURE.NOTE]  If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about <bpt id="p1">[</bpt>Demystifying Power BI Q&amp;A part 2<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx)</ept> from our in-house team of natural language experts.
+>[AZURE.NOTE]  如果您的活頁簿有 Power Pivot 資料模型，您可以執行更多最佳化。 深入了解 [揭密 Power BI 問與答第 2 部分](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx) 從我們的內部團隊的自然語言專家。
 
 ## 請參閱  
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)  
-[Tutorial: Introduction to Power BI Q&amp;A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Get data (for Power BI)](powerbi-service-get-data.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[問與答 Power BI 中](powerbi-service-q-and-a.md)  
+[教學課程︰ 介紹 Power BI 問與答](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[取得資料 （適用於 Power BI)](powerbi-service-get-data.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

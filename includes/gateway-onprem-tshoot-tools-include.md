@@ -1,29 +1,30 @@
 ## 疑難排解的工具
 
 <a name="logs" />
-### Collecting logs from the gateway configurator
+### 從閘道設定程式收集記錄檔
 
-There are several logs you can collect for the gateway. Always start with the logs!
+有數個閘道，您可以收集的記錄檔。 開頭一律記錄檔 ！
 
-**Installer logs**
+**安裝程式記錄檔**
 
     %localappdata%\Temp\On-premises_data_gateway_*.log
 
-**Configuration logs**
+**設定記錄檔**
 
     %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
-**On-premises data gateway service logs**
+**內部資料閘道器服務記錄檔**
 
     C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 ### 事件記錄檔  
-The <bpt id="p1">**</bpt>On-premises data gateway service<ept id="p1">**</ept> event logs are present under <bpt id="p2">**</bpt>Application and Services Logs<ept id="p2">**</ept>.
+ **內部資料閘道器服務** 事件記錄檔存在於 **應用程式及服務記錄檔**。
 
 ![on-prem-data-gateway-event-logs](./media/gateway-onprem-tshoot-tools-include/on-prem-data-gateway-event-logs.png)
 
 <a name="fiddler" />
-### Fiddler Trace  
-<bpt id="p1">[</bpt>Fiddler<ept id="p1">](http://www.telerik.com/fiddler)</ept> is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
+### Fiddler 追蹤  
+
+            [Fiddler](http://www.telerik.com/fiddler) 是透過監視 HTTP 流量的 Telerik 免費的工具。  您可以請參閱上一步]，並提出的 Power bi 服務從用戶端電腦。 這可能會顯示錯誤和其他相關的資訊。
 
 ![](media/gateway-onprem-tshoot-tools-include/fiddler.png)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Data categorization in Power BI Desktop"
-   description="Data categorization in Power BI Desktop"
+   pageTitle="在 Power BI Desktop 中的資料分類"
+   description="在 Power BI Desktop 中的資料分類"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,28 +20,28 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Data categorization in Power BI Desktop  
+# 在 Power BI Desktop 中的資料分類  
 
-In <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
+在 **Power BI Desktop**, ，讓 Power BI Desktop 可讓您知道如何它應該將其值在視覺效果時，您可以指定資料行的資料類別。
 
-When Power BI Desktop imports data, not only does it get the data itself, it also gets information such as the table and column names, whether it’s a primary key, etc.  With that information, Power BI Desktop makes some assumptions about how to give you a good default experience when creating a visualization. 
+Power BI Desktop 匯入資料時，不只會取得資料本身，它也會取得資訊，例如資料表和資料行的名稱，無論是主索引鍵，等等。憑著此資訊，Power BI Desktop 可讓一些假設如何讓您能夠以好的預設方式建立視覺效果時。 
 
-Here’s an example: When Power BI Desktop detects a column has numeric values, you’ll probably want to aggregate it in some way, so it’s placed in the Values area. Or, for a column with date time values, it assumes you’ll probably use it as a time hierarchy axis on a line chart.
+範例如下︰ 當 Power BI Desktop 偵測到資料行具有數字值時，您可能需要彙總以某種方式，因此它會在 [值] 區域中。 或者，使用日期時間值的資料行，它會假設您大概會使用它做為在折線圖上的時間階層軸。
 
-But, there are some cases that are a bit more challenging, like geography. Consider the following table from an Excel worksheet:
+但是，有某些情況下，會比較困難，例如地理位置。 請考慮下的表從 Excel 工作表︰
 
 ![](media/powerbi-desktop-data-categorization/DataCategorizationTable.png)
 
-Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation for a Country or a US State?  It’s not clear because a code like this can mean either one.  For instance, AL can mean Alabama or Albania, AR can mean Arkansas or Argentina, or CA can mean California or Canada. It makes a difference when we go to chart our GeoCode field on a map.  Should Power BI Desktop show a picture of the world with countries highlighted or a picture of the United States with states highlighted?  You can specify a Data Category for data just like this. Data categorization further refines the information Power BI Desktop can use to provide the best visualizations.  
+應該 Power BI Desktop 將代碼地理編碼的資料行中當做縮寫國家/地區或美國狀態？  因為類似的程式碼可以表示其中一個不清楚。  比方說，算是或阿爾巴尼亞、 AR 可以表示 Arkansas 或阿根廷或 CA 可能表示加州或加拿大，可能表示 AL。 當我們準備要在地圖上的我們建立欄位的圖表，它會有不同。  Power BI Desktop 應該會顯示反白顯示的國家/地區全世界的圖片或反白顯示的狀態與美國的圖片嗎？  您可以指定資料類別，就像這樣的資料。 資料分類進一步精簡 Power BI Desktop 可以用來提供最佳的視覺效果的資訊。  
 
-**To specify a Data Category**
+**若要指定資料類別**
 
-1.  In Report View or Data View, in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list, select the field you want to be sorted by a different categorization.
+1.  在報表檢視或資料檢視中 **欄位** 清單中，選取您想要依不同分類的欄位。
 
-2.  On the ribbon, in the <bpt id="p1">**</bpt>Data Tools Modeling<ept id="p1">**</ept> tab, click on the <bpt id="p2">**</bpt>Data Category:<ept id="p2">**</ept> drop down list.  This shows the list of possible data categories you can choose for your column.  Some selections might be disabled if they won’t work with the current data type of your column.  For example, if a column is a binary data type, Power BI Desktop won’t let you choose geographic data categories. 
+2.  在功能區中，在 **資料模型化工具** 索引標籤上，按一下 **資料類別目錄︰** 下拉式清單。  這會顯示可能的資料類別，您可以選擇針對您的資料行清單。  某些選項可能會停用，如果將不會使用您的資料行的目前資料型別。  例如，如果資料行的二進位資料類型，Power BI Desktop 不會讓您選擇的地理資料類別。 
 
 ![](media/powerbi-desktop-data-categorization/DataCategorization.gif)
 
-And that’s it!  Any behavior that normally accrues to a visual will now work automatically.  
+這樣就大功告成了 ！  任何通常會累算至視覺效果的行為現在會自動運作。  
 
-You might also be interested in learning about <bpt id="p1">[</bpt>geographic filtering for Power BI mobile apps<ept id="p1">](powerbi-desktop-mobile-geofiltering.md)</ept>.
+您可能也會想要了解 [Power BI 行動應用程式的地理篩選](powerbi-desktop-mobile-geofiltering.md)。

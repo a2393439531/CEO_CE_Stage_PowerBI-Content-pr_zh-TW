@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Page Layout and Formatting"
-   description="Display your reports and dashboards how you want them"
+   pageTitle="頁面配置和格式設定"
+   description="顯示您的報表和儀表板在您要的方式"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Style Your Reports With page layout and formatting
+# 設定您報表的頁面配置和格式樣式
 
-Power BI Desktop gives you the ability to control the layout and formatting of your report pages, such as size and orientation.
+Power BI Desktop 可讓您控制配置和格式的報表頁面，例如大小和方向。
 
-Use the <bpt id="p1">**</bpt>Page View<ept id="p1">**</ept> menu from the Home tab to change the way your report pages scale. The available options include <bpt id="p1">**</bpt>Fit To Page<ept id="p1">**</ept> (default), <bpt id="p2">**</bpt>Fit To Width<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Actual Size<ept id="p3">**</ept>.
+使用 **頁面檢視** ] 功能表上，從 [首頁] 索引標籤，變更您的報表頁面的小數位數的方式。 可用的選項包括 **依頁面** （預設）、 **符合寬度**, ，和 **實際大小**。
 
 ![](media/powerbi-learning-3-11-page-layout-formatting/3-11_1.png)
 
-You can also change the pages size itself. By default, report pages are 16:9. To change the page size, make sure no visuals are selected, then select the paintbrush icon in the Visualizations pane, then select <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> to expand that section.
+您也可以變更本身的頁面大小。 根據預設，報表頁面是 16:9。 若要變更頁面大小，請確定沒有視覺效果都已選取，然後在視覺效果] 窗格中，選取 [小畫家] 圖示，然後選取 [ **頁面大小** 以展開該區段。
 
 ![](media/powerbi-learning-3-11-page-layout-formatting/3-11_2.png)
 
-Options for page size include 4x3 (more square aspect ratio), and Dynamic (the page will stretch to fill the available space). There's a standard letter size for reports as well. Keep in mind that you may need to resize your visuals after changing the page size to ensure that they're completely on the canvas.
+頁面大小的選項包括 4 x 3 （詳細正方形外觀比例），以及動態 （頁面就會伸展以填滿可用空間）。 沒有報告以及標準的字母大小。 請記住，您可能需要調整視覺效果大小之後變更頁面大小，以確保它們完全在畫布上。
 
-You can also specify a custom page size, setting the size by inches or pixels, and change the background color of the entire report.
+您也可以指定自訂的頁面大小，英吋的像素為單位，將大小設定，並變更整份報表的背景色彩。
 
-Another option is to select Cortana, which sizes the report so that it can be used as a result for searches using Cortana.
+另一個選項是選取 Cortana，調整報表大小，使其可用於結果使用 Cortana 的搜尋。

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Dashboard tiles in Power BI"
-   description="All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS)."
+   pageTitle="在 Power BI 儀表板] 磚"
+   description="關於在 Power BI 儀表板] 磚。 這包括從 SQL Server Reporting Services (SSRS) 建立的磚。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,107 +20,127 @@
    ms.date="10/24/2016"  
    ms.author="mihart"/>
 
-# <a name="dashboard-tiles-in-power-bi"></a>Dashboard tiles in Power BI
-## <a name="dashboard-tiles"></a>Dashboard tiles
+# <a name="dashboard-tiles-in-power-bi"></a>在 Power BI 儀表板] 磚
+## <a name="dashboard-tiles"></a>儀表板] 磚
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&amp;A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  The screenshot below shows many different tiles pinned to a dashboard.
+並排顯示是快照集的資料、 釘選到儀表板。 可以從報表、 資料集、 儀表板，從問與答] 方塊中，Excel，並從 SQL Server Reporting Services (SSRS) 中建立磚。  以下螢幕擷取畫面顯示許多不同的磚釘選到儀表板。
 
-Besides pinning, standalone tiles can be created directly on the dashboard using <bpt id="p1">[</bpt>Add tile<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>. Standalone tiles include: text boxes, images, videos, and web content.
+除了固定，可以建立獨立磚直接在儀表板使用 [新增磚](powerbi-service-add-a-widget-to-a-dashboard.md)。 獨立磚包含︰ 文字方塊、 影像、 視訊和 web 內容。
 
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull_new.png)
 
-Need help understanding the building blocks that make up Power BI?  See <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+需要了解 Power BI 所組成的建置組塊的協助嗎？  請參閱 [Power BI-基本概念](powerbi-service-basic-concepts.md)。
 
->[AZURE.NOTE] If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
-
-
-## <a name="pin-a-tile-from..."></a>Pin a tile from...
-
-Tiles can be pinned from:
-
--   <bpt id="p1">[</bpt>Power BI Q&amp;A<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)</ept>
-
--   <bpt id="p1">[</bpt>a report<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>
-
--   <bpt id="p1">[</bpt>another dashboard<ept id="p1">](powerbi-pin-a-tile-from-one-dashboard-to-another.md)</ept>
-
-- <bpt id="p1">[</bpt>Excel workbook on OneDrive for Business<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)</ept>
-
-- <bpt id="p1">[</bpt>Power BI publisher for Excel<ept id="p1">](powerbi-publisher-for-excel.md)</ept>
+>[AZURE.NOTE] 如果原始的視覺效果來建立並排顯示變更，不會變更磚。  例如，如果固定折線圖從報表，然後變更折線圖橫條圖，[儀表板] 磚會繼續顯示折線圖。 重新整理資料，但是視覺化類型並不會。
 
 
-- <bpt id="p1">[</bpt>Quick Insights<ept id="p1">](powerbi-service-auto-insights.md)</ept>
+## <a name="pin-a-tile-from..."></a>釘選磚，以從...
 
--   <bpt id="p1">[</bpt>SSRS<ept id="p1">](https://msdn.microsoft.com/library/mt604784.aspx)</ept>
+可從釘選磚︰
 
-And standalone tiles for images, text boxes, videos, and web content can be created directly on the dashboard using <bpt id="p1">[</bpt>Add tile<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>.
+-   
+            [Power BI 問與答](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
+
+-   
+            [報表](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+
+-   
+            [另一個儀表板](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+
+- 
+            [商務用 onedrive 的 Excel 活頁簿](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+
+- 
+            [適用於 Excel 的 power BI 發行者](powerbi-publisher-for-excel.md)
+
+
+- 
+            [即時掌握所有資訊](powerbi-service-auto-insights.md)
+
+-   
+            [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+
+獨立重疊顯示影像、 文字方塊、 視訊、 和 web 內容，可建立直接在儀表板使用 [新增磚](powerbi-service-add-a-widget-to-a-dashboard.md)。
 
   ![](media/powerbi-service-dashboard-tiles/add_widgetnew.png)
 
 
-## <a name="interacting-with-tiles-on-a-dashboard"></a>Interacting with tiles on a dashboard
+## <a name="interacting-with-tiles-on-a-dashboard"></a>互動儀表板上並排顯示
 
-### <a name="move-and-resize-a-tile"></a>Move and resize a tile
+### <a name="move-and-resize-a-tile"></a>移動或調整大小方塊
 
-Grab a tile and <bpt id="p1">[</bpt>move it around on the dashboard<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>. Hover and select the handle <ph id="ph1">![](media/powerbi-service-dashboard-tiles/resize-handle.jpg)</ph> to resize the tile.
+抓取磚和 [儀表板上移動](powerbi-service-edit-a-tile-in-a-dashboard.md)。 將滑鼠停留，然後選取控點 ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg) 調整方塊的大小。
 
-### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Hover over a tile to change the appearance and behavior
+### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>將滑鼠停留在方塊，使其外觀和行為變更
 
 
-1. Hover over the tile to display the ellipses.
+1. 暫留在磚以顯示省略符號。
 
     ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
-2. Select the ellipses to open the tile action menu.
+2. 選取省略符號以開啟 [並排顯示的 [動作] 功能表。
 
     ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
 
-    From here you can:
+    您可以在這裡︰
 
-  - <bpt id="p1">[</bpt>Edit title and subtitle, add a hyperlink, display last refresh time<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> <ph id="ph1">![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)</ph>
-  - <bpt id="p1">[</bpt>Export the data used in the tile<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept><ph id="ph1">![](media/powerbi-service-dashboard-tiles/export-icon.png)</ph>
+  - 
+            [編輯標題和副標題、 加入超連結、 顯示上次重新整理時間](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+  - 
+            [並排顯示中所使用的資料匯出](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
 
-  - <bpt id="p1">[</bpt>View in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept> <ph id="ph1">![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)</ph>
+  - 
+            [焦點模式中的檢視](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 
-  - <bpt id="p1">[</bpt>Pin the tile to another dashboard<ept id="p1">](powerbi-pin-a-tile-from-one-dashboard-to-another.md)</ept><ph id="ph1">
- </ph><ph id="ph2">![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)</ph>
+  - 
+             [釘選到另一個儀表板] 磚](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-  - <bpt id="p1">[</bpt>Remove the tile<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept><ph id="ph1">
- </ph><ph id="ph2">![](media/powerbi-service-dashboard-tiles/trash-icon.png)</ph>
+  - 
+             [移除磚](powerbi-service-edit-a-tile-in-a-dashboard.md)
+![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
-3. To close the action menu, select the X icon <ph id="ph1">![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)</ph>.
+3. 若要關閉 [動作] 功能表，選取 [X 圖示 ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)。
 
-### <a name="select-(click)-a-tile"></a>Select (click) a tile
-When you select a tile, what happens next depends on how the tile was created and if it has a <bpt id="p1">[</bpt>custom link<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>. If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&amp;A question that was used to create the tile.
+### <a name="select-(click)-a-tile"></a>選取 （按一下） 磚
+當您選取一張牌時，接下來取決於如何建立磚，以及它有 [自訂連結](powerbi-service-edit-a-tile-in-a-dashboard.md)。 如果是自訂的連結，選取 [] 磚帶您前往該連結。 否則，請選取該方塊會帶您前往報表、 線上 Excel 活頁簿、 SSRS 報表，會在內部或用來建立磚的問與答問題。
 
->[AZURE.NOTE] The exception to this is video tiles created directly on the dashbaord using <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept>. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
+>[AZURE.NOTE] 這個例外狀況是視訊磚上直接建立儀表板使用 **新增磚**。 選取視訊的並排顯示 （也就建立這種方式） 會讓視訊播放直接出現在儀表板。   
 
 
-## <a name="tips-and-troubleshooting"></a>Tips and troubleshooting  
+## <a name="tips-and-troubleshooting"></a>秘訣與疑難排解  
 
-- If the report that was used to create the visualization was not saved, then selecting the tile produces no action.
+- 如果未儲存的報表，用來建立視覺效果，然後選取該方塊會產生任何動作。
 
-- If the tile was created from a workbook in Excel Online, and you do not have at least Read permissions for that workbook, selecting the tile will not open the workbook in Excel Online.
+- 如果在 Excel Online 中的活頁簿中建立磚，而且您不需要至少讀取該活頁簿的權限，選取磚會開啟活頁簿在 Excel Online 中。
 
-- For tiles created directly on the dashboard using <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept>, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
+- 磚上直接建立儀表板使用 **新增磚**, ，如果尚未設定自訂的超連結，選取標題、 字幕、 和或磚會開啟該 URL。  否則，預設會選取其中一個影像，儀表板上直接建立這些動態方塊 web 程式碼或文字方塊中會產生執行任何動作。
 
-- If you don't have permission to the report within SSRS, selecting a tile created from SSRS will produce a page indicating you don't have access (rsAccessDenied).
+- 如果您沒有權限 SSRS 時，選取從 SSRS 會建立一個方塊內的報表產生頁面，表示您沒有存取 (rsAccessDenied)。
 
-- If you don't have access to the network where the SSRS server is located, selecting a tile created from SSRS will product a page that will indicate it cannot locate the server (HTTP 404). Your device needs to have network access to the report server to view the report.
+- 如果您沒有存取網路的 SSRS 伺服器所在的位置，選取從 SSRS 建立磚將產品頁面，以指出找不到伺服器 (HTTP 404)。 您的裝置需要網路存取報表伺服器，以檢視報表。
 
-- If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+- 如果原始的視覺效果來建立並排顯示變更，不會變更磚。  例如，如果固定折線圖從報表，然後變更折線圖橫條圖，[儀表板] 磚會繼續顯示折線圖。 重新整理資料，但是視覺化類型並不會。
 
 ## <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Create a big number tile from a report<ept id="p1">](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)</ept>
 
-<bpt id="p1">[</bpt>Create a big number tile from Q&amp;A<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>
+            [從報表建立大的數字] 磚](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
-<bpt id="p1">[</bpt>Dashboards in Power BI<ept id="p1">](powerbi-service-dashboards.md)</ept>  
-<bpt id="p1">[</bpt>Data refresh<ept id="p1">](powerbi-refresh-data.md)</ept>
 
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
+            [從問與答建立大的數字] 磚](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)
 
-<bpt id="p1">[</bpt>Export a tile to Power Point<ept id="p1">](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)</ept>
 
-<bpt id="p1">[</bpt>Pin Reporting Services items to Power BI Dashboards<ept id="p1">](https://msdn.microsoft.com/library/mt604784.aspx)</ept>
+            [在 Power BI 儀表板](powerbi-service-dashboards.md)  
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [資料重新整理](powerbi-refresh-data.md)
+
+
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)
+
+
+            [匯出至 Power Point 磚](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+
+
+            [Power BI 儀表板的 pin Reporting Services 項目](https://msdn.microsoft.com/library/mt604784.aspx)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

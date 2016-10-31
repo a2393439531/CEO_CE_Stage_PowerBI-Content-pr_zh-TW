@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Set geographic filtering in Power BI Desktop for the Power BI mobile apps"
-   description="When you set geographic filtering in your model in Power BI Desktop, you can filter data for your location automatically in the Power BI mobile apps for iOS."
+   pageTitle="設定地理篩選在 Power BI Desktop Power BI 行動應用程式"
+   description="當您設定地理 Power BI Desktop 的模型中的篩選時，您可以自動在 iOS Power BI 行動應用程式位置的篩選資料。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,53 +19,53 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# Set geographic filtering in Power BI Desktop for the Power BI mobile apps
+# 設定地理篩選在 Power BI Desktop Power BI 行動應用程式
 
-In Power BI Desktop, you can <bpt id="p1">[</bpt>categorize geographical data<ept id="p1">](powerbi-desktop-data-categorization.md)</ept> for a column, so Power BI Desktop knows how to treat values in visuals in a report. As an added benefit, when you or your colleagues view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are. 
+您可以在 Power BI Desktop [分類地理資料](powerbi-desktop-data-categorization.md) 資料行，因此 Power BI Desktop 知道如何處理以視覺方式在報表中的值。 額外的好處在於，當您或您的同事檢視該報表 Power BI 行動 iOS 應用程式，在 Power BI 會自動提供符合您所在的地理篩選器。 
 
-For example, say you're a sales manager traveling to meet customers, and you'd like to quickly filter the total sales and revenue for the specific customer you're planning to visit. You want to break out the data for your current location, whether by state, city, or an actual address. Later, if you have time left, you'd like to visit other customers located nearby. You can <bpt id="p1">[</bpt>filter the report by your location to find those customers<ept id="p1">](powerbi-mobile-geofiltering.md)</ept>.
+例如，假設您是銷售經理，到符合的客戶，以及您想要快速篩選您計劃要瀏覽特定客戶的銷售總額及營收。 您想要切入您目前的位置資料的狀態、 縣市或實際的地址。 稍後，如果您有剩餘時間，您想要瀏覽附近的其他客戶。 您可以 [篩選報表所要尋找這些客戶您的位置](powerbi-mobile-geofiltering.md)。
 
-> [AZURE.NOTE] You can only filter by location in the mobile app if the geographic names in the report are in English &amp;#150; for example, "New York City" or "Germany".
+> [AZURE.NOTE] 如果報表中的地理名稱將以英文 & #150; 時，您可以只在行動應用程式中的位置依篩選例如，「 紐約市"或者"Germany"。
 
-## Identify geographic data in your report
+## 識別在報表中的地理資料
 
-1. In Power BI Desktop, switch to Data View <ph id="ph1">![](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png)</ph>.
+1. 在 Power BI Desktop，切換到 [資料檢視 ![](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png)。
 
-2. Select a column with geographic data &amp;#151; for example, a City column.
+2. 選取資料行加上地理資料 & #151;例如，City 資料行。
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-column.png)
 
-3. On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept>, then the correct category &amp;#151; in this example, <bpt id="p3">**</bpt>City<ept id="p3">**</ept>.
+3. 上 **模型** 索引標籤上，選取 **資料類別**, ，然後正確類別 & #151; 在此範例中， **縣 （市)**。
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-category.png)
 
-4. Continue setting geographic data categories for any other fields in the model. 
+4. 繼續在模型中設定任何其他欄位的地理資料類別。 
 
-    > [AZURE.NOTE] You can set multiple columns for each data category in a model, but if you do the model can't filter for geography in the Power BI mobile app. To use geographic filtering in the mobile apps, set only one column for each data category &amp;#151; for example, only one <bpt id="p1">**</bpt>City<ept id="p1">**</ept> column, one <bpt id="p2">**</bpt>State or Province<ept id="p2">**</ept> column, and one <bpt id="p3">**</bpt>Country<ept id="p3">**</ept> column. 
+    > [AZURE.NOTE] 您可以設定每個資料類別的多個資料行在模型中，但是如果您這樣做模型無法篩選的 Power BI 行動應用程式中的地理位置。 若要使用地理篩選行動應用程式中，設定每個資料類別 & #151; 只有一個資料行例如，只有一個 **縣 （市)** 資料行中，一個 **州或省** 資料行和一個 **國家/地區** 資料行。 
 
-## Create visuals with your geographic data
+## 使用您的地理資料建立視覺效果
 
-5. Switch to Report view <ph id="ph1">![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-report-icon.png)</ph>, and create visuals that use the geographic fields in your data. 
+5. 切換至 [報表檢視 ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-report-icon.png), ，並建立使用中資料的地理欄位的視覺效果。 
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-report.png)
 
-    In this example, the model also contains a calculated column that brings city and state together in one column. Read about <bpt id="p1">[</bpt>creating calculated columns in Power BI Desktop<ept id="p1">](powerbi-desktop-calculated-columns.md)</ept>.
+    在此範例中，模型也包含城市和州一起一個資料行中的顯示的計算資料行。 閱讀有關 [在 Power BI Desktop 中建立導出資料行](powerbi-desktop-calculated-columns.md)。
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-city-state-column.png)
 
-6. Publish the report to the Power BI service.
+6. 將報表發行至 Power BI 服務。
 
-## View the report in Power BI app for iOS
+## 適用於 iOS 的 Power BI 應用程式中檢視報表
 
-1. Open the report in the <bpt id="p1">[</bpt>Power BI app for iOS<ept id="p1">](powerbi-mobile-ipad-iphone-apps.md)</ept>.
+1. 在報表開啟 [Power BI 應用程式適用於 iOS](powerbi-mobile-ipad-iphone-apps.md)。
 
-2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
+2. 如果您的地理位置與報表中的資料，您可以篩選它自動至您的位置。
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-Read more about <bpt id="p1">[</bpt>filtering a report by location in the Power BI mobile apps for iOS<ept id="p1">](powerbi-mobile-geofiltering.md)</ept>.
+深入了解 [篩選報表 iOS Power BI 行動應用程式裡的位置](powerbi-mobile-geofiltering.md)。
 
 ### 請參閱  
 
-- [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [在 Power BI Desktop 中的資料分類](powerbi-desktop-data-categorization.md)  
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

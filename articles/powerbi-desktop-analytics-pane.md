@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Analytics pane in Power BI Desktop"
-   description="Create dynamic reference lines for visuals in Power BI Desktop"
+   pageTitle="在 Power BI Desktop 分析窗格"
+   description="在 Power BI Desktop 中建立動態參考程式碼行的視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -21,117 +21,117 @@
    ms.author="davidi"/>
 
 
-# Analytics pane in Power BI Desktop
+# 在 Power BI Desktop 分析窗格
 
-With the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>, you can add dynamic <bpt id="p3">*</bpt>reference lines<ept id="p3">*</ept> to visuals, and provide focus for important trends or insights. The <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane is found in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
+使用 **分析** ] 窗格中的 **Power BI Desktop**, ，您可以新增動態 *參考線* 至視覺效果，並提供重要的趨勢或洞察焦點。  **分析** 窗格位於 **視覺效果** Power BI Desktop，開頭為 2016 年 8 月發行的區域 (2.37.4464.321 版或更新版本)，如下所示。
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_1.png)
 
->   Note: The <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane only appears when you select a visual on the Power BI Desktop canvas.
+>   注意︰ **分析** 當您選取視覺效果 Power BI Desktop 畫布上的時，才會出現窗格。
 
-## Enable Forecasting (Preview)
+## 啟用預測 （預覽）
 
-In addition, with the September 2016 release of <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> (version 2.39.4526.362 or later), you can also perform <bpt id="p2">*</bpt>forecasting<ept id="p2">*</ept> from the <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept> pane. You must enable this preview feature, by going to <bpt id="p1">**</bpt>File &gt; Options and settings &gt; Options<ept id="p1">**</ept> then selecting <bpt id="p2">**</bpt>Preview Features<ept id="p2">**</ept> from the left pane. Select the checkbox next to <bpt id="p1">**</bpt>Forecasting<ept id="p1">**</ept> to enable the feature, as shown in the following image. You'll need to restart <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> for your changes to take effect.
+此外，使用 9 月 2016年版的 **Power BI Desktop** (2.39.4526.362 版或更新版本)，您也可以執行 *預測* 從 **分析** 窗格。 您必須啟用這項預覽功能，移至 **檔案 > 選項和設定 > 選項** 然後選取 **預覽功能** 從左窗格中。 選取此核取方塊旁 **預測** 啟用功能，如下圖所示。 您必須重新啟動 **Power BI Desktop** ，您的變更才會生效。
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_1b.png)
 
-## Using the Analytics pane
+## 使用 [分析] 窗格
 
-With the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane, you can create the following types of dynamic reference lines (not all lines are available for all visual types):
+使用 **分析** ] 窗格中，您可以建立下列類型的動態參考程式碼行 （並非所有線條都都適用於所有視覺化類型）︰
 
--   X-Axis constant line
--   Y-Axis constant line
--   Min line
--   Max line
--   Average line
--   Median line
--   Percentile line
+-   X 軸常數列
+-   Y 軸常數列
+-   最小線條
+-   最大線條
+-   平均線路
+-   中間的線條
+-   百分位數列
 
-The following sections show how you can use the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane and dynamic reference lines in your visualizations.
+下列各節顯示如何使用 **分析** 窗格和視覺效果中的動態參考程式碼行。
 
-To view the available dynamic reference lines for a visual, follow these steps:
+若要檢視可用的動態參考線條視覺效果，請遵循下列步驟︰
 
-1.  Select or create a visual, then select the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> icon from the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> section.
+1.  選取或建立視覺效果，然後選取 [ **分析** 圖示從 **視覺效果** 一節。
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_2.png)
 
-2.  Select the down arrow for the type of line you want to create to expand its options. In this case, we'll select <bpt id="p1">**</bpt>Average Line<ept id="p1">**</ept>.
+2.  選取您想要建立以展開其選項的線條類型的向下箭號。 在此情況下，我們將嘗試選取 **平均線**。
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_3.png)
 
-3.  To create a new line, select <bpt id="p1">**</bpt>+ Add<ept id="p1">**</ept>. You can then specify a name for the line by double-clicking the text box, then typing in your name.
+3.  若要建立新的一行，請選取 **+ 新增**。 您接著可以指定列的名稱，只要按兩下文字方塊，然後輸入您的名稱。
 
-    You have all sorts of options for your line, such as selecting its <bpt id="p1">*</bpt>color<ept id="p1">*</ept>, <bpt id="p2">*</bpt>transparency<ept id="p2">*</ept>, <bpt id="p3">*</bpt>style<ept id="p3">*</ept> and <bpt id="p4">*</bpt>position<ept id="p4">*</ept> (relative to the visual's data elements), and whether to include the label. And importantly, you can select which <bpt id="p1">**</bpt>Measure<ept id="p1">**</ept> in the visual you want your line to be based upon by selecting the <bpt id="p2">**</bpt>Measure<ept id="p2">**</ept> drop down, which is automatically populated with data elements from the visual. In this case, we'll select <bpt id="p1">*</bpt>Weather<ept id="p1">*</ept> as the measure, label it <bpt id="p2">*</bpt>Average Weather<ept id="p2">*</ept>, and customize a few of the other options as shown below.
+    您的程式行，例如選取各種選項及其 *色彩*, ，*透明度*, ，*樣式* 和 *位置* （相對於視覺項目的資料元素），以及是否要包含的標籤。 重要的是，您可以選取和 **量值** 要視覺效果中您可依據所選取的列 **量值** 下拉式清單，其中會自動填入資料視覺效果中的項目。 在此情況下，我們將嘗試選取 *天氣* 為量值，它標示 *平均天氣*, ，以及自訂數個其他選項，如下所示。
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_4.png)
 
-4.  If you want to have a data label appear, move the <bpt id="p1">**</bpt>Data label<ept id="p1">**</ept> slider on. When you do so, you get a whole host of additional options for your data label, as shown in the following image.
+4.  如果您想要有資料標籤出現，請移動 **資料標籤** ] 滑桿。 當您這樣做時，取得其他選項的資料標籤，如下圖所示。
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_5.png)
 
-5.  Notice the number that appears next to the <bpt id="p1">**</bpt>Average line<ept id="p1">**</ept> item in the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a <bpt id="p1">**</bpt>Max line<ept id="p1">**</ept> for <bpt id="p2">*</bpt>Cost of Living<ept id="p2">*</ept>, you can see that the <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept> pane shows that we now also have a <bpt id="p4">**</bpt>Max line<ept id="p4">**</ept> dynamic reference line applied to this visual.
+5.  請注意旁邊顯示的數字 **平均行** 項目 **分析** 窗格。 會告訴您目前擁有 visual studio，以及哪些類型的動態線條數目。 如果我們將加入 **最大行** 的 *成本的生活*, ，您可以看到 **分析** ] 窗格會顯示，我們現在也有 **最大行** 動態參考列套用至這個 visual。
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_6.png)
 
-If the visual you've selected can't have dynamic reference lines applied to it (in this case, a <bpt id="p1">**</bpt>Map<ept id="p1">**</ept> visual), you'll see the following when you select the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> pane.
+如果您所選取視覺效果不能套用至它的動態參考程式碼行 (在此情況下， **對應** visual)，當您選取時，您會看到下列 **分析** 窗格。
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_7.png)
 
 
-There are all sorts of interesting insights you can highlight by creating dynamic reference lines with the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane.
+有各種有趣的內幕，您可以反白顯示藉由建立動態參考帶有 **分析** 窗格。
 
-We're planning more features and capabilities, including expanding which visuals can have dynamic reference lines applied to them, so check back often for what's new.
+我們打算更多的功能和功能，包括展開視覺項目可以有動態參考行套用，因此請回來查看通常為最新消息。
 
-## Apply Forecasting
+## 適用於預測
 
-You can use the <bpt id="p1">**</bpt>Forecast<ept id="p1">**</ept> feature by selecting a visual, then expanding the <bpt id="p2">**</bpt>Forecast<ept id="p2">**</ept> section of the <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept> pane. You can specify many inputs to modify the forecast, such as the <bpt id="p1">*</bpt>Forecast length<ept id="p1">*</ept>, the <bpt id="p2">*</bpt>Confidence interval<ept id="p2">*</ept>, and others. The following image shows a basic line visual with forecasting applied, but you can use your imagination (and play around with the <bpt id="p1">*</bpt>forecasting<ept id="p1">*</ept> feature) to see how it can apply to your models.
+您可以使用 **預測** 功能選取視覺效果，然後展開 [ **預測** 區段 **分析** 窗格。 您可以指定多輸入修改預測，例如 *預測長度*, 、 *信賴區間*, ，等等。 下圖顯示基本列 visual 預測套用，但是您可以使用您的想像力 (玩一玩 *預測* 功能) 以查看如何套用在您的模型。
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_8.png)
 
 ## 限制
 
-The ability to use dynamic reference lines is based on the type of visual being used. The following list shows which dynamic lines are currently available for which visuals:
+能夠使用動態參考線根據 visual 所使用的類型。 下列清單顯示動態程式碼行目前可用的哪一個視覺效果︰
 
-Full use of dynamic lines are available on the following visuals:
+利用動態程式碼行，還有下列視覺效果︰
 
--   Area chart
--   Line chart
--   Scatter chart
--   Clustered Column chart
--   Clustered Bar chart
+-   區域圖
+-   折線圖
+-   散佈圖
+-   叢集的直條圖
+-   叢集橫條圖
 
-The following visuals can use only a <bpt id="p1">*</bpt>constant line<ept id="p1">*</ept> from the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> pane:
+只能使用下列的視覺效果 *常數列* 從 **分析** 窗格︰
 
--   Stacked Area
--   Stacked Bar
--   Stacked Column
--   100% Stacked Bar
--   100% Stacked Column
+-   堆疊的區域
+-   堆疊的橫條圖
+-   堆疊的直條圖
+-   100%堆疊橫條圖
+-   100%堆疊直條圖
 
-For the following visuals, a <bpt id="p1">*</bpt>trend line<ept id="p1">*</ept> is currently the only option:
+下列的視覺效果，如 *趨勢線* 是目前唯一的選項︰
 
--   Non-stacked Line
--   Clustered Column chart
+-   非堆疊線
+-   叢集的直條圖
 
-Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane, such as:
+最後，非笛卡兒視覺項目目前無法套用動態的程式行會 **分析** ] 窗格中，例如︰
 
--   Matrix
--   Pie chart
--   Donut
+-   矩陣
+-   圓形圖
+-   甜甜圈
 -   資料表
 
 
 ## 詳細資訊
 
-There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+有各種用途，您可以使用 Power BI Desktop。 如需有關其功能的詳細資訊，請參閱下列資源︰
 
--   [What's New in Power BI Desktop](powerbi-desktop-latest-update.md)
--   [Download Power BI Desktop](powerbi-desktop-get-the-desktop.md)
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
--   [Data Types in Power BI Desktop](powerbi-desktop-data-types.md)
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)    
+-   [新 Power BI Desktop](powerbi-desktop-latest-update.md)
+-   [下載 Power BI Desktop](powerbi-desktop-get-the-desktop.md)
+-   [開始使用 Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [使用 Power BI Desktop 查詢概觀](powerbi-desktop-query-overview.md)
+-   [Power BI Desktop 中的資料類型](powerbi-desktop-data-types.md)
+-   [圖形，並結合資料與 Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [在 Power BI Desktop 常見查詢工作](powerbi-desktop-common-query-tasks.md)    
 
 
 

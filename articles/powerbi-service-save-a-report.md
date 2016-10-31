@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Save a report in Power BI"
-   description="Save a report in Power BI"
+   pageTitle="將報表儲存在 Power BI"
+   description="將報表儲存在 Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,29 +19,29 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Save a report in Power BI
+# 將報表儲存在 Power BI
 
-After you change a report in Power BI, you can save it, save it with a new name, or just close it without saving your changes. Say you open the report, create a visualization, and pin it to your dashboard. If you close it now without saving your changes, the tile remains on the dashboard, but the visualization isn't saved in the report. When you click that tile on the dashboard, the report opens, but the visualization is gone.
+變更在 Power BI 中的報表之後，您可以將它儲存、 將它儲存為新的名稱，或只需將它關閉而不儲存變更。 假設您開啟報表、 建立視覺效果，並釘選到儀表板。 如果您關閉它現在不儲存變更，磚仍在儀表板，但視覺效果不會儲存在報表中。 當您按一下該磚儀表板上的時，開啟報表，但是視覺效果都不見了。
 
-### To save a report:
+### 若要儲存報表︰
 
-1.  If the file name in the top navigation bar has an asterisk next to it, you know the report has changed.
+1.  如果上方導覽列中的檔案名稱旁邊的星號，您知道報表已變更。
 
-    >[AZURE.NOTE] You cannot use Save As on a read-only report.
+    >[AZURE.NOTE] 您不能使用另存為唯讀的報表。
 
     ![](media/powerbi-service-save-a-report/savereport1.png)
 
-2.  Select <bpt id="p1">**</bpt>FILE<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Save As<ept id="p3">**</ept>.
+2.  選取 **檔案** \> **儲存** 或 **存**。
 
-    If this is a new report, give it a descriptive name.  That name will appear under <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> in the navigation pane.
+    如果這是新的報表，為它指定描述性名稱。  該名稱會出現在 **報表** 瀏覽窗格中。
 
     ![](media/powerbi-service-save-a-report/savereport3b.png)
 
 
 ### 請參閱
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+[Power BI-基本概念](powerbi-service-basic-concepts.md)*
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Delete a visualization in Power BI"
-   description="Delete a visualization in Power BI"
+   pageTitle="刪除 Power BI 視覺效果"
+   description="刪除 Power BI 視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,22 +19,22 @@
    ms.workload="powerbi"
    ms.date="08/25/2016"
    ms.author="mihart"/>
-# Delete a visualization in Power BI
+# 刪除 Power BI 視覺效果
 
-## Delete a visualization
+## 刪除視覺效果
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and <bpt id="p2">[</bpt>create a visualization<ept id="p2">](powerbi-service-add-visualizations-to-a-report-i.md)</ept> if your report doesn't already have one. 
+1.  在 Power BI 中開啟報表 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md) 和 [建立視覺效果](powerbi-service-add-visualizations-to-a-report-i.md) 如果報表沒有下列其中一個。 
 
-2.  Select the ellipses (...) and choose <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+2.  選取省略符號 （...），然後選擇 **移除**。
 
     ![](media/powerbi-service-delete-a-visualization/deleteVizNew.gif)
 
-    Or, select the visualization and press DELETE.
+    或者，選取 [視覺效果，再按 DELETE。
 
 ## 請參閱
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+進一步了解 [Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

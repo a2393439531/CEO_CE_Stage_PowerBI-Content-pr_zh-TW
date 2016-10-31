@@ -1,12 +1,12 @@
 <properties 
-        pageTitle="page title" 
+        pageTitle="頁面標題" 
         description="描述" 
         services="powerbi" 
         documentationCenter="" 
         authors="maggiesMSFT" />
 
-# here's
+# 以下是
 
-my new topic.
+我已新增主題。
 
-## wow
+## 哇 ！

@@ -1,6 +1,6 @@
 <properties
    pageTitle="管理入口網站"
-   description="The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings."
+   description="Power BI 的組織中的租用戶管理可讓系統管理員入口網站。 它包含使用計量，存取 Office 365 系統管理中心及設定等項目。"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -18,118 +18,118 @@
    ms.workload="powerbi"
    ms.date="08/15/2016"
    ms.author="asaxton"/>
-# Power BI admin portal
+# Power BI 系統管理員入口網站
 
-Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365. 
+貴公司的 Power BI 租用戶管理是透過 Power BI 系統管理員入口網站。 身為全域系統管理員在 Office 365 中的所有使用者存取系統管理入口網站。 
 
-## How to get to the admin portal
+## 如何取得系統管理員入口網站
 
-To get to the Power BI admin portal, do the following.
+若要取得 Power BI 系統管理員入口網站，請執行下列項目。
 
-1. Select the settings gear in the top right of the Power BI service.
+1. 選取設定齒輪右上角的 Power BI 服務。
 
-2. Select <bpt id="p1">**</bpt>Admin Portal<ept id="p1">**</ept>.
+2. 選取 **系統管理入口網站**。
 
-> [AZURE.NOTE] Your account needs to be marked as a <bpt id="p1">**</bpt>Global Admin<ept id="p1">**</ept>, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+> [AZURE.NOTE] 您的帳戶必須標示為 **全域管理員**, 、 Office 365 或 Azure Active Directory，才能存取 Power BI 系統管理員入口網站內。
 
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
-Within the portal, there are 3 tabs. These are described below.
--   [Usage metrics](#usage-metrics)
+在入口網站中，有 3 個索引標籤。 以下分別說明。
+-   [使用計量](#usage-metrics)
 -   [管理使用者](#manage-users)
--   [Audit logs](#audit-logs)
--   [Tenant settings](#tenant-settings)
+-   [稽核記錄檔](#audit-logs)
+-   [租用戶設定](#tenant-settings)
 
 ![](media/powerbi-admin-portal/powerbi-admin-landing-page.png)
 
-## Usage metrics
+## 使用計量
 
-The first tab, in the admin portal, is <bpt id="p1">**</bpt>Usage metrics<ept id="p1">**</ept>. The usage metrics report gives you the ability to monitor usage within Power BI for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization.
+第一個索引標籤的 [系統管理員入口網站是 **使用量度量**。 使用量度量報告可讓您監視組織內 Power BI 使用量。 它也提供了可查看哪些使用者和群組，最常使用 Power BI 中為您的組織。
 
-> [AZURE.NOTE] The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
+> [AZURE.NOTE] 第一次存取儀表板，或您無法檢視 [儀表板很長一段之後再次瀏覽之後，您將可能載入螢幕時看到我們載入儀表板。
 
-Once the dashboard loads, you will see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups in your organization.
+一次載入的儀表板，您會看到兩個區段的方塊。 第一個區段包含針對個別使用者的使用狀況資料，而且第二個區段群組的類似資訊在組織中。
 
-Here’s a breakdown of what you will see in each tile:
+以下是您會看到每個方塊中的分析︰
 
-- Distinct count of all dashboards, reports, and datasets in the user workspace
+- 所有儀表板、 報表和使用者工作區中的資料集的相異計數
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-- Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack two different users connected to, its count would be 6 (1 + 3 + 2)
+- 大部分使用儀表板具有存取權限的使用者數目。 例如，如果您有 3 個使用者，與您共用儀表板，也有兩個不同的使用者連線到內容套件加入其計數會是 6 (1 + 3 + 2)
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-- The most popular content users connected to. This would be anything the users could reach through the Get Data process, so SaaS content packs, Organizational content packs, files or databases.
+- 最受歡迎的內容使用者連接到。 這是使用者可以連絡到完成取得資料的程序，因此 SaaS 內容組件、 組織內容組件、 檔案或資料庫的任何項目。
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
-- A view of your top users based on how many dashboards they have, both dashboards they created themselves and dashboards shared to them.
+- 根據多少儀表板上使用者的檢視他們有，他們建立自己的儀表板和儀表板，共用都會。
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
-- A view of your top users based on how many reports they have
+- 有多少報表基礎上使用者的檢視
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-The second section shows the same type of information, but based on groups. This will let you see which groups in your organization are most active and what kind of information they are using.
+第二個區段會顯示相同類型的詳細資訊，但根據群組。 這可讓您查看組織中的群組是最常使用，他們使用何種資訊。
 
-With this information, you will be able to get real insights into how people are using Power BI across your organization, and be able to recognize those users, and groups, who are very active in your organization.
+利用此資訊，您才能夠取得真正了解人員如何使用 Power BI 組織，而且必須能夠辨識這些使用者和群組，能夠非常貴組織中使用。
 
 ## 管理使用者
 
-The second tab, in the admin portal, is <bpt id="p1">**</bpt>Manage Users<ept id="p1">**</ept>. User management, for Power BI, is done in the Office 365 admin center, so this section allows you to quickly reach the area to manage users, admins, and groups within Office 365.
+系統管理員入口網站中的第二個索引標籤是 **管理使用者**。 Power bi 的使用者管理係以 Office 365 系統管理中心，因此這個區段可讓您快速到達區來管理使用者、 系統管理員和 Office 365 內的群組。
 
 ![](media/powerbi-admin-portal/powerbi-admin-manage-users.png)
 
-When you click <bpt id="p1">**</bpt>Go to O365 Admin Center<ept id="p1">**</ept>, you go directly to the Office 365 admin center landing page, to manage the users of your tenant.
+當您按一下 **前往 O365 系統管理中心**, ，您直接移至 Office 365 系統管理中心登陸頁面上，若要管理您的租用戶使用者。
 
 ![](media/powerbi-admin-portal/powerbi-admin-o365-admin-center.png)
 
-## Audit logs
+## 稽核記錄檔
 
-The third tab, in the admin portal, is <bpt id="p1">**</bpt>Audit logs<ept id="p1">**</ept>. The logs are located within the Office 365 Security &amp; Compliance center. This section allows you to quickly access that area within Office 365. 
+系統管理員入口網站中的第三個索引標籤是 **稽核記錄檔**。 記錄檔位於 Office 365 安全性和相容性中心內。 此區段可讓您快速存取 Office 365 內該區域。 
 
-For more information about audit logs, see <bpt id="p1">[</bpt>Auditing Power BI in your organization<ept id="p1">](powerbi-admin-auditing.md)</ept>
+如需稽核記錄檔的詳細資訊，請參閱 [稽核您組織中的 Power BI](powerbi-admin-auditing.md)
 
-## Tenant settings
+## 租用戶設定
 
-The third tab, in the admin portal, is <bpt id="p1">**</bpt>Tenant settings<ept id="p1">**</ept>. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization. If this is the case, you can switch it off in your tenant.
+系統管理員入口網站中的第三個索引標籤是 **租用戶設定**。 租用戶設定讓您更充分掌控哪些功能，可用於您的組織。 如果您有機密資料的考量，我們的功能可能無法最適合您的組織。 如果這種情況，您可以切換租用戶中。
 
-> [AZURE.IMPORTANT] These are global settings. Turning them off will affect all users, using Power BI, in your organization!
+> [AZURE.IMPORTANT] 這些是全域設定。 關閉它們會影響所有使用者，在您的組織中使用 Power BI ！
 
 ![](media/powerbi-admin-portal/powerbi-admin-tenant-settings.png)
 
-When you turning settings on and off, you will see a notification letting you know it was successful. It can take up to 10 minutes for the setting to take effect for everyone in your tenant.
+當您開啟和關閉的設定，您會看到一則通知，通知您知道已順利完成。 可能需要 10 分鐘的時間才會生效，您的租用戶中的每個人設定。
 
 ![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-notification.png)
 
-### Publish content packs to the entire organization
+### 發行到整個組織內容組件
 
-This setting controls whether users of your tenant can publish content packs to the entire organization.
+此設定會控制您的租用戶的使用者是否可以將內容組件發行到整個組織。
 
 ![](media/powerbi-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Allow sharing content to external users
+### 允許共用的外部使用者內容
 
-This setting determines whether you can share a dashboard with users outside of your oganization.
+此設定會決定是否可以共用儀表板使用者與您組織外部。
 
 ![](media/powerbi-admin-portal/powerbi-admin-sharing-external.png)
 
-### Publish to web
+### 發佈到網站
 
-This setting determines whether you can use the <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> feature for reports. [進一步了解](powerbi-service-publish-to-web.md)
+此設定會決定您是否可以使用 **發佈到網站** 報告的功能。 [進一步了解](powerbi-service-publish-to-web.md)
 
 ![](media/powerbi-admin-portal/powerbi-admin-publish-to-web.png)
 
-### Export data
+### 匯出資料
 
-This setting determines whether you can export data from a tile or visualization. [進一步了解](powerbi-service-export-data.md)
+此設定會決定您是否可以從磚或視覺效果來匯出資料。 [進一步了解](powerbi-service-export-data.md)
 
 ![](media/powerbi-admin-portal/powerbi-admin-export-data.png)
 
 ## 請參閱
 
-[Auditing Power BI in your organization](powerbi-admin-auditing.md)  
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[您的組織中的稽核 Power BI](powerbi-admin-auditing.md)  
+[管理組織中的 Power BI](powerbi-admin-administering-power-bi-in-your-organization.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

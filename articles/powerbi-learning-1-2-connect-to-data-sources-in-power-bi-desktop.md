@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to Data Sources in Power BI Desktop"
-   description="Find out how to connect to data using Power BI Desktop"
+   pageTitle="連接至 Power BI Desktop 中的資料來源"
+   description="了解如何使用 Power BI Desktop 連接到資料"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,26 +22,27 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Connect to Data Sources in Power BI Desktop
+# 連接至 Power BI Desktop 中的資料來源
 
-<bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> can connect to a whole range of data sources, including on-premises databases, Excel workbooks, and cloud services. Currently, over 59 different cloud services such as GitHub and Marketo have specific connectors, and you can connect to generic sources through XML, CSV, text, and ODBC. Power BI will even scrape tabular data directly from a website URL! But let's start from the beginning, with opening Power BI Desktop and connecting to data.
 
-When you start <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> and move past the Start Screen, you can choose Get Data from the ribbon on the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab.
+            **Power BI Desktop** 可以連接至各種資料來源，包括在內部資料庫，Excel 活頁簿，和雲端服務。 目前超過 59 的不同雲端服務，例如 GitHub 和 Marketo 有特定的連接器，您可以透過 XML、 CSV 及文字，而 ODBC 泛型的來源連接。 Power BI 甚至會消除直接從網站 URL 的表格式資料 ！ 但是，我們要從頭開始，開啟 Power BI Desktop 與連接至資料。
+
+當您啟動 **Power BI Desktop** 和跳過 [開始] 畫面中，您可以選擇取得資料，從功能區上 **首頁** ] 索引標籤。
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_1.png)
 
-There are monthly updates to Power BI Desktop, and with each update, the <bpt id="p1">**</bpt>Power BI Desktop What's New<ept id="p1">**</ept> page gets updated with information about the updates, links to the blog, and a download link.
+每月更新至 Power BI Desktop，且每個更新， **最新的 Power BI Desktop** 頁面取得更新的更新、 部落格、 連結和下載連結的相關資訊。
 
-In Power BI Desktop, there are all sorts of different data sources available. Select a source to establish a connection. Depending on your selection, you will be asked to find the source on your computer or network, or be prompted to log in to a service to authenticate your request.
+在 Power BI Desktop 中有可用的各種不同的資料來源。 選取要連接的來源。 根據您選取項目，您必須找不到您的電腦或網路上的來源，或提示您登入服務來驗證您的要求。
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_2.gif)
 
-After connecting, the first window you'll see is the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>. The Navigator displays the tables or entities of your data source, and clicking on one gives you a preview of its contents. You can then import your selected tables or entities immediately, or select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> to transform and clean your data before importing.
+連線之後，您會看到第一個視窗是 **導覽**。 導覽會顯示資料表或實體的資料來源，並按一下其中一個提供您預覽的內容。 您可以匯入您所選取的資料表或實體，或選取 **編輯** 轉換並匯入之前清除資料。
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_3.png)
 
-Once you've selected the tables you'd like to bring into Power BI Desktop, you can choose to load them into Power BI Desktop by selecting the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> button in the bottom right corner of <bpt id="p2">**</bpt>Navigator<ept id="p2">**</ept>. There are times, however, where you might want to make changes to those tables before you load them into Power BI Desktop. You might want only a subset of customers, or filter that data for sales that occurred only in a specific country. In those cases, you can select the Edit button and filter or transform that data before bringing it all into Power BI Desktop.
+一旦您已選取您想要帶入 Power BI Desktop 的資料表，您可以選擇選取 [將它們載入到 Power BI Desktop **載入** 右下角的按鈕 **導覽**。 有些時候，不過，您可能要您載入 Power BI Desktop 之前進行這些資料表的變更。 您可能會想只有一群的客戶，或是篩選只發生特定國家/地區的銷售資料。 您可以在這些情況下，選取 [編輯] 按鈕及篩選器，或將資料轉換之前將它放置在 Power BI Desktop。
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_4.png)
 
-We'll pick up there, and edit our data, in the next section.
+我們將挑選，並編輯資料下, 一節。

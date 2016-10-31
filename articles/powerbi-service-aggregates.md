@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Aggregates (sum, average, maximum, etc.) in Power BI"
-   description="Change the aggregation in a chart (sum, average, maximum, etc.) in Power BI"
+   pageTitle="中的彙總 （總和、 平均、 最大值等） Power BI"
+   description="變更在 Power BI 的圖表 （總和、 平均、 最大值等） 的彙總"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,52 +20,62 @@
    ms.date="09/21/2016"
    ms.author="mihart"/>
 
-# <a name="aggregates-in-power-bi"></a>Aggregates in Power BI  
+# <a name="aggregates-in-power-bi"></a>Power BI 中的彙總  
 
-## <a name="what-is-an-aggregate?"></a>What is an aggregate?
+## <a name="what-is-an-aggregate?"></a>什麼是彙總？
 
-A numeric field is a value that will be aggregated (summed or averaged, for example).  These are often referred to as <bpt id="p1">**</bpt>measures<ept id="p1">**</ept>. Measures in Power BI are imported with the data (defined in the data model your report is based on). In the Fields list, measures are shown with the ∑ symbol. For more information see <bpt id="p1">[</bpt>The report editor... take a tour<ept id="p1">](powerbi-service-the-report-editor-take-a-tour.md)</ept>.
+數值欄位是值，這個值將會彙總 （加總或平均，例如）。  這些通常稱為 **量值**。 （您的報表為基礎的資料模型中定義） 的資料匯入 Power BI 中的量值。 在 [欄位] 清單中，量值會顯示與 ∑ 符號。 如需詳細資訊，請參閱 [報表編輯器...介紹](powerbi-service-the-report-editor-take-a-tour.md)。
 
-## <a name="change-how-a-numeric-field-is-aggregated"></a>Change how a numeric field is aggregated
+## <a name="change-how-a-numeric-field-is-aggregated"></a>變更數值欄位彙總的資料
 
-Say you have a chart that sums the sales data for different regions, but you'd rather have the average. 
+假設您有一份圖表加總的銷售資料的不同區域，但您想讓平均值。 
 
-1.  In report Editing view, add the measure to a visualization.
+1.  在報表的 [編輯] 檢視中，將量值加入至視覺效果。
 
-2.  Find that field in the Visualizations pane, right-click, and select the aggregate type you need.
+2.  欄位的視覺效果，窗格中按一下滑鼠右鍵，選取您需要的彙總類型的尋找。
 
     ![](media/powerbi-service-change-the-aggregation-in-a-chart/aggregate_new.png)
 
->[AZURE.NOTE] The options available in the dropdown will vary depending on the field selected.
+>[AZURE.NOTE] 下拉式清單中可用的選項取決於所選的欄位。
 
-Some of the options that may be available for aggregating a field:
+某些可用的彙總欄位的選項︰
 
--   <bpt id="p1">**</bpt>Do Not Summarize<ept id="p1">**</ept>. With this option chosen, each value in that field is treated separately and not summarized. This is often used if you have a numeric ID column that shouldn't be summed.
+-   
+            **不摘要**。 選擇此選項，該欄位中的每個值是分開處理，並不摘述。 如果您有不應該加總的數值識別碼資料行通常使用這種。
 
--   <bpt id="p1">**</bpt>Sum<ept id="p1">**</ept>. This adds all the values in that field up.
+-   
+            **總和**。 這會將該欄位中的所有值相加。
 
--   <bpt id="p1">**</bpt>Average<ept id="p1">**</ept>. Takes an arithmetic mean of the values.
+-   
+            **平均**。 會接受的算術平均值的值。
 
--   <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept>. Shows the smallest value.
+-   
+            **最小值**。 顯示的最小值。
 
--   <bpt id="p1">**</bpt>Maximum<ept id="p1">**</ept>. Shows the largest value.
+-   
+            **最大**。 顯示的最大值。
 
--   <bpt id="p1">**</bpt>Count (Not Blanks).<ept id="p1">**</ept> This counts the number of values in that field that are not blank.
+-   
+            **計數 （沒有空格）。** 這會計算該欄位中不是空白的值數目。
 
--   <bpt id="p1">**</bpt>Count (Distinct).<ept id="p1">**</ept> This counts the number of different values in that field.
+-   
+            **計數 （相異）。** 這會計算該欄位中的不同值的數目。
 
-- <bpt id="p1">**</bpt>Standard deviation.<ept id="p1">**</ept>
+- 
+            **標準差。**
 
-- <bpt id="p1">**</bpt>Variance<ept id="p1">**</ept>.
+- 
+            **變異數**。
 
-- <bpt id="p1">**</bpt>Median<ept id="p1">**</ept>.  Shows the median (middle) value. This is the value that has the same number of items above and below.  If there are 2 medians, Power BI averages them.
+- 
+            **中間值**。  顯示的位數 （中間） 值。 這是具有相同數目的項目之上或之下的值。  如果有 2 個眾數，Power BI 取其平均值。
 
 
-For example, this data:
+例如，這項資料︰
 
-| 國家/地區   | Amount |
+| 國家/地區   | 數量 |
 |:----------|:-------|
-| USA       | 100    |
+| 美國       | 100    |
 | 英國        | 150    |
 | 加拿大    | 100    |
 | 德國   | 125    |
@@ -73,48 +83,61 @@ For example, this data:
 | 日本     | 125    |
 | 澳洲 | 150    |
 
-Would give the following results:
+會提供下列結果︰
 
--   <bpt id="p1">**</bpt>Do Not Summarize<ept id="p1">**</ept>: Each value is shown separately
+-   
+            **執行摘要**︰ 則會個別顯示每個值
 
--   <bpt id="p1">**</bpt>Sum<ept id="p1">**</ept>: 750
+-   
+            **總和**: 750
 
--   <bpt id="p1">**</bpt>Average<ept id="p1">**</ept>: 125
+-   
+            **平均**: 125
 
--   <bpt id="p1">**</bpt>Maximum<ept id="p1">**</ept>:  150
+-   
+            **最大**: 150
 
--   <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept>: 100
+-   
+            **最小值**: 100
 
--   <bpt id="p1">**</bpt>Count (Not Blanks):<ept id="p1">**</ept> 6
+-   
+            **計數 （沒有空格）︰** 6
 
--   <bpt id="p1">**</bpt>Count (Distinct):<ept id="p1">**</ept> 4
+-   
+            **計數 （相異）︰** 4
 
-- <bpt id="p1">**</bpt>Standard deviation:<ept id="p1">**</ept> 20.4124145...
+- 
+            **標準差︰** 20.4124145...
 
-- <bpt id="p1">**</bpt>Variance:<ept id="p1">**</ept> 416.666...
+- 
+            **變異數︰** 416.666...
 
-- <bpt id="p1">**</bpt>Median:<ept id="p1">**</ept> 125
+- 
+            **中間值︰** 125
 
 
-## <a name="use-a-non-aggregated-field-as-a-numeric-field"></a>Use a non-aggregated field as a numeric field
+## <a name="use-a-non-aggregated-field-as-a-numeric-field"></a>做為數值欄位中的非彙總的欄位
 
-You can also use a non-aggregated field as a numeric field. For example, if you have a Product Name field, you can add it as a value and then set it to <bpt id="p1">**</bpt>Count<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Distinct count<ept id="p2">**</ept>. 
+您也可以使用非彙總的欄位做為數值欄位。 比方說，如果您有產品名稱] 欄位中，您可以加入做為值並將該值設定為 **計數** 或 **相異計數**。 
 
-1.  For example, if you select <bpt id="p1">**</bpt>Store &gt; Chain<ept id="p1">**</ept>.
+1.  例如，如果您選取 **存放區 > 鏈結**。
 
     ![](media/powerbi-service-aggregates/count-of-chain-do_not_summarize.png)
 
-2.  And if you change the aggregation from the default <bpt id="p1">**</bpt>Do not summarize<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Count (Distinct)<ept id="p2">**</ept>, Power BI counts the number of different chains. In this case, there are 2: Fashions Direct and Lindseys.
+2.  如果您變更預設彙總 **不摘要** 至 **計數 （相異）**, ，Power BI 計算不同鏈結的數目。 在此情況下，有 2︰ 直接的方式和 Lindseys。
 
     ![](media/powerbi-service-aggregates/aggregates_count.png)
 
-3.  And if you change the aggregation to <bpt id="p1">**</bpt>Count<ept id="p1">**</ept>, Power BI counts the total number. In this case, there are 104 entries for <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept>. By adding <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> as a filter, you can see that there are 37 rows for Fashions Direct and 67 rows for Lindseys.  
+3.  如果您變更的彙總 **計數**, ，Power BI 計算總數。 在此情況下，都有 104 **鏈結**。 藉由新增 **鏈結** 做為篩選條件，您可以看到有 37 資料列的方式直接和 67 Lindseys 資料列。  
 
     ![](media/powerbi-service-aggregates/count_of_chain_104.png)
 
 ## <a name="see-also"></a>請參閱  
-<bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>  
 
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>  
+            [Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)  
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)  
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

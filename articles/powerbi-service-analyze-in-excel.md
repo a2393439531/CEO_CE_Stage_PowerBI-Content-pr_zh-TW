@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Analyze in Excel"
-   description="Learn about how to analyze Power BI datasets in Excel"
+   pageTitle="在 Excel 中分析"
+   description="深入了解如何分析 Power BI 資料集在 Excel 中"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,86 +20,89 @@
    ms.date="09/27/2016"
    ms.author="davidi"/>
 
-# Analyze in Excel
-With <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>, you can view and interact with a dataset you have access to in Power BI, and thereby access PivotTable, chart, and slicer features directly in Excel, based on the dataset that exists in Power BI.
+# 在 Excel 中分析
+使用 **在 Excel 中的進行分析**, ，您可以檢視和資料集，您可以存取 Power BI 中與互動並存取直接在 Excel 中，存在於 Power BI 資料集為基礎的樞紐分析表、 圖表和交叉分析篩選器功能，藉此。
 
 ## 需求
-There are a few requirements for using <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>:
-- <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> is supported for Microsoft Excel 2010 SP1 and later.
-- Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI <bpt id="p1">*</bpt>must have pre-defined measures<ept id="p1">*</ept>.
-- Some organizations may have Group Policy rules that prevent installing the required <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> updates to Excel. If you’re unable to install the updates, check with your administrator.
+有幾項需求使用 **在 Excel 中的進行分析**:
+- 
+            **在 Excel 中分析** 支援 Microsoft Excel 2010 SP1 和更新版本。
+- Excel 樞紐分析表不支援拖放的數值欄位的彙總。 您在 Power BI 中的資料集 *必須有預先定義的量值*。
+- 某些組織可能會防止安裝所需的群組原則規則 **在 Excel 中的進行分析** 更新至 Excel。 如果您無法安裝更新，請洽詢您的系統管理員。
 
 ## 它如何運作？
-When you select <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> from the ellipses menu (the ...) associated with a dataset or report in <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept>, Power BI creates an .ODC file and downloads it from the browser to your computer.
+當您選取 **在 Excel 中的進行分析** 橢圓形功能表 (...) 相關聯的資料集或報表中的 **Power BI**, ，Power BI 建立。ODC 檔案，可以從瀏覽器下載到您的電腦。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_menu.png)
 
-When you open the file in Excel, an empty <bpt id="p1">**</bpt>PivotTable<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> list appears with the tables, fields, and measures from the Power BI dataset. You can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
+當您開啟此檔案在 Excel 中，空 **樞紐分析表** 和 **欄位** 清單會出現資料表欄位，以及從 Power BI 資料集之量值。 您可以建立樞紐分析表、 圖表和分析該資料集，您可能會使用本機的資料集在 Excel 中一樣。
 
-The .ODC file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
+。ODC 檔案已連接到您的資料集，在 Power BI 中的 MSOLAP 連接字串。 當您分析或處理資料時，Excel 查詢 Power BI 中的該資料集，並將結果傳回 Excel。 如果該資料集連接到即時資料來源使用 DirectQuery，Power BI 查詢資料來源，並將結果傳回至 Excel。
 
-<bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> is very useful for datasets and reports that connect to <bpt id="p2">*</bpt>Analysis Services Tabular<ept id="p2">*</ept> or <bpt id="p3">*</bpt>Multidimensional<ept id="p3">*</ept> databases, or from Power BI Desktop files or Excel workbooks with data models that have explicit measures created using Data Analysis Expressions (DAX).
 
-## Get started with Analyze in Excel
+            **在 Excel 中分析** 很適合的資料集和報表，連接到 *Analysis Services 表格式* 或 *多維度* 資料庫，或從 Power BI Desktop 檔案或 Excel 活頁簿有明確使用 Data Analysis Expressions (DAX) 建立的量值的資料模型。
 
-In Power BI, select the ellipses menu beside a report or dataset (the ... beside the report or dataset name), and from the menu that appears, select <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>.
+## 開始使用 [在 Excel 中進行分析
+
+在 Power BI 中，選取報表或資料集旁邊的省略符號功能表 (報表或資料集名稱旁邊的 …)，然後從出現的功能表，選取 **在 Excel 中的進行分析**。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_menu.png)
 
 
-### Install Excel updates
-When you first use <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>, you need to install updates to the Excel libraries. You’ll be prompted to download and run Excel updates (this initiates installation of the <bpt id="p1">*</bpt>SQL_AS_OLEDDB.msi<ept id="p1">*</ept> Windows installer package). This package installs <bpt id="p1">**</bpt>Microsoft AS OLE DB Provider for SQL Server 2016 RC0 (Preview)<ept id="p1">**</ept>.
+### 安裝 Excel 更新
+當您第一次使用 **在 Excel 中的進行分析**, ，您需要將更新安裝至 Excel 文件庫。 您將會提示您下載並執行 Excel 更新 (這樣會起始安裝 *SQL_AS_OLEDDB.msi* Windows installer 套件)。 這個套件會安裝 **Microsoft AS OLE DB Provider for SQL Server 2016 RC0 （預覽）**。
 
-> <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Be sure to check <bpt id="p2">**</bpt>Don’t show this again<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Install Excel updates<ept id="p3">**</ept> dialog. You only need to install the update once.
+> 
+            **注意︰** 務必檢查 **不要再顯示** 中 **安裝 Excel 更新** ] 對話方塊。 您只需要一次安裝更新。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
 
-If you do need to install the Excel updates for <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> again, you can download the update from the <bpt id="p2">**</bpt>Download<ept id="p2">**</ept> icon in Power BI, as shown in the following image.
+如果您需要安裝 Excel 更新 **在 Excel 中的進行分析** 同樣地，您可以下載更新的 **下載** 圖示在 Power BI 中，如下圖所示。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_download_again.png)
 
-### Sign in to Power BI
-Although you’re signed in to Power BI in your browser, the first time you open a new .ODC file in Excel you must sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
+### 登入 Power BI
+雖然您在瀏覽器來登入 Power BI，第一次您開啟新的。您必須登入 Power BI 與您的 Power BI 帳戶 Excel ODC 檔案。 這會驗證從 Excel 連接到 Power BI。
 
-### Users with multiple Power BI accounts
-Some users have multiple Power BI accounts, and those users may encounter a situation where they're logged into Power BI with one account, but the account that has access to the dataset being used in Analyze in Excel is a different account. In those situations, you may get a <bpt id="p1">**</bpt>Forbidden<ept id="p1">**</ept> error or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.
+### 使用多個 Power BI 帳戶的使用者
+某些使用者有多個的 Power BI 帳戶，以及這些使用者可能會遇到的情況下，有一個帳戶，登入 Power BI，但可用於在 Excel 中進行分析的資料集的存取帳戶是在不同的帳戶。 在這些情況下，您可能會收到 **禁止** 錯誤或登入失敗時嘗試存取的資料集，用於在 Excel 活頁簿中進行分析。
 
-You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel.
+將提供您機會來登入同樣地，此時您可以使用登入 Power BI 帳戶具有存取在 Excel 中進行分析的資料集的存取權。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_AADlogin.png)
 
-For other errors you might encounter, take a look at the <bpt id="p1">[</bpt>Troubleshooting Analyze in Excel<ept id="p1">](powerbi-desktop-troubleshooting-analyze-in-excel.md)</ept> article.
+針對其他錯誤，您可能會遇到，看看 [疑難排解在 Excel 中分析](powerbi-desktop-troubleshooting-analyze-in-excel.md) 文件。
 
-### Enable data connections
-In order to analyze your Power BI data in Excel, you are prompted to verify the file name and path for the .odc file, and then select <bpt id="p1">**</bpt>Enable<ept id="p1">**</ept>.
+### 啟用資料連接
+若要分析您的 Power BI 資料在 Excel 中，系統會提示您確認.odc 檔案的路徑與檔案名稱，然後選取 **啟用**。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_enable.png)
 
-You can also connect to on-premises Analysis Services (AS) databases using <bpt id="p1">*</bpt>DirectQuery<ept id="p1">*</ept>, and include data in reports created using Analyze in Excel. You must be on the same Active Directory domain as the AS database, and it must be on-premises. Administrators for a Power BI deployment can enable or disable the ability to connect to AS databases in the <bpt id="p1">**</bpt>Admin portal<ept id="p1">**</ept>.
+您也可以連接到內部部署 Analysis Services (AS) 資料庫時使用 *DirectQuery*, ，並建立使用 [在 Excel 中進行分析報表中包含的資料。 您必須是相同的 Active Directory 網域，做為資料庫中，並必須在內部。 系統管理員的 Power BI 部署可以啟用或停用能夠連線到做為資料庫中 **系統管理入口網站**。
 
-## Analyze away
-Now that Excel has opened and you have an empty PivotTable, you're ready to do all sorts of analysis with your Power BI dataset. Just as with other local workbooks, with Analyze with Excel you can create PivotTables, charts, add data from other sources, and so on. And of course, you can create different worksheets with all sorts of views into your data.
+## 離開分析
+現在已開啟 Excel，而且您有空白的樞紐分析表，您已準備好進行各種分析與 Power BI 資料集。 如同其他本機活頁簿，您可以建立從 excel 中進行分析與樞紐分析表、 圖表、 從其他來源中，加入資料等等。 當然，您可以使用各種檢視建立不同的工作表資料。
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_chart.png)
 
 ## 儲存
-You can save this Power BI dataset connected workbook just like any other workbook. However, you cannot publish or import the workbook back into Power BI because you can only publish or import workbooks into Power BI that have data in tables, or that have a data model. Since the new workbook simply has a connection to the dataset in Power BI, publishing or importing it into Power BI would be going in circles!
+您可以儲存此 Power BI 資料集連接活頁簿就像任何其他活頁簿。 不過，您無法發行或活頁簿匯入 Power BI，因為您只可以發行或活頁簿匯入 Power BI，在資料表中有資料，或具有資料模型。 因為新的活頁簿只要有 Power BI 連接至資料集，發行或匯入至 Power BI 會將在圓圈中 ！
 
 ## 共用
-Once your workbook is saved, you can share it with other Power BI users in your organization. In order to share your workbook with other Power BI users, you must share the dataset (the workbook) by doing one of the following:
+儲存您的活頁簿後，您可以與其他 Power BI 使用者共用您的組織中。 為了與其他 Power BI 使用者共用您的活頁簿，您必須執行下列其中一項共用資料集 （活頁簿）︰
 
--   Share the Power BI dashboard that hosts a pinned element from your Power BI report with the user
--   Share a content pack that contains the dataset with the user
--   Add the user with whom you want to share to the group that owns the dataset
+-   共用主控釘選的項目，從您的 Power BI 報表使用者 Power BI 儀表板
+-   共用內容的組件，其中包含與使用者的資料集
+-   使用您要共用群組擁有的資料集加入使用者
 
-When a user with whom you’ve shared your workbook opens the workbook, they’ll see your PivotTables and data as they appeared when the workbook was last saved, which may not be the latest version of the data. To get the latest data, users must use the <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> ribbon. And since the workbook is connecting to a dataset in Power BI, users attempting to refresh the workbook must sign into Power BI and install the Excel updates the first time they attempt to update using this method.
+當的使用者與您已共用您的活頁簿開啟活頁簿時，就會看到您的樞紐分析表和資料，如上次儲存活頁簿，可能不會將資料的最新版本時出現。 若要取得最新的資料，使用者必須使用 **重新整理** 按鈕 **資料** 功能區。 而且因為活頁簿連接到 Power BI 中的資料集，嘗試重新整理活頁簿的使用者必須登入 Power BI 和安裝 Excel 更新第一次嘗試更新使用這個方法。
 
-You can also set the workbook file to refresh the data upon opening, which refreshes the data whenever anyone accesses the dataset. To refresh the workbook each time it's opened, in Excel select <bpt id="p1">**</bpt>Connections<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> ribbon, select the connection used for the workbook, then select <bpt id="p3">**</bpt>Properties<ept id="p3">**</ept> and set <bpt id="p4">*</bpt>Refresh data when opening the file<ept id="p4">*</ept> to <bpt id="p5">**</bpt>True<ept id="p5">**</ept>, then select <bpt id="p6">**</bpt>OK<ept id="p6">**</ept>.
+您也可以設定重新整理資料時開啟，重新整理的資料，只要任何人存取資料集的活頁簿檔案。 若要重新整理活頁簿每次開啟，在 Excel 中選取 **連線** 從 **資料** 功能區上，選取活頁簿時，所使用的連接，然後選取 [ **屬性** 並設定 *檔案開啟時自動重新整理資料* 到 **，則為 True**, ，然後選取 **[確定]**。
 
-Since users will need to refresh the dataset, and refresh for external connections is not supported in Excel Online, it’s recommended that users open the workbook in the desktop version of Excel on their computer.
+因為使用者必須重新整理資料集，然後重新整理的外部連線不支援在 Excel Online 中，我們建議使用者在其電腦上使用桌面版本的 Excel 開啟活頁簿。
 
 ## 另請參閱  
 
-[Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md)
+[疑難排解在 Excel 中分析](powerbi-desktop-troubleshooting-analyze-in-excel.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get started with Power BI"
-   description="Get started with Power BI"
+   pageTitle="開始使用 Power BI"
+   description="開始使用 Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,121 +20,127 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Get started with Power BI
+# 開始使用 Power BI
 
 ##  快速入門
 
-This tutorial helps you get started with Power BI service.  If you're looking for help with Power BI Desktop, see <bpt id="p1">[</bpt>Get started with Desktop<ept id="p1">](powerbi-desktop-getting-started.md)</ept>.
+本教學課程可協助您開始使用 Power BI 服務。  如果您要尋找有關 Power BI Desktop，請參閱 [開始使用桌面](powerbi-desktop-getting-started.md)。
 
-Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, <bpt id="p1">***</bpt>dashboards<ept id="p1">***</ept> help you keep a finger on the pulse of your business.  Your dashboards display <bpt id="p1">***</bpt>tiles<ept id="p1">***</ept> that you can click to open <bpt id="p2">***</bpt>reports<ept id="p2">***</ept> for exploring further.  Connect to multiple <bpt id="p1">***</bpt>datasets<ept id="p1">***</ept> to bring all of the relevant data together in one place.
+Microsoft Power BI 可協助您保持最新的關切的事項的資訊。  有了 Power BI ***儀表板*** 協助您保持手指在業務的脈動。  儀表板顯示 ***磚*** ，您可以按一下以開啟 ***報表*** 來進一步探索。  連接到多個 ***資料集*** 使所有相關資料一起在同一個地方。
 
-Need help understanding the building blocks that make up Power BI?  See <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+需要了解 Power BI 所組成的建置組塊的協助嗎？  請參閱 [Power BI-基本概念](powerbi-service-basic-concepts.md)。
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by <bpt id="p1">[</bpt>connecting to Salesforce<ept id="p1">](powerbi-content-pack-salesforce.md)</ept> to automatically create a dashboard from that data, or <bpt id="p2">[</bpt>check out all the other SaaS apps<ept id="p2">](powerbi-service-get-data.md)</ept> you can connect to. If you are part of an organization, see if any <bpt id="p1">[</bpt>organizational content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept> have been published for you.
+如果您在 Excel 或 CSV 檔案的重要資料，您可以建立 Power BI 儀表板掌握任何位置，並與其他人共用。  您有 SaaS 應用程式，例如 Salesforce 的訂閱嗎？  取得開始 [連接至 Salesforce](powerbi-content-pack-salesforce.md) 自動從該資料，建立儀表板或 [簽出所有其他 SaaS 應用程式](powerbi-service-get-data.md) 可以連接到。 如果您是組織的一份子，查看是否有任何 [組織內容套件](powerbi-service-organizational-content-packs-introduction.md) 已經發行了。
 
 
-Read about all the other ways to <bpt id="p1">[</bpt>get data for Power BI<ept id="p1">](powerbi-service-get-data.md)</ept>.
+閱讀所有其他方法 [取得 Power BI 資料](powerbi-service-get-data.md)。
 
-## Step 1: Get data
+## 步驟 1︰ 取得資料
 
-Here's an example of getting data from a CSV file. Want to follow along with this tutorial? <bpt id="p1">[</bpt>Download this sample CSV file<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=619356)</ept>.
+以下是從 CSV 檔案中取得資料的範例。 想要依照本教學課程嗎？ 
+            [下載範例 CSV 檔案](http://go.microsoft.com/fwlink/?LinkID=619356)。
 
-1.  <bpt id="p1">[</bpt>Sign in to Power BI<ept id="p1">](http://www.powerbi.com/)</ept>. Don’t have an account? You can sign up for <bpt id="p1">[</bpt>Power BI for free<ept id="p1">]</ept><bpt id="p2">(http://www.powerbi.com/ "</bpt>try out the new Power BI Preview for free<ept id="p2">")</ept>.
+1.  
+            [登入 Power BI](http://www.powerbi.com/)。 沒有帳戶嗎？ 您可以註冊 [Power BI for 釋放](http://www.powerbi.com/ "免費試用新的 Power BI 預覽")。
 
-1.  Power BI opens with a dashboard displayed. Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> at the bottom of the left navigation pane.
+1.  Power BI 會開啟並顯示在儀表板。 選取 **取得資料** 左的導覽窗格的底部。
 
     ![](media/powerbi-service-get-started/getdata3.png)
 
-2.  Select <bpt id="p1">**</bpt>Files<ept id="p1">**</ept>. 
+2.  選取 **檔案**。 
 
     ![](media/powerbi-service-get-started/gs1.png)
 
-3.  Select <bpt id="p1">**</bpt>Local File<ept id="p1">**</ept>, browse to the file on your computer, and choose <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.
+3.  選取 **本機檔案**, ，瀏覽至您的電腦上的檔案，然後選擇 [ **開啟**。
 
     ![](media/powerbi-service-get-started/gs2.png)
 
-4.  Power BI uploads the CSV file and adds it as a new dataset (the yellow asterisk indicates a new item).  Since we did not already have a dashboard, Power BI also created a new dashboard for us.  In the left navigation pane, the new dashboard is listed under the <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> heading, and the new dataset appears under the <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept> heading. 
+4.  Power BI 上傳 CSV 檔案，並將其當做新資料集 （黃色星號表示新項目）。  由於我們已經沒有儀表板，Power BI 也為我們建立新的儀表板。  在左的導覽窗格中，新的儀表板列底下 **儀表板** 標題和新的資料集下方 **資料集** 標題。 
 
     ![](media/powerbi-service-get-started/gs4.png)
 
 
-## Step 2: Start exploring your dataset
+## 步驟 2︰ 開始探索您的資料集
 
-Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
+既然您已經連接到資料，探索尋找見解。  當您發現了您想要監視的一些東西時，您可以建立儀表板來追蹤最新變更。
 
-1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> heading, select the dataset name to open it. This opens the dataset as a blank report.
+1.  選取瀏覽資料只連線至，或在儀表板上的資料集映像 **資料集** 標題之下，選取資料集名稱，以開啟它。 這會開啟資料集為空白的報表。
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
 
-    >NOTE: Another way to explore your data is <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept>.  For more information, see <bpt id="p1">[</bpt>Introduction to Quick Insights<ept id="p1">](powerbi-service-auto-insights.md)</ept>
+    >注意︰ 若要瀏覽資料的另一種方式是 **即時掌握所有資訊**。  如需詳細資訊，請參閱 [快速 Insights 簡介](powerbi-service-auto-insights.md)
 
-2.  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list on the right side of the page, select fields to build a visualization.  Select the checkbox beside <bpt id="p1">**</bpt><ph id="ph1">﻿</ph>Gross Sales<ept id="p1">**</ept><ph id="ph2">﻿</ph> and  <bpt id="p2">**</bpt><ph id="ph3">﻿</ph>Date<ept id="p2">**</ept><ph id="ph4">﻿</ph>.
+2.  在 **欄位** 頁面右側清單中，選取要建置視覺效果的欄位。  選取此核取方塊旁的 **﻿銷售毛額**﻿ 和  **﻿日期**﻿。
 
     ![](media/powerbi-service-get-started/fields.png)
 
-3.  Power BI analyzes the data and creates a visual.  If you selected <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> first, you'll see a table.  If you selected <bpt id="p1">**</bpt>Gross Sales<ept id="p1">**</ept> first, you'll see a chart. Switch to a different way of displaying your data. Try changing to a line chart by selecting the line chart option.
+3.  Power BI 分析資料，並建立視覺效果。  如果您選取 **日期** 首先，您會看到資料表。  如果您選取 **銷售毛額** 首先，您會看到一個圖表。 切換至不同的方式顯示您的資料。 請嘗試變更為折線圖，藉由選取列圖表選項。
 
     ![](media/powerbi-service-get-started/gettingstart5new.png)
 
-4.  When you have a visualization you want on your dashboard, hover over the visualization and select the <bpt id="p1">**</bpt><ph id="ph1">﻿</ph>Pin<ept id="p1">**</ept><ph id="ph2">﻿</ph> icon.  When you pin this visualization, it will be stored on your dashboard so you can track the latest value at a glance.
+4.  當您想要在儀表板的視覺效果，將滑鼠停留在該視覺效果，然後選取 **﻿Pin**﻿ 圖示。  當您釘選此視覺效果時，會儲存您的儀表板上讓您能夠追蹤一眼的最新值。
 
     ![](media/powerbi-service-get-started/pinnew.png)
 
-5.  Because this is a new report, you need to save it before you can pin a visualization from it to the dashboard. Give your report a name (e.g., <bpt id="p1">*</bpt>Sales Over Time<ept id="p1">*</ept>) and select <bpt id="p2">**</bpt>Save and Continue<ept id="p2">**</ept>. 
+5.  因為這是新的報表，您需要儲存它之前，您可以釘選視覺效果從它的儀表板。 指定報表的名稱 (例如 *銷售一段時間*)，然後選取 **儲存並且繼續**。 
 
     ![](media/powerbi-service-get-started/PBI_GetStartSaveB4Pinnew.png)
 
-    The new report appears in the navigation pane under the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> heading.
+    新的報表會出現在瀏覽窗格下 **報表** 標題。
 
-6.  Pin the tile to an existing dashboard or to a new dashboard. 
+6.  釘選磚至現有的儀表板或新的儀表板。 
 
     ![](media/powerbi-service-get-started/PBI_GS_PinDialognew.png)
 
-    -   <bpt id="p1">**</bpt>Existing dashboard<ept id="p1">**</ept>: select the name of the dashboard from the dropdown.
-    -   <bpt id="p1">**</bpt>New dashboard<ept id="p1">**</ept>: type the name of the new dashboard.
+    -   
+            **現有的儀表板**︰ 從下拉式清單中選取的儀表板名稱。
+    -   
+            **新的儀表板**︰ 輸入新的儀表板的名稱。
 
-7.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+7.  選取 **Pin**。
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
+    成功的訊息 （靠近右上角） 可讓您知道已新增的視覺效果，做為您的儀表板] 的磚。
 
     ![](media/powerbi-service-get-started/pinSuccess.png)
 
-8.  Open the dashboard you just created. To do this, select the name under the <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> heading in the left navigation pane. Because the dashboard is new, it will have a yellow asterisk. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by <bpt id="p1">[</bpt>renaming, resizing, linking, and repositioning tiles<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>.﻿﻿
+8.  開啟您剛建立的儀表板。 若要這樣做，請選取該名稱 **儀表板** 左的導覽窗格中的標題。 儀表板是新的因為它會有黃色星號。 折線圖被固定的做為儀表板的磚。 讓您的儀表板更臻完善 [重新命名、 調整大小、 連結及重新定位磚](powerbi-service-edit-a-tile-in-a-dashboard.md)。﻿﻿
 
     ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
-    Select the new tile on your dashboard to return to the report any time.
+    選取新的磚，來隨時返回至報表的儀表板上。
 
-##  Step 3: Continue exploring with Q&amp;A (natural language querying)
+##  步驟 3︰ 繼續瀏覽透過問與答 （自然語言查詢）
 
-1.  For a quick exploration of your data, try asking a question in the Q&amp;A box. The Q&amp;A question box is located at the top of your dashboard. For example, try typing "<bpt id="p1">**</bpt>what segment had the most revenue<ept id="p1">**</ept>".
+1.  您的資料快速瀏覽，請嘗試提問問與答的方塊中。 問與答問題方塊位於頂端的 [儀表板。 例如，請輸入"**哪些區段有充分的營收**」。
 
     ![](media/powerbi-service-get-started/powerbi-qna.png)
 
-1. Select the pin icon <ph id="ph1">![](media/powerbi-service-get-started/PBI_PinIcon.png)</ph> to show this visualization on your dashboard too.
+1. 選取 [釘選圖示 ![](media/powerbi-service-get-started/PBI_PinIcon.png) 過您的儀表板上顯示此視覺效果。
 
-2. Pin the visualization to the Financial Sample dashboard.
+2. 釘選到財務範例儀表板的視覺效果。
 
     ![](media/powerbi-service-get-started/gsPinWithQnA.png)
 
-3. Select the back arrow <ph id="ph1">![](media/powerbi-service-get-started/PBI_QABackArrow.png)</ph> to return to your dashboard where you'll see the new tile.
+3. 選取 [上一頁] 箭頭 ![](media/powerbi-service-get-started/PBI_QABackArrow.png) 以返回儀表板，您會看到新的磚。
 
-Ready to try more?  Here are some great ways to explore more of Power BI.
+準備好重試多？  以下是一些很棒的方法，若要深入探討的 Power BI。
 
--   <bpt id="p1">[</bpt>Connect to another dataset<ept id="p1">](powerbi-service-get-data.md)</ept>.
--   <bpt id="p1">[</bpt>Share your dashboard<ept id="p1">](powerbi-service-share-unshare-dashboard.md)</ept> with your colleagues.
--   Read <bpt id="p1">[</bpt>tips for designing dashboards<ept id="p1">](powerbi-service-tips-for-designing-a-great-dashboard.md)</ept>.
--   View your dashboards with a <bpt id="p1">[</bpt>Power BI app on a mobile device<ept id="p1">](powerbi-power-bi-apps-for-mobile-devices.md)</ept>
+-   
+            [連接到另一個資料集](powerbi-service-get-data.md)。
+-   
+            [共用您的儀表板](powerbi-service-share-unshare-dashboard.md) 與您的同事。
+-   讀取 [設計的儀表板的秘訣](powerbi-service-tips-for-designing-a-great-dashboard.md)。
+-   檢視與儀表板 [行動裝置上的 Power BI 應用程式](powerbi-power-bi-apps-for-mobile-devices.md)
 
-Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
+您可以直接的不完全準備了嗎？ 這些主題能協助您適應 Power BI 的開頭。
 
--   [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
--   [Power BI videos](powerbi-videos.md)
--   [See what samples we have available for you to use](powerbi-sample-datasets.md)
+-   [了解報表、 資料集、 儀表板和並排顯示所有的搭配](powerbi-service-basic-concepts.md)
+-   [Power BI 影片](powerbi-videos.md)
+-   [請參閱我們有可供您使用何種範例](powerbi-sample-datasets.md)
 
-### Stay in touch with Power BI
+### 掌握 Power BI
 
--   Follow <bpt id="p1">[</bpt>@MSPowerBI on Twitter<ept id="p1">](https://twitter.com/mspowerbi)</ept>
--   Subscribe to our <bpt id="p1">[</bpt>YouTube video channel<ept id="p1">](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)</ept>
--   Watch our <bpt id="p1">[</bpt>Power BI Getting Started webinars<ept id="p1">](powerbi-webinars.md)</ept> on demand
--  More questions? [Try the Power BI Community](http://community.powerbi.com/)
+-   請依照下列 [@MSPowerBI 的 Twitter](https://twitter.com/mspowerbi)
+-   訂閱我們 [YouTube 影片頻道](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
+-   監看式我們 [Power BI 快速入門的網路研討會](powerbi-webinars.md) 隨選
+-  更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

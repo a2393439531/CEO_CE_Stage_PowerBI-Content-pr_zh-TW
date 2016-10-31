@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Closing your Power BI Account"
-   description="Closing your Power BI Account"
+   pageTitle="關閉您的 Power BI 帳戶"
+   description="關閉您的 Power BI 帳戶"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,40 +19,41 @@
    ms.workload="powerbi"
    ms.date="10/10/2016"
    ms.author="asaxton"/>
-# Closing your Power BI Account
+# 關閉您的 Power BI 帳戶
 
-If you don't want to use Power BI any longer, you can ask us to close your Power BI account.  After your account is closed, you can no longer sign in to Power BI.  Also, any customer data you uploaded, or created, in Power BI is deleted according to the data retention policy in the Power BI Terms of Service.
+如果您不想再使用 Power BI，您可以要求我們關閉您的 Power BI 帳戶。  關閉您的帳戶之後，您可以不會再登入 Power BI。  此外，您上傳，或建立、 Power BI 中的任何客戶資料會根據資料保留原則刪除在 Power BI 服務條款。
 
-## Power BI (free) or individual Power BI Pro users
+## Power BI （免費） 或 Power BI Pro 的個別使用者
 
-If you have a free account, or are paying for the individual Power BI Pro subscription, you close your account from the settings screen.
+如果您有一個免費帳戶，或支付 Power BI Pro 的個別訂閱時，會關閉您的帳戶，從 [設定] 畫面。
 
-1. Select the gear <ph id="ph1">![](media/powerbi-admin-closing-your-account/gear.png)</ph> in the upper right.
+1. 選擇齒輪 ![](media/powerbi-admin-closing-your-account/gear.png) 右上角。
 
-2. Select <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+2. 選取 **設定**。
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings.png)
 
-3. <bpt id="p1">**</bpt>General<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Close Account<ept id="p2">**</ept>
+3. 
+            **一般** > **關閉帳戶**
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings2.png)
     
-4. Select a reason from the  <bpt id="p1">**</bpt>Why are you closing your account?<ept id="p1">**</ept> (1) dropdown.  You can optionally provide further information (2). Then select <bpt id="p1">**</bpt>Close account<ept id="p1">**</ept>.
+4. 選取的原因，從  **為何您要關閉您的帳戶？** （1）] 下拉式清單。  您可以選擇性地提供進一步資訊 (2)。 然後選取 **關閉帳戶**。
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings3.png)
     
-5. Confirm that you want to close your account.
+5. 確認您想要關閉您的帳戶。
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings4.png)
     
-6. You will see a confirmation that your account is closed. You will also be given a link to reopen your account.
+6. 您會看到確認訊息已關閉您的帳戶。 您也將提供的連結來重新開啟您的帳戶。
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings5.png)
 
-## Managed tenant users
+## 受管理的租用戶使用者
 
-You will need to contact your tenant admin and ask them to unassign the license from your account.
+您必須連絡您的租用戶系統管理員並要求他們要取消指派授權，從您的帳戶。
 
 ![](media/powerbi-admin-closing-your-account/closeaccountmanaged.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Print a dashboard, print a dashbaord tile, print a report page"
-   description="Printing a dashboard, tile, or report page from Power BI."
+   pageTitle="列印儀表板、 列印儀表板的檔案、 列印報表頁面"
+   description="列印 Power BI 儀表板、 磚或報表頁面。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,90 +21,92 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Printing from Power BI
+# 從 Power BI 列印
 
-Print an entire dashboard, a dashboard tile, a report page, or a report visual from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
+從 Power BI 服務列印整個儀表板、 儀表板磚、 報表] 頁面上或報表視覺化。 列印一頁會一次-您無法列印整份報表一次只能報告。
 
->[AZURE.NOTE] Printing is only available in Power BI service and not Power BI Desktop.
+>[AZURE.NOTE] 只使用 Power BI 服務和 Power BI Desktop 中列印。
 
-Watch Amanda print from her dashboard and report. Then follow the step-by-step instructions below the video to try it out yourself.
+觀看 Amanda 從她的儀表板和報表列印。 然後遵循以下視訊，試試看您自己的逐步指示。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jtlLGRKBvXY" frameborder="0" allowfullscreen></iframe>
 
-## Print a dashboard
+## 列印儀表板
 
-1. Open the dashboard that you'd like to print.
+1. 開啟您想要列印的儀表板。
 
-2. In the top right corner, select the ellipses (...) and choose <bpt id="p1">**</bpt>Print dashboard<ept id="p1">**</ept>.
+2. 在右上方選取省略符號 （...），然後選擇 [ **列印儀表板**。
 
     ![](media/powerbi-service-print/pbi_print_dash_ellipses.png)
 
-3. The Print window for your browser opens. Choose the settings and print destination, and select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept>.
+3. 您的瀏覽器的 [列印] 視窗隨即開啟。 選擇 [設定和列印的目的地，然後選取 **列印**。
 
-    > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
+    > [AZURE.NOTE] 您會看到 [列印] 對話方塊將取決於您所使用的瀏覽器。
 
     ![](media/powerbi-service-print/pbi_print_dash_new2.png)
 
 
-## Print a dashboard tile
+## 列印儀表板] 磚
 
-1. <bpt id="p1">[</bpt>Open the tile in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+1. 
+            [焦點模式開啟磚](powerbi-service-display-dash-in-focus-mode.md)。
 
-2. Open the tile in <bpt id="p1">[</bpt>full screen mode<ept id="p1">](powerbi-service-display-tile-in-full-screen-mode.md)</ept>.
+2. 開啟以並排顯示 [全螢幕模式](powerbi-service-display-tile-in-full-screen-mode.md)。
 
-2. Hover over the tile to reveal the Options menu.
+2. 暫留在磚以顯示 [選項] 功能表。
 
     ![](media/powerbi-service-print/menu-options-new.png)
 
-3. Select the Print icon <ph id="ph1"> ![](media/powerbi-service-print/print-icon.png)</ph>. Continue with step 3 above.
+3. 選取 [列印] 圖示  ![](media/powerbi-service-print/print-icon.png)。 繼續執行上述步驟 3。
 
-## Print a report page
+## 列印報表頁面
 
-Reports can be printed one page at a time.
+報表可以一次列印一頁。
 
-1. Open the report in either Reading View or Editing View.
+1. 在讀取檢視或編輯檢視中開啟報表。
 
-2. Select <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Print<ept id="p2">**</ept> to print the current report page.
+2. 選取 **檔案** > **列印** 列印目前報表頁面。
 
     ![](media/powerbi-service-print/pbi_print_report_file.png)
 
-2. The Print window for your browser opens. Choose the settings and print destination, and select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept>.
+2. 您的瀏覽器的 [列印] 視窗隨即開啟。 選擇 [設定和列印的目的地，然後選取 **列印**。
 
     ![](media/powerbi-service-print/pbi_print_report_new.png)
 
-  > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
+  > [AZURE.NOTE] 您會看到 [列印] 對話方塊將取決於您所使用的瀏覽器。
 
-## Print a report visual
+## 列印報表視覺效果
 
-1. <bpt id="p1">[</bpt>Open the visual in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+1. 
+            [焦點模式開啟視覺效果](powerbi-service-display-dash-in-focus-mode.md)。
 
-2. Follow steps 2-3 under <bpt id="p1">*</bpt>Print a report page<ept id="p1">*</ept> above.
+2. 依照步驟 2-3 下 *列印報表頁面* 上方。
 
 ##  疑難排解
 
-*   Q: I cannot find the <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> button.
-*   A: If you are using Power BI Desktop, printing is not supported.  Printing only works in Power BI service.
+*   問︰ 我找不到 **列印** ] 按鈕。
+*   答︰ 如果您使用 Power BI Desktop，目前不支援列印。  列印僅適用於 Power BI 服務。
 
 
-*   Q: I cannot print all the report pages at once.
-*   A: That is correct. Report pages can only be printed one page at a time.
+*   問︰ 我無法一次列印所有報表頁面。
+*   答︰ 沒錯。 報表頁面一次只能列印一個頁面。
 
 
-*   Q: I cannot print to PDF.
-*   A: You will only see this option if you've already configured the PDF driver in your browser.    
+*   問︰ 我無法列印至 PDF。
+*   答︰ 您只會看到此選項，如果您已經在瀏覽器 PDF 驅動程式。    
 
 
-*   Q: What I see when I select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> doesn't match what you're showing me here.
-*   A: The Print screens vary by browser and software version.
+*   問︰ 我看到當我選取 **列印** 不符合所要顯示我這裡。
+*   答︰ 列印螢幕擷取畫面會因瀏覽器與軟體版本。
 
 
-*   Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.
-*   A: Things like scaling, margins, orientation, size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
+*   問︰ 我的列印輸出不正確地調整。  在頁面上，不符合我的儀表板。 其他調整和方向的問題。
+*   答︰ 像是調整、 邊界、 方向、 大小不受 Power BI。 就像這樣的問題的說明，請參閱特定瀏覽器的文件。      
 
 ## 請參閱
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

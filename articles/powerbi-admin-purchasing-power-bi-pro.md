@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Purchasing Power BI Pro"
-   description="Purchasing Power BI Pro"
+   pageTitle="採購 Power BI Pro"
+   description="採購 Power BI Pro"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,132 +20,132 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
    
-# Purchasing Power BI Pro
+# 採購 Power BI Pro
 
-Power BI Pro provides access to features that a free user does not have. This includes use of the On-Premises Data Gateway for on-premises data refresh to data sources such as SQL Server, Groups and other features. For more information, see <bpt id="p1">[</bpt>Power BI Pro content - what is it?<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>.
+Power BI Pro 提供免費的使用者沒有的功能的存取權。 這包括用於內部部署資料重新整理資料來源，例如 SQL Server、 群組及其他功能的內部部署資料閘道。 如需詳細資訊，請參閱 [Power BI Pro 內容-它是什麼？](powerbi-power-bi-pro-content-what-is-it.md)。
 
-You can purchase Power BI Pro directly through the Power BI website, the Office 365 admin center or through your Microsoft representative or partner. This article will look at the two trial options available for Power BI Pro, and then how to purchase Power BI Pro as an individual, or as an organization.
+直接透過 Power BI 網站、 Office 365 系統管理中心或透過您的 Microsoft 代表或合作夥伴，您可以購買 Power BI Pro。 這篇文章將探討兩個試用版可用的選項 Power BI Pro，以及如何為個人或組織購買 Power BI Pro。
 
 ## 定價
 
-For the latest pricing information of Power BI Pro and a table listing of included features, see <bpt id="p1">[</bpt>Power BI Pricing<ept id="p1">](https://powerbi.microsoft.com/pricing/)</ept>.
+Power BI Pro 的最新定價資訊及包含功能的資料表清單，請參閱 [Power BI 定價](https://powerbi.microsoft.com/pricing/)。
 
-## Power BI Pro 60 day trial
+## Power BI Pro 60 天試用版
 
-After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see <bpt id="p1">[</bpt>Power BI Pro content - what is it?<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>. To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
+您已註冊您的免費帳戶之後，您可以選擇性地選擇免費試用專業版。 您必須於試用期間所有的 Pro 功能的存取權。 Power BI Pro 有免費版本的 Power BI 的所有功能和其他共同作業和資料重新整理功能。 它也會有更高的資料容量和串流處理限制的資料。 如需詳細資訊，請參閱 [Power BI Pro 內容-它是什麼？](powerbi-power-bi-pro-content-what-is-it.md)。 若要試用 60 天免費試用版 Power BI Pro，登入 Power BI，然後再試其中的 Power BI Pro 功能︰
 
--   Create and publish customized <bpt id="p1">[</bpt>content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>
--   Share <bpt id="p1">[</bpt>refreshable<ept id="p1">](powerbi-refresh-data.md)</ept> team dashboards and reports using <bpt id="p2">[</bpt>groups<ept id="p2">](powerbi-service-create-a-group-in-power-bi.md)</ept>
--   Connect to on-premises data using <bpt id="p1">[</bpt>Personal Gateway<ept id="p1">](powerbi-personal-gateway.md)</ept>
--   Enable live interactive connectivity to the following sources:
+-   建立及發行自訂 [內容組件](powerbi-service-organizational-content-packs-introduction.md)
+-   共用 [可重新整理](powerbi-refresh-data.md) 小組儀表板和報表使用 [群組](powerbi-service-create-a-group-in-power-bi.md)
+-   連接到內部資料使用 [個人閘道](powerbi-personal-gateway.md)
+-   啟用即時的互動式連線到下列來源︰
     -   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
-    -   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md)
-    -   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
+    -   [Azure HDInsight 上的 Spark](powerbi-spark-on-hdinsight-with-direct-connect.md)
+    -   [Azure SQL 資料倉儲](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
     -   [Azure SQL 資料庫](powerbi-azure-sql-database-with-direct-connect.md)
 
-When you try any of the above features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting <bpt id="p1">**</bpt>Manage personal storage<ept id="p1">**</ept>. Then select <bpt id="p1">**</bpt>Try Pro for free<ept id="p1">**</ept> on the right.
+當您嘗試任何上述功能時，系統會提示您免費的試用版。 您也可以選擇讓前往齒輪圖示，並選取使用它 **管理個人儲存體**。 然後選取 **免費試用的 pro 提示** 右邊。
 
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro-trial1.png)
  
-Then you can select <bpt id="p1">**</bpt>Start trial<ept id="p1">**</ept>.
+接著，您可以選取 **開始試用**。
 
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro-trial2.png)
 
 > **附註**
 >
->-   If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
->-   Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the <bpt id="p1">**</bpt>manage storage<ept id="p1">**</ept> page in Power BI.
->-   If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a <bpt id="p1">[</bpt>Power BI Pro subscription trial<ept id="p1">](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&amp;dl=POWER_BI_PRO)</ept>.  You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. [進一步了解](powerbi-admin-purchasing-power-bi-pro.md)
+>-   如果您需要更多時間評估 Power BI，您可以要求延長 60 天的試用期。
+>-   利用此產品中的 Power BI Pro 試用版的使用者不會出現在 Office 365 系統管理入口網站 Power BI 專業人員的試用使用者 （它們顯示為 Power BI 免費使用者）。 它們會不過，顯示為 Power BI Pro 試用版中的使用者 **管理儲存體** Power BI 中的頁面。
+>-   如果您是 IT 系統管理員想要取得並部署至組織中的多個使用者的 Power BI 試用版授權，而不需要單獨接受試用版條款的個別使用者，您可以註冊 [試用 Power BI Pro 訂閱](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO)。  您必須是 Office 365 全域或計費管理員或建立新的租用戶註冊試用版的系統管理員。 [進一步了解](powerbi-admin-purchasing-power-bi-pro.md)
 
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a Pro trial account by going to the <bpt id="p1">*</bpt><bpt id="p2">*</bpt>gear<ept id="p2">*</ept> icon and selecting <ept id="p1">*</ept><bpt id="p3">*</bpt>Manage personal storage<ept id="p3">*</ept>*.
+當您在服務中，您可以確認您有 Pro 試用帳戶，請前往 **齒輪* 圖示，然後選取 **管理個人儲存體**。
 
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro-trial3.png)
 
-## Purchasing Power BI Pro as an individual
+## 採購 Power BI Pro 以個人身分
 
-You can purchase Power BI Pro from the start, or can choose to upgrade to Pro after your free trial has ended. If your account is part of an organization, you can purchase Power BI Pro as an individual if your organization has not disabled individual purchases.
+您可以購買 Power BI Pro 從 [開始]，或者可以選擇您的免費試用結束後，升級到 Pro。 如果您的帳戶是組織的一部分，您可以購買 Power BI Pro 以個人身分如果組織未停用個別購買情況。
 
-To purchase Power BI Pro as an individual, you can do the following.
+若要購買 Power BI Pro 以個人身分，您可以執行下列程式碼。
 
-1.  Browse to <bpt id="p1">[</bpt>powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>.
+1.  瀏覽至 [powerbi.com](https://www.powerbi.com)。
 
-2.  Select <bpt id="p1">**</bpt>Products<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Pricing<ept id="p2">**</ept>.
+2.  選取 **產品** > **定價**。
 
-3.  Select <bpt id="p1">**</bpt>Purchase<ept id="p1">**</ept>.
+3.  選取 **購買**。
 
     ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro1.png)
 
-4.  Answer the questions that are presented to guide the purchase. As an individual, there will be an option to select <bpt id="p1">**</bpt>Myself<ept id="p1">**</ept>. 
+4.  回答引導購買所提出的問題。 為個別且將會選取一個選項 **自行**。 
 
     ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro2.png)
 
-    > [AZURE.NOTE] If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [進一步了解]()
+    > [AZURE.NOTE] 如果您有興趣購買您的小組或組織所需的選項，您可以閱讀貴組織購買 Power BI Pro。 [進一步了解]()
 
-5.  If you aren’t already signed into Power BI, you will need to sign in with your Power BI (free) account.
+5.  如果您尚未登入 Power BI，您必須使用帳戶登入 Power BI （免費）。
 
-6.  You will need to provide information to make the purchase.
+6.  您必須提供資訊以進行購買。
 
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a Pro account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>.
+當您在服務中，您可以確認您有 Pro 帳戶移至 **齒輪** 圖示，然後選取 **可管理個人儲存體**。
 
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro3.png)
 
-## Subscription trial in Office 365
+## 試用 Office 365 中的訂閱
 
-You can get Power BI Pro as a trial for your organization. Once you have the subscription, you can assign Power BI Pro licenses to your users. [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+您可以取得 Power BI Pro 試用版，為您的組織。 訂閱之後，您可以將 Power BI Pro 的授權指派給您的使用者。 [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
 
-> [AZURE.NOTE] There is a limit of one organizational trial per tenant. This means that if someone has already applied the Power BI Pro Trial to your tenant, you cannot do it again. If you need assistance with this, you can contact <bpt id="p1">[</bpt>Office 365 Billing support<ept id="p1">](https://support.office.microsoft.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671&amp;ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_call_support)</ept>.
+> [AZURE.NOTE] 沒有限制的每個租用戶一個組織的試用版。 這表示，如果有人已經套用至租用戶 Power BI Pro 試用版，您無法再做一次。 如果您需要這方面的協助，您可以連絡 [Office 365 計費支援](https://support.office.microsoft.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671&ui=en-US&rs=en-US&ad=US#BKMK_call_support)。
  
-1.  Navigate to the <bpt id="p1">[</bpt>Office 365 admin center<ept id="p1">](https://portal.office.com/admin/default.aspx)</ept>.
-2.  On the left navigation pane, select Billing &gt; Subscriptions.
-3.  Select Add subscriptions + on the right side.
-4.  Under Other Plans, hover over the ellipse (…) for Power BI Pro and select Start free trial.
+1.  瀏覽至 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx)。
+2.  在左的導覽窗格中，選取 [計費 > 訂用帳戶。
+3.  選取 [新增訂閱 + 右邊。
+4.  在其他的計劃，將滑鼠停留在省略符號 （...） 的 Power BI Pro 然後選取開始免費試用版。
 
     ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro2.png)
 
-5.  On the confirm your order screen, select Try now.
-6.  Select Continue on the order receipt.
+5.  [確認訂單畫面中，選取立即試用。
+6.  選取 [訂單收據上的 [繼續]。
 
-Under <bpt id="p1">**</bpt>Billing<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Subscriptions<ept id="p2">**</ept>, you will see <bpt id="p3">**</bpt>Power BI Pro Trial<ept id="p3">**</ept> listed with 25 licenses available. This is a one month trial.
+在 **計費** > **訂閱**, ，您會看到 **Power BI Pro 試用** 列出可用的 25 個授權。 這是一個月試用版。
 
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a Pro account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>. There will be no indication that this is a trial user.
+當您在服務中，您可以確認您有 Pro 帳戶移至 **齒輪** 圖示，然後選取 **可管理個人儲存體**。 會指示這是試用版的使用者。
 
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro3.png)
 
-## Purchase subscription in Office 365
+## 在 Office 365 購買訂閱
 
-You can purchase Power BI Pro for your organization through the Office 365 admin center. Once you have the subscription, you can assign Power BI Pro licenses to your users. [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+您可以購買 Power BI Pro 組織透過 Office 365 系統管理中心。 訂閱之後，您可以將 Power BI Pro 的授權指派給您的使用者。 [進一步了解](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
  
-1.  Navigate to the <bpt id="p1">[</bpt>Office 365 admin center<ept id="p1">](https://portal.office.com/admin/default.aspx)</ept>.
-2.  On the left navigation pane, select Billing &gt; Subscriptions.
-3.  Select Add subscriptions + on the right side.
-4.  Under Other Plans, hover over the ellipse (…) for Power BI Pro and select Buy now.
+1.  瀏覽至 [Office 365 系統管理中心](https://portal.office.com/admin/default.aspx)。
+2.  在左的導覽窗格中，選取 [計費 > 訂用帳戶。
+3.  選取 [新增訂閱 + 右邊。
+4.  在其他計劃，將滑鼠停留在省略符號 （...） 的 Power BI Pro，選取 [立即購買。
 
     ![](media/powerbi-admin-purchasing-power-bi-pro/organization-pro1.png)
 
-5.  Enter the number of licenses you would like to add and select Check out now or Add to cart.
+5.  輸入您想要加入，然後選取核取現在或新增至購物車的授權數量。
 
-    > [AZURE.NOTE] You can add more at a later date if needed.
+    > [AZURE.NOTE] 您可以視需要新增更在較晚的日期。
 
-6.  Enter the needed information in the check out flow.
+6.  簽出流程中輸入所需的資訊。
 
-> [AZURE.NOTE] If you already had the Power BI Pro Trial, it will go directly to the checkout screen asking to input the number of licenses you want.
+> [AZURE.NOTE] 如果您已經有了 Power BI Pro 試用版，它會直接移至簽出畫面，要求輸入您想要的授權數量。
 
-Under <bpt id="p1">**</bpt>Billing<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Subscriptions<ept id="p2">**</ept>, you will see <bpt id="p3">**</bpt>Power BI Pro<ept id="p3">**</ept> listed. If you decide later that you want to add more licenses, you can go back to <bpt id="p1">**</bpt>Add subscriptions<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Change license quantity<ept id="p2">**</ept>.
+在 **計費** > **訂閱**, ，您會看到 **Power BI Pro** 列出。 如果您稍後決定您想要新增更多授權，您可以移回至 **新增訂閱**, ，然後選取 **變更授權數量**。
 
-### What this looks like within the service
+### 看起來像這樣服務內
 
-When you are in the service, you can verify that you have a Pro account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>.
+當您在服務中，您可以確認您有 Pro 帳戶移至 **齒輪** 圖示，然後選取 **可管理個人儲存體**。
  
 ![](media/powerbi-admin-purchasing-power-bi-pro/powerbi-pro3.png)
 
 ## 請參閱
 
-[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[自助式註冊 Power bi](powerbi-service-self-service-signup-for-power-bi.md)  
+[Power BI 組織中的 （免費）](powerbi-admin-powerbi-free-in-your-organization.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

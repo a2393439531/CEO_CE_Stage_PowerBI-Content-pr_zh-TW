@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display visuals and tiles full-screen"
-   description="Get a big view of select report visuals and dashboard tiles"
+   pageTitle="顯示視覺效果和並排顯示全螢幕"
+   description="取得選取的報表視覺效果和儀表板] 磚的大檢視"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,22 +23,23 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Display Visuals and Tiles Full-Screen
+# 顯示視覺效果和磚全螢幕
 
-When you're looking at Power BI dashboards or reports in the service, it can sometimes be helpful to focus on an individual chart or visualization. You can do that in two different ways.
+當您想要在 Power BI 儀表板或在服務中的報表，有時候很有幫助將重點放在個別的圖表或視覺效果。 您可以在兩種不同方式來這麼做。
 
-When you're on a dashboard, hover over a tile to see a few different icon options in the top right-hand corner. When you select the ellipses (the three dots) you see a collection of icons that represent actions you can take on the tile.
+當您在儀表板時，上方磚以查看在右上角中的幾個不同的圖示選項。 當您選取省略符號 （三個點） 您看到圖示表示您可以在磚採取的動作的集合。
 
-The left-most icon is labeled <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept>. Select that icon to expand the tile to encompass the full dashboard space.
+最左邊的圖示標記 **聚焦模式**。 選取該圖示以展開以包含完整儀表板空間磚。
 
 ![](media/powerbi-learning-4-4b-display-visuals-tiles-fullscreen/4-4b_1.png)
 
-<bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> allows you to see a lot more detail on your visuals and legends. For example, when you resize a tile in Power BI, some of the columns may not be shown because of the space available in the tile.
+
+            **焦點模式** 可讓您查看更多詳細資料視覺效果和圖例上。 比方說，當您調整 Power BI 中的並排顯示，某些資料行可能由於不會顯示方塊中的可用空間。
 
 ![](media/powerbi-learning-4-4b-display-visuals-tiles-fullscreen/4-4b_2.png)
 
-In <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept>, you can see all the data. You can also pin the visual directly from Focus mode to a different dashboard by selecting the <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept> icon. To exit <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Back to...<ept id="p2">**</ept> icon in the top-left corner of <bpt id="p3">**</bpt>Focus mode<ept id="p3">**</ept>.
+在 **聚焦模式**, ，您可以看到所有資料。 您也可以固定至不同的儀表板的視覺直接從聚焦模式選取 **Pin** 圖示。 若要結束 **聚焦模式**, ，請選取 **...回到** 左上角的圖示 **聚焦模式**。
 
-The process is similar when viewing a report. Hover over a visual to see the three icons in the top-right corner, and select the <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> icon. Selecting this expands your visualization to encompass the full report canvas. The visual is still interactive in this mode, although you temporarily lose any cross-filter effect between visualizations.
+檢視報表時，此處理序類似。 將滑鼠停留在視覺效果，請參閱右上角的三個圖示，然後選取 **聚焦模式** 圖示。 選取這個展開您要包含完整的報表畫布的視覺效果。 雖然您暫時失去任何視覺效果之間的交叉篩選效果，視覺效果是在此模式中，仍然可互動。
 
-Hover over an expanded tile or report and select the <bpt id="p1">**</bpt>Back to...<ept id="p1">**</ept> left-caret icon in the top-left corner to return to the previous view.
+將滑鼠停駐並排展開或報表，然後選取 **回...** 左上角，若要返回上一個檢視中的左側插入號圖示。

@@ -1,6 +1,6 @@
 <properties
-pageTitle="On-premises data gateway"
-description="This is an overview of the On-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data."
+pageTitle="內部資料閘道"
+description="這是內部部署資料閘道，Power bi 的概觀。 您可以使用此閘道使用 DirectQuery 資料來源。 您也可以使用此閘道以重新整理雲端與內部部署資料的資料集。"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,62 +19,62 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# On-premises data gateway
+# 內部資料閘道
 
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
+內部資料閘道做為提供快速且安全的資料傳輸，內部部署資料 （不是在雲端中的資料） 和 Power BI、 Microsoft 流程、 邏輯應用程式及 PowerApps 服務之間的橋接器。
 
-You can use a single gateway with different services at the same time. If you are using Power BI, as well as PowerApps, a single gateway and be used for both. It is dependent on the account you sign in with.
+在此同時，您可以使用不同的服務使用單一閘道。 如果您使用 Power BI，因為 PowerApps，單一閘道，並用於兩者。 它是取決於您登入時使用的帳戶。
 
 <!-- Shared Requirements Include -->
 [AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-requirements-include.md)]
 
-### Limitations of Analysis Services live connections
+### Analysis Services 即時連接的限制
 
-You can use a live connection against tabular or multidimensional instances.
+您可以使用即時連接對表格式或多維度執行個體。
 
-|**Server version**|**Required SKU**|
+|**伺服器版本**|**必要的 SKU**|
 |---|---|
-|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
-|2014|Business Intelligence and Enterprise SKU|
-|2016|Standard SKU or higher|
+|2012 SP1 CU4 或更新版本|Business Intelligence 和 Enterprise SKU|
+|2014|Business Intelligence 和 Enterprise SKU|
+|2016|標準 SKU 或更高版本|
 
-- Cell level Formatting and translation features are not supported.
-- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+- 資料格層級的格式，並不支援轉譯功能。
+- 動作和命名集不會公開至 Power BI，但您仍然可以連接到多維度 cube，其中也包含動作或命名集，並建立視覺效果和報表。
 
 <!-- Shared Install steps Include -->
 [AZURE.INCLUDE [gateway-onprem-datasources-include](../includes/gateway-onprem-datasources-include.md)]
  
-## Download and install the On-premises data gateway
+## 下載並安裝內部部署資料閘道
 
-To download the gateway, select <bpt id="p1">**</bpt>Data Gateway<ept id="p1">**</ept> under the Downloads menu. Download the <bpt id="p1">[</bpt>On-premises data gateway<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=820925)</ept>.
+若要下載的閘道，請選取 **資料閘道** 下載項目] 功能表底下。 下載 [內部資料閘道](http://go.microsoft.com/fwlink/?LinkID=820925)。
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
 <!-- Shared Install steps Include -->
 [AZURE.INCLUDE [gateway-onprem-install-include](../includes/gateway-onprem-install-include.md)]
 
-## Install the gateway in personal mode 
+## 將閘道安裝在個人的模式 
 
-> [AZURE.NOTE] Personal will only work with Power BI.
+> [AZURE.NOTE] 個人只適用於 Power BI。
 
-After the personal gateway is installed, you will need to launch the <bpt id="p1">**</bpt>Power BI Gateway - Personal Configuration Wizard<ept id="p1">**</ept>.
+個人閘道安裝之後，您必須啟動 **Power BI 閘道個人組態精靈**。
 
 ![](media/powerbi-gateway-onprem/personal-gateway-launch-configuration.png)
 
-You will then need to sign into Power BI to register the gateway with the cloud service.
+然後您必須登入 Power BI 註冊閘道與雲端服務。
 
 ![](media/powerbi-gateway-onprem/personal-gateway-signin.png)
 
-You will also need to supply the windows user name and password that the windows service will run as. You can specify a different Windows account from your own. The gateway service will run using this account.
+您也必須提供 windows 使用者名稱和密碼來做為執行 windows 服務。 您可以指定不同的 Windows 帳戶，從您自己。 閘道服務將使用此帳戶來執行。
 
 ![](media/powerbi-gateway-onprem/personal-gateway-windows-service.png)
 
-After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
+安裝完成後，您必須移至您在 Power BI 中的資料集，請確定您的內部部署資料來源為輸入的認證。
 
 <a name="credentials">
-## Storing encrypted credentials in the cloud
+## 在雲端中儲存加密的認證
 
-When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
+當您新增資料來源的閘道時，您必須提供該資料來源的認證。 資料來源的所有查詢會使用這些認證來都執行。 認證會加密安全地儲存，使用非對稱式加密，如此一來，就無法解密在雲端中，再將它們儲存在雲端中。 認證傳送至執行內部就會解密的資料來源存取時為閘道的機器。
 
 <!-- Account and Port information -->
 [AZURE.INCLUDE [gateway-onprem-accounts-ports-more](../includes/gateway-onprem-accounts-ports-more.md)]
@@ -84,18 +84,18 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 ## 疑難排解
 
-If you’re having trouble when installing and configuring a gateway, be sure to see <bpt id="p1">[</bpt>Troubleshooting the Power BI Gateway - Enterprise<ept id="p1">](powerbi-gateway-enterprise-tshoot.md)</ept>. If you think you are having an issue with your firewall, see the <bpt id="p1">[</bpt>firewall or proxy<ept id="p1">](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy)</ept> section in the troubleshooting article.
+如果您無法安裝和設定閘道時，請務必參閱 [疑難排解 Power BI 閘道-企業](powerbi-gateway-enterprise-tshoot.md)。 如果您認為您的防火牆所遇到問題，請參閱 [防火牆或 proxy](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy) 疑難排解文件中的一節。
 
-If you think you are encountering proxy issues, with the gateway, see <bpt id="p1">[</bpt>Configuring proxy settings for the Power BI Gateways<ept id="p1">](powerbi-gateway-proxy.md)</ept>.
+如果您認為您遇到 proxy 問題，閘道器，請參閱 [Power BI 閘道的 proxy 設定](powerbi-gateway-proxy.md)。
 
 ## 請參閱
 
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
-[Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
-[On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Configuring proxy settings for the On-Premises Data Gateway](powerbi-gateway-proxy.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[管理您的資料來源-Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[管理您的資料來源的 SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[管理您的資料來源-SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[管理您的資料來源-Oracle](powerbi-gateway-onprem-manage-oracle.md)  
+[管理您的資料來源-匯入/排定的重新整理](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+[深入的內部資料閘道](powerbi-gateway-onprem-indepth.md)  
+[疑難排解內部部署資料閘道](powerbi-gateway-onprem-tshoot.md)  
+[設定內部部署資料閘道器的 proxy 設定](powerbi-gateway-proxy.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Retail Analysis sample for Power BI: Take a tour"
-   description="Retail Analysis sample for Power BI: Take a tour"
+   pageTitle="Power BI 的零售分析範例︰ 導覽"
+   description="Power BI 的零售分析範例︰ 導覽"
    services="powerbi"
    documentationCenter=""
    authors="amandacofsky"
@@ -20,150 +20,155 @@
    ms.date="07/18/2016"
    ms.author="amac"/>
 
-# <a name="retail-analysis-sample-for-power-bi:-take-a-tour"></a>Retail Analysis sample for Power BI: Take a tour
+# <a name="retail-analysis-sample-for-power-bi:-take-a-tour"></a>Power BI 的零售分析範例︰ 導覽
 
-##  <a name="about-the-retail-analysis-sample"></a>About the Retail Analysis sample
+##  <a name="about-the-retail-analysis-sample"></a>有關零售分析範例
 
-This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce (<bpt id="p1">[</bpt>www.obvience.com<ept id="p1">](http://www.obvience.com)</ept>) that has been anonymized.
+這個產業範例儀表板與基礎報表會分析跨多個儲存區和學區的銷售資料的項目售出商品的零售。 度量比較今年的最後一年在這些區域中︰ 銷售、 單位、 毛利、 和變異數，以及外加新商店的分析。 這些是來自 obviEnce 的真實資料 ([www.obvience.com](http://www.obvience.com)) 匿名的。
 
-You can also <bpt id="p1">[</bpt>download just the dataset (Excel workbook) for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+您也可以 [下載只是資料集 （Excel 活頁簿） 此範例](http://go.microsoft.com/fwlink/?LinkId=528592)。
 
 ![](media/powerbi-sample-retail-analysis-take-a-tour/retail1.png)
 
-##  <a name="start-on-the-dashboard-and-open-the-report"></a>Start on the dashboard and open the report
+##  <a name="start-on-the-dashboard-and-open-the-report"></a>啟動儀表板上，開啟報表
 
-1.  On the dashboard, select the "Total Stores" tile:
+1.  在儀表板中，選取 「 總存放區 」 磚︰
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis-7.png)  
 
-    This takes you to the "Store Sales Overview" page in the report. You see we have 104 total stores, 10 of them new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger on average.
+    這會帶您報表中的 [市集銷售概觀] 頁面。 您會看到我們有新 104 總存放區，10 個。 我們有直接的方式和 Lindseys 的兩個鏈結。 平均的方式直接存放區是較大的。
 
-2.  In the pie chart, select <bpt id="p1">**</bpt>Fashions Direct<ept id="p1">**</ept>.
+2.  在圓形圖中，選取 **的方式直接**。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail3.png)  
 
-    Notice the result in the bubble chart:
+    請注意，泡泡圖中的結果︰
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlBubbles.png)  
 
-    FD-01 district has the highest Average Sales per Square Foot, FD-02 has the lowest Variance in Sales compared to last year, FD-03 and FD-04 are worst performers overall.
+    FD 01 學區則具有每平方英呎平均銷售量最高、 FD 02 具有最低的變異數相較於最後一年的銷售額、 FD 03 和 FD 04 都是最差藝術家整體。
 
-3.  Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
+3.  選取個別的泡泡或其他圖表以查看跨反白顯示，提供您選項的影響。
 
-4.  Select Power BI in the top navigation bar to return to the dashboard.
+4.  若要返回 [儀表板的上方導覽列中選取 Power BI。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis.png)
 
-5.  On the dashboard, select the tile that has "This Year’s Sales."
+5.  在儀表板中，選取 [磚 」 本年度銷售量 」。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlThisYrSales.png)
 
-    This is equivalent to typing "This year sales" in the question box.
+    這就相當於 [問題] 方塊中輸入 「 本年度銷售量 」。
 
-    You see this screen:
+    您會看到這個畫面︰
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail7.png)
 
-##  <a name="review-a-tile-created-with-power-bi-q&a"></a>Review a tile created with Power BI Q&amp;A
+##  <a name="review-a-tile-created-with-power-bi-q&a"></a>檢閱使用 Power BI 問答集建立的磚
 
-Let’s get more specific.
+讓我們取得更明確。
 
-1.  Add “this year sales <bpt id="p1">**</bpt>by district<ept id="p1">**</ept>” onto the question. Observe the result: It automatically put the answer in a bar chart and suggests other phrases:
+1.  新增 「 本年度銷售量 **所學區**」 到問題。 觀察結果︰ 會自動將答案放在橫條圖，並建議其他片語︰
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail8.png)
 
-2.  Now change the question to “this year sales <bpt id="p1">**</bpt>by zip and chain<ept id="p1">**</ept>”.
+2.  現在已變更，問題就 「 本年度銷售量 **zip 和鏈結**」。
 
-    Notice how it answers the question as you type with the appropriate charts.
+    請注意如何它回答這個問題在您輸入具有適當的圖表。
 
-3.  Play around with more questions and see what kind of results you get.
+3.  玩一玩更多的問題，請參閱取得何種結果。
 
-4.  When you’re ready, return to the dashboard by selecting Power BI in the upper-left corner.
+4.  當您準備好時，返回儀表板的左上角中選取 [Power BI。
 
-##  <a name="dive-deeper-into-the-data"></a>Dive deeper into the data
+##  <a name="dive-deeper-into-the-data"></a>深入探索到的資料
 
-Now let's explore on a more detailed level, looking at the districts' performances.
+現在讓我們來探索詳細層級，看看學區的效能。
 
-1.  On the dashboard, select the tile comparing this year's sales to last year’s.
+1.  在儀表板中，選取的磚比較今年的最後一年銷售量。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlAreaCht.png)
 
-    Notice the large variability on Variance % to last year, with Jan, Apr, and Jul being particularly bad months.
+    1 月、 4 月，與正在特別是不正確的幾個月的月會注意到去年，變異數 %大的變化性。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlSalesVarCol.png)
 
-    Let’s see if we can narrow down where the issues might be.
+    我們來看看我們可以縮小可能的問題。
 
-2.  Select the bubble chart, and choose <bpt id="p1">**</bpt>020-Mens<ept id="p1">**</ept>.
+2.  選取泡泡圖中，然後選擇 [ **020 Mens**。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail11.png)  
 
-    Observe the men's category wasn't as severely affected in April as the business overall, but January and July were still problem months.
+    觀察 men's 類別不是做為整體，商務嚴重影響在 4 月，但 1 月和年 7 月仍然問題的幾個月。
 
-3.  Now, select the <bpt id="p1">**</bpt>010-Womens’ bubble<ept id="p1">**</ept>.
+3.  現在，選取 **010 Womens' 泡泡**。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail12.png)
 
-    Notice the women's category performed much worse than business overall across all months, and much worse in almost every month compared to the previous year.
+    女裝類別執行大部分的通知不如跨所有月份，整體商務和更糟，幾乎每個月，相較於前一年。
 
-4.  Select the bubble again to clear the filter.
+4.  選取即可清除篩選條件的泡泡圖。
 
-##  <a name="try-out-the-slicer"></a>Try out the Slicer
+##  <a name="try-out-the-slicer"></a>試用交叉分析篩選器
 
-Let’s look at how specific districts are doing.
+讓我們來看如何在特定學區。
 
-1.  Select Allan Guinot in the slicer on the top left.
+1.  選取 [沒有 Guinot 左上方交叉分析篩選器中。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail13.png)
 
-    Note that Allan’s district outperformed Last Year in March and June.
+    請注意，沒有的學區的效能去年勝過於 3 月和年 6 月。
 
-2.  Now, while Allan is still selected, select the Women’s bubble.
+2.  現在，沒有仍然選取時，請選取 Women's 泡泡。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail14.png)
 
-    Note that for the Women’s category, his district never met last year’s volume.
+    請注意，Women's 類別，其地區從來都沒有符合去年的磁碟區。
 
-3.  3.Explore the other district managers and categories – what other insights can you find?
+3.  3.瀏覽其他學區管理員和類別-哪些深入資訊可以找到？
 
-4.  When you are ready – return to the dashboard.
+4.  當您準備好時 – 返回儀表板。
 
-## <a name="what-is-our-data-telling-us-about-sales-growth-this-year?"></a>What is our data telling us about sales growth this year?
+## <a name="what-is-our-data-telling-us-about-sales-growth-this-year?"></a>什麼我們的資料告訴我們本年度的銷售成長率？
 
-The last area we want to explore is our growth – new stores opened this year.
+我們想要探索的最後一個區域是我們的成長 – 新的存放區開啟今年。
 
-1.  Select the 'Stores Opened This Year’ tile.
+1.  選取 ' 儲存開啟此 Year' 牌。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail15.png)
 
-    As evident from the tile – more Fashions Direct stores than Lindseys stores opened this year.
+    做為從磚 – 明顯更多的方式直接儲存比開啟今年 Lindseys 存放區。
 
-2.  Observe the Sales Per Sq Ft by Name chart:
+2.  觀察銷售每個 Sql 全文檢索依名稱的圖表︰
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/15.png)
 
-     There is quite a bit of difference in Average Sales per SQF across the new stores.
+     還有一段每 SQF 平均銷售額的新的存放區之間的差異。
 
-3.  Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
+3.  按一下的方式直接上正確的圖表中的圖例項目。 請注意，即使是相同的鏈結，最佳的存放區 （Winchester 的方式直接） 的明顯勝過最差的存放區 （辛辛那提 2 的方式直接） $21.22 vs $12.86 分別。
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/17b.png)
 
-4.  Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February and is a leading store in terms of volume for almost every month.
+4.  按一下交叉分析篩選器中的 [Winchester 直接的方式，並觀察折線圖。 第一次的銷售數字回報在二月，幾乎每個月提供根據磁碟區的前置字元存放區。
 
-5.  Click on Cincinnati 2 Fashions Direct in the slicer and you will see in the line chart that it was opened in June and it seems to be the worst performing store.
+5.  按一下辛辛那提 2 的方式直接交叉分析篩選器，您會看到折線圖開啟在 6 月，它似乎是執行最差的存放區中。
 
-6.  As before, explore by clicking on other bars, lines and bubbles throughout the charts and see what insights you can discover.
+6.  同樣地，線條和泡泡圖中的其他列上的 [瀏覽，並查看您可以探索哪些深入資訊。
 
-This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to Get Data for a new copy of this sample.
+這是安全的環境播放。 您永遠都可以選擇不儲存變更。 但是，如果您不要儲存它們，您可以一律移至取得資料的這個範例中的新複本。
 
-## <a name="next-steps:-connect-to-your-data"></a>Next steps: Connect to your data
+## <a name="next-steps:-connect-to-your-data"></a>後續步驟︰ 連接到您的資料
 
-We hope this tour has shown how Power BI dashboards, Q&amp;A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about <bpt id="p1">[</bpt>getting started with Power BI<ept id="p1">](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8)</ept>.
+我們希望本教學課程示範了如何 Power BI 儀表板、 問答集，並報告可提供深入零售資料。 現在輪-連接到您自己的資料。 有了 Power BI，您可以連接到各種資料來源。 深入了解 [開始使用 Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8)。
 
 ## <a name="see-also"></a>請參閱
 
--   <bpt id="p1">[</bpt>Download the Retail Analysis sample content pack<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>
--   <bpt id="p1">[</bpt>Download the Excel workbook for this Power BI sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>
--   <bpt id="p1">[</bpt>Get data (for Power BI)<ept id="p1">](powerbi-service-get-data.md)</ept>
--   <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
--  More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-   
+            [下載零售分析範例內容的組件](powerbi-sample-tutorial-connect-to-the-samples.md)
+-   
+            [下載 Excel 活頁簿，此 Power BI 範例](http://go.microsoft.com/fwlink/?LinkId=528592)
+-   
+            [取得資料 （適用於 Power BI)](powerbi-service-get-data.md)
+-   
+            [Power BI-基本概念](powerbi-service-basic-concepts.md)
+-  更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)

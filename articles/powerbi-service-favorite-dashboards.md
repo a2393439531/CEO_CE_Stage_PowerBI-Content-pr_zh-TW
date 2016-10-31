@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Favorite dashboards in Power BI"
-   description="Documentation on how to dashboards as favorites in Power BI"
+   pageTitle="在 Power BI 最愛的儀表板"
+   description="文件中有關儀表板為 Power BI 中的 [我的最愛]"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,38 +20,38 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Favorite dashboards in Power BI
+# 在 Power BI 最愛的儀表板
 
-When you make a dashboard a <bpt id="p1">*</bpt>favorite<ept id="p1">*</ept>,  you'll be able to access it from all of your workspaces.  Favorite dashboards are typically those that you visit most often.
+當您對儀表板 *最愛*,  ，您可以存取所有的工作區。  最愛的儀表板通常是指您最常瀏覽。
 
->[AZURE.NOTE] You can also select a single dashboard as a <bpt id="p1">[</bpt>Featured dashboard<ept id="p1">](powerbi-service-featured-dashboards.md)</ept> in Power BI.
+>[AZURE.NOTE] 您也可以選取做為單一儀表板 [精選的儀表板](powerbi-service-featured-dashboards.md) Power BI 中。
 
-## Add dashboards as "favorites"
+## 為 「 我的最愛 」 加入儀表板
 
-1.  In the left navigation pane, select a dashboard.
+1.  在左的導覽窗格中，選取 [儀表板。
 
-2.  From the top-right corner, select <bpt id="p1">**</bpt>Favorite<ept id="p1">**</ept>.
+2.  從右上角中，選取 **最愛**。
 
     ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-favorite.png)
 
-3. To see all the dashboards that you have added as favorites, in the left navpane, select <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept>.
+3. 若要查看所有儀表板，您將新增為左 navpane，在 [我的最愛] 選取 **我的最愛**。
 
     ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-select-favorite-full.png)
 
-  From here you can select a dashboard to open it, or share a dashboard with colleagues.
+  從這裡您可以選取的儀表板，以開啟它，或與同事共用儀表板。
 
-## Unfavorite a dashboard
+## 中移除最愛的儀表板
 
-No longer use a dashboard as much as you used to?  You can unfavorite it.
+就像您使用，不能再使用儀表板嗎？  您可以中移除最愛它。
 
-1.  In the left navigation pane, select the dashboard.
+1.  在左的導覽窗格中，選取 [儀表板。
 
-2.  From the top-right corner, select <bpt id="p1">**</bpt>Unfavorite<ept id="p1">**</ept>.  The dashboard is removed from your Favorites but not from your Power BI.
+2.  從右上角中，選取 **Unfavorite**。  儀表板會從您最愛，而不是從您的 Power BI 中移除。
 
 ## 請參閱
 
-[Get Started with Power BI](powerbi-service-get-started.md)
+[開始使用 Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Summarization and Category options"
-   description="Define how your visuals summarize their data"
+   pageTitle="摘要和類別選項"
+   description="定義視覺效果如何彙總其資料"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Customize Visuals with Summarization and Category Options
+# 自訂摘要與分類選項的視覺效果
 
-Power BI has properties that you can assign for fields in your model, which can help report and visualize and present data in ways that provide more clarity. For example, sometimes you want to average a list of numbers, but Power BI automatically sums the list. With Power BI, you can adjust how those lists of numbers are summarized.
+Power BI 都有自己的模型，可以指派欄位可幫助報表和視覺化並提供比較明瞭的方式呈現資料的屬性。 比方說，有時候您想要平均的數字清單，但 Power BI 自動加總清單。 透過 Power BI，您可以調整這些數字清單摘要的方式。
 
-## Numeric Control over summarization
+## 摘要的數字控制
 
-Let's take an example, and demonstrate how to control the way Power BI summarizes numeric data fields.
+讓我們來看一個範例中，並示範如何控制 Power BI 摘要數值資料欄位的方式。
 
-Select a visual on your report canvas, and then select a field in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane. The <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab appears in the ribbon and displays options for formatting data, and data properties.
+選取在您的報表畫布上，視覺效果，然後選取中的欄位 **欄位** 窗格。  **模型** 索引標籤會出現在功能區，並顯示格式化資料，以及資料屬性的選項。
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_1.png)
 
-You can select the type of currency symbol used, by selecting the currency symbol drop down, which is shown in the following image.
+您可以選取使用的貨幣符號的類型、 藉由選取的貨幣符號] 下拉式清單，如下圖所示。
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_2.png)
 
-There are many different options for formatting fields. For example, you can change the format from currency to percentage.
+有許多不同的選項來格式化欄位。 例如，您可以變更貨幣格式的百分比。
 
-You can change how Powwer BI summarizes the data, too. Select the <bpt id="p1">**</bpt>Default Summarization<ept id="p1">**</ept> icon to change how a field is summarized, including displaying a sum, a count, or an average.
+您可以變更如何 Powwer BI 摘要資料，太。 選取 **預設摘要** 圖示以變更如何欄位的摘要，包括顯示總和、 計數或平均。
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_3.png)
 
-## Manage and clarify your location data
+## 管理並釐清您位置的資料
 
-You can make similar changes when plotting locations on a map. Select your map, and then select the field in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane that you use for the <bpt id="p2">*</bpt>Location<ept id="p2">*</ept> value. On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept> and then choose the category that represents your location data from the drop-down menu. For example, select state, county, or city.
+繪製在地圖上的位置時，您可以進行類似的變更。 選取您的對應，然後選取 [在欄位 **欄位** 窗格，可用於 *位置* 值。 在 **模型** 索引標籤上，選取 **資料類別** ，然後選擇代表您位置的資料，從下拉式選單的分類。 例如，選取州、 郡而言或城市。
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_4.png)

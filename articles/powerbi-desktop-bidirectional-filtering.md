@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Bidirectional cross-filtering in Power BI Desktop (Preview)"
-   description="Enable cross-filtering using DirectQuery in Power BI Desktop"
+   pageTitle="雙向交叉篩選在 Power BI Desktop （預覽）"
+   description="啟用交叉篩選使用 Power BI Desktop 中的 DirectQuery"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,31 +20,32 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Bidirectional cross-filtering using DirectQuery in Power BI Desktop (Preview)
+# 雙向交叉篩選在 Power BI Desktop （預覽） 中使用 DirectQuery
 
-When filtering tables to create the appropriate view of data, report creators (and data modelers) face challenges when determining how filtering is applied to a report; the filter context of a table was held on one side of the relationship, but not the other, often requiring complex DAX formulas to get the desired results.
+篩選資料表以建立適當的檢視表的資料，當報表建立者 （和資料模型設定） 也面臨挑戰決定如何篩選套用至報表。篩選資料表的內容，而被其中一端的關聯性，但其他配置未，通常需要複雜的 DAX 公式，以取得所需的結果。
 
-With bidirectional cross-filtering, report creators (and data modelers) now have more control over how filters are applied when working with related tables, enabling those filters to be applied on <bpt id="p1">*</bpt>both<ept id="p1">*</ept> sides of a table relationship. This is accomplished by having the filter context propagated to a second related table on the other side of a table relationship.
+雙向交叉篩選、 報表建立者 （與資料模型設定） 現在可以更充分掌控使用相關的資料表，啟用要套用這些篩選器時，如何套用篩選器 *兩者* 邊資料表關聯性。 這是具有傳播資料表關聯性的另一端的第二個關聯資料表的篩選內容。
 
-A <bpt id="p1">[</bpt>detailed whitepaper<ept id="p1">](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx)</ept> is available that explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior).
+A [詳細的白皮書](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) 是可用來說明雙向交叉篩選在 Power BI Desktop 白皮書另涵蓋 SQL Server Analysis Services 2016 (兩者都有相同的行為）。
 
--   Download the <bpt id="p1">[</bpt>Bidirectional cross-filtering for Power BI Desktop<ept id="p1">](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx)</ept> whitepaper
+-   下載 [雙向交叉篩選的 Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) 白皮書
 
-### Enabling bidirectional cross-filtering for DirectQuery
+### 啟用雙向交叉篩選 directquery
 
-In order to use cross-filtering for DirectQuery, you must first enable it. This is a preview features, which means its availability and behavior is subject to change in upcoming releases of Power BI Desktop.
+若要使用交叉篩選 directquery，您必須先啟用它。 這是預覽功能，這表示它的可用性和行為時可能有所變更即將發行的 Power BI Desktop。
 
-To enable cross-filtering for DirectQuery in Power BI Desktop, select <bpt id="p1">**</bpt>File &gt; Options and settings &gt; Options<ept id="p1">**</ept>, then check the box next to <bpt id="p2">**</bpt>Enable cross filtering in both directions for DirectQuery<ept id="p2">**</ept>, as shown in the following image.
+啟用 Power BI Desktop 中的 DirectQuery 交叉篩選，請選取 **檔案 > 選項和設定 > 選項**, ，然後核取方塊旁 **啟用交叉篩選雙向 directquery**, ，如下圖所示。
 
 ![](media/powerbi-desktop-bidirectional-filtering/bidirectional-filtering_1.png)
 
-> <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> When creating cross filtering DAX formulas in Power BI Desktop, use <bpt id="p2">*</bpt>UserPrincipalName<ept id="p2">*</ept> (which is often the same as a user's login, such as <bpt id="p3">*</bpt>joe@contoso.com<ept id="p3">*</ept>) instead of <bpt id="p4">*</bpt>UserName<ept id="p4">*</ept>. As such, you may need to create a related table that maps <bpt id="p1">*</bpt>UserName<ept id="p1">*</ept> (or EmployeeID, for example) to <bpt id="p2">*</bpt>UserPrincipleName<ept id="p2">*</ept>.
+> 
+            **注意︰** 在建立交叉篩選 Power BI Desktop 中的 DAX 公式時，使用 *UserPrincipalName* (這通常是相同的使用者登入，例如 *joe@contoso.com*) 而不是 *UserName*。 因此，您可能需要建立對應的相關的資料表 *UserName* （或員工編號，例如） 至 *UserPrincipleName*。
 
-To enable cross-filtering, in the <bpt id="p1">**</bpt>Edit Relationship<ept id="p1">**</ept> dialog for a relationship, the following must be selected:
+若要啟用交叉篩選，在 **編輯關聯性** 必須選取關聯性，下列對話方塊︰
 
--   The <bpt id="p1">**</bpt>Cross filter direction<ept id="p1">**</ept> must be set to <bpt id="p2">**</bpt>Both<ept id="p2">**</ept>
--   The <bpt id="p1">**</bpt>Apply security filter in both directions<ept id="p1">**</ept> must also be selected
+-    **交叉篩選方向** 必須設為 **兩者**
+-    **套用安全性篩選雙向** 也必須選取
 
     ![](media/powerbi-desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
-For more information, and for examples of how bidirectional cross-filtering works, check out the <bpt id="p1">[</bpt>whitepaper<ept id="p1">](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx)</ept> mentioned earlier in this article.
+如需詳細資訊，以及如何雙向交叉篩選運作的範例，請參閱 [白皮書](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) 本文稍早所述。

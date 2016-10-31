@@ -1,39 +1,49 @@
-<properties pageTitle="Documentation Example - Tags" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Tags" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-標記" metaKeywords="" description="這是範例文件" services="" documentationCenter="" title="Documentation Example - Tags" solutions="" authors="" videoId="" scriptId="" />
 
 <tags ms.service="AzureWebSites" ms.devlang="CSharp" ms.topic="home-page" ms.tgt_pltfrm="Windows" ms.workload="50" ms.date="06/12/2014" ms.author="maurok;v-nabeni@microsoft.com;lito@mail.com" />
 
-# Example - Tags #
+# 範例-標記 #
 
-This is a sample documentation article that is used to test and validate the publishing system for Azure.com.  
+這是用來測試及驗證的 Azure.com 發佈系統的範例文件文件。  
 
-The example <ph id="ph1">`&lt;tags /&gt;`</ph> element can be found right below the <ph id="ph2">`&lt;properties /&gt;`</ph> element at the beginning of the document.
+此範例 `<tags />` 可以找到項目下方 `<properties />` 從文件開頭的項目。
 
-Unless otherwise specified (e.g. for ms.date), values should be restricted to alphanumeric  characters and hyphens and the length of the value should be restricted to 30 characters.
+除非另外指定 （例如，對於 ms.date)，值限制為英數字元和連字號和值的長度應該限制為 30 個字元。
 
-There are 7 required attributes for the tags element: 
+有的標記項目 7 必要的屬性︰ 
 
-- <bpt id="p1">**</bpt>ms.service<ept id="p1">**</ept>: Specifies the Azure service, tool, or feature that the article applies to.
+- 
+            **ms.service**︰ 指定 Azure 服務、 工具或適用於文件的功能。
 
-- <bpt id="p1">**</bpt>ms.devlang<ept id="p1">**</ept>: Specifies the programming language that the article applies to.
+- 
+            **ms.devlang**︰ 指定適用於文件的程式語言。
 
-- <bpt id="p1">**</bpt>ms.topic<ept id="p1">**</ept>: Specifies the topic type.
+- 
+            **ms.topic**︰ 指定主題型別。
 
-    > <bpt id="p1">**</bpt>Valid Values<ept id="p1">**</ept>: <bpt id="p2">*</bpt>article, hero-article, reference, index-page, campaign-page, video-page, infographic-page, home-page, service-home-page, dev-center-home-page, site-section-home-page<ept id="p2">*</ept>  
+    > 
+            **有效的值**: *文章、 英雄文章、 參考、 索引頁、 行銷頁面、 影片頁面、 資訊圖分頁、 首頁上，服務首頁、 開發人員中心-首頁上、 站台] 區段的首頁上*  
 
-- <bpt id="p1">**</bpt>ms.tgt_pltfrm<ept id="p1">**</ept>: Specifies the target platform, for instance Windows, Linux, Windows Phone, iOS, or Android.
+- 
+            **ms.tgt_pltfrm**︰ 指定目標平台，例如 Windows、 Linux、 Windows Phone、 iOS 或 Android。
 
-- <bpt id="p1">**</bpt>ms.workload<ept id="p1">**</ept>: Specifies a C&amp;E workload to which the topic applies to.
+- 
+            **ms.workload**︰ 指定主題適用於 C （& E） 工作負載。
 
-- <bpt id="p1">**</bpt>ms.date<ept id="p1">**</ept>: Specifies the last updated date for the topic.
+- 
+            **ms.date**︰ 指定上次更新的日期相關的主題。
 
-    > “04/10/2014”
+    > 
+            **有效的值**︰ 日期格式 mm/dd/yyyy，例如︰“04/10/2014”
 
-- <bpt id="p1">**</bpt>ms.author<ept id="p1">**</ept>: Specifies the author(s) associated with the topic. 若要指定多個值，您應該以分號將值分開。
+- 
+            **ms.author**︰ 指定與主題相關聯的作者。 若要指定多個值，您應該以分號將值分開。
 
-    > <bpt id="p1">**</bpt>Valid Values<ept id="p1">**</ept>: Microsoft aliases and complete email addresses. Length should be no longer than 200 characters.
+    > 
+            **有效的值**: Microsoft 別名和完整的電子郵件地址。 長度應為長度不超過 200 個字元。
 
 
-Here's an example of a valid the tags element:
+以下是範例是有效的標記項目︰
 
 ````XML
 <tags ms.service="AzureWebSites" ms.devlang="CSharp" ms.topic="home-page" ms.tgt_pltfrm="Windows" ms.workload="50" ms.date="06/12/2014" ms.author="maurok;v-nabeni@microsoft.com;lito@mail.com" />

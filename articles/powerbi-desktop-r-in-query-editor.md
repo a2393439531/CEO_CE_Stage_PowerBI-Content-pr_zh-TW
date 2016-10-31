@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Using R in Query Editor"
-   description="Use R in Power BI Desktop Query Editor for advanced analytics"
+   pageTitle="在 [查詢編輯器] 中使用 R"
+   description="適用於進階分析 Power BI Desktop 查詢編輯器] 中使用 R"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,39 +20,40 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Using R in Query Editor
+# 在 [查詢編輯器] 中使用 R
 
-You can use <bpt id="p1">**</bpt>R<ept id="p1">**</ept>, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>. This integration of R into <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> lets you perform data cleansing using R, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. <bpt id="p1">**</bpt>R<ept id="p1">**</ept> is a powerful language, and can be used in <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept> to prepare your data model and create reports.
+您可以使用 **R**, ，程式語言，廣泛用於統計學家、 資料科學家和資料分析師在 Power BI Desktop **查詢編輯器**。 這項整合到 R 的 **查詢編輯器** 可讓您執行資料清理使用 R，和在資料集，其中包括遺漏資料，預測，完成執行進階的資料成形和分析和叢集中，只是想等等。 
+            **R** 是功能強大的語言，而且可以用於 **查詢編輯器** 來準備您的資料模型，以及建立報表。
 
-## Installing R
+## 安裝 R
 
-To use <bpt id="p1">**</bpt>R<ept id="p1">**</ept> in Power BI Desktop's <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, you need to install <bpt id="p3">**</bpt>R<ept id="p3">**</ept> on your local machine. You can download and install <bpt id="p1">**</bpt>R<ept id="p1">**</ept> for free from many locations, including the <bpt id="p2">[</bpt>Revolution Open download page<ept id="p2">](https://mran.revolutionanalytics.com/download/)</ept>, and the <bpt id="p3">[</bpt>CRAN Repository<ept id="p3">](https://cran.r-project.org/bin/windows/base/)</ept>.
+若要使用 **R** 在 Power BI Desktop 的 **查詢編輯器**, ，您必須安裝 **R** 本機電腦上。 您可以下載並安裝 **R** 免費從許多位置，包括 [革命開放下載頁面](https://mran.revolutionanalytics.com/download/), ，而 [CRAN 儲存機制](https://cran.r-project.org/bin/windows/base/)。
 
-## Using R in Query Editor
+## 在 [查詢編輯器] 中使用 R
 
-To show how to use <bpt id="p1">**</bpt>R<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, we'll use an example from a stock market dataset, based on a .CSV file that you can <bpt id="p3">[</bpt>download from here<ept id="p3">](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv)</ept> and follow along. The steps for this example are the following:
+若要示範如何使用 **R** 中 **查詢編輯器**, ，我們將使用股票市場資料集為基礎的範例。CSV 檔案，您可以 [從這裡下載](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) 並依照指示進行。 此範例中的步驟如下所示︰
 
-1.  First, load your data into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>. In this example we'll load the <bpt id="p1">*</bpt>EuStockMarkets_NA.csv<ept id="p1">*</ept> file. Select <bpt id="p1">**</bpt>Get Data &gt; CSV<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon in <bpt id="p3">**</bpt>Power BI Desktop<ept id="p3">**</ept>.
+1.  首先，載入資料 **Power BI Desktop**。 在此範例中，我們將會載入 *EuStockMarkets_NA.csv* 檔案。 選取 **取得資料 > CSV** 從 **首頁** 在功能區 **Power BI Desktop**。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_1.png)
 
-2.  Select the file and select <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>, and the CSV is displayed in the <bpt id="p2">**</bpt>CSV file<ept id="p2">**</ept> dialog.
+2.  選取檔案，並選取 **開啟**, ，並顯示在 CSV **CSV 檔案** ] 對話方塊。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_2.png)
 
-3.  Once the data is loaded, you'll see it in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane in Power BI Desktop.
+3.  將資料載入後，您會看到它在 **欄位** Power BI Desktop 中的] 窗格。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_3.png)
 
-4.  Open <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> by selecting <bpt id="p2">**</bpt>Edit Queries<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> tab in <bpt id="p4">**</bpt>Power BI Desktop<ept id="p4">**</ept>.
+4.  開啟 **查詢編輯器** 選取 **編輯查詢** 從 **首頁** 索引標籤中 **Power BI Desktop**。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_4.png)
 
-5.  In the <bpt id="p1">**</bpt>Transform<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Run R Script<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>Run R Script<ept id="p3">**</ept> editor appears (shown in the next step). Notice that rows 15 and 20 suffer from missing data, as do other rows you can't see in the following image. The steps below show how R can (and will) complete those rows for you.
+5.  在 **轉換** 索引標籤上，選取 **執行 R 指令碼** 和 **執行 R 指令碼** 編輯器隨即出現 （下一個步驟中所示）。 請注意 15 到 20 的資料列會遭受資料遺失，您無法看到下圖中其他資料列一樣。 以下顯示如何 R 可以 （且會） 的步驟為您完成這些資料列。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
-6.  For this example, we'll enter the following script code:
+6.  此範例中，我們會輸入下列指令碼︰
 
         library(mice)
         tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
@@ -60,56 +61,60 @@ To show how to use <bpt id="p1">**</bpt>R<ept id="p1">**</ept> in <bpt id="p2">*
         output <- dataset
         output$completedValues <- completedData$"SMI missing values"
 
-    ><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You'll need to have the <bpt id="p2">*</bpt>mice<ept id="p2">*</ept> library installed in your R environment for the previous script code to work properly. To install mice, run the following in your R installation: |      &gt; install.packages('mice')
+    >
+            **注意︰** 需要有 *滑鼠* 先前的指令碼，才能正常運作的 R 環境中安裝的程式庫。 若要安裝滑鼠，執行下列命令在 R 安裝: |     > install.packages('mice')
 
-    When put into the <bpt id="p1">**</bpt>Run R Script<ept id="p1">**</ept> dialog, the code looks like the following:
+    當放入 **執行 R 指令碼** ] 對話方塊中，程式碼看起來如下所示︰
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_5b.png)
 
-7.  When we select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept> displays a warning about data privacy.
+7.  當我們選取 **確定**, ，**查詢編輯器** 會顯示資料隱私權的相關警告。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_6.png)
 
-8.  For the R scripts to work properly in the Power BI service, all data sources need to be set to <bpt id="p1">*</bpt>public<ept id="p1">*</ept>. For more information about privacy settings and their implications, see <bpt id="p1">[</bpt>Privacy Levels<ept id="p1">](powerbi-desktop-privacy-levels.md)</ept>.
+8.  R 指令碼在 Power BI 服務正常運作，所有的資料來源必須設定為 *公用*。 如需隱私權設定及含意的詳細資訊，請參閱 [隱私權等級](powerbi-desktop-privacy-levels.md)。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-    Once we do so, we see a new column in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> well called <bpt id="p2">*</bpt>completedValues<ept id="p2">*</ept>. Notice there are a few missing data elements, such as on row 15 and 18. We'll see how R handles that in the next section.
+    一旦我們這麼做，我們會看到新的資料行中 **欄位** 也稱為 *completedValues*。 請注意，還有幾個遺漏的資料元素，例如資料列 15 到 18。 我們會看到 R 處理的方式，下一節。
 
     之 [警示] 工作區
 
-With just five lines of R script, <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> filled in the missing values with a predictive model.
+R 指令碼，只是五個行 **查詢編輯器** 填入遺漏的值與預測模型。
 
-## Creating visuals from R script data
+## 從 R 指令碼資料建立視覺效果
 
-Now we can create a visual to see how the R script code using the <bpt id="p1">*</bpt>mice<ept id="p1">*</ept> library completed the missing values, as shown in the following image.
+現在我們可以建立視覺效果，請參閱如何 R 指令碼的程式碼使用 *滑鼠* 程式庫已完成遺漏的值，如下圖所示。
 
 ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
-Once that visual is complete, and any other visuals we might want to create using <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, we can save the <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> file (which saves as a .pbix file) and then use the data model, including the R scripts that are part of it, in the Power BI service.
+一旦該 visual 已完成，而且我們可能想要使用所建立的任何其他視覺效果 **Power BI Desktop**, ，我們可以儲存 **Power BI Desktop** 檔案 （用於儲存為.pbix 檔案），然後使用 [資料模型，包括部分，Power BI 服務中的 R 指令碼。
 
-><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Want to see a completed .pbix file with these steps completed? You're in luck - you can download the completed <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> file used in these examples <bpt id="p2">[</bpt>right here<ept id="p2">](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with R in PQ.pbix)</ept>.
+>
+            **注意︰** 要完成這些步驟，以查看已完成的.pbix 檔案？ 您很幸運-您可以下載已完成 **Power BI Desktop** 檔案，這些範例中使用 [這裡](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with R in PQ.pbix)。
 
-Once you've uploaded the .pbix file to the Power BI service, a couple more steps are necessary to enable data refresh (in the service) and to enable visuals to be updated in the service (the data needs access to R for visuals to be updated). The additional steps are the following:
+一旦您已上載.pbix 檔案至 Power BI 服務，兩個步驟是啟用 （服務） 中的資料重新整理，以及啟用視覺效果來更新的服務 （資料需要存取的視覺效果更新的 R） 中所需。 額外的步驟如下所示︰
 
--   <bpt id="p1">**</bpt>Enable scheduled refresh for the dataset<ept id="p1">**</ept> - to enable scheduled refresh for the workbook that contains your dataset with R scripts, see <bpt id="p2">[</bpt>Configuring scheduled refresh<ept id="p2">](powerbi-refresh-scheduled-refresh.md)</ept>, which also includes information about <bpt id="p3">**</bpt>Personal Gateway<ept id="p3">**</ept>.
+-   
+            **啟用排定的重新整理資料集** -若要啟用排定的重新整理活頁簿，其中包含您的資料集使用 R 指令碼，請參閱 [設定排定的重新整理](powerbi-refresh-scheduled-refresh.md), ，其中也包含下列資訊 **個人閘道**。
 
--   <bpt id="p1">**</bpt>Install the Personal Gateway<ept id="p1">**</ept> - you need a <bpt id="p2">**</bpt>Personal Gateway<ept id="p2">**</ept> installed on the machine where the file is located, and where R is installed; the Power BI service must access that workbook and re-render any updated visuals. You can get more information on how to <bpt id="p1">[</bpt>install and configure Personal Gateway<ept id="p1">](powerbi-personal-gateway.md)</ept>.
+-   
+            **個人閘道安裝** -您需要 **個人閘道** 所在檔案的所在，其中 R 已安裝，也不 Power BI 服務必須存取該活頁簿並重新轉譯任何更新的視覺效果的電腦上安裝。 您可以取得更多有關如何 [安裝和設定個人閘道](powerbi-personal-gateway.md)。
 
 
 
 ## 限制
 
-There are some limitations to queries that include R scripts created in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>:
+有一些限制，包括 R 指令碼中建立的查詢 **查詢編輯器**:
 
--   All R data source settings must be set to <bpt id="p1">*</bpt>Public<ept id="p1">*</ept>, and all other steps in a query created in <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept> must also be public. To get to data source settings, in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> select <bpt id="p2">**</bpt>File &gt; Options and settings &gt; Data source settings<ept id="p2">**</ept>.
+-   所有的 R 資料來源設定必須設為 *公用*, ，以及在查詢中建立所有其他步驟 **查詢編輯器** 也必須是公用。 若要取得資料來源設定，在 **Power BI Desktop** 選取 **檔案 > 選項和設定 > 資料來源設定**。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-    From the <bpt id="p1">**</bpt>Data Source Settings<ept id="p1">**</ept> dialog, select the the data source(s) and then select <bpt id="p2">**</bpt>Edit Permissions...<ept id="p2">**</ept> and ensure that the <bpt id="p3">**</bpt>Privacy Level<ept id="p3">**</ept> is set to <bpt id="p4">*</bpt>Public<ept id="p4">*</ept>.
+    從 **資料來源設定** 對話方塊中，選取資料來源，然後選取 **編輯權限** ，並確定 **私密性等級** 設為 *公用*。
 
     ![](media/powerbi-desktop-r-in-query-editor/r-in-query-editor_10.png)    
 
--   To enable scheduled refresh of your R visuals or dataset, you need to enable <bpt id="p1">**</bpt>Scheduled refresh<ept id="p1">**</ept> and have a <bpt id="p2">**</bpt>Personal Gateway<ept id="p2">**</ept> installed on the computer that houses the workbook and the R installation. For more information on both, see the previous section in this article, which provides links to learn more about each.
+-   若要啟用 R 視覺效果的資料集排程重新整理，您必須啟用 **排定的重新整理** 還有 **個人閘道** 裝載活頁簿和 R 安裝在電腦上安裝。 如需兩者的詳細資訊，請參閱這篇文章提供連結以了解每個前的一節。
 
-There are all sorts of things you can do with R and custom queries, so explore and shape your data just the way you want it to appear.
+有各種用途，您可以使用 R 和自訂查詢執行，因此探索並圖形資料只是您想要顯示的方式。

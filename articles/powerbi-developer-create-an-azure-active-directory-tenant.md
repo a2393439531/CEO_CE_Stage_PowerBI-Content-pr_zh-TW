@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create an Azure Active Directory tenant"
-   description="Create an Azure Active Directory tenant"
+   pageTitle="建立 Azure Active Directory 租用戶"
+   description="建立 Azure Active Directory 租用戶"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,69 +20,71 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Create an Azure Active Directory tenant
+# 建立 Azure Active Directory 租用戶
 
-Using the Power BI REST API, you can create a Power BI app in any platform that supports calling REST operations. However, before you get started creating a Power BI app, you need an <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>, an organizational user, and a <bpt id="p2">[</bpt>Power BI service account<ept id="p2">](powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+使用 Power BI REST API，您可以在任何平台上支援呼叫 REST 作業建立 Power BI 應用程式。 不過，開始建立 Power BI 應用程式之前，您需要 **Azure Active Directory**, ，組織的使用者，和 [Power BI 服務帳戶](powerbi-admin-free-with-custom-azure-directory.md)。
 
-## Create an Azure Active Directory tenant for a Power BI app
+## 建立 Azure Active Directory 租用戶的 Power BI 應用程式
 
-Power BI apps are integrated with <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> (Azure AD) to provide secure sign in and authorization for your app. To integrate a Power BI app with Azure AD, you register the details about your application with Azure AD by using the Azure Management Portal.
+Power BI 應用程式整合在一起 **Azure Active Directory** (Azure AD) 以提供安全登入和授權您的應用程式。 若要使用 Azure AD 整合 Power BI 應用程式，您註冊詳細資料與 Azure AD 的應用程式的相關使用 Azure 管理入口網站。
 
-<bpt id="p1">**</bpt>Important<ept id="p1">**</ept> To sign up for the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>, your <bpt id="p3">**</bpt>Azure Active Directory<ept id="p3">**</ept> must have at least one organizational user. Use your organizational user to <bpt id="p1">[</bpt>sign up for the Power BI service<ept id="p1">](powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+
+            **重要** 註冊 **Power BI 服務**, ， **Azure Active Directory** 必須至少一個組織使用者。 使用您的組織使用者 [註冊 Power BI 服務](powerbi-admin-free-with-custom-azure-directory.md)。
 
 <a name="setup"></a>
-### Create an Azure Active Directory tenant
-Before you get started creating a Power BI app, you need <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> and an organizational user. Here's how to setup <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>:
+### 建立 Azure Active Directory 租用戶
+開始建立 Power BI 應用程式之前，您需要 **Azure Active Directory** 和組織使用者。 以下是如何設定 **Azure Active Directory**:
 
- 1. Navigate to https://manage.windowsazure.com and log in with the account that has an Azure subscription.
- 2. Click <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept> management icon in the left pane.
+ 1. 巡覽至 https://manage.windowsazure.com，並具有 Azure 訂用帳戶的帳戶登入。
+ 2. 按一下 [ **ACTIVE DIRECTORY** 的左窗格中的 [管理] 圖示。
 
     ![](media/powerbi-developer-create-an-azure-active-directory-tenant/active-directory.png)
 
- 3. Click <bpt id="p1">**</bpt>NEW<ept id="p1">**</ept> button at the bottom of the page.
- 4. Choose <bpt id="p1">**</bpt>APP SERVICES<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>ACTIVE DIRECTORY<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>DIRECTORY<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>CUSTOM CREATE<ept id="p4">**</ept>
+ 3. 按一下 [ **新增** 在頁面底部的按鈕。
+ 4. 選擇 **應用程式服務** > **ACTIVE DIRECTORY** > **目錄** > **自訂建立**
 
     ![](media/powerbi-developer-create-an-azure-active-directory-tenant/new-ad.png)
 
- 5. In the <bpt id="p1">**</bpt>Add directory<ept id="p1">**</ept> page, enter a name and domain name. For country or region choose United States or the country were Power BI is available.
+ 5. 在 **加入目錄** 頁面上，輸入名稱和網域名稱。 國家或地區，選擇美國或國家/地區所 Power BI 使用。
 
     ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-directory.png)
 
- 6. Choose OK icon. An Azure Active Directory is created.
+ 6. 選擇 [確定] 圖示。 建立 Azure Active Directory。
 
 <a name="newuser"></a>
-### Add a user to your Azure Active Directory tenant
-You need an organizational user from your Azure AD to sign up for the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept>. Once you login to the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept> for the first time, you’ll see the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept> added to your Azure AD which will allow you to create Power BI apps with the right permissions. Here's how to add a user to your Azure Active Directory:
+### 將使用者加入您的 Azure Active Directory 租用戶
+您需要從您的 Azure AD 註冊的組織使用者 **Power BI 服務**。 一旦您登入 **Power BI 服務** 第一次，您會看到 **Power BI 服務** 加入至您的 Azure AD 可讓您使用正確的權限建立 Power BI 應用程式。 以下是如何將使用者新增至您的 Azure Active Directory:
 
-1. Navigate to https://manage.windowsazure.com and log in with the account that has an Azure subscription.
-2. Click <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept> management icon in the left pane.
-3. In your <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>USERS<ept id="p2">**</ept>.
+1. 巡覽至 https://manage.windowsazure.com，並具有 Azure 訂用帳戶的帳戶登入。
+2. 按一下 [ **ACTIVE DIRECTORY** 的左窗格中的 [管理] 圖示。
+3. 在您 **Azure Active Directory**, ，按一下 [ **使用者**。
 
     ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-ad-user.png)
-4. At the bottom of the page, click <bpt id="p1">**</bpt>ADD USER<ept id="p1">**</ept>. A user account is used to register a Power BI app.
-5. In the <bpt id="p1">**</bpt>Tell us about this user page<ept id="p1">**</ept>:
+4. 在頁面底部，按一下 [ **新增使用者**。 使用者帳戶用來註冊 Power BI 應用程式。
+5. 在 **告訴我們使用者本頁**:
 
-    1. For <bpt id="p1">**</bpt>TYPE OF USER<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>New user in your organization<ept id="p2">**</ept>.
-    2. Enter your <bpt id="p1">**</bpt>USER NAME<ept id="p1">**</ept>.
+    1. 如 **使用者類型**, ，選擇 [ **貴組織中的新使用者**。
+    2. 輸入您 **使用者名稱**。
     3. 按一下 [下一步] ****。
 
         ![](media/powerbi-developer-create-an-azure-active-directory-tenant/add-ad-user2.png)
 
-6. In the <bpt id="p1">**</bpt>user profile<ept id="p1">**</ept> page, enter your <bpt id="p2">**</bpt>DISPLAY NAME<ept id="p2">**</ept>. Display name is a required field.
+6. 在 **使用者設定檔** 頁面上，輸入您 **顯示名稱**。 顯示名稱是必要的欄位。
 
     ![](media/powerbi-developer-create-an-azure-active-directory-tenant/user-profile.png)
 
-7. 按一下 [下一步] ****。 For <bpt id="p1">**</bpt>ROLE<ept id="p1">**</ept>, you can use <bpt id="p2">**</bpt>User<ept id="p2">**</ept>.
-8. Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> to create a temporary password. The new user is assigned a temporary password that must be changed on first sign in.
-9. In the <bpt id="p1">**</bpt>Get temporary password<ept id="p1">**</ept> page, copy the temporary password, and click <bpt id="p2">**</bpt>Complete<ept id="p2">**</ept> icon. You use the temporary password when you first login to your AAD.
-10. After you click the <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon, a new Azure AD user is created.
+7. 按一下 [下一步] ****。 如 **角色**, ，您可以使用 **使用者**。
+8. 按一下 [ **建立** 建立暫時密碼。 在第一次登入時必須變更暫時密碼是指派給新使用者。
+9. 在 **取得暫時密碼** 頁面複製暫時密碼，然後按一下 **完成** 圖示。 使用的暫時密碼當您第一次登入您的 AAD。
+10. 按一下之後 **完成** 圖示、 新建立 Azure AD 使用者。
 
-Once you have an <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> tenant, and an organizational user, you <bpt id="p2">[</bpt>sign up for Power BI<ept id="p2">](powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+一旦 **Azure Active Directory** 租用戶和組織使用者，您 [註冊 Power BI](powerbi-admin-free-with-custom-azure-directory.md)。
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept> When you sign up for the Power BI service, use your organizational user. Once you login to the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept> for the first time, you will see the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept> added to your Azure AD.
+
+            **請注意** 當您註冊 Power BI 服務 」 時，使用您的組織使用者。 一旦您登入 **Power BI 服務** 第一次，您會看到 **Power BI 服務** 加入至您的 Azure AD。
 
 ## 另請參閱
 
 [什麼是 Azure AD 目錄？](https://msdn.microsoft.com/library/azure/jj573650.aspx)  
-[How to get an Azure Active Directory tenant](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[如何取得 Azure Active Directory 租用戶](https://azure.microsoft.com/documentation/articles/active-directory-howto-tenant/)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

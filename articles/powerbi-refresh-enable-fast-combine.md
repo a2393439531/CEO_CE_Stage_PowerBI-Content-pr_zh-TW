@@ -1,6 +1,6 @@
 <properties
-pageTitle="Disable privacy settings"
-description="How to enable Fast Combine within the Personal Gateway to disable privacy settings for refresh."
+pageTitle="停用隱私權設定"
+description="如何啟用 [快速合併在個人閘道，以停用重新整理的隱私權設定中。"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,67 +19,68 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="08/15/2016"
 ms.author="asaxton"/>
-# Disable privacy setting in Power BI Gateway - Personal
+# 停用在 Power BI 閘道個人隱私權設定
 
-You may receive the following error based on the privacy settings for your data sources when used with the personal gateway.
+您可能會收到下列錯誤取決於資料來源與個人閘道搭配使用時的隱私權設定。
 
-> *An error occurred while processing the data in the dataset.*
+> *處理資料集中的資料時發生錯誤。*
 >
-> *[Unable to combine data] <ph id="ph1">&amp;lt;</ph>query part<ph id="ph2">&amp;gt;/&amp;lt;</ph>…<ph id="ph3">&amp;gt;/&amp;lt;</ph>…&gt; is accessing data sources that have privacy levels which cannot be used together. Please rebuild this data combination.*
+> *[無法結合資料] &lt;查詢部分&gt;/&lt;...&gt;/&lt;…&gt; 存取的資料來源的隱私權等級無法一起使用。 請重建這個資料組合。*
 
-To work around this error, you can turn on <bpt id="p1">**</bpt>Fast Combine<ept id="p1">**</ept>. <bpt id="p1">**</bpt>Fast Combine<ept id="p1">**</ept> will ignore the privacy settings allowing the different data sources to be combined. 
+若要解決此錯誤，您可以開啟 **快速合併**。 
+            **快速合併** 將會忽略允許結合不同資料來源的隱私權設定。 
 
-> [AZURE.NOTE] Privacy levels are not considered when combining data. This could expose sensitive or confidential data to another data source when combining data.
+> [AZURE.NOTE] 聯結的資料時，不會視為隱私權等級。 聯結的資料時，這無法公開敏感或機密資料到其他資料來源。
 
-## What is Fast Combine?
+## 什麼是快速合併？
 
-To learn more about privacy levels and Fast Combine, you can look at <bpt id="p1">[</bpt>Privacy Levels<ept id="p1">](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)</ept>. By default, the privacy level will be set to private which could result in the error mentioned above. This is because a setting of private will isolate the data source from other sources. An example of where this would be a problem would be a parameterized query getting inputs from another data source. 
+若要深入了解隱私權等級 」 和 「 快速合併，您可以查看 [隱私權等級](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)。 根據預設，隱私權層級會設私用，因而造成上述錯誤。 這是因為私用的設定會隔離其他來源的資料來源。 情況範例問題會從另一個資料來源取得輸入的參數型的查詢。 
 
-Turning Fast Combine on will ignore the private setting and allow the execution to occur.
+開啟快速合併會忽略私用設定，並允許發生執行。
 
-## Turn on Fast Combine
+## 開啟 [快速合併
 
-You can use the following steps to enable Fast Combine for your personal gateway. The On-Premises Data Gateway does not have this setting.
+您可以使用下列步驟以啟用您的個人閘道的 [快速合併。 內部部署資料閘道器並沒有這項設定。
 
-1. Open <bpt id="p1">**</bpt>ConnectorConfig.xml<ept id="p1">**</ept>.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
+1. 開啟 **ConnectorConfig.xml**。  這可能是在您的電腦上的兩個位置。  如果您是電腦的系統管理員，它會如下。
 
     <pre><code>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
-    If you are not an administrator, the location will be the following.
+    如果您不是系統管理員，此位置會是以下。
 
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
-2.  Add the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>EnableFastCombine<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> element with a value of true to the config file. Adding this element will turn <bpt id="p1">**</bpt>Fast Combine<ept id="p1">**</ept> on.
+2.  新增 **&lt;EnableFastCombine&gt;** 值為 true 的組態檔項目。 加入這個項目將會關閉 **快速合併** 上。
 
     <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
     
     ![](media/powerbi-refresh-enable-fast-combine/configfile.png)
 
-3.  Exit and re-launch the gateway configuration screen.
+3.  結束並重新啟動閘道器組態畫面。
 
-4.  You will see a status letting you know that Fast Combine is enabled.
+4.  您會看到狀態，告訴您已啟用 [快速合併。
 
     ![](media/powerbi-refresh-enable-fast-combine/fastcombineenabled.png)
 
-## Turn off Fast Combine
+## 關閉 [快速合併
 
-1. Open <bpt id="p1">**</bpt>ConnectorConfig.xml<ept id="p1">**</ept>.  This may be in one of two locations on your machine.  If you are an administrator on the computer, it will be the following.
+1. 開啟 **ConnectorConfig.xml**。  這可能是在您的電腦上的兩個位置。  如果您是電腦的系統管理員，它會如下。
 
     <pre><code>C:\Program Files\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
-    If you are not an administrator, the location will be the following.
+    如果您不是系統管理員，此位置會是以下。
 
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
 
-2.  Remove the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>EnableFastCombine<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> element from the config file. Removing this element will turn <bpt id="p1">**</bpt>Fast Combine<ept id="p1">**</ept> off.
+2.  移除 **&lt;EnableFastCombine&gt;** 組態檔中的項目。 移除這個項目將會關閉 **快速合併** 關閉。
 
-3.  Exit and re-launch the gateway configuration screen.
+3.  結束並重新啟動閘道器組態畫面。
 
-4.  You will no longer see a status telling you know that <bpt id="p1">**</bpt>Fast Combine<ept id="p1">**</ept> is enabled.
+4.  您不會再看到狀態，告訴您知道 **快速合併** 已啟用。
 
 
 ## 請參閱
 
-[Privacy Levels](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
-[Common query tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[隱私權等級](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
+[在 Power BI Desktop 常見查詢工作](powerbi-desktop-common-query-tasks.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

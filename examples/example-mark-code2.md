@@ -1,13 +1,13 @@
-<properties pageTitle="Documentation Example - Mark code" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-標記程式碼" metaKeywords="" description="這是範例文件" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Mark Code #
+# 範例-標記程式碼 #
 
-This sample has been taken from http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-a-view to show how to add mark tags inside a snippet
+這個範例已經從 http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-a-view 採取以顯示如何新增程式碼片段內的標記標籤
 
 ---
 ...
 
-When we first created the Views\HelloWorld\Index.cshtml file, it contained the following code:
+我們先建立 Views\HelloWorld\Index.cshtml 檔案，它會包含下列程式碼︰
 
 ````
 @{
@@ -15,7 +15,7 @@ When we first created the Views\HelloWorld\Index.cshtml file, it contained the f
 }
 ````
     
-The Razor code above is explicted setting the layout page. Examine the Views<ph id="ph1">\_</ph>ViewStart.cshtml file, it contains the exact same Razor markup. TheViews<ph id="ph1">\_</ph>ViewStart.cshtml file defines the common layout that all views will use, therefore you can comment out or remove that code from the  Views\HelloWorld\Index.cshtml file.
+上面的 Razor 程式碼是 explicted 設定版面配置頁。 請檢查檢視\_ViewStart.cshtml 檔，它包含相同的 Razor 標記。 TheViews\_ViewStart.cshtml 檔定義將使用的所有檢視的一般配置，因此您可以標記為註解或移除該程式碼從 Views\HelloWorld\Index.cshtml 檔。
 
 ````
 <mark>@*@{
@@ -31,11 +31,11 @@ The Razor code above is explicted setting the layout page. Examine the Views<ph 
 <p>Hello from our View Template!</p>
 ````
 
-You can use the Layout property to set a different layout view, or set it to null so no layout file will be used.
+您可以使用版面配置] 屬性設定不同的版面配置檢視，或將它設定為 null，所以會使用未配置的檔案。
 
-Now, let's change the title of the Index view.
+現在，讓我們來變更 [索引] 檢視的標題。
 
-Open MvcMovie\Views\HelloWorld\Index.cshtml. There are two places to make a change: first, the text that appears in the title of the browser, and then in the secondary header (the <ph id="ph1">&amp;lt;</ph>h2<ph id="ph2">&amp;gt;</ph> element). You'll make them slightly different so you can see which bit of code changes which part of the app.
+開啟 MvcMovie\Views\HelloWorld\Index.cshtml。 若要變更的兩個地方︰ 第一次，文字會出現標題的瀏覽器中，並在第二個標頭 ( &lt;h2&gt; 項目)。 您要進行這些稍有不同，您所見的位元的程式碼變更的部分應用程式。
 
 ````
 @{
@@ -47,7 +47,7 @@ Open MvcMovie\Views\HelloWorld\Index.cshtml. There are two places to make a chan
 <p>Hello from our View Template!</p>
 ````
 
-To indicate the HTML title to display, the code above sets a Title property of the ViewBag object (which is in the Index.cshtml view template). Notice that the layout template  ( Views\Shared<ph id="ph1">\_</ph>Layout.cshtml ) uses this value in the <ph id="ph2">&amp;lt;</ph>title<ph id="ph3">&amp;gt;</ph> element as part of the <ph id="ph4">&amp;lt;</ph>head<ph id="ph5">&amp;gt;</ph> section of the HTML that we modified previously.
+若要指出要顯示的 HTML 標題，上面的程式碼會設定 ViewBag 物件 （這是 Index.cshtml 檢視範本中） 的 Title 屬性。 請注意，版面配置範本 (Views\Shared\_Layout.cshtml) 會使用此值在 &lt;標題&gt; 一部分的項目 &lt;head&gt; 一節我們先前已修改的 html。
 
 ````
 <!DOCTYPE html>
@@ -61,11 +61,11 @@ To indicate the HTML title to display, the code above sets a Title property of t
 </head>
 ````
 
-Using this ViewBag approach, you can easily pass other parameters between your view template and your layout file.
+使用這個 ViewBag 方法，可以檢視範本和版面配置檔之間輕鬆地傳遞其他參數。
 
-執行應用程式。 Notice that the browser title, the primary heading, and the secondary headings have changed. (If you don't see changes in the browser, you might be viewing cached content. Press Ctrl+F5 in your browser to force the response from the server to be loaded.) The browser title is created with the  ViewBag.Title we set in the Index.cshtml view template  and the additional  "- Movie App" added in the layout file.
+執行應用程式。 請注意，瀏覽器標題、 主要的標題和第二個標題已變更。 （如果您沒有看到瀏覽器中的變更，您可能要檢視快取的內容。 按 Ctrl + F5 在瀏覽器中強制載入伺服器的回應。）瀏覽器標題會透過我們在 Index.cshtml 檢視範本和其他設定 ViewBag.Title 」-電影應用程式 」 在版面配置檔中加入。
 
-Also notice how the content in the Index.cshtml view template was merged with the _Layout.cshtml view template and a single HTML response was sent to the browser. Layout templates make it really easy to make changes that apply across all of the pages in your application.
+也請注意如何在 Index.cshtml 檢視範本內容已合併至 _Layout.cshtml 檢視範本和單一 HTML 回應已傳送至瀏覽器。 版面配置範本讓您很容易變更套用於所有應用程式中的頁面。
 
 ...
 

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards in the iPhone app"
-   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI for iOS  app on the iPhone." 
+   pageTitle="IPhone 應用程式中的儀表板"
+   description="儀表板是您公司的生命週期的入口網站。 了解如何檢視、 探索和分享您的儀表板，在 Power BI for iPhone 上的 iOS 應用程式。" 
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,69 +20,73 @@
    ms.date="09/30/2016"
    ms.author="maggies"/>
 
-# Dashboards in the iPhone app (Power BI for iOS)  
+# 在 iPhone 應用程式 (適用於 iOS 的 Power BI) 儀表板  
 
-Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI for iOS  app on the iPhone.  
+儀表板是您公司的生命週期的入口網站。 了解如何檢視、 探索和分享您的儀表板，在 Power BI for iPhone 上的 iOS 應用程式。  
 
-You don't create dashboards in the Power BI app on your iPhone. You <bpt id="p1">[</bpt>create dashboards<ept id="p1">](powerbi-service-dashboards.md)</ept> or <bpt id="p2">[</bpt>connect to built-in dashboards for services<ept id="p2">](powerbi-content-packs-services.md)</ept> such as Salesforce in the Power BI service (<bpt id="p3">[</bpt>https://www.powerbi.com<ept id="p3">](https://www.powerbi.com)</ept>) on your computer.
+您不在 Power BI 應用程式中建立儀表板，您在 iPhone 上。 您 [建立儀表板](powerbi-service-dashboards.md) 或 [連接到服務的內建儀表板](powerbi-content-packs-services.md) 例如 Salesforce Power BI 服務中 ([https://www.powerbi.com](https://www.powerbi.com)) 電腦上。
 
-Then in the iPhone app for Microsoft Power BI for iOS, you can explore these same dashboards. Dashboards refresh in real time, automatically, so you don't need to manually refresh them.
+然後在 iPhone iOS 的應用程式的 Microsoft Power BI，您可以探索這些相同的儀表板。 儀表板即時，會自動重新整理，因此您不需要手動重新整理。
 
-## View dashboards on your iPhone  
-1.  Open the Power BI app on your iPhone and sign in.
+## 您在 iPhone 上的 [檢視儀表板  
+1.  開啟您在 iPhone 上的 Power BI 應用程式，然後登入。
 
-    Need to <bpt id="p1">[</bpt>download the iPhone app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> from the Apple App Store?
+    需要 [iPhone 應用程式下載](http://go.microsoft.com/fwlink/?LinkId=522062) Apple App Store 中？
 
-3.  Tap a dashboard to open it.  
+3.  點選以開啟儀表板。  
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-home.png)
 
-    By default, Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
+    根據預設，Power BI 儀表板尋找您在 iPhone 上稍有不同。 所有的方塊會出現相同的大小，以及其排列方式逐一從上到下。
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-portrait.png)
 
-    ><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: If you're the dashboard owner, in the Power BI service you can <bpt id="p2">[</bpt>create a view of the dashboard specifically for phones<ept id="p2">](powerbi-service-create-dashboard-phone-view.md)</ept> in portrait mode. 
+    >
+            **秘訣**︰ 如果您的儀表板擁有者，在 Power BI 服務，您可以 [建立專為手機儀表板檢視](powerbi-service-create-dashboard-phone-view.md) 直向模式。 
 
-     Or just turn your phone sideways to <bpt id="p1">[</bpt>view the dashboard in landscape mode<ept id="p1">](#view-dashboards-in-landscape-mode)</ept> on your phone.
+     只需啟動您的電話側邊或者 [在橫向模式中檢視儀表板](#view-dashboards-in-landscape-mode) 在電話上。
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-landscape.png)
 
 
-4.  Swipe up and down to see all the tiles in the dashboard. 您可以：
+4.  向上或向下撥動，以查看儀表板中的所有圖格。 您可以：
 
-    -   <bpt id="p1">[</bpt>Tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-iphone-app.md)</ept> to open it in focus mode and interact with it.
+    -   
+            [點選磚](powerbi-mobile-tiles-in-the-iphone-app.md) 焦點模式中開啟，並與其互動。
 
-    -   <bpt id="p1">[</bpt>Interact with a report page tile<ept id="p1">](powerbi-mobile-report-page-tiles-in-the-iphone-app.md)</ept> in the iPhone app.
+    -   
+            [互動報表頁面磚](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) iPhone 應用程式中。
 
-    -   Tap the star <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-mobile-not-favorite-icon.png)</ph> to <bpt id="p1">[</bpt>make it a favorite<ept id="p1">](powerbi-mobile-favorites.md)</ept>.
+    -   點選星形 ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-mobile-not-favorite-icon.png) 至 [使其成為我的最愛](powerbi-mobile-favorites.md)。
 
-    -  Tap <bpt id="p1">**</bpt>Invite<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-iphone-app/pbi_ipad_shareiconblk.png)</ph> to <bpt id="p2">[</bpt>invite a colleague<ept id="p2">](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)</ept> to view your dashboard.
+    -  點選 **邀請** ![](media/powerbi-mobile-dashboards-in-the-iphone-app/pbi_ipad_shareiconblk.png) 至 [邀請同事](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) 檢視您的儀表板。
 
-    -  Tap the ellipsis to open the dashboard menu...
+    -  點選以開啟 [儀表板] 功能表中的省略符號...
 
         ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-ellipsis-menu.png)
 
-        Then tap to <bpt id="p1">[</bpt>add a picture tile<ept id="p1">](powerbi-mobile-picture-tiles-in-the-iphone-app.md)</ept> to your dashboard.
+        然後點選以 [加入圖片磚](powerbi-mobile-picture-tiles-in-the-iphone-app.md) 儀表板。
 
         ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-picture-tile-menu.png)
 
-    -  <bpt id="p1">[</bpt>Sync the dashboard with your Apple Watch<ept id="p1">](powerbi-mobile-apple-watch.md)</ept>.
+    -  
+            [同步處理與 Apple Watch 儀表板](powerbi-mobile-apple-watch.md)。
 
-6.  To get back to the list of dashboards, tap the arrow next to the dashboard title, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+6.  若要回到儀表板的清單，請點選 [儀表板標題旁的箭號，然後點選 **我的工作區**。
 
     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-breadcrumb.png)
 
 
-## View dashboards in landscape mode
+## 檢視儀表板以橫向模式
 
-Just turn your phone sideways to view dashboards in landscape mode. The dashboard layout changes from a series of tiles to a view of the whole dashboard&amp;#151;you see all of the dashboard’s tiles just as they are in the Power BI service.
+若要檢視儀表板以橫向模式，只需啟動電話側邊。 儀表板版面配置變更由一系列並排顯示檢視的整個儀表板 & #151; 您會看到所有儀表板的磚就如同它們在 Power BI 服務。
 
 ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-landscape.png)
 
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still <bpt id="p1">[</bpt>tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept> to open the tile in focus mode and interact with your data.
+若要放大和縮小您的儀表板的不同區域，來巡覽取景位置調整，您可以使用 「 縮小 」 筆勢。 您仍然可以和 [點選磚](powerbi-mobile-tiles-in-the-win10phone-app.md) 焦點模式開啟磚，並與您的資料互動。
 
 ### 請參閱  
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
-- [Get started with Power BI](powerbi-service-get-started.md) 
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md) 
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [開始使用 iPhone 應用程式的 Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [開始使用 Power BI](powerbi-service-get-started.md) 
+- [在 Power BI 建立儀表板電話檢視](powerbi-service-create-dashboard-phone-view.md) 
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

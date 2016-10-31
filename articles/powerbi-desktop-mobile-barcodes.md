@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Tag a barcode field in Power BI Desktop for the Power BI mobile apps"
-   description="When you tag a barcode field in your model in Power BI Desktop, you can filter data for barcodes automatically in the Power BI app on your iPhone."
+   pageTitle="標記條碼欄位在 Power BI Desktop Power BI 行動應用程式"
+   description="當您在 Power BI Desktop 中為模型中標記條碼欄位時，您可以在 iPhone 上篩選條碼自動在 Power BI 應用程式中的資料。"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,26 +19,26 @@
    ms.date="09/29/2016"
    ms.author="maggies"/>
 
-# Tag barcodes in Power BI Desktop for the Power BI mobile apps
+# 在 Power BI Desktop 標記條碼 Power BI 行動應用程式
 
-In Power BI Desktop, you can <bpt id="p1">[</bpt>categorize data<ept id="p1">](powerbi-desktop-data-categorization.md)</ept> in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as <bpt id="p1">**</bpt>Barcode<ept id="p1">**</ept>. When you or your colleagues <bpt id="p1">[</bpt>scan a barcode on a product with the Power BI app<ept id="p1">](powerbi-mobile-scan-barcode-for-report.md)</ept> on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
+您可以在 Power BI Desktop [將資料分類](powerbi-desktop-data-categorization.md) 在專欄中，因此 Power BI Desktop 知道如何處理以視覺方式在報表中的值。 您也可以將分類資料行做為 **條碼**。 當您或您的同事 [掃描條碼 Power BI 應用程式與產品](powerbi-mobile-scan-barcode-for-report.md) 在 iPhone，您會看到任何報表，其中包含該條碼。 當您在行動裝置應用程式中開啟報表時，Power BI 會自動篩選報表資料相關的條碼。
 
-1. In Power BI Desktop, switch to Data View.
+1. 在 Power BI Desktop，切換至 [資料檢視。
 
-2. Select a column with barcode data. See the list of <bpt id="p1">[</bpt>supported barcode formats<ept id="p1">](#supported-barcode-formats)</ept> below.
+2. 選取具有條碼資料的資料行。 請參閱清單 [支援的條碼格式](#supported-barcode-formats) 下方。
 
-3. On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Barcode<ept id="p3">**</ept>.
+3. 在 **模型** 索引標籤上，選取 **資料類別** > **條碼**。
 
     ![](media/powerbi-desktop-mobile-barcodes/power-bi-desktop-barcode.png)
 
-4. In Report view, add this field to the visuals you want filtered by the barcode.
+4. 在報表檢視中，將這個欄位加入至您想要篩選的條碼視覺效果。
 
-5. Save the report and publish it to the Power BI service.
+5. 儲存報表，並將它發行至 Power BI 服務。
 
-Now when you open the scanner on the <bpt id="p1">[</bpt>Power BI app for iPhone<ept id="p1">](powerbi-mobile-ipad-iphone-apps.md)</ept> and scan a barcode, you see this report in the list of reports. When you open the report, its visuals are filtered by the product barcode you scanned.
+現在當您開啟掃描器上 [iPhone 的 Power BI 應用程式](powerbi-mobile-ipad-iphone-apps.md) 和掃描條碼]，您會看到這份報表的報表清單中。 當您開啟報表時，按照您掃描產品條碼篩選其視覺效果。
 
-## Supported barcode formats
-These are the barcodes Power BI recognizes if you can tag them in a Power BI report: 
+## 支援的條碼格式
+這些是 Power BI 辨識如果加上標籤 Power BI 報表中的條碼︰ 
 
 - UPCECode 
 - Code39Code  
@@ -52,9 +52,9 @@ These are the barcodes Power BI recognizes if you can tag them in a Power BI rep
 - ITF14Code 
 
 ### 請參閱  
-- [Scan a barcode from the Power BI app on your iPhone](powerbi-mobile-scan-barcode-for-report.md)
-- [Issue with scanning barcodes on an iPhone](powerbi-mobile-scan-barcode-for-report.md#issues-with-scanning-a-barcode)
-- [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
-- [Get started with Power BI](powerbi-service-get-started.md)  
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [掃描條碼從您在 iPhone 上的 Power BI 應用程式](powerbi-mobile-scan-barcode-for-report.md)
+- [使用掃描條碼 iPhone 上發行](powerbi-mobile-scan-barcode-for-report.md#issues-with-scanning-a-barcode)
+- [在 Power BI Desktop 中的資料分類](powerbi-desktop-data-categorization.md)  
+- [開始使用 iPhone 應用程式的 Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [開始使用 Power BI](powerbi-service-get-started.md)  
+- 問題了嗎？ [請嘗試詢問 Power BI 社群](http://community.powerbi.com/)

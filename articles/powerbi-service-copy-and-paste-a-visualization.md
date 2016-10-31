@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Copy and paste a visualization in Power BI"
-   description="Copy and paste a visualization in Power BI"
+   pageTitle="複製然後貼到 Power BI 視覺效果"
+   description="複製然後貼到 Power BI 視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,16 +20,16 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Copy and paste a visualization in Power BI  
+# 複製然後貼到 Power BI 視覺效果  
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and <bpt id="p2">[</bpt>create a visualization<ept id="p2">](powerbi-service-add-visualizations-to-a-report-i.md)</ept> if your report doesn't already have one. 
+1.  在 Power BI 中開啟報表 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md) 和 [建立視覺效果](powerbi-service-add-visualizations-to-a-report-i.md) 如果報表沒有下列其中一個。 
 
-2.  Select the visualization and use <bpt id="p1">**</bpt>Ctrl +C<ept id="p1">**</ept> to copy, and <bpt id="p2">**</bpt>Ctrl +V<ept id="p2">**</ept> to paste.  
+2.  選取視覺效果，並使用 **Ctrl + C** ，複製和 **Ctrl + V** 貼上。  
     ![](media/powerbi-service-copy-and-paste-a-visualization/copypasteVizNew.gif)
 
 ## 請參閱  
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+進一步了解 [Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

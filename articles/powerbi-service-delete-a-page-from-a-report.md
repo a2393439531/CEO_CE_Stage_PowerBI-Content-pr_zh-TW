@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Delete a page from a Power BI report"
-   description="Delete a page from a Power BI report"
+   pageTitle="從 Power BI 報表刪除頁面"
+   description="從 Power BI 報表刪除頁面"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,16 +20,16 @@
    ms.date="10/01/2016"
    ms.author="mihart"/>
 
-# Delete a page from a Power BI report
+# 從 Power BI 報表刪除頁面
 
-Hover over the tab of the page to delete and click the <bpt id="p1">**</bpt>X<ept id="p1">**</ept> (in the top right corner).  Sometimes the X is hard to see.
+將滑鼠停留在刪除，然後按一下 [頁面] 索引標籤 **X** （的右下角）。  有時候 X 很難看到。
 
 ![](media/powerbi-service-delete-a-page-from-a-report/deletepage.gif)
 
 ### 請參閱
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+深入了解 [Power BI 中的報表](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
+[Power BI-基本概念](powerbi-service-basic-concepts.md)﻿
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

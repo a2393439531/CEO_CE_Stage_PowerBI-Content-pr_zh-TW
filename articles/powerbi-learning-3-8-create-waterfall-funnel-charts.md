@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Waterfall and funnel charts"
-   description="Learn about advanced funnel and waterfall charts"
+   pageTitle="瀑布和漏斗圖"
+   description="深入了解進階漏斗圖和瀑布圖"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,22 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Waterfall and Funnel Charts
+# 如何使用瀑布式 」 與 「 漏斗圖
 
-Waterfall and funnel charts are two of the more interesting (and perhaps uncommon) standard visualizations that are included in Power BI. To create a blank chart of either type, select its icon from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+瀑布和漏斗圖是兩個更有趣 （和或許不常見） 標準視覺效果隨附的 Power BI。 若要建立這兩種類型的空白圖表，選取 [從] 圖示 **視覺效果** 窗格。
 
 ![](media/powerbi-learning-3-8-create-waterfall-funnel-charts/3-8_1.png)
 
-<bpt id="p1">**</bpt>Waterfall charts<ept id="p1">**</ept> are typically used to show changes in a particular value over time.
+
+            **瀑布圖** 通常用來顯示特定值的變化，經過一段時間。
 
 ![](media/powerbi-learning-3-8-create-waterfall-funnel-charts/3-8_2.png)
 
-Waterfalls only have two bucket options: <bpt id="p1">*</bpt>Category<ept id="p1">*</ept> and <bpt id="p2">*</bpt>Y Axis<ept id="p2">*</ept>. Drag a time-based field such as <bpt id="p1">*</bpt>year<ept id="p1">*</ept> to the <bpt id="p2">*</bpt>Category<ept id="p2">*</ept> bucket, and the value you want to track to the <bpt id="p3">*</bpt>Y Axis<ept id="p3">*</ept> bucket. Time periods where there was an increase in value are displayed in green by default, while periods with a decrease in value are displayed in red.
+瀑布只能有兩個值區選項︰ *類別* 和 *Y 軸*。 將以時間為基礎的欄位拖曳例如 *年* 至 *類別* 值區，以及您想要追蹤的值 *Y 軸* 值區。 時間週期已經增加值都會以綠色顯示根據預設，雖然期間，以降低值將以紅色顯示。
 
-<bpt id="p1">**</bpt>Funnel charts<ept id="p1">**</ept> are typically used to show changes over a particular process, such as a sales pipeline or website retention efforts.
+
+            **漏斗圖** 通常用來顯示特定的處理程序，例如銷售的管線或網站維繫的變化。
 
 ![](media/powerbi-learning-3-8-create-waterfall-funnel-charts/3-8_3.png)
 
-Both <bpt id="p1">**</bpt>Waterfall<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Funnel<ept id="p2">**</ept> charts can be sliced and visually customized.
+同時 **瀑布** 和 **漏斗** 可以切割和以視覺化方式自訂圖表。

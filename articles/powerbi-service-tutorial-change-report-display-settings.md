@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Change the display settings for a page in a Power BI report"
-   description="Tutorial: Change the display settings for a page in a Power BI report"
+   pageTitle="教學課程︰ 變更顯示設定頁面的 Power BI 報表"
+   description="教學課程︰ 變更顯示設定頁面的 Power BI 報表"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,100 +20,101 @@
    ms.date="08/15/2016"
    ms.author="mihart"/>
 
-# Tutorial: Change the display settings for a page in a Power BI report
+# 教學課程︰ 變更顯示設定頁面的 Power BI 報表
 
-In the <bpt id="p1">[</bpt>previous article and video<ept id="p1">](powerbi-service-change-report-display-settings.md)</ept> you learned about two different ways to control page display in Power BI reports: <bpt id="p2">**</bpt>View<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Page Size<ept id="p3">**</ept>. Now let's try it ourselves.
+在 [前一篇文章和影片](powerbi-service-change-report-display-settings.md) 您學到兩個不同的方式來控制頁面顯示在 Power BI 報表︰ **檢視** 和 **頁面大小**。 現在讓我們來試試看自己。
 
-## First, let's change the page View setting
+## 首先，讓我們變更此頁面的檢視設定
 
-1.  Open a report in Editing View. This example uses the "New Stores" page of the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>.  By default, pages display using the <bpt id="p1">**</bpt>Fit to Page<ept id="p1">**</ept> setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
+1.  在 [編輯] 檢視中開啟報表。 這個範例會使用 「 新增存放區 」 頁面的 [零售分析範例](powerbi-sample-retail-analysis-take-a-tour.md)。  根據預設，頁面會顯示使用 **大小** 設定。  在此情況下，調整成] 頁面會顯示不含捲軸，[報表] 頁面，但有些詳細資料以及標題是太小，無法讀取。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
 
-2.  Make sure that no visualizations are selected on the canvas. Select <bpt id="p1">**</bpt>View<ept id="p1">**</ept> and review the display options.
+2.  請確定在畫布上，會選取任何視覺效果。 選取 **檢視** 並檢閱顯示的選項。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
 
-3.  Let's see how the page looks using the <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> setting.
+3.  讓我們來看看頁面外觀使用 **實際大小** 設定。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
-    Not great, the dashboard now has double scrollbars.
+    太棒了，儀表板現在有雙重捲軸。
 
-4.  Switch to <bpt id="p1">**</bpt>Fit to Width<ept id="p1">**</ept>.
+4.  切換至 **適合寬度**。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/pbi_fit_to_width.png)
 
-   Looks better, we now have scrollbars but it's easier to read the detail.
+   看起來更好，我們現在已捲軸，但很容易閱讀詳細資料。
 
-## Change the default view for a report page
+## 變更報表頁面的預設檢視
 
-All Power BI reports default to <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> view. But what if you want this report page to always open in <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> view?
+所有 Power BI 報告皆預設為 **大小** 檢視。 但如果您想要在開啟此報表頁面 **實際大小** 檢視？
 
-1.  On the <bpt id="p1">**</bpt>New stores<ept id="p1">**</ept> page of the report, switch back to <bpt id="p2">**</bpt>Actual size<ept id="p2">**</ept> view.
+1.  在 **新的存放區** 頁面的報表中，切換回 **實際大小** 檢視。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actual-size.png)
 
-2.  Save the report with a different name by selecting <bpt id="p1">**</bpt>File &gt; Save as<ept id="p1">**</ept>. You now have 2 copies of this report; in the original report, <bpt id="p1">**</bpt>New stores<ept id="p1">**</ept> will continue to open in the default view but in the new report it will open in <bpt id="p2">**</bpt>Actual size<ept id="p2">**</ept> view. Let's go see.
+2.  選取將報表儲存到不同名稱 **檔案 > 將儲存為**。 您現在有 2 份這份報表。在原始報表中， **新的存放區** 開啟的預設檢視中，但它會在開啟的新報表中將繼續 **實際大小** 檢視。 我們，請參閱。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-save-as.png)
 
-3.  Return to the <bpt id="p1">**</bpt>Retail Analysis Sample<ept id="p1">**</ept> dashboard by selecting it in the navigation pane. Scroll down to the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> section and find the new report (it will have a yellow asterisk).  
+3.  返回 **零售分析範例** 瀏覽窗格中選取的儀表板。 向下捲動至 **報表** 區段，並尋找新的報表 （會有黃色星號）。  
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report.png)
 
-4.  Select the report to open it and choose the <bpt id="p1">**</bpt>New stores<ept id="p1">**</ept> page. It opens in <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> view!
+4.  選取要開啟它，然後選擇報表 **新的存放區** 頁面。 它會在開啟 **實際大小** 檢視 ！
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
-## Now, let's explore the <bpt id="p1">*</bpt>page size<ept id="p1">*</ept> setting
+## 現在，讓我們來探索 *頁面大小* 設定
 
-1.  Open the "District monthly sales" page of the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept> in Editing View.
+1.  開啟 「 地區每月銷售量 」 頁面的 [零售分析範例](powerbi-sample-retail-analysis-take-a-tour.md) 編輯檢視中。
 
-2.  Make sure that no visualizations are selected on the canvas.  In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon <ph id="ph1">![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg)</ph>.
+2.  請確定在畫布上，會選取任何視覺效果。  在 **視覺效果** ] 窗格中，選取 [小畫家] 圖示 ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg)。
 
-3.  Select <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Type<ept id="p2">**</ept> to display the page size options.
+3.  選取 **頁面大小** &gt; **類型** 要顯示的頁面大小選項。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-size-menu.png)
 
-4.  Select <bpt id="p1">**</bpt>Letter<ept id="p1">**</ept>.  On the canvas, only the contents that fit within 816 x 1056 pixels (Letter size) remain on the white portion of the canvas.
+4.  選取 **字母**。  在畫布上，放入 816 x 1056 像素 （Letter 大小） 內的內容保持在畫布上的白色部分。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-letter.png)
 
-5.  If we change <bpt id="p1">**</bpt>View<ept id="p1">**</ept> to "Fit to Width," our canvas now displays only the page contents that fit into the letter size.
+5.  如果我們變更 **檢視** "符合以寬度，「 我們畫布現在只顯示頁面的內容納入 letter 大小。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-fit-to-width.png)
 
-6.  Select <bpt id="p1">**</bpt>16:9<ept id="p1">**</ept> page ratio.
+6.  選取 **16:9** 頁面比率。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-16-to-9.png)
 
-    The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720). There is a lot of empty space around the report canvas; this is because we previously set <bpt id="p1">**</bpt>View<ept id="p1">**</ept> to "Fit to width".
+    [報表] 頁面會顯示使用 9 高 16 寬度的比率。 若要查看所使用的實際像素大小，請看一下灰色的寬度和高度欄位 (1280 x 720)。 有很多空白周圍的空間報表畫布中。這是因為先前設定 **檢視** "最適寬度 」。
 
-7.  Continue exploring the <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> options.
+7.  繼續探索 **頁面大小** 選項。
 
-## Using page View and Page Size together
+## 同時使用頁面檢視和頁面大小
 
-Use page View and Page Size together to create a report that looks its best when embedded in another application.
+若要建立內嵌在另一個應用程式時的最佳報表一起使用頁面檢視和頁面大小。
 
-In this exercise, you'll create a report page that will display in an application that has space for 500 pixels wide by 750 pixels high.
+在此練習中，您將建立的應用程式擁有 500 像素寬 750 個像素高的空間，將會顯示報表頁面。
 
-Remember in the previous step we saw that our report page is currently displaying at 1280 wide by 720 high. So we know that we'll need to do a lot of resizing and rearranging if we want all of our visuals to fit.
+請記住上一個步驟中，我們所見，我們的報表頁面目前顯示在 1280 寬 720 高。 讓我們知道，我們需要進行大量的調整大小和重新排列如果我們想要所有我們的視覺效果來調整。
 
-1. Resize and move the visuals so that they fit in less than half of the current canvas area.
+1. 調整大小並移動視覺效果，使其可以放在小於目前的畫布的一半。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom-view.gif)
 
-2. Select <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Custom<ept id="p2">**</ept>.
+2. 選取 **頁面大小** &gt; **自訂**。
 
-3. Set Width to 500 and set Height to 750.
+3. 設為 500 的寬度和高度] 設為 750。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom.png)
 
-4. Tweak the report page so that it looks its best. Switch between <bpt id="p1">**</bpt>View &gt; Actual size<ept id="p1">**</ept> and <bpt id="p2">**</bpt>View &gt; Fit to page<ept id="p2">**</ept> to make adjustments.
+4. 調整 [報表] 頁面上，使它看起來最好。 切換 **檢視 > 實際大小** 和 **檢視 > 大小** 進行調整。
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final.png)
 
 ## 請參閱
-<bpt id="p1">[</bpt>Create reports for Cortana<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept> Back to <bpt id="p2">[</bpt>Page display settings in a Power BI report<ept id="p2">](powerbi-service-change-report-display-settings.md)</ept> Read more about  <bpt id="p3">[</bpt>reports in Power B <ept id="p3">](powerbi-service-reports.md)</ept><ph id="ph1">
-</ph><bpt id="p4">[</bpt>Power BI - Basic Concepts<ept id="p4">](powerbi-service-basic-concepts.md)</ept> More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+            [建立 Cortana 的報告](powerbi-service-cortana-desktop-entity-cards.md) 回到 [頁面 Power BI 報表中顯示設定](powerbi-service-change-report-display-settings.md) 深入了解  [電源 B 中的報表 ](powerbi-service-reports.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md) 更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

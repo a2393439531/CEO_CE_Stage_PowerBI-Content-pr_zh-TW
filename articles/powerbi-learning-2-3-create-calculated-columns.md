@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Calculated Columns"
-   description="Calculated columns let you create unique keys, and more"
+   pageTitle="建立導出資料行"
+   description="導出資料行可讓您建立唯一索引鍵，以及其他"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create Calculated Columns
+# 建立導出資料行
 
-Creating calculated columns is a simple way to enrich and enhance your data. A <bpt id="p1">**</bpt>calculated column<ept id="p1">**</ept> is a new column that you create by defining a calculation that transforms or combines two or more elements of existing data. For example, you can create a new column by combining two columns into one.
+建立導出資料行是簡單的方式來擴充和增強您的資料。 A **導出資料行** 是您定義的轉換，或將現有資料的兩個或多個項目結合的計算以建立新資料行。 例如，您可以將兩個資料行結合成一個建立新的資料行。
 
-One useful reason for creating a calculated column is to establish a relationship between tables, when no unique fields exist that can be used to establish a relationship. The lack of a relationship becomes apparent when you create a simple table visual in Power BI Desktop, and you get the same value for all entries, yet you know the underlying data is different.
+建立導出資料行很有用的原因是沒有唯一的欄位出現時的資料表之間建立關係，可以用來建立關聯性。 當您取得相同的值的所有項目，但您知道基礎資料是不同並建立簡單的資料表在 Power BI Desktop，visual 顯而易見的缺少的關聯性。
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_1.png)
 
-To create a relationship with unique fields in data, you can, for example, create a new calculated column for "Full Phone Number" by combining the values from the "Area Code" and "Local Number" columns when those values exist in your data. Calculated columns are a useful tool for quickly creating models and visualizations.
+若要建立關聯性資料中唯一的欄位，您可以比方說，建立新導出資料行的 「 完整的電話號碼 」 結合的值從 「 區域的程式碼 」 和 「 本機數字 」 資料行這些值存在於您的資料。 導出資料行是一個有用的工具，讓您迅速建立模型和視覺效果。
 
-To create a calculated column, select the <bpt id="p1">**</bpt>Data view<ept id="p1">**</ept> in Power BI Desktop from the left side of the report canvas.
+若要建立導出資料行，請選取 **資料檢視** Power BI Desktop 從左邊算起的報表畫布中。
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_2.png)
 
-From the Modeling tab, select <bpt id="p1">**</bpt>New Column<ept id="p1">**</ept>. This will enable the formula bar where you can enter calculations using DAX (Data Analysis Expressions) language. DAX is a powerful formula language, also found in Excel, that lets you build robust calculations. As you type a formula, Power BI Desktop displays matching formulas or data elements to assist and accelerate the creation of your formula.
+從 [模型] 索引標籤中，選取 **新的資料行**。 這可讓您可以在此輸入使用 DAX (Data Analysis Expressions) 語言的計算公式列。 DAX 是功能強大的公式語言，也會發現在 Excel 中，可讓您建立穩固的計算。 當您輸入公式時，Power BI Desktop 顯示相符的公式或協助，並加速您的公式建立的資料元素。
 
-The Power BI formula bar will suggest specific DAX functions and related data columns as you enter your expression.
+Power BI 資料編輯列將會建議特定 DAX 函數，並輸入您的運算式的相關資料行。
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_3.png)
 
-Once the calculated columns are created in each table, they can be used as a unique key to establish a relationship between them. Going to <bpt id="p1">**</bpt>Relationship<ept id="p1">**</ept> view, you can then drag the field from one table to the other to create the relationship.
+一旦建立導出資料行中每個資料表，它們可用來當做唯一索引鍵來建立它們之間的關聯性。 移至 **關聯性** ] 檢視中，然後您可以將欄位從一個資料表之間建立關聯性。
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_4.png)
 
-Returning to <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, you now see a different value for each district.
+回到 **報表** 檢視中，您現在看到各學區不同的值。
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_5.png)
 
-There are all sorts of other things you can do by creating calculated columns, too.
+有各種藉由建立導出資料行，也可以執行其他作業。

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get more space on your dashboard"
-   description="Use Full Screen mode to manage your dashboard space more effectively"
+   pageTitle="取得更多的空間，您的儀表板上"
+   description="若要更有效率地管理您的儀表板空間使用全螢幕模式"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,28 +23,28 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Get More Space on Your Dashboard
+# 取得更多的空間，您的儀表板上
 
-You may find that occasionally when you create your dashboards, you have more content than what can fit on your canvas. There are a few solutions that help you manage how your dashboard space is displayed, so you can get a full view of your dashboard content.
+您可能會發現偶爾當您建立儀表板，您有更多的內容比哪些可以容納在畫布上。 有幾個解決方案，幫助您管理儀表板空間的顯示方式，所以您可以取得您的儀表板內容的完整檢視。
 
-The easiest method to display your entire dashboard in one screen is selecting the <bpt id="p1">**</bpt>Full Screen Mode<ept id="p1">**</ept> button in the top right-hand corner of the dashboard.
+在一個畫面中顯示整個儀表板，最簡單方法選取 **全螢幕模式** 儀表板右上角的按鈕。
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_1.png)
 
-Selecting the <bpt id="p1">**</bpt>Full Screen Mode<ept id="p1">**</ept> button puts your browser into full screen mode, removing all chrome elements from around the dashboard, and thereby increasing the amount of viewable space.
+選取 **全螢幕模式** 按鈕讓您的瀏覽器進入全螢幕模式，移除所有 chrome 周圍項目從儀表板，並藉此增加可檢視的空間數量。
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_2.png)
 
-From within <bpt id="p1">**</bpt>Full-Screen Mode<ept id="p1">**</ept>, you can select the <bpt id="p2">**</bpt>Fit to Screen<ept id="p2">**</ept> option to shrink all of your tiles so they fit on a single screen, without the need for scrollbars. This is commonly called <bpt id="p1">*</bpt>TV mode<ept id="p1">*</ept>, and is useful for giving presentations with dashboards, or displaying a dashboard on hallway monitors.
+從 **全螢幕模式**, ，您可以選取 **全螢幕** 壓縮所有您磚，讓它們符合單一畫面，而不需要捲軸上的選項。 這通常稱為 *電視模式*, ，和簡報儀表板，或是在走廊監視器上顯示儀表板會很有用。
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_3.png)
 
-Another way to manage dashboard space is collapsing the Navigation pane on the left-hand side of the page, by selecting the hamburger icon. To expand the navigation pane, click the icon again.
+另一種方式管理儀表板空間隱藏在左手邊的頁面上，瀏覽窗格選取漢堡圖示。 若要展開瀏覽窗格，請再次按一下圖示。
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_4.png)
 
-You can ensure that a dashboard will always have a collapsed navigation bar by appending the following to the end of the URL:
+您可以確保，儀表板永遠會摺疊的導覽列 URL 的結尾附加下列︰
 
->?collapseNavigation=true
+>？ collapseNavigation = true
 
-Users who follow that link will open the dashboard with a collapsed navigation bar.
+該連結的使用者將會摺疊的導覽列開啟儀表板。

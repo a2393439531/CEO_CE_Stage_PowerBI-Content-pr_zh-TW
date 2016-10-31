@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get an authentication access token"
-   description="Walkthrough to push data - Get an authentication access token"
+   pageTitle="取得驗證存取權杖"
+   description="逐步解說來發送資料-取得驗證存取權杖"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,35 +20,36 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 2: Get an authentication access token
+# 步驟 2︰ 取得驗證存取權杖
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+逐步解說的這篇文章屬於 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md)。
 
-In <bpt id="p1">**</bpt>step 1<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Register the app with Azure AD<ept id="p2">](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)</ept>, you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> to provide secure sign in and authorization for your app. You use a token to authenticate to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> and gain access to Power BI resources.
+在 **步驟 1** 的推播資料到儀表板， [與 Azure AD 註冊應用程式](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), ，Azure AD 中註冊用戶端應用程式。 在此步驟中，您會收到驗證存取權杖。 Power BI 應用程式整合在一起 **Azure AD** 來為您的應用程式提供安全登入和授權。 您可以使用權杖來向 **Azure AD** ，並取得 Power BI 資源的存取權。
 
-Here's how to get an authentication access token.
+以下是如何取得驗證存取權杖。
 
-## Get an authentication access token
+## 取得驗證存取權杖
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **請注意**︰ 開始使用之前，請確定您已經依照先前的步驟中 [資料推送至儀表板](powerbi-developer-walkthrough-push-data.md) 逐步解說。
 
-1. In Visual Studio 2015, create a <bpt id="p1">**</bpt>Console Application<ept id="p1">**</ept> project.
-2. Install the <bpt id="p1">[</bpt>Azure AD Authentication Library for .NET NuGet package<ept id="p1">](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)</ept>. To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
+1. 在 Visual Studio 2015 中，建立 **主控台應用程式** 專案。
+2. 安裝 [.NET NuGet 套件的 Azure AD 驗證程式庫](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。 若要取得驗證安全性權杖中的.NET 應用程式，您可以使用此封裝。 若要安裝封裝的方法如下︰
 
-     a. In Visual Studio 2015, choose <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>NuGet Package Manager<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Package Manager Console<ept id="p3">**</ept>.
+     a. 在 Visual Studio 2015 中，選擇 [ **工具** > **NuGet 封裝管理員** > **Package Manager Console**。
 
-     b。 In <bpt id="p1">**</bpt>Package Manager Console<ept id="p1">**</ept>, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
+     b。 在 **Package Manager Console**, ，輸入 Install-package Microsoft.IdentityModel.Clients.ActiveDirectory-2.21.301221612 版本。
 
-3. Add the code below into class Program {...}.
-4. Replace "{ClientID}", with the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> you got when you registered the app. See <bpt id="p1">[</bpt>Register the app with Azure AD<ept id="p1">](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)</ept>.
-5. After installing the Microsoft.IdentityModel.Clients.ActiveDirectory package, add <bpt id="p1">**</bpt>using Microsoft.IdentityModel.Clients.ActiveDirectory;<ept id="p1">**</ept> to Program.cs.
-6. Run the Console App, and login to your Power BI account. You should see a token string in the Console Window.
+3. 將下列程式碼新增至類別程式 {...}。
+4. 取代"{ClientID}" **用戶端識別碼** 註冊應用程式時，您得到的結果。 請參閱 [與 Azure AD 註冊應用程式](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)。
+5. 安裝 Microsoft.IdentityModel.Clients.ActiveDirectory 套件之後，加入 **使用 Microsoft.IdentityModel.Clients.ActiveDirectory;** program.cs。
+6. 執行主控台應用程式，並登入您的 Power BI 帳戶。 您應該會看到在主控台視窗中的語彙基元字串。
 
-**Sample code to get authentication security token**
+**若要取得驗證安全性權杖的範例程式碼**
 
-Add this code to Program {...}.
+將此程式碼加入至程式 {...}。
 
-- A token variable to call operations:
+- 若要呼叫作業的語彙基元變數︰
 
   ```
   private static string token = string.Empty;
@@ -58,7 +59,7 @@ Add this code to Program {...}.
   }
   ```
 
-- In static void Main(string[] args):
+- 在靜態 void Main (string [] args):
 
   ```
   static void Main(string[] args)
@@ -68,7 +69,7 @@ Add this code to Program {...}.
   }
   ```
 
-- Add a GetToken() method:
+- 新增 gettoken （） 方法︰
 
 ```
        #region Get an authentication access token
@@ -111,24 +112,24 @@ Add this code to Program {...}.
        #endregion
 ```
 
-After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation to create a dataset to push data into a dashboard.
+取得驗證權杖之後，您可以呼叫任何 Power BI 作業。 下一個步驟會示範如何呼叫 [建立資料集](https://msdn.microsoft.com/library/mt203562.aspx) 作業，以建立資料集資料發送到儀表板。
 
-The next step shows you how to <bpt id="p1">[</bpt>create a dataset in a Power BI dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data-create-dataset.md)</ept>.
+下一個步驟顯示如何以 [Power BI 儀表板中建立資料集](powerbi-developer-walkthrough-push-data-create-dataset.md)。
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+以下是 [完整程式碼清單](#code)。
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-create-dataset.md)
+[下一步 >](powerbi-developer-walkthrough-push-data-create-dataset.md)
 
 ## 請參閱
-- [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
-- [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
-- [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [建立 Power BI 儀表板中的資料集](powerbi-developer-walkthrough-push-data-create-dataset.md)
+- [使用 Azure AD 註冊應用程式](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+- [.NET NuGet 套件的 azure AD 驗證程式庫](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- [將資料發送到 Power BI 儀表板](powerbi-developer-walkthrough-push-data.md)
+- [Power BI REST API 概觀](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Power BI REST API 參考](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## 完整程式碼清單
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -189,4 +190,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

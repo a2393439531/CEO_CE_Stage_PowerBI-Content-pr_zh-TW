@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Pro content - what is it?"
-   description="Power BI Pro content - what is it?"
+   pageTitle="Power BI Pro 內容-它是什麼？"
+   description="Power BI Pro 內容-它是什麼？"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,35 +20,36 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Power BI Pro content - what is it?  
+# Power BI Pro 內容-它是什麼？  
 
-Power BI free and Pro licenses are different based on the kind of content users can consume. If your content contains any of the following items, it's Power BI Pro content:
+免費的 power BI 和 Pro 授權是內容的不同的使用者可以使用類型為基礎。 如果您的內容包含下列項目，它會是 Power BI Pro 內容︰
 
--   Data from a DirectQuery dataset, such as <bpt id="p1">[</bpt>SQL Server Analysis Services<ept id="p1">](powerbi-sql-server-analysis-services-tabular-data.md)</ept> tabular data, <bpt id="p2">[</bpt>Azure SQL Database<ept id="p2">](powerbi-azure-sql-database-with-direct-connect.md)</ept>, <bpt id="p3">[</bpt>Azure SQL Data Warehouse<ept id="p3">](powerbi-azure-sql-data-warehouse-with-direct-connect.md)</ept>, or Apache <bpt id="p4">[</bpt>Spark for HDInsight<ept id="p4">](powerbi-spark-on-hdinsight-with-direct-connect.md)</ept>.
+-   資料集中 DirectQuery，例如 [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) 表格式資料， [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md), ，[Azure SQL 資料倉儲](powerbi-azure-sql-data-warehouse-with-direct-connect.md), ，或 Apache [HDInsight 的 Spark](powerbi-spark-on-hdinsight-with-direct-connect.md)。
 
--   Data from a <bpt id="p1">[</bpt>dataset that refreshes more frequently than daily<ept id="p1">](powerbi-refresh-data.md)</ept>.
+-   從資料 [資料集，重新整理頻率超過每日](powerbi-refresh-data.md)。
 
--   Data from a dataset that connects to on-premises data using the <bpt id="p1">[</bpt>Power BI Gateway - Personal <ept id="p1">](powerbi-personal-gateway.md)</ept> or the <bpt id="p2">[</bpt>On-premises Data Gateway<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+-   資料集中的資料連接到內部資料使用 [Power BI 閘道個人 ](powerbi-personal-gateway.md) 或 [內部資料閘道](powerbi-gateway-onprem.md)。
 
--   Data (including reports, dashboards or tiles) from a dataset that uses <bpt id="p1">[</bpt>Row-level security (RLS)<ept id="p1">](powerbi-admin-rls.md)</ept>.
+-   使用的資料集的資料 （包括報表、 儀表板或磚） [資料列層級安全性 (RLS)](powerbi-admin-rls.md)。
 
--   A dashboard or report that's installed from an <bpt id="p1">[</bpt>organizational content pack<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>.
+-   儀表板或從已安裝的報表 [組織內容套件](powerbi-service-organizational-content-packs-introduction.md)。
 
--   A dashboard, report, or dataset that's contained in a <bpt id="p1">[</bpt>group workspace<ept id="p1">](powerbi-service-create-a-group-in-power-bi.md)</ept>.
+-   儀表板、 報表或資料集包含在 [群組工作區](powerbi-service-create-a-group-in-power-bi.md)。
 
--   A dashboard that contains data streamed at a rate above 10k rows/hour.
+-   儀表板包含 10 萬列/小時以上的速率資料流處理的資料。
 
-Conversely, if your content contains only the following items it will be consumable by both Power BI free and Pro users:
+相反地，如果內容包含下列項目會使用兩個 Power BI 免費及專業使用者︰
 
--   A dashboard or report connected to content packs for services (e.g. Dynamics CRM, Salesforce, and Google Analytics).
+-   儀表板或報表連接到服務 （例如 Dynamics CRM、 Salesforce 和 Google Analytics） 的內容組件。
 
--   A dashboard or report with data imported from files such as Excel spreadsheets, Power BI Desktop, and CSV.
+-   儀表板或報表的資料，例如 Excel 試算表、 Power BI Desktop 和 CSV 檔案匯入中。
 
--   <bpt id="p1">[</bpt>Tiles pinned<ept id="p1">](https://msdn.microsoft.com/library/mt604784.aspx)</ept> from a report in SQL Server Reporting Services.
+-   
+            [釘選的磚](https://msdn.microsoft.com/library/mt604784.aspx) 從 SQL Server Reporting Services 中的報表。
 
 
-For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone <bpt id="p1">*</bpt>consuming<ept id="p1">*</ept> that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI Gateway - Enterprise, then another that uses the personal gateway, anyone <bpt id="p1">*</bpt>consuming or interacting<ept id="p1">*</ept> with either of those reports would need a Power BI Pro license.
+例如，如果您建立的製造儀表板來更新進度多次時、 日的任何人都 *耗用* 該儀表板需要 Power BI Pro 的授權。 或者，如果您建立報表，使用 Power BI 閘道-Enterprise，則另一個使用個人閘道，任何人都 *耗用或互動* 這些報表的其中一種需要 Power BI Pro 的授權。
 
-If you want to share your Power BI Pro content with users, they can sign up for a <bpt id="p1">[</bpt>free trial of Power BI Pro<ept id="p1">](powerbi-service-self-service-signup-for-power-bi.md#power-bi-pro-60-day-trial)</ept>, and gain access to your content during the trial period.
+如果您想要共用您 Power BI Pro 內容與使用者，他們可以註冊 [免費試用版 Power BI Pro](powerbi-service-self-service-signup-for-power-bi.md#power-bi-pro-60-day-trial), ，並在試用期間存取您的內容。
 
-For a list of Power BI Pro features (and how those features compare to a free Power BI license), take a look at <bpt id="p1">[</bpt>Power BI Pricing<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>.
+如需 Power BI Pro 功能 （以及這些功能如何比較免費的 Power BI 授權） 的清單，看看 [Power BI 定價](https://powerbi.microsoft.com/pricing)。

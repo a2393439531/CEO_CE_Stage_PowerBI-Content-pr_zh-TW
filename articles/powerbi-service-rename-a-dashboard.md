@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Rename a Power BI dashboard"
-   description="Rename a Power BI dashboard."
+   pageTitle="重新命名的 Power BI 儀表板"
+   description="重新命名的 Power BI 儀表板。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,32 +19,32 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Rename a Power BI dashboard
+# 重新命名的 Power BI 儀表板
 
-## Rename the dashboard
+## 重新命名儀表板
 
-Right-click the dashboard name and select <bpt id="p1">**</bpt>Rename<ept id="p1">**</ept>.
+以滑鼠右鍵按一下 [儀表板名稱，然後選取 **重新命名**。
 
 ![](media/powerbi-service-rename-a-dashboard/rename_dataset_new.png)
 
-## Having trouble renaming a dashboard?
+## 無法重新命名儀表板嗎？
 
--   If the dashboard has this icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png)
+-   如果儀表板有此圖示 ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png)
 
-    A sharing icon  tells you that the dashboard is being <bpt id="p1">[</bpt>shared<ept id="p1">](powerbi-service-share-unshare-dashboard.md)</ept> with you or is part of an organizational content pack.  
+    共用圖示會告知您正在儀表板 [共用](powerbi-service-share-unshare-dashboard.md) 與您或組織內容套件的一部分。  
 
--   Shared dashboards are read-only and can't be renamed. 
+-   共用的儀表板處於唯讀狀態，並無法重新命名。 
 
--   If the dashboard is part of a content pack, you can Personalize it and rename it that way.
+-   如果儀表板是內容的組件的一部分，您可以個人化，並將它重新命名該方法。
 
     ![](media/powerbi-service-rename-a-dashboard/PBI_DashPersonalize.png)
 
-Read more <bpt id="p1">[</bpt>tips for designing your dashboard<ept id="p1">](powerbi-service-tips-for-designing-a-great-dashboard.md)</ept>.
+閱讀更多 [設計您的儀表板的秘訣](powerbi-service-tips-for-designing-a-great-dashboard.md)。
 
 ## 請參閱
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Supported browsers for Power BI"
-   description="Supported browsers for Power BI"
+   pageTitle="支援的瀏覽器 Power bi"
+   description="支援的瀏覽器 Power bi"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,16 +20,17 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="supported-browsers-for-power-bi"></a>Supported browsers for Power BI  
+# <a name="supported-browsers-for-power-bi"></a>支援的瀏覽器 Power bi  
 
-We support Power BI in these browsers:
+我們支援 Power BI 中的這些瀏覽器︰
 
 -   Microsoft Edge
 -   Internet Explorer 11
--   Chrome desktop latest version
--   Safari Mac latest version
--   Firefox desktop latest version
+-   Chrome 桌面的最新版本
+-   Safari Mac 最新版本
+-   Firefox 桌面的最新版本
 
 ### <a name="see-also"></a>請參閱 
-- <bpt id="p1">[</bpt>Get started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept> 
-- Try asking the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [開始使用 Power BI](powerbi-service-get-started.md) 
+- 請嘗試詢問 [Power BI 社群](http://community.powerbi.com/)

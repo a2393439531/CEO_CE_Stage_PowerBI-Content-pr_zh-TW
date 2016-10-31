@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Known issues in the iPad app"
-   description="Known issues in the iPad app (Power BI for iOS)"
+   pageTitle="IPad 應用程式中的已知的問題"
+   description="IPad 應用程式 (適用於 iOS 的 Power BI) 中的已知的問題"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,16 +20,17 @@
    ms.date="10/10/2016"
    ms.author="maggies"/>
 
-# Known issues in the iPad app (Power BI for iOS)  
+# IPad 應用程式 (適用於 iOS 的 Power BI) 中的已知的問題  
 
-## "We encountered communication failures"  
-You may see this message if your iPad internet connection requires a mandatory explicit HTTP proxy configured, either manual or automatic. In this case, the Power BI app won’t work on your iPad.
+## 「 我們發生通訊失敗 」  
+您可能會看到此訊息，如果您的 iPad 網際網路連線需要強制明確 HTTP proxy 設定，手動或自動。 在此情況下，Power BI 應用程式將無法運作，您的 ipad。
 
 ### 因應措施  
-Switch the iPad to another connection that doesn’t require an explicit HTTP proxy setting (i.e., one configured as HTTP Proxy is Off).  
+切換至另一個連接，而不需要明確 HTTP proxy 設定 （亦即，一個設定為已關閉的 HTTP Proxy） iPad。  
 
-## Other issues?
-Try asking the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+## 其他問題嗎？
+請嘗試詢問 [Power BI 社群](http://community.powerbi.com/)。
 
 ### 請參閱  
-<bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> (Power BI for iOS)  
+
+            [開始使用 iPad 應用程式](powerbi-mobile-iphone-app-get-started.md) (Power BI for iOS)  

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate OneDrive for Business with Power BI"
-   description="Easily collaborate with OneDrive for Business and Power BI files"
+   pageTitle="將 OneDrive 整合了 Power BI"
+   description="使用 OneDrive 商務和 Power BI 檔案輕易地共同作業"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Integrate OneDrive for Business with Power BI
+# 將 OneDrive 整合了 Power BI
 
-In an earlier article we reviewed creating groups to help your organization manage and collaborate on content that's in Power BI. You can also use your Power BI / Office365 groups to collaborate and share by using <bpt id="p1">**</bpt>OneDrive for Business<ept id="p1">**</ept>.
+在之前的文章，我們會檢閱建立群組來協助組織管理及共同作業是在 Power BI 中的內容。 您也可以使用 Power BI Office365 群組共同作業及使用共用 / **商務用 OneDrive**。
 
-Using OneDrive for Business as a source for your Power BI content gives you access to a number of helpful tools, such as version history. You can also share your files with an Office365 group from within OneDrive for Business to give access and allow many people to work on the same Power BI or Excel files.
+OneDrive 使用 Power bi 做為來源的商務內容可讓您存取許多有用的工具，例如版本歷程記錄。 您也可以從一個 Office365 群組提供存取，讓許多人在相同的 Power BI 或 Excel 檔案上運作的商務用 OneDrive 中共用您的檔案。
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_1.png)
 
-To connect to a PBIX (Power BI Desktop) file on OneDrive for Business, log into the Power BI service and select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>. Choose <bpt id="p1">**</bpt>Files<ept id="p1">**</ept> under Import or Connect to Data, and then select <bpt id="p2">**</bpt>OneDrive - Business<ept id="p2">**</ept>. Highlight the desired file, and select <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.
+若要連線到商務用 OneDrive 上 PBIX (Power BI Desktop) 檔案，登入 Power BI 服務，然後選取 **取得資料**。 選擇 **檔案** 下匯入或連接到資料，然後選取 **OneDrive-商務**。 反白顯示所需的檔案，然後選取 **連接**。
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_2.png)
 
-Your content appears in the left-hand side navigation bar.
+您的內容會出現在左側導覽列中。
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_3.png)
 
-Now, any changes made to the file on <bpt id="p1">**</bpt>OneDrive for Business<ept id="p1">**</ept> will be automatically reflected in the Power BI environment as well, and recorded in the version history.
+現在，在對檔案進行任何變更 **商務用 OneDrive** 會自動反映在 Power BI 環境，並記錄在記錄中的版本。

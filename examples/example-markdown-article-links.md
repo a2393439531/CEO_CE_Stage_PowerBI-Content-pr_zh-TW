@@ -1,16 +1,16 @@
-<properties pageTitle="Documentation Example - Markdown Article to Article Links" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Markdown Article to Article Links" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="文件範例-Markdown 文章文章連結" metaKeywords="" description="這是範例文件" services="" documentationCenter="" title="Documentation Example - Markdown Article to Article Links" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Article-to-Article Links #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# 範例-發行項的文章連結 #
+這是用來測試及驗證 azure.microsoft.com 的發佈系統的範例文件文件。  
 
-The content between the lines below demonstrates the use of markdown-to-markdown article links
+下列程式行之間的內容會示範如何使用 markdown 的 markdown 文章連結
 
 ---
 
-This <bpt id="p1">[</bpt>link<ept id="p1">](example-azure-note.md)</ept> is to an example document that demonstrates the use of the AZURE.NOTE extension.  Notice that the link in markdown content is to a .md file.
+這 [連結](example-azure-note.md) 是示範如何使用 AZURE 的範例文件。請注意延伸模組。  請注意，markdown 內容中的連結至.md 檔案。
 
-This <bpt id="p1">[</bpt>link<ept id="p1">](example-headings.md#heading-2)</ept> goes to a markdown document with an anchor.
+這 [連結](example-headings.md#heading-2) 前往 markdown 文件，與錨點。
 
-This <bpt id="p1">[</bpt>link<ept id="p1">](https://github.com/Azure/azure-content-test/blob/master/README.md)</ept> is absolute and should not change.
+這 [連結](https://github.com/Azure/azure-content-test/blob/master/README.md) 為絕對值，而且不應該變更。
 
 ---

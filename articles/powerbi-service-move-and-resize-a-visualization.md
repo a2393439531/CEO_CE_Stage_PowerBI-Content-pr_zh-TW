@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Move, resize, and pop out a visualization in a Power BI report"
-   description="Move and resize a visualization in a Power BI report"
+   pageTitle="移動、 調整大小，以及彈出 Power BI 報表中的視覺效果"
+   description="移動或調整大小的 Power BI 報表中的視覺效果"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,32 +20,32 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Move and resize a visualization in a Power BI report  
+# 移動或調整大小的 Power BI 報表中的視覺效果  
 
-##   Open the report
+##   開啟報表
 
-In Power BI, open a report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and <bpt id="p2">[</bpt>create a visualization<ept id="p2">](powerbi-service-add-visualizations-to-a-report-i.md)</ept> if your report doesn't already have one.
+在 Power BI 中開啟報表 [編輯檢視](powerbi-service-go-from-reading-view-to-editing-view.md) 和 [建立視覺效果](powerbi-service-add-visualizations-to-a-report-i.md) 如果報表沒有下列其中一個。
 
-## Move the visualization﻿  
--   Select (left-click) any area of the visualization and drag to the new location. 
+## 移動視覺效果﻿  
+-   選取 （按滑鼠左鍵） 的視覺效果和拖曳至新位置的任何區域。 
 
-## Resize the visualization  
--   Select the visualization to display the border and click and drag the dark frame handles to resize.  
+## 調整視覺效果  
+-   選取 [顯示框線和按一下並拖曳至深色框架控點，調整視覺效果。  
     ![](media/powerbi-service-move-and-resize-a-visualization/Untitled.gif)
 
-## Select Focus mode to see more detail.
-- Hover over the visualization and select the Focus mode icon.
+## 選取焦點模式，以查看詳細資料。
+- 將滑鼠停留在視覺效果，然後選取 [焦點模式] 圖示。
  ![](media/powerbi-service-move-and-resize-a-visualization/PBI_PopOutIcon.jpg)
 
 
 ## 請參閱  
 
-[Resize a visualization on a dashboard](powerbi-service-edit-a-tile-in-a-dashboard.md)
+[在儀表板的視覺效果調整大小](powerbi-service-edit-a-tile-in-a-dashboard.md)
 
-[Display a dashboard tile in full-screen mode (In-focus)](powerbi-service-display-dash-in-focus-mode.md)
+[在全螢幕模式 （焦點） 中顯示儀表板] 磚](powerbi-service-display-dash-in-focus-mode.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

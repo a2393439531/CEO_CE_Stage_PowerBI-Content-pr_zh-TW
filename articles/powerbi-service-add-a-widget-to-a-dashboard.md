@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add an image, text box, video, or web code to your dashboard"
-   description="Documentation on how to add an image, video, text box, web code tile to a dashboard."
+   pageTitle="將影像、 文字方塊、 影片或 web 程式碼加入至您的儀表板"
+   description="如何將影像、 視訊、] 文字方塊中，web 程式碼的並排顯示的儀表板上的文件。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,115 +21,117 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Add a tile directly from the dashboard itself
+# 將磚加入直接從本身的儀表板
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HivEJ5lN3l4" frameborder="0" allowfullscreen></iframe>
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: The "Add widget" feature has been renamed "Add tile".
+>
+            **請注意**: 「 新增小工具 」 功能已重新命名為 「 新增磚 」。
 
-## Add tile
+## 新增磚
 
-The <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept> control lets you directly add an image, text box, video, streaming data, or web code to your dashboard.
+ **新增磚** 控制項可讓您直接將加入的影像、 文字方塊、 視訊資料流處理資料，或 web 儀表板的程式碼。
 
-1. Select <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept> from the menu bar.
+1. 選取 **新增磚** 從功能表列。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-iconnew.png)
 
-2. Select which widget to add: <bpt id="p1">**</bpt>Image<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Text box<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Video<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Web content<ept id="p4">**</ept>, or <bpt id="p5">**</bpt>Custom streaming data<ept id="p5">**</ept>.
+2. 選取要加入哪些 widget: **映像**, ，**文字方塊**, ，**視訊**, ，**網頁內容**, ，或 **自訂資料流**。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-tile.png)
 
 
-## Add an image
-Say you want your company logo on your dashboard, or some other image.
+## 加入影像
+假設您想在您的儀表板或其他映像的貴公司的標誌。
 
-1. Select <bpt id="p1">**</bpt>Image<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.
+1. 選取 **映像** > **下一步**。
 
-2. Add image information to the <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane.
+2. 映像將資訊加入至 **並排顯示詳細資料** 窗格。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-image.png)
 
-  - to display a title above the image, select <bpt id="p1">*</bpt>Display title and subtitle<ept id="p1">*</ept> and type a title and/or subtitle.
+  - 若要顯示的影像上方的標題，請選取 *顯示標題和副標題* 輸入標題和/或子字幕。
 
-  - enter the image URL
+  - 輸入影像的 URL
 
-  - to make the tile a hyperlink, select <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> and enter the URL.  When colleagues click this image or title, they'll be taken to this URL.
+  - 若要並排顯示超連結，請選取 **組自訂連結** 並輸入 URL。  當同事按一下此映像或標題時，便會進入此 URL。
 
-  - Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the image as needed.
+  - 選取 **套用**。  在儀表板，調整大小，並視需要移動影像。
 
         ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-image-added.png)
 
-##  Add a text box or dashboard heading
+##  新增文字] 方塊或儀表板標題
 
-1. Select <bpt id="p1">**</bpt>Text box &gt; Next<ept id="p1">**</ept>.
+1. 選取 **文字方塊 > 下一步**。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-text-box.png)
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: To add a dashboard heading, type your heading in the text box and increase the font.
+    >
+            **請注意**︰ 加入儀表板標題、 在文字方塊中輸入您的標題和增加字型。
 
-2. Format the text box:
+2. 設定文字方塊的格式︰
 
-  - to display a title above the text box, select <bpt id="p1">**</bpt>Display title and subtitle<ept id="p1">**</ept> and type a title and/or subtitle.
+  - 若要顯示在文字方塊上面的標題，請選取 **顯示標題和副標題** 輸入標題和/或子字幕。
 
-  - enter and format content for the text box.  
+  - 輸入並格式化文字方塊的內容。  
 
-  - Optionally, set a custom link for the title.  However, in this example we've added hyperlinks within the text box itself, so leave <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> unchecked.
+  - 選擇性地設定標題的自訂連結。  不過，在此範例中我們新增了超連結文字內方塊本身，因此請保持 **組自訂連結** 未核取。
 
-3.  Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the text box as needed.
+3.  選取 **套用**。  在儀表板，調整大小，並視需要移動文字方塊。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text-added.png)
 
-## Add a video
+## 新增視訊
 
-When you add a YouTube or Vimeo video tile to your dashboard, the video plays right on your dashboard.
+YouTube 或 Vimeo 視訊磚加入儀表板時視訊播放您的儀表板 」 權限。
 
-1. Select <bpt id="p1">**</bpt>Video &gt; Next<ept id="p1">**</ept>.
+1. 選取 **影片 > 下一步**。
 
-2. Add video information to the <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane.
+2. 將視訊資訊加入 **並排顯示詳細資料** 窗格。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-video.png)
 
-  - to display a title and subtitle at the top of the video tile, select <bpt id="p1">*</bpt>Display title and subtitle<ept id="p1">*</ept> and type a title and/or subtitle. In this example, we'll add a subtitle and then turn it into a hyperlink back to the entire playlist on YouTube.
+  - 若要顯示頂端的 [視訊] 磚的標題和副標題，請選取 *顯示標題和副標題* 輸入標題和/或子字幕。 在此範例中，我們會加入子標題，然後將它轉換成超連結回到 YouTube 上的整個播放清單。
 
-  - enter the URL for the video
+  - 輸入視訊的 URL
 
-  - Add a hyperlink for the title and subtitle.  Perhaps after your colleagues watch the embedded video you'd like them to view the entire playlist on YouTube -- add a link to your playlist here.
+  - 加入標題和副標題的超連結。  之後您的同事觀看內嵌視訊您可能想它們 YouTube 上檢視整個播放清單--將連結加入到此播放清單。
 
-  - Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the video tile as needed.
+  - 選取 **套用**。  在儀表板，調整大小，並視需要移動 [視訊] 磚。
 
       ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-video-added2.png)
 
-3. Select the video tile to play the video.
+3. 選取 [視訊] 磚以播放視訊。
 
-4. Select the subtitle to visit the playlist on YouTube.
+4. 選取的子標題造訪 YouTube 上的播放清單。
 
-## Add web content
+## 將 web 內容
 
-Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboard. Enter the embed code by hand or copy/paste from sites such as Twitter, YouTube, embed.ly, and more.
+貼上或輸入任何 HTML 內容。  Power BI 加入，做為並排顯示，您的儀表板。 以手動方式輸入內嵌程式碼或複製/貼上從 Twitter、 YouTube、 embed.ly，等等的站台。
 
-1. Select <bpt id="p1">**</bpt>Web content &gt; Next<ept id="p1">**</ept>.
+1. 選取 **網頁內容 > 下一步**。
 
-2. Add information to the <bpt id="p1">**</bpt>Add web content tile<ept id="p1">**</ept> pane.
+2. 將資訊加入至 **新增 web 內容磚** 窗格。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-web-content.png)
 
-  - to display a title above the tile, select <bpt id="p1">*</bpt>Display title and subtitle<ept id="p1">*</ept> and type a title and/or subtitle.
+  - 顯示方塊上方的標題，請選取 *顯示標題和副標題* 輸入標題和/或子字幕。
 
-  - enter the embed code. In this example we're copying and pasting a Twitter feed.
+  - 輸入內嵌程式碼。 在此範例中，我們要複製並貼上 Twitter 摘要。
 
-  - Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the web content tile as needed.
+  - 選取 **套用**。  在儀表板，調整大小，並視需要將 web 內容方塊移。
 
       ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-code-added.png)
 
-### Tips for embedding web content###
+### 內嵌網頁內容的秘訣###
 
-- For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using <bpt id="p1">**</bpt>http<ept id="p1">**</ept> for the iframe source.  If so, change it to <bpt id="p1">**</bpt>https<ept id="p1">**</ept>.
+- Iframe，使用安全的來源。 如果您輸入您 iframe 內嵌程式碼，並取得空白方塊，請檢查您正在使用 **http** iframe 來源。  如果是的話，將它變更為 **https**。
 
   ```
   <iframe src="https://xyz.com">
   ```
 
-- Edit width and height information. This embed code embeds a video and sets the video player to 560 x 315 pixels.  This size will not change as you resize the tile.
+- 編輯寬度和高度的資訊。 此內嵌程式碼會內嵌視訊，並將視訊播放程式設定為 560 x 315 像素為單位。  調整並排顯示，不會變更此大小。
 
   ```
   <iframe width="560" height="315"
@@ -137,7 +139,7 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
    allowfullscreen></iframe>
   ```
 
-  If you'd like the player to resize to fit the tile size, set width and height to 100%.
+  如果您想要播放程式調整大小來容納並排顯示大小、 設定寬度和高度，以 100%。
 
   ```
   <iframe width="100%" height="100%"
@@ -145,7 +147,7 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
    allowfullscreen></iframe>
   ```
 
-- This code embeds a tweet and retains, as separate links on the dashboard, links for the <bpt id="p1">**</bpt>AFK<ept id="p1">**</ept> podcast, <bpt id="p2">**</bpt>@GuyInACube's Twitter page<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Follow<ept id="p3">**</ept>, <bpt id="p4">**</bpt>#analytics<ept id="p4">**</ept>, <bpt id="p5">**</bpt>reply<ept id="p5">**</ept>, <bpt id="p6">**</bpt>retweet<ept id="p6">**</ept>, and <bpt id="p7">**</bpt>like<ept id="p7">**</ept>.  Selecting the tile itself takes you to the podcast on Twitter.
+- 此程式碼會內嵌到推文並保留在儀表板，個別連結的連結 **AFK** 播客 **@GuyInACube 的 Twitter 網頁**, ，**遵循**, ，**#analytics**, ，**回覆**, ，**轉推**, ，和 **像**。  選取並排顯示本身會帶您前往 Twitter 上播客。
 
   ```
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
@@ -162,25 +164,27 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
 charset="utf-8"></script>
 ```
 
-- To make it easier to move the tile on your dashboard, add a title and/or subtitle.
+- 若要讓您更輕鬆地將磚移動您的儀表板上，加入標題和/或子字幕。
 
-- If you'd like to embed some content from a website, but the website doesn't give you embed code to copy and paste, check out embed.ly for help generating the embed code.
+- 如果您想要內嵌來自網站，某些內容，但不會讓網站您內嵌程式碼複製並貼上、 簽出 embed.ly 產生內嵌程式碼的說明。
 
 ##  編輯磚
 
-To make changes to a tile...
+若要變更方塊...
 
-1. Hover over the top right corner of the tile and select the ellipses.
+1. 將滑鼠停留在右上角的方塊，然後選取省略符號。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi_ellipses.png)
 
-2. Select the edit icon to re-open the <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane and make changes.
+2. 選取 [編輯] 圖示，即可重新開啟 **並排顯示詳細資料** 窗格並變更。
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-edit.png)
 
 ## 請參閱  
 
-<bpt id="p1">[</bpt>Creating Power BI dashboards<ept id="p1">](powerbi-service-create-a-dashboard.md)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt>Dashboard tiles<ept id="p2">](powerbi-service-dashboard-tiles.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+            [建立 Power BI 儀表板](powerbi-service-create-a-dashboard.md)
+[儀表板磚](powerbi-service-dashboard-tiles.md)
+
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)。

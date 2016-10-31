@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
-   description="Documentation for how to edit a dashboard tile -- resize, move, rename, pin, delete, add hyperlink."
+   pageTitle="編輯磚-調整大小、 移動、 重新命名、 釘選、 刪除、 加入超連結"
+   description="文件說明如何編輯儀表板磚-調整大小、 移動、 重新命名、 釘選、 刪除、 加入超連結。"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,95 +21,95 @@
    ms.date="08/24/2016"
    ms.author="mihart"/>
 
-# Edit a tile -- resize, move, rename, pin, delete, add hyperlink
+# 編輯磚-調整大小、 移動、 重新命名、 釘選、 刪除、 加入超連結
 
-You can change the look and default behavior of a tile in a dashboard.
+您可以變更儀表板中並排顯示的外觀和預設行為。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-This article covers the following.
+本文章涵蓋下列項目。
 
--   [Pin a tile to a different dashboard](#different)
+-   [釘選到不同的儀表板] 磚](#different)
 
--   [Rename a tile](#rename)
+-   [重新命名磚](#rename)
 
--   [Move a tile](#move)
+-   [將磚](#move)
 
--   [Resize a tile](#resize)
+-   [調整大小，並排顯示](#resize)
 
--   [Add a hyperlink to a tile](#hyperlink)
+-   [加入磚的超連結](#hyperlink)
 
--   [Delete a tile](#delete)
+-   [刪除磚](#delete)
 
-    >[AZURE.NOTE] To change the visualization shown on the tile itself, delete the tile and add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>.
+    >[AZURE.NOTE] 若要變更根據本身的方塊中顯示的視覺效果，刪除該方塊，並加入新 [儀表板磚](powerbi-service-dashboard-tiles.md)。
 
-##  How to begin   
+##  如何開始   
 
-1.  In a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept>, <bpt id="p2">[</bpt>get data <ept id="p2">](powerbi-service-get-data.md)</ept>, and add a tile. 
+1.  在 [儀表板](powerbi-service-dashboards.md), ，[取得資料 ](powerbi-service-get-data.md), ，並將磚加入。 
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
 
-2.  Hover over a dashboard tile, select the ellipses to display the options.
+2.  將滑鼠停留在儀表板] 方塊中，選取 [顯示選項的省略符號。
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/power-bi-tile-menu.png)
 
 <a name="different"></a>
-## Pin the tile to a different dashboard
+## 釘選到不同的儀表板] 磚
 
-1.    Select the pin icon <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pinNoOutline.png)</ph> .
+1.    選取 [釘選圖示 ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pinNoOutline.png) 。
 
-2.  Decide whether to pin to an existing dashboard or to a new dashboard. 
+2.  決定是否要釘選到現有的儀表板或新的儀表板。 
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_PinToAnotherDash.png)
 
-3.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+3.  選取 **Pin**。
 
 ****
 <a name="rename"></a>
-## Rename the tile
+## 重新命名磚
 
--   Select the pencil icon   <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)</ph>  to edit the tile title.
+-   選取的鉛筆圖示   ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  編輯磚的標題。
 
 ****
 <a name="move"></a>
-## Move the tile
+## 將磚移動
 
--   Select and hold the tile to drag it to a new location on the dashboard canvas.
+-   選取 [按住不放磚便可將它拖曳至新位置中，儀表板畫布上。
 
 ****
 <a name="resize"></a>
-## Resize the tile
+## 調整大小方塊
 
-You can make tiles many different sizes -- from 1x1 tile units up to 5x5.
+您可以讓磚許多不同的大小-從 1x1 tile 單位總至 5 x 5。
 
--    Select and drag the handle  (in the bottom right corner) to resize the tile.
+-    選取並拖曳控點 （在右下角），來調整並排顯示大小。
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBIGIF_ResizeTile4.gif)
 
 
 ****
 <a name="hyperlink"></a>
-## Add a hyperlink to a dashboard tile
+## 將超連結加入至儀表板] 磚
 
-By default, clicking a tile takes you to the report where the tile was created or to Q&amp;A (if the tile was created in Q&amp;A). To link to a webpage, another dashboard, an SSRS report, or other online content - add a custom link:
+根據預設，按一下磚帶您磚建立所在的報表或問答集 （如果問答集建立磚）。 若要連結至某網頁，另一個儀表板、 SSRS 報表或其他線上內容-新增自訂的連結︰
 
-1.    Select the pencil icon <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)</ph>  to edit the tile.
+1.    選取的鉛筆圖示 ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  編輯方塊。
 
-2.    Place a checkmark in <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> and enter a URL.
+2.    將核取記號 **組自訂連結** 並輸入的 URL。
 
 ****
 <a name="delete"></a>
-## Delete the tile
+## 刪除區塊
 
--   Select the X icon <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_X_icon.png)</ph> to delete the tile. Deleting a tile does not delete the underlying report.
+-   選取 X 圖示 ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_X_icon.png) 刪除磚。 刪除磚不會刪除基礎的報表。
 
 ****
 
 ## 請參閱
 
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[在 Power BI 儀表板] 磚](powerbi-service-dashboard-tiles.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[在 Power BI 儀表板](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI-基本概念](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)
