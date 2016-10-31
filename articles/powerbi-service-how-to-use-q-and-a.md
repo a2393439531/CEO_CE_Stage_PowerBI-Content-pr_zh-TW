@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to use Power BI Q&amp;A"
-   description="How to use Power BI Q&amp;A"
+   pageTitle="如何使用 Power BI 問與答"
+   description="如何使用 Power BI 問與答"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,79 +21,80 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# How to use Power BI Q&amp;A  
+# 如何使用 Power BI 問與答  
 
-## Ask questions of your data using natural language  
-The Q&amp;A question box is where you type your question using natural language. Q&amp;A recognizes the words you type and figures out where (which dataset) to find the answer. Q&amp;A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
+## 提出使用自然語言資料的問題  
+問與答問題方塊是您用來輸入您使用自然語言的問題。 問與答辨識您輸入的文字和數字位置 （資料集） 來尋找解答。 問答集也可協助您形成問題與自動完成、 結算，和其他文字和視覺輔助工具。
 
 ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna.png)
 
-The answer to your question is displayed as an interactive visualization and updates as you modify the question.
+您問題的答案會顯示為互動式的視覺化和更新中，當您修改這個問題。
 
-Q&amp;A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&amp;A to create visuals, dig into those visuals, and pin them to dashboards.
+問與答互動和樂趣，而且不用，一個問題會導致許多其他視覺效果顯示追求有趣的路徑為。 觀看 Amanda 示範如何使用問與答來建立視覺效果、 深入探討這些視覺效果，以及它們固定到 [儀表板。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## Use natural language to ask questions about your data
+## 使用自然語言來詢問您的資料有關的問題
 
-1.  Place your cursor in the question box. Even before you start typing, Q&amp;A displays a new screen with suggestions to help you form your question.
+1.  將游標放在 [問題] 方塊中。 即使您開始輸入之前，問與答顯示一個新畫面，並協助您設定您的問題的建議。
 
     ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-cursor.png)  
 
-    This  list contains:  
-    - the questions used to create <bpt id="p1">[</bpt>tiles <ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>that are already pinned to the dashboard, and  
+    此清單包含︰  
+    - 用來建立問題 [磚 ](powerbi-service-dashboard-tiles.md)，已釘選到儀表板，並  
 
-    - the name of tables in the <bpt id="p1">[</bpt>underlying dataset(s)<ept id="p1">](powerbi-service-get-data.md)</ept>.  
+    - 中的資料表名稱 [基礎資料集](powerbi-service-get-data.md)。  
 
-    You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for.  Or, use a table name to help you word a new question.
+    您永遠可以選擇這些問題的其中一個做為起點，並繼續精簡，尋找您要尋找特定的解答的問題。  或者，使用資料表名稱，可協助您在 word 中新的問題。
 
-2.  Select from the dropdown or begin typing your own question.  
+2.  從下拉式清單中選取或輸入自己的問題。  
     ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-list.png)
 
-3.  As you type a question, Power BI Q&amp;A picks the best <bpt id="p1">[</bpt>visualization <ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept>to display your answer; and the visualization changes dynamically as you modify the question. Q&amp;A also helps you formulate your question with auto-completion, by restating your question, and with other textual and visual aids.  
+3.  當您輸入的問題，Power BI 問 & A 挑選最佳 [視覺化 ](powerbi-service-visualization-types-for-reports-and-q-and-a.md)顯示您的答案; 和視覺效果變更動態修改問題。 問與答也有助於您規劃您的問題與自動完成 restating 您的問題，以及其他文字和視覺輔助工具。  
     ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-viz.png)
 
-4.  When you type a query, Power BI looks for an answer in any dataset that has a tile on that dashboard.  If all the tiles are from <bpt id="p1">*</bpt>datasetA<ept id="p1">*</ept>, then your answer will come from <bpt id="p2">*</bpt>datasetA<ept id="p2">*</ept>.  If there are tiles from <bpt id="p1">*</bpt>datasetA <ept id="p1">*</ept>and <bpt id="p2">*</bpt>datasetB<ept id="p2">*</ept>, then Q&amp;A will search for the best answer from those 2 datasets.
+4.  當您輸入查詢時，會尋找 Power BI 中有該儀表板並排顯示的任何資料集的解答。  如果所有的牌子都從 *datasetA*, ，則您的答案將來自 *datasetA*。  如果有從磚 *datasetA *和 *datasetB*, ，然後問答集將會搜尋這些 2 個資料集的最佳回應。
 
-    The dataset(s) that is used to create the visualization is visible below the visualization.  
+    用來建立視覺效果的資料集看得見以下視覺效果。  
 
-    ><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> So be careful, if you only have one tile from <bpt id="p2">*</bpt>datasetA <ept id="p2">*</ept>and you remove it from your dashboard, Q&amp;A will no longer have access to <bpt id="p3">*</bpt>datasetA<ept id="p3">*</ept>.
+    >
+    >            **提示︰** 因此請務必小心，如果您只有一個來自方塊 *datasetA *和移除您的儀表板，問與答將不再有存取權 *datasetA*。
 
-5.  When you're happy with the result, <bpt id="p1">[</bpt>pin the visualization to a dashboard<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)</ept> by selecting the pin icon in the top right corner.
+5.  當您滿意結果 [釘選到儀表板的視覺效果](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) 的右上角中選取 [釘選圖示。
 
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
-## Tell Q&amp;A which visualization to use.  
-With Q&amp;A, not only can you ask your data to speak for itself, you can tell it how you want it displayed. Just add "as a <ph id="ph1">&amp;lt;</ph>visualization type<ph id="ph2">&amp;gt;</ph>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
+## 告訴問答集若要使用哪一個視覺效果。  
+透過問與答，不僅可以您要求您自己會說話的資料，您可以告訴它要顯示它。 只要加入"做為 &lt;視覺效果類型&gt;」 為您的問題。  比方說，「 植物當作對應表所顯示清查的磁碟區 」 和 「 顯示卡片的存貨總數 」。  請自行試用看。
 
 
-## How does Q&amp;A know how to answer questions?  
-### Which datasets does Q&amp;A use?
+## 請問要問與答不知怎麼回答的問題嗎？  
+### 問與答使用哪一個資料集的運作方式
 
-How does Q&amp;A know how to answer data-specific questions? It relies on the names of the tables, columns, and calculated fields in the underlying dataset. So what you (or the dataset owner) call things is important! 
+如何沒有問與答不知如何回答特定資料的問題嗎？ 它依賴資料表、 資料行和基礎資料集中的導出的欄位的名稱。 因此您 （或資料集擁有者） 所謂事項很重要 ！ 
 
-For example, suppose you had an Excel table named “Sales”, with columns titled “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”. You could ask questions about any of those entities.  You could ask "show <bpt id="p1">*</bpt>sales"<ept id="p1">*</ept>, "total <bpt id="p2">*</bpt>profit <ept id="p2">*</ept>by <bpt id="p3">*</bpt>month"<ept id="p3">*</ept>, "sort <bpt id="p4">*</bpt>products <ept id="p4">*</ept>by <bpt id="p5">*</bpt>units sold"<ept id="p5">*</ept>, and more.
+例如，假設您擁有名為"Sales"，標題為 「 產品 」、 「 月 」、 「 銷售單位 」、 「 銷售毛額 」 和"Profit"的資料行的 Excel 資料表。 您可以詢問有關這些實體的任何問題。  您可以要求 」 顯示 *銷售 」*, ，"總 *收益 *所 *月 」*, ，"排序 *產品 *所 *銷售 」*, ，等等。
 
-Q&amp;A can answer questions that are based on how your dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&amp;A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&amp;A dropdown.
+問與答可以回答問題，根據您的資料集的組織方式。 這有什麼作用在 Salesforce 中的資料？ 當您連接到您的 salesforce.com 帳戶時，Power BI 會自動產生儀表板。  詢問問題的問答集開始之前，請看在儀表板的視覺效果中顯示的資料和也問與答下拉式清單中顯示的資料。
 
--   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which <bpt id="p1">*</bpt>account <ept id="p1">*</ept>has the highest <bpt id="p2">*</bpt>opportunity<ept id="p2">*</ept>”, or “show <bpt id="p3">*</bpt>sales <ept id="p3">*</ept>by month as a bar chart”.
+-   如果視覺效果的軸標籤和值包含 「 銷售 」、 「 帳戶 」、 「 月 」 和 「 機會 」，則您可以安心地提問像是: 「 這 *帳戶 *具有最高 *機會*」，或 「 顯示 *銷售 *依月份與橫條圖 」。
  
--   If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which <bpt id="p1">*</bpt>salesperson <ept id="p1">*</ept>had the lowest <bpt id="p2">*</bpt>sales <ept id="p2">*</ept>in <bpt id="p3">*</bpt>Florida<ept id="p3">*</ept> in <bpt id="p4">*</bpt>2013<ept id="p4">*</ept>."
+-   如果下拉式清單中包含 「 銷售 」，「 狀態 」，以及 「 年 」，則您可以安心地提問像是: 「 這 *銷售人員 *有最低 *銷售 *中 *佛羅里達州* 中 *2013年*。 」
 
-If you have website performance data in Google Analytics, you could ask Q&amp;A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you’re querying demographic data, you might ask questions about age and household income by location.
+如果您在 Google 分析網站的效能資料，您可以要求問答時間花在網頁、 專屬的網頁拜訪和使用者參與率的數目。 或者，如果您查詢統計資料，您可能會詢問問題年齡和家庭收入的位置。
 
-### Which visualization does Q&amp;A use?  
-Q&amp;A picks the best visualization based on the data being displayed. Sometimes data in the underlying dataset(s) is defined as a certain type or category and this helps Q&amp;A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
+### 問與答使用哪一個視覺效果的運作方式  
+問與答挑選最佳的視覺效果，根據所顯示的資料。 有時在基礎資料集定義為特定類型或類別，這有助於問與答不知如何顯示它。 比方說，如果資料定義為日期類型，則可能會顯示為折線圖。 比較可能會顯示為對應分類為城市的資料。
 
-You can also tell Q&amp;A which visualization to use by adding it to your question. But keep in mind that it may not always be possible for Q&amp;A to display the data in the visualization type you requested.
+您也可以分辨問答集加入至您的問題使用哪一個視覺效果。 但是請記住，它可能不一定會問與答來顯示您所要求的視覺效果類型的資料。
 
-For information about keywords that Q&amp;A recognizes, see <bpt id="p1">[</bpt>Tips for asking questions<ept id="p1">](powerbi-service-q-and-a-tips.md)</ept>.
+問與答可辨識的關鍵字的詳細資訊，請參閱 [詢問問題的秘訣](powerbi-service-q-and-a-tips.md)。
 
 ## 請參閱  
-Back to <bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>  
-[Tutorial: Use Q&amp;A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Tips for asking questions in Q&amp;A](powerbi-service-q-and-a-tips.md)  
-[Prepare a workbook for Q&amp;A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
-[Pin a tile to the dashboard from Q&amp;A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
+回到 [問與答 Power BI 中](powerbi-service-q-and-a.md)  
+[教學課程︰ 使用問與答零售範例](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[問與答中提出的秘訣](powerbi-service-q-and-a-tips.md)  
+[準備活頁簿的問與答](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
+[Pin 碼方塊，使其儀表板從問與答](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)

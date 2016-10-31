@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Customize visual titles, legends, and backgrounds. "
-   description="Tutorial: Customize visualization title, background, and legend"
+   pageTitle="教學課程︰ 自訂 visual 標題、 圖例和背景。 "
+   description="教學課程︰ 自訂視覺效果標題、 背景和圖例"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,110 +20,110 @@
    ms.date="10/01/2016"
    ms.author="mihart"/>
 
-# Tutorial: Customize visualization title, background, and legend
+# 教學課程︰ 自訂視覺效果標題、 背景和圖例
 
-In this tutorial you'll learn many different ways to customize your visualizations. Not all visualizations can be customized, <bpt id="p1">[</bpt>see the complete list<ept id="p1">](#list)</ept>.  Specifically, this tutorial covers customizing:  
--   visualization titles  
--   visualization backgrounds  
--   visualization legends
+在本教學課程中，您將學習許多不同的方式，以自訂視覺效果。 並非所有視覺效果可自訂， [查看完整清單](#list)。  具體來說，本教學課程涵蓋了自訂︰  
+-   視覺化項目  
+-   視覺效果的背景  
+-   視覺效果的圖例
 
-## Customize visualization titles in reports    
-I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. To follow along, <bpt id="p1">[</bpt>connect to the Retail Analysis sample<ept id="p1">](powerbi-sample-downloads.md)</ept>.
+## 自訂報表中的視覺化項目    
+已登入 Power BI 服務，我開始和零售分析範例報表 [編輯檢視](powerbi-service-interact-with-a-report-in-editing-view.md)。 如果要跟著做， [連接到零售分析範例](powerbi-sample-downloads.md)。
 
 >[AZURE.NOTE]  
->When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with <bpt id="p1">[</bpt>new titles and subtitles, hyperlinks, and resized<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>.
+>當您釘選視覺效果的儀表板時，它會變成儀表板] 磚。  磚本身也可以自訂與 [新的標題和子字幕、 超連結、 調整大小和](powerbi-service-edit-a-tile-in-a-dashboard.md)。
 
-1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
+1.  瀏覽至報表的 「 新增存放區 」 頁面，然後選取 [開啟存放區計數所開啟的月份] 直條圖。
 
-2.  In the Visualizations and Filters pane, select the paintbrush icon <ph id="ph1">![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png)</ph> to reveal the formatting options and select <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> to expand that section.  
+2.  在 [視覺效果和篩選] 窗格中，選取 [小畫家圖示 ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) 的格式化選項，然後選取 **標題** 以展開該區段。  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
 
-3.  Turn  <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.  
+3.  開啟  **標題** 開啟和關閉選取 On （或關閉） 滑動軸。 現在，讓它 **上**。  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
-4.  Change <bpt id="p1">**</bpt>Title Text<ept id="p1">**</ept> by typing <bpt id="p2">**</bpt>Store count by month opened<ept id="p2">**</ept> in the text field.  
+4.  變更 **標題文字** 輸入 **依月份開啟儲存計數** 文字欄位中。  
 
-5.  Change <bpt id="p1">**</bpt>Font color<ept id="p1">**</ept> to orange and <bpt id="p2">**</bpt>Background Color<ept id="p2">**</ept> to yellow.
+5.  變更 **字型色彩** 橙色和 **背景色彩** 為黃色。
 
-    -   Select the dropdown and choose a color from the <bpt id="p1">**</bpt>Theme Colors<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Recent Colors<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Custom color<ept id="p3">**</ept>.
+    -   選取下拉式清單中，選擇的色彩 **佈景主題色彩**, ，**最近使用的色彩**, ，或 **自訂色彩**。
 
-    -   Select the dropdown to close the color window.  
+    -   選取下拉式清單中，以關閉 [色彩] 視窗。  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizecolorpicker.png)
 
-    You can always revert to the default colors by selecting <bpt id="p1">**</bpt>Revert to default<ept id="p1">**</ept> in the color window.
+    您隨時可以回復預設色彩選取 **還原為預設值** [色彩] 視窗中。
 
-6.  The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
+6.  最後我們要在圖表標題的自訂是對齊中央的視覺效果。 標題位置預設為靠左對齊。  
 ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizealign.png)
 
-    At this point in the tutorial, your column chart <bpt id="p1">**</bpt>title<ept id="p1">**</ept> should look like something like this:  
+    在此教學課程中，直條圖點 **標題** 應該看起來像這樣︰  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/tutorialprogress1.png)
 
-    To revert all the title customization we've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Title<ept id="p2">**</ept> customization pane.  
+    若要還原到目前為止，我們所做的所有標題自訂，請選取 **都還原至預設**, ，底部 **標題** 自訂] 窗格中。  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/revertall.png)
 
-## Customize visualization backgrounds  
-With the same column chart selected, expand the Background options.
+## 自訂視覺效果的背景  
+選取的相同資料行圖表，展開 [背景] 選項。
 
-1.  Turn the background on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+1.  選取 [On （或關閉） 開啟和關閉背景滑桿。 現在，讓它 **上**。
 
-2.  Change the background color to 74% grey.
+2.  將背景色彩變更為 74%灰色。
 
-    -   Select the dropdown and choose a grey color from the <bpt id="p1">**</bpt>Theme Colors<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Recent Colors<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Custom color<ept id="p3">**</ept>.
+    -   選取下拉式清單中，選擇 [灰色的色彩 **佈景主題色彩**, ，**最近使用的色彩**, ，或 **自訂色彩**。
 
-    -    Change Transparency to 74%.   
+    -    將透明度變更為 74%。   
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizebackground.png)
 
-    To revert all the title background customization we've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Background<ept id="p2">**</ept> customization pane.
+    若要還原到目前為止，我們所做的所有標題背景自訂，請選取 **都還原至預設**, ，底部 **背景** 自訂] 窗格中。
 
-## Customize visualization legends  
+## 自訂視覺效果的圖例  
 
-1. Open the <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> report page and select the "Total Sales Variance by FiscalMonth and District Manager" chart.
+1. 開啟 **概觀** 報告頁面，然後選取 「 總銷售額變異數的 FiscalMonth 和學區管理員 」 圖表。
 
-2. In the Visualization tab, select the paintbrush icon to open the formatting pane.  
+2. 視覺效果] 索引標籤中選取小畫家圖示以開啟 [格式] 窗格。  
 
-3. Expand <bpt id="p1">**</bpt>Legend<ept id="p1">**</ept> options.
+3. 展開 **圖例** 選項。
 
       ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend.png)
 
-3.  Turn the legend on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+3.  選取 [On （或關閉） 開啟圖例開啟和關閉滑桿。 現在，讓它 **上**。
 
-4.  Move the legend to the left side of the visualization.    
+4.  將圖例移到左邊算起的視覺效果。    
 
-3.  Add a legend title by toggling <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> to <bpt id="p2">**</bpt>On<ept id="p2">**</ept> and, in the <bpt id="p3">**</bpt>Legend name<ept id="p3">**</ept> field, typing <bpt id="p4">**</bpt>Managers<ept id="p4">**</ept>.
+3.  加入圖例標題切換 **標題** 到 **上** 並在 **圖例名稱** 欄位中，輸入 **管理員**。
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend-move.png)
 
-    To revert all the legend customization we've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> customization pane.
+    若要還原到目前為止，我們所做的所有圖例自訂，請選取 **都還原至預設**, ，底部 **圖例** 自訂] 窗格中。
 
 
 <a name="list"></a>
-## Visualization types that can be customized  
-| Visualization  | 標題  | 背景 | 圖例 |
+## 您可以自訂的視覺效果類型  
+| 視覺效果  | 標題  | 背景 | 圖例 |
 |:---------------|:-------|:-----------|:-------|
-| area           | 是    | 是        | 是    |
+| 區域           | 是    | 是        | 是    |
 | bar            | 是    | 是        | 是    |
-| card           | 是    | 是        | n/a    |
-| multi row card | 是    | 是        | n/a    |
-| column         | 是    | 是        | 是    |
-| combo          | 是    | 是        | 是    |
-| donut          | 是    | 是        | 是    |
-| filled map     | 是    | 是        | 是    |
-| funnel         | 是    | 是        | n/a    |
-| gauge          | 是    | 是        | n/a    |
+| 卡片           | 是    | 是        | n/a    |
+| 多個資料列卡 | 是    | 是        | n/a    |
+| 資料行         | 是    | 是        | 是    |
+| 組合          | 是    | 是        | 是    |
+| 甜甜圈          | 是    | 是        | 是    |
+| 布的圖     | 是    | 是        | 是    |
+| 漏斗圖         | 是    | 是        | n/a    |
+| 量測計          | 是    | 是        | n/a    |
 | kpi            | 是    | 是        | n/a    |
 | line           | 是    | 是        | 是    |
 | map            | 是    | 是        | 是    |
-| matrix         | 是    | 是        | n/a    |
-| pie            | 是    | 是        | 是    |
-| scatter        | 是    | 是        | 是    |
-| slicer         | 是    | 是        | n/a    |
+| 矩陣         | 是    | 是        | n/a    |
+| 圓形圖            | 是    | 是        | 是    |
+| 散佈圖        | 是    | 是        | 是    |
+| 交叉分析篩選器         | 是    | 是        | n/a    |
 | table          | 是    | 是        | n/a    |
-| textbox        | 否     | 是        | n/a    |
+| 文字方塊        | 否     | 是        | n/a    |
 | treemap        | 是    | 是        | 是    |
-| waterfall      | 是    | 是        | 是    |
+| 瀑布      | 是    | 是        | 是    |
 
 ## 請參閱  
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>  
-[Customize X-axis and Y-axis](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)  
-[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+進一步了解 [Power BI 報表中的視覺效果](powerbi-service-visualizations-for-reports.md)  
+[自訂 x 軸和 y 軸](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)  
+[自訂色彩和軸屬性](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  
+[Power BI-基本概念](powerbi-service-basic-concepts.md)  
+更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)
