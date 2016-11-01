@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI 的備用電子郵件地址"
-   description="Power BI 的備用電子郵件地址"
+   pageTitle=""
+   description=""
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,7 +20,7 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Power BI 的備用電子郵件地址
+# <a name="alternate-email-address-for-power-bi"></a>Power BI 的備用電子郵件地址
 
 根據預設，您用來登入以使用 Power BI 的電子郵件地址用於傳送 Power BI 中的活動更新的資訊。  例如，當有人傳送共用邀請給您時就會移至這個位址。
 
@@ -40,4 +40,5 @@
 
 > [AZURE.NOTE] 變更此設定不會影響哪些電子郵件地址用來傳送服務更新、 電子報，以及其他促銷通訊。  這些通常會被傳送電子郵件地址原本使用 Power bi 註冊時。
 
-更多的問題嗎？ [試用 Power BI 社群](http://community.powerbi.com/)
+更多的問題嗎？ 
+            [試用 Power BI 社群](http://community.powerbi.com/)
